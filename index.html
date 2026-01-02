@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Spanish Trainer A2 🇪🇸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Styles.css">
+
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             START SCREEN (NEW)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="startScreen" class="start-screen">
+            <h1>🇪🇸 Spanish Vocabulary Trainer</h1>
+            <p class="subtitle">Изучайте испанский язык с интерактивными упражнениями</p>
+            <button class="btn btn-primary" onclick="showLoginScreen()">Войти</button>
+			<button class="btn btn-success" onclick="showRegisterScreen()">Зарегистрироваться</button>
+        </div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     LOGIN SCREEN
+     ═══════════════════════════════════════════════════════════════ -->
+<div id="loginScreen" class="profile-create-screen hidden">
+	<h1>Вход</h1>
+	<p class="subtitle">Войдите в свой аккаунт</p>
+
+	<div class="profile-form">
+		<div class="form-group">
+			<label for="loginEmail">Email:</label>
+			<input 
+				type="email" 
+				id="loginEmail" 
+				placeholder="Введите email"
+			>
+		</div>
+		<div class="form-group">
+			<label for="loginPassword">Пароль:</label>
+			<input 
+				type="password" 
+				id="loginPassword" 
+				placeholder="Введите пароль"
+				onkeypress="if(event.key==='Enter') loginUser()"
+			>
+		</div>
+		<div id="loginError" class="form-error hidden"></div>
+
+		<button class="btn btn-success" onclick="loginUser()">Войти</button>
+		<button class="btn btn-back" onclick="showStart()">Назад</button>
+	</div>
+</div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             REGISTER SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="registerScreen" class="profile-create-screen hidden">
+		<h1>Регистрация</h1>
+		<p class="subtitle">Создайте новый аккаунт</p>
+		
+		<div class="profile-form">
+			<div class="form-group">
+			<label for="registerEmail">Email:</label>
+			<input
+			type="email"
+			id="registerEmail"
+			placeholder="email@example.com"
+			onkeypress="if(event.key==='Enter') document.getElementById('registerPassword').focus()"
+			>
+			</div>
+			<div class="form-group">
+				<label for="registerPassword">Пароль:</label>
+				<input
+				type="password"
+				id="registerPassword"
+				placeholder="Минимум 6 символов"
+				onkeypress="if(event.key==='Enter') registerUser()"
+				>
+				</div>
+				<div id="loginError" class="form-error hidden"></div>
+				
+				<button class="btn btn-success" onclick="registerUser()">Зарегистрироваться</Button>
+				<button class="btn btn-back" onclick="showStart()">Назад</Button>
+			</div>
+		</div>
+		<!-- ═══════════════════════════════════════════════════════════════
+				PROFILE SELECT SCREEN
+			 ═══════════════════════════════════════════════════════════════ -->
+			 <div id="profileSelectScreen" class="profile-select-screen hidden">
+			 <h1>Выбор профиля</h1>
+			 <p class="subtitute">Выбирите профиль для продолжения</p>
+			 
+			 <div id="profileList" class = "profile-list">
+			 <!-- Profiles will be rendered here -->
+			 </div>
+			 
+			 <button class="btn btn-success" onclick="showProfileCreate()">+ Создать новый  профиль</button>
+			 <button class="btn btn-back" onclick="logout()">Выйти</button>
+
+			 <!-- Profile Action Buttons (shown when profile is selected) -->
+			 <div id="profileActionButtons" class="profile-action-buttons hidden">
+				 <button class="btn btn-select-profile" onclick="confirmSelectProfile()">Выбрать профиль</button>
+				 <button class="btn btn-delete-profile" onclick="showDeleteConfirmModal()">Удалить профиль</button>
+			 </div>
+			 </div>
+
+			 <!-- ═══════════════════════════════════════════════════════════════
+				  DELETE CONFIRMATION MODAL
+				  ═══════════════════════════════════════════════════════════════ -->
+			 <div id="deleteConfirmModal" class="modal hidden">
+				 <div class="modal-content">
+					 <h2>Подтверждение удаления</h2>
+					 <p>Вы уверены, что хотите удалить профиль?<br>Весь прогресс будет утерян.</p>
+					 <div class="modal-buttons">
+						 <button class="btn btn-danger" onclick="deleteSelectedProfile()">Да</button>
+						 <button class="btn btn-secondary" onclick="hideDeleteConfirmModal()">Нет</button>
+					 </div>
+				 </div>
+			 </div>
+        <!-- ═══════════════════════════════════════════════════════════════
+             PROFILE CREATE SCREEN (NEW)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="profileCreateScreen" class="profile-create-screen hidden">
+            <h1>Создать профиль</h1>
+            <p class="subtitle">Введите ваш никнейм</p>
+
+            <div class="profile-form">
+                <div class="form-group">
+                    <label for="nicknameInput">Никнейм:</label>
+                    <input 
+                        type="text" 
+                        id="nicknameInput" 
+                        placeholder="Введите никнейм (макс. 24 символа)"
+                        maxlength="24"
+                        onkeypress="if(event.key==='Enter') createProfileFromForm()"
+                    >
+                    <div id="nicknameError" class="form-error hidden"></div>
+                </div>
+
+                <button class="btn btn-success" onclick="createProfileFromForm()">OK</button>
+                <button class="btn btn-back" onclick="showProfileSelect()">Отмена</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             USER BADGE (shown when profile is active)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="userBadge" class="user-badge hidden">
+            <span class="user-nickname" id="userNickname"></span>
+            <button class="switch-profile-btn" onclick="switchProfile()">Сменить профиль</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             MAIN MENU (Unidad Selection)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="mainMenu" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1>Spanish Trainer A2</h1>
+            <p class="subtitle">Выберите Unidad для практики</p>
+
+            <div style="margin-top: 30px;">
+                <!-- Unidad 1 -->
+                <div class="category-card" id="unidad-1-btn" onclick="showUnidadMenu('unidad_1')">
+                    <div class="category-header">
+                        <span class="category-title">📚 Unidad 1</span>
+                        <span class="category-icon">🔓</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="unidad-1-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="unidad-1-progress-text">0% завершено</p>
+                </div>
+
+                <!-- Unidad 2 -->
+                <div class="category-card locked" id="unidad-2-btn" onclick="showUnidadMenu('unidad_2')">
+                    <div class="category-header">
+                        <span class="category-title">📘 Unidad 2</span>
+                        <span class="category-icon">🔒</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="unidad-2-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="unidad-2-progress-text">Заблокировано - Завершите Unidad 1 (80%)</p>
+                </div>
+
+                <!-- Unidad 3 -->
+                <div class="category-card locked" id="unidad-3-btn" onclick="showUnidadMenu('unidad_3')">
+                    <div class="category-header">
+                        <span class="category-title">📗 Unidad 3</span>
+                        <span class="category-icon">🔒</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="unidad-3-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="unidad-3-progress-text">Заблокировано - Завершите Unidad 2 (80%)</p>
+                </div>
+
+                <!-- Unidad 4 -->
+                <div class="category-card locked" id="unidad-4-btn" onclick="showUnidadMenu('unidad_4')">
+                    <div class="category-header">
+                        <span class="category-title">📕 Unidad 4</span>
+                        <span class="category-icon">🔒</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="unidad-4-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="unidad-4-progress-text">Заблокировано - Завершите Unidad 3 (80%)</p>
+                </div>
+
+                <!-- Unidad 5 -->
+                <div class="category-card locked" id="unidad-5-btn" onclick="showUnidadMenu('unidad_5')">
+                    <div class="category-header">
+                        <span class="category-title">📙 Unidad 5</span>
+                        <span class="category-icon">🔒</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="unidad-5-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="unidad-5-progress-text">Заблокировано - Завершите Unidad 4 (80%)</p>
+                </div>
+
+                <!-- Unidad 6 -->
+                <div class="category-card locked" id="unidad-6-btn" onclick="showUnidadMenu('unidad_6')">
+                    <div class="category-header">
+                        <span class="category-title">📔 Unidad 6</span>
+                        <span class="category-icon">🔒</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="unidad-6-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="unidad-6-progress-text">Заблокировано - Завершите Unidad 5 (80%)</p>
+                </div>
+
+                <!-- Unidad 7 -->
+                <div class="category-card locked" id="unidad-7-btn" onclick="showUnidadMenu('unidad_7')">
+                    <div class="category-header">
+                        <span class="category-title">📓 Unidad 7</span>
+                        <span class="category-icon">🔒</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="unidad-7-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="unidad-7-progress-text">Заблокировано - Завершите Unidad 6 (80%)</p>
+                </div>
+
+                <!-- Unidad 8 -->
+                <div class="category-card locked" id="unidad-8-btn" onclick="showUnidadMenu('unidad_8')">
+                    <div class="category-header">
+                        <span class="category-title">📖 Unidad 8</span>
+                        <span class="category-icon">🔒</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="unidad-8-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="unidad-8-progress-text">Заблокировано - Завершите Unidad 7 (80%)</p>
+                </div>
+
+                <!-- Unidad 9 -->
+                <div class="category-card locked" id="unidad-9-btn" onclick="showUnidadMenu('unidad_9')">
+                    <div class="category-header">
+                        <span class="category-title">📒 Unidad 9</span>
+                        <span class="category-icon">🔒</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="unidad-9-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="unidad-9-progress-text">Заблокировано - Завершите Unidad 8 (80%)</p>
+                </div>
+
+                <!-- Unidad 10 -->
+                <div class="category-card locked" id="unidad-10-btn" onclick="showUnidadMenu('unidad_10')">
+                    <div class="category-header">
+                        <span class="category-title">📑 Unidad 10</span>
+                        <span class="category-icon">🔒</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="unidad-10-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="unidad-10-progress-text">Заблокировано - Завершите Unidad 9 (80%)</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <button class="btn btn-secondary" onclick="showVerbMenu()">🔄 Практика спряжения глаголов</button>
+                <button class="btn btn-warning" onclick="showQADeveloperMode()">🧪 Режим разработчика QA</button>
+            </div>
+
+            <div class="footer">
+                Создано с ❤️ для изучающих испанский
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             UNIDAD MENU (Category Selection)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="unidadMenu" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1 id="unidadTitle">Unidad 1</h1>
+            <p class="subtitle">Выберите категорию для практики</p>
+
+            <div style="margin-top: 30px;">
+                <!-- Average Progress Bar -->
+                <div style="margin-bottom: 30px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white;">
+                    <h3 style="margin: 0 0 10px 0; color: white;">📊 Средний прогресс</h3>
+                    <div style="font-size: 32px; font-weight: bold;">
+                        <span id="avg-progress-text">0</span>%
+                    </div>
+                </div>
+
+                <!-- Category Cards (динамически генерируются из CATEGORY_CONFIG) -->
+                <div id="categoriesContainer"></div>
+
+                <!-- Gramática -->
+                <div class="category-card" onclick="showGramaticaMenu()">
+                    <div class="category-header">
+                        <span class="category-title">📝 Ejercicios (Упражнения)</span>
+                        <span class="category-icon">📝</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="gramatica-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="gramatica-progress-text">0%</p>
+                </div>
+
+                <!-- Exam Section -->
+                <div class="exam-section">
+                    <h3>🎓 Финальный экзамен</h3>
+                    <p class="exam-requirement">Требуется средний прогресс 80% для разблокировки</p>
+                    <button class="btn btn-warning" id="examBtn" onclick="startExam()" disabled>
+                        Пройти экзамен
+                    </button>
+                </div>
+            </div>
+
+            <button class="btn btn-back" onclick="showMainMenu()">← Назад к Unidades</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             CATEGORY MENU (Level Selection)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="categoryMenu" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1 id="categoryTitle">Sustantivos</h1>
+            <p class="subtitle" id="categorySubtitle">Выберите сложность и количество вопросов</p>
+
+            <!-- Average Progress for this category -->
+            <div style="margin: 20px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white;">
+                <h3 style="margin: 0 0 10px 0; color: white;">📊 Прогресс категории</h3>
+                <div style="font-size: 28px; font-weight: bold;">
+                    <span id="category-avg-progress-text">0</span>%
+                </div>
+            </div>
+
+            <!-- Easy Level -->
+            <div class="level-section" style="background: #d5f4e6; border-left: 5px solid #27ae60; padding: 20px; border-radius: 10px; margin: 15px 0;">
+                <h3 style="color: #27ae60; margin-bottom: 15px;">🟢 Лёгкий уровень (ES→RU, ABCD)</h3>
+                <div style="display: flex; gap: 15px;">
+                    <button class="level-btn" id="easy-10-btn" onclick="startTest('easy', 10)" style="flex: 1; background: #27ae60; color: white; border: none;">
+                        <span class="level-btn-label">✓ 10 вопросов</span>
+                        <span class="level-btn-progress" id="easy-10-progress">Лучший: 0%</span>
+                    </button>
+                    <button class="level-btn" id="easy-25-btn" onclick="startTest('easy', 25)" style="flex: 1;" disabled>
+                        <span class="level-btn-label">🔒 25 вопросов</span>
+                        <span class="level-btn-progress" id="easy-25-progress">(требуется 80% на 10)</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Medium Level -->
+            <div class="level-section" style="background: #fff3cd; border-left: 5px solid #f39c12; padding: 20px; border-radius: 10px; margin: 15px 0;">
+                <h3 style="color: #f39c12; margin-bottom: 15px;">🟡 Средний уровень (RU→ES, ABCD)</h3>
+                <div style="display: flex; gap: 15px;">
+                    <button class="level-btn" id="medium-10-btn" onclick="startTest('medium', 10)" style="flex: 1;" disabled>
+                        <span class="level-btn-label">🔒 10 вопросов</span>
+                        <span class="level-btn-progress" id="medium-10-progress">(требуется 80% на Лёгкий)</span>
+                    </button>
+                    <button class="level-btn" id="medium-25-btn" onclick="startTest('medium', 25)" style="flex: 1;" disabled>
+                        <span class="level-btn-label">🔒 25 вопросов</span>
+                        <span class="level-btn-progress" id="medium-25-progress">Лучший: 0%</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hard Level -->
+            <div class="level-section" style="background: #f8d7da; border-left: 5px solid #e74c3c; padding: 20px; border-radius: 10px; margin: 15px 0;">
+                <h3 style="color: #e74c3c; margin-bottom: 15px;">🔴 Сложный уровень (RU→ES, Ввод текста)</h3>
+                <div style="display: flex; gap: 15px;">
+                    <button class="level-btn" id="hard-10-btn" onclick="startTest('hard', 10)" style="flex: 1;" disabled>
+                        <span class="level-btn-label">🔒 10 вопросов</span>
+                        <span class="level-btn-progress" id="hard-10-progress">(требуется 80% на Средний)</span>
+                    </button>
+                    <button class="level-btn" id="hard-25-btn" onclick="startTest('hard', 25)" style="flex: 1;" disabled>
+                        <span class="level-btn-label">🔒 25 вопросов</span>
+                        <span class="level-btn-progress" id="hard-25-progress">Лучший: 0%</span>
+                    </button>
+                </div>
+            </div>
+
+            <button class="btn btn-back" onclick="backToUnidadMenu()">← Назад к категориям</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             GRAMÁTICA MENU (Exercise Selection with Pagination)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="gramaticaMenu" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1>📝 Ejercicios</h1>
+            <p class="subtitle">Выберите упражнение для практики грамматики</p>
+
+            <!-- Average Progress for Grammar -->
+            <div style="margin: 20px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white;">
+                <h3 style="margin: 0 0 10px 0; color: white;">📊 Прогресс грамматики</h3>
+                <div style="font-size: 28px; font-weight: bold;">
+                    <span id="gramatica-avg-progress-text">0</span>%
+                </div>
+            </div>
+
+            <!-- Exercises Grid (4 per page) -->
+            <div id="gramaticaExercisesContainer" style="margin-top: 20px;">
+                <!-- Exercises will be rendered dynamically -->
+            </div>
+
+            <!-- Pagination Controls -->
+            <div id="gramaticaPagination" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+                <button class="btn btn-secondary" id="gramPrevBtn" onclick="gramaticaPrevPage()">← Назад</button>
+                <span id="gramPageIndicator" style="display: flex; align-items: center; font-size: 1.1em;">Страница 1 / 1</span>
+                <button class="btn btn-secondary" id="gramNextBtn" onclick="gramaticaNextPage()">Вперёд →</button>
+            </div>
+
+            <button class="btn btn-back" onclick="backToUnidadMenu()" style="margin-top: 20px;">← Назад к категориям</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             GRAMÁTICA QUESTION SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="gramaticaQuestionScreen" class="question-container hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <div class="progress" id="gramQuestionProgress">Вопрос 1 из 15</div>
+            <div class="timer-text" id="gramTimerText">10</div>
+            <div class="timer-container">
+                <div class="timer-bar" id="gramTimerBar"></div>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 10px; color: #7f8c8d; font-size: 0.9em;" id="gramHintText">
+                Подсказка: con / en / entre
+            </div>
+
+            <div class="question-text" id="gramQuestionText">Estudio español ___ una academia.</div>
+
+            <!-- Manual Input for Grammar -->
+            <div id="gramInputContainer">
+                <input
+                    type="text"
+                    class="answer-input"
+                    id="gramInput"
+                    placeholder="Введите ваш ответ..."
+                    onkeypress="if(event.key==='Enter') submitGramAnswer()"
+                    autocomplete="off"
+                    autocapitalize="none"
+                >
+                <button class="btn btn-primary" onclick="submitGramAnswer()">Отправить</button>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn btn-back" onclick="exitGramTest()">← Выйти из теста</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             GRAMÁTICA RESULTS SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="gramaticaResultsScreen" class="results hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h2>Результаты упражнения</h2>
+            <div class="stats" id="gramResultsStats">Вы ответили правильно на 12 из 15!</div>
+            <div class="grade" id="gramResultsGrade">Отлично! 🎉</div>
+            <div id="gramRetryMessage" class="hidden" style="margin: 15px 0; padding: 15px; background: #fff3cd; border-radius: 10px; color: #856404;">
+                Для прохождения требуется 80%. Попробуйте ещё раз!
+            </div>
+            <div style="margin: 30px 0;">
+                <button class="btn btn-primary" onclick="retryGramTest()">Повторить упражнение</button>
+                <button class="btn btn-secondary" onclick="showGramaticaMenu()">Назад к упражнениям</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             QUESTION SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="questionScreen" class="question-container hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <div class="progress" id="questionProgress">Вопрос 1 из 10</div>
+			<div class="timer-text" id="timerText">10</div>
+			<div class="timer-container">
+			<div class="timer-bar" id="timerBar"></div>
+			</div>
+            <div class="question-text" id="questionText">palabra</div>
+            
+            <!-- Multiple Choice Options -->
+            <div id="multipleChoiceOptions" class="options hidden">
+                <button class="btn option-btn" onclick="selectAnswer(0)">Вариант 1</button>
+                <button class="btn option-btn" onclick="selectAnswer(1)">Вариант 2</button>
+                <button class="btn option-btn" onclick="selectAnswer(2)">Вариант 3</button>
+                <button class="btn option-btn" onclick="selectAnswer(3)">Вариант 4</button>
+            </div>
+
+            <!-- Manual Input -->
+            <div id="manualInputContainer" class="hidden">
+                <input 
+                    type="text" 
+                    class="answer-input" 
+                    id="manualInput" 
+                    placeholder="Введите ваш ответ..."
+                    onkeypress="if(event.key==='Enter') submitManualAnswer()"
+                >
+                <button class="btn btn-primary" onclick="submitManualAnswer()">Отправить</button>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn btn-back" onclick="exitTest()">← Назад к выбору теста</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             RESULTS SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="resultsScreen" class="results hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h2>Результаты теста</h2>
+            <div class="stats" id="resultsStats">Вы ответили правильно на 8 из 10!</div>
+            <div class="grade" id="resultsGrade">Отлично! 🎉</div>
+            <div style="margin: 30px 0;">
+                <button class="btn btn-primary" onclick="retryTest()">Повторить тест</button>
+                <button class="btn btn-secondary" onclick="backToUnidadMenu()">Назад в меню</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             VERB CONJUGATION MENU
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="verbMenu" class="verb-menu hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1>🔄 Практика спряжения глаголов</h1>
+            <p class="subtitle">Освойте спряжение испанских глаголов</p>
+
+            <div style="margin-top: 30px;">
+                <div class="verb-card" onclick="startVerbPractice('presente')">
+                    <div class="verb-header">
+                        <span class="verb-title">Настоящее время (Presente)</span>
+                        <span class="verb-icon">⏰</span>
+                    </div>
+                    <p style="color: #7f8c8d; margin-top: 10px;">Практика спряжения в настоящем времени</p>
+                </div>
+
+                <div class="verb-card" onclick="startVerbPractice('preterito')">
+                    <div class="verb-header">
+                        <span class="verb-title">Прошедшее время (Pretérito)</span>
+                        <span class="verb-icon">⏮️</span>
+                    </div>
+                    <p style="color: #7f8c8d; margin-top: 10px;">Практика спряжения в прошедшем времени</p>
+                </div>
+            </div>
+
+            <button class="btn btn-back" onclick="showMainMenu()">← Назад в главное меню</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             VERB PRACTICE SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="verbPracticeScreen" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1 id="verbPracticeTitle">Практика настоящего времени</h1>
+            <p class="subtitle" id="verbPracticeSubtitle">Проспрягайте глагол: <strong id="currentVerb">hablar</strong></p>
+
+            <div class="conjugation-container">
+                <div class="conjugation-grid" id="conjugationGrid">
+                    <!-- Will be filled dynamically -->
+                </div>
+
+                <div style="text-align: center; margin-top: 30px;">
+                    <button class="btn btn-primary" onclick="checkConjugations()">Проверить ответы</button>
+                    <button class="btn btn-secondary" onclick="nextVerb()">Следующий глагол</button>
+                    <button class="btn btn-back" onclick="showVerbMenu()">← Назад в меню</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             QA DEVELOPER MODE
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="qaScreen" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1>🧪 Режим разработчика QA</h1>
+            <p class="subtitle">Инструменты для тестирования и отладки</p>
+
+            <div style="margin: 30px 0;">
+                <button class="btn btn-primary" onclick="unlockAllUnidades()">🔓 Разблокировать все Unidades</button>
+                <button class="btn btn-warning" onclick="resetProgress()">🔄 Сбросить весь прогресс</button>
+                <button class="btn btn-secondary" onclick="fillProgress()">📊 Заполнить прогресс до 100%</button>
+                <button class="btn btn-primary" onclick="unlockExam()">🎓 Разблокировать экзамен</button>
+                <button class="btn btn-success" onclick="runQATestsV3()">✅ Запустить QA тесты</button>
+                <button class="btn btn-warning" onclick="viewLocalStorage()">💾 Посмотреть localStorage</button>
+                <button class="btn btn-back" onclick="showMainMenu()">← Назад в главное меню</button>
+            </div>
+
+            <div id="qaOutput" style="margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 10px; font-family: monospace; font-size: 0.9em; max-height: 400px; overflow-y: auto;">
+                Нажмите кнопки выше для запуска тестов
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             GRAMMAR REFERENCE LIST SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="grammarListScreen" class="hidden">
+            <h1>📚 Справочник по грамматике</h1>
+            <p class="subtitle">Выберите правило для изучения</p>
+
+            <!-- Rules Grid (5 per page) -->
+            <div id="grammarRulesContainer" style="margin-top: 30px;">
+                <!-- Rules will be rendered dynamically -->
+            </div>
+
+            <!-- Pagination Controls -->
+            <div id="grammarPagination" style="display: flex; justify-content: center; gap: 15px; margin-top: 30px;">
+                <button class="btn btn-secondary" id="grammarPrevBtn" onclick="grammarPrevPage()">← Назад</button>
+                <span id="grammarPageIndicator" style="display: flex; align-items: center; font-size: 1.1em;">Страница 1 / 1</span>
+                <button class="btn btn-secondary" id="grammarNextBtn" onclick="grammarNextPage()">Вперёд →</button>
+            </div>
+
+            <button class="btn btn-back" onclick="goBackFromGrammar()" style="margin-top: 30px;">← Назад</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             GRAMMAR DETAIL SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="grammarDetailScreen" class="hidden">
+            <h1 id="grammarDetailTitle">Правило грамматики</h1>
+
+            <div id="grammarDetailContent" style="margin-top: 30px;">
+                <!-- Grammar rule content will be rendered dynamically -->
+            </div>
+
+            <!-- Subtopic pagination -->
+            <div id="subtopicPagination" style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 30px;">
+                <button class="btn btn-secondary" id="subtopicPrevBtn" onclick="prevSubtopic()">← Назад</button>
+                <span id="subtopicPageIndicator" style="font-size: 1.1em; font-weight: 600;">Часть 1 / 1</span>
+                <button class="btn btn-secondary" id="subtopicNextBtn" onclick="nextSubtopic()">Вперёд →</button>
+            </div>
+
+            <button class="btn btn-back" onclick="showGrammarList()" style="margin-top: 30px;">← Назад к списку правил</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             GRAMMAR INTERACTIVE MODE SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="grammarInteractiveScreen" class="hidden">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h1 id="interactiveTitle" style="margin-bottom: 10px;">Правило грамматики</h1>
+                <p style="color: #667eea; font-size: 1.1em; font-weight: 600;">▶️ Интерактивный режим</p>
+            </div>
+
+            <div id="interactiveContent" style="margin: 40px auto; padding: 40px; background: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 800px; min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                <!-- Interactive slide content will be rendered here -->
+                <div id="interactiveSlideContent" style="font-size: 1.2em; line-height: 1.8; text-align: center;">
+                    <!-- Content goes here -->
+                </div>
+            </div>
+
+            <!-- Exercise Container (shown when needed) -->
+            <div id="interactiveExercise" class="hidden" style="margin: 40px auto; padding: 30px; background: #f8f9fa; border-radius: 15px; max-width: 800px;">
+                <h3 id="exerciseTitle" style="text-align: center; margin-bottom: 20px;">Упражнение</h3>
+                <div id="exerciseContent">
+                    <!-- Exercise will be rendered here -->
+                </div>
+            </div>
+
+            <button class="btn btn-back" onclick="exitInteractiveMode()" style="margin-top: 30px;">← Выйти из интерактивного режима</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             EXAM SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="examScreen" class="question-container hidden">
+            <div class="progress" id="examProgress">Вопрос 1 из 30</div>
+            <div class="timer-text" id="examTimerText">15</div>
+            <div class="timer-container">
+                <div class="timer-bar" id="examTimerBar"></div>
+            </div>
+
+            <div class="question-card">
+                <h2 id="examQuestionText">Вопрос</h2>
+                <p class="subtitle" id="examCategoryHint" style="color: #666; margin-bottom: 20px;"></p>
+                <div style="display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto;">
+                    <input
+                        type="text"
+                        id="examAnswerInput"
+                        placeholder="Введите перевод на русский..."
+                        style="padding: 15px; font-size: 1.2em; border: 2px solid #ddd; border-radius: 10px; text-align: center;"
+                        onkeypress="if(event.key === 'Enter') submitExamAnswer()"
+                    />
+                    <button class="btn btn-primary" onclick="submitExamAnswer()" style="font-size: 1.1em;">
+                        Ответить
+                    </button>
+                </div>
+            </div>
+
+            <button class="btn btn-back" onclick="confirmExitExam()" style="margin-top: 30px;">Выйти из экзамена</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             BREAK SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="breakScreen" class="question-container hidden">
+            <div style="text-align: center; padding: 40px;">
+                <h1 style="font-size: 3em; margin-bottom: 20px;">☕ Перерыв</h1>
+                <p style="font-size: 1.3em; color: #666; margin-bottom: 40px;">
+                    Отдохните немного перед следующим блоком вопросов
+                </p>
+
+                <div style="font-size: 8em; font-weight: bold; color: #667eea; margin: 40px 0;" id="breakTimerDisplay">
+                    30
+                </div>
+
+                <p style="font-size: 1.1em; color: #999;">
+                    Экзамен автоматически продолжится через...
+                </p>
+
+                <button class="btn btn-primary" onclick="skipBreak()" style="margin-top: 40px; font-size: 1.1em;">
+                    Пропустить перерыв →
+                </button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             EXAM RESULTS SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="examResultsScreen" class="results-container hidden">
+            <h1>🎓 Результаты экзамена</h1>
+
+            <div class="results-summary">
+                <div class="score-circle">
+                    <span id="examScorePercent">0%</span>
+                </div>
+
+                <div class="results-stats">
+                    <p><strong>Правильных ответов:</strong> <span id="examCorrect">0</span> / <span id="examTotal">30</span></p>
+                    <p><strong>Затраченное время:</strong> <span id="examTimeSpent">00:00</span></p>
+                    <p id="examGrade" style="font-size: 1.5em; margin-top: 20px;"></p>
+                </div>
+            </div>
+
+            <div id="examDetailedResults" style="margin-top: 30px;"></div>
+
+            <div style="display: flex; gap: 15px; justify-content: center; margin-top: 30px;">
+                <button class="btn btn-primary" onclick="startExam()">Пройти заново</button>
+                <button class="btn btn-back" onclick="showMainMenu()">На главную</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             FEEDBACK MODAL
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="feedbackModal" class="modal hidden">
+            <div class="modal-content">
+                <h3 id="modalTitle">Правильно! ✅</h3>
+                <p id="modalMessage">Отличная работа!</p>
+                <button class="btn btn-primary" onclick="closeModal()">Продолжить</button>
+            </div>
+        </div>
+    </div>
+
+  <script src="js/app.js"></script> 
+</body>
+</html>

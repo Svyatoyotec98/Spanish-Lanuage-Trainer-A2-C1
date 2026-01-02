@@ -1,0 +1,20 @@
+{
+  "id": "unidad_4",
+  "title": "Unidad 4",
+  "categories": {
+    "sustantivos": [
+      {"spanish": "el ejemplo", "ru": "пример"},
+      {"spanish": "la palabra", "ru": "слово"},
+      {"spanish": "el texto", "ru": "текст"}
+    ],
+    "adjetivos": [
+      {"spanish": "nuevo", "ru": "новый"},
+      {"spanish": "viejo", "ru": "старый"}
+    ],
+    "verbos": [
+      {"spanish": "crear", "ru": "создавать"},
+      {"spanish": "usar", "ru": "использовать"}
+    ],
+    "gramatica": []
+  }
+}

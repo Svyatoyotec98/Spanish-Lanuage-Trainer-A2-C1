@@ -1,0 +1,1125 @@
+{
+  "version": "2025-12-26-v31",
+  "rules": [
+    {
+      "id": "rule_1",
+      "topic": "LA ACENTUACIÓN",
+      "topic_ru": "Ударение",
+      "explanation_ru": "В испанском языке все слова имеют ударный слог (sílaba tónica). В некоторых случаях гласная ударного слога имеет графическое ударение (´), но не всегда.",
+      "subtopics": [
+        {
+          "title_ru": "Правила акцентуации",
+          "explanation_ru": "Чтобы определить, пишется ли слово с графическим ударением, нужно учитывать две вещи: на какие буквы оканчивается слово и позицию ударного слога (считая слоги с конца слова).",
+          "examples": [
+            {
+              "rule": "Если слово заканчивается на гласную (-a, -e, -i, -o, -u), -as, -es, -is, -os, -us, -an, -en, -in, -on, -un",
+              "cases": [
+                "УДАРЕНИЕ НА ПОСЛЕДНЕМ СЛОГЕ (palabras agudas): пишется ударение → can-ción, es-tás, a-quí",
+                "УДАРЕНИЕ НА ПРЕДПОСЛЕДНЕМ СЛОГЕ (palabras llanas): НЕ пишется → ca-sa, li-bro, a-bro, pon-go, pa-ra, a-mi-gos",
+                "УДАРЕНИЕ НА ТРЕТЬЕМ С КОНЦА (palabras esdrújulas): ВСЕГДА пишется → te-lé-fo-no, prác-ti-co, Mé-xi-co"
+              ]
+            },
+            {
+              "rule": "Если слово заканчивается на любую другую букву",
+              "cases": [
+                "УДАРЕНИЕ НА ПОСЛЕДНЕМ СЛОГЕ: НЕ пишется → ven-de-dor, co-mer",
+                "УДАРЕНИЕ НА ПРЕДПОСЛЕДНЕМ СЛОГЕ: пишется ударение → ár-bol, a-zú-car, ál-bum",
+                "УДАРЕНИЕ НА ТРЕТЬЕМ С КОНЦА: ВСЕГДА пишется → te-lé-fo-no"
+              ]
+            }
+          ],
+          "exercise": {
+            "type": "accent-placement",
+            "question": "Как правильно написать слово 'cancion'?<br><br>(Слово заканчивается на -n, ударение на последнем слоге)",
+            "options": ["cancion", "canción", "cáncion", "cancíon"],
+            "correct": 1,
+            "explanation": "Слово заканчивается на -n, ударение на последнем слоге → нужно графическое ударение. Правильно: canción"
+          }
+        },
+        {
+          "title_ru": "Слова из одного слога",
+          "explanation_ru": "Обычно односложные слова не имеют ударения. Но некоторые односложные слова пишутся с ударением, чтобы отличить их от других слов с таким же написанием.",
+          "examples": [
+            "mi (притяжательное) → Mi madre / mí (личное местоимение) → A mí me gusta",
+            "tu (притяжательное) → Tu madre / tú (личное местоимение) → ¿Tú te llamas Marcelo?",
+            "te (местоимение) → ¿Te gusta? / té (существительное) → ¿Quieres té o café?",
+            "el (артикль) → El hijo de Juan / él (личное местоимение) → Él es de Bélgica",
+            "que (союз) → Creo que Jaime está de vacaciones / qué (вопросительное) → ¿Qué quieres?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_2",
+      "topic": "LOS ARTÍCULOS",
+      "topic_ru": "Артикли",
+      "explanation_ru": "В испанском языке существуют определенные (el, la, los, las) и неопределенные (un, una, unos, unas) артикли, а также случаи использования существительных без артикля.",
+      "subtopics": [
+        {
+          "title_ru": "Неопределенные артикли и существительные без артикля",
+          "explanation_ru": "Когда мы говорим о чем-то или о ком-то впервые, используем неопределенные артикли (un, una) или существительное без артикля.",
+          "examples": [
+            "Hay un coche en la esquina. (Есть машина на углу)",
+            "Hay gente en la esquina, ¡qué extraño! (Есть люди на углу, как странно!)",
+            "Hay coches de policía y una ambulancia. (Есть полицейские машины и скорая помощь)"
+          ],
+          "exercise": {
+            "type": "fill-blank",
+            "question": "Выберите правильный вариант:<br><br>Hay ___ coche delante de mi casa.",
+            "options": ["un", "el", "la", "los"],
+            "correct": 0,
+            "explanation": "Используем неопределённый артикль UN, так как говорим о машине впервые."
+          }
+        },
+        {
+          "title_ru": "Определенные артикли",
+          "explanation_ru": "Определенные артикли (el, la, los, las) используются, чтобы снова говорить о человеке или предмете, упомянутом ранее, или в целом о чем-то известном.",
+          "examples": [
+            "Hay un coche rojo delante de tu casa. → Ahora el coche está en la plaza.",
+            "¿Quién es Luis? → Es el padre de Juan. (= У него только один отец)",
+            "El libro está aquí, en la mesa. (= Книга, которую мы знаем)"
+          ]
+        },
+        {
+          "title_ru": "Использование без артикля",
+          "explanation_ru": "Некоторые случаи требуют использования существительного без артикля.",
+          "examples": [
+            "¿Tienes correo electrónico? (У тебя есть электронная почта?)",
+            "Es médico. (Он врач - профессия)",
+            "Hoy es lunes. (Сегодня понедельник - день недели)",
+            "¿Tienes coche? (У тебя есть машина?)"
+          ]
+        },
+        {
+          "title_ru": "Нейтральный артикль LO",
+          "explanation_ru": "Нейтральный артикль lo используется без существительного (в испанском нет существительных среднего рода) для обобщения, для обозначения всех вещей - мужского и женского рода.",
+          "examples": [
+            "Odio los libros antiguos y las películas antiguas → Odio todo lo antiguo. (Ненавижу все старое)",
+            "Lo peor son los verbos. (Худшее - это глаголы)",
+            "Digo lo que pienso. (Говорю то, что думаю)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_3",
+      "topic": "LOS DEMOSTRATIVOS",
+      "topic_ru": "Указательные местоимения",
+      "explanation_ru": "В испанском языке используются три серии указательных местоимений (este, ese, aquel), чтобы различать что-то, что находится здесь (cerca de quien habla - este), что-то, что находится там (cerca de quien escucha - ese), и что-то, что находится далеко (lejos de la conversación - aquel).",
+      "subtopics": [
+        {
+          "title_ru": "Формы указательных местоимений",
+          "explanation_ru": "Указательные местоимения согласуются в роде и числе с существительным.",
+          "examples": [
+            "CERCA (здесь): este libro, esta libreta, estos libros, estas libretas",
+            "AHÍ (там): ese libro, esa libreta, esos libros, esas libretas",
+            "ALLÍ (вон там): aquel libro, aquella libreta, aquellos libros, aquellas libretas"
+          ],
+          "exercise": {
+            "type": "fill-blank",
+            "question": "Выберите правильный вариант:<br><br>___ casa (там, рядом с тобой) es muy grande.",
+            "options": ["Esta", "Esa", "Aquella", "Este"],
+            "correct": 1,
+            "explanation": "Используем ESA для указания на что-то рядом с собеседником (ahí - там). Casa - женский род."
+          }
+        },
+        {
+          "title_ru": "Нейтральные формы: esto, eso, aquello",
+          "explanation_ru": "Помимо форм мужского и женского рода, существуют нейтральные формы (esto, eso, aquello), которые никогда не используются с существительными. Эти формы служат для обозначения чего-то, что мы не знаем, что это такое, или для обозначения вещей разных типов без использования их конкретных названий.",
+          "examples": [
+            "¿Eso qué es: una camiseta larga o un vestido corto? (Это что: длинная футболка или короткое платье?)",
+            "¿Qué compramos para cenar: esto o eso? (Что купим на ужин: это или то?)"
+          ]
+        },
+        {
+          "title_ru": "Разница между qué и cuál",
+          "explanation_ru": "Когда мы не знаем или не хотим сказать, к какому типу вещей что-то принадлежит, спрашиваем с qué и отвечаем нейтральным указательным (esto/eso/aquello). Когда нужно выбрать одну вещь из двух или более одного типа, спрашиваем с cuál/qué + существительное и отвечаем este/a/os/as.",
+          "examples": [
+            "¿Qué desea? → ¡Ah! ¿Una magdalena? → ¿Cuál quiere? → Esta. La más grande.",
+            "Este está en francés, ¿ese también? → No, este no, pero aquellos sí."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_4",
+      "topic": "LOS POSESIVOS",
+      "topic_ru": "Притяжательные местоимения",
+      "explanation_ru": "Притяжательные местоимения используются для идентификации чего-то или кого-то, связывая это с человеком (владельцем). Отношение может быть семейным (mi madre), социальным (mis compañeros de clase), владением (mi coche) или другого типа (mi barrio).",
+      "subtopics": [
+        {
+          "title_ru": "Притяжательные перед существительным",
+          "explanation_ru": "Притяжательные местоимения изменяются в зависимости от владельца (yo → mi casa, tú → tu casa) и согласуются в роде и числе с тем, чем владеют (nuestra casa, sus libros).",
+          "examples": [
+            "mi libro, mi casa, mis libros, mis casas (мой/моя/мои)",
+            "tu libro, tu casa, tus libros, tus casas (твой/твоя/твои)",
+            "su libro, su casa, sus libros, sus casas (его/её/Ваш)",
+            "nuestro libro, nuestra casa, nuestros libros, nuestras casas (наш/наша/наши)",
+            "vuestro libro, vuestra casa, vuestros libros, vuestras casas (ваш/ваша/ваши)",
+            "su libro, su casa, sus libros, sus casas (их/Ваш мн.ч.)"
+          ],
+          "exercise": {
+            "type": "fill-blank",
+            "question": "Выберите правильный вариант:<br><br>___ hermanas viven en Madrid. (Наши сёстры живут в Мадриде)",
+            "options": ["Nuestro", "Nuestra", "Nuestros", "Nuestras"],
+            "correct": 3,
+            "explanation": "Hermanas - женский род множественное число, поэтому используем NUESTRAS."
+          }
+        },
+        {
+          "title_ru": "Особенности использования su/sus",
+          "explanation_ru": "Притяжательные su/sus могут относиться к разным лицам (él, ella, usted, ellos, ellas, ustedes). Поэтому используем их только когда нет возможности путаницы. Если непонятно, кто владелец, используем de + имя.",
+          "examples": [
+            "Esos son Guillermo y su novia, Julia. (Это Гильермо и его девушка Хулия)",
+            "Esta es la casa de Manuel y esa, la de Jorge. (Это дом Мануэля, а то - дом Хорхе)"
+          ]
+        },
+        {
+          "title_ru": "Притяжательные без существительного",
+          "explanation_ru": "Когда используем притяжательные без существительного, они имеют другую форму: mío/a/os/as, tuyo/a/os/as, suyo/a/os/as, nuestro/a/os/as, vuestro/a/os/as, suyo/a/os/as.",
+          "examples": [
+            "¿Esta bolsa es tuya o es mía? (Эта сумка твоя или моя?)",
+            "Estos no son mis zapatos. ¡Son los tuyos! (Это не мои туфли. Это твои!)",
+            "Vienen a cenar dos amigos tuyos. (Придут ужинать двое твоих друзей)"
+          ]
+        },
+        {
+          "title_ru": "Когда НЕ используем притяжательные",
+          "explanation_ru": "Не используем притяжательные, когда говорим о частях собственного тела или о личных вещах (паспорт, машина, ключи), если из контекста ясно, кто владелец.",
+          "examples": [
+            "Me duele la cabeza. (У меня болит голова - НЕ mi cabeza)",
+            "He aparcado el coche cerca del restaurante. (Я припарковал машину - НЕ mi coche)",
+            "¿Tienes el pasaporte? (У тебя есть паспорт? - НЕ tu pasaporte)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_5",
+      "topic": "SER Y ESTAR",
+      "topic_ru": "Глаголы SER и ESTAR",
+      "explanation_ru": "В испанском языке есть два глагола, которые переводятся как 'быть': SER и ESTAR. Они используются в разных ситуациях.",
+      "subtopics": [
+        {
+          "title_ru": "Использование SER",
+          "explanation_ru": "С существительными всегда используется SER для идентификации, определения и описания людей или вещей. Также SER используется с прилагательными или предлогами, которые выражают отношения владения, национальность или происхождение, и с прилагательными, которые выражают характеристики, не зависящие от обстоятельств.",
+          "examples": [
+            "Esta es Laura. (Это Лаура - идентификация)",
+            "Laura es traductora. (Лаура - переводчица - профессия)",
+            "Laura es mi hermana. (Лаура - моя сестра - отношение)",
+            "¿Este es tu libro o el de Laura? (Это твоя книга или Лауры? - владение)",
+            "Esta película es sueca. (Этот фильм шведский - национальность)",
+            "El pastel es de chocolate. (Торт шоколадный - материал)",
+            "El jersey que quiero es azul oscuro. (Свитер, который я хочу, темно-синий - цвет)",
+            "El pastel es grande y redondo. (Торт большой и круглый - размер, форма)",
+            "Mi hermana es más joven que yo. (Моя сестра моложе меня - возраст)"
+          ],
+          "exercise": {
+            "type": "ser-or-estar",
+            "sentence": "Mi hermano ___ médico.",
+            "correct": "ser",
+            "explanation": "Используем SER для профессий. Правильный ответ: Mi hermano ES médico."
+          }
+        },
+        {
+          "title_ru": "Использование ESTAR",
+          "explanation_ru": "С наречиями (bien, mal, cerca, lejos) и с причастиями (enfadado, sentado, roto) всегда используется ESTAR для указания места, позы/положения или физического/эмоционального состояния.",
+          "examples": [
+            "Tu casa está cerca de la escuela. (Твой дом близко от школы - место)",
+            "¿Estás en casa ahora? (Ты сейчас дома? - место)",
+            "Tu amiga está sentada en esa mesa. (Твоя подруга сидит за тем столом - поза)",
+            "Este cuadro está torcido. (Эта картина висит криво - положение)",
+            "Hola, ¿cómo estás? (Привет, как дела? - состояние)",
+            "Estuve resfriada, pero ahora estoy mejor. (Я была простужена, но сейчас лучше - физическое состояние)",
+            "Tu amiga está enfadada porque llegas tarde. (Твоя подруга сердится, потому что ты опаздываешь - эмоциональное состояние)"
+          ]
+        },
+        {
+          "title_ru": "SER и ESTAR с одинаковыми прилагательными",
+          "explanation_ru": "Некоторые прилагательные, используемые для описания (с SER), иногда можно комбинировать с ESTAR, чтобы указать, что что-то произошло, что обстоятельства изменились.",
+          "examples": [
+            "Pepe está más guapo, ¿verdad? → Sí, se ha cortado el pelo y así está mejor. (Пепе стал красивее, правда? - изменение)",
+            "Este pastel está salado, ¿qué has hecho? (Этот торт соленый, что ты сделал? - торты обычно сладкие)",
+            "Soy una persona paciente, pero cuando hago un examen, siempre estoy impaciente por saber la nota. (Я терпеливый человек, но когда сдаю экзамен, всегда нетерпелив узнать оценку)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_6",
+      "topic": "LA COMPARACIÓN",
+      "topic_ru": "Сравнение",
+      "explanation_ru": "Для сравнения в испанском языке используются различные структуры в зависимости от того, что сравнивается: существительные, прилагательные, глаголы или наречия.",
+      "subtopics": [
+        {
+          "title_ru": "Сравнение существительных",
+          "explanation_ru": "Используются конструкции: más + существительное (+ que), tanto/a/os/as + существительное (+ como), menos + существительное (+ que), no... tanto/a/os/as + существительное (+ como).",
+          "examples": [
+            "ПРЕВОСХОДСТВО: Mi casa tiene más habitaciones (que la de mi hermana). (В моем доме больше комнат)",
+            "РАВЕНСТВО: En mi barrio hay tantos coches como en este. (В моем районе столько же машин)",
+            "НЕПОЛНОЦЕННОСТЬ: Vivimos en un barrio con menos coches (que este). (Мы живем в районе с меньшим количеством машин)",
+            "НЕПОЛНОЦЕННОСТЬ: En nuestro barrio no hay tantos coches (como en este). (В нашем районе не так много машин)"
+          ]
+        },
+        {
+          "title_ru": "Сравнение прилагательных",
+          "explanation_ru": "Используются конструкции: más + прилагательное (+ que), tan + прилагательное (+ como), igual de + прилагательное (+ que), menos + прилагательное (+ que), no... tan + прилагательное (+ como).",
+          "examples": [
+            "ПРЕВОСХОДСТВО: Mi habitación es más luminosa (que la de mi hermana). (Моя комната светлее)",
+            "РАВЕНСТВО: Mi casa es tan grande como la tuya. (Мой дом такой же большой, как твой)",
+            "РАВЕНСТВО: Mi casa es igual de grande (que la tuya). (Мой дом такого же размера)",
+            "НЕПОЛНОЦЕННОСТЬ: Vivimos en un barrio menos ruidoso (que este). (Мы живем в менее шумном районе)",
+            "НЕПОЛНОЦЕННОСТЬ: Nuestro barrio no es tan ruidoso (como este). (Наш район не такой шумный)"
+          ]
+        },
+        {
+          "title_ru": "Особые формы сравнения",
+          "explanation_ru": "Некоторые прилагательные и наречия имеют специальные формы сравнения.",
+          "examples": [
+            "más grande → mayor (больше по возрасту)",
+            "más pequeño/a → menor (меньше)",
+            "más bueno/a → mejor (лучше)",
+            "más malo/a → peor (хуже)",
+            "más bien → mejor (лучше)",
+            "más mal → peor (хуже)"
+          ]
+        },
+        {
+          "title_ru": "Превосходная степень",
+          "explanation_ru": "Превосходная степень определяет место, человека или вещь как имеющие максимальную степень качества (самый большой, самый маленький) в группе.",
+          "examples": [
+            "Esta es la habitación más luminosa de la casa. (Это самая светлая комната в доме)",
+            "Es la mejor habitación de la casa. (Это лучшая комната в доме)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_7",
+      "topic": "LOS PRONOMBRES PERSONALES",
+      "topic_ru": "Личные местоимения",
+      "explanation_ru": "Личные местоимения - это слова, которые используются для обозначения людей, которые говорят, людей, которые слушают, или людей/предметов, которых нет в разговоре. Форма личных местоимений меняется в зависимости от места в предложении и функции.",
+      "subtopics": [
+        {
+          "title_ru": "Местоимения-подлежащие",
+          "explanation_ru": "В испанском языке окончание глагола согласуется с подлежащим, поэтому личные местоимения в функции подлежащего используются редко. Они используются только когда нужно выделить человека, для сравнения или противопоставления.",
+          "examples": [
+            "yo (я), tú/vos/usted (ты/Вы), él/ella (он/она)",
+            "nosotros/nosotras (мы), vosotros/vosotras/ustedes (вы), ellos/ellas (они)",
+            "Yo tengo dieciocho años. ¿Y vosotros? (Мне 18 лет. А вам?)",
+            "Yo tengo diecinueve y él tiene veinte. (Мне 19, а ему 20)"
+          ]
+        },
+        {
+          "title_ru": "Местоимения в возвратных глаголах",
+          "explanation_ru": "Некоторые глаголы, такие как llamarse, levantarse, ducharse, всегда строятся с местоимениями me, te, se, nos, os, se. Это возвратные глаголы.",
+          "examples": [
+            "me levanto (я встаю), te levantas (ты встаешь), se levanta (он/она встает)",
+            "nos levantamos (мы встаем), os levantáis/se levantan (вы встаете), se levantan (они встают)",
+            "¿Cómo te llamas? (Как тебя зовут?)",
+            "Me ducho por la mañana. (Я принимаю душ утром)"
+          ]
+        },
+        {
+          "title_ru": "Местоимения прямого дополнения",
+          "explanation_ru": "Переходные глаголы выражают то, что подлежащее делает с объектом или другим человеком (прямое дополнение). Местоимения прямого дополнения: me, te, lo/la, nos, os, los/las.",
+          "examples": [
+            "El año pasado pintamos el salón, lo pintamos de color verde. (В прошлом году мы покрасили гостиную в зеленый цвет)",
+            "Ayer Ana vio a Juan en la calle, lo llamó, pero él no la vio. (Вчера Ана видела Хуана на улице, позвала его, но он её не увидел)",
+            "¿Me dejas el coche este fin de semana? (Одолжишь мне машину на выходные?)"
+          ]
+        },
+        {
+          "title_ru": "Формы обращения: tú, vos, usted, ustedes",
+          "explanation_ru": "Usted используется как форма уважения или для обозначения социальной дистанции. Tú и vos используются для неформального обращения. Ustedes используется для обращения к нескольким людям. Vosotros/as используется только в Испании для неформального обращения к группе.",
+          "examples": [
+            "¿Usted tiene hora? (У Вас есть время? - формально)",
+            "¿Tú tienes hora? / ¿Vos tenés hora? (У тебя есть время? - неформально)",
+            "¿Ustedes trabajan aquí? (Вы работаете здесь? - множественное число)",
+            "¿Vosotros trabajáis aquí? (Вы работаете здесь? - только в Испании, неформально)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_8",
+      "topic": "PRONOMBRES DE OBJETO DIRECTO",
+      "topic_ru": "Местоимения прямого дополнения",
+      "explanation_ru": "Местоимения прямого дополнения (lo, la, los, las) используются, когда по контексту уже ясно, какой объект выполняет функцию прямого дополнения, и мы не хотим его повторять.",
+      "subtopics": [
+        {
+          "title_ru": "Формы местоимений прямого дополнения",
+          "explanation_ru": "Местоимения прямого дополнения изменяются по роду и числу в зависимости от замещаемого объекта.",
+          "examples": [
+            "ЕДИНСТВЕННОЕ ЧИСЛО: lo (мужской род), la (женский род)",
+            "МНОЖЕСТВЕННОЕ ЧИСЛО: los (мужской род), las (женский род)",
+            "Me gusta mucho este abrigo. Lo llevo siempre. (Мне очень нравится это пальто. Я ношу его всегда)",
+            "Me gusta mucho esta chaqueta. La llevo siempre. (Мне очень нравится эта куртка. Я ношу её всегда)",
+            "Me gustan mucho estos zapatos. Los llevo siempre. (Мне очень нравятся эти туфли. Я ношу их всегда)",
+            "Me gustan mucho estas sandalias. Las llevo siempre. (Мне очень нравятся эти сандалии. Я ношу их всегда)"
+          ]
+        },
+        {
+          "title_ru": "Использование местоимений",
+          "explanation_ru": "Обычно не используется местоимение и прямое дополнение в одной фразе. Обе вещи используются только если прямое дополнение стоит перед глаголом.",
+          "examples": [
+            "¿Tienes el pasaporte? → Sí, lo llevo en la maleta. (У тебя есть паспорт? → Да, я несу его в чемодане)",
+            "Y las tarjetas de crédito, ¿las tienes tú? (А кредитные карты, у тебя они есть?)",
+            "El libro, lo necesito para mi clase. (Книгу мне нужна для урока - прямое дополнение перед глаголом)",
+            "Los libros, los necesito para mi clase. (Книги мне нужны для урока)",
+            "La libreta, la necesito para mi clase. (Тетрадь мне нужна для урока)",
+            "Las libretas, las necesito para mi clase. (Тетради мне нужны для урока)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_9",
+      "topic": "PRONOMBRES DE OI CON GUSTAR",
+      "topic_ru": "Местоимения косвенного дополнения с GUSTAR",
+      "explanation_ru": "Некоторые глаголы, как gustar и encantar, которые выражают чувства и мнения о вещах, людях или действиях, имеют особую структуру. Человек, имеющий мнение или испытывающий чувство, выражается местоимением косвенного дополнения.",
+      "subtopics": [
+        {
+          "title_ru": "Структура с глаголами типа GUSTAR",
+          "explanation_ru": "Человек выражается местоимением косвенного дополнения (me, te, le, nos, os, les) и с помощью a + имя/местоимение. Вещь или действие, вызывающее чувство, является подлежащим и согласуется с глаголом.",
+          "examples": [
+            "(A mí) me gusta el cine. (Мне нравится кино - ед.число)",
+            "(A ti/vos) te gusta ir al cine. (Тебе нравится ходить в кино - инфинитив)",
+            "(A él/ella/usted) le gusta el cine. (Ему/ей/Вам нравится кино)",
+            "(A nosotros/as) nos gustan las películas de amor. (Нам нравятся фильмы о любви - мн.число)",
+            "(A vosotros/as) os gustan las películas. (Вам нравятся фильмы)",
+            "(A ellos/ellas/ustedes) les gustan las películas. (Им/Вам нравятся фильмы)",
+            "No me gusta el golf, pero me encantan los deportes de equipo. (Мне не нравится гольф, но я обожаю командные виды спорта)"
+          ]
+        },
+        {
+          "title_ru": "Обязательность местоимения",
+          "explanation_ru": "В этих глаголах местоимение косвенного дополнения обязательно и используется всегда. В отличие от этого, использование a + ударное местоимение не обязательно.",
+          "examples": [
+            "A mí no me gusta este plato. ¿A ti te gusta? (Мне не нравится это блюдо. А тебе?)",
+            "A mí tampoco, pero a María le encanta. (Мне тоже нет, но Марии очень нравится)",
+            "Pablo es muy aventurero, a él le encanta viajar solo. (Пабло очень предприимчивый, ему нравится путешествовать одному)",
+            "¿Qué aficiones tenéis? → A mí me encanta el teatro. ¿Y a ti? (Какие у вас увлечения? → Я обожаю театр. А ты?)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_10",
+      "topic": "PRONOMBRES DE OI CON DAR",
+      "topic_ru": "Местоимения косвенного дополнения с DAR",
+      "explanation_ru": "Некоторые глаголы, как dar, prestar или pedir, функционируют так, что субъект передает объект другому лицу. Лицо, получающее этот объект, является косвенным дополнением.",
+      "subtopics": [
+        {
+          "title_ru": "Структура с глаголами типа DAR",
+          "explanation_ru": "Лицо, получающее объект, выражается местоимением косвенного дополнения (me, te, le, nos, os, les) и с помощью a + имя/местоимение.",
+          "examples": [
+            "(A mí) me → No me diste el dinero de la entrada. (Ты не дал мне деньги за вход)",
+            "(A ti) te → ¿Te puedo pedir una cosa? (Могу я попросить у тебя одну вещь?)",
+            "(A él/ella/usted) le → Le pediré el dinero (a Ana/a él/a usted). (Я попрошу деньги у Аны/у него/у Вас)",
+            "(A nosotros/as) nos → Carmen nos prestó su casa este verano. (Кармен одолжила нам свой дом этим летом)",
+            "(A vosotros/as) os → Si queréis, os presto mi coche. (Если хотите, я одолжу вам свою машину)",
+            "(A ellos/ellas/ustedes) les → A los chicos no les daré más chocolate. (Мальчикам я больше не дам шоколада)"
+          ]
+        },
+        {
+          "title_ru": "Примеры использования",
+          "explanation_ru": "Глаголы dar (давать), prestar (одалживать), pedir (просить) и другие подобные следуют этой структуре.",
+          "examples": [
+            "Le presté mi coche a Juan para el fin de semana. (Я одолжил свою машину Хуану на выходные)",
+            "¿Me das un vaso de agua? (Дашь мне стакан воды?)",
+            "Martín le da un vaso de agua a su hija. (Мартин дает стакан воды своей дочери)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_11",
+      "topic": "PRONOMBRES PERSONALES DETRÁS DE PREPOSICIÓN",
+      "topic_ru": "Местоимения после предлогов",
+      "explanation_ru": "После предлогов (a, de, con, en, para, por...) используется специальная форма местоимений, называемых ударными местоимениями (pronombres tónicos).",
+      "subtopics": [
+        {
+          "title_ru": "Формы местоимений после предлогов",
+          "explanation_ru": "Личные местоимения после предлогов имеют особые формы.",
+          "examples": [
+            "1ª persona singular: mí → A mí me encanta el cine, ¿y a ti? / ¿Esto es para mí? ¡Gracias!",
+            "2ª persona singular: ti, vos, usted → ¿A ti/vos te gusta el cine? / Esto es para ti/para vos/para usted",
+            "3ª persona singular: él, ella → ¿A ella le gusta el cine? / El regalo es para él / El sábado cenamos con ella",
+            "1ª persona plural: nosotros, nosotras → A nosotros nos gusta el cine / ¿Esto es para nosotras? / El sábado Alicia cena con nosotros",
+            "2ª persona plural: vosotros, vosotras, ustedes → ¡Feliz cumpleaños! Esto es para ustedes/vosotras",
+            "3ª persona plural: ellos, ellas → ¿A ellas les gusta el cine? / ¿Están aquí tus padres? Esto es para ellos / Hoy cenamos con ellos"
+          ]
+        },
+        {
+          "title_ru": "Особые формы с предлогом CON",
+          "explanation_ru": "С предлогом CON используются специальные формы: CONMIGO и CONTIGO.",
+          "examples": [
+            "CON + MÍ = CONMIGO → El lunes comes con ella, pero el sábado cenas conmigo",
+            "CON + TI = CONTIGO → El lunes como con ella, pero el sábado ceno contigo",
+            "¿Vienes conmigo o vas con él? (Идёшь со мной или с ним?)",
+            "Voy contigo. (Иду с тобой)",
+            "С остальными местоимениями: con él, con ella, con nosotros, con ustedes, con ellos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_12",
+      "topic": "POSICIÓN DE LOS PRONOMBRES",
+      "topic_ru": "Позиция местоимений",
+      "explanation_ru": "Местоимения ставятся всегда перед спрягаемым глаголом, но с перифразами (perífrasis) есть особые правила.",
+      "subtopics": [
+        {
+          "title_ru": "Позиция с обычными глаголами",
+          "explanation_ru": "Местоимения всегда ставятся ПЕРЕД спрягаемым глаголом.",
+          "examples": [
+            "Me despierto pronto. (Я просыпаюсь рано)",
+            "Me gusta leer. (Мне нравится читать)",
+            "Te llamas María. (Тебя зовут Мария)",
+            "Lo necesito. (Мне это нужно)"
+          ]
+        },
+        {
+          "title_ru": "Позиция с перифразами (tener que, querer, poder, estar + gerundio)",
+          "explanation_ru": "В перифразах типа tener que + инфинитив, querer + инфинитив, poder + инфинитив, saber + инфинитив или estar + герундий местоимения могут стоять ПЕРЕД спрягаемым глаголом ИЛИ ПОСЛЕ инфинитива/герундия (слитно), но НИКОГДА между ними и НИКОГДА дважды.",
+          "examples": [
+            "✓ Me tengo que levantar pronto mañana. / ✓ Tengo que levantarme pronto mañana.",
+            "✗ Me tengo que levantarme / ✗ Tengo que me levantar",
+            "✓ ¿Te quieres despertar pronto mañana? / ✓ ¿Quieres despertarte pronto mañana?",
+            "✗ ¿Te quieres despertarte? / ✗ ¿Quieres te despertar?",
+            "✓ ¿La comida? La estoy preparando ahora. / ✓ ¿La comida? Estoy preparándola ahora.",
+            "✗ ¿La comida? Estoy la preparando / ✗ ¿La comida? La estoy preparándola"
+          ]
+        },
+        {
+          "title_ru": "Позиция с HAY QUE и с pretérito perfecto",
+          "explanation_ru": "С конструкцией hay que + инфинитив местоимения идут ВСЕГДА ПОСЛЕ инфинитива. С pretérito perfecto местоимение ВСЕГДА перед глаголом haber.",
+          "examples": [
+            "HAY QUE: ✓ ¿La comida? Hay que prepararla pronto. ✗ ¿La comida? La hay que preparar",
+            "PRETÉRITO PERFECTO: ✓ Me he levantado tarde. ✗ He me levantado tarde. ✗ He levantadome tarde."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_13",
+      "topic": "LOS INTERROGATIVOS",
+      "topic_ru": "Вопросительные слова",
+      "explanation_ru": "Вопросительные слова (cómo, dónde, cuándo, qué...) используются для вопросов с открытым ответом, то есть вопросов, на которые нельзя ответить просто 'sí' или 'no'.",
+      "subtopics": [
+        {
+          "title_ru": "Основные вопросительные слова",
+          "explanation_ru": "Все вопросительные слова имеют графическое ударение (акцент). В испанском вопросительные и восклицательные знаки ставятся в начале И в конце фразы (¿...?, ¡...!).",
+          "examples": [
+            "QUIÉN / QUIÉNES (кто): ¿Con quién fuiste al cine? (С кем ты ходил в кино?)",
+            "CUÁNTO/A/OS/AS (сколько): ¿Cuánto es? / ¿Cuántos años tienes? / ¿Cuántas hermanas tienes?",
+            "DÓNDE (где): ¿Dónde está Michoacán? / ¿De dónde eres? → De Sevilla.",
+            "CUÁNDO (когда): ¿Cuándo llega Enrique?",
+            "CÓMO (как): ¿Cómo estás? / ¿Cómo te llamas? / ¿Cómo se escribe \"ventana\"?",
+            "POR QUÉ (почему): ¿Por qué estudias ruso?"
+          ]
+        },
+        {
+          "title_ru": "Предлоги с вопросительными словами",
+          "explanation_ru": "Когда есть предлог, он ставится ПЕРЕД вопросительным словом. В ответе повторяется та же самая предлог.",
+          "examples": [
+            "¿DE dónde eres? → DE Sevilla. (Откуда ты? → Из Севильи)",
+            "¿SOBRE qué trató la conferencia? → SOBRE reciclaje. (О чём была конференция? → О переработке)",
+            "¿HASTA cuándo te quedas? → HASTA el martes. (До какого времени останешься? → До вторника)",
+            "¿PARA cuántas personas es el pastel? → PARA ocho como máximo. (На скольких человек торт? → На восьмерых максимум)"
+          ]
+        },
+        {
+          "title_ru": "Вопросы с закрытым ответом (sí/no)",
+          "explanation_ru": "Вопросы, на которые отвечают 'sí' или 'no', формируются так же, как утвердительные фразы, просто меняется интонация.",
+          "examples": [
+            "Утверждение: Edu va mucho a la playa. (Эду часто ходит на пляж)",
+            "Вопрос: ¿Edu va mucho a la playa? (Эду часто ходит на пляж?)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_14",
+      "topic": "QUÉ Y QUÉ + SUSTANTIVO, CUÁL / CUÁLES",
+      "topic_ru": "Qué vs Cuál/Cuáles",
+      "explanation_ru": "Для вопросов о типе вещи без конкретизации используется QUÉ. Когда нужно спросить о конкретной вещи из набора, используется QUÉ + существительное или CUÁL/CUÁLES.",
+      "subtopics": [
+        {
+          "title_ru": "Использование QUÉ",
+          "explanation_ru": "QUÉ используется для вопросов о типе вещи, без конкретизации и без ссылки на существительное. Также QUÉ используется для вопросов о действиях.",
+          "examples": [
+            "ВОПРОС О ТИПЕ: ¿Qué compro para la fiesta? → Bebidas o patatas fritas. (Что купить на вечеринку?)",
+            "¿Qué es el atún? → Un pescado. (Что такое тунец? → Рыба)",
+            "ВОПРОС О ДЕЙСТВИЯХ: ¿Qué quieres hacer esta tarde? → Podemos ir al cine, ¿no? (Что хочешь делать сегодня вечером?)"
+          ]
+        },
+        {
+          "title_ru": "Использование QUÉ + существительное или CUÁL/CUÁLES",
+          "explanation_ru": "Когда хотим спросить о конкретной вещи из набора (знаем, какой это тип вещи), используем QUÉ + существительное или CUÁL / CUÁLES.",
+          "examples": [
+            "QUÉ + существительное: ¿Qué zapatos te gustan más, los negros o los blancos? → Los negros. (Какие туфли тебе больше нравятся?)",
+            "CUÁL: ¿Cuál es tu apellido? → Goicoechea. (Какая твоя фамилия?)",
+            "CUÁL: ¿Cuál es la moneda de México? → El peso, ¿no? (Какая валюта в Мексике?)",
+            "В некоторых вариантах также говорят CUÁL/CUÁLES + существительное: ¿Cuáles zapatos te gustan más?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_15",
+      "topic": "PREPOSICIONES: SITUAR EN UN LUGAR",
+      "topic_ru": "Предлоги места",
+      "explanation_ru": "Предлоги и наречия места используются для указания положения предметов и людей в пространстве.",
+      "subtopics": [
+        {
+          "title_ru": "Основные предлоги места",
+          "explanation_ru": "Для указания местоположения используются различные предлоги и наречия.",
+          "examples": [
+            "DEBAJO (DE...) - под: Encontré la pelota debajo de la cama. (Нашёл мяч под кроватью)",
+            "ENCIMA (DE...) - на, над: ¿Pongo las flores encima de la mesa o al lado de la ventana?",
+            "DETRÁS (DE...) - позади, за",
+            "DELANTE (DE...) - перед",
+            "A LA DERECHA (DE...) - справа от",
+            "A LA IZQUIERDA (DE...) - слева от",
+            "AL LADO (DE...) - рядом с",
+            "ENTRE... Y... - между: El libro está entre el diccionario y la libreta",
+            "EN EL CENTRO (DE...) - в центре",
+            "ALREDEDOR (DE...) - вокруг: Hay árboles alrededor de la casa",
+            "EN MEDIO (DE...) - посередине",
+            "DENTRO (DE...) - внутри: Deja el pastel dentro de la nevera, entre las dos botellas de leche"
+          ]
+        },
+        {
+          "title_ru": "Опущение точки отсчёта и использование EN",
+          "explanation_ru": "Когда точка отсчёта уже упоминалась или ясна из контекста, можно не указывать de + существительное. Но с ENTRE всегда нужна точка отсчёта. Предлог EN - самый простой способ указать местоположение.",
+          "examples": [
+            "ОПУЩЕНИЕ: ¿Ves la mesa? Tu bolso está debajo. (Видишь стол? Твоя сумка под [ним])",
+            "С ENTRE обязательно: Mi ropa está en el armario, creo que tu abrigo está entre esa ropa. ✗ Tu abrigo está entre.",
+            "EN вместо ENCIMA/DENTRO: El plato está en la mesa. (= Encima de la mesa)",
+            "El plato está en el cajón. (= Dentro del cajón)",
+            "Tu regalo está en esa caja. (= Dentro de esa caja)",
+            "С ПОВЕРХНОСТЯМИ (suelo, techo, pared, calle) используется EN: La alfombra está en el suelo. ✗ La alfombra está encima del suelo",
+            "La lámpara está en el techo. (Лампа на потолке)",
+            "El cuadro está en la pared. (Картина на стене)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_16",
+      "topic": "DISTANCIA",
+      "topic_ru": "Расстояние",
+      "explanation_ru": "Для выражения расстояния используются различные конструкции с ESTAR и предлогами.",
+      "subtopics": [
+        {
+          "title_ru": "Выражения расстояния",
+          "explanation_ru": "Расстояние выражается с помощью ESTÁ + предлог/наречие + de aquí/de + место.",
+          "examples": [
+            "ESTÁ A + время/метры + DE aquí/DE + место:",
+            "La casa está a 5 minutos de la playa. (Дом в 5 минутах от пляжа)",
+            "La casa está a 300 metros del árbol. (Дом в 300 метрах от дерева)",
+            "ESTÁ + наречие расстояния + DE aquí/DE + место:",
+            "La casa está cerca de la playa. (Дом близко от пляжа)",
+            "La casa está lejos de la ciudad. (Дом далеко от города)"
+          ]
+        },
+        {
+          "title_ru": "Градация расстояния",
+          "explanation_ru": "Существуют различные степени выражения расстояния - от очень близко до очень далеко.",
+          "examples": [
+            "ESTÁ aquí mismo (прямо здесь)",
+            "ESTÁ aquí al lado (здесь рядом)",
+            "ESTÁ muy cerca de aquí/de la universidad (очень близко отсюда/от университета)",
+            "ESTÁ bastante cerca (довольно близко)",
+            "ESTÁ un poco lejos (немного далеко)",
+            "ESTÁ bastante lejos (довольно далеко)",
+            "ESTÁ muy lejos (очень далеко)",
+            "ESTÁ a (unos) 20 minutos / (unos) 200 metros de aquí (примерно в 20 минутах / 200 метрах отсюда)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_17",
+      "topic": "MOVIMIENTO",
+      "topic_ru": "Движение",
+      "explanation_ru": "Для выражения движения используются предлоги DE...A, POR, HASTA.",
+      "subtopics": [
+        {
+          "title_ru": "Предлоги движения",
+          "explanation_ru": "Различные предлоги выражают разные типы движения.",
+          "examples": [
+            "DE... A... (от... до...): Todos los domingos vamos de casa a la playa. (Каждое воскресенье мы едем из дома на пляж)",
+            "POR (по, через): Me gusta pasear por la playa. (Мне нравится гулять по пляжу)",
+            "HASTA (до): Cuando vamos hasta la playa pasamos por el bosque. (Когда мы идём до пляжа, мы проходим через лес)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_18",
+      "topic": "SITUAR EN EL TIEMPO",
+      "topic_ru": "Предлоги времени",
+      "explanation_ru": "Предлоги времени используются для указания времени действия, периода времени и его границ.",
+      "subtopics": [
+        {
+          "title_ru": "Указание точного времени",
+          "explanation_ru": "Для указания конкретного часа, дня, месяца или года используются предлоги A, EL, EN, POR.",
+          "examples": [
+            "A + час (de la mañana/tarde/noche): Me levanto a las ocho de la mañana. / Hicimos una pausa para comer a la una.",
+            "AL mediodía: Cerrábamos la tienda al mediodía.",
+            "POR + часть дня: No voy a trabajar por la tarde. / Me levanté tarde por la mañana. / Prefiero estudiar por la noche.",
+            "EL + день недели / день месяца: Vamos a hacer el examen el jueves. / Terminan las clases el viernes 6 de junio.",
+            "EL + день месяца (de + año): Llegué a Barcelona el 3 de agosto de 2019.",
+            "EN + месяц/сезон/год: Mi cumpleaños es en abril, en primavera. / La historia empezó en 2010.",
+            "EN + месяц (de + año): Nació en noviembre de 2003."
+          ]
+        },
+        {
+          "title_ru": "Ограничение периода времени",
+          "explanation_ru": "Для указания начала и конца периода используются DE...A или DESDE...HASTA.",
+          "examples": [
+            "DE + начало + A + конец: Trabajamos de 9 h a 18 h. / Trabajé de lunes a domingo para acabar este proyecto. / Estudiamos español de septiembre a enero.",
+            "DESDE + начало + HASTA + конец: Trabajamos desde las 9 h hasta las 18 h. / Trabajé desde el lunes hasta el domingo. / Estudiamos español desde septiembre hasta enero.",
+            "DESDE...HASTA с полной датой: Estuvimos juntas desde las 9 h del lunes 10 de marzo hasta las 12 h del domingo 17 h.",
+            "Только начало или конец (с DESDE/HASTA): Trabajo hasta las 20 h; si quieres, después vamos a cenar. / Estoy en Barcelona desde el lunes y todavía no he ido a la playa."
+          ]
+        },
+        {
+          "title_ru": "Период до настоящего момента",
+          "explanation_ru": "Когда период времени продолжается до текущего момента, выражаем только начало с DESDE или DESDE HACE.",
+          "examples": [
+            "DESDE + начало (las + час / el + день / mes...): Te estoy esperando desde las ocho. / Tengo una gata desde enero.",
+            "DESDE + hace + количество времени: Trabajamos aquí desde hace tres meses. (Мы работаем здесь уже три месяца)"
+          ]
+        },
+        {
+          "title_ru": "Выражения относительного времени",
+          "explanation_ru": "Для указания времени относительно момента речи используются специальные выражения.",
+          "examples": [
+            "MAÑANA: Mañana vamos a ir a la playa, ¿quieres venir? (Завтра)",
+            "DENTRO DE + время: El examen termina dentro de diez minutos. / Tengo que volver dentro de un mes. (Через)",
+            "HACE + время: Terminé la carrera hace tres años. (Назад)",
+            "LA SEMANA PASADA: Fui al dentista la semana pasada. (На прошлой неделе)",
+            "EL MES QUE VIENE: El mes que viene empieza el verano. (В следующем месяце)",
+            "PASADO MAÑANA: Pasado mañana tenemos el examen. (Послезавтра)",
+            "LA PRÓXIMA SEMANA: La próxima semana tengo una entrevista. (На следующей неделе)",
+            "AHORA: Ahora me duele la cabeza. (Сейчас)",
+            "HOY: Hoy he trabajado demasiadas horas. (Сегодня)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_19",
+      "topic": "LA FRECUENCIA",
+      "topic_ru": "Частота",
+      "explanation_ru": "Для выражения частоты действий используются различные наречия и выражения.",
+      "subtopics": [
+        {
+          "title_ru": "Выражения с конкретной частотой",
+          "explanation_ru": "Используется конструкция: количество + VEZ/VECES + A + единица времени.",
+          "examples": [
+            "UNA VEZ al día / a la semana / al mes / al año: Voy al gimnasio una vez al mes. (Хожу в спортзал раз в месяц)",
+            "DOS VECES al día: Me lavo los dientes tres veces al día. (Чищу зубы три раза в день)",
+            "TRES VECES a la semana: Tengo clase cuatro veces a la semana. (У меня занятия четыре раза в неделю)",
+            "VARIAS VECES al año: Visito a mi familia varias veces al año. (Навещаю семью несколько раз в год)"
+          ]
+        },
+        {
+          "title_ru": "Наречия частоты",
+          "explanation_ru": "Наречия частоты показывают, как часто происходит действие, без указания точного количества раз.",
+          "examples": [
+            "SIEMPRE (всегда): Siempre hago los deberes por la noche.",
+            "CASI SIEMPRE (почти всегда): Estudio por la noche casi siempre.",
+            "MUY A MENUDO (очень часто): Muy a menudo pregunto dudas a mi profesor.",
+            "A MENUDO (часто): Hacemos exámenes a menudo.",
+            "NORMALMENTE (обычно): Normalmente me despierto pronto.",
+            "A VECES (иногда): A veces me levanto de mal humor.",
+            "CASI NUNCA (почти никогда): No como pescado casi nunca. / Casi nunca como pescado.",
+            "NUNCA / NO...NUNCA (никогда): Nunca llevo el ordenador a clase. / No llevo el ordenador a clase nunca."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_20",
+      "topic": "LOS CONECTORES",
+      "topic_ru": "Союзы и связки",
+      "explanation_ru": "Союзы и связующие слова используются для соединения элементов в предложении и между предложениями.",
+      "subtopics": [
+        {
+          "title_ru": "Добавление информации: Y, TAMBIÉN, ADEMÁS",
+          "explanation_ru": "Для добавления элементов или информации используются Y (и), TAMBIÉN (также), ADEMÁS (кроме того).",
+          "examples": [
+            "Y (и) - для двух элементов в одной фразе: En mi barrio hay un teatro y dos cines. / Para comer, quiero una ensalada y un bocadillo.",
+            "TAMBIÉN (также) - для добавления в другой фразе: En mi barrio hay un teatro y dos cines. También hay dos escuelas.",
+            "TAMBIÉN - для совпадения с другим человеком: A mí me gusta el cine europeo. → A mí también. / Paola siempre hace los deberes. → Yo también.",
+            "ADEMÁS (кроме того) - добавляет второй элемент, усиливающий первый: Es un restaurante muy bonito y, además, los camareros son muy simpáticos.",
+            "ВНИМАНИЕ: когда слово после Y начинается с I или HI, вместо Y используем E: Javier e Ignacio (но: Ignacio y Javier)"
+          ]
+        },
+        {
+          "title_ru": "Добавление отрицательной информации: NI, TAMPOCO",
+          "explanation_ru": "Для добавления отрицательных элементов используются NI (ни) и TAMPOCO (тоже нет).",
+          "examples": [
+            "NI (ни) - для двух отрицательных элементов в одной фразе: En mi barrio no hay teatro ni cines. / Para comer no quiero carne ni pescado.",
+            "TAMPOCO (тоже нет) - для добавления отрицания в другой фразе: En mi barrio no hay cines; tampoco hay teatros. / No quiero carne ni pescado. Tampoco quiero huevos.",
+            "TAMPOCO - для совпадения с отрицанием: A mí no me gusta el cine europeo. → A mí tampoco. / Paola no hace nunca los deberes. → Yo tampoco.",
+            "NO (нет) - для несовпадения: A mí me gusta el cine europeo. → A mí no. / Paola siempre hace los deberes. → Yo no. Yo los hago a veces.",
+            "SÍ (да) - для несогласия с отрицанием: A mí no me gusta el cine europeo. → A mí sí, me encanta. / Paola nunca hace los deberes. → Yo sí. Los hago siempre."
+          ]
+        },
+        {
+          "title_ru": "Альтернатива: O",
+          "explanation_ru": "Союз O используется для представления альтернатив, из которых нужно выбрать только одну.",
+          "examples": [
+            "¿Prefieres carne o pescado? → Carne para mí, gracias. (Предпочитаешь мясо или рыбу?)",
+            "Podemos ir al cine o a cenar. → ¿Pueden ser las dos cosas? Primero vamos al cine y después cenamos.",
+            "ВНИМАНИЕ: когда слово после O начинается с O или HO, вместо O используем U: No sé si quiere este u otro."
+          ]
+        },
+        {
+          "title_ru": "Противопоставление: PERO, EN CAMBIO",
+          "explanation_ru": "PERO (но) вводит информацию, противоречащую ожиданиям. EN CAMBIO (зато, напротив) указывает на контраст.",
+          "examples": [
+            "PERO (но): Soy japonesa, pero hablo español con mi familia. (Я японка, но говорю по-испански с семьёй)",
+            "Come mucho, pero está muy delgado. (Он много ест, но очень худой)",
+            "Este supermercado es muy bueno, pero es muy caro. (Этот супермаркет очень хороший, но очень дорогой)",
+            "EN CAMBIO (зато, напротив): Mi hermana y yo somos muy diferentes. Yo tengo el pelo muy negro y corto; en cambio, ella lo tiene rubio y largo. (У меня волосы очень чёрные и короткие; зато у неё они светлые и длинные)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_21",
+      "topic": "LOS VERBOS",
+      "topic_ru": "Глаголы",
+      "explanation_ru": "В испанском языке существуют три спряжения глаголов, различающихся окончанием инфинитива: -AR, -ER, -IR.",
+      "subtopics": [
+        {
+          "title_ru": "Структура глагола и три спряжения",
+          "explanation_ru": "В глаголе различают два элемента: основу (raíz) - где находится значение, и окончание (terminación) - где информация о времени и лице. Три спряжения: -AR (первое), -ER (второе), -IR (третье).",
+          "examples": [
+            "ESTUDIAR: estudi- (основа) + -ar (окончание первого спряжения)",
+            "LEER: le- (основа) + -er (окончание второго спряжения)",
+            "VIVIR: viv- (основа) + -ir (окончание третьего спряжения)"
+          ]
+        },
+        {
+          "title_ru": "Presente de Indicativo - формы",
+          "explanation_ru": "Окончания настоящего времени изъявительного наклонения. Ударный слог (подчёркнут) меняется: иногда в основе, иногда в окончании.",
+          "examples": [
+            "-AR: (yo) canto, (tú/vos) cantas/cantás, (él/ella/usted) canta, (nosotros/as) cantamos, (vosotros/as) cantáis, (ellos/ellas/ustedes) cantan",
+            "-ER: (yo) leo, (tú/vos) lees/leés, (él/ella/usted) lee, (nosotros/as) leemos, (vosotros/as) leéis, (ellos/ellas/ustedes) leen",
+            "-IR: (yo) vivo, (tú/vos) vives/vivís, (él/ella/usted) vive, (nosotros/as) vivimos, (vosotros/as) vivís, (ellos/ellas/ustedes) viven",
+            "ВАЖНО: Первое лицо единственного числа (yo) имеет одинаковое окончание -O во всех трёх спряжениях.",
+            "Окончания -ER и -IR очень похожи. Отличаются только в формах vos, nosotros/as и vosotros/as (где ударение на окончании)."
+          ]
+        },
+        {
+          "title_ru": "Неправильности и использование Presente",
+          "explanation_ru": "Большинство неправильностей в основе глагола, только в формах с ударением на основе (yo, tú, usted, él/ella, ustedes, ellos/ellas). Больше неправильностей во втором (-ER) и третьем (-IR) спряжениях.",
+          "examples": [
+            "НЕПРАВИЛЬНОСТИ: quiero, puedes, tienen (только когда ударение на основе)",
+            "ИСПОЛЬЗОВАНИЕ - текущие факты: ¡Estoy aquí! / Sé conducir. / Mi casa es bastante grande.",
+            "ИСПОЛЬЗОВАНИЕ - привычки: Voy al gimnasio los lunes y los miércoles.",
+            "ИСПОЛЬЗОВАНИЕ - просьбы: ¿Me trae una cerveza, por favor?",
+            "ИСПОЛЬЗОВАНИЕ - инструкции: Bajas las escaleras, giras a la derecha y ahí está la biblioteca."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_22",
+      "topic": "IRREGULARIDADES EN PRESENTE",
+      "topic_ru": "Неправильности в настоящем времени",
+      "explanation_ru": "В настоящем времени (Presente de Indicativo) существуют различные типы неправильностей глаголов.",
+      "subtopics": [
+        {
+          "title_ru": "Дифтонгизация: E > IE, O > UE",
+          "explanation_ru": "Многие глаголы трёх спряжений с гласными E или O в ударном слоге основы изменяются в настоящем времени. Неправильными являются только формы с ударением на основе: yo, tú, usted, él/ella, ustedes, ellos/ellas.",
+          "examples": [
+            "CERRAR (закрывать): cierro, cierras/cerrás, cierra | cerramos, cerráis | cierran",
+            "PODER (мочь): puedo, puedes/podés, puede | podemos, podéis | pueden",
+            "JUGAR (играть): juego, juegas/jugás, juega | jugamos, jugáis | juegan",
+            "Другие глаголы: pensar (думать), querer (хотеть), empezar (начинать), volver (возвращаться), dormir (спать)"
+          ]
+        },
+        {
+          "title_ru": "Закрытие гласной: E > I",
+          "explanation_ru": "Изменение E на I происходит во многих глаголах третьего спряжения (-ir), где последняя гласная основы - E, как pedir или seguir.",
+          "examples": [
+            "PEDIR (просить): pido, pides/pedís, pide | pedimos, pedís | piden",
+            "SEGUIR (следовать): sigo, sigues, sigue | seguimos, seguís | siguen",
+            "REPETIR (повторять): repito, repites, repite | repetimos, repetís | repiten"
+          ]
+        },
+        {
+          "title_ru": "Появление -G- в первом лице единственного числа",
+          "explanation_ru": "Группа глаголов добавляет G в форме yo. Эта неправильность может комбинироваться с изменениями гласных (e > ie, e > i) в других лицах.",
+          "examples": [
+            "SALIR → salgo | PONER → pongo | VALER → valgo",
+            "TENER: tengo, tienes/tenés, tiene | tenemos, tenéis | tienen (комбинация: -g- и e > ie)",
+            "VENIR: vengo, vienes/venís, viene | venimos, venís | vienen (комбинация: -g- и e > ie)",
+            "DECIR: digo, dices/decís, dice | decimos, decís | dicen (комбинация: -g- и e > i)"
+          ]
+        },
+        {
+          "title_ru": "Появление -ZC- в первом лице единственного числа",
+          "explanation_ru": "Глаголы, оканчивающиеся на -acer, -ecer, -ocer и -ucir, неправильны в первом лице единственного числа.",
+          "examples": [
+            "CONOCER (знать) → conozco",
+            "PRODUCIR (производить) → produzco",
+            "CONDUCIR (водить) → conduzco",
+            "APARECER (появляться) → aparezco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_23",
+      "topic": "PRETÉRITO PERFECTO",
+      "topic_ru": "Pretérito Perfecto (настоящее совершённое время)",
+      "explanation_ru": "Pretérito Perfecto образуется из двух глаголов: настоящего времени haber (he, has, ha...) + причастие (participio). Причастие одинаково для всех лиц.",
+      "subtopics": [
+        {
+          "title_ru": "Образование Pretérito Perfecto",
+          "explanation_ru": "Используется PRESENTE DE HABER + PARTICIPIO. Haber и причастие всегда идут вместе, между ними ничего не ставится. Местоимения и отрицание ставятся ПЕРЕД haber.",
+          "examples": [
+            "ФОРМЫ HABER: he, has, ha, hemos, habéis, han + PARTICIPIO (cantado, leído, vivido)",
+            "He cantado. (Я спел) | Has comido. (Ты поел) | Ha vivido aquí. (Он жил здесь)",
+            "No he ido a América nunca. (Я никогда не был в Америке)",
+            "¿La última película de Cuarón? La he visto. (Последний фильм Куарона? Я его видел)",
+            "ВНИМАНИЕ: Наречия можно ставить до или после глагола, но НИКОГДА между haber и причастием: Siempre he vivido aquí. / He vivido aquí siempre."
+          ]
+        },
+        {
+          "title_ru": "Использование Pretérito Perfecto",
+          "explanation_ru": "Используется для опыта жизни (когда произошло - неважно, важно только что произошло). В некоторых регионах Испании используется для событий, связанных с настоящим моментом.",
+          "examples": [
+            "ОПЫТ: Nunca he estado en Gijón, ¿y tú? (Я никогда не был в Хихоне, а ты?)",
+            "¿Has visto alguna vez un oso panda? → Sí, en China. Son impresionantes. (Ты когда-нибудь видел панду?)",
+            "¿Todavía no has terminado de comer? → Ya he acabado mi plato. (Ты ещё не закончил есть? → Я уже доел своё блюдо)",
+            "СВЯЗЬ С НАСТОЯЩИМ (в Испании): ¿Qué has hecho hoy? → Esta mañana he salido a correr. (Что ты делал сегодня? → Сегодня утром я бегал)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_24",
+      "topic": "EL PARTICIPIO",
+      "topic_ru": "Причастие (Participio)",
+      "explanation_ru": "Причастие образуется добавлением окончаний -ado (для -ar) и -ido (для -er/-ir) к основе глагола.",
+      "subtopics": [
+        {
+          "title_ru": "Образование причастия",
+          "explanation_ru": "Правильные причастия: основа + -ado (для -ar) или -ido (для -er/-ir).",
+          "examples": [
+            "CANTAR → cantado (петь → спетый)",
+            "BEBER → bebido (пить → выпитый)",
+            "VIVIR → vivido (жить → проживший)"
+          ]
+        },
+        {
+          "title_ru": "Неправильные причастия",
+          "explanation_ru": "Некоторые глаголы имеют неправильные формы причастия, которые нужно запомнить.",
+          "examples": [
+            "ABRIR → abierto (открывать → открытый)",
+            "DECIR → dicho (говорить → сказанный)",
+            "ESCRIBIR → escrito (писать → написанный)",
+            "HACER → hecho (делать → сделанный)",
+            "MORIR → muerto (умирать → умерший)",
+            "PONER → puesto (ставить → поставленный)",
+            "ROMPER → roto (ломать → сломанный)",
+            "VER → visto (видеть → виденный)",
+            "VOLVER → vuelto (возвращаться → вернувшийся)",
+            "FREÍR → frito/freído (жарить → жаренный)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_25",
+      "topic": "PRETÉRITO INDEFINIDO",
+      "topic_ru": "Pretérito Indefinido (простое прошедшее время)",
+      "explanation_ru": "Pretérito Indefinido используется для рассказа о прошедших действиях, произошедших в конкретный момент прошлого.",
+      "subtopics": [
+        {
+          "title_ru": "Правильные формы Pretérito Indefinido",
+          "explanation_ru": "Окончания для правильных глаголов.",
+          "examples": [
+            "-AR: hablé, hablaste, habló, hablamos, hablasteis, hablaron",
+            "-ER: bebí, bebiste, bebió, bebimos, bebisteis, bebieron",
+            "-IR: escribí, escribiste, escribió, escribimos, escribisteis, escribieron",
+            "ПРИМЕРЫ: Anoche cené con unos amigos. (Вчера вечером я ужинал с друзьями)",
+            "Hace dos semanas descubrí un restaurante genial. (Две недели назад я обнаружил отличный ресторан)",
+            "Mi hija nació en 2015. (Моя дочь родилась в 2015)"
+          ]
+        },
+        {
+          "title_ru": "Орфографические изменения",
+          "explanation_ru": "Глаголы на -car, -gar, -guar, -zar и глаголы с гласной перед -er/-ir имеют орфографические изменения.",
+          "examples": [
+            "-CAR → -QUÉ: acercar → acerqué (приближаться)",
+            "-GAR → -GUÉ: llegar → llegué (приходить)",
+            "-GUAR → -GÜÉ: averiguar → averigüé (выяснять)",
+            "-ZAR → -CÉ: almorzar → almorcé (обедать)",
+            "VOCAL + I + VOCAL → VOCAL + Y + VOCAL: oír → oyó/oyeron | caer → cayó/cayeron | construir → construyó/construyeron"
+          ]
+        },
+        {
+          "title_ru": "Неправильности в Pretérito Indefinido",
+          "explanation_ru": "Закрытие гласной (e>i, o>u) в 3-м лице, изменение основы с особыми окончаниями, и особые формы ir/ser.",
+          "examples": [
+            "E > I, O > U (только 3-е лицо): PEDIR → pidió/pidieron | DORMIR → durmió/durmieron",
+            "ИЗМЕНЕНИЕ ОСНОВЫ + особые окончания (-e, -iste, -o, -imos, -isteis, -ieron): ESTAR → estuve, estuviste, estuvo... | TENER → tuve | PODER → pude | PONER → puse | HACER → hice/hizo | VENIR → vine | DECIR → dije",
+            "ВНИМАНИЕ: В правильных глаголах ударение на последнем слоге (hablé, comí), в неправильных - на предпоследнем (estuve, dije)",
+            "IR/SER (одинаковые формы): fui, fuiste, fue, fuimos, fuisteis, fueron"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_26",
+      "topic": "PRETÉRITO IMPERFECTO",
+      "topic_ru": "Pretérito Imperfecto (прошедшее несовершённое время)",
+      "explanation_ru": "Pretérito Imperfecto имеет мало неправильностей (только ser, ir, ver). Используется для описания в прошлом и для привычек.",
+      "subtopics": [
+        {
+          "title_ru": "Формы Pretérito Imperfecto",
+          "explanation_ru": "Правильные окончания и три неправильных глагола.",
+          "examples": [
+            "-AR: hablaba, hablabas, hablaba, hablábamos, hablabais, hablaban",
+            "-ER/-IR: bebía, bebías, bebía, bebíamos, bebíais, bebían | vivía, vivías, vivía, vivíamos, vivíais, vivían",
+            "SER: era, eras, era, éramos, erais, eran",
+            "IR: iba, ibas, iba, íbamos, ibais, iban",
+            "VER: veía, veías, veía, veíamos, veíais, veían"
+          ]
+        },
+        {
+          "title_ru": "Использование Pretérito Imperfecto",
+          "explanation_ru": "Для описания людей, объектов, ситуаций в прошлом, для описания обстоятельств события и для привычек в прошлом.",
+          "examples": [
+            "ОПИСАНИЕ: Ayer vi a Marta a las 10. Estaba cansada y llevaba la ropa del trabajo. (Вчера я видел Марту в 10. Она была уставшей и была в рабочей одежде)",
+            "La casa de mis abuelos era enorme y tenía muchas habitaciones. (Дом моих бабушки и дедушки был огромным и имел много комнат)",
+            "ОБСТОЯТЕЛЬСТВА: Como estábamos cansados, volvimos pronto a casa. (Так как мы устали, мы рано вернулись домой)",
+            "ПРИВЫЧКИ: De niño, siempre iba a visitar a mis abuelos al campo. (В детстве я всегда ездил навещать бабушку с дедушкой в деревне)",
+            "De joven, en verano, me levantaba muy tarde e iba directamente a la playa. (Молодым летом я вставал очень поздно и шёл прямо на пляж)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_27",
+      "topic": "RELATAR EN PASADO",
+      "topic_ru": "Повествование в прошедшем времени",
+      "explanation_ru": "Рассказ - это последовательность событий, которые мы рассказываем используя Pretérito Indefinido или Pretérito Perfecto. С каждым новым событием история движется вперёд.",
+      "subtopics": [
+        {
+          "title_ru": "Структура повествования",
+          "explanation_ru": "Для продвижения истории используем Pretérito Indefinido/Perfecto. Для описания обстоятельств каждого события используем Pretérito Imperfecto.",
+          "examples": [
+            "ТОЛЬКО СОБЫТИЯ (Indefinido): Aquel día Juan no oyó el despertador y se despertó media hora tarde. Salió de casa sin desayunar y tomó un taxi. Por suerte, consiguió llegar a tiempo al aeropuerto.",
+            "СОБЫТИЯ + ОБСТОЯТЕЛЬСТВА (Indefinido + Imperfecto): Aquel día Juan estaba muy cansado y no oyó el despertador, así que se despertó media hora tarde. Como no tenía tiempo, salió de casa sin desayunar y tomó un taxi. Por suerte, no había mucho tráfico y consiguió llegar al aeropuerto a tiempo.",
+            "В каждом событии можно 'остановить действие' и 'посмотреть' на обстоятельства вокруг него. Для этого используем Pretérito Imperfecto."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_28",
+      "topic": "EL IMPERATIVO",
+      "topic_ru": "Повелительное наклонение (Imperativo)",
+      "explanation_ru": "Утвердительный императив в испанском имеет пять форм: tú, vos, vosotros/as (более неформально), usted и ustedes (более формально).",
+      "subtopics": [
+        {
+          "title_ru": "Формы повелительного наклонения",
+          "explanation_ru": "Правила образования императива для разных лиц и неправильные формы.",
+          "examples": [
+            "TÚ/VOS: как presente без -s: compras → compra/comprá | comes → come/comé | vives → vive/viví",
+            "VOSOTROS: как infinitivo, но с -d вместо -r: estudiar → estudiad | comer → comed | cerrar → cerrad",
+            "USTED/USTEDES: как presente с изменением гласной спряжения: estudia → estudie/estudien | come → coma/coman | escribe → escriba/escriban",
+            "8 НЕПРАВИЛЬНЫХ (tú): poner → pon | hacer → haz | venir → ven | salir → sal | tener → ten | decir → di | ir → ve | ser → sé",
+            "ВНИМАНИЕ: Глаголы с e>ie, o>ue, e>i в presente сохраняют эти изменения в императиве (tú, usted, ustedes): piensas → piensa/piense | duermes → duerme/duerma | pides → pide/pida"
+          ]
+        },
+        {
+          "title_ru": "Использование императива и позиция местоимений",
+          "explanation_ru": "С утвердительным императивом местоимения идут ПОСЛЕ глагола и образуют одно слово. В возвратных глаголах (vosotros + -os) исчезает -d.",
+          "examples": [
+            "МЕСТОИМЕНИЯ ПОСЛЕ: ¿Me pones un café? → Ponme también una tostada. | Devuélveme las llaves y vete.",
+            "VOSOTROS + OS: sentarse → sentaos (НЕ sentados) | tomarse → tomaos",
+            "ИНСТРУКЦИИ: Retire el plástico protector y coloque el aparato sobre una superficie estable. (Снимите защитную плёнку и поставьте прибор на устойчивую поверхность)",
+            "РАЗРЕШЕНИЕ: ¿Puedo entrar un momento? → Sí, claro. Pasa, pasa. (Можно войти? → Да, конечно. Входи, входи)",
+            "ПРЕДЛОЖЕНИЕ: Toma, prueba estas galletas. Están buenísimas. (На, попробуй это печенье. Оно очень вкусное)",
+            "СОВЕТ: No sé qué ponerme. → Ponte el traje azul, ¿no? Te queda muy bien. (Надень синий костюм, разве нет? Тебе очень идёт)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_29",
+      "topic": "EL GERUNDIO",
+      "topic_ru": "Герундий (Gerundio)",
+      "explanation_ru": "Герундий образуется добавлением окончания -ando к глаголам на -ar и -iendo к глаголам на -er/-ir.",
+      "subtopics": [
+        {
+          "title_ru": "Образование герундия",
+          "explanation_ru": "Правильные формы и неправильности.",
+          "examples": [
+            "ПРАВИЛЬНЫЕ: trabajar → trabajando | comer → comiendo | escribir → escribiendo",
+            "НЕПРАВИЛЬНЫЕ (-ir с E или O в основе): dormir → durmiendo | sentir → sintiendo | pedir → pidiendo | decir → diciendo | reír → riendo | freír → friendo | mentir → mintiendo | morir → muriendo",
+            "ОСНОВА НА ГЛАСНУЮ (-er/-ir): traer → trayendo | construir → construyendo | leer → leyendo | oír → oyendo"
+          ]
+        },
+        {
+          "title_ru": "Использование герундия и позиция местоимений",
+          "explanation_ru": "Герундий объясняет, КАК совершается действие. С герундием местоимения ставятся ПОСЛЕ, образуя одно слово.",
+          "examples": [
+            "КАК ДЕЛАТЬ: ¿Cómo consigues estar tan joven? → Pues haciendo ejercicio todos los días y comiendo sano. (Как тебе удаётся так молодо выглядеть? → Занимаясь спортом каждый день и правильно питаясь)",
+            "МЕСТОИМЕНИЯ ПОСЛЕ: Puedes mejorar tu español relacionándote con nativos. (Ты можешь улучшить испанский, общаясь с носителями)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_30",
+      "topic": "ESTAR + GERUNDIO",
+      "topic_ru": "Estar + Герундий (длительное действие)",
+      "explanation_ru": "Конструкция ESTAR + герундий используется для выражения действия, происходящего в конкретный момент.",
+      "subtopics": [
+        {
+          "title_ru": "Формы и использование",
+          "explanation_ru": "Estar в нужном времени + герундий. Используется для действий, происходящих СЕЙЧАС или начатых, но не законченных.",
+          "examples": [
+            "ФОРМЫ: estoy/estás/está/estamos/estáis/están + trabajando/comiendo/viviendo",
+            "СЕЙЧАС: No te puede oír ahora, está escuchando música en su cuarto. (Он не может тебя слышать, он слушает музыку в своей комнате)",
+            "No puede ponerse al teléfono, se está duchando. (Он не может подойти к телефону, он принимает душ)",
+            "НАЧАТО, НО НЕ ЗАКОНЧЕНО: ¿Qué libro me recomiendas? → Pues ahora estoy leyendo uno de terror muy bueno. (Какую книгу порекомендуешь? → Сейчас я читаю один очень хороший триллер - начал, но ещё не закончил)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rule_31",
+      "topic": "SE IMPERSONAL",
+      "topic_ru": "Безличное SE",
+      "explanation_ru": "В испанском можно выразить безличность (не указывать, кто совершает действие, или выразить, что так делают все) с помощью конструкции SE + глагол в 3-м лице.",
+      "subtopics": [
+        {
+          "title_ru": "Использование SE impersonal",
+          "explanation_ru": "SE + глагол в 3-м лице единственного или множественного числа (в зависимости от числа объекта).",
+          "examples": [
+            "ОБЩЕЕ ПРАВИЛО (ед.ч.): En español, se puede expresar la impersonalidad con se + verbo en tercera persona del singular. (В испанском можно выразить безличность с помощью se + глагол в 3-м лице ед.ч.)",
+            "ЧАСТО ИСПОЛЬЗУЕТСЯ: El presente se utiliza mucho en español. (Настоящее время часто используется в испанском - все его часто используют)",
+            "РЕЦЕПТ: La tortilla española se hace con patatas, huevos y cebollas. (Испанская тортилья делается из картофеля, яиц и лука - все так её готовят)",
+            "ПРИВЫЧКА: En España se cena muy tarde. (В Испании ужинают очень поздно - все ужинают поздно)"
+          ]
+        }
+      ]
+    }
+  ]
+}

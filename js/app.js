@@ -713,49 +713,31 @@ function showProfileSelect() {
 
             container.innerHTML = '';
 
-            CATEGORIES.forEach(cat => {
+            // 🔧 Фильтруем только активные (не disabled) категории
+            const activeCategories = CATEGORIES.filter(cat => !CATEGORY_CONFIG[cat].disabled);
+
+            activeCategories.forEach(cat => {
                 const config = CATEGORY_CONFIG[cat];
 
                 const card = document.createElement('div');
                 card.className = 'category-card';
+                card.onclick = () => showCategoryMenu(cat);
 
-                // 🔧 Если категория отключена - показываем заглушку
-                if (config.disabled) {
-                    card.style.opacity = '0.6';
-                    card.style.cursor = 'not-allowed';
-                    card.onclick = () => {
-                        alert('🔧 Эта категория временно недоступна.\nМы работаем над новой системой тестирования по темам!');
-                    };
-
-                    card.innerHTML = `
-                        <div class="category-header">
-                            <span class="category-title">${config.icon} ${config.es} (${config.ru})</span>
-                            <span class="category-icon">🔒</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-fill" style="width: 0%; background: #999;"></div>
-                        </div>
-                        <p class="progress-text">🔧 В разработке</p>
-                    `;
-                } else {
-                    // Нормальная категория (доступна)
-                    card.onclick = () => showCategoryMenu(cat);
-                    card.innerHTML = `
-                        <div class="category-header">
-                            <span class="category-title">${config.icon} ${config.es} (${config.ru})</span>
-                            <span class="category-icon">${config.icon}</span>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-bar-fill" id="${cat}-progress-bar" style="width: 0%"></div>
-                        </div>
-                        <p class="progress-text" id="${cat}-progress-text">0%</p>
-                    `;
-                }
+                card.innerHTML = `
+                    <div class="category-header">
+                        <span class="category-title">${config.icon} ${config.es} (${config.ru})</span>
+                        <span class="category-icon">${config.icon}</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="${cat}-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="${cat}-progress-text">0%</p>
+                `;
 
                 container.appendChild(card);
             });
 
-            console.log(`✅ Rendered ${CATEGORIES.length} category cards dynamically`);
+            console.log(`✅ Rendered ${activeCategories.length} active category cards (${CATEGORIES.length - activeCategories.length} disabled)`);
         }
 
         function showUnidadMenu(unidad) {

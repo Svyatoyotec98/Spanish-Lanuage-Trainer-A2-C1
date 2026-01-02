@@ -20,21 +20,24 @@
                 es: 'Sustantivos',
                 en: 'Nouns',
                 ru: 'Существительные',
-                hint: '(Существительное)'
+                hint: '(Существительное)',
+                disabled: true  // 🔧 Временно отключено для рефакторинга
             },
             adjetivos: {
                 icon: '🎨',
                 es: 'Adjetivos',
                 en: 'Adjectives',
                 ru: 'Прилагательные',
-                hint: '(Прилагательное)'
+                hint: '(Прилагательное)',
+                disabled: true  // 🔧 Временно отключено для рефакторинга
             },
             verbos: {
                 icon: '⚡',
                 es: 'Verbos',
                 en: 'Verbs',
                 ru: 'Глаголы',
-                hint: '(Глагол)'
+                hint: '(Глагол)',
+                disabled: true  // 🔧 Временно отключено для рефакторинга
             }
         };
 
@@ -715,18 +718,39 @@ function showProfileSelect() {
 
                 const card = document.createElement('div');
                 card.className = 'category-card';
-                card.onclick = () => showCategoryMenu(cat);
 
-                card.innerHTML = `
-                    <div class="category-header">
-                        <span class="category-title">${config.icon} ${config.es} (${config.ru})</span>
-                        <span class="category-icon">${config.icon}</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="${cat}-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="${cat}-progress-text">0%</p>
-                `;
+                // 🔧 Если категория отключена - показываем заглушку
+                if (config.disabled) {
+                    card.style.opacity = '0.6';
+                    card.style.cursor = 'not-allowed';
+                    card.onclick = () => {
+                        alert('🔧 Эта категория временно недоступна.\nМы работаем над новой системой тестирования по темам!');
+                    };
+
+                    card.innerHTML = `
+                        <div class="category-header">
+                            <span class="category-title">${config.icon} ${config.es} (${config.ru})</span>
+                            <span class="category-icon">🔒</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" style="width: 0%; background: #999;"></div>
+                        </div>
+                        <p class="progress-text">🔧 В разработке</p>
+                    `;
+                } else {
+                    // Нормальная категория (доступна)
+                    card.onclick = () => showCategoryMenu(cat);
+                    card.innerHTML = `
+                        <div class="category-header">
+                            <span class="category-title">${config.icon} ${config.es} (${config.ru})</span>
+                            <span class="category-icon">${config.icon}</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="${cat}-progress-bar" style="width: 0%"></div>
+                        </div>
+                        <p class="progress-text" id="${cat}-progress-text">0%</p>
+                    `;
+                }
 
                 container.appendChild(card);
             });

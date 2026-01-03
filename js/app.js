@@ -285,8 +285,9 @@
 
         function hideAll() {
             ['startScreen', 'profileSelectScreen', 'profileCreateScreen',
-             'mainMenu', 'unidadMenu', 'categoryMenu', 'questionScreen',
-             'resultsScreen', 'verbMenu', 'verbPracticeScreen', 'qaScreen',
+             'mainMenu', 'unidadMenu', 'palabrasMenu', 'categoryMenu', 'questionScreen',
+             'resultsScreen', 'cardMatchingScreen', 'cardMatchingResultsScreen',
+             'verbMenu', 'verbPracticeScreen', 'qaScreen',
 			 'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
              'grammarListScreen', 'grammarDetailScreen',
              'examScreen', 'examResultsScreen'].forEach(id => {

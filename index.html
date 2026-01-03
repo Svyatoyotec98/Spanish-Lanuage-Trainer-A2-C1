@@ -299,12 +299,12 @@
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
-             UNIDAD MENU (Category Selection)
+             UNIDAD MENU (Main Options)
              ═══════════════════════════════════════════════════════════════ -->
         <div id="unidadMenu" class="hidden">
             <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
             <h1 id="unidadTitle">Unidad 1</h1>
-            <p class="subtitle">Выберите категорию для практики</p>
+            <p class="subtitle">Выберите тип практики</p>
 
             <div style="margin-top: 30px;">
                 <!-- Average Progress Bar -->
@@ -315,10 +315,19 @@
                     </div>
                 </div>
 
-                <!-- Category Cards (динамически генерируются из CATEGORY_CONFIG) -->
-                <div id="categoriesContainer"></div>
+                <!-- Palabras Button -->
+                <div class="category-card" onclick="showPalabrasMenu()">
+                    <div class="category-header">
+                        <span class="category-title">📚 Palabras (Слова)</span>
+                        <span class="category-icon">📚</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="palabras-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="palabras-progress-text">0%</p>
+                </div>
 
-                <!-- Gramática -->
+                <!-- Ejercicios Button -->
                 <div class="category-card" onclick="showGramaticaMenu()">
                     <div class="category-header">
                         <span class="category-title">📝 Ejercicios (Упражнения)</span>
@@ -341,6 +350,30 @@
             </div>
 
             <button class="btn btn-back" onclick="showMainMenu()">← Назад к Unidades</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             PALABRAS MENU (Group Selection)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="palabrasMenu" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1>📚 Palabras</h1>
+            <p class="subtitle">Выберите семантическую группу</p>
+
+            <div style="margin-top: 30px;">
+                <!-- Average Progress for Palabras -->
+                <div style="margin-bottom: 30px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white;">
+                    <h3 style="margin: 0 0 10px 0; color: white;">📊 Прогресс словаря</h3>
+                    <div style="font-size: 28px; font-weight: bold;">
+                        <span id="palabras-avg-progress-text">0</span>%
+                    </div>
+                </div>
+
+                <!-- Group Cards (динамически генерируются из vocabularyData.groups) -->
+                <div id="groupsContainer"></div>
+            </div>
+
+            <button class="btn btn-back" onclick="backToUnidadMenu()">← Назад к типам практики</button>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════

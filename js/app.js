@@ -712,48 +712,6 @@ function showProfileSelect() {
         // UNIDAD & CATEGORY NAVIGATION
         // ═══════════════════════════════════════════════════════════════
 
-        // Динамическая генерация карточек категорий
-        function renderCategoryCards() {
-            const container = document.getElementById('categoriesContainer');
-            if (!container) {
-                console.error('categoriesContainer not found in HTML');
-                return;
-            }
-
-            container.innerHTML = '';
-
-            // Динамически рендерим карточки для всех групп текущего unidad
-            const unidadData = vocabularyData[currentUnidad];
-            if (!unidadData || !unidadData.groups) {
-                console.error('No groups data available for', currentUnidad);
-                return;
-            }
-
-            const groupNames = Object.keys(unidadData.groups);
-            groupNames.forEach(groupName => {
-                const card = document.createElement('div');
-                card.className = 'category-card';
-                card.onclick = () => showCategoryMenu(groupName);
-
-                // Используем название группы как заголовок (можно будет настроить позже)
-                const displayName = groupName.replace(/_/g, ' ');
-
-                card.innerHTML = `
-                    <div class="category-header">
-                        <span class="category-title">${displayName}</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="${groupName}-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="${groupName}-progress-text">0%</p>
-                `;
-
-                container.appendChild(card);
-            });
-
-            console.log(`✅ Rendered ${groupNames.length} group cards dynamically`);
-        }
-
         function showUnidadMenu(unidad) {
             const profile = getActiveProfile();
             if (!profile) return;
@@ -777,10 +735,7 @@ function showProfileSelect() {
             const unidadNumber = unidad.split('_')[1];
             document.getElementById('unidadTitle').textContent = `Unidad ${unidadNumber}`;
 
-            // Генерация карточек категорий
-            renderCategoryCards();
-
-            // Обновление прогресса (после создания карточек)
+            // Обновление прогресса
             updateUnidadProgressBars();
 			saveNavigationState('unidadMenu');
         }
@@ -833,6 +788,102 @@ function showProfileSelect() {
                 examBtn.textContent = `🔒 Пройти экзамен (${avgProgress}%, требуется 80%)`;
                 examBtn.style.background = '#95a5a6';
             }
+
+            // Update Palabras progress bar in unidadMenu
+            const palabrasProgress = calculatePalabrasProgress(currentUnidad);
+            const palabrasBar = document.getElementById('palabras-progress-bar');
+            const palabrasText = document.getElementById('palabras-progress-text');
+            if (palabrasBar) palabrasBar.style.width = palabrasProgress + '%';
+            if (palabrasText) palabrasText.textContent = palabrasProgress + '%';
+        }
+
+        // Calculate average progress for all vocabulary groups
+        function calculatePalabrasProgress(unidad) {
+            const profile = getActiveProfile();
+            if (!profile) return 0;
+
+            const unidadData = vocabularyData[unidad];
+            if (!unidadData || !unidadData.groups) return 0;
+
+            let totalProgress = 0;
+            let groupCount = 0;
+
+            Object.keys(unidadData.groups).forEach(groupName => {
+                totalProgress += calculateCategoryProgress(unidad, groupName, profile);
+                groupCount++;
+            });
+
+            return groupCount > 0 ? Math.round(totalProgress / groupCount) : 0;
+        }
+
+        // Show Palabras menu with all semantic groups
+        function showPalabrasMenu() {
+            if (!currentUnidad) {
+                console.error('showPalabrasMenu called without currentUnidad');
+                return;
+            }
+
+            hideAll();
+            showUserBadge();
+            document.getElementById('palabrasMenu').classList.remove('hidden');
+
+            // Render group cards dynamically
+            renderGroupCards();
+
+            // Update progress
+            const palabrasProgress = calculatePalabrasProgress(currentUnidad);
+            const avgText = document.getElementById('palabras-avg-progress-text');
+            if (avgText) avgText.textContent = palabrasProgress;
+
+            saveNavigationState('palabrasMenu');
+        }
+
+        // Render semantic group cards in Palabras menu
+        function renderGroupCards() {
+            const container = document.getElementById('groupsContainer');
+            if (!container) {
+                console.error('groupsContainer not found in HTML');
+                return;
+            }
+
+            container.innerHTML = '';
+
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups) {
+                console.error('No groups data available for', currentUnidad);
+                return;
+            }
+
+            const groupNames = Object.keys(unidadData.groups);
+            const profile = getActiveProfile();
+
+            groupNames.forEach(groupName => {
+                const card = document.createElement('div');
+                card.className = 'category-card';
+                card.onclick = () => showCategoryMenu(groupName);
+
+                // Используем название группы как заголовок
+                const displayName = groupName.replace(/_/g, ' ');
+                const wordsCount = unidadData.groups[groupName].length;
+
+                // Calculate progress for this group
+                const progress = calculateCategoryProgress(currentUnidad, groupName, profile);
+
+                card.innerHTML = `
+                    <div class="category-header">
+                        <span class="category-title">${displayName}</span>
+                        <span class="category-icon">📝 ${wordsCount} слов</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" style="width: ${progress}%"></div>
+                    </div>
+                    <p class="progress-text">${progress}%</p>
+                `;
+
+                container.appendChild(card);
+            });
+
+            console.log(`✅ Rendered ${groupNames.length} group cards in Palabras menu`);
         }
 
         function showCategoryMenu(category) {
@@ -845,9 +896,11 @@ function showProfileSelect() {
             showUserBadge();
             document.getElementById('categoryMenu').classList.remove('hidden');
 
-            // Используем CATEGORY_CONFIG для заголовка
-            const config = CATEGORY_CONFIG[category];
-            const title = `${config.icon} ${config.es} (${config.en})`;
+            // Динамический заголовок для группы
+            const displayName = category.replace(/_/g, ' ');
+            const unidadData = vocabularyData[currentUnidad];
+            const wordsCount = unidadData?.groups[category]?.length || 0;
+            const title = `${displayName} (${wordsCount} слов)`;
             document.getElementById('categoryTitle').textContent = title;
 
             updateCategoryButtons();

@@ -10,33 +10,34 @@
             'unidad_6', 'unidad_7', 'unidad_8', 'unidad_9', 'unidad_10'
         ];
 
-        // Lista de categorías de vocabulario
-        const CATEGORIES = ['sustantivos', 'adjetivos', 'verbos'];
+        // ⚠️ DEPRECATED: Заменено динамическими группами из JSON
+        // Lista de categorías de vocabulario (СТАРЫЙ КОД)
+        // const CATEGORIES = ['sustantivos', 'adjetivos', 'verbos'];
 
-        // Configuración de categorías (иконки, названия, hints)
-        const CATEGORY_CONFIG = {
-            sustantivos: {
-                icon: '📦',
-                es: 'Sustantivos',
-                en: 'Nouns',
-                ru: 'Существительные',
-                hint: '(Существительное)'
-            },
-            adjetivos: {
-                icon: '🎨',
-                es: 'Adjetivos',
-                en: 'Adjectives',
-                ru: 'Прилагательные',
-                hint: '(Прилагательное)'
-            },
-            verbos: {
-                icon: '⚡',
-                es: 'Verbos',
-                en: 'Verbs',
-                ru: 'Глаголы',
-                hint: '(Глагол)'
-            }
-        };
+        // Конфигурация категорий (СТАРЫЙ КОД - теперь группы определяются в JSON)
+        // const CATEGORY_CONFIG = {
+        //     sustantivos: {
+        //         icon: '📦',
+        //         es: 'Sustantivos',
+        //         en: 'Nouns',
+        //         ru: 'Существительные',
+        //         hint: '(Существительное)'
+        //     },
+        //     adjetivos: {
+        //         icon: '🎨',
+        //         es: 'Adjetivos',
+        //         en: 'Adjectives',
+        //         ru: 'Прилагательные',
+        //         hint: '(Прилагательное)'
+        //     },
+        //     verbos: {
+        //         icon: '⚡',
+        //         es: 'Verbos',
+        //         en: 'Verbs',
+        //         ru: 'Глаголы',
+        //         hint: '(Глагол)'
+        //     }
+        // };
 
         // Переменная для отслеживания выбранного профиля для действий (удаление)
         let selectedProfileIdForAction = null;
@@ -141,18 +142,23 @@
             // Проверка и создание структуры для всех 10 unidades
             UNIDADES.forEach(unidad => {
                 if (!profile.progress[unidad]) profile.progress[unidad] = {};
-                CATEGORIES.forEach(category => {
-                    if (!profile.progress[unidad][category]) {
-                        profile.progress[unidad][category] = {
-                            easy10: 0, easy25: 0,
-                            medium10: 0, medium25: 0,
-                            hard10: 0, hard25: 0
-                        };
-                    }
-                });
-                // Grammar exercises progress
-                if (!profile.progress[unidad].gramatica) {
-                    profile.progress[unidad].gramatica = {};
+
+                // Динамическая инициализация групп (если JSON уже загружен)
+                if (vocabularyData[unidad] && vocabularyData[unidad].groups) {
+                    Object.keys(vocabularyData[unidad].groups).forEach(groupName => {
+                        if (!profile.progress[unidad][groupName]) {
+                            profile.progress[unidad][groupName] = {
+                                easy10: 0, easy25: 0,
+                                medium10: 0, medium25: 0,
+                                hard10: 0, hard25: 0
+                            };
+                        }
+                    });
+                }
+
+                // Exercises progress
+                if (!profile.progress[unidad].ejercicios) {
+                    profile.progress[unidad].ejercicios = {};
                 }
             });
 
@@ -209,22 +215,28 @@
             ensureProgressSkeleton(profile);
 
             let totalProgress = 0;
+            let groupCount = 0;
 
-            CATEGORIES.forEach(cat => {
-                totalProgress += calculateCategoryProgress(unidad, cat, profile);
-            });
-
-            // Include grammar progress if grammar exercises exist
-            const gramProgress = calculateGramaticaProgressForUnidad(unidad);
-            if (gramProgress !== null) {
-                totalProgress += gramProgress;
-                return Math.round(totalProgress / (CATEGORIES.length + 1));
+            // Динамически подсчитываем прогресс для всех групп
+            const unidadData = vocabularyData[unidad];
+            if (unidadData && unidadData.groups) {
+                Object.keys(unidadData.groups).forEach(groupName => {
+                    totalProgress += calculateCategoryProgress(unidad, groupName, profile);
+                    groupCount++;
+                });
             }
 
-            return Math.round(totalProgress / CATEGORIES.length);
+            // Include exercises progress if exercises exist
+            const exercisesProgress = calculateGramaticaProgressForUnidad(unidad);
+            if (exercisesProgress !== null) {
+                totalProgress += exercisesProgress;
+                return Math.round(totalProgress / (groupCount + 1));
+            }
+
+            return groupCount > 0 ? Math.round(totalProgress / groupCount) : 0;
         }
 
-        // Helper to calculate grammar progress for a specific unidad
+        // Helper to calculate exercises progress for a specific unidad
         function calculateGramaticaProgressForUnidad(unidad) {
             const profile = getActiveProfile();
             if (!profile) return null;
@@ -232,17 +244,17 @@
             ensureProgressSkeleton(profile);
 
             const unidadData = vocabularyData[unidad];
-            if (!unidadData || !unidadData.gramatica || unidadData.gramatica.length === 0) {
+            if (!unidadData || !unidadData.ejercicios || unidadData.ejercicios.length === 0) {
                 return null;
             }
 
             let totalScore = 0;
-            unidadData.gramatica.forEach(exercise => {
-                const score = profile.progress[unidad].gramatica[exercise.id] || 0;
+            unidadData.ejercicios.forEach(exercise => {
+                const score = profile.progress[unidad].ejercicios[exercise.id] || 0;
                 totalScore += score;
             });
 
-            return Math.round(totalScore / unidadData.gramatica.length);
+            return Math.round(totalScore / unidadData.ejercicios.length);
         }
 
         function updateUnlocks() {
@@ -710,28 +722,36 @@ function showProfileSelect() {
 
             container.innerHTML = '';
 
-            CATEGORIES.forEach(cat => {
-                const config = CATEGORY_CONFIG[cat];
+            // Динамически рендерим карточки для всех групп текущего unidad
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups) {
+                console.error('No groups data available for', currentUnidad);
+                return;
+            }
 
+            const groupNames = Object.keys(unidadData.groups);
+            groupNames.forEach(groupName => {
                 const card = document.createElement('div');
                 card.className = 'category-card';
-                card.onclick = () => showCategoryMenu(cat);
+                card.onclick = () => showCategoryMenu(groupName);
+
+                // Используем название группы как заголовок (можно будет настроить позже)
+                const displayName = groupName.replace(/_/g, ' ');
 
                 card.innerHTML = `
                     <div class="category-header">
-                        <span class="category-title">${config.icon} ${config.es} (${config.ru})</span>
-                        <span class="category-icon">${config.icon}</span>
+                        <span class="category-title">${displayName}</span>
                     </div>
                     <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="${cat}-progress-bar" style="width: 0%"></div>
+                        <div class="progress-bar-fill" id="${groupName}-progress-bar" style="width: 0%"></div>
                     </div>
-                    <p class="progress-text" id="${cat}-progress-text">0%</p>
+                    <p class="progress-text" id="${groupName}-progress-text">0%</p>
                 `;
 
                 container.appendChild(card);
             });
 
-            console.log(`✅ Rendered ${CATEGORIES.length} category cards dynamically`);
+            console.log(`✅ Rendered ${groupNames.length} group cards dynamically`);
         }
 
         function showUnidadMenu(unidad) {
@@ -776,21 +796,30 @@ function showProfileSelect() {
             const avgText = document.getElementById('avg-progress-text');
             if (avgText) avgText.textContent = avgProgress;
 
-            // Individual categories
-            CATEGORIES.forEach(cat => {
-                const progress = calculateCategoryProgress(currentUnidad, cat);
-                document.getElementById(`${cat}-progress-bar`).style.width = progress + '%';
-                document.getElementById(`${cat}-progress-text`).textContent = progress + '%';
-            });
+            // Individual groups (dynamic)
+            const unidadData = vocabularyData[currentUnidad];
+            if (unidadData && unidadData.groups) {
+                Object.keys(unidadData.groups).forEach(groupName => {
+                    const progress = calculateCategoryProgress(currentUnidad, groupName);
+                    const barElem = document.getElementById(`${groupName}-progress-bar`);
+                    const textElem = document.getElementById(`${groupName}-progress-text`);
+                    if (barElem) barElem.style.width = progress + '%';
+                    if (textElem) textElem.textContent = progress + '%';
+                });
+            }
 
-            // Grammar progress bar
-            const gramProgress = calculateGramaticaProgressForUnidad(currentUnidad);
-            if (gramProgress !== null) {
-                document.getElementById('gramatica-progress-bar').style.width = gramProgress + '%';
-                document.getElementById('gramatica-progress-text').textContent = gramProgress + '%';
+            // Exercises progress bar
+            const exercisesProgress = calculateGramaticaProgressForUnidad(currentUnidad);
+            if (exercisesProgress !== null) {
+                const barElem = document.getElementById('ejercicios-progress-bar') || document.getElementById('gramatica-progress-bar');
+                const textElem = document.getElementById('ejercicios-progress-text') || document.getElementById('gramatica-progress-text');
+                if (barElem) barElem.style.width = exercisesProgress + '%';
+                if (textElem) textElem.textContent = exercisesProgress + '%';
             } else {
-                document.getElementById('gramatica-progress-bar').style.width = '0%';
-                document.getElementById('gramatica-progress-text').textContent = 'Нет упражнений';
+                const barElem = document.getElementById('ejercicios-progress-bar') || document.getElementById('gramatica-progress-bar');
+                const textElem = document.getElementById('ejercicios-progress-text') || document.getElementById('gramatica-progress-text');
+                if (barElem) barElem.style.width = '0%';
+                if (textElem) textElem.textContent = 'Нет упражнений';
             }
 
             // Exam button
@@ -1037,13 +1066,13 @@ if (
                 return;
             }
 
-            if (!vocabularyData[currentUnidad][currentCategory]) {
-                alert(`Ошибка: категория "${currentCategory}" не найдена в ${currentUnidad}.\nВозможно, файл JSON повреждён.`);
-                console.error(`startTest: vocabularyData[${currentUnidad}][${currentCategory}] is undefined`);
+            if (!vocabularyData[currentUnidad].groups[currentCategory]) {
+                alert(`Ошибка: группа "${currentCategory}" не найдена в ${currentUnidad}.\nВозможно, файл JSON повреждён.`);
+                console.error(`startTest: vocabularyData[${currentUnidad}].groups[${currentCategory}] is undefined`);
                 return;
             }
 
-            const words = vocabularyData[currentUnidad][currentCategory];
+            const words = vocabularyData[currentUnidad].groups[currentCategory];
 
             if (!words || words.length === 0) {
                 alert(`Ошибка: категория "${currentCategory}" пуста в ${currentUnidad}.\nДобавьте слова в JSON файл.`);
@@ -1175,13 +1204,13 @@ if (
             document.getElementById('manualInputContainer').classList.add('hidden');
 
             // Проверка существования данных
-            if (!vocabularyData[currentUnidad] || !vocabularyData[currentUnidad][currentCategory]) {
-                console.error(`showMultipleChoice: vocabularyData[${currentUnidad}][${currentCategory}] is undefined`);
+            if (!vocabularyData[currentUnidad] || !vocabularyData[currentUnidad].groups[currentCategory]) {
+                console.error(`showMultipleChoice: vocabularyData[${currentUnidad}].groups[${currentCategory}] is undefined`);
                 alert('Ошибка загрузки данных. Пожалуйста, обновите страницу.');
                 return;
             }
 
-            const words = vocabularyData[currentUnidad][currentCategory];
+            const words = vocabularyData[currentUnidad].groups[currentCategory];
 
             let correctAnswer, otherWords, options;
             
@@ -1330,26 +1359,26 @@ if (
 
             // Загрузка данных из всех разблокированных unidades
             try {
-                const allUnidadData = { sustantivos: [], adjetivos: [], verbos: [] };
+                const allGroupsData = {}; // Динамический объект для всех групп
 
                 for (const [index, unidad] of UNIDADES.entries()) {
                     // Первая unidad всегда загружается, остальные - только если разблокированы
                     if (index === 0 || profile.unlocks[unidad]) {
-                        const unidadNumber = unidad.split('_')[1];
-                        const response = await fetch(`data/Unidad${unidadNumber}.json`);
+                        const unidadData = vocabularyData[unidad];
 
-                        if (response.ok) {
-                            const data = await response.json();
-
-                            // Объединяем данные из всех разблокированных unidades
-                            if (data.sustantivos) allUnidadData.sustantivos.push(...data.sustantivos);
-                            if (data.adjetivos) allUnidadData.adjetivos.push(...data.adjetivos);
-                            if (data.verbos) allUnidadData.verbos.push(...data.verbos);
+                        if (unidadData && unidadData.groups) {
+                            // Объединяем данные из всех групп всех разблокированных unidades
+                            Object.keys(unidadData.groups).forEach(groupName => {
+                                if (!allGroupsData[groupName]) {
+                                    allGroupsData[groupName] = [];
+                                }
+                                allGroupsData[groupName].push(...unidadData.groups[groupName]);
+                            });
                         }
                     }
                 }
 
-                window.examUnidadData = allUnidadData;
+                window.examUnidadData = allGroupsData;
             } catch (error) {
                 console.error('Error loading exam data:', error);
                 alert('Ошибка загрузки данных для экзамена');
@@ -1384,13 +1413,13 @@ if (
             console.log(`get5QuestionsFromCluster called for: ${cluster.name}`);
             console.log('Cluster exercises:', cluster.exercises);
 
-            if (!unidadData || !unidadData.categories || !unidadData.categories.gramatica) {
-                console.error('No grammar data available in unidadData.categories');
+            if (!unidadData || !unidadData.ejercicios) {
+                console.error('No grammar data available in unidadData.ejercicios');
                 console.log('unidadData:', unidadData);
                 return [];
             }
 
-            const allGrammarExercises = unidadData.categories.gramatica;
+            const allGrammarExercises = unidadData.ejercicios;
             console.log(`Total grammar exercises in data: ${allGrammarExercises.length}`);
             const clusterQuestions = [];
             const questionCounts = {}; // Track how many questions taken from each exercise
@@ -1482,24 +1511,25 @@ if (
             // ========================================
             const questionsPerCategory = 10;
 
-            // Генерация вопросов из всех разблокированных unidades
-            CATEGORIES.forEach(categoryName => {
-                const categoryItems = unidadData[categoryName];
+            // Генерация вопросов из всех групп
+            const allGroupNames = Object.keys(unidadData);
+            allGroupNames.forEach(groupName => {
+                const groupItems = unidadData[groupName];
 
-                if (!categoryItems || categoryItems.length === 0) {
-                    console.warn(`Category ${categoryName} is empty`);
+                if (!groupItems || groupItems.length === 0) {
+                    console.warn(`Group ${groupName} is empty`);
                     return;
                 }
 
                 // Перемешиваем и берём 10 вопросов из объединённых данных всех unidades
-                const shuffled = [...categoryItems].sort(() => Math.random() - 0.5);
-                const selected = shuffled.slice(0, questionsPerCategory);
+                const shuffled = [...groupItems].sort(() => Math.random() - 0.5);
+                const selected = shuffled.slice(0, Math.min(questionsPerCategory, groupItems.length));
 
                 selected.forEach(item => {
                     examQuestions.push({
                         spanish: item.spanish,
                         ru: item.ru,
-                        category: categoryName,
+                        category: groupName,
                         type: 'vocabulary',
                         correctAnswer: item.ru
                     });
@@ -1911,15 +1941,19 @@ if (
 
             // Динамический сброс прогресса для всех 10 unidades
             UNIDADES.forEach(unidad => {
-                CATEGORIES.forEach(category => {
-                    profile.progress[unidad][category] = {
-                        easy10: 0, easy25: 0,
-                        medium10: 0, medium25: 0,
-                        hard10: 0, hard25: 0
-                    };
-                });
-                // Reset grammar progress
-                profile.progress[unidad].gramatica = {};
+                // Сброс всех групп (динамически)
+                const unidadData = vocabularyData[unidad];
+                if (unidadData && unidadData.groups) {
+                    Object.keys(unidadData.groups).forEach(groupName => {
+                        profile.progress[unidad][groupName] = {
+                            easy10: 0, easy25: 0,
+                            medium10: 0, medium25: 0,
+                            hard10: 0, hard25: 0
+                        };
+                    });
+                }
+                // Reset exercises progress
+                profile.progress[unidad].ejercicios = {};
             });
 
             // Динамическая генерация unlocks (все заблокированы кроме первой)
@@ -1946,18 +1980,21 @@ if (
 
             // Динамическое заполнение прогресса для всех 10 unidades
             UNIDADES.forEach(unidad => {
-                CATEGORIES.forEach(category => {
-                    profile.progress[unidad][category] = {
-                        easy10: 100, easy25: 100,
-                        medium10: 100, medium25: 100,
-                        hard10: 100, hard25: 100
-                    };
-                });
-                // Fill grammar progress
+                // Заполнение всех групп (динамически)
                 const unidadData = vocabularyData[unidad];
-                if (unidadData && unidadData.gramatica) {
-                    unidadData.gramatica.forEach(exercise => {
-                        profile.progress[unidad].gramatica[exercise.id] = 100;
+                if (unidadData && unidadData.groups) {
+                    Object.keys(unidadData.groups).forEach(groupName => {
+                        profile.progress[unidad][groupName] = {
+                            easy10: 100, easy25: 100,
+                            medium10: 100, medium25: 100,
+                            hard10: 100, hard25: 100
+                        };
+                    });
+                }
+                // Fill exercises progress
+                if (unidadData && unidadData.ejercicios) {
+                    unidadData.ejercicios.forEach(exercise => {
+                        profile.progress[unidad].ejercicios[exercise.id] = 100;
                     });
                 }
             });
@@ -1986,19 +2023,22 @@ if (
 
             // Динамическая установка 80% прогресса для всех unidades
             UNIDADES.forEach(unidad => {
-                CATEGORIES.forEach(category => {
-                    profile.progress[unidad][category] = {
-                        easy10: 80, easy25: 80,
-                        medium10: 80, medium25: 80,
-                        hard10: 80, hard25: 80
-                    };
-                });
-
-                // Fill grammar progress if exists
+                // Установка 80% для всех групп (динамически)
                 const unidadData = vocabularyData[unidad];
-                if (unidadData && unidadData.gramatica) {
-                    unidadData.gramatica.forEach(exercise => {
-                        profile.progress[unidad].gramatica[exercise.id] = 80;
+                if (unidadData && unidadData.groups) {
+                    Object.keys(unidadData.groups).forEach(groupName => {
+                        profile.progress[unidad][groupName] = {
+                            easy10: 80, easy25: 80,
+                            medium10: 80, medium25: 80,
+                            hard10: 80, hard25: 80
+                        };
+                    });
+                }
+
+                // Fill exercises progress if exists
+                if (unidadData && unidadData.ejercicios) {
+                    unidadData.ejercicios.forEach(exercise => {
+                        profile.progress[unidad].ejercicios[exercise.id] = 80;
                     });
                 }
             });
@@ -2136,18 +2176,19 @@ async function getNavigationState() {
     const unidad = await res.json();
 
     // Проверка структуры JSON
-    if (!unidad || !unidad.id || !unidad.categories) {
-      throw new Error("Неверная структура JSON - отсутствуют обязательные поля (id, categories)");
+    if (!unidad || !unidad.id || !unidad.groups) {
+      throw new Error("Неверная структура JSON - отсутствуют обязательные поля (id, groups)");
     }
 
-    // Проверка наличия категорий
-    const missingCategories = CATEGORIES.filter(cat => !unidad.categories[cat]);
-    if (missingCategories.length > 0) {
-      console.warn(`⚠️ ${filename}: отсутствуют категории: ${missingCategories.join(', ')}`);
+    // Проверка наличия групп
+    const groupCount = Object.keys(unidad.groups).length;
+    if (groupCount === 0) {
+      console.warn(`⚠️ ${filename}: нет групп словаря`);
     }
 
-    vocabularyData[unidad.id] = unidad.categories;
-    console.log(`✅ Загружен: ${filename} → ${unidad.id} (${Object.keys(unidad.categories).length} категорий)`);
+    // Сохраняем полный объект unidad (groups + ejercicios)
+    vocabularyData[unidad.id] = unidad;
+    console.log(`✅ Загружен: ${filename} → ${unidad.id} (${groupCount} групп, ${unidad.ejercicios?.length || 0} упражнений)`);
 
   } catch (e) {
     console.error(`❌ ОШИБКА загрузки ${filename}:`, e.message);
@@ -2464,12 +2505,12 @@ let __gramIsAwaitingNext = false;
 // Load grammar data from JSON file
 function loadGramaticaExercises() {
     const unidadData = window.unidadData;
-    if (unidadData && unidadData.categories && unidadData.categories.gramatica) {
-        gramaticaExercises = unidadData.categories.gramatica;
+    if (unidadData && unidadData.ejercicios) {
+        gramaticaExercises = unidadData.ejercicios;
         console.log(`✅ Loaded ${gramaticaExercises.length} grammar exercises from JSON`);
     } else {
         gramaticaExercises = [];
-        console.warn('⚠️ No grammar exercises found in unidadData.categories');
+        console.warn('⚠️ No grammar exercises found in unidadData.ejercicios');
     }
 }
 
@@ -2488,8 +2529,8 @@ async function showGramaticaMenu() {
         return;
     }
 
-    // Сохраняем для использования в упражнениях
-    window.unidadData = { categories: unidadData };
+    // Сохраняем полный объект unidad для использования в упражнениях
+    window.unidadData = unidadData;
     console.log(`✅ Using data for ${currentUnidad}`);
 
     loadGramaticaExercises();
@@ -2521,7 +2562,7 @@ function renderGramaticaExercises() {
 
     pageExercises.forEach((exercise, idx) => {
         const exerciseId = exercise.id;
-        const score = profile.progress[currentUnidad].gramatica[exerciseId] || 0;
+        const score = profile.progress[currentUnidad].ejercicios[exerciseId] || 0;
         const isPassed = score >= 80;
 
         const card = document.createElement('div');
@@ -2590,7 +2631,7 @@ function calculateGramaticaProgress() {
 
     let totalScore = 0;
     gramaticaExercises.forEach(exercise => {
-        const score = profile.progress[currentUnidad].gramatica[exercise.id] || 0;
+        const score = profile.progress[currentUnidad].ejercicios[exercise.id] || 0;
         totalScore += score;
     });
 
@@ -2785,11 +2826,11 @@ function updateGramProgress(exerciseId, score) {
 
     ensureProgressSkeleton(profile);
 
-    const currentBest = profile.progress[currentUnidad].gramatica[exerciseId] || 0;
+    const currentBest = profile.progress[currentUnidad].ejercicios[exerciseId] || 0;
 
     if (score > currentBest) {
-        profile.progress[currentUnidad].gramatica[exerciseId] = score;
-        console.log(`Grammar progress updated: ${currentUnidad}/${exerciseId} = ${score}%`);
+        profile.progress[currentUnidad].ejercicios[exerciseId] = score;
+        console.log(`Exercises progress updated: ${currentUnidad}/${exerciseId} = ${score}%`);
     }
 
     profile.lastSeenAt = Date.now();

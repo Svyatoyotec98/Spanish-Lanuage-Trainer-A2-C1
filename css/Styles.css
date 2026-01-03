@@ -947,3 +947,95 @@
             transform: translateY(-2px);
         }
 
+        /* ═══════════════════════════════════════════════════════════════
+           CARD MATCHING GAME STYLES
+           ═══════════════════════════════════════════════════════════════ */
+
+        .matching-card {
+            background: white;
+            border: 3px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: relative;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .matching-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .matching-card.selected {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            transform: scale(1.05);
+        }
+
+        .matching-card.correct {
+            border-color: #27ae60;
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            animation: correctPulse 0.6s ease;
+        }
+
+        .matching-card.incorrect {
+            border-color: #e74c3c;
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+            animation: incorrectShake 0.6s ease;
+        }
+
+        @keyframes correctPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes incorrectShake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .card-front,
+        .card-back {
+            width: 100%;
+            transition: opacity 0.3s ease;
+        }
+
+        .card-front {
+            opacity: 1;
+        }
+
+        .card-back {
+            opacity: 0;
+        }
+
+        .matching-card.flipped .card-front {
+            opacity: 0;
+        }
+
+        .matching-card.flipped .card-back {
+            opacity: 1;
+        }
+
+        .card-text {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Fade away animation for correct matches */
+        .matching-card.correct {
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .matching-card.correct[style*="opacity: 0"] {
+            transform: scale(0.8);
+            filter: blur(3px);
+        }
+

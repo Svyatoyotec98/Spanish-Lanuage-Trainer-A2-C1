@@ -1443,12 +1443,16 @@ if (
         }
 
         // ═══════════════════════════════════════════════════════════════
-        // CARD MATCHING GAME SYSTEM
+        // CARD MATCHING GAME SYSTEM (Pair Matching with Icons)
         // ═══════════════════════════════════════════════════════════════
 
-        let cardMatchingWords = [];
-        let selectedCards = new Set();
-        let correctWordIndices = new Set();
+        let leftWords = [];   // Russian words
+        let rightWords = [];  // Spanish words (including 2 decoys)
+        let selectedLeft = null;   // Index of selected left card
+        let selectedRight = null;  // Index of selected right card
+        let matchedPairs = new Set();  // Indices of matched left words
+        let correctMatches = 0;   // Count of correct matches
+        let isAnimating = false;  // Prevent clicks during animation
 
         function startCardMatchingGame() {
             if (!currentUnidad || !currentCategory) {
@@ -1471,41 +1475,35 @@ if (
                 return;
             }
 
-            // Генерируем засланцев (decoy words) из других групп
+            // Генерируем засланцев (2 испанских слова из других групп)
             const decoyWords = generateDecoyWords(currentCategory, 2);
 
-            // Комбинируем реальные слова и засланцев
-            const allWords = [...groupWords, ...decoyWords];
+            // LEFT: русские слова (перемешиваем)
+            leftWords = shuffleArray([...groupWords]);
 
-            // Перемешиваем
-            cardMatchingWords = shuffleArray(allWords);
+            // RIGHT: испанские слова + 2 засланца (перемешиваем)
+            rightWords = shuffleArray([...groupWords, ...decoyWords]);
 
-            // Запоминаем индексы правильных слов
-            correctWordIndices = new Set();
-            cardMatchingWords.forEach((word, index) => {
-                if (groupWords.includes(word)) {
-                    correctWordIndices.add(index);
-                }
-            });
+            // Сброс состояния
+            selectedLeft = null;
+            selectedRight = null;
+            matchedPairs = new Set();
+            correctMatches = 0;
+            isAnimating = false;
 
-            // Очищаем выбор
-            selectedCards = new Set();
-
-            // Показываем экран
+            // Показываем экран (отдельный, не внутри Palabras menu!)
             hideAll();
             showUserBadge();
             document.getElementById('cardMatchingScreen').classList.remove('hidden');
 
             // Обновляем заголовок
             const displayName = currentCategory.replace(/_/g, ' ');
+            document.getElementById('cardMatchingTitle').textContent = `🃏 ${displayName}`;
             document.getElementById('cardMatchingSubtitle').textContent =
-                `Выберите все слова группы ${displayName}`;
+                `Сопоставьте пары: русское слово ↔ испанское слово`;
 
-            // Обновляем счетчик
-            document.getElementById('totalCorrect').textContent = groupSize;
-
-            // Рендерим карточки
-            renderCards();
+            // Рендерим две колонки карт
+            renderPairMatchingCards();
 
             saveNavigationState('cardMatchingScreen');
         }
@@ -1535,182 +1533,236 @@ if (
             return newArray;
         }
 
-        function renderCards() {
-            const container = document.getElementById('cardsGrid');
-            container.innerHTML = '';
+        function renderPairMatchingCards() {
+            const leftContainer = document.getElementById('leftColumn');
+            const rightContainer = document.getElementById('rightColumn');
 
-            cardMatchingWords.forEach((word, index) => {
-                const card = document.createElement('div');
-                card.className = 'card-matching-card';
-                card.id = `card-${index}`;
-                card.style.cssText = `
-                    padding: 20px;
-                    background: white;
-                    border: 3px solid #ddd;
-                    border-radius: 12px;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                    text-align: center;
-                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                `;
+            leftContainer.innerHTML = '';
+            rightContainer.innerHTML = '';
 
-                card.innerHTML = `
-                    <div style="font-size: 1.3em; font-weight: bold; color: #333; margin-bottom: 8px;">
-                        ${word.spanish}
-                    </div>
-                    <div style="font-size: 0.95em; color: #666;">
-                        ${word.ru}
-                    </div>
-                `;
-
-                card.onclick = () => toggleCardSelection(index);
-                container.appendChild(card);
+            // Render LEFT column (Russian words)
+            leftWords.forEach((word, index) => {
+                const card = createCard(word, index, 'left');
+                leftContainer.appendChild(card);
             });
 
-            updateSelectedCount();
-        }
-
-        function toggleCardSelection(index) {
-            const card = document.getElementById(`card-${index}`);
-            if (!card) return;
-
-            if (selectedCards.has(index)) {
-                selectedCards.delete(index);
-                card.style.border = '3px solid #ddd';
-                card.style.background = 'white';
-                card.style.transform = 'scale(1)';
-            } else {
-                selectedCards.add(index);
-                card.style.border = '3px solid #667eea';
-                card.style.background = 'linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%)';
-                card.style.transform = 'scale(1.05)';
-            }
-
-            updateSelectedCount();
-        }
-
-        function updateSelectedCount() {
-            document.getElementById('selectedCount').textContent = selectedCards.size;
-        }
-
-        function resetCardSelection() {
-            selectedCards.clear();
-            cardMatchingWords.forEach((_, index) => {
-                const card = document.getElementById(`card-${index}`);
-                if (card) {
-                    card.style.border = '3px solid #ddd';
-                    card.style.background = 'white';
-                    card.style.transform = 'scale(1)';
-                }
+            // Render RIGHT column (Spanish words)
+            rightWords.forEach((word, index) => {
+                const card = createCard(word, index, 'right');
+                rightContainer.appendChild(card);
             });
-            updateSelectedCount();
         }
 
-        function checkCardSelection() {
-            // Проверяем что выбраны ВСЕ правильные слова и НЕТ неправильных
-            const correctlySelected = new Set([...selectedCards].filter(i => correctWordIndices.has(i)));
-            const incorrectlySelected = new Set([...selectedCards].filter(i => !correctWordIndices.has(i)));
-            const missedCorrect = new Set([...correctWordIndices].filter(i => !selectedCards.has(i)));
+        function createCard(word, index, side) {
+            const card = document.createElement('div');
+            card.className = `matching-card ${side}`;
+            card.id = `${side}-${index}`;
+            card.dataset.side = side;
+            card.dataset.index = index;
 
-            const isPerfect = incorrectlySelected.size === 0 && missedCorrect.size === 0 &&
-                             correctlySelected.size === correctWordIndices.size;
-
-            // Визуальная обратная связь
-            cardMatchingWords.forEach((word, index) => {
-                const card = document.getElementById(`card-${index}`);
-                if (!card) return;
-
-                const isCorrectWord = correctWordIndices.has(index);
-                const isSelected = selectedCards.has(index);
-
-                if (isCorrectWord && isSelected) {
-                    // Правильно выбрано
-                    card.style.border = '3px solid #27ae60';
-                    card.style.background = '#d4edda';
-                } else if (isCorrectWord && !isSelected) {
-                    // Пропущено правильное слово
-                    card.style.border = '3px solid #f39c12';
-                    card.style.background = '#fff3cd';
-                } else if (!isCorrectWord && isSelected) {
-                    // Неправильно выбран засланец
-                    card.style.border = '3px solid #e74c3c';
-                    card.style.background = '#f8d7da';
-                } else {
-                    // Правильно не выбран засланец
-                    card.style.border = '3px solid #95a5a6';
-                    card.style.background = '#ecf0f1';
-                }
-            });
-
-            // Задержка перед показом результатов
-            setTimeout(() => {
-                showCardMatchingResults(isPerfect, correctlySelected.size, incorrectlySelected.size, missedCorrect.size);
-            }, 2000);
-        }
-
-        function showCardMatchingResults(isPerfect, correctCount, incorrectCount, missedCount) {
-            hideAll();
-            showUserBadge();
-            document.getElementById('cardMatchingResultsScreen').classList.remove('hidden');
-
-            const displayName = currentCategory.replace(/_/g, ' ');
-
-            if (isPerfect) {
-                document.getElementById('cardMatchingResultTitle').textContent = '🎉 Отлично!';
-                document.getElementById('cardMatchingStats').textContent =
-                    `Вы выбрали все слова группы ${displayName} правильно!`;
-                document.getElementById('cardMatchingGrade').textContent = 'Идеальный результат! 💯';
-                document.getElementById('cardMatchingGrade').style.color = '#27ae60';
-
-                // Сохраняем прогресс 100%
-                const profile = getActiveProfile();
-                if (profile) {
-                    ensureProgressSkeleton(profile);
-                    if (!profile.progress[currentUnidad][currentCategory]) {
-                        profile.progress[currentUnidad][currentCategory] = {
-                            easy10: 0, easy25: 0,
-                            medium10: 0, medium25: 0,
-                            hard10: 0, hard25: 0
-                        };
-                    }
-                    // Используем easy10 для хранения Card Matching прогресса
-                    profile.progress[currentUnidad][currentCategory].easy10 = 100;
-
-                    const state = loadAppState();
-                    state.profiles[profile.id] = profile;
-                    saveAppState(state);
-
-                    updateUnlocks();
-                }
-            } else {
-                document.getElementById('cardMatchingResultTitle').textContent = '❌ Попробуйте снова';
-                document.getElementById('cardMatchingStats').textContent =
-                    `Вы выбрали не все слова группы ${displayName} правильно.`;
-                document.getElementById('cardMatchingGrade').textContent = 'Попробуйте еще раз!';
-                document.getElementById('cardMatchingGrade').style.color = '#e74c3c';
-
-                // Прогресс 0% при ошибке
-                // Не сохраняем прогресс
-            }
-
-            // Детальная статистика
-            const breakdown = document.getElementById('cardMatchingBreakdown');
-            breakdown.innerHTML = `
-                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
-                    <h3 style="margin-top: 0; color: #333;">📊 Детальная статистика:</h3>
-                    <p style="color: #27ae60; margin: 10px 0;">
-                        ✓ Правильно выбрано: <strong>${correctCount}</strong> из ${correctWordIndices.size}
-                    </p>
-                    <p style="color: #e74c3c; margin: 10px 0;">
-                        ✗ Неправильно выбрано (засланцы): <strong>${incorrectCount}</strong>
-                    </p>
-                    <p style="color: #f39c12; margin: 10px 0;">
-                        ⚠ Пропущено правильных слов: <strong>${missedCount}</strong>
-                    </p>
+            // Card front (shows text)
+            const front = document.createElement('div');
+            front.className = 'card-front';
+            front.innerHTML = `
+                <div class="card-text">
+                    ${side === 'left' ? word.ru : word.spanish}
                 </div>
             `;
 
-            saveNavigationState('cardMatchingResultsScreen');
+            // Card back (shows icon - hidden initially)
+            const back = document.createElement('div');
+            back.className = 'card-back hidden';
+
+            // Get Phosphor icon
+            const iconName = word.icon || 'question';
+            back.innerHTML = `
+                <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
+                <div style="margin-top: 10px; font-size: 0.9em;">${side === 'left' ? word.ru : word.spanish}</div>
+            `;
+
+            card.appendChild(front);
+            card.appendChild(back);
+
+            card.onclick = () => selectCard(side, index);
+
+            return card;
+        }
+
+        function selectCard(side, index) {
+            if (isAnimating) return; // Prevent clicks during animation
+
+            const card = document.getElementById(`${side}-${index}`);
+            if (!card) return;
+
+            // Check if already matched
+            const leftIdx = side === 'left' ? index : selectedLeft;
+            if (leftIdx !== null && matchedPairs.has(leftIdx)) return;
+
+            if (side === 'left') {
+                // Deselect previous left card
+                if (selectedLeft !== null) {
+                    const prevCard = document.getElementById(`left-${selectedLeft}`);
+                    if (prevCard) prevCard.classList.remove('selected');
+                }
+
+                // Select new left card
+                selectedLeft = index;
+                card.classList.add('selected');
+
+                // If right card already selected, check pair
+                if (selectedRight !== null) {
+                    checkPair();
+                }
+            } else { // right side
+                // Deselect previous right card
+                if (selectedRight !== null) {
+                    const prevCard = document.getElementById(`right-${selectedRight}`);
+                    if (prevCard) prevCard.classList.remove('selected');
+                }
+
+                // Select new right card
+                selectedRight = index;
+                card.classList.add('selected');
+
+                // If left card already selected, check pair
+                if (selectedLeft !== null) {
+                    checkPair();
+                }
+            }
+        }
+
+        function checkPair() {
+            if (selectedLeft === null || selectedRight === null) return;
+
+            isAnimating = true;
+
+            const leftWord = leftWords[selectedLeft];
+            const rightWord = rightWords[selectedRight];
+
+            const leftCard = document.getElementById(`left-${selectedLeft}`);
+            const rightCard = document.getElementById(`right-${selectedRight}`);
+
+            // Flip cards and show icons
+            flipCard(leftCard, true);
+            flipCard(rightCard, true);
+
+            // Check if icons match (same word)
+            const isMatch = leftWord.spanish === rightWord.spanish && leftWord.ru === rightWord.ru;
+
+            setTimeout(() => {
+                if (isMatch) {
+                    // Correct match - green fade away
+                    leftCard.classList.add('correct');
+                    rightCard.classList.add('correct');
+
+                    matchedPairs.add(selectedLeft);
+                    correctMatches++;
+
+                    setTimeout(() => {
+                        leftCard.style.opacity = '0';
+                        rightCard.style.opacity = '0';
+
+                        selectedLeft = null;
+                        selectedRight = null;
+                        isAnimating = false;
+
+                        // Check if game finished
+                        if (matchedPairs.size === leftWords.length) {
+                            finishGame();
+                        }
+                    }, 1000); // Wait 1s before fading
+                } else {
+                    // Wrong match - red burn and flip back
+                    leftCard.classList.add('incorrect');
+                    rightCard.classList.add('incorrect');
+
+                    setTimeout(() => {
+                        leftCard.classList.remove('incorrect', 'selected');
+                        rightCard.classList.remove('incorrect', 'selected');
+
+                        flipCard(leftCard, false);
+                        flipCard(rightCard, false);
+
+                        selectedLeft = null;
+                        selectedRight = null;
+                        isAnimating = false;
+                    }, 2000);
+                }
+            }, 600); // Wait for flip animation
+        }
+
+        function flipCard(card, showBack) {
+            const front = card.querySelector('.card-front');
+            const back = card.querySelector('.card-back');
+
+            if (showBack) {
+                front.classList.add('hidden');
+                back.classList.remove('hidden');
+                card.classList.add('flipped');
+            } else {
+                front.classList.remove('hidden');
+                back.classList.add('hidden');
+                card.classList.remove('flipped');
+            }
+        }
+
+        function finishGame() {
+            const totalPairs = leftWords.length;
+            const percentage = Math.round((correctMatches / totalPairs) * 100);
+
+            // Save progress
+            const profile = getActiveProfile();
+            if (profile) {
+                ensureProgressSkeleton(profile);
+                if (!profile.progress[currentUnidad][currentCategory]) {
+                    profile.progress[currentUnidad][currentCategory] = {
+                        easy10: 0, easy25: 0,
+                        medium10: 0, medium25: 0,
+                        hard10: 0, hard25: 0
+                    };
+                }
+
+                profile.progress[currentUnidad][currentCategory].easy10 = percentage;
+
+                const state = loadAppState();
+                state.profiles[profile.id] = profile;
+                saveAppState(state);
+
+                updateUnlocks();
+            }
+
+            // Show results screen
+            setTimeout(() => {
+                hideAll();
+                showUserBadge();
+                document.getElementById('cardMatchingResultsScreen').classList.remove('hidden');
+
+                const displayName = currentCategory.replace(/_/g, ' ');
+
+                document.getElementById('cardMatchingResultTitle').textContent =
+                    percentage >= 80 ? '🎉 Отлично!' : '👍 Хорошая попытка!';
+
+                document.getElementById('cardMatchingStats').textContent =
+                    `Правильных пар: ${correctMatches} из ${totalPairs}`;
+
+                document.getElementById('cardMatchingGrade').textContent = `${percentage}%`;
+                document.getElementById('cardMatchingGrade').style.color =
+                    percentage >= 80 ? '#27ae60' : percentage >= 60 ? '#f39c12' : '#e74c3c';
+
+                document.getElementById('cardMatchingBreakdown').innerHTML = `
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                        <h3 style="margin-top: 0; color: #333;">📊 Результат:</h3>
+                        <p style="color: #27ae60; margin: 10px 0;">
+                            ✓ Правильно: <strong>${correctMatches}</strong> из ${totalPairs}
+                        </p>
+                        <p style="color: #333; margin: 10px 0;">
+                            Процент: <strong>${percentage}%</strong>
+                        </p>
+                    </div>
+                `;
+
+                saveNavigationState('cardMatchingResultsScreen');
+            }, 1500);
         }
 
         function retryCardMatching() {
@@ -1718,9 +1770,7 @@ if (
         }
 
         function exitCardMatching() {
-            if (confirm('Выйти из игры? Прогресс не будет сохранён.')) {
-                showCategoryMenu(currentCategory);
-            }
+            showCategoryMenu(currentCategory);
         }
 
         // ═══════════════════════════════════════════════════════════════

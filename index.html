@@ -595,37 +595,36 @@
         <div id="cardMatchingScreen" class="question-container hidden">
             <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
             <h1 id="cardMatchingTitle">🃏 Card Matching Game</h1>
-            <p class="subtitle" id="cardMatchingSubtitle">Выберите все слова группы FAMILIA</p>
+            <p class="subtitle" id="cardMatchingSubtitle">Сопоставьте пары: русское слово ↔ испанское слово</p>
 
             <!-- Instructions -->
-            <div style="margin: 20px auto; padding: 15px; background: #e3f2fd; border-radius: 10px; max-width: 600px; text-align: center;">
+            <div style="margin: 20px auto; padding: 15px; background: #e3f2fd; border-radius: 10px; max-width: 700px; text-align: center;">
                 <p style="margin: 0; color: #1976d2; font-weight: 600;">
-                    📌 Выберите ВСЕ слова своей группы. Остерегайтесь "засланцев" из других групп!
+                    📌 Выберите слово слева (🇷🇺), затем слово справа (🇪🇸). Карты перевернутся и покажут иконки!
                 </p>
             </div>
 
-            <!-- Selected counter -->
-            <div style="text-align: center; margin: 15px 0; font-size: 1.1em; color: #667eea;">
-                Выбрано: <span id="selectedCount" style="font-weight: bold;">0</span> / <span id="totalCorrect">6</span>
+            <!-- Two Column Layout for Pair Matching -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 30px auto; max-width: 900px;">
+                <!-- LEFT Column (Russian) -->
+                <div>
+                    <h3 style="text-align: center; color: #667eea; margin-bottom: 20px;">🇷🇺 Русский</h3>
+                    <div id="leftColumn" style="display: flex; flex-direction: column; gap: 15px;">
+                        <!-- Russian cards generated here -->
+                    </div>
+                </div>
+
+                <!-- RIGHT Column (Spanish + decoys) -->
+                <div>
+                    <h3 style="text-align: center; color: #667eea; margin-bottom: 20px;">🇪🇸 Español</h3>
+                    <div id="rightColumn" style="display: flex; flex-direction: column; gap: 15px;">
+                        <!-- Spanish cards generated here -->
+                    </div>
+                </div>
             </div>
 
-            <!-- Cards Grid -->
-            <div id="cardsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 30px auto; max-width: 900px;">
-                <!-- Cards will be generated dynamically -->
-            </div>
-
-            <!-- Action Buttons -->
             <div style="text-align: center; margin-top: 30px;">
-                <button class="btn btn-primary" id="checkCardsBtn" onclick="checkCardSelection()" style="font-size: 1.1em; padding: 15px 40px;">
-                    ✓ Проверить ответ
-                </button>
-                <button class="btn btn-secondary" onclick="resetCardSelection()" style="margin-left: 15px;">
-                    🔄 Сбросить выбор
-                </button>
-            </div>
-
-            <div style="text-align: center; margin-top: 20px;">
-                <button class="btn btn-back" onclick="exitCardMatching()">← Назад к выбору теста</button>
+                <button class="btn btn-back" onclick="exitCardMatching()">← Назад к меню</button>
             </div>
         </div>
 

@@ -1293,14 +1293,19 @@ if (
             
             if (currentLevel === 'easy') {
                 // Easy: ES→RU, ABCD
+                const iconName = question.icon || 'question';
+                document.getElementById('questionIcon').innerHTML = `<i class="ph ph-${iconName}"></i>`;
                 document.getElementById('questionText').textContent = question.spanish;
                 showMultipleChoice(question, 'easy');
             } else if (currentLevel === 'medium') {
                 // Medium: RU→ES, ABCD
+                const iconName = question.icon || 'question';
+                document.getElementById('questionIcon').innerHTML = `<i class="ph ph-${iconName}"></i>`;
                 document.getElementById('questionText').textContent = question.ru;
                 showMultipleChoice(question, 'medium');
             } else if (currentLevel === 'hard') {
                 // Hard: RU→ES, Manual Input
+                document.getElementById('questionIcon').innerHTML = ''; // No icon for Hard test
                 document.getElementById('questionText').textContent = question.ru;
                 showManualInput();
             }

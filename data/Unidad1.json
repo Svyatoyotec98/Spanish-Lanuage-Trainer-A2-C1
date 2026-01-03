@@ -3,51 +3,519 @@
   "title": "Unidad 1",
   "groups": {
     "FAMILIA": [
-      {"spanish": "el abuelo", "ru": "дедушка", "type": "sustantivo"},
-      {"spanish": "la abuela", "ru": "бабушка", "type": "sustantivo"},
-      {"spanish": "materno", "ru": "по материнской линии (м)", "type": "adjetivo"},
-      {"spanish": "materna", "ru": "по материнской линии (ж)", "type": "adjetivo"},
-      {"spanish": "paterno", "ru": "по отцовской линии (м)", "type": "adjetivo"},
-      {"spanish": "paterna", "ru": "по отцовской линии (ж)", "type": "adjetivo"}
+      {
+        "spanish": "el abuelo",
+        "ru": "дедушка",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ paterno tiene 85 años.",
+          "El ___ de mi esposa cocina muy bien.",
+          "Visitamos a mi ___ cada domingo.",
+          "El ___ nos contó historias de su juventud."
+        ]
+      },
+      {
+        "spanish": "la abuela",
+        "ru": "бабушка",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ materna vive en el campo.",
+          "La ___ prepara las mejores galletas.",
+          "Llamo a mi ___ todos los viernes.",
+          "La ___ nos enseñó a coser."
+        ]
+      },
+      {
+        "spanish": "materno",
+        "ru": "по материнской линии (м)",
+        "type": "adjetivo",
+        "icon": "gender-female",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo ___ era español.",
+          "El lado ___ de mi familia es muy grande.",
+          "Mi tío ___ vive en Argentina.",
+          "El apellido ___ es García."
+        ]
+      },
+      {
+        "spanish": "materna",
+        "ru": "по материнской линии (ж)",
+        "type": "adjetivo",
+        "icon": "gender-female",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuela ___ nació en México.",
+          "La familia ___ tiene muchas tradiciones.",
+          "Mi prima ___ estudia medicina.",
+          "La lengua ___ de mi madre es el catalán."
+        ]
+      },
+      {
+        "spanish": "paterno",
+        "ru": "по отцовской линии (м)",
+        "type": "adjetivo",
+        "icon": "gender-male",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo ___ fue militar.",
+          "El apellido ___ es muy común.",
+          "Mi tío ___ trabaja en Barcelona.",
+          "El lado ___ viene de Andalucía."
+        ]
+      },
+      {
+        "spanish": "paterna",
+        "ru": "по отцовской линии (ж)",
+        "type": "adjetivo",
+        "icon": "gender-male",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuela ___ era profesora.",
+          "La familia ___ es de origen italiano.",
+          "Mi prima ___ se casó el año pasado.",
+          "La casa ___ está en el pueblo."
+        ]
+      }
     ],
     "IDIOMAS_APRENDIZAJE": [
-      {"spanish": "el profesor", "ru": "учитель", "type": "sustantivo"},
-      {"spanish": "la profesora", "ru": "учительница", "type": "sustantivo"},
-      {"spanish": "el compañero", "ru": "одноклассник, товарищ", "type": "sustantivo"},
-      {"spanish": "la compañera", "ru": "одноклассница, товарищ", "type": "sustantivo"},
-      {"spanish": "la lengua materna", "ru": "родной язык", "type": "sustantivo"},
-      {"spanish": "el intercambio", "ru": "языковой обмен", "type": "sustantivo"},
-      {"spanish": "el nivel", "ru": "уровень", "type": "sustantivo"},
-      {"spanish": "la fluidez", "ru": "беглость речи", "type": "sustantivo"},
-      {"spanish": "la pronunciación", "ru": "произношение", "type": "sustantivo"},
-      {"spanish": "el acento", "ru": "акцент", "type": "sustantivo"},
-      {"spanish": "el nativo", "ru": "носитель языка (м)", "type": "sustantivo"},
-      {"spanish": "la nativa", "ru": "носитель языка (ж)", "type": "sustantivo"},
-      {"spanish": "la dificultad", "ru": "трудность", "type": "sustantivo"},
-      {"spanish": "el error", "ru": "ошибка", "type": "sustantivo"},
-      {"spanish": "la corrección", "ru": "исправление", "type": "sustantivo"},
-      {"spanish": "la gramática", "ru": "грамматика", "type": "sustantivo"},
-      {"spanish": "el vocabulario", "ru": "словарный запас", "type": "sustantivo"},
-      {"spanish": "el estilo de aprendizaje", "ru": "стиль обучения", "type": "sustantivo"}
+      {
+        "spanish": "el profesor",
+        "ru": "учитель",
+        "type": "sustantivo",
+        "icon": "chalkboard-teacher",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de español es muy paciente.",
+          "Nuestro ___ explica muy bien la gramática.",
+          "El ___ habla cuatro idiomas.",
+          "Pregunto al ___ cuando no entiendo."
+        ]
+      },
+      {
+        "spanish": "la profesora",
+        "ru": "учительница",
+        "type": "sustantivo",
+        "icon": "chalkboard-teacher",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ corrige nuestros errores con paciencia.",
+          "Nuestra ___ es de Argentina.",
+          "La ___ nos da mucha tarea.",
+          "La ___ enseña en la universidad."
+        ]
+      },
+      {
+        "spanish": "el compañero",
+        "ru": "одноклассник, товарищ",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ de clase es alemán.",
+          "Practico español con mi ___.",
+          "El ___ me ayuda con los ejercicios.",
+          "Un ___ me prestó su libro."
+        ]
+      },
+      {
+        "spanish": "la compañera",
+        "ru": "одноклассница, товарищ",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ de trabajo habla tres idiomas.",
+          "La ___ explica muy bien.",
+          "Una ___ me invitó a su casa.",
+          "La ___ estudia mucho."
+        ]
+      },
+      {
+        "spanish": "la lengua materna",
+        "ru": "родной язык",
+        "type": "sustantivo",
+        "icon": "chat-centered-text",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ es el ruso.",
+          "En casa hablamos nuestra ___.",
+          "La ___ de mi padre es el catalán.",
+          "Enseño mi ___ a extranjeros."
+        ]
+      },
+      {
+        "spanish": "el intercambio",
+        "ru": "языковой обмен",
+        "type": "sustantivo",
+        "icon": "arrows-left-right",
+        "useIcon": true,
+        "hardSentences": [
+          "Hago un ___ lingüístico cada semana.",
+          "El ___ me ayuda a practicar.",
+          "Busco un ___ con un nativo.",
+          "El ___ dura una hora."
+        ]
+      },
+      {
+        "spanish": "el nivel",
+        "ru": "уровень",
+        "type": "sustantivo",
+        "icon": "steps",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ de español es B1.",
+          "Quiero subir mi ___ este año.",
+          "El ___ avanzado es muy difícil.",
+          "Tengo un ___ intermedio en francés."
+        ]
+      },
+      {
+        "spanish": "la fluidez",
+        "ru": "беглость речи",
+        "type": "sustantivo",
+        "icon": "waves",
+        "useIcon": true,
+        "hardSentences": [
+          "Necesito mejorar mi ___ al hablar.",
+          "La ___ viene con la práctica.",
+          "Tiene mucha ___ en inglés.",
+          "Para ganar ___ hay que hablar mucho."
+        ]
+      },
+      {
+        "spanish": "la pronunciación",
+        "ru": "произношение",
+        "type": "sustantivo",
+        "icon": "microphone",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ de la erre es mala.",
+          "Practico la ___ todos los días.",
+          "La ___ española es difícil.",
+          "Quiero mejorar mi ___."
+        ]
+      },
+      {
+        "spanish": "el acento",
+        "ru": "акцент",
+        "type": "sustantivo",
+        "icon": "flag",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo un ___ ruso muy fuerte.",
+          "El ___ argentino es diferente.",
+          "Mi ___ se nota mucho.",
+          "Quiero perder mi ___."
+        ]
+      },
+      {
+        "spanish": "el nativo",
+        "ru": "носитель языка (м)",
+        "type": "sustantivo",
+        "icon": "user-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Practico con un ___ español.",
+          "El ___ habla muy rápido.",
+          "Conozco a un ___ de México.",
+          "Un ___ me corrige los errores."
+        ]
+      },
+      {
+        "spanish": "la nativa",
+        "ru": "носитель языка (ж)",
+        "type": "sustantivo",
+        "icon": "user-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi amiga ___ me ayuda mucho.",
+          "La ___ enseña expresiones coloquiales.",
+          "Una ___ colombiana trabaja conmigo.",
+          "La ___ habla con mucha naturalidad."
+        ]
+      },
+      {
+        "spanish": "la dificultad",
+        "ru": "трудность",
+        "type": "sustantivo",
+        "icon": "warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ con el subjuntivo.",
+          "La ___ principal es la gramática.",
+          "Esta ___ se puede superar.",
+          "La ___ más grande son los verbos."
+        ]
+      },
+      {
+        "spanish": "el error",
+        "ru": "ошибка",
+        "type": "sustantivo",
+        "icon": "x-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Cometí un ___ en el examen.",
+          "El ___ más común es el artículo.",
+          "Aprendo de cada ___.",
+          "El ___ fue en la conjugación."
+        ]
+      },
+      {
+        "spanish": "la corrección",
+        "ru": "исправление",
+        "type": "sustantivo",
+        "icon": "check-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ del profesor me ayuda.",
+          "Necesito ___ constante para mejorar.",
+          "La ___ debe ser inmediata.",
+          "Agradezco cada ___."
+        ]
+      },
+      {
+        "spanish": "la gramática",
+        "ru": "грамматика",
+        "type": "sustantivo",
+        "icon": "book-open-text",
+        "useIcon": true,
+        "hardSentences": [
+          "Estudio ___ todos los días.",
+          "La ___ española tiene muchas reglas.",
+          "Necesito repasar la ___.",
+          "La ___ es importante pero difícil."
+        ]
+      },
+      {
+        "spanish": "el vocabulario",
+        "ru": "словарный запас",
+        "type": "sustantivo",
+        "icon": "list",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ todavía es limitado.",
+          "Aprendo ___ nuevo cada día.",
+          "El ___ técnico es muy difícil.",
+          "Necesito ampliar mi ___."
+        ]
+      },
+      {
+        "spanish": "el estilo de aprendizaje",
+        "ru": "стиль обучения",
+        "type": "sustantivo",
+        "icon": "brain",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ es visual.",
+          "Cada persona tiene su ___.",
+          "Prefiero un ___ práctico.",
+          "El ___ influye en el progreso."
+        ]
+      }
     ],
     "EMOCIONES": [
-      {"spanish": "seguro", "ru": "уверенный (м)", "type": "adjetivo"},
-      {"spanish": "segura", "ru": "уверенная (ж)", "type": "adjetivo"},
-      {"spanish": "inseguro", "ru": "неуверенный (м)", "type": "adjetivo"},
-      {"spanish": "insegura", "ru": "неуверенная (ж)", "type": "adjetivo"},
-      {"spanish": "la frustración", "ru": "фрустрация", "type": "sustantivo"},
-      {"spanish": "ridículo", "ru": "смешной, нелепый (м)", "type": "adjetivo"},
-      {"spanish": "ridícula", "ru": "смешная, нелепая (ж)", "type": "adjetivo"},
-      {"spanish": "la vergüenza", "ru": "стыд", "type": "sustantivo"},
-      {"spanish": "el miedo", "ru": "страх", "type": "sustantivo"}
+      {
+        "spanish": "seguro",
+        "ru": "уверенный (м)",
+        "type": "adjetivo",
+        "icon": "shield-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Me siento ___ cuando hablo en español.",
+          "Estoy ___ de mi respuesta.",
+          "No estoy ___ de la pronunciación.",
+          "Él se siente más ___ ahora."
+        ]
+      },
+      {
+        "spanish": "segura",
+        "ru": "уверенная (ж)",
+        "type": "adjetivo",
+        "icon": "shield-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Ella está ___ de aprobar el examen.",
+          "Me siento ___ cuando practico.",
+          "No estoy ___ de esta traducción.",
+          "Mi hermana se siente muy ___."
+        ]
+      },
+      {
+        "spanish": "inseguro",
+        "ru": "неуверенный (м)",
+        "type": "adjetivo",
+        "icon": "shield-warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Me siento ___ al hablar en público.",
+          "Estoy ___ de mi nivel.",
+          "Él se siente ___ con los verbos.",
+          "Todavía estoy ___."
+        ]
+      },
+      {
+        "spanish": "insegura",
+        "ru": "неуверенная (ж)",
+        "type": "adjetivo",
+        "icon": "shield-warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Ella se siente ___ cuando habla.",
+          "Estoy ___ de mi pronunciación.",
+          "Mi amiga está ___ de su español.",
+          "Me siento ___ en los exámenes."
+        ]
+      },
+      {
+        "spanish": "la frustración",
+        "ru": "фрустрация",
+        "type": "sustantivo",
+        "icon": "x-square",
+        "useIcon": true,
+        "hardSentences": [
+          "Siento ___ cuando no entiendo.",
+          "La ___ es parte del aprendizaje.",
+          "Superar la ___ es importante.",
+          "La ___ me impide progresar."
+        ]
+      },
+      {
+        "spanish": "ridículo",
+        "ru": "смешной, нелепый (м)",
+        "type": "adjetivo",
+        "icon": "smiley-x-eyes",
+        "useIcon": true,
+        "hardSentences": [
+          "Me siento ___ cuando cometo errores.",
+          "No es ___ aprender un idioma.",
+          "Me pareció ___ mi acento.",
+          "No debes sentirte ___."
+        ]
+      },
+      {
+        "spanish": "ridícula",
+        "ru": "смешная, нелепая (ж)",
+        "type": "adjetivo",
+        "icon": "smiley-x-eyes",
+        "useIcon": true,
+        "hardSentences": [
+          "Me sentí ___ en la presentación.",
+          "La situación no es ___.",
+          "Ella se sintió ___ al principio.",
+          "No debes sentirte ___."
+        ]
+      },
+      {
+        "spanish": "la vergüenza",
+        "ru": "стыд",
+        "type": "sustantivo",
+        "icon": "smiley-nervous",
+        "useIcon": true,
+        "hardSentences": [
+          "No tengo ___ de mis errores.",
+          "La ___ no ayuda a aprender.",
+          "Siento ___ al hablar mal.",
+          "Supera la ___ y practica."
+        ]
+      },
+      {
+        "spanish": "el miedo",
+        "ru": "страх",
+        "type": "sustantivo",
+        "icon": "warning-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ de hablar en público.",
+          "El ___ me paraliza.",
+          "Superar el ___ es difícil.",
+          "El ___ al error es común."
+        ]
+      }
     ],
     "VIAJES": [
-      {"spanish": "viajar", "ru": "путешествовать", "type": "verbo"},
-      {"spanish": "el país extranjero", "ru": "зарубежная страна", "type": "sustantivo"},
-      {"spanish": "la cultura", "ru": "культура", "type": "sustantivo"},
-      {"spanish": "descubrir", "ru": "открывать, обнаруживать", "type": "verbo"},
-      {"spanish": "pasear", "ru": "гулять, прогуливаться", "type": "verbo"},
-      {"spanish": "la beca", "ru": "стипендия, грант", "type": "sustantivo"}
+      {
+        "spanish": "viajar",
+        "ru": "путешествовать",
+        "type": "verbo",
+        "icon": "airplane",
+        "useIcon": true,
+        "hardSentences": [
+          "Me encanta ___ por el mundo.",
+          "Quiero ___ a España este verano.",
+          "Necesito ___ más para practicar.",
+          "Voy a ___ a América Latina."
+        ]
+      },
+      {
+        "spanish": "el país extranjero",
+        "ru": "зарубежная страна",
+        "type": "sustantivo",
+        "icon": "globe",
+        "useIcon": true,
+        "hardSentences": [
+          "Vivo en un ___.",
+          "Quiero conocer un ___.",
+          "Trabajar en un ___ es difícil.",
+          "Adaptarse a un ___ lleva tiempo."
+        ]
+      },
+      {
+        "spanish": "la cultura",
+        "ru": "культура",
+        "type": "sustantivo",
+        "icon": "palette",
+        "useIcon": true,
+        "hardSentences": [
+          "Me interesa la ___ española.",
+          "La ___ latina es muy rica.",
+          "Aprender la ___ es importante.",
+          "Respeto todas las ___."
+        ]
+      },
+      {
+        "spanish": "descubrir",
+        "ru": "открывать, обнаруживать",
+        "type": "verbo",
+        "icon": "magnifying-glass-plus",
+        "useIcon": true,
+        "hardSentences": [
+          "Quiero ___ nuevas ciudades.",
+          "Me gusta ___ lugares diferentes.",
+          "Voy a ___ la gastronomía local.",
+          "Es interesante ___ otras culturas."
+        ]
+      },
+      {
+        "spanish": "pasear",
+        "ru": "гулять, прогуливаться",
+        "type": "verbo",
+        "icon": "person-simple-walk",
+        "useIcon": true,
+        "hardSentences": [
+          "Me gusta ___ por el parque.",
+          "Vamos a ___ por el centro.",
+          "Quiero ___ por la playa.",
+          "Suelo ___ después de cenar."
+        ]
+      },
+      {
+        "spanish": "la beca",
+        "ru": "стипендия, грант",
+        "type": "sustantivo",
+        "icon": "graduation-cap",
+        "useIcon": true,
+        "hardSentences": [
+          "Solicité una ___ para estudiar.",
+          "La ___ cubre todos los gastos.",
+          "Conseguí una ___ Erasmus.",
+          "La ___ me permite viajar."
+        ]
+      }
     ]
   },
   "ejercicios": [

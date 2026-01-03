@@ -958,13 +958,14 @@
             padding: 20px;
             cursor: pointer;
             /* Плавные переходы для "гравитации вверх" */
+            /* Медленная плавная анимация схлопывания с кубической кривой */
             transition: all 0.3s ease,
-                        opacity 1s ease,
-                        max-height 0.8s ease,
-                        min-height 0.8s ease,
-                        padding 0.8s ease,
-                        margin 0.8s ease,
-                        border 0.8s ease;
+                        opacity 1.2s ease-out,
+                        max-height 1.8s cubic-bezier(0.4, 0.0, 0.2, 1),
+                        min-height 1.8s cubic-bezier(0.4, 0.0, 0.2, 1),
+                        padding 1.8s cubic-bezier(0.4, 0.0, 0.2, 1),
+                        margin 1.8s cubic-bezier(0.4, 0.0, 0.2, 1),
+                        border 1.8s ease-out;
             text-align: center;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             position: relative;

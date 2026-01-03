@@ -956,16 +956,16 @@
             border: 3px solid #ddd;
             border-radius: 12px;
             padding: 20px;
+            margin-bottom: 15px; /* Вместо gap - для плавной анимации! */
             cursor: pointer;
-            /* Плавные переходы для "гравитации вверх" */
-            /* Медленная плавная анимация схлопывания с кубической кривой */
+            /* СУПЕР медленная плавная анимация для плавного скольжения */
             transition: all 0.3s ease,
-                        opacity 1.2s ease-out,
-                        max-height 1.8s cubic-bezier(0.4, 0.0, 0.2, 1),
-                        min-height 1.8s cubic-bezier(0.4, 0.0, 0.2, 1),
-                        padding 1.8s cubic-bezier(0.4, 0.0, 0.2, 1),
-                        margin 1.8s cubic-bezier(0.4, 0.0, 0.2, 1),
-                        border 1.8s ease-out;
+                        opacity 1.5s ease-out,
+                        max-height 3s cubic-bezier(0.4, 0.0, 0.2, 1),
+                        min-height 3s cubic-bezier(0.4, 0.0, 0.2, 1),
+                        padding 3s cubic-bezier(0.4, 0.0, 0.2, 1),
+                        margin 3s cubic-bezier(0.4, 0.0, 0.2, 1),
+                        border 3s ease-out;
             text-align: center;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             position: relative;

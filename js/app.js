@@ -892,14 +892,27 @@ function showProfileSelect() {
 			return;
 			}
             currentCategory = category;
+
+            // ═══════════════════════════════════════════════════════════════
+            // ПРОВЕРКА: если группа <10 слов, сразу запускаем Card Matching!
+            // ═══════════════════════════════════════════════════════════════
+            const unidadData = vocabularyData[currentUnidad];
+            const groupSize = unidadData?.groups[category]?.length || 0;
+
+            if (groupSize < 10) {
+                // Маленькая группа - запускаем Card Matching напрямую, минуя categoryMenu
+                startCardMatchingGame();
+                return;
+            }
+
+            // Большая группа - показываем обычное меню с уровнями сложности
             hideAll();
             showUserBadge();
             document.getElementById('categoryMenu').classList.remove('hidden');
 
             // Динамический заголовок для группы
             const displayName = category.replace(/_/g, ' ');
-            const unidadData = vocabularyData[currentUnidad];
-            const wordsCount = unidadData?.groups[category]?.length || 0;
+            const wordsCount = groupSize;
             const title = `${displayName} (${wordsCount} слов)`;
             document.getElementById('categoryTitle').textContent = title;
 

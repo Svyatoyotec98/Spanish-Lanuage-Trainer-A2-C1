@@ -1673,8 +1673,17 @@ if (
                     correctMatches++;
 
                     setTimeout(() => {
+                        // Плавное исчезновение + схлопывание (гравитация вверх!)
                         leftCard.style.opacity = '0';
                         rightCard.style.opacity = '0';
+                        leftCard.style.maxHeight = '0';
+                        rightCard.style.maxHeight = '0';
+                        leftCard.style.padding = '0';
+                        rightCard.style.padding = '0';
+                        leftCard.style.margin = '0';
+                        rightCard.style.margin = '0';
+                        leftCard.style.border = 'none';
+                        rightCard.style.border = 'none';
 
                         selectedLeft = null;
                         selectedRight = null;

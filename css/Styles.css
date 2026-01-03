@@ -957,14 +957,22 @@
             border-radius: 12px;
             padding: 20px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            /* Плавные переходы для "гравитации вверх" */
+            transition: all 0.3s ease,
+                        opacity 1s ease,
+                        max-height 0.8s ease,
+                        padding 0.8s ease,
+                        margin 0.8s ease,
+                        border 0.8s ease;
             text-align: center;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             position: relative;
             min-height: 100px;
+            max-height: 500px; /* Нужно для анимации схлопывания */
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden; /* Скрывает контент при схлопывании */
         }
 
         .matching-card:hover {

@@ -961,6 +961,7 @@
             transition: all 0.3s ease,
                         opacity 1s ease,
                         max-height 0.8s ease,
+                        min-height 0.8s ease,
                         padding 0.8s ease,
                         margin 0.8s ease,
                         border 0.8s ease;

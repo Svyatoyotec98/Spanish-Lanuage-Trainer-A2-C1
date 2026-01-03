@@ -1678,6 +1678,8 @@ if (
                         rightCard.style.opacity = '0';
                         leftCard.style.maxHeight = '0';
                         rightCard.style.maxHeight = '0';
+                        leftCard.style.minHeight = '0';
+                        rightCard.style.minHeight = '0';
                         leftCard.style.padding = '0';
                         rightCard.style.padding = '0';
                         leftCard.style.margin = '0';

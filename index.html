@@ -392,6 +392,18 @@
                 </div>
             </div>
 
+            <!-- Card Matching Game (for groups <10 words) -->
+            <div id="cardMatchingSection" class="level-section hidden" style="background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%); border-left: 5px solid #667eea; padding: 20px; border-radius: 10px; margin: 15px 0;">
+                <h3 style="color: #667eea; margin-bottom: 15px;">🃏 Card Matching Game</h3>
+                <p style="color: #555; margin-bottom: 15px;">Эта группа содержит мало слов, поэтому доступен только формат Card Matching Game</p>
+                <button class="level-btn" id="card-matching-btn" onclick="startCardMatchingGame()" style="width: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 20px; font-size: 1.1em;">
+                    <span class="level-btn-label">🃏 Начать Card Matching</span>
+                    <span class="level-btn-progress" id="card-matching-progress">Лучший: 0%</span>
+                </button>
+            </div>
+
+            <!-- ABCD Test Levels (for groups ≥10 words) -->
+            <div id="abcdTestsSection">
             <!-- Easy Level -->
             <div class="level-section" style="background: #d5f4e6; border-left: 5px solid #27ae60; padding: 20px; border-radius: 10px; margin: 15px 0;">
                 <h3 style="color: #27ae60; margin-bottom: 15px;">🟢 Лёгкий уровень (ES→RU, ABCD)</h3>
@@ -436,6 +448,8 @@
                     </button>
                 </div>
             </div>
+            </div>
+            <!-- End of abcdTestsSection -->
 
             <button class="btn btn-back" onclick="backToUnidadMenu()">← Назад к категориям</button>
         </div>
@@ -571,6 +585,66 @@
             <div class="grade" id="resultsGrade">Отлично! 🎉</div>
             <div style="margin: 30px 0;">
                 <button class="btn btn-primary" onclick="retryTest()">Повторить тест</button>
+                <button class="btn btn-secondary" onclick="backToUnidadMenu()">Назад в меню</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             CARD MATCHING GAME SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="cardMatchingScreen" class="question-container hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1 id="cardMatchingTitle">🃏 Card Matching Game</h1>
+            <p class="subtitle" id="cardMatchingSubtitle">Выберите все слова группы FAMILIA</p>
+
+            <!-- Instructions -->
+            <div style="margin: 20px auto; padding: 15px; background: #e3f2fd; border-radius: 10px; max-width: 600px; text-align: center;">
+                <p style="margin: 0; color: #1976d2; font-weight: 600;">
+                    📌 Выберите ВСЕ слова своей группы. Остерегайтесь "засланцев" из других групп!
+                </p>
+            </div>
+
+            <!-- Selected counter -->
+            <div style="text-align: center; margin: 15px 0; font-size: 1.1em; color: #667eea;">
+                Выбрано: <span id="selectedCount" style="font-weight: bold;">0</span> / <span id="totalCorrect">6</span>
+            </div>
+
+            <!-- Cards Grid -->
+            <div id="cardsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 30px auto; max-width: 900px;">
+                <!-- Cards will be generated dynamically -->
+            </div>
+
+            <!-- Action Buttons -->
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="btn btn-primary" id="checkCardsBtn" onclick="checkCardSelection()" style="font-size: 1.1em; padding: 15px 40px;">
+                    ✓ Проверить ответ
+                </button>
+                <button class="btn btn-secondary" onclick="resetCardSelection()" style="margin-left: 15px;">
+                    🔄 Сбросить выбор
+                </button>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="btn btn-back" onclick="exitCardMatching()">← Назад к выбору теста</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             CARD MATCHING RESULTS SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="cardMatchingResultsScreen" class="results hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h2 id="cardMatchingResultTitle">Результаты Card Matching</h2>
+            <div class="stats" id="cardMatchingStats">Вы выбрали все слова правильно!</div>
+            <div class="grade" id="cardMatchingGrade">Отлично! 🎉</div>
+
+            <!-- Detailed breakdown -->
+            <div id="cardMatchingBreakdown" style="margin: 30px auto; max-width: 600px; text-align: left;">
+                <!-- Will show which cards were correct/incorrect -->
+            </div>
+
+            <div style="margin: 30px 0;">
+                <button class="btn btn-primary" onclick="retryCardMatching()">Попробовать снова</button>
                 <button class="btn btn-secondary" onclick="backToUnidadMenu()">Назад в меню</button>
             </div>
         </div>

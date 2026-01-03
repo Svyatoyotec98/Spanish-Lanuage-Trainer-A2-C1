@@ -936,6 +936,46 @@ if (
             if (avgText) avgText.textContent = avgProgress;
 
             // ═══════════════════════════════════════════════════════════════
+            // DETERMINE TEST TYPE BASED ON GROUP SIZE
+            // ═══════════════════════════════════════════════════════════════
+            const unidadData = vocabularyData[currentUnidad];
+            const groupSize = unidadData?.groups[currentCategory]?.length || 0;
+
+            const cardMatchingSection = document.getElementById('cardMatchingSection');
+            const abcdTestsSection = document.getElementById('abcdTestsSection');
+            const categorySubtitle = document.getElementById('categorySubtitle');
+
+            if (groupSize < 10) {
+                // Small group: show Card Matching, hide ABCD tests
+                if (cardMatchingSection) cardMatchingSection.classList.remove('hidden');
+                if (abcdTestsSection) abcdTestsSection.style.display = 'none';
+                if (categorySubtitle) categorySubtitle.textContent = 'Выберите режим практики';
+
+                // Update Card Matching button
+                const cardMatchingBtn = document.getElementById('card-matching-btn');
+                const cardMatchingProgress = document.getElementById('card-matching-progress');
+                if (cardMatchingBtn && cardMatchingProgress) {
+                    cardMatchingProgress.textContent = `Лучший: ${categoryData.easy10}%`;
+
+                    // Change button color based on score
+                    if (categoryData.easy10 >= 80) {
+                        cardMatchingBtn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+                    } else if (categoryData.easy10 > 0) {
+                        cardMatchingBtn.style.background = 'linear-gradient(135deg, #f39c12, #e67e22)';
+                    } else {
+                        cardMatchingBtn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+                    }
+                }
+
+                return; // Skip ABCD test logic
+            } else {
+                // Large group: show ABCD tests, hide Card Matching
+                if (cardMatchingSection) cardMatchingSection.classList.add('hidden');
+                if (abcdTestsSection) abcdTestsSection.style.display = 'block';
+                if (categorySubtitle) categorySubtitle.textContent = 'Выберите сложность и количество вопросов';
+            }
+
+            // ═══════════════════════════════════════════════════════════════
             // EASY LEVEL
             // ═══════════════════════════════════════════════════════════════
             const easy10Btn = document.getElementById('easy-10-btn');
@@ -1398,6 +1438,287 @@ if (
         function exitTest() {
             if (confirm('Выйти из теста? Прогресс этой попытки не будет сохранён.')) {
                 stopTimer();
+                showCategoryMenu(currentCategory);
+            }
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // CARD MATCHING GAME SYSTEM
+        // ═══════════════════════════════════════════════════════════════
+
+        let cardMatchingWords = [];
+        let selectedCards = new Set();
+        let correctWordIndices = new Set();
+
+        function startCardMatchingGame() {
+            if (!currentUnidad || !currentCategory) {
+                console.error('startCardMatchingGame called without currentUnidad or currentCategory');
+                return;
+            }
+
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups || !unidadData.groups[currentCategory]) {
+                alert('Ошибка: данные группы не загружены');
+                return;
+            }
+
+            const groupWords = unidadData.groups[currentCategory];
+            const groupSize = groupWords.length;
+
+            // Проверяем что группа подходит для Card Matching (<10 слов)
+            if (groupSize >= 10) {
+                alert('Эта группа слишком большая для Card Matching Game. Используйте обычные тесты.');
+                return;
+            }
+
+            // Генерируем засланцев (decoy words) из других групп
+            const decoyWords = generateDecoyWords(currentCategory, 2);
+
+            // Комбинируем реальные слова и засланцев
+            const allWords = [...groupWords, ...decoyWords];
+
+            // Перемешиваем
+            cardMatchingWords = shuffleArray(allWords);
+
+            // Запоминаем индексы правильных слов
+            correctWordIndices = new Set();
+            cardMatchingWords.forEach((word, index) => {
+                if (groupWords.includes(word)) {
+                    correctWordIndices.add(index);
+                }
+            });
+
+            // Очищаем выбор
+            selectedCards = new Set();
+
+            // Показываем экран
+            hideAll();
+            showUserBadge();
+            document.getElementById('cardMatchingScreen').classList.remove('hidden');
+
+            // Обновляем заголовок
+            const displayName = currentCategory.replace(/_/g, ' ');
+            document.getElementById('cardMatchingSubtitle').textContent =
+                `Выберите все слова группы ${displayName}`;
+
+            // Обновляем счетчик
+            document.getElementById('totalCorrect').textContent = groupSize;
+
+            // Рендерим карточки
+            renderCards();
+
+            saveNavigationState('cardMatchingScreen');
+        }
+
+        function generateDecoyWords(excludeGroup, count) {
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups) return [];
+
+            const allOtherWords = [];
+            Object.keys(unidadData.groups).forEach(groupName => {
+                if (groupName !== excludeGroup) {
+                    allOtherWords.push(...unidadData.groups[groupName]);
+                }
+            });
+
+            // Перемешиваем и берем нужное количество
+            const shuffled = shuffleArray([...allOtherWords]);
+            return shuffled.slice(0, count);
+        }
+
+        function shuffleArray(array) {
+            const newArray = [...array];
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        function renderCards() {
+            const container = document.getElementById('cardsGrid');
+            container.innerHTML = '';
+
+            cardMatchingWords.forEach((word, index) => {
+                const card = document.createElement('div');
+                card.className = 'card-matching-card';
+                card.id = `card-${index}`;
+                card.style.cssText = `
+                    padding: 20px;
+                    background: white;
+                    border: 3px solid #ddd;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    text-align: center;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                `;
+
+                card.innerHTML = `
+                    <div style="font-size: 1.3em; font-weight: bold; color: #333; margin-bottom: 8px;">
+                        ${word.spanish}
+                    </div>
+                    <div style="font-size: 0.95em; color: #666;">
+                        ${word.ru}
+                    </div>
+                `;
+
+                card.onclick = () => toggleCardSelection(index);
+                container.appendChild(card);
+            });
+
+            updateSelectedCount();
+        }
+
+        function toggleCardSelection(index) {
+            const card = document.getElementById(`card-${index}`);
+            if (!card) return;
+
+            if (selectedCards.has(index)) {
+                selectedCards.delete(index);
+                card.style.border = '3px solid #ddd';
+                card.style.background = 'white';
+                card.style.transform = 'scale(1)';
+            } else {
+                selectedCards.add(index);
+                card.style.border = '3px solid #667eea';
+                card.style.background = 'linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%)';
+                card.style.transform = 'scale(1.05)';
+            }
+
+            updateSelectedCount();
+        }
+
+        function updateSelectedCount() {
+            document.getElementById('selectedCount').textContent = selectedCards.size;
+        }
+
+        function resetCardSelection() {
+            selectedCards.clear();
+            cardMatchingWords.forEach((_, index) => {
+                const card = document.getElementById(`card-${index}`);
+                if (card) {
+                    card.style.border = '3px solid #ddd';
+                    card.style.background = 'white';
+                    card.style.transform = 'scale(1)';
+                }
+            });
+            updateSelectedCount();
+        }
+
+        function checkCardSelection() {
+            // Проверяем что выбраны ВСЕ правильные слова и НЕТ неправильных
+            const correctlySelected = new Set([...selectedCards].filter(i => correctWordIndices.has(i)));
+            const incorrectlySelected = new Set([...selectedCards].filter(i => !correctWordIndices.has(i)));
+            const missedCorrect = new Set([...correctWordIndices].filter(i => !selectedCards.has(i)));
+
+            const isPerfect = incorrectlySelected.size === 0 && missedCorrect.size === 0 &&
+                             correctlySelected.size === correctWordIndices.size;
+
+            // Визуальная обратная связь
+            cardMatchingWords.forEach((word, index) => {
+                const card = document.getElementById(`card-${index}`);
+                if (!card) return;
+
+                const isCorrectWord = correctWordIndices.has(index);
+                const isSelected = selectedCards.has(index);
+
+                if (isCorrectWord && isSelected) {
+                    // Правильно выбрано
+                    card.style.border = '3px solid #27ae60';
+                    card.style.background = '#d4edda';
+                } else if (isCorrectWord && !isSelected) {
+                    // Пропущено правильное слово
+                    card.style.border = '3px solid #f39c12';
+                    card.style.background = '#fff3cd';
+                } else if (!isCorrectWord && isSelected) {
+                    // Неправильно выбран засланец
+                    card.style.border = '3px solid #e74c3c';
+                    card.style.background = '#f8d7da';
+                } else {
+                    // Правильно не выбран засланец
+                    card.style.border = '3px solid #95a5a6';
+                    card.style.background = '#ecf0f1';
+                }
+            });
+
+            // Задержка перед показом результатов
+            setTimeout(() => {
+                showCardMatchingResults(isPerfect, correctlySelected.size, incorrectlySelected.size, missedCorrect.size);
+            }, 2000);
+        }
+
+        function showCardMatchingResults(isPerfect, correctCount, incorrectCount, missedCount) {
+            hideAll();
+            showUserBadge();
+            document.getElementById('cardMatchingResultsScreen').classList.remove('hidden');
+
+            const displayName = currentCategory.replace(/_/g, ' ');
+
+            if (isPerfect) {
+                document.getElementById('cardMatchingResultTitle').textContent = '🎉 Отлично!';
+                document.getElementById('cardMatchingStats').textContent =
+                    `Вы выбрали все слова группы ${displayName} правильно!`;
+                document.getElementById('cardMatchingGrade').textContent = 'Идеальный результат! 💯';
+                document.getElementById('cardMatchingGrade').style.color = '#27ae60';
+
+                // Сохраняем прогресс 100%
+                const profile = getActiveProfile();
+                if (profile) {
+                    ensureProgressSkeleton(profile);
+                    if (!profile.progress[currentUnidad][currentCategory]) {
+                        profile.progress[currentUnidad][currentCategory] = {
+                            easy10: 0, easy25: 0,
+                            medium10: 0, medium25: 0,
+                            hard10: 0, hard25: 0
+                        };
+                    }
+                    // Используем easy10 для хранения Card Matching прогресса
+                    profile.progress[currentUnidad][currentCategory].easy10 = 100;
+
+                    const state = loadAppState();
+                    state.profiles[profile.id] = profile;
+                    saveAppState(state);
+
+                    updateUnlocks();
+                }
+            } else {
+                document.getElementById('cardMatchingResultTitle').textContent = '❌ Попробуйте снова';
+                document.getElementById('cardMatchingStats').textContent =
+                    `Вы выбрали не все слова группы ${displayName} правильно.`;
+                document.getElementById('cardMatchingGrade').textContent = 'Попробуйте еще раз!';
+                document.getElementById('cardMatchingGrade').style.color = '#e74c3c';
+
+                // Прогресс 0% при ошибке
+                // Не сохраняем прогресс
+            }
+
+            // Детальная статистика
+            const breakdown = document.getElementById('cardMatchingBreakdown');
+            breakdown.innerHTML = `
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                    <h3 style="margin-top: 0; color: #333;">📊 Детальная статистика:</h3>
+                    <p style="color: #27ae60; margin: 10px 0;">
+                        ✓ Правильно выбрано: <strong>${correctCount}</strong> из ${correctWordIndices.size}
+                    </p>
+                    <p style="color: #e74c3c; margin: 10px 0;">
+                        ✗ Неправильно выбрано (засланцы): <strong>${incorrectCount}</strong>
+                    </p>
+                    <p style="color: #f39c12; margin: 10px 0;">
+                        ⚠ Пропущено правильных слов: <strong>${missedCount}</strong>
+                    </p>
+                </div>
+            `;
+
+            saveNavigationState('cardMatchingResultsScreen');
+        }
+
+        function retryCardMatching() {
+            startCardMatchingGame();
+        }
+
+        function exitCardMatching() {
+            if (confirm('Выйти из игры? Прогресс не будет сохранён.')) {
                 showCategoryMenu(currentCategory);
             }
         }

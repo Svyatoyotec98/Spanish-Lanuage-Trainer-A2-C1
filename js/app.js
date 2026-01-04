@@ -1724,102 +1724,25 @@ if (
                         }
                     }, 1000); // Wait 1s before fading
                 } else {
-                    // Wrong match - REPLACE opposite card with CORRECT pair
-                    leftCard.classList.add('incorrect', 'burning');
-                    rightCard.classList.add('incorrect', 'burning');
-
-                    matchedPairs.add(selectedLeft); // Mark as used, but NOT correct
+                    // Wrong match - just show red and reset (DON'T delete cards!)
+                    leftCard.classList.add('incorrect');
+                    rightCard.classList.add('incorrect');
 
                     setTimeout(() => {
-                        // Find which word was clicked first
-                        const firstClickedWord = firstClickSide === 'left' ? leftWord : rightWord;
+                        // Remove incorrect class
+                        leftCard.classList.remove('incorrect', 'selected');
+                        rightCard.classList.remove('incorrect', 'selected');
 
-                        // Find the INDEX of correct pair on opposite side
-                        if (firstClickSide === 'left') {
-                            // Left was first (Russian) - find correct Spanish pair in rightWords
-                            const correctRightIndex = rightWords.findIndex(w =>
-                                w.spanish === firstClickedWord.spanish &&
-                                w.ru === firstClickedWord.ru
-                            );
+                        // Flip cards back
+                        flipCard(leftCard, false);
+                        flipCard(rightCard, false);
 
-                            if (correctRightIndex !== -1 && correctRightIndex !== selectedRight) {
-                                // Get the correct card and word
-                                const correctRightCard = document.getElementById(`right-${correctRightIndex}`);
-                                const correctWord = rightWords[correctRightIndex];
-                                const iconName = correctWord.icon || 'question';
-
-                                // Replace BOTH front and back of wrong card with correct content
-                                const rightFront = rightCard.querySelector('.card-front');
-                                const rightBack = rightCard.querySelector('.card-back');
-
-                                rightFront.querySelector('.card-text').textContent = correctWord.spanish;
-                                rightBack.innerHTML = `
-                                    <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
-                                    <div style="margin-top: 10px; font-size: 0.9em;">${correctWord.spanish}</div>
-                                `;
-
-                                // Hide the original correct card to avoid duplicates
-                                correctRightCard.style.display = 'none';
-                            }
-                        } else {
-                            // Right was first (Spanish) - find correct Russian pair in leftWords
-                            const correctLeftIndex = leftWords.findIndex(w =>
-                                w.spanish === firstClickedWord.spanish &&
-                                w.ru === firstClickedWord.ru
-                            );
-
-                            if (correctLeftIndex !== -1 && correctLeftIndex !== selectedLeft) {
-                                // Get the correct card and word
-                                const correctLeftCard = document.getElementById(`left-${correctLeftIndex}`);
-                                const correctWord = leftWords[correctLeftIndex];
-                                const iconName = correctWord.icon || 'question';
-
-                                // Replace BOTH front and back of wrong card with correct content
-                                const leftFront = leftCard.querySelector('.card-front');
-                                const leftBack = leftCard.querySelector('.card-back');
-
-                                leftFront.querySelector('.card-text').textContent = correctWord.ru;
-                                leftBack.innerHTML = `
-                                    <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
-                                    <div style="margin-top: 10px; font-size: 0.9em;">${correctWord.ru}</div>
-                                `;
-
-                                // Hide the original correct card to avoid duplicates
-                                correctLeftCard.style.display = 'none';
-                            }
-                        }
-
-                        // Now fade away both cards (showing correct pair but counted as error)
-                        setTimeout(() => {
-                            const leftInner = leftCard.querySelector('.card-inner');
-                            const rightInner = rightCard.querySelector('.card-inner');
-
-                            leftCard.style.opacity = '0';
-                            rightCard.style.opacity = '0';
-                            leftCard.style.maxHeight = '0';
-                            rightCard.style.maxHeight = '0';
-                            leftCard.style.minHeight = '0';
-                            rightCard.style.minHeight = '0';
-                            leftCard.style.margin = '0';
-                            rightCard.style.margin = '0';
-
-                            // Apply to .card-inner (has padding and border)
-                            leftInner.style.padding = '0';
-                            rightInner.style.padding = '0';
-                            leftInner.style.border = 'none';
-                            rightInner.style.border = 'none';
-
-                            selectedLeft = null;
-                            selectedRight = null;
-                            firstClickSide = null; // Reset first click
-                            isAnimating = false;
-
-                            // Check if game finished
-                            if (matchedPairs.size === leftWords.length) {
-                                finishGame();
-                            }
-                        }, 1000); // Wait 1s to see the correct pair
-                    }, 800); // Wait to show incorrect state first
+                        // Reset selection
+                        selectedLeft = null;
+                        selectedRight = null;
+                        firstClickSide = null;
+                        isAnimating = false;
+                    }, 1000); // Wait 1s to show incorrect state
                 }
             }, 600); // Wait for flip animation
         }

@@ -2652,7 +2652,43 @@ async function getNavigationState() {
             hideAll();
             document.getElementById('examResultsScreen').classList.remove('hidden');
 
-            // TODO: Phase 7 - если экзамен сдан (≥80%), разблокировать следующую Unidad
+            // Если экзамен сдан (≥80%), разблокируем следующую Unidad
+            if (passed) {
+                const profile = getActiveProfile();
+
+                // Определяем последнюю разблокированную Unidad
+                let lastUnlockedIndex = 0; // По умолчанию только unidad_1
+                UNIDADES.forEach((unidad, index) => {
+                    if (index === 0 || profile.unlocks[unidad]) {
+                        lastUnlockedIndex = index;
+                    }
+                });
+
+                // Проверяем, есть ли следующая Unidad для разблокировки
+                const nextIndex = lastUnlockedIndex + 1;
+                if (nextIndex < UNIDADES.length) {
+                    const nextUnidad = UNIDADES[nextIndex];
+
+                    // Разблокируем следующую Unidad
+                    profile.unlocks[nextUnidad] = true;
+
+                    // Сохраняем профиль
+                    const state = loadAppState();
+                    state.profiles[profile.id] = profile;
+                    saveAppState(state);
+
+                    console.log(`🎉 Разблокирована следующая Unidad: ${nextUnidad}`);
+
+                    // Добавляем уведомление в статус прохождения
+                    const statusElement = document.getElementById('examPassStatus');
+                    statusElement.innerHTML = `
+                        ✅ Экзамен сдан!<br>
+                        <span style="color: #667eea; font-size: 0.9em;">🎉 Разблокирована ${nextUnidad.replace('_', ' ').toUpperCase()}!</span>
+                    `;
+                } else {
+                    console.log('🎓 Поздравляем! Все Unidades пройдены!');
+                }
+            }
         }
 
         // ═══════════════════════════════════════════════════════════════

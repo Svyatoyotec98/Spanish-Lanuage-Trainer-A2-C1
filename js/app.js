@@ -1707,21 +1707,36 @@ if (
                         }
                     }, 1000); // Wait 1s before fading
                 } else {
-                    // Wrong match - red burn and flip back
+                    // Wrong match - red shake, then also fade away (but don't count as correct)
                     leftCard.classList.add('incorrect');
                     rightCard.classList.add('incorrect');
 
-                    setTimeout(() => {
-                        leftCard.classList.remove('incorrect', 'selected');
-                        rightCard.classList.remove('incorrect', 'selected');
+                    matchedPairs.add(selectedLeft); // Mark as used, but NOT correct
 
-                        flipCard(leftCard, false);
-                        flipCard(rightCard, false);
+                    setTimeout(() => {
+                        // Also fade away incorrect pairs
+                        leftCard.style.opacity = '0';
+                        rightCard.style.opacity = '0';
+                        leftCard.style.maxHeight = '0';
+                        rightCard.style.maxHeight = '0';
+                        leftCard.style.minHeight = '0';
+                        rightCard.style.minHeight = '0';
+                        leftCard.style.padding = '0';
+                        rightCard.style.padding = '0';
+                        leftCard.style.margin = '0';
+                        rightCard.style.margin = '0';
+                        leftCard.style.border = 'none';
+                        rightCard.style.border = 'none';
 
                         selectedLeft = null;
                         selectedRight = null;
                         isAnimating = false;
-                    }, 2000);
+
+                        // Check if game finished
+                        if (matchedPairs.size === leftWords.length) {
+                            finishGame();
+                        }
+                    }, 1500); // Wait 1.5s (show incorrect state, then fade)
                 }
             }, 600); // Wait for flip animation
         }

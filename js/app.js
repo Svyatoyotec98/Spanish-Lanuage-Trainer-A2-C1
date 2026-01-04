@@ -661,6 +661,9 @@ function showProfileSelect() {
 	let __isAwaitingNext = false;
 	let __questionToken = 0;
 
+        // QA Mode - unlock all Palabras tests
+        let __qaUnlockAllTests = false;
+
         // Palabras pagination
         let palabrasCurrentPage = 0;
         const PALABRAS_GROUPS_PER_PAGE = 4;
@@ -1089,7 +1092,7 @@ if (
             if (mediumProgressBar) mediumProgressBar.style.width = `${mediumScore}%`;
             if (mediumProgressText) mediumProgressText.textContent = `${mediumScore}%`;
             if (mediumBtn) {
-                if (easyScore >= 80) {
+                if (easyScore >= 80 || __qaUnlockAllTests) {
                     mediumBtn.disabled = false;
                     mediumBtn.querySelector('.level-btn-label').textContent = 'Начать тест';
                     if (mediumScore >= 80) {
@@ -1116,7 +1119,7 @@ if (
             if (hardProgressBar) hardProgressBar.style.width = `${hardScore}%`;
             if (hardProgressText) hardProgressText.textContent = `${hardScore}%`;
             if (hardBtn) {
-                if (mediumScore >= 80) {
+                if (mediumScore >= 80 || __qaUnlockAllTests) {
                     hardBtn.disabled = false;
                     hardBtn.querySelector('.level-btn-label').textContent = 'Начать тест';
                     if (hardScore >= 80) {
@@ -2441,6 +2444,12 @@ if (
 
             updateUnidadUI();
             document.getElementById('qaOutput').textContent = '✅ Все Unidades разблокированы!';
+        }
+
+        function unlockAllPalabrasTests() {
+            __qaUnlockAllTests = true;
+            updateCategoryButtons();
+            document.getElementById('qaOutput').textContent = '✅ Все тесты Palabras разблокированы! (Medium и Hard доступны)\n\nДля отключения обновите страницу (F5)';
         }
 
         function resetProgress() {

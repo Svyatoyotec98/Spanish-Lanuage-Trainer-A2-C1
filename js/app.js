@@ -2858,6 +2858,7 @@ async function getNavigationState() {
                 }
                 if (targetScreen === 'palabrasMenu') {
                     renderGroupCards();
+                    updatePalabrasPagination();
                     const palabrasProgress = calculatePalabrasProgress(currentUnidad);
                     const avgText = document.getElementById('palabras-avg-progress-text');
                     if (avgText) avgText.textContent = palabrasProgress;

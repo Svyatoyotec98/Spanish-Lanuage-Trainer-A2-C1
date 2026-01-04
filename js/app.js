@@ -3227,13 +3227,19 @@ function renderGramaticaExercises() {
 // Pagination functions
 function updateGramaticaPagination() {
     const totalPages = Math.ceil(gramaticaExercises.length / GRAM_EXERCISES_PER_PAGE);
+    const paginationContainer = document.getElementById('gramaticaPagination');
     const pageIndicator = document.getElementById('gramPageIndicator');
     const prevBtn = document.getElementById('gramPrevBtn');
     const nextBtn = document.getElementById('gramNextBtn');
 
-    pageIndicator.textContent = `Страница ${gramCurrentPage + 1} / ${totalPages}`;
-    prevBtn.classList.toggle('hidden', gramCurrentPage === 0);
-    nextBtn.disabled = gramCurrentPage >= totalPages - 1;
+    // Скрываем весь блок пагинации если только 1 страница
+    if (paginationContainer) {
+        paginationContainer.style.display = totalPages <= 1 ? 'none' : 'flex';
+    }
+
+    if (pageIndicator) pageIndicator.textContent = `Страница ${gramCurrentPage + 1} / ${totalPages}`;
+    if (prevBtn) prevBtn.classList.toggle('hidden', gramCurrentPage === 0);
+    if (nextBtn) nextBtn.disabled = gramCurrentPage >= totalPages - 1;
 }
 
 function gramaticaPrevPage() {

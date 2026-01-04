@@ -952,10 +952,6 @@
            ═══════════════════════════════════════════════════════════════ */
 
         .matching-card {
-            background: white;
-            border: 3px solid #ddd;
-            border-radius: 12px;
-            padding: 20px;
             margin-bottom: 15px; /* Вместо gap - для плавной анимации! */
             cursor: pointer;
             /* СУПЕР медленная плавная анимация для плавного скольжения */
@@ -964,40 +960,55 @@
                         max-height 3s cubic-bezier(0.4, 0.0, 0.2, 1),
                         min-height 3s cubic-bezier(0.4, 0.0, 0.2, 1),
                         padding 3s cubic-bezier(0.4, 0.0, 0.2, 1),
-                        margin 3s cubic-bezier(0.4, 0.0, 0.2, 1),
-                        border 3s ease-out;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                        margin 3s cubic-bezier(0.4, 0.0, 0.2, 1);
             position: relative;
             min-height: 100px;
-            max-height: 500px; /* Нужно для анимации схлопывания */
+            max-height: 500px;
+            perspective: 1000px; /* 3D perspective */
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 100px;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            background: white;
+            border: 3px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden; /* Скрывает контент при схлопывании */
         }
 
-        .matching-card:hover {
-            transform: translateY(-3px);
+        .matching-card:hover .card-inner {
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
-        .matching-card.selected {
+        .matching-card.selected .card-inner {
             border-color: #667eea;
             background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
             transform: scale(1.05);
         }
 
-        .matching-card.correct {
+        .matching-card.correct .card-inner {
             border-color: #27ae60;
             background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
             animation: correctPulse 0.6s ease;
         }
 
-        .matching-card.incorrect {
+        .matching-card.incorrect .card-inner {
             border-color: #e74c3c;
             background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
             animation: incorrectShake 0.6s ease;
+        }
+
+        .matching-card.flipped .card-inner {
+            transform: rotateY(180deg);
         }
 
         @keyframes correctPulse {
@@ -1013,24 +1024,24 @@
 
         .card-front,
         .card-back {
+            position: absolute;
             width: 100%;
-            transition: opacity 0.3s ease;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
 
         .card-front {
-            opacity: 1;
+            z-index: 2;
+            transform: rotateY(0deg);
         }
 
         .card-back {
-            opacity: 0;
-        }
-
-        .matching-card.flipped .card-front {
-            opacity: 0;
-        }
-
-        .matching-card.flipped .card-back {
-            opacity: 1;
+            transform: rotateY(180deg);
         }
 
         .card-text {

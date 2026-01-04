@@ -1579,6 +1579,10 @@ if (
             card.dataset.side = side;
             card.dataset.index = index;
 
+            // Card inner wrapper for 3D flip
+            const inner = document.createElement('div');
+            inner.className = 'card-inner';
+
             // Card front (shows text)
             const front = document.createElement('div');
             front.className = 'card-front';
@@ -1588,9 +1592,9 @@ if (
                 </div>
             `;
 
-            // Card back (shows icon - hidden initially)
+            // Card back (shows icon)
             const back = document.createElement('div');
-            back.className = 'card-back hidden';
+            back.className = 'card-back';
 
             // Get Phosphor icon
             const iconName = word.icon || 'question';
@@ -1599,8 +1603,9 @@ if (
                 <div style="margin-top: 10px; font-size: 0.9em;">${side === 'left' ? word.ru : word.spanish}</div>
             `;
 
-            card.appendChild(front);
-            card.appendChild(back);
+            inner.appendChild(front);
+            inner.appendChild(back);
+            card.appendChild(inner);
 
             card.onclick = () => selectCard(side, index);
 
@@ -1722,16 +1727,10 @@ if (
         }
 
         function flipCard(card, showBack) {
-            const front = card.querySelector('.card-front');
-            const back = card.querySelector('.card-back');
-
+            // Simply toggle the flipped class - CSS handles the 3D rotation
             if (showBack) {
-                front.classList.add('hidden');
-                back.classList.remove('hidden');
                 card.classList.add('flipped');
             } else {
-                front.classList.remove('hidden');
-                back.classList.add('hidden');
                 card.classList.remove('flipped');
             }
         }

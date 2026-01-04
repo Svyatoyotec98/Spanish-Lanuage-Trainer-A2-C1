@@ -1469,6 +1469,7 @@ if (
         let rightWords = [];  // Spanish words (including 2 decoys)
         let selectedLeft = null;   // Index of selected left card
         let selectedRight = null;  // Index of selected right card
+        let firstClickSide = null; // Which side was clicked first ('left' or 'right')
         let matchedPairs = new Set();  // Indices of matched left words
         let correctMatches = 0;   // Count of correct matches
         let isAnimating = false;  // Prevent clicks during animation
@@ -1633,6 +1634,11 @@ if (
                 selectedLeft = index;
                 card.classList.add('selected');
 
+                // Remember first click side if nothing selected yet
+                if (selectedRight === null && firstClickSide === null) {
+                    firstClickSide = 'left';
+                }
+
                 // If right card already selected, check pair
                 if (selectedRight !== null) {
                     checkPair();
@@ -1647,6 +1653,11 @@ if (
                 // Select new right card
                 selectedRight = index;
                 card.classList.add('selected');
+
+                // Remember first click side if nothing selected yet
+                if (selectedLeft === null && firstClickSide === null) {
+                    firstClickSide = 'right';
+                }
 
                 // If left card already selected, check pair
                 if (selectedLeft !== null) {
@@ -1684,21 +1695,27 @@ if (
 
                     setTimeout(() => {
                         // Плавное исчезновение + схлопывание (гравитация вверх!)
+                        const leftInner = leftCard.querySelector('.card-inner');
+                        const rightInner = rightCard.querySelector('.card-inner');
+
                         leftCard.style.opacity = '0';
                         rightCard.style.opacity = '0';
                         leftCard.style.maxHeight = '0';
                         rightCard.style.maxHeight = '0';
                         leftCard.style.minHeight = '0';
                         rightCard.style.minHeight = '0';
-                        leftCard.style.padding = '0';
-                        rightCard.style.padding = '0';
                         leftCard.style.margin = '0';
                         rightCard.style.margin = '0';
-                        leftCard.style.border = 'none';
-                        rightCard.style.border = 'none';
+
+                        // Apply to .card-inner (has padding and border)
+                        leftInner.style.padding = '0';
+                        rightInner.style.padding = '0';
+                        leftInner.style.border = 'none';
+                        rightInner.style.border = 'none';
 
                         selectedLeft = null;
                         selectedRight = null;
+                        firstClickSide = null; // Reset first click
                         isAnimating = false;
 
                         // Check if game finished
@@ -1707,36 +1724,71 @@ if (
                         }
                     }, 1000); // Wait 1s before fading
                 } else {
-                    // Wrong match - red shake, then also fade away (but don't count as correct)
-                    leftCard.classList.add('incorrect');
-                    rightCard.classList.add('incorrect');
+                    // Wrong match - REPLACE opposite card with CORRECT pair
+                    leftCard.classList.add('incorrect', 'burning');
+                    rightCard.classList.add('incorrect', 'burning');
 
                     matchedPairs.add(selectedLeft); // Mark as used, but NOT correct
 
                     setTimeout(() => {
-                        // Also fade away incorrect pairs
-                        leftCard.style.opacity = '0';
-                        rightCard.style.opacity = '0';
-                        leftCard.style.maxHeight = '0';
-                        rightCard.style.maxHeight = '0';
-                        leftCard.style.minHeight = '0';
-                        rightCard.style.minHeight = '0';
-                        leftCard.style.padding = '0';
-                        rightCard.style.padding = '0';
-                        leftCard.style.margin = '0';
-                        rightCard.style.margin = '0';
-                        leftCard.style.border = 'none';
-                        rightCard.style.border = 'none';
+                        // Find which word was clicked first
+                        const firstClickedWord = firstClickSide === 'left' ? leftWord : rightWord;
 
-                        selectedLeft = null;
-                        selectedRight = null;
-                        isAnimating = false;
+                        // Find the correct pair for the first clicked word
+                        const correctPairWord = firstClickedWord;
 
-                        // Check if game finished
-                        if (matchedPairs.size === leftWords.length) {
-                            finishGame();
+                        // Replace the OPPOSITE side card with correct pair
+                        if (firstClickSide === 'left') {
+                            // Left was first - replace right card with correct Spanish word
+                            const rightInner = rightCard.querySelector('.card-inner');
+                            const rightBack = rightInner.querySelector('.card-back');
+                            const iconName = correctPairWord.icon || 'question';
+                            rightBack.innerHTML = `
+                                <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
+                                <div style="margin-top: 10px; font-size: 0.9em;">${correctPairWord.spanish}</div>
+                            `;
+                        } else {
+                            // Right was first - replace left card with correct Russian word
+                            const leftInner = leftCard.querySelector('.card-inner');
+                            const leftBack = leftInner.querySelector('.card-back');
+                            const iconName = correctPairWord.icon || 'question';
+                            leftBack.innerHTML = `
+                                <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
+                                <div style="margin-top: 10px; font-size: 0.9em;">${correctPairWord.ru}</div>
+                            `;
                         }
-                    }, 1500); // Wait 1.5s (show incorrect state, then fade)
+
+                        // Now fade away both cards (showing correct pair but counted as error)
+                        setTimeout(() => {
+                            const leftInner = leftCard.querySelector('.card-inner');
+                            const rightInner = rightCard.querySelector('.card-inner');
+
+                            leftCard.style.opacity = '0';
+                            rightCard.style.opacity = '0';
+                            leftCard.style.maxHeight = '0';
+                            rightCard.style.maxHeight = '0';
+                            leftCard.style.minHeight = '0';
+                            rightCard.style.minHeight = '0';
+                            leftCard.style.margin = '0';
+                            rightCard.style.margin = '0';
+
+                            // Apply to .card-inner (has padding and border)
+                            leftInner.style.padding = '0';
+                            rightInner.style.padding = '0';
+                            leftInner.style.border = 'none';
+                            rightInner.style.border = 'none';
+
+                            selectedLeft = null;
+                            selectedRight = null;
+                            firstClickSide = null; // Reset first click
+                            isAnimating = false;
+
+                            // Check if game finished
+                            if (matchedPairs.size === leftWords.length) {
+                                finishGame();
+                            }
+                        }, 1000); // Wait 1s to see the correct pair
+                    }, 800); // Wait to show incorrect state first
                 }
             }, 600); // Wait for flip animation
         }

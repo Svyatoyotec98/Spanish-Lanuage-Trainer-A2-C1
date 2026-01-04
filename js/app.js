@@ -2193,17 +2193,28 @@ async function getNavigationState() {
         // ═══════════════════════════════════════════════════════════════
 
         function generatePalabrasQuestions() {
+            console.log('🔵 generatePalabrasQuestions() вызвана');
             const palabrasQuestions = [];
             const profile = getActiveProfile();
-            if (!profile) return [];
+            if (!profile) {
+                console.log('❌ Нет профиля в generatePalabrasQuestions');
+                return [];
+            }
+
+            console.log('UNIDADES:', UNIDADES);
+            console.log('profile.unlocks:', profile.unlocks);
 
             // Проход по всем Unidades
             UNIDADES.forEach((unidad, index) => {
+                console.log(`Проверка ${unidad} (index: ${index})`);
                 // Первая unidad всегда доступна, остальные - только если разблокированы
                 if (index === 0 || profile.unlocks[unidad]) {
+                    console.log(`✅ ${unidad} доступна`);
                     const unidadData = vocabularyData[unidad];
+                    console.log(`vocabularyData[${unidad}]:`, unidadData);
 
                     if (unidadData && unidadData.groups) {
+                        console.log(`✅ ${unidad} имеет groups:`, Object.keys(unidadData.groups));
                         // Берём ВСЕ semantic groups из этой Unidad
                         Object.keys(unidadData.groups).forEach(groupName => {
                             const words = unidadData.groups[groupName];
@@ -2241,6 +2252,8 @@ async function getNavigationState() {
                 }
             });
 
+            console.log(`📊 generatePalabrasQuestions() вернула ${palabrasQuestions.length} вопросов`);
+            console.log('palabrasQuestions:', palabrasQuestions);
             return palabrasQuestions;
         }
 
@@ -2307,17 +2320,29 @@ async function getNavigationState() {
         // ═══════════════════════════════════════════════════════════════
 
         function startExam() {
+            console.log('🔵 startExam() вызвана');
+
             const profile = getActiveProfile();
+            console.log('Profile:', profile);
+
             if (!profile) {
                 alert('❌ Нет активного профиля');
+                console.log('❌ Профиль не найден!');
                 return;
             }
+
+            console.log('Генерируем вопросы экзамена...');
+            console.log('vocabularyData:', vocabularyData);
 
             // Генерируем вопросы
             examQuestions = generateExamQuestions();
 
+            console.log(`Сгенерировано вопросов: ${examQuestions.length}`);
+            console.log('examQuestions:', examQuestions);
+
             if (examQuestions.length === 0) {
                 alert('❌ Ошибка: не удалось сгенерировать вопросы для экзамена');
+                console.error('❌ examQuestions пустой! Проверь vocabularyData');
                 return;
             }
 

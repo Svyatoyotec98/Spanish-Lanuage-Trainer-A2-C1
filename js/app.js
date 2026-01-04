@@ -201,9 +201,15 @@
 
             const categoryData = profile.progress[unidad][category];
             const scores = Object.values(categoryData);
-            const sum = scores.reduce((a, b) => a + b, 0);
-            const avg = sum / scores.length;
-            return Math.round(avg);
+
+            // Фильтруем только результаты >= 55%
+            const validScores = scores.filter(score => score >= 55);
+
+            // Если нет валидных результатов, возвращаем 0
+            if (validScores.length === 0) return 0;
+
+            // Возвращаем максимальный результат
+            return Math.max(...validScores);
         }
 
         function calculateUnidadProgress(unidad, profile = null) {

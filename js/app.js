@@ -906,9 +906,15 @@ function showProfileSelect() {
 
             const groupNames = Object.keys(unidadData.groups);
             const totalPages = Math.ceil(groupNames.length / PALABRAS_GROUPS_PER_PAGE);
+            const paginationContainer = document.getElementById('palabrasPagination');
             const pageIndicator = document.getElementById('palabrasPageIndicator');
             const prevBtn = document.getElementById('palabrasPrevBtn');
             const nextBtn = document.getElementById('palabrasNextBtn');
+
+            // Скрываем весь блок пагинации если только 1 страница
+            if (paginationContainer) {
+                paginationContainer.style.display = totalPages <= 1 ? 'none' : 'flex';
+            }
 
             if (pageIndicator) pageIndicator.textContent = `Страница ${palabrasCurrentPage + 1} / ${totalPages}`;
             if (prevBtn) prevBtn.classList.toggle('hidden', palabrasCurrentPage === 0);

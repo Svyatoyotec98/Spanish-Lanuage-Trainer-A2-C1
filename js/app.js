@@ -2585,7 +2585,16 @@ if (
             document.getElementById('qaOutput').textContent = JSON.stringify(state, null, 2);
         }
 async function saveNavigationState(screenId) {
-    if (!ENABLE_BACKEND_SYNC) return; // Пропускаем, если бэкенд отключён
+    // ВСЕГДА сохраняем в localStorage
+    const navState = {
+        screen_id: screenId,
+        current_unidad: currentUnidad,
+        current_category: currentCategory
+    };
+    localStorage.setItem('navigation_state', JSON.stringify(navState));
+
+    // Дополнительно синхронизируем с бэкендом если включено
+    if (!ENABLE_BACKEND_SYNC) return;
 
     const token = getToken();
     if (!token) return;
@@ -2597,11 +2606,7 @@ async function saveNavigationState(screenId) {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer ' + token
             },
-            body: JSON.stringify({
-                screen_id: screenId,
-                current_unidad: currentUnidad,
-                current_category: currentCategory
-            })
+            body: JSON.stringify(navState)
         });
     } catch (e) {
         console.error('Failed to save navigation state:', e);
@@ -2738,29 +2743,67 @@ async function getNavigationState() {
 
     const state = loadAppState();
     const token = getToken();
-    
+
     if (token) {
-        const navState = await getNavigationState();
-        
+        // Читаем навигацию из localStorage
+        let navState = null;
+        try {
+            const saved = localStorage.getItem('navigation_state');
+            if (saved) navState = JSON.parse(saved);
+        } catch (e) {
+            console.error('Failed to load navigation state:', e);
+        }
+
         if (navState && navState.screen_id) {
             // Восстанавливаем переменные
             currentUnidad = navState.current_unidad;
             currentCategory = navState.current_category;
-            
+
+            let targetScreen = navState.screen_id;
+
+            // ЛОГИКА "ШАГ НАЗАД" для тестов и интерактива
+            const testScreens = {
+                'questionScreen': 'categoryMenu',
+                'gramaticaQuestionScreen': 'gramaticaMenu',
+                'cardMatchingScreen': 'categoryMenu',
+                'grammarInteractiveScreen': 'grammarListScreen'
+            };
+
+            if (testScreens[targetScreen]) {
+                targetScreen = testScreens[targetScreen];
+            }
+
             // Показываем экран
             hideAllScreens();
-            const el = document.getElementById(navState.screen_id);
+            const el = document.getElementById(targetScreen);
             if (el) {
                 el.classList.remove('hidden');
-				if (['mainMenu', 'unidadMenu', 'categoryMenu'].includes(navState.screen_id)){
-					showUserBadge();
-				}
-                if (navState.screen_id === 'mainMenu') updateUnidadUI();
-                if (navState.screen_id === 'unidadMenu') {
-                    renderCategoryCards();
-                    updateUnidadProgressBars();
+
+                // Показываем badge для основных меню
+                if (['mainMenu', 'unidadMenu', 'palabrasMenu', 'categoryMenu', 'gramaticaMenu'].includes(targetScreen)) {
+                    showUserBadge();
                 }
-                if (navState.screen_id === 'categoryMenu') updateCategoryButtons();
+
+                // Специфичная инициализация для каждого экрана
+                if (targetScreen === 'mainMenu') updateUnidadUI();
+                if (targetScreen === 'unidadMenu') {
+                    showUnidadMenu(currentUnidad);
+                }
+                if (targetScreen === 'palabrasMenu') {
+                    renderGroupCards();
+                    const palabrasProgress = calculatePalabrasProgress(currentUnidad);
+                    const avgText = document.getElementById('palabras-avg-progress-text');
+                    if (avgText) avgText.textContent = palabrasProgress;
+                }
+                if (targetScreen === 'categoryMenu') {
+                    showCategoryMenu(currentCategory);
+                }
+                if (targetScreen === 'gramaticaMenu') {
+                    showGramaticaMenu();
+                }
+                if (targetScreen === 'grammarListScreen') {
+                    showGrammarList();
+                }
             } else {
                 showProfileSelect();
             }

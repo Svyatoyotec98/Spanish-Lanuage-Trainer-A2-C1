@@ -2248,6 +2248,273 @@ async function getNavigationState() {
         }
 
         // ═══════════════════════════════════════════════════════════════
+        // EXAM SYSTEM - Exam Logic
+        // ═══════════════════════════════════════════════════════════════
+
+        function startExam() {
+            const profile = getActiveProfile();
+            if (!profile) {
+                alert('❌ Нет активного профиля');
+                return;
+            }
+
+            // Генерируем вопросы
+            examQuestions = generateExamQuestions();
+
+            if (examQuestions.length === 0) {
+                alert('❌ Ошибка: не удалось сгенерировать вопросы для экзамена');
+                return;
+            }
+
+            // Инициализируем состояние экзамена
+            examCurrentIndex = 0;
+            examScore = 0;
+            examAnswers = [];
+            examStartTime = Date.now();
+
+            // Показываем экран экзамена
+            hideAll();
+            document.getElementById('examScreen').classList.remove('hidden');
+
+            console.log(`🎓 Экзамен начат! ${examQuestions.length} вопросов`);
+
+            // Показываем первый вопрос
+            showExamQuestion();
+        }
+
+        function showExamQuestion() {
+            if (examCurrentIndex >= examQuestions.length) {
+                // Экзамен завершён - показываем результаты
+                showExamResults();
+                return;
+            }
+
+            const question = examQuestions[examCurrentIndex];
+
+            // Обновляем прогресс
+            document.getElementById('examProgress').textContent =
+                `Вопрос ${examCurrentIndex + 1} из ${examQuestions.length}`;
+
+            // Обновляем индикатор секции
+            let sectionText = '';
+            if (question.type === 'palabra') {
+                sectionText = `Palabras - ${question.group}`;
+            } else if (question.type === 'ejercicio') {
+                sectionText = `Ejercicios - ${question.exerciseTitle}`;
+            }
+            document.getElementById('examSectionName').textContent = sectionText;
+
+            // Показываем вопрос
+            document.getElementById('examQuestionText').textContent = question.sentence;
+
+            // Показываем подсказку (hint) для ejercicios
+            const hintElement = document.getElementById('examCategoryHint');
+            if (question.type === 'ejercicio' && question.hint) {
+                hintElement.textContent = `Подсказка: ${question.hint}`;
+                hintElement.style.display = 'block';
+            } else {
+                hintElement.style.display = 'none';
+            }
+
+            // Очищаем поле ввода
+            const inputElement = document.getElementById('examAnswerInput');
+            inputElement.value = '';
+            inputElement.focus();
+
+            // Сбрасываем и запускаем таймер
+            examTimeLeft = EXAM_TIMER_DURATION;
+            document.getElementById('examTimerText').textContent = examTimeLeft;
+            document.getElementById('examTimerBar').style.width = '100%';
+            document.getElementById('examTimerBar').style.backgroundColor = '#4CAF50';
+
+            // Очищаем предыдущий интервал, если есть
+            if (examTimerInterval) {
+                clearInterval(examTimerInterval);
+            }
+
+            // Запускаем новый интервал таймера
+            examTimerInterval = setInterval(updateExamTimer, 1000);
+        }
+
+        function updateExamTimer() {
+            examTimeLeft--;
+
+            // Обновляем текст таймера
+            document.getElementById('examTimerText').textContent = examTimeLeft;
+
+            // Обновляем прогресс-бар
+            const percentage = (examTimeLeft / EXAM_TIMER_DURATION) * 100;
+            const timerBar = document.getElementById('examTimerBar');
+            timerBar.style.width = percentage + '%';
+
+            // Меняем цвет в зависимости от оставшегося времени
+            if (examTimeLeft <= 3) {
+                timerBar.style.backgroundColor = '#f44336'; // красный
+            } else if (examTimeLeft <= 5) {
+                timerBar.style.backgroundColor = '#ff9800'; // оранжевый
+            } else {
+                timerBar.style.backgroundColor = '#4CAF50'; // зелёный
+            }
+
+            // Если время вышло - автоматический skip
+            if (examTimeLeft <= 0) {
+                clearInterval(examTimerInterval);
+                console.log(`⏱️ Время вышло на вопросе ${examCurrentIndex + 1}`);
+                handleExamAnswer(''); // пустой ответ = skip (0 баллов)
+            }
+        }
+
+        function submitExamAnswer() {
+            // Получаем ответ пользователя
+            const userAnswer = document.getElementById('examAnswerInput').value.trim();
+
+            // Проверяем, что ответ не пустой
+            if (userAnswer === '') {
+                alert('⚠️ Введите ответ или нажмите "Пропустить"');
+                return;
+            }
+
+            // Останавливаем таймер
+            if (examTimerInterval) {
+                clearInterval(examTimerInterval);
+            }
+
+            // Обрабатываем ответ
+            handleExamAnswer(userAnswer);
+        }
+
+        function skipExamQuestion() {
+            // Останавливаем таймер
+            if (examTimerInterval) {
+                clearInterval(examTimerInterval);
+            }
+
+            console.log(`⏭️ Вопрос ${examCurrentIndex + 1} пропущен пользователем`);
+
+            // Обрабатываем как пустой ответ (0 баллов)
+            handleExamAnswer('');
+        }
+
+        function handleExamAnswer(userAnswer) {
+            const question = examQuestions[examCurrentIndex];
+            const correctAnswer = question.correctAnswer.toLowerCase().trim();
+            const userAnswerNormalized = userAnswer.toLowerCase().trim();
+
+            // Определяем результат
+            let isCorrect = false;
+            let score = EXAM_SCORE_SKIP; // по умолчанию 0 (skip)
+
+            if (userAnswerNormalized === '') {
+                // Пропущено (таймаут или ручной skip)
+                isCorrect = false;
+                score = EXAM_SCORE_SKIP;
+            } else if (userAnswerNormalized === correctAnswer) {
+                // Правильный ответ
+                isCorrect = true;
+                score = EXAM_SCORE_CORRECT;
+            } else {
+                // Неправильный ответ
+                isCorrect = false;
+                score = EXAM_SCORE_WRONG;
+            }
+
+            // Добавляем балл к общему счёту
+            examScore += score;
+
+            // Сохраняем ответ для статистики
+            examAnswers.push({
+                questionIndex: examCurrentIndex,
+                question: question,
+                userAnswer: userAnswer,
+                correctAnswer: question.correctAnswer,
+                isCorrect: isCorrect,
+                score: score,
+                timeSpent: EXAM_TIMER_DURATION - examTimeLeft
+            });
+
+            console.log(`${isCorrect ? '✅' : '❌'} Вопрос ${examCurrentIndex + 1}: "${userAnswer}" (правильный: "${question.correctAnswer}") - ${score} балл(ов)`);
+
+            // Переходим к следующему вопросу
+            examCurrentIndex++;
+            showExamQuestion();
+        }
+
+        function confirmExitExam() {
+            const confirmed = confirm(
+                '⚠️ Вы уверены, что хотите выйти из экзамена?\n\n' +
+                'Весь прогресс будет потерян!'
+            );
+
+            if (confirmed) {
+                // Останавливаем таймер
+                if (examTimerInterval) {
+                    clearInterval(examTimerInterval);
+                }
+
+                // Сбрасываем состояние экзамена
+                examQuestions = [];
+                examCurrentIndex = 0;
+                examAnswers = [];
+                examScore = 0;
+                examStartTime = null;
+
+                console.log('❌ Экзамен прерван пользователем');
+
+                // Возвращаемся на главное меню
+                showMainMenu();
+            }
+        }
+
+        function showExamResults() {
+            // Останавливаем таймер
+            if (examTimerInterval) {
+                clearInterval(examTimerInterval);
+            }
+
+            const totalQuestions = examQuestions.length;
+            const correctAnswers = examAnswers.filter(a => a.isCorrect).length;
+
+            // Вычисляем процент: (правильные ответы / всего вопросов) * 100
+            // Не используем examScore, так как там могут быть штрафы
+            const percentage = Math.round((correctAnswers / totalQuestions) * 100);
+
+            // Определяем, сдан ли экзамен
+            const passed = percentage >= EXAM_PASS_THRESHOLD;
+
+            // Вычисляем затраченное время
+            const timeSpentMs = Date.now() - examStartTime;
+            const minutes = Math.floor(timeSpentMs / 60000);
+            const seconds = Math.floor((timeSpentMs % 60000) / 1000);
+            const timeSpentText = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+            // Обновляем UI результатов
+            document.getElementById('examScorePercent').textContent = percentage + '%';
+            document.getElementById('examCorrect').textContent = correctAnswers;
+            document.getElementById('examTotal').textContent = totalQuestions;
+            document.getElementById('examTimeSpent').textContent = timeSpentText;
+
+            // Статус прохождения
+            const statusElement = document.getElementById('examPassStatus');
+            if (passed) {
+                statusElement.textContent = '✅ Экзамен сдан!';
+                statusElement.style.color = '#4CAF50';
+            } else {
+                statusElement.textContent = `❌ Экзамен не сдан (требуется ${EXAM_PASS_THRESHOLD}%)`;
+                statusElement.style.color = '#f44336';
+            }
+
+            // TODO: Phase 5 - детальная статистика по группам и упражнениям
+
+            console.log(`🎓 Экзамен завершён: ${percentage}% (${correctAnswers}/${totalQuestions}), ${passed ? 'СДАН' : 'НЕ СДАН'}`);
+
+            // Показываем экран результатов
+            hideAll();
+            document.getElementById('examResultsScreen').classList.remove('hidden');
+
+            // TODO: Phase 7 - если экзамен сдан (≥80%), разблокировать следующую Unidad
+        }
+
+        // ═══════════════════════════════════════════════════════════════
         // INITIALIZATION
         // ═══════════════════════════════════════════════════════════════
 	

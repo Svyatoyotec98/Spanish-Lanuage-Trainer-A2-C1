@@ -904,8 +904,6 @@ function showProfileSelect() {
 
                 container.appendChild(card);
             });
-
-            console.log(`✅ Rendered ${pageGroups.length} of ${groupNames.length} group cards (page ${palabrasCurrentPage + 1})`);
         }
 
         // Pagination functions for Palabras
@@ -920,15 +918,9 @@ function showProfileSelect() {
             const prevBtn = document.getElementById('palabrasPrevBtn');
             const nextBtn = document.getElementById('palabrasNextBtn');
 
-            console.log(`🔍 Palabras Pagination: ${groupNames.length} groups, ${totalPages} pages`);
-
             // Скрываем весь блок пагинации если только 1 страница
             if (paginationContainer) {
-                const shouldHide = totalPages <= 1;
-                paginationContainer.style.display = shouldHide ? 'none' : 'flex';
-                console.log(`   → Pagination container: ${shouldHide ? 'СКРЫТ' : 'ПОКАЗАН'} (totalPages=${totalPages})`);
-            } else {
-                console.warn('   → palabrasPagination element NOT FOUND!');
+                paginationContainer.style.display = totalPages <= 1 ? 'none' : 'flex';
             }
 
             if (pageIndicator) pageIndicator.textContent = `Страница ${palabrasCurrentPage + 1} / ${totalPages}`;

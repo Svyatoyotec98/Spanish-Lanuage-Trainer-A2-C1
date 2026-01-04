@@ -2439,9 +2439,12 @@ if (
         }
 
         function unlockAllPalabrasTests() {
-            __qaUnlockAllTests = true;
+            __qaUnlockAllTests = !__qaUnlockAllTests;
             updateCategoryButtons();
-            document.getElementById('qaOutput').textContent = '✅ Все тесты Palabras разблокированы! (Medium и Hard доступны)\n\nДля отключения обновите страницу (F5)';
+
+            const status = __qaUnlockAllTests ? 'разблокированы' : 'заблокированы';
+            const icon = __qaUnlockAllTests ? '✅' : '🔒';
+            document.getElementById('qaOutput').textContent = `${icon} Все тесты Palabras ${status}! (Medium и Hard ${__qaUnlockAllTests ? 'доступны' : 'требуют прохождения предыдущих уровней'})`;
         }
 
         function resetProgress() {

@@ -1724,25 +1724,42 @@ if (
                         }
                     }, 1000); // Wait 1s before fading
                 } else {
-                    // Wrong match - just show red and reset (DON'T delete cards!)
+                    // Wrong match - show red and DELETE both cards (penalty!)
                     leftCard.classList.add('incorrect');
                     rightCard.classList.add('incorrect');
 
+                    matchedPairs.add(selectedLeft); // Mark left as used (but incorrect)
+
                     setTimeout(() => {
-                        // Remove incorrect class
-                        leftCard.classList.remove('incorrect', 'selected');
-                        rightCard.classList.remove('incorrect', 'selected');
+                        // Плавное исчезновение + схлопывание
+                        const leftInner = leftCard.querySelector('.card-inner');
+                        const rightInner = rightCard.querySelector('.card-inner');
 
-                        // Flip cards back
-                        flipCard(leftCard, false);
-                        flipCard(rightCard, false);
+                        leftCard.style.opacity = '0';
+                        rightCard.style.opacity = '0';
+                        leftCard.style.maxHeight = '0';
+                        rightCard.style.maxHeight = '0';
+                        leftCard.style.minHeight = '0';
+                        rightCard.style.minHeight = '0';
+                        leftCard.style.margin = '0';
+                        rightCard.style.margin = '0';
 
-                        // Reset selection
+                        // Apply to .card-inner (has padding and border)
+                        leftInner.style.padding = '0';
+                        rightInner.style.padding = '0';
+                        leftInner.style.border = 'none';
+                        rightInner.style.border = 'none';
+
                         selectedLeft = null;
                         selectedRight = null;
                         firstClickSide = null;
                         isAnimating = false;
-                    }, 1000); // Wait 1s to show incorrect state
+
+                        // Check if game finished
+                        if (matchedPairs.size === leftWords.length) {
+                            finishGame();
+                        }
+                    }, 1000); // Wait 1s before fading
                 }
             }, 600); // Wait for flip animation
         }

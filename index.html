@@ -412,50 +412,41 @@
 
             <!-- ABCD Test Levels (for groups ≥10 words) -->
             <div id="abcdTestsSection">
-            <!-- Easy Level -->
-            <div class="level-section" style="background: #d5f4e6; border-left: 5px solid #27ae60; padding: 20px; border-radius: 10px; margin: 15px 0;">
-                <h3 style="color: #27ae60; margin-bottom: 15px;">🟢 Лёгкий уровень (ES→RU, ABCD)</h3>
-                <div style="display: flex; gap: 15px;">
-                    <button class="level-btn" id="easy-10-btn" onclick="startTest('easy', 10)" style="flex: 1; background: #27ae60; color: white; border: none;">
-                        <span class="level-btn-label">✓ 10 вопросов</span>
-                        <span class="level-btn-progress" id="easy-10-progress">Лучший: 0%</span>
-                    </button>
-                    <button class="level-btn" id="easy-25-btn" onclick="startTest('easy', 25)" style="flex: 1;" disabled>
-                        <span class="level-btn-label">🔒 25 вопросов</span>
-                        <span class="level-btn-progress" id="easy-25-progress">(требуется 80% на 10)</span>
+                <!-- Easy Level -->
+                <div class="level-section" style="background: #d5f4e6; border-left: 5px solid #27ae60; padding: 20px; border-radius: 10px; margin: 15px 0;">
+                    <h3 style="color: #27ae60; margin-bottom: 10px;">🟢 Лёгкий уровень (ES→RU, ABCD)</h3>
+                    <div class="progress-bar-container" style="margin-bottom: 15px;">
+                        <div class="progress-bar-fill" id="easy-progress-bar" style="width: 0%; background: #27ae60;"></div>
+                    </div>
+                    <p style="margin: 5px 0; color: #27ae60; font-weight: 600;" id="easy-progress-text">0%</p>
+                    <button class="level-btn" id="easy-btn" onclick="startTest('easy')" style="width: 100%; background: #27ae60; color: white; border: none; padding: 15px; font-size: 1.1em; margin-top: 10px;">
+                        <span class="level-btn-label">Начать тест</span>
                     </button>
                 </div>
-            </div>
 
-            <!-- Medium Level -->
-            <div class="level-section" style="background: #fff3cd; border-left: 5px solid #f39c12; padding: 20px; border-radius: 10px; margin: 15px 0;">
-                <h3 style="color: #f39c12; margin-bottom: 15px;">🟡 Средний уровень (RU→ES, ABCD)</h3>
-                <div style="display: flex; gap: 15px;">
-                    <button class="level-btn" id="medium-10-btn" onclick="startTest('medium', 10)" style="flex: 1;" disabled>
-                        <span class="level-btn-label">🔒 10 вопросов</span>
-                        <span class="level-btn-progress" id="medium-10-progress">(требуется 80% на Лёгкий)</span>
-                    </button>
-                    <button class="level-btn" id="medium-25-btn" onclick="startTest('medium', 25)" style="flex: 1;" disabled>
-                        <span class="level-btn-label">🔒 25 вопросов</span>
-                        <span class="level-btn-progress" id="medium-25-progress">Лучший: 0%</span>
+                <!-- Medium Level -->
+                <div class="level-section" style="background: #fff3cd; border-left: 5px solid #f39c12; padding: 20px; border-radius: 10px; margin: 15px 0;">
+                    <h3 style="color: #f39c12; margin-bottom: 10px;">🟡 Средний уровень (RU→ES, ABCD)</h3>
+                    <div class="progress-bar-container" style="margin-bottom: 15px;">
+                        <div class="progress-bar-fill" id="medium-progress-bar" style="width: 0%; background: #f39c12;"></div>
+                    </div>
+                    <p style="margin: 5px 0; color: #f39c12; font-weight: 600;" id="medium-progress-text">0%</p>
+                    <button class="level-btn" id="medium-btn" onclick="startTest('medium')" style="width: 100%; color: white; border: none; padding: 15px; font-size: 1.1em; margin-top: 10px;" disabled>
+                        <span class="level-btn-label">🔒 Требуется 80% на Лёгкий</span>
                     </button>
                 </div>
-            </div>
 
-            <!-- Hard Level -->
-            <div class="level-section" style="background: #f8d7da; border-left: 5px solid #e74c3c; padding: 20px; border-radius: 10px; margin: 15px 0;">
-                <h3 style="color: #e74c3c; margin-bottom: 15px;">🔴 Сложный уровень (RU→ES, Ввод текста)</h3>
-                <div style="display: flex; gap: 15px;">
-                    <button class="level-btn" id="hard-10-btn" onclick="startTest('hard', 10)" style="flex: 1;" disabled>
-                        <span class="level-btn-label">🔒 10 вопросов</span>
-                        <span class="level-btn-progress" id="hard-10-progress">(требуется 80% на Средний)</span>
-                    </button>
-                    <button class="level-btn" id="hard-25-btn" onclick="startTest('hard', 25)" style="flex: 1;" disabled>
-                        <span class="level-btn-label">🔒 25 вопросов</span>
-                        <span class="level-btn-progress" id="hard-25-progress">Лучший: 0%</span>
+                <!-- Hard Level -->
+                <div class="level-section" style="background: #f8d7da; border-left: 5px solid #e74c3c; padding: 20px; border-radius: 10px; margin: 15px 0;">
+                    <h3 style="color: #e74c3c; margin-bottom: 10px;">🔴 Сложный уровень (RU→ES, Ввод текста)</h3>
+                    <div class="progress-bar-container" style="margin-bottom: 15px;">
+                        <div class="progress-bar-fill" id="hard-progress-bar" style="width: 0%; background: #e74c3c;"></div>
+                    </div>
+                    <p style="margin: 5px 0; color: #e74c3c; font-weight: 600;" id="hard-progress-text">0%</p>
+                    <button class="level-btn" id="hard-btn" onclick="startTest('hard')" style="width: 100%; color: white; border: none; padding: 15px; font-size: 1.1em; margin-top: 10px;" disabled>
+                        <span class="level-btn-label">🔒 Требуется 80% на Средний</span>
                     </button>
                 </div>
-            </div>
             </div>
             <!-- End of abcdTestsSection -->
 

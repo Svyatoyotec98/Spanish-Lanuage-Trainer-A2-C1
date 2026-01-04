@@ -148,9 +148,9 @@
                     Object.keys(vocabularyData[unidad].groups).forEach(groupName => {
                         if (!profile.progress[unidad][groupName]) {
                             profile.progress[unidad][groupName] = {
-                                easy10: 0, easy25: 0,
-                                medium10: 0, medium25: 0,
-                                hard10: 0, hard25: 0
+                                easy: 0,
+                                medium: 0,
+                                hard: 0
                             };
                         }
                     });
@@ -165,19 +165,18 @@
             return profile;
         }
 
-        function updateProgress(unidad, category, level, count, score) {
+        function updateProgress(unidad, category, level, score) {
             const profile = getActiveProfile();
             if (!profile) return;
 
             ensureProgressSkeleton(profile);
 
-            const key = `${level}${count}`;
-            const currentBest = profile.progress[unidad][category][key] || 0;
+            const currentBest = profile.progress[unidad][category][level] || 0;
             const newScore = Math.round(score);
-            
+
             if (newScore > currentBest) {
-                profile.progress[unidad][category][key] = newScore;
-                if (DEBUG) console.log(`Progress updated: ${unidad}/${category}/${key} = ${newScore}%`);
+                profile.progress[unidad][category][level] = newScore;
+                if (DEBUG) console.log(`Progress updated: ${unidad}/${category}/${level} = ${newScore}%`);
             }
 
             profile.lastSeenAt = Date.now();
@@ -208,8 +207,9 @@
             // Если нет валидных результатов, возвращаем 0
             if (validScores.length === 0) return 0;
 
-            // Возвращаем максимальный результат
-            return Math.max(...validScores);
+            // Возвращаем среднее арифметическое валидных результатов
+            const sum = validScores.reduce((a, b) => a + b, 0);
+            return Math.round(sum / validScores.length);
         }
 
         function calculateUnidadProgress(unidad, profile = null) {
@@ -1036,12 +1036,13 @@ if (
                 const cardMatchingBtn = document.getElementById('card-matching-btn');
                 const cardMatchingProgress = document.getElementById('card-matching-progress');
                 if (cardMatchingBtn && cardMatchingProgress) {
-                    cardMatchingProgress.textContent = `Лучший: ${categoryData.easy10}%`;
+                    const cardMatchingScore = categoryData.easy || 0;
+                    cardMatchingProgress.textContent = `Лучший: ${cardMatchingScore}%`;
 
                     // Change button color based on score
-                    if (categoryData.easy10 >= 80) {
+                    if (cardMatchingScore >= 80) {
                         cardMatchingBtn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-                    } else if (categoryData.easy10 > 0) {
+                    } else if (cardMatchingScore > 0) {
                         cardMatchingBtn.style.background = 'linear-gradient(135deg, #f39c12, #e67e22)';
                     } else {
                         cardMatchingBtn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
@@ -1057,159 +1058,80 @@ if (
             }
 
             // ═══════════════════════════════════════════════════════════════
-            // EASY LEVEL
+            // UPDATE LEVEL BUTTONS AND PROGRESS BARS
             // ═══════════════════════════════════════════════════════════════
-            const easy10Btn = document.getElementById('easy-10-btn');
-            const easy25Btn = document.getElementById('easy-25-btn');
-            
-            easy10Btn.disabled = false;
-            easy10Btn.style.opacity = '1';
-            easy10Btn.querySelector('.level-btn-label').textContent = `✓ 10 вопросов [${categoryData.easy10}%]`;
-            easy10Btn.querySelector('.level-btn-progress').textContent = '';
-            
-            // Change button color based on score
-            if (categoryData.easy10 >= 80) {
-                easy10Btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-            } else if (categoryData.easy10 > 0) {
-                easy10Btn.style.background = 'linear-gradient(135deg, #f39c12, #e67e22)';
-            } else {
-                easy10Btn.style.background = '#27ae60';
-            }
-            
-            // easy25 unlocks when easy10 >= 80%
-            if (categoryData.easy10 >= 80) {
-                easy25Btn.disabled = false;
-                easy25Btn.style.opacity = '1';
-                easy25Btn.querySelector('.level-btn-label').textContent = `✓ 25 вопросов [${categoryData.easy25}%]`;
-                easy25Btn.querySelector('.level-btn-progress').textContent = '';
-                
-                if (categoryData.easy25 >= 80) {
-                    easy25Btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-                } else if (categoryData.easy25 > 0) {
-                    easy25Btn.style.background = 'linear-gradient(135deg, #f39c12, #e67e22)';
+
+            // Easy Level - always available
+            const easyScore = categoryData.easy || 0;
+            const easyBtn = document.getElementById('easy-btn');
+            const easyProgressBar = document.getElementById('easy-progress-bar');
+            const easyProgressText = document.getElementById('easy-progress-text');
+
+            if (easyProgressBar) easyProgressBar.style.width = `${easyScore}%`;
+            if (easyProgressText) easyProgressText.textContent = `${easyScore}%`;
+            if (easyBtn) {
+                easyBtn.disabled = false;
+                if (easyScore >= 80) {
+                    easyBtn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+                } else if (easyScore > 0) {
+                    easyBtn.style.background = 'linear-gradient(135deg, #27ae60, #229954)';
                 } else {
-                    easy25Btn.style.background = '#27ae60';
+                    easyBtn.style.background = '#27ae60';
                 }
-            } else {
-                easy25Btn.disabled = true;
-                easy25Btn.style.opacity = '0.5';
-                easy25Btn.querySelector('.level-btn-label').textContent = '🔒 25 вопросов';
-                easy25Btn.querySelector('.level-btn-progress').textContent = '(требуется 80% на 10)';
-                easy25Btn.style.background = '';
             }
 
-            // ═══════════════════════════════════════════════════════════════
-            // MEDIUM LEVEL - unlocks when BOTH easy10 AND easy25 >= 80%
-            // ═══════════════════════════════════════════════════════════════
-            const medium10Btn = document.getElementById('medium-10-btn');
-            const medium25Btn = document.getElementById('medium-25-btn');
-            
-            const easyCompleted = categoryData.easy10 >= 80 && categoryData.easy25 >= 80;
-            
-            if (easyCompleted) {
-                medium10Btn.disabled = false;
-                medium10Btn.style.opacity = '1';
-                medium10Btn.querySelector('.level-btn-label').textContent = `✓ 10 вопросов [${categoryData.medium10}%]`;
-                medium10Btn.querySelector('.level-btn-progress').textContent = '';
-                
-                if (categoryData.medium10 >= 80) {
-                    medium10Btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-                } else if (categoryData.medium10 > 0) {
-                    medium10Btn.style.background = 'linear-gradient(135deg, #f39c12, #e67e22)';
-                } else {
-                    medium10Btn.style.background = '#f39c12';
-                }
-                
-                // medium25 unlocks when medium10 >= 80%
-                if (categoryData.medium10 >= 80) {
-                    medium25Btn.disabled = false;
-                    medium25Btn.style.opacity = '1';
-                    medium25Btn.querySelector('.level-btn-label').textContent = `✓ 25 вопросов [${categoryData.medium25}%]`;
-                    medium25Btn.querySelector('.level-btn-progress').textContent = '';
-                    
-                    if (categoryData.medium25 >= 80) {
-                        medium25Btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-                    } else if (categoryData.medium25 > 0) {
-                        medium25Btn.style.background = 'linear-gradient(135deg, #f39c12, #e67e22)';
+            // Medium Level - unlocks when Easy >= 80%
+            const mediumScore = categoryData.medium || 0;
+            const mediumBtn = document.getElementById('medium-btn');
+            const mediumProgressBar = document.getElementById('medium-progress-bar');
+            const mediumProgressText = document.getElementById('medium-progress-text');
+
+            if (mediumProgressBar) mediumProgressBar.style.width = `${mediumScore}%`;
+            if (mediumProgressText) mediumProgressText.textContent = `${mediumScore}%`;
+            if (mediumBtn) {
+                if (easyScore >= 80) {
+                    mediumBtn.disabled = false;
+                    mediumBtn.querySelector('.level-btn-label').textContent = 'Начать тест';
+                    if (mediumScore >= 80) {
+                        mediumBtn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+                    } else if (mediumScore > 0) {
+                        mediumBtn.style.background = 'linear-gradient(135deg, #f39c12, #e67e22)';
                     } else {
-                        medium25Btn.style.background = '#f39c12';
+                        mediumBtn.style.background = '#f39c12';
                     }
                 } else {
-                    medium25Btn.disabled = true;
-                    medium25Btn.style.opacity = '0.5';
-                    medium25Btn.querySelector('.level-btn-label').textContent = '🔒 25 вопросов';
-                    medium25Btn.querySelector('.level-btn-progress').textContent = '(требуется 80% на 10)';
-                    medium25Btn.style.background = '';
+                    mediumBtn.disabled = true;
+                    mediumBtn.querySelector('.level-btn-label').textContent = '🔒 Требуется 80% на Лёгкий';
+                    mediumBtn.style.background = '#999';
+                    mediumBtn.style.opacity = '0.6';
                 }
-            } else {
-                medium10Btn.disabled = true;
-                medium10Btn.style.opacity = '0.5';
-                medium10Btn.querySelector('.level-btn-label').textContent = '🔒 10 вопросов';
-                medium10Btn.querySelector('.level-btn-progress').textContent = '(требуется 80% на Лёгкий)';
-                medium10Btn.style.background = '';
-                
-                medium25Btn.disabled = true;
-                medium25Btn.style.opacity = '0.5';
-                medium25Btn.querySelector('.level-btn-label').textContent = '🔒 25 вопросов';
-                medium25Btn.querySelector('.level-btn-progress').textContent = '';
-                medium25Btn.style.background = '';
             }
 
-            // ═══════════════════════════════════════════════════════════════
-            // HARD LEVEL - unlocks when BOTH medium10 AND medium25 >= 80%
-            // ═══════════════════════════════════════════════════════════════
-            const hard10Btn = document.getElementById('hard-10-btn');
-            const hard25Btn = document.getElementById('hard-25-btn');
-            
-            const mediumCompleted = categoryData.medium10 >= 80 && categoryData.medium25 >= 80;
-            
-            if (mediumCompleted) {
-                hard10Btn.disabled = false;
-                hard10Btn.style.opacity = '1';
-                hard10Btn.querySelector('.level-btn-label').textContent = `✓ 10 вопросов [${categoryData.hard10}%]`;
-                hard10Btn.querySelector('.level-btn-progress').textContent = '';
-                
-                if (categoryData.hard10 >= 80) {
-                    hard10Btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-                } else if (categoryData.hard10 > 0) {
-                    hard10Btn.style.background = 'linear-gradient(135deg, #f39c12, #e67e22)';
-                } else {
-                    hard10Btn.style.background = '#e74c3c';
-                }
-                
-                // hard25 unlocks when hard10 >= 80%
-                if (categoryData.hard10 >= 80) {
-                    hard25Btn.disabled = false;
-                    hard25Btn.style.opacity = '1';
-                    hard25Btn.querySelector('.level-btn-label').textContent = `✓ 25 вопросов [${categoryData.hard25}%]`;
-                    hard25Btn.querySelector('.level-btn-progress').textContent = '';
-                    
-                    if (categoryData.hard25 >= 80) {
-                        hard25Btn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
-                    } else if (categoryData.hard25 > 0) {
-                        hard25Btn.style.background = 'linear-gradient(135deg, #f39c12, #e67e22)';
+            // Hard Level - unlocks when Medium >= 80%
+            const hardScore = categoryData.hard || 0;
+            const hardBtn = document.getElementById('hard-btn');
+            const hardProgressBar = document.getElementById('hard-progress-bar');
+            const hardProgressText = document.getElementById('hard-progress-text');
+
+            if (hardProgressBar) hardProgressBar.style.width = `${hardScore}%`;
+            if (hardProgressText) hardProgressText.textContent = `${hardScore}%`;
+            if (hardBtn) {
+                if (mediumScore >= 80) {
+                    hardBtn.disabled = false;
+                    hardBtn.querySelector('.level-btn-label').textContent = 'Начать тест';
+                    if (hardScore >= 80) {
+                        hardBtn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+                    } else if (hardScore > 0) {
+                        hardBtn.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
                     } else {
-                        hard25Btn.style.background = '#e74c3c';
+                        hardBtn.style.background = '#e74c3c';
                     }
                 } else {
-                    hard25Btn.disabled = true;
-                    hard25Btn.style.opacity = '0.5';
-                    hard25Btn.querySelector('.level-btn-label').textContent = '🔒 25 вопросов';
-                    hard25Btn.querySelector('.level-btn-progress').textContent = '(требуется 80% на 10)';
-                    hard25Btn.style.background = '';
+                    hardBtn.disabled = true;
+                    hardBtn.querySelector('.level-btn-label').textContent = '🔒 Требуется 80% на Средний';
+                    hardBtn.style.background = '#999';
+                    hardBtn.style.opacity = '0.6';
                 }
-            } else {
-                hard10Btn.disabled = true;
-                hard10Btn.style.opacity = '0.5';
-                hard10Btn.querySelector('.level-btn-label').textContent = '🔒 10 вопросов';
-                hard10Btn.querySelector('.level-btn-progress').textContent = '(требуется 80% на Средний)';
-                hard10Btn.style.background = '';
-                
-                hard25Btn.disabled = true;
-                hard25Btn.style.opacity = '0.5';
-                hard25Btn.querySelector('.level-btn-label').textContent = '🔒 25 вопросов';
-                hard25Btn.querySelector('.level-btn-progress').textContent = '';
-                hard25Btn.style.background = '';
             }
         }
 
@@ -1232,7 +1154,7 @@ if (
 			return result;
 		}
 
-        function startTest(level, count) {
+        function startTest(level) {
             // Проверка существования данных
             if (!vocabularyData[currentUnidad]) {
                 alert(`Ошибка: данные для ${currentUnidad} не загружены.\nПопробуйте обновить страницу (F5).`);
@@ -1254,18 +1176,17 @@ if (
                 return;
             }
 
-            if (words.length < count) {
-                alert(`Внимание: в категории всего ${words.length} слов(а), но запрошено ${count}.\nБудет показано ${words.length} вопросов.`);
-                count = words.length;
-            }
+            // Используем ВСЕ слова из группы
+            const count = words.length;
 
             currentLevel = level;
             currentCount = count;
             currentQuestionIndex = 0;
             score = 0;
 
+            // Перемешиваем и используем все слова
             const shuffled = shuffleArray(words);
-            currentQuestions = shuffled.slice(0, count);
+            currentQuestions = shuffled;
 
             hideAll();
             showUserBadge();
@@ -1509,8 +1430,8 @@ if (
             // ═══════════════════════════════════════════════════════════════
             // SAVE PROGRESS TO LOCALSTORAGE (CRITICAL!)
             // ═══════════════════════════════════════════════════════════════
-            updateProgress(currentUnidad, currentCategory, currentLevel, currentCount, percentage);
-            
+            updateProgress(currentUnidad, currentCategory, currentLevel, percentage);
+
             // Update UI to reflect new progress
             updateCategoryButtons();
             updateUnidadProgressBars();
@@ -1518,7 +1439,7 @@ if (
         }
 
         function retryTest() {
-            startTest(currentLevel, currentCount);
+            startTest(currentLevel);
         }
 
         function exitTest() {
@@ -1881,26 +1802,13 @@ if (
             const totalPairs = leftWords.length;
             const percentage = Math.round((correctMatches / totalPairs) * 100);
 
-            // Save progress
-            const profile = getActiveProfile();
-            if (profile) {
-                ensureProgressSkeleton(profile);
-                if (!profile.progress[currentUnidad][currentCategory]) {
-                    profile.progress[currentUnidad][currentCategory] = {
-                        easy10: 0, easy25: 0,
-                        medium10: 0, medium25: 0,
-                        hard10: 0, hard25: 0
-                    };
-                }
+            // Save progress - используем систему updateProgress
+            updateProgress(currentUnidad, currentCategory, 'easy', percentage);
 
-                profile.progress[currentUnidad][currentCategory].easy10 = percentage;
-
-                const state = loadAppState();
-                state.profiles[profile.id] = profile;
-                saveAppState(state);
-
-                updateUnlocks();
-            }
+            // Update UI
+            updateCategoryButtons();
+            updateUnidadProgressBars();
+            updateUnidadUI();
 
             // Show results screen
             setTimeout(() => {

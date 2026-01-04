@@ -289,7 +289,7 @@
              'resultsScreen', 'cardMatchingScreen', 'cardMatchingResultsScreen',
              'verbMenu', 'verbPracticeScreen', 'qaScreen',
 			 'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
-             'grammarListScreen', 'grammarDetailScreen',
+             'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
              'examScreen', 'examResultsScreen'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');
             });
@@ -655,6 +655,10 @@ function showProfileSelect() {
 	let __isAwaitingNext = false;
 	let __questionToken = 0;
 
+        // Palabras pagination
+        let palabrasCurrentPage = 0;
+        const PALABRAS_GROUPS_PER_PAGE = 4;
+
         // Timer variables
         let timerInterval = null;
         let timeLeft = 10;
@@ -824,12 +828,15 @@ function showProfileSelect() {
                 return;
             }
 
+            palabrasCurrentPage = 0; // Reset to first page
+
             hideAll();
             showUserBadge();
             document.getElementById('palabrasMenu').classList.remove('hidden');
 
             // Render group cards dynamically
             renderGroupCards();
+            updatePalabrasPagination();
 
             // Update progress
             const palabrasProgress = calculatePalabrasProgress(currentUnidad);
@@ -858,7 +865,12 @@ function showProfileSelect() {
             const groupNames = Object.keys(unidadData.groups);
             const profile = getActiveProfile();
 
-            groupNames.forEach(groupName => {
+            // Pagination logic
+            const startIdx = palabrasCurrentPage * PALABRAS_GROUPS_PER_PAGE;
+            const endIdx = Math.min(startIdx + PALABRAS_GROUPS_PER_PAGE, groupNames.length);
+            const pageGroups = groupNames.slice(startIdx, endIdx);
+
+            pageGroups.forEach(groupName => {
                 const card = document.createElement('div');
                 card.className = 'category-card';
                 card.onclick = () => showCategoryMenu(groupName);
@@ -884,7 +896,44 @@ function showProfileSelect() {
                 container.appendChild(card);
             });
 
-            console.log(`✅ Rendered ${groupNames.length} group cards in Palabras menu`);
+            console.log(`✅ Rendered ${pageGroups.length} of ${groupNames.length} group cards (page ${palabrasCurrentPage + 1})`);
+        }
+
+        // Pagination functions for Palabras
+        function updatePalabrasPagination() {
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups) return;
+
+            const groupNames = Object.keys(unidadData.groups);
+            const totalPages = Math.ceil(groupNames.length / PALABRAS_GROUPS_PER_PAGE);
+            const pageIndicator = document.getElementById('palabrasPageIndicator');
+            const prevBtn = document.getElementById('palabrasPrevBtn');
+            const nextBtn = document.getElementById('palabrasNextBtn');
+
+            if (pageIndicator) pageIndicator.textContent = `Страница ${palabrasCurrentPage + 1} / ${totalPages}`;
+            if (prevBtn) prevBtn.classList.toggle('hidden', palabrasCurrentPage === 0);
+            if (nextBtn) nextBtn.disabled = palabrasCurrentPage >= totalPages - 1;
+        }
+
+        function palabrasPrevPage() {
+            if (palabrasCurrentPage > 0) {
+                palabrasCurrentPage--;
+                renderGroupCards();
+                updatePalabrasPagination();
+            }
+        }
+
+        function palabrasNextPage() {
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups) return;
+
+            const groupNames = Object.keys(unidadData.groups);
+            const totalPages = Math.ceil(groupNames.length / PALABRAS_GROUPS_PER_PAGE);
+            if (palabrasCurrentPage < totalPages - 1) {
+                palabrasCurrentPage++;
+                renderGroupCards();
+                updatePalabrasPagination();
+            }
         }
 
         function showCategoryMenu(category) {

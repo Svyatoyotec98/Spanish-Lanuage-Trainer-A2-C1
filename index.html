@@ -372,6 +372,13 @@
 
                 <!-- Group Cards (динамически генерируются из vocabularyData.groups) -->
                 <div id="groupsContainer"></div>
+
+                <!-- Pagination Controls -->
+                <div id="palabrasPagination" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
+                    <button class="btn btn-secondary" id="palabrasPrevBtn" onclick="palabrasPrevPage()">← Назад</button>
+                    <span id="palabrasPageIndicator" style="display: flex; align-items: center; font-size: 1.1em;">Страница 1 / 1</span>
+                    <button class="btn btn-secondary" id="palabrasNextBtn" onclick="palabrasNextPage()">Вперёд →</button>
+                </div>
             </div>
 
             <button class="btn btn-back" onclick="backToUnidadMenu()">← Назад к типам практики</button>

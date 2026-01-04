@@ -263,6 +263,55 @@
             return Math.round(totalScore / unidadData.ejercicios.length);
         }
 
+        // Проверка доступности экзамена (требуется средний прогресс ≥80%)
+        function checkExamAvailability() {
+            const profile = getActiveProfile();
+            if (!profile) return;
+
+            // Вычисляем средний прогресс по ВСЕМ разблокированным Unidades
+            let totalProgress = 0;
+            let unlockedCount = 0;
+
+            UNIDADES.forEach((unidad, index) => {
+                // Первая unidad всегда разблокирована, остальные - только если есть в unlocks
+                if (index === 0 || profile.unlocks[unidad]) {
+                    totalProgress += calculateUnidadProgress(unidad, profile);
+                    unlockedCount++;
+                }
+            });
+
+            const averageProgress = unlockedCount > 0 ? Math.round(totalProgress / unlockedCount) : 0;
+
+            // Получаем кнопку экзамена
+            const examBtn = document.getElementById('examBtn');
+            if (!examBtn) return;
+
+            // Разблокируем кнопку, если средний прогресс ≥80%
+            if (averageProgress >= 80) {
+                examBtn.disabled = false;
+                examBtn.classList.remove('btn-warning');
+                examBtn.classList.add('btn-success');
+                console.log(`✅ Экзамен разблокирован! Средний прогресс: ${averageProgress}%`);
+            } else {
+                examBtn.disabled = true;
+                examBtn.classList.remove('btn-success');
+                examBtn.classList.add('btn-warning');
+                console.log(`⏳ Экзамен заблокирован. Средний прогресс: ${averageProgress}% (требуется 80%)`);
+            }
+        }
+
+        // QA функция для принудительной разблокировки экзамена
+        function unlockExam() {
+            const examBtn = document.getElementById('examBtn');
+            if (examBtn) {
+                examBtn.disabled = false;
+                examBtn.classList.remove('btn-warning');
+                examBtn.classList.add('btn-success');
+                console.log('🎓 QA: Экзамен разблокирован принудительно');
+                alert('✅ Экзамен разблокирован!');
+            }
+        }
+
         function updateUnlocks() {
             const profile = getActiveProfile();
             if (!profile) return;
@@ -283,6 +332,9 @@
             const state = loadAppState();
             state.profiles[profile.id] = profile;
             saveAppState(state);
+
+            // Проверяем доступность экзамена после обновления unlocks
+            checkExamAvailability();
         }
 
         // ═══════════════════════════════════════════════════════════════
@@ -723,6 +775,9 @@ function showProfileSelect() {
             const palabrasText = document.getElementById('palabras-progress-text');
             if (palabrasBar) palabrasBar.style.width = palabrasProgress + '%';
             if (palabrasText) palabrasText.textContent = palabrasProgress + '%';
+
+            // Проверяем доступность экзамена после обновления прогресса
+            checkExamAvailability();
         }
 
         // Calculate average progress for all vocabulary groups
@@ -2776,6 +2831,9 @@ async function getNavigationState() {
     }
 	  console.log('✅ Spanish Vocabulary Trainer v4.0 (Профили) загружен');
 	  console.log('✅ Система профилей инициализирована');
+
+    // Проверяем доступность экзамена при загрузке
+    checkExamAvailability();
 });
 
   // Global keyboard handler for Enter key

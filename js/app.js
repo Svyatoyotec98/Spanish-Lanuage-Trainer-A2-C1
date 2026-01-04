@@ -1734,28 +1734,47 @@ if (
                         // Find which word was clicked first
                         const firstClickedWord = firstClickSide === 'left' ? leftWord : rightWord;
 
-                        // Find the correct pair for the first clicked word
-                        const correctPairWord = firstClickedWord;
-
-                        // Replace the OPPOSITE side card with correct pair
+                        // Find the INDEX of correct pair on opposite side
                         if (firstClickSide === 'left') {
-                            // Left was first - replace right card with correct Spanish word
-                            const rightInner = rightCard.querySelector('.card-inner');
-                            const rightBack = rightInner.querySelector('.card-back');
-                            const iconName = correctPairWord.icon || 'question';
-                            rightBack.innerHTML = `
-                                <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
-                                <div style="margin-top: 10px; font-size: 0.9em;">${correctPairWord.spanish}</div>
-                            `;
+                            // Left was first (Russian) - find correct Spanish pair in rightWords
+                            const correctRightIndex = rightWords.findIndex(w =>
+                                w.spanish === firstClickedWord.spanish &&
+                                w.ru === firstClickedWord.ru
+                            );
+
+                            if (correctRightIndex !== -1 && correctRightIndex !== selectedRight) {
+                                // Get the correct card and flip it
+                                const correctRightCard = document.getElementById(`right-${correctRightIndex}`);
+                                correctRightCard.classList.add('incorrect', 'burning');
+                                flipCard(correctRightCard, true);
+
+                                // Hide the wrong card (already flipped)
+                                rightCard.style.display = 'none';
+
+                                // Update reference to show correct card
+                                rightCard = correctRightCard;
+                                selectedRight = correctRightIndex;
+                            }
                         } else {
-                            // Right was first - replace left card with correct Russian word
-                            const leftInner = leftCard.querySelector('.card-inner');
-                            const leftBack = leftInner.querySelector('.card-back');
-                            const iconName = correctPairWord.icon || 'question';
-                            leftBack.innerHTML = `
-                                <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
-                                <div style="margin-top: 10px; font-size: 0.9em;">${correctPairWord.ru}</div>
-                            `;
+                            // Right was first (Spanish) - find correct Russian pair in leftWords
+                            const correctLeftIndex = leftWords.findIndex(w =>
+                                w.spanish === firstClickedWord.spanish &&
+                                w.ru === firstClickedWord.ru
+                            );
+
+                            if (correctLeftIndex !== -1 && correctLeftIndex !== selectedLeft) {
+                                // Get the correct card and flip it
+                                const correctLeftCard = document.getElementById(`left-${correctLeftIndex}`);
+                                correctLeftCard.classList.add('incorrect', 'burning');
+                                flipCard(correctLeftCard, true);
+
+                                // Hide the wrong card (already flipped)
+                                leftCard.style.display = 'none';
+
+                                // Update reference to show correct card
+                                leftCard = correctLeftCard;
+                                selectedLeft = correctLeftIndex;
+                            }
                         }
 
                         // Now fade away both cards (showing correct pair but counted as error)
@@ -1866,7 +1885,8 @@ if (
         }
 
         function exitCardMatching() {
-            showCategoryMenu(currentCategory);
+            // Return to Palabras menu (group selection), not category menu
+            showPalabrasMenu();
         }
 
         // ═══════════════════════════════════════════════════════════════

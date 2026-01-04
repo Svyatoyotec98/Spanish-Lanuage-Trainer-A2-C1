@@ -1743,17 +1743,14 @@ if (
                             );
 
                             if (correctRightIndex !== -1 && correctRightIndex !== selectedRight) {
-                                // Get the correct card and flip it
-                                const correctRightCard = document.getElementById(`right-${correctRightIndex}`);
-                                correctRightCard.classList.add('incorrect', 'burning');
-                                flipCard(correctRightCard, true);
-
-                                // Hide the wrong card (already flipped)
-                                rightCard.style.display = 'none';
-
-                                // Update reference to show correct card
-                                rightCard = correctRightCard;
-                                selectedRight = correctRightIndex;
+                                // Replace the content of wrong card with correct pair
+                                const correctWord = rightWords[correctRightIndex];
+                                const rightBack = rightCard.querySelector('.card-back');
+                                const iconName = correctWord.icon || 'question';
+                                rightBack.innerHTML = `
+                                    <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
+                                    <div style="margin-top: 10px; font-size: 0.9em;">${correctWord.spanish}</div>
+                                `;
                             }
                         } else {
                             // Right was first (Spanish) - find correct Russian pair in leftWords
@@ -1763,17 +1760,14 @@ if (
                             );
 
                             if (correctLeftIndex !== -1 && correctLeftIndex !== selectedLeft) {
-                                // Get the correct card and flip it
-                                const correctLeftCard = document.getElementById(`left-${correctLeftIndex}`);
-                                correctLeftCard.classList.add('incorrect', 'burning');
-                                flipCard(correctLeftCard, true);
-
-                                // Hide the wrong card (already flipped)
-                                leftCard.style.display = 'none';
-
-                                // Update reference to show correct card
-                                leftCard = correctLeftCard;
-                                selectedLeft = correctLeftIndex;
+                                // Replace the content of wrong card with correct pair
+                                const correctWord = leftWords[correctLeftIndex];
+                                const leftBack = leftCard.querySelector('.card-back');
+                                const iconName = correctWord.icon || 'question';
+                                leftBack.innerHTML = `
+                                    <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
+                                    <div style="margin-top: 10px; font-size: 0.9em;">${correctWord.ru}</div>
+                                `;
                             }
                         }
 

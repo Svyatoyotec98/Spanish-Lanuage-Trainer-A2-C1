@@ -797,8 +797,11 @@
              EXAM SCREEN
              ═══════════════════════════════════════════════════════════════ -->
         <div id="examScreen" class="question-container hidden">
-            <div class="progress" id="examProgress">Вопрос 1 из 30</div>
-            <div class="timer-text" id="examTimerText">15</div>
+            <div class="progress" id="examProgress">Вопрос 1 из 63</div>
+            <p id="examSectionIndicator" style="text-align: center; color: #667eea; font-weight: bold; font-size: 1.1em; margin: 10px 0;">
+                Раздел: <span id="examSectionName">Palabras - FAMILIA</span>
+            </p>
+            <div class="timer-text" id="examTimerText">10</div>
             <div class="timer-container">
                 <div class="timer-bar" id="examTimerBar"></div>
             </div>
@@ -810,44 +813,25 @@
                     <input
                         type="text"
                         id="examAnswerInput"
-                        placeholder="Введите перевод на русский..."
+                        placeholder="Введите ответ на испанском..."
                         style="padding: 15px; font-size: 1.2em; border: 2px solid #ddd; border-radius: 10px; text-align: center;"
                         onkeypress="if(event.key === 'Enter') submitExamAnswer()"
                     />
-                    <button class="btn btn-primary" onclick="submitExamAnswer()" style="font-size: 1.1em;">
-                        Ответить
-                    </button>
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-primary" onclick="submitExamAnswer()" style="font-size: 1.1em; flex: 1;">
+                            ✅ Ответить
+                        </button>
+                        <button class="btn btn-secondary" onclick="skipExamQuestion()" style="font-size: 1.1em; flex: 1;">
+                            ⏭️ Пропустить
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <button class="btn btn-back" onclick="confirmExitExam()" style="margin-top: 30px;">Выйти из экзамена</button>
+            <button class="btn btn-back" onclick="confirmExitExam()" style="margin-top: 30px;">❌ Выйти из экзамена</button>
         </div>
 
-        <!-- ═══════════════════════════════════════════════════════════════
-             BREAK SCREEN
-             ═══════════════════════════════════════════════════════════════ -->
-        <div id="breakScreen" class="question-container hidden">
-            <div style="text-align: center; padding: 40px;">
-                <h1 style="font-size: 3em; margin-bottom: 20px;">☕ Перерыв</h1>
-                <p style="font-size: 1.3em; color: #666; margin-bottom: 40px;">
-                    Отдохните немного перед следующим блоком вопросов
-                </p>
-
-                <div style="font-size: 8em; font-weight: bold; color: #667eea; margin: 40px 0;" id="breakTimerDisplay">
-                    30
-                </div>
-
-                <p style="font-size: 1.1em; color: #999;">
-                    Экзамен автоматически продолжится через...
-                </p>
-
-                <button class="btn btn-primary" onclick="skipBreak()" style="margin-top: 40px; font-size: 1.1em;">
-                    Пропустить перерыв →
-                </button>
-            </div>
-        </div>
-
-        <!-- ═══════════════════════════════════════════════════════════════
+<!-- ═══════════════════════════════════════════════════════════════
              EXAM RESULTS SCREEN
              ═══════════════════════════════════════════════════════════════ -->
         <div id="examResultsScreen" class="results-container hidden">
@@ -859,17 +843,25 @@
                 </div>
 
                 <div class="results-stats">
-                    <p><strong>Правильных ответов:</strong> <span id="examCorrect">0</span> / <span id="examTotal">30</span></p>
+                    <p id="examPassStatus" style="font-size: 1.3em; font-weight: bold; margin-bottom: 15px;">
+                        <!-- Динамически заполняется: "Экзамен сдан" или "Экзамен не сдан" -->
+                    </p>
+                    <p><strong>Правильных ответов:</strong> <span id="examCorrect">0</span> / <span id="examTotal">63</span></p>
                     <p><strong>Затраченное время:</strong> <span id="examTimeSpent">00:00</span></p>
-                    <p id="examGrade" style="font-size: 1.5em; margin-top: 20px;"></p>
                 </div>
             </div>
 
-            <div id="examDetailedResults" style="margin-top: 30px;"></div>
+            <!-- Детальная статистика (заполняется JS динамически) -->
+            <div id="examDetailedResults" style="margin-top: 30px;">
+                <!-- Здесь будет:
+                     1. Блок Palabras с общим % и разбивкой по группам
+                     2. Блок Ejercicios с общим % и разбивкой по упражнениям
+                -->
+            </div>
 
             <div style="display: flex; gap: 15px; justify-content: center; margin-top: 30px;">
-                <button class="btn btn-primary" onclick="startExam()">Пройти заново</button>
-                <button class="btn btn-back" onclick="showMainMenu()">На главную</button>
+                <button class="btn btn-primary" onclick="startExam()">🔄 Пройти заново</button>
+                <button class="btn btn-back" onclick="showMainMenu()">🏠 На главную</button>
             </div>
         </div>
 

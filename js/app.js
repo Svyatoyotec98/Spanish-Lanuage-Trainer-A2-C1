@@ -295,7 +295,8 @@
              'resultsScreen', 'cardMatchingScreen', 'cardMatchingResultsScreen',
              'verbMenu', 'verbPracticeScreen', 'qaScreen',
 			 'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
-             'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen'].forEach(id => {
+             'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
+             'examScreen', 'examResultsScreen'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');
             });
         }

@@ -1743,14 +1743,23 @@ if (
                             );
 
                             if (correctRightIndex !== -1 && correctRightIndex !== selectedRight) {
-                                // Replace the content of wrong card with correct pair
+                                // Get the correct card and word
+                                const correctRightCard = document.getElementById(`right-${correctRightIndex}`);
                                 const correctWord = rightWords[correctRightIndex];
-                                const rightBack = rightCard.querySelector('.card-back');
                                 const iconName = correctWord.icon || 'question';
+
+                                // Replace BOTH front and back of wrong card with correct content
+                                const rightFront = rightCard.querySelector('.card-front');
+                                const rightBack = rightCard.querySelector('.card-back');
+
+                                rightFront.querySelector('.card-text').textContent = correctWord.spanish;
                                 rightBack.innerHTML = `
                                     <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
                                     <div style="margin-top: 10px; font-size: 0.9em;">${correctWord.spanish}</div>
                                 `;
+
+                                // Hide the original correct card to avoid duplicates
+                                correctRightCard.style.display = 'none';
                             }
                         } else {
                             // Right was first (Spanish) - find correct Russian pair in leftWords
@@ -1760,14 +1769,23 @@ if (
                             );
 
                             if (correctLeftIndex !== -1 && correctLeftIndex !== selectedLeft) {
-                                // Replace the content of wrong card with correct pair
+                                // Get the correct card and word
+                                const correctLeftCard = document.getElementById(`left-${correctLeftIndex}`);
                                 const correctWord = leftWords[correctLeftIndex];
-                                const leftBack = leftCard.querySelector('.card-back');
                                 const iconName = correctWord.icon || 'question';
+
+                                // Replace BOTH front and back of wrong card with correct content
+                                const leftFront = leftCard.querySelector('.card-front');
+                                const leftBack = leftCard.querySelector('.card-back');
+
+                                leftFront.querySelector('.card-text').textContent = correctWord.ru;
                                 leftBack.innerHTML = `
                                     <i class="ph ph-${iconName}" style="font-size: 48px;"></i>
                                     <div style="margin-top: 10px; font-size: 0.9em;">${correctWord.ru}</div>
                                 `;
+
+                                // Hide the original correct card to avoid duplicates
+                                correctLeftCard.style.display = 'none';
                             }
                         }
 

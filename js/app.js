@@ -1674,8 +1674,8 @@ if (
             const leftWord = leftWords[selectedLeft];
             const rightWord = rightWords[selectedRight];
 
-            const leftCard = document.getElementById(`left-${selectedLeft}`);
-            const rightCard = document.getElementById(`right-${selectedRight}`);
+            let leftCard = document.getElementById(`left-${selectedLeft}`);
+            let rightCard = document.getElementById(`right-${selectedRight}`);
 
             // Flip cards and show icons
             flipCard(leftCard, true);

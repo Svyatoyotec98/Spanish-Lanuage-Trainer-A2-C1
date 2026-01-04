@@ -1724,44 +1724,67 @@ if (
                         }
                     }, 1000); // Wait 1s before fading
                 } else {
-                    // Wrong match - show red, then delete LEFT + its CORRECT pair
+                    // Wrong match - show red
                     leftCard.classList.add('incorrect');
                     rightCard.classList.add('incorrect');
 
-                    matchedPairs.add(selectedLeft); // Mark left as used (but incorrect)
-
                     setTimeout(() => {
-                        // Найти ПРАВИЛЬНУЮ пару для leftWord
-                        const correctRightIndex = rightWords.findIndex(w =>
-                            w.spanish === leftWord.spanish && w.ru === leftWord.ru
+                        // ПРОВЕРКА: является ли rightWord засланцем?
+                        const isRightCardDecoy = !leftWords.some(w =>
+                            w.spanish === rightWord.spanish && w.ru === rightWord.ru
                         );
 
-                        if (correctRightIndex !== -1) {
-                            const correctRightCard = document.getElementById(`right-${correctRightIndex}`);
+                        if (isRightCardDecoy) {
+                            // rightCard - это ЗАСЛАНЕЦ! Удаляем ТОЛЬКО его
+                            const rightInner = rightCard.querySelector('.card-inner');
 
-                            // Удаляем leftCard + правильную rightCard
-                            const leftInner = leftCard.querySelector('.card-inner');
-                            const correctRightInner = correctRightCard.querySelector('.card-inner');
+                            rightCard.style.opacity = '0';
+                            rightCard.style.maxHeight = '0';
+                            rightCard.style.minHeight = '0';
+                            rightCard.style.margin = '0';
+                            rightInner.style.padding = '0';
+                            rightInner.style.border = 'none';
 
-                            // Fade out left card
-                            leftCard.style.opacity = '0';
-                            leftCard.style.maxHeight = '0';
-                            leftCard.style.minHeight = '0';
-                            leftCard.style.margin = '0';
-                            leftInner.style.padding = '0';
-                            leftInner.style.border = 'none';
+                            // Убираем красный с leftCard и оставляем её
+                            leftCard.classList.remove('incorrect', 'selected');
+                            flipCard(leftCard, false);
 
-                            // Fade out CORRECT right card
-                            correctRightCard.style.opacity = '0';
-                            correctRightCard.style.maxHeight = '0';
-                            correctRightCard.style.minHeight = '0';
-                            correctRightCard.style.margin = '0';
-                            correctRightInner.style.padding = '0';
-                            correctRightInner.style.border = 'none';
+                        } else {
+                            // Обычная неправильная пара - удаляем leftCard + её правильную пару
+                            matchedPairs.add(selectedLeft); // Mark left as used (but incorrect)
 
-                            // УБИРАЕМ красный с неправильной rightCard и оставляем её
-                            rightCard.classList.remove('incorrect', 'selected');
-                            flipCard(rightCard, false); // Переворачиваем обратно
+                            // Найти ПРАВИЛЬНУЮ пару для leftWord
+                            const correctRightIndex = rightWords.findIndex(w =>
+                                w.spanish === leftWord.spanish && w.ru === leftWord.ru
+                            );
+
+                            if (correctRightIndex !== -1) {
+                                const correctRightCard = document.getElementById(`right-${correctRightIndex}`);
+
+                                // Удаляем leftCard + правильную rightCard
+                                const leftInner = leftCard.querySelector('.card-inner');
+                                const correctRightInner = correctRightCard.querySelector('.card-inner');
+
+                                // Fade out left card
+                                leftCard.style.opacity = '0';
+                                leftCard.style.maxHeight = '0';
+                                leftCard.style.minHeight = '0';
+                                leftCard.style.margin = '0';
+                                leftInner.style.padding = '0';
+                                leftInner.style.border = 'none';
+
+                                // Fade out CORRECT right card
+                                correctRightCard.style.opacity = '0';
+                                correctRightCard.style.maxHeight = '0';
+                                correctRightCard.style.minHeight = '0';
+                                correctRightCard.style.margin = '0';
+                                correctRightInner.style.padding = '0';
+                                correctRightInner.style.border = 'none';
+
+                                // УБИРАЕМ красный с неправильной rightCard и оставляем её
+                                rightCard.classList.remove('incorrect', 'selected');
+                                flipCard(rightCard, false);
+                            }
                         }
 
                         selectedLeft = null;

@@ -2133,6 +2133,120 @@ async function getNavigationState() {
 }
 
         // ═══════════════════════════════════════════════════════════════
+        // EXAM SYSTEM - Question Generation
+        // ═══════════════════════════════════════════════════════════════
+
+        function generatePalabrasQuestions() {
+            const palabrasQuestions = [];
+            const profile = getActiveProfile();
+            if (!profile) return [];
+
+            // Проход по всем Unidades
+            UNIDADES.forEach((unidad, index) => {
+                // Первая unidad всегда доступна, остальные - только если разблокированы
+                if (index === 0 || profile.unlocks[unidad]) {
+                    const unidadData = vocabularyData[unidad];
+
+                    if (unidadData && unidadData.groups) {
+                        // Берём ВСЕ semantic groups из этой Unidad
+                        Object.keys(unidadData.groups).forEach(groupName => {
+                            const words = unidadData.groups[groupName];
+
+                            // Вычисляем 30% от количества слов в группе (округление вверх)
+                            const count = Math.ceil(words.length * EXAM_PALABRAS_PERCENTAGE);
+
+                            // Перемешиваем слова и берём нужное количество
+                            const shuffledWords = shuffleArray(words);
+                            const selectedWords = shuffledWords.slice(0, count);
+
+                            // Для каждого выбранного слова создаём вопрос
+                            selectedWords.forEach(word => {
+                                // Проверяем наличие hardSentences
+                                if (word.hardSentences && word.hardSentences.length > 0) {
+                                    // Выбираем случайное предложение из 4 (или сколько есть)
+                                    const randomIndex = Math.floor(Math.random() * word.hardSentences.length);
+                                    const sentence = word.hardSentences[randomIndex];
+
+                                    // Заменяем ___ на подсказку: "___ (русский перевод)"
+                                    const sentenceWithHint = sentence.replace('___', `___ (${word.ru})`);
+
+                                    palabrasQuestions.push({
+                                        type: 'palabra',
+                                        group: groupName,
+                                        unidad: unidad,
+                                        sentence: sentenceWithHint,
+                                        correctAnswer: word.spanish,
+                                        ru: word.ru
+                                    });
+                                }
+                            });
+                        });
+                    }
+                }
+            });
+
+            return palabrasQuestions;
+        }
+
+        function generateEjerciciosQuestions() {
+            const ejerciciosQuestions = [];
+            const profile = getActiveProfile();
+            if (!profile) return [];
+
+            // Проход по всем Unidades
+            UNIDADES.forEach((unidad, index) => {
+                // Первая unidad всегда доступна, остальные - только если разблокированы
+                if (index === 0 || profile.unlocks[unidad]) {
+                    const unidadData = vocabularyData[unidad];
+
+                    if (unidadData && unidadData.ejercicios) {
+                        // Берём ВСЕ ejercicios из этой Unidad
+                        unidadData.ejercicios.forEach(ejercicio => {
+                            if (ejercicio.questions && ejercicio.questions.length > 0) {
+                                // Вычисляем 30% от количества вопросов (округление вверх)
+                                const count = Math.ceil(ejercicio.questions.length * EXAM_EJERCICIOS_PERCENTAGE);
+
+                                // Перемешиваем вопросы и берём нужное количество
+                                const shuffledQuestions = shuffleArray(ejercicio.questions);
+                                const selectedQuestions = shuffledQuestions.slice(0, count);
+
+                                // Для каждого выбранного вопроса создаём объект
+                                selectedQuestions.forEach(question => {
+                                    ejerciciosQuestions.push({
+                                        type: 'ejercicio',
+                                        exerciseId: ejercicio.id,
+                                        exerciseTitle: ejercicio.title,
+                                        unidad: unidad,
+                                        sentence: question.sentence,
+                                        correctAnswer: question.answer,
+                                        hint: ejercicio.hint || ''
+                                    });
+                                });
+                            }
+                        });
+                    }
+                }
+            });
+
+            return ejerciciosQuestions;
+        }
+
+        function generateExamQuestions() {
+            // Генерируем вопросы Palabras
+            const palabrasQuestions = generatePalabrasQuestions();
+
+            // Генерируем вопросы Ejercicios
+            const ejerciciosQuestions = generateEjerciciosQuestions();
+
+            // Объединяем: СНАЧАЛА Palabras, ПОТОМ Ejercicios (БЕЗ перемешивания)
+            const allQuestions = [...palabrasQuestions, ...ejerciciosQuestions];
+
+            console.log(`📊 Экзамен сгенерирован: ${palabrasQuestions.length} Palabras + ${ejerciciosQuestions.length} Ejercicios = ${allQuestions.length} вопросов`);
+
+            return allQuestions;
+        }
+
+        // ═══════════════════════════════════════════════════════════════
         // INITIALIZATION
         // ═══════════════════════════════════════════════════════════════
 	

@@ -1724,31 +1724,45 @@ if (
                         }
                     }, 1000); // Wait 1s before fading
                 } else {
-                    // Wrong match - show red and DELETE both cards (penalty!)
+                    // Wrong match - show red, then delete LEFT + its CORRECT pair
                     leftCard.classList.add('incorrect');
                     rightCard.classList.add('incorrect');
 
                     matchedPairs.add(selectedLeft); // Mark left as used (but incorrect)
 
                     setTimeout(() => {
-                        // Плавное исчезновение + схлопывание
-                        const leftInner = leftCard.querySelector('.card-inner');
-                        const rightInner = rightCard.querySelector('.card-inner');
+                        // Найти ПРАВИЛЬНУЮ пару для leftWord
+                        const correctRightIndex = rightWords.findIndex(w =>
+                            w.spanish === leftWord.spanish && w.ru === leftWord.ru
+                        );
 
-                        leftCard.style.opacity = '0';
-                        rightCard.style.opacity = '0';
-                        leftCard.style.maxHeight = '0';
-                        rightCard.style.maxHeight = '0';
-                        leftCard.style.minHeight = '0';
-                        rightCard.style.minHeight = '0';
-                        leftCard.style.margin = '0';
-                        rightCard.style.margin = '0';
+                        if (correctRightIndex !== -1) {
+                            const correctRightCard = document.getElementById(`right-${correctRightIndex}`);
 
-                        // Apply to .card-inner (has padding and border)
-                        leftInner.style.padding = '0';
-                        rightInner.style.padding = '0';
-                        leftInner.style.border = 'none';
-                        rightInner.style.border = 'none';
+                            // Удаляем leftCard + правильную rightCard
+                            const leftInner = leftCard.querySelector('.card-inner');
+                            const correctRightInner = correctRightCard.querySelector('.card-inner');
+
+                            // Fade out left card
+                            leftCard.style.opacity = '0';
+                            leftCard.style.maxHeight = '0';
+                            leftCard.style.minHeight = '0';
+                            leftCard.style.margin = '0';
+                            leftInner.style.padding = '0';
+                            leftInner.style.border = 'none';
+
+                            // Fade out CORRECT right card
+                            correctRightCard.style.opacity = '0';
+                            correctRightCard.style.maxHeight = '0';
+                            correctRightCard.style.minHeight = '0';
+                            correctRightCard.style.margin = '0';
+                            correctRightInner.style.padding = '0';
+                            correctRightInner.style.border = 'none';
+
+                            // УБИРАЕМ красный с неправильной rightCard и оставляем её
+                            rightCard.classList.remove('incorrect', 'selected');
+                            flipCard(rightCard, false); // Переворачиваем обратно
+                        }
 
                         selectedLeft = null;
                         selectedRight = null;

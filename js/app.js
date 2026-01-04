@@ -930,7 +930,7 @@ function showProfileSelect() {
 
             if (pageIndicator) pageIndicator.textContent = `Страница ${palabrasCurrentPage + 1} / ${totalPages}`;
             if (prevBtn) prevBtn.classList.toggle('hidden', palabrasCurrentPage === 0);
-            if (nextBtn) nextBtn.disabled = palabrasCurrentPage >= totalPages - 1;
+            if (nextBtn) nextBtn.classList.toggle('hidden', palabrasCurrentPage >= totalPages - 1);
         }
 
         function palabrasPrevPage() {
@@ -3246,7 +3246,7 @@ function updateGramaticaPagination() {
 
     if (pageIndicator) pageIndicator.textContent = `Страница ${gramCurrentPage + 1} / ${totalPages}`;
     if (prevBtn) prevBtn.classList.toggle('hidden', gramCurrentPage === 0);
-    if (nextBtn) nextBtn.disabled = gramCurrentPage >= totalPages - 1;
+    if (nextBtn) nextBtn.classList.toggle('hidden', gramCurrentPage >= totalPages - 1);
 }
 
 function gramaticaPrevPage() {

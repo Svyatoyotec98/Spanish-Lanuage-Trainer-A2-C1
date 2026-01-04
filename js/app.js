@@ -2465,6 +2465,84 @@ async function getNavigationState() {
             }
         }
 
+        function generateDetailedStats() {
+            // Создаём объекты для группировки статистики
+            const palabrasStats = {}; // { "FAMILIA": { correct: 2, total: 2 }, ... }
+            const ejerciciosStats = {}; // { "ejercicio_1": { title: "...", correct: 5, total: 5 }, ... }
+
+            // Итерируем по всем ответам и ДИНАМИЧЕСКИ собираем статистику
+            examAnswers.forEach(answer => {
+                const question = answer.question;
+
+                if (question.type === 'palabra') {
+                    // Группируем по semantic group
+                    const groupName = question.group;
+
+                    if (!palabrasStats[groupName]) {
+                        palabrasStats[groupName] = {
+                            correct: 0,
+                            total: 0
+                        };
+                    }
+
+                    palabrasStats[groupName].total++;
+                    if (answer.isCorrect) {
+                        palabrasStats[groupName].correct++;
+                    }
+
+                } else if (question.type === 'ejercicio') {
+                    // Группируем по ejercicio ID
+                    const exerciseId = question.exerciseId;
+
+                    if (!ejerciciosStats[exerciseId]) {
+                        ejerciciosStats[exerciseId] = {
+                            title: question.exerciseTitle,
+                            correct: 0,
+                            total: 0
+                        };
+                    }
+
+                    ejerciciosStats[exerciseId].total++;
+                    if (answer.isCorrect) {
+                        ejerciciosStats[exerciseId].correct++;
+                    }
+                }
+            });
+
+            // Вычисляем общие проценты для Palabras и Ejercicios
+            let palabrasCorrect = 0;
+            let palabrasTotal = 0;
+            Object.values(palabrasStats).forEach(stat => {
+                palabrasCorrect += stat.correct;
+                palabrasTotal += stat.total;
+            });
+
+            let ejerciciosCorrect = 0;
+            let ejerciciosTotal = 0;
+            Object.values(ejerciciosStats).forEach(stat => {
+                ejerciciosCorrect += stat.correct;
+                ejerciciosTotal += stat.total;
+            });
+
+            const palabrasPercentage = palabrasTotal > 0 ? Math.round((palabrasCorrect / palabrasTotal) * 100) : 0;
+            const ejerciciosPercentage = ejerciciosTotal > 0 ? Math.round((ejerciciosCorrect / ejerciciosTotal) * 100) : 0;
+
+            return {
+                palabras: {
+                    percentage: palabrasPercentage,
+                    correct: palabrasCorrect,
+                    total: palabrasTotal,
+                    groups: palabrasStats
+                },
+                ejercicios: {
+                    percentage: ejerciciosPercentage,
+                    correct: ejerciciosCorrect,
+                    total: ejerciciosTotal,
+                    exercises: ejerciciosStats
+                }
+            };
+        }
+
         function showExamResults() {
             // Останавливаем таймер
             if (examTimerInterval) {
@@ -2503,7 +2581,70 @@ async function getNavigationState() {
                 statusElement.style.color = '#f44336';
             }
 
-            // TODO: Phase 5 - детальная статистика по группам и упражнениям
+            // Генерируем детальную статистику
+            const detailedStats = generateDetailedStats();
+
+            // Формируем HTML для детальной статистики
+            let detailedHTML = '';
+
+            // БЛОК PALABRAS
+            if (detailedStats.palabras.total > 0) {
+                detailedHTML += `
+                    <div style="background: #f9f9f9; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        <h2 style="margin-bottom: 15px;">📚 Palabras: ${detailedStats.palabras.percentage}% (${detailedStats.palabras.correct}/${detailedStats.palabras.total})</h2>
+                        <div style="display: grid; gap: 10px;">
+                `;
+
+                // Динамически итерируем по ВСЕМ группам (без хардкода!)
+                Object.keys(detailedStats.palabras.groups).forEach(groupName => {
+                    const groupStat = detailedStats.palabras.groups[groupName];
+                    const groupPercentage = Math.round((groupStat.correct / groupStat.total) * 100);
+                    const color = groupPercentage >= 80 ? '#4CAF50' : groupPercentage >= 50 ? '#ff9800' : '#f44336';
+
+                    detailedHTML += `
+                        <div style="background: white; padding: 12px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">${groupName}</span>
+                            <span style="color: ${color}; font-weight: bold;">${groupPercentage}% (${groupStat.correct}/${groupStat.total})</span>
+                        </div>
+                    `;
+                });
+
+                detailedHTML += `
+                        </div>
+                    </div>
+                `;
+            }
+
+            // БЛОК EJERCICIOS
+            if (detailedStats.ejercicios.total > 0) {
+                detailedHTML += `
+                    <div style="background: #f9f9f9; padding: 20px; border-radius: 10px;">
+                        <h2 style="margin-bottom: 15px;">✍️ Ejercicios: ${detailedStats.ejercicios.percentage}% (${detailedStats.ejercicios.correct}/${detailedStats.ejercicios.total})</h2>
+                        <div style="display: grid; gap: 10px;">
+                `;
+
+                // Динамически итерируем по ВСЕМ упражнениям (без хардкода!)
+                Object.keys(detailedStats.ejercicios.exercises).forEach(exerciseId => {
+                    const exerciseStat = detailedStats.ejercicios.exercises[exerciseId];
+                    const exercisePercentage = Math.round((exerciseStat.correct / exerciseStat.total) * 100);
+                    const color = exercisePercentage >= 80 ? '#4CAF50' : exercisePercentage >= 50 ? '#ff9800' : '#f44336';
+
+                    detailedHTML += `
+                        <div style="background: white; padding: 12px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-weight: bold;">${exerciseStat.title}</span>
+                            <span style="color: ${color}; font-weight: bold;">${exercisePercentage}% (${exerciseStat.correct}/${exerciseStat.total})</span>
+                        </div>
+                    `;
+                });
+
+                detailedHTML += `
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Вставляем HTML в блок детальной статистики
+            document.getElementById('examDetailedResults').innerHTML = detailedHTML;
 
             console.log(`🎓 Экзамен завершён: ${percentage}% (${correctAnswers}/${totalQuestions}), ${passed ? 'СДАН' : 'НЕ СДАН'}`);
 

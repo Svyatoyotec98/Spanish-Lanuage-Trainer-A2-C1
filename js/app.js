@@ -1292,9 +1292,20 @@ if (
                 document.getElementById('questionText').textContent = question.ru;
                 showMultipleChoice(question, 'medium');
             } else if (currentLevel === 'hard') {
-                // Hard: RU→ES, Manual Input
+                // Hard: RU→ES, Manual Input with sentence context
                 document.getElementById('questionIcon').innerHTML = ''; // No icon for Hard test
-                document.getElementById('questionText').textContent = question.ru;
+
+                // Если есть hardSentences, показываем случайное предложение
+                if (question.hardSentences && question.hardSentences.length > 0) {
+                    const randomSentence = question.hardSentences[Math.floor(Math.random() * question.hardSentences.length)];
+                    // Заменяем ___ на подсказку (перевод)
+                    const sentenceWithHint = randomSentence.replace('___', `___ (${question.ru})`);
+                    document.getElementById('questionText').textContent = sentenceWithHint;
+                } else {
+                    // Fallback: показываем просто русский перевод
+                    document.getElementById('questionText').textContent = question.ru;
+                }
+
                 showManualInput();
             }
         }

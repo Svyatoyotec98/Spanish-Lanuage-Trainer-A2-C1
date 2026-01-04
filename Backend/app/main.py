@@ -1,4 +1,6 @@
 from fastapi import FastAPI, Depends
+from fastapi.middleware.cors import CORSMiddleware
+
 from .db import Base, engine
 from . import models_db
 
@@ -6,6 +8,14 @@ from .models import UserCreate, LoginRequest, Token, UserPublic
 from .auth import register_user, login, get_current_user, get_db
 
 app = FastAPI(title="Spanish Trainer API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # твой фронтенд
+    allow_credentials=True,
+    allow_methods=["*"],  # важно: разрешает OPTIONS + POST
+    allow_headers=["*"],
+)
+
 Base.metadata.create_all(bind=engine)
 
 

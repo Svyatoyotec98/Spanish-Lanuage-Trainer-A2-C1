@@ -2008,7 +2008,13 @@ if (
             saveAppState(state);
 
             updateUnidadUI();
-            document.getElementById('qaOutput').textContent = '✅ Экзамен разблокирован! (Прогресс всех unidades установлен на 80%)';
+
+            document.getElementById('qaOutput').textContent = '✅ Экзамен разблокирован! Переходим в Unidad 1...';
+
+            // Автоматически переходим в Unidad 1, чтобы показать разблокированную кнопку экзамена
+            setTimeout(() => {
+                showUnidadMenu('unidad_1');
+            }, 500);
         }
 
         function viewLocalStorage() {

@@ -626,6 +626,24 @@ function showProfileSelect() {
         let timeLeft = 10;
         const TIMER_DURATION = 10;
 
+        // Exam state variables
+        let examQuestions = []; // массив всех вопросов экзамена
+        let examCurrentIndex = 0; // индекс текущего вопроса
+        let examAnswers = []; // массив ответов пользователя {question, userAnswer, correctAnswer, isCorrect, score, group/exerciseId}
+        let examScore = 0; // текущий счёт (может быть отрицательным из-за штрафов)
+        let examTimerInterval = null; // интервал таймера экзамена
+        let examTimeLeft = EXAM_TIMER_DURATION; // оставшееся время на текущий вопрос
+        let examStartTime = null; // время начала экзамена (для статистики)
+
+        // Exam constants
+        const EXAM_TIMER_DURATION = 10; // секунд на вопрос
+        const EXAM_PASS_THRESHOLD = 80; // % для прохождения и разблокировки следующей Unidad
+        const EXAM_PALABRAS_PERCENTAGE = 0.3; // 30% слов от каждой semantic group
+        const EXAM_EJERCICIOS_PERCENTAGE = 0.3; // 30% вопросов от каждого упражнения
+        const EXAM_SCORE_CORRECT = 1; // балл за правильный ответ
+        const EXAM_SCORE_WRONG = -0.5; // штраф за неправильный ответ
+        const EXAM_SCORE_SKIP = 0; // балл за пропуск
+
         // Словарь загружается из JSON файлов при инициализации
         const vocabularyData = {};
 

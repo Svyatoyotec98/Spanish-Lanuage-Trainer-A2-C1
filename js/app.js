@@ -347,14 +347,23 @@
         // UI NAVIGATION
         // ═══════════════════════════════════════════════════════════════
 
+        // Interactive Dictionary state (declared here for hideAll access)
+        let interactiveKeyHandler = null;
+
         function hideAll() {
+            // Cleanup interactive dictionary keyboard listener if active
+            if (interactiveKeyHandler) {
+                document.removeEventListener('keydown', interactiveKeyHandler);
+                interactiveKeyHandler = null;
+            }
+
             ['startScreen', 'profileSelectScreen', 'profileCreateScreen',
              'mainMenu', 'unidadMenu', 'palabrasMenu', 'groupPreviewMenu', 'categoryMenu', 'questionScreen',
              'resultsScreen', 'cardMatchingScreen', 'cardMatchingResultsScreen',
              'verbMenu', 'verbPracticeScreen', 'qaScreen',
 			 'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
              'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
-             'examScreen', 'examResultsScreen', 'miniDictionaryScreen'].forEach(id => {
+             'examScreen', 'examResultsScreen', 'miniDictionaryScreen', 'interactiveDictionaryScreen'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');
             });
         }
@@ -1022,6 +1031,112 @@ function showProfileSelect() {
         }
 
         function backToGroupPreview() {
+            showGroupPreview(currentCategory);
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // INTERACTIVE DICTIONARY (Mode A - Spacebar Learning)
+        // ═══════════════════════════════════════════════════════════════
+        let interactiveWords = [];
+        let interactiveIndex = 0;
+        let interactiveShowingTranslation = false;
+
+        function showInteractiveDictionary() {
+            if (!currentUnidad || !currentCategory) {
+                console.error('showInteractiveDictionary: missing unidad or category');
+                return;
+            }
+
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups || !unidadData.groups[currentCategory]) {
+                console.error('showInteractiveDictionary: no data for', currentCategory);
+                return;
+            }
+
+            interactiveWords = unidadData.groups[currentCategory];
+            interactiveIndex = 0;
+            interactiveShowingTranslation = false;
+
+            hideAll();
+            showUserBadge();
+            document.getElementById('interactiveDictionaryScreen').classList.remove('hidden');
+
+            // Set title
+            const displayName = currentCategory.replace(/_/g, ' ');
+            document.getElementById('interactiveDictTitle').textContent = `🎓 ${displayName}`;
+            document.getElementById('interactiveDictSubtitle').textContent = `Учим слова группы`;
+
+            // Show first word
+            updateInteractiveCard();
+
+            // Add keyboard listener
+            interactiveKeyHandler = function(e) {
+                if (e.code === 'Space' || e.key === ' ') {
+                    e.preventDefault();
+                    handleInteractiveSpace();
+                }
+            };
+            document.addEventListener('keydown', interactiveKeyHandler);
+
+            saveNavigationState('interactiveDictionaryScreen');
+        }
+
+        function updateInteractiveCard() {
+            const word = interactiveWords[interactiveIndex];
+            const total = interactiveWords.length;
+
+            // Update progress
+            document.getElementById('interactiveDictProgress').textContent = `Слово ${interactiveIndex + 1} из ${total}`;
+
+            // Update Spanish word
+            document.getElementById('interactiveDictSpanish').textContent = word.spanish;
+
+            // Hide/show translation based on state
+            const russianEl = document.getElementById('interactiveDictRussian');
+            const hintEl = document.getElementById('interactiveDictHint');
+
+            if (interactiveShowingTranslation) {
+                russianEl.textContent = word.ru;
+                russianEl.style.display = 'block';
+                if (interactiveIndex < interactiveWords.length - 1) {
+                    hintEl.innerHTML = 'Нажмите <kbd style="background: rgba(255,255,255,0.3); padding: 5px 12px; border-radius: 5px; font-family: monospace;">ПРОБЕЛ</kbd> для следующего слова';
+                } else {
+                    hintEl.innerHTML = 'Нажмите <kbd style="background: rgba(255,255,255,0.3); padding: 5px 12px; border-radius: 5px; font-family: monospace;">ПРОБЕЛ</kbd> чтобы закончить';
+                }
+            } else {
+                russianEl.style.display = 'none';
+                hintEl.innerHTML = 'Нажмите <kbd style="background: rgba(255,255,255,0.3); padding: 5px 12px; border-radius: 5px; font-family: monospace;">ПРОБЕЛ</kbd> чтобы увидеть перевод';
+            }
+        }
+
+        function handleInteractiveSpace() {
+            if (!interactiveShowingTranslation) {
+                // Show translation
+                interactiveShowingTranslation = true;
+                updateInteractiveCard();
+            } else {
+                // Move to next word or finish
+                if (interactiveIndex < interactiveWords.length - 1) {
+                    interactiveIndex++;
+                    interactiveShowingTranslation = false;
+                    updateInteractiveCard();
+                } else {
+                    // Finished all words
+                    exitInteractiveDictionary();
+                }
+            }
+        }
+
+        function exitInteractiveDictionary() {
+            // Remove keyboard listener
+            if (interactiveKeyHandler) {
+                document.removeEventListener('keydown', interactiveKeyHandler);
+                interactiveKeyHandler = null;
+            }
+            interactiveWords = [];
+            interactiveIndex = 0;
+            interactiveShowingTranslation = false;
+
             showGroupPreview(currentCategory);
         }
 
@@ -3082,7 +3197,7 @@ function hideAllScreens() {
         'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
         'cardMatchingScreen', 'cardMatchingResultsScreen',
         'examScreen', 'examResultsScreen',
-        'miniDictionaryScreen'
+        'miniDictionaryScreen', 'interactiveDictionaryScreen'
     ];
     screens.forEach(id => {
         const el = document.getElementById(id);

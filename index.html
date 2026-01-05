@@ -385,6 +385,35 @@
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
+             GROUP PREVIEW MENU (Choose Test or Mini-Dictionary)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="groupPreviewMenu" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1 id="groupPreviewTitle">Группа</h1>
+            <p class="subtitle">Выберите действие</p>
+
+            <!-- Progress for this group -->
+            <div style="margin: 20px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; color: white;">
+                <h3 style="margin: 0 0 10px 0; color: white;">📊 Прогресс группы</h3>
+                <div style="font-size: 28px; font-weight: bold;">
+                    <span id="group-preview-progress-text">0</span>%
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div style="display: flex; flex-direction: column; gap: 15px; margin-top: 30px;">
+                <button class="btn" onclick="proceedToTest()" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white; padding: 20px; font-size: 1.2em; border: none; border-radius: 12px; cursor: pointer;">
+                    📝 Пройти тест
+                </button>
+                <button class="btn" onclick="showMiniDictionary()" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; padding: 20px; font-size: 1.2em; border: none; border-radius: 12px; cursor: pointer;">
+                    📖 Мини-Словарь
+                </button>
+            </div>
+
+            <button class="btn btn-back" onclick="showPalabrasMenu()" style="margin-top: 30px;">← Назад к категориям</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
              CATEGORY MENU (Level Selection)
              ═══════════════════════════════════════════════════════════════ -->
         <div id="categoryMenu" class="hidden">

@@ -349,7 +349,7 @@
 
         function hideAll() {
             ['startScreen', 'profileSelectScreen', 'profileCreateScreen',
-             'mainMenu', 'unidadMenu', 'palabrasMenu', 'categoryMenu', 'questionScreen',
+             'mainMenu', 'unidadMenu', 'palabrasMenu', 'groupPreviewMenu', 'categoryMenu', 'questionScreen',
              'resultsScreen', 'cardMatchingScreen', 'cardMatchingResultsScreen',
              'verbMenu', 'verbPracticeScreen', 'qaScreen',
 			 'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
@@ -857,7 +857,7 @@ function showProfileSelect() {
             pageGroups.forEach(groupName => {
                 const card = document.createElement('div');
                 card.className = 'category-card';
-                card.onclick = () => showCategoryMenu(groupName);
+                card.onclick = () => showGroupPreview(groupName);
 
                 // Используем название группы как заголовок
                 const displayName = groupName.replace(/_/g, ' ');
@@ -921,6 +921,43 @@ function showProfileSelect() {
                 renderGroupCards();
                 updatePalabrasPagination();
             }
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // GROUP PREVIEW MENU (промежуточный экран)
+        // ═══════════════════════════════════════════════════════════════
+
+        function showGroupPreview(category) {
+            if (!currentUnidad) {
+                console.error('showGroupPreview called without currentUnidad');
+                return;
+            }
+            currentCategory = category;
+
+            hideAll();
+            showUserBadge();
+            document.getElementById('groupPreviewMenu').classList.remove('hidden');
+
+            // Заголовок
+            const displayName = category.replace(/_/g, ' ');
+            document.getElementById('groupPreviewTitle').textContent = displayName;
+
+            // Прогресс группы
+            const progress = calculateCategoryProgress(currentUnidad, category);
+            document.getElementById('group-preview-progress-text').textContent = progress;
+
+            saveNavigationState('groupPreviewMenu');
+        }
+
+        function proceedToTest() {
+            // Вызывает старую логику showCategoryMenu
+            // которая проверяет размер группы и решает: Card Matching или меню уровней
+            showCategoryMenu(currentCategory);
+        }
+
+        function showMiniDictionary() {
+            // Заглушка - будет реализовано в фазах 4-6
+            alert('Мини-Словарь в разработке');
         }
 
         function showCategoryMenu(category) {
@@ -2967,7 +3004,7 @@ function hideAllScreens() {
     const screens = [
         'startScreen', 'loginScreen', 'registerScreen',
         'profileSelectScreen', 'profileCreateScreen',
-        'mainMenu', 'unidadMenu', 'palabrasMenu', 'categoryMenu',
+        'mainMenu', 'unidadMenu', 'palabrasMenu', 'groupPreviewMenu', 'categoryMenu',
         'questionScreen', 'resultsScreen', 'verbMenu',
         'verbPracticeScreen', 'qaScreen',
         'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',

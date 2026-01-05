@@ -268,19 +268,22 @@
             const profile = getActiveProfile();
             if (!profile) return;
 
-            // Вычисляем средний прогресс по ВСЕМ разблокированным Unidades
+            // Вычисляем средний прогресс ТОЛЬКО по Unidades с загруженными данными
             let totalProgress = 0;
-            let unlockedCount = 0;
+            let loadedCount = 0;
 
             UNIDADES.forEach((unidad, index) => {
-                // Первая unidad всегда разблокирована, остальные - только если есть в unlocks
-                if (index === 0 || profile.unlocks[unidad]) {
+                // Считаем только если данные загружены И (первая unidad ИЛИ разблокирована)
+                const hasData = vocabularyData[unidad] && vocabularyData[unidad].groups;
+                const isUnlocked = index === 0 || profile.unlocks[unidad];
+
+                if (hasData && isUnlocked) {
                     totalProgress += calculateUnidadProgress(unidad, profile);
-                    unlockedCount++;
+                    loadedCount++;
                 }
             });
 
-            const averageProgress = unlockedCount > 0 ? Math.round(totalProgress / unlockedCount) : 0;
+            const averageProgress = loadedCount > 0 ? Math.round(totalProgress / loadedCount) : 0;
 
             // Получаем кнопку экзамена
             const examBtn = document.getElementById('examBtn');

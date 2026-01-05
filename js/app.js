@@ -199,17 +199,22 @@
             ensureProgressSkeleton(profile);
 
             const categoryData = profile.progress[unidad][category];
-            const scores = Object.values(categoryData);
 
-            // Фильтруем только результаты >= 55%
-            const validScores = scores.filter(score => score >= 55);
+            // Проверяем размер группы
+            const unidadData = vocabularyData[unidad];
+            const groupSize = unidadData?.groups?.[category]?.length || 0;
 
-            // Если нет валидных результатов, возвращаем 0
-            if (validScores.length === 0) return 0;
-
-            // Возвращаем среднее арифметическое валидных результатов
-            const sum = validScores.reduce((a, b) => a + b, 0);
-            return Math.round(sum / validScores.length);
+            if (groupSize >= 10) {
+                // Группа 10+ слов - 3 уровня (easy, medium, hard)
+                // Всегда делим на 3, даже если какой-то уровень = 0
+                const easy = categoryData.easy || 0;
+                const medium = categoryData.medium || 0;
+                const hard = categoryData.hard || 0;
+                return Math.round((easy + medium + hard) / 3);
+            } else {
+                // Группа <10 слов - только Card Matching (easy уровень)
+                return categoryData.easy || 0;
+            }
         }
 
         function calculateUnidadProgress(unidad, profile = null) {
@@ -1841,30 +1846,58 @@ if (
             showPalabrasMenu();
         }
 
-        // Переход к следующему тесту (следующая семантическая группа)
+        // Переход к следующему тесту (следующий уровень или следующая группа)
         function goToNextTest() {
             if (!currentUnidad || !currentCategory) return;
 
             const unidadData = vocabularyData[currentUnidad];
             if (!unidadData || !unidadData.groups) return;
 
+            const groupSize = unidadData.groups[currentCategory]?.length || 0;
+
+            // Для групп 10+ слов - проверяем следующий уровень
+            if (groupSize >= 10 && currentLevel) {
+                const levels = ['easy', 'medium', 'hard'];
+                const currentLevelIndex = levels.indexOf(currentLevel);
+
+                if (currentLevelIndex >= 0 && currentLevelIndex < levels.length - 1) {
+                    // Есть следующий уровень - запускаем его
+                    const nextLevel = levels[currentLevelIndex + 1];
+                    startTest(nextLevel);
+                    return;
+                }
+            }
+
+            // Если уровней больше нет или это Card Matching - переходим к следующей группе
             const groupNames = Object.keys(unidadData.groups);
             const currentIndex = groupNames.indexOf(currentCategory);
 
             if (currentIndex >= 0 && currentIndex < groupNames.length - 1) {
-                // Есть следующая группа - переходим к её меню
                 const nextGroup = groupNames[currentIndex + 1];
                 showCategoryMenu(nextGroup);
             }
         }
 
-        // Проверка, есть ли следующий тест
+        // Проверка, есть ли следующий тест (уровень или группа)
         function hasNextTest() {
             if (!currentUnidad || !currentCategory) return false;
 
             const unidadData = vocabularyData[currentUnidad];
             if (!unidadData || !unidadData.groups) return false;
 
+            const groupSize = unidadData.groups[currentCategory]?.length || 0;
+
+            // Для групп 10+ слов - проверяем есть ли следующий уровень
+            if (groupSize >= 10 && currentLevel) {
+                const levels = ['easy', 'medium', 'hard'];
+                const currentLevelIndex = levels.indexOf(currentLevel);
+
+                if (currentLevelIndex >= 0 && currentLevelIndex < levels.length - 1) {
+                    return true; // Есть следующий уровень
+                }
+            }
+
+            // Проверяем есть ли следующая группа
             const groupNames = Object.keys(unidadData.groups);
             const currentIndex = groupNames.indexOf(currentCategory);
 

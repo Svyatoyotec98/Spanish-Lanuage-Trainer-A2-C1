@@ -2561,6 +2561,13 @@ if (
             saveAppState(state);
 
             updateUnidadUI();
+
+            // Обновляем кнопку экзамена, если находимся в меню Unidad
+            const unidadMenu = document.getElementById('unidadMenu');
+            if (unidadMenu && !unidadMenu.classList.contains('hidden')) {
+                updateUnidadProgressBars();
+            }
+
             document.getElementById('qaOutput').textContent = '✅ Прогресс заполнен до 100%!';
         }
 
@@ -2600,6 +2607,13 @@ if (
             saveAppState(state);
 
             updateUnidadUI();
+
+            // Обновляем кнопку экзамена, если находимся в меню Unidad
+            const unidadMenu = document.getElementById('unidadMenu');
+            if (unidadMenu && !unidadMenu.classList.contains('hidden')) {
+                updateUnidadProgressBars();
+            }
+
             document.getElementById('qaOutput').textContent = '✅ Экзамен разблокирован! (Прогресс всех unidades установлен на 80%)';
         }
 
@@ -3392,6 +3406,10 @@ function updateGramProgress(exerciseId, score) {
     saveAppState(state);
 
     updateUnlocks();
+
+    // Обновляем кнопку экзамена после изменения прогресса
+    updateUnidadProgressBars();
+    updateUnidadUI();
 }
 
 // Retry grammar test

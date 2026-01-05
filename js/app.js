@@ -354,7 +354,7 @@
              'verbMenu', 'verbPracticeScreen', 'qaScreen',
 			 'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
              'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
-             'examScreen', 'examResultsScreen'].forEach(id => {
+             'examScreen', 'examResultsScreen', 'miniDictionaryScreen'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');
             });
         }
@@ -956,8 +956,58 @@ function showProfileSelect() {
         }
 
         function showMiniDictionary() {
-            // Заглушка - будет реализовано в фазах 4-6
-            alert('Мини-Словарь в разработке');
+            if (!currentUnidad || !currentCategory) {
+                console.error('showMiniDictionary: missing unidad or category');
+                return;
+            }
+
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups || !unidadData.groups[currentCategory]) {
+                console.error('showMiniDictionary: no data for', currentCategory);
+                return;
+            }
+
+            const words = unidadData.groups[currentCategory];
+
+            hideAll();
+            showUserBadge();
+            document.getElementById('miniDictionaryScreen').classList.remove('hidden');
+
+            // Set title and subtitle
+            const displayName = currentCategory.replace(/_/g, ' ');
+            document.getElementById('miniDictTitle').textContent = `📖 ${displayName}`;
+            document.getElementById('miniDictSubtitle').textContent = `Мини-Словарь группы`;
+            document.getElementById('miniDictWordCount').textContent = `${words.length} слов`;
+
+            // Render words list
+            const container = document.getElementById('miniDictWordsContainer');
+            container.innerHTML = words.map((word, index) => `
+                <div class="mini-dict-word" style="
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 10px;
+                    padding: 15px 20px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                ">
+                    <div style="flex: 1;">
+                        <span style="font-weight: 700; color: #2c3e50; font-size: 1.1em;">${word.spanish}</span>
+                    </div>
+                    <div style="flex: 1; text-align: right;">
+                        <span style="color: #555; font-size: 1em;">${word.ru}</span>
+                    </div>
+                </div>
+            `).join('');
+
+            saveNavigationState('miniDictionaryScreen');
+        }
+
+        function backToGroupPreview() {
+            showGroupPreview(currentCategory);
         }
 
         function showCategoryMenu(category) {
@@ -2918,7 +2968,7 @@ async function getNavigationState() {
                 el.classList.remove('hidden');
 
                 // Показываем badge для основных меню
-                if (['mainMenu', 'unidadMenu', 'palabrasMenu', 'groupPreviewMenu', 'categoryMenu', 'gramaticaMenu'].includes(targetScreen)) {
+                if (['mainMenu', 'unidadMenu', 'palabrasMenu', 'groupPreviewMenu', 'categoryMenu', 'gramaticaMenu', 'miniDictionaryScreen'].includes(targetScreen)) {
                     showUserBadge();
                 }
 
@@ -2939,6 +2989,9 @@ async function getNavigationState() {
                 }
                 if (targetScreen === 'groupPreviewMenu') {
                     showGroupPreview(currentCategory);
+                }
+                if (targetScreen === 'miniDictionaryScreen') {
+                    showMiniDictionary();
                 }
                 if (targetScreen === 'gramaticaMenu') {
                     showGramaticaMenu();
@@ -3013,7 +3066,8 @@ function hideAllScreens() {
         'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
         'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
         'cardMatchingScreen', 'cardMatchingResultsScreen',
-        'examScreen', 'examResultsScreen'
+        'examScreen', 'examResultsScreen',
+        'miniDictionaryScreen'
     ];
     screens.forEach(id => {
         const el = document.getElementById(id);

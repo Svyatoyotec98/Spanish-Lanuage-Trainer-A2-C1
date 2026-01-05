@@ -3084,7 +3084,8 @@ function hideAllScreens() {
         'cardMatchingScreen', 'cardMatchingResultsScreen',
         'examScreen', 'examResultsScreen',
         'miniDictionaryScreen',
-        'exercisePreviewMenu', 'grammarRuleScreen'
+        'exercisePreviewMenu', 'grammarRuleScreen',
+        'referenceMainMenu', 'grammarSubMenu'
     ];
     screens.forEach(id => {
         const el = document.getElementById(id);
@@ -3843,13 +3844,15 @@ async function loadGrammarData() {
     }
 }
 
-// Show Grammar List with Pagination
+// Show Reference Main Menu (Справочник - главное меню)
 function showGrammarList() {
     // Save current screen for back navigation
-    const allScreens = ['mainMenu', 'unidadMenu', 'categoryMenu', 'gramaticaMenu', 'verbMenu', 
-                        'questionScreen', 'resultsScreen', 'gramaticaQuestionScreen', 
-                        'gramaticaResultsScreen', 'verbPracticeScreen', 'qaScreen'];
-    
+    const allScreens = ['mainMenu', 'unidadMenu', 'categoryMenu', 'gramaticaMenu', 'verbMenu',
+                        'questionScreen', 'resultsScreen', 'gramaticaQuestionScreen',
+                        'gramaticaResultsScreen', 'verbPracticeScreen', 'qaScreen',
+                        'palabrasMenu', 'groupPreviewMenu', 'miniDictionaryScreen',
+                        'exercisePreviewMenu', 'grammarRuleScreen'];
+
     for (const screenId of allScreens) {
         const screen = document.getElementById(screenId);
         if (screen && !screen.classList.contains('hidden')) {
@@ -3857,11 +3860,49 @@ function showGrammarList() {
             break;
         }
     }
-    
+
+    hideAllScreens();
+    document.getElementById('referenceMainMenu').classList.remove('hidden');
+}
+
+// Show Reference Main Menu (alias)
+function showReferenceMain() {
+    hideAllScreens();
+    document.getElementById('referenceMainMenu').classList.remove('hidden');
+}
+
+// Show Grammar Sub Menu (Gramática submenu)
+function showGrammarSubMenu() {
+    hideAllScreens();
+    document.getElementById('grammarSubMenu').classList.remove('hidden');
+}
+
+// Show Más Gramática (список правил из grammar.json)
+function showMasGramatica() {
     hideAllScreens();
     document.getElementById('grammarListScreen').classList.remove('hidden');
     grammarCurrentPage = 1;
     renderGrammarList();
+}
+
+// Show Vocabulario (заглушка для Фазы 2)
+function showVocabularyScreen() {
+    alert('Vocabulario — будет реализовано в Фазе 2');
+}
+
+// Show Ejercicios Gramática (заглушка для Фазы 4)
+function showEjerciciosGramatica() {
+    alert('Ejercicios Gramática — будет реализовано в Фазе 4');
+}
+
+// Go back from Reference Main Menu
+function goBackFromReference() {
+    hideAllScreens();
+    if (grammarPreviousScreen) {
+        document.getElementById(grammarPreviousScreen).classList.remove('hidden');
+    } else {
+        document.getElementById('mainMenu').classList.remove('hidden');
+    }
 }
 
 // Render Grammar List
@@ -4261,8 +4302,8 @@ function exitInteractiveMode() {
     interactiveMode.slides = [];
     interactiveMode.currentSlideIndex = 0;
 
-    // Go back to grammar list
-    showGrammarList();
+    // Go back to Más Gramática list
+    showMasGramatica();
 }
 
 // ═══════════════════════════════════════════════════════════════

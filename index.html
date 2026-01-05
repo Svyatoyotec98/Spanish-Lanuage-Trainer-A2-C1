@@ -925,7 +925,7 @@
     clickSound.volume = 0.5;
 
     document.addEventListener('click', (e) => {
-      if (e.target.closest('button, .card, .group-card, .grammar-item, a')) {
+      if (e.target.closest('button, .card, .category-card, .group-card, .grammar-item, .level-btn, .exercise-item, a')) {
         clickSound.currentTime = 0;
         clickSound.play().catch(() => {});
       }

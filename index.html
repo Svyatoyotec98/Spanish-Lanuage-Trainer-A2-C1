@@ -919,6 +919,19 @@
   <!-- Parallax & Click Sound Script -->
   <script>
     // ═══════════════════════════════════════════════════════════════
+    // CLICK SOUND EFFECT
+    // ═══════════════════════════════════════════════════════════════
+    const clickSound = new Audio('mixkit-modern-technology-select-3124.wav');
+    clickSound.volume = 0.5;
+
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('button, .card, .group-card, .grammar-item, a')) {
+        clickSound.currentTime = 0;
+        clickSound.play().catch(() => {});
+      }
+    });
+
+    // ═══════════════════════════════════════════════════════════════
     // PARALLAX EFFECT FOR AZULEJOS BACKGROUND
     // ═══════════════════════════════════════════════════════════════
     const azulejosBg = document.getElementById('azulejos-bg');

@@ -92,7 +92,10 @@
         }
 
         .btn-secondary {
-            background: #9b59b6;
+            background: rgba(155, 89, 182, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
 
         .btn-success {
@@ -104,7 +107,10 @@
         }
 
         .btn-back {
-            background: #95a5a6;
+            background: rgba(149, 165, 166, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             width: auto;
             padding: 10px 20px;
             font-size: 1em;
@@ -540,7 +546,7 @@
         }
 
         .progress-bar-container {
-            background: #e0e0e0;
+            background: rgba(255, 255, 255, 0.3);
             height: 12px;
             border-radius: 10px;
             overflow: hidden;

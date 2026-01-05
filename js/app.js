@@ -979,29 +979,44 @@ function showProfileSelect() {
             document.getElementById('miniDictSubtitle').textContent = `Мини-Словарь группы`;
             document.getElementById('miniDictWordCount').textContent = `${words.length} слов`;
 
-            // Render words list
+            // Render words list with sentences
             const container = document.getElementById('miniDictWordsContainer');
-            container.innerHTML = words.map((word, index) => `
+            container.innerHTML = words.map((word, index) => {
+                // Get 2 sentences (or less if not available)
+                const sentences = word.hardSentences ? word.hardSentences.slice(0, 2) : [];
+                const sentencesRu = word.hardSentencesRu ? word.hardSentencesRu.slice(0, 2) : [];
+
+                // Replace ___ with the word in sentences
+                const fillSentence = (s) => s.replace('___', `<strong>${word.spanish}</strong>`);
+
+                return `
                 <div class="mini-dict-word" style="
                     background: rgba(255, 255, 255, 0.2);
                     backdrop-filter: blur(10px);
                     -webkit-backdrop-filter: blur(10px);
                     border: 1px solid rgba(255, 255, 255, 0.3);
-                    border-radius: 10px;
-                    padding: 15px 20px;
-                    margin-bottom: 10px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
+                    border-radius: 12px;
+                    padding: 20px;
+                    margin-bottom: 15px;
                 ">
-                    <div style="flex: 1;">
-                        <span style="font-weight: 700; color: #2c3e50; font-size: 1.1em;">${word.spanish}</span>
+                    <!-- Word header -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                        <span style="font-weight: 700; color: #2c3e50; font-size: 1.3em;">${word.spanish}</span>
+                        <span style="color: #555; font-size: 1.1em; font-style: italic;">${word.ru}</span>
                     </div>
-                    <div style="flex: 1; text-align: right;">
-                        <span style="color: #555; font-size: 1em;">${word.ru}</span>
+                    <!-- Sentences -->
+                    ${sentences.length > 0 ? `
+                    <div style="margin-top: 8px;">
+                        ${sentences.map((s, i) => `
+                            <div style="margin-bottom: 8px;">
+                                <div style="color: #2c3e50; font-size: 0.95em;">${fillSentence(s)}</div>
+                                ${sentencesRu[i] ? `<div style="color: #777; font-size: 0.85em; font-style: italic; margin-top: 2px;">${sentencesRu[i]}</div>` : ''}
+                            </div>
+                        `).join('')}
                     </div>
+                    ` : ''}
                 </div>
-            `).join('');
+            `}).join('');
 
             saveNavigationState('miniDictionaryScreen');
         }

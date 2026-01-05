@@ -263,27 +263,25 @@
             return Math.round(totalScore / unidadData.ejercicios.length);
         }
 
-        // Проверка доступности экзамена (требуется средний прогресс ≥80%)
+        // Проверка доступности экзамена (требуется средний прогресс ≥80% по ТЕКУЩЕЙ Unidad)
         function checkExamAvailability() {
             const profile = getActiveProfile();
-            if (!profile) return;
+            if (!profile || !currentUnidad) return;
 
-            // Вычисляем средний прогресс ТОЛЬКО по Unidades с загруженными данными
-            let totalProgress = 0;
-            let loadedCount = 0;
+            // Проверяем что данные для текущей Unidad загружены
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData) return;
 
-            UNIDADES.forEach((unidad, index) => {
-                // Считаем только если данные загружены И (первая unidad ИЛИ разблокирована)
-                const hasData = vocabularyData[unidad] && vocabularyData[unidad].groups;
-                const isUnlocked = index === 0 || profile.unlocks[unidad];
+            // Считаем прогресс Palabras (среднее по семантическим группам)
+            const palabrasProgress = calculatePalabrasProgress(currentUnidad);
 
-                if (hasData && isUnlocked) {
-                    totalProgress += calculateUnidadProgress(unidad, profile);
-                    loadedCount++;
-                }
-            });
+            // Считаем прогресс Ejercicios (среднее по упражнениям)
+            const ejerciciosProgress = calculateGramaticaProgressForUnidad(currentUnidad) || 0;
 
-            const averageProgress = loadedCount > 0 ? Math.round(totalProgress / loadedCount) : 0;
+            // Средний прогресс = (Palabras + Ejercicios) / 2
+            const averageProgress = Math.round((palabrasProgress + ejerciciosProgress) / 2);
+
+            console.log(`📊 Прогресс ${currentUnidad}: Palabras=${palabrasProgress}%, Ejercicios=${ejerciciosProgress}%, Среднее=${averageProgress}%`);
 
             // Получаем кнопку экзамена
             const examBtn = document.getElementById('examBtn');
@@ -2196,110 +2194,101 @@ async function getNavigationState() {
         // ═══════════════════════════════════════════════════════════════
 
         function generatePalabrasQuestions() {
-            console.log('🔵 generatePalabrasQuestions() вызвана');
+            console.log('🔵 generatePalabrasQuestions() вызвана для', currentUnidad);
             const palabrasQuestions = [];
-            const profile = getActiveProfile();
-            if (!profile) {
-                console.log('❌ Нет профиля в generatePalabrasQuestions');
+
+            if (!currentUnidad) {
+                console.log('❌ Нет currentUnidad');
                 return [];
             }
 
-            console.log('UNIDADES:', UNIDADES);
-            console.log('profile.unlocks:', profile.unlocks);
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups) {
+                console.log('❌ Нет данных для', currentUnidad);
+                return [];
+            }
 
-            // Проход по всем Unidades
-            UNIDADES.forEach((unidad, index) => {
-                console.log(`Проверка ${unidad} (index: ${index})`);
-                // Первая unidad всегда доступна, остальные - только если разблокированы
-                if (index === 0 || profile.unlocks[unidad]) {
-                    console.log(`✅ ${unidad} доступна`);
-                    const unidadData = vocabularyData[unidad];
-                    console.log(`vocabularyData[${unidad}]:`, unidadData);
+            console.log(`✅ ${currentUnidad} имеет groups:`, Object.keys(unidadData.groups));
 
-                    if (unidadData && unidadData.groups) {
-                        console.log(`✅ ${unidad} имеет groups:`, Object.keys(unidadData.groups));
-                        // Берём ВСЕ semantic groups из этой Unidad
-                        Object.keys(unidadData.groups).forEach(groupName => {
-                            const words = unidadData.groups[groupName];
+            // Берём ВСЕ semantic groups из ТЕКУЩЕЙ Unidad
+            Object.keys(unidadData.groups).forEach(groupName => {
+                const words = unidadData.groups[groupName];
 
-                            // Вычисляем 30% от количества слов в группе (округление вверх)
-                            const count = Math.ceil(words.length * EXAM_PALABRAS_PERCENTAGE);
+                // Вычисляем 30% от количества слов в группе (округление вверх)
+                const count = Math.ceil(words.length * EXAM_PALABRAS_PERCENTAGE);
 
-                            // Перемешиваем слова и берём нужное количество
-                            const shuffledWords = shuffleArray(words);
-                            const selectedWords = shuffledWords.slice(0, count);
+                // Перемешиваем слова и берём нужное количество
+                const shuffledWords = shuffleArray(words);
+                const selectedWords = shuffledWords.slice(0, count);
 
-                            // Для каждого выбранного слова создаём вопрос
-                            selectedWords.forEach(word => {
-                                // Проверяем наличие hardSentences
-                                if (word.hardSentences && word.hardSentences.length > 0) {
-                                    // Выбираем случайное предложение из 4 (или сколько есть)
-                                    const randomIndex = Math.floor(Math.random() * word.hardSentences.length);
-                                    const sentence = word.hardSentences[randomIndex];
+                // Для каждого выбранного слова создаём вопрос
+                selectedWords.forEach(word => {
+                    // Проверяем наличие hardSentences
+                    if (word.hardSentences && word.hardSentences.length > 0) {
+                        // Выбираем случайное предложение из 4 (или сколько есть)
+                        const randomIndex = Math.floor(Math.random() * word.hardSentences.length);
+                        const sentence = word.hardSentences[randomIndex];
 
-                                    // Заменяем ___ на подсказку: "___ (русский перевод)"
-                                    const sentenceWithHint = sentence.replace('___', `___ (${word.ru})`);
+                        // Заменяем ___ на подсказку: "___ (русский перевод)"
+                        const sentenceWithHint = sentence.replace('___', `___ (${word.ru})`);
 
-                                    palabrasQuestions.push({
-                                        type: 'palabra',
-                                        group: groupName,
-                                        unidad: unidad,
-                                        sentence: sentenceWithHint,
-                                        correctAnswer: word.spanish,
-                                        ru: word.ru
-                                    });
-                                }
-                            });
+                        palabrasQuestions.push({
+                            type: 'palabra',
+                            group: groupName,
+                            unidad: currentUnidad,
+                            sentence: sentenceWithHint,
+                            correctAnswer: word.spanish,
+                            ru: word.ru
                         });
                     }
-                }
+                });
             });
 
             console.log(`📊 generatePalabrasQuestions() вернула ${palabrasQuestions.length} вопросов`);
-            console.log('palabrasQuestions:', palabrasQuestions);
             return palabrasQuestions;
         }
 
         function generateEjerciciosQuestions() {
+            console.log('🔵 generateEjerciciosQuestions() вызвана для', currentUnidad);
             const ejerciciosQuestions = [];
-            const profile = getActiveProfile();
-            if (!profile) return [];
 
-            // Проход по всем Unidades
-            UNIDADES.forEach((unidad, index) => {
-                // Первая unidad всегда доступна, остальные - только если разблокированы
-                if (index === 0 || profile.unlocks[unidad]) {
-                    const unidadData = vocabularyData[unidad];
+            if (!currentUnidad) {
+                console.log('❌ Нет currentUnidad');
+                return [];
+            }
 
-                    if (unidadData && unidadData.ejercicios) {
-                        // Берём ВСЕ ejercicios из этой Unidad
-                        unidadData.ejercicios.forEach(ejercicio => {
-                            if (ejercicio.questions && ejercicio.questions.length > 0) {
-                                // Вычисляем 30% от количества вопросов (округление вверх)
-                                const count = Math.ceil(ejercicio.questions.length * EXAM_EJERCICIOS_PERCENTAGE);
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.ejercicios) {
+                console.log('❌ Нет ejercicios для', currentUnidad);
+                return [];
+            }
 
-                                // Перемешиваем вопросы и берём нужное количество
-                                const shuffledQuestions = shuffleArray(ejercicio.questions);
-                                const selectedQuestions = shuffledQuestions.slice(0, count);
+            // Берём ВСЕ ejercicios из ТЕКУЩЕЙ Unidad
+            unidadData.ejercicios.forEach(ejercicio => {
+                if (ejercicio.questions && ejercicio.questions.length > 0) {
+                    // Вычисляем 30% от количества вопросов (округление вверх)
+                    const count = Math.ceil(ejercicio.questions.length * EXAM_EJERCICIOS_PERCENTAGE);
 
-                                // Для каждого выбранного вопроса создаём объект
-                                selectedQuestions.forEach(question => {
-                                    ejerciciosQuestions.push({
-                                        type: 'ejercicio',
-                                        exerciseId: ejercicio.id,
-                                        exerciseTitle: ejercicio.title,
-                                        unidad: unidad,
-                                        sentence: question.sentence,
-                                        correctAnswer: question.answer,
-                                        hint: ejercicio.hint || ''
-                                    });
-                                });
-                            }
+                    // Перемешиваем вопросы и берём нужное количество
+                    const shuffledQuestions = shuffleArray(ejercicio.questions);
+                    const selectedQuestions = shuffledQuestions.slice(0, count);
+
+                    // Для каждого выбранного вопроса создаём объект
+                    selectedQuestions.forEach(question => {
+                        ejerciciosQuestions.push({
+                            type: 'ejercicio',
+                            exerciseId: ejercicio.id,
+                            exerciseTitle: ejercicio.title,
+                            unidad: currentUnidad,
+                            sentence: question.sentence,
+                            correctAnswer: question.answer,
+                            hint: ejercicio.hint || ''
                         });
-                    }
+                    });
                 }
             });
 
+            console.log(`📊 generateEjerciciosQuestions() вернула ${ejerciciosQuestions.length} вопросов`);
             return ejerciciosQuestions;
         }
 

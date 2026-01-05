@@ -1010,7 +1010,7 @@ function showProfileSelect() {
                         ${sentences.map((s, i) => `
                             <div style="margin-bottom: 8px;">
                                 <div style="color: #2c3e50; font-size: 0.95em;">${fillSentence(s)}</div>
-                                ${sentencesRu[i] ? `<div style="color: #777; font-size: 0.85em; font-style: italic; margin-top: 2px;">${sentencesRu[i]}</div>` : ''}
+                                ${sentencesRu[i] ? `<div style="color: #fff; font-size: 0.9em; font-style: italic; margin-top: 3px;">${sentencesRu[i]}</div>` : ''}
                             </div>
                         `).join('')}
                     </div>

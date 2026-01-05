@@ -871,7 +871,7 @@ function showProfileSelect() {
                         <span class="category-title">${displayName}</span>
                     </div>
                     <div class="progress-bar-container">
-                        <div class="progress-bar-fill" style="width: ${progress}%"></div>
+                        <div class="progress-bar-fill" style="width: ${progress}%; background: #27ae60;"></div>
                     </div>
                     <p class="progress-text">${progress}%</p>
                 `;

@@ -815,6 +815,34 @@
       "id": "ejercicio_2",
       "title": "porque vs para",
       "hint": "porque / para",
+      "rule": {
+        "title": "PORQUE vs PARA: причина и цель",
+        "explanation": "Эти два слова часто путают, но они отвечают на разные вопросы. PORQUE (потому что) объясняет причину — почему что-то произошло или происходит. PARA (для, чтобы) указывает на цель — для чего или зачем что-то делается. Простой способ запомнить: PORQUE смотрит назад (что вызвало действие), PARA смотрит вперёд (к чему стремится действие).",
+        "sections": [
+          {
+            "subtitle": "PORQUE — причина (¿Por qué? — Почему?)",
+            "points": [
+              "Объясняет причину действия или состояния",
+              "Отвечает на вопрос «Почему?»",
+              "После PORQUE идёт готовый факт (глагол в индикативе)"
+            ]
+          },
+          {
+            "subtitle": "PARA — цель (¿Para qué? — Зачем? Для чего?)",
+            "points": [
+              "Указывает на цель или назначение",
+              "Отвечает на вопрос «Зачем? Для чего? Для кого?»",
+              "После PARA часто идёт инфинитив или существительное"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Estudio español <b>porque</b> me gusta.", "ru": "Я учу испанский, <b>потому что</b> мне нравится. (причина)"},
+          {"es": "Estudio español <b>para</b> viajar.", "ru": "Я учу испанский, <b>чтобы</b> путешествовать. (цель)"},
+          {"es": "No salgo <b>porque</b> llueve.", "ru": "Я не выхожу, <b>потому что</b> идёт дождь."},
+          {"es": "Este regalo es <b>para</b> ti.", "ru": "Этот подарок <b>для</b> тебя."}
+        ]
+      },
       "questions": [
         {"sentence": "Estudio español ___ me gusta la cultura latinoamericana.", "answer": "porque"},
         {"sentence": "Necesito el coche ___ ir al trabajo.", "answer": "para"},
@@ -837,6 +865,67 @@
       "id": "ejercicio_3",
       "title": "Presente de indicativo",
       "hint": "Conjuga el verbo en presente",
+      "rule": {
+        "title": "Presente de indicativo: спряжение глаголов",
+        "explanation": "В испанском языке глаголы делятся на три группы по окончанию инфинитива: -AR (hablar), -ER (comer), -IR (vivir). Для образования настоящего времени нужно отбросить окончание инфинитива и добавить личные окончания. Также есть неправильные глаголы, которые нужно запомнить отдельно.",
+        "sections": [
+          {
+            "subtitle": "Правильные глаголы -AR (hablar — говорить)",
+            "points": [
+              "yo habl<b>o</b>",
+              "tú habl<b>as</b>",
+              "él/ella/usted habl<b>a</b>",
+              "nosotros habl<b>amos</b>",
+              "vosotros habl<b>áis</b>",
+              "ellos/ustedes habl<b>an</b>"
+            ]
+          },
+          {
+            "subtitle": "Правильные глаголы -ER (comer — есть)",
+            "points": [
+              "yo com<b>o</b>",
+              "tú com<b>es</b>",
+              "él/ella/usted com<b>e</b>",
+              "nosotros com<b>emos</b>",
+              "vosotros com<b>éis</b>",
+              "ellos/ustedes com<b>en</b>"
+            ]
+          },
+          {
+            "subtitle": "Правильные глаголы -IR (vivir — жить)",
+            "points": [
+              "yo viv<b>o</b>",
+              "tú viv<b>es</b>",
+              "él/ella/usted viv<b>e</b>",
+              "nosotros viv<b>imos</b>",
+              "vosotros viv<b>ís</b>",
+              "ellos/ustedes viv<b>en</b>"
+            ]
+          },
+          {
+            "subtitle": "Неправильные глаголы (запомнить!)",
+            "points": [
+              "<b>ser</b>: soy, eres, es, somos, sois, son",
+              "<b>ir</b>: voy, vas, va, vamos, vais, van",
+              "<b>tener</b>: tengo, tienes, tiene, tenemos, tenéis, tienen",
+              "<b>hacer</b>: hago, haces, hace, hacemos, hacéis, hacen",
+              "<b>poder</b>: puedo, puedes, puede, podemos, podéis, pueden",
+              "<b>querer</b>: quiero, quieres, quiere, queremos, queréis, quieren",
+              "<b>decir</b>: digo, dices, dice, decimos, decís, dicen",
+              "<b>venir</b>: vengo, vienes, viene, venimos, venís, vienen",
+              "<b>saber</b>: sé, sabes, sabe, sabemos, sabéis, saben",
+              "<b>conocer</b>: conozco, conoces, conoce, conocemos, conocéis, conocen"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Yo <b>hablo</b> español.", "ru": "Я говорю по-испански."},
+          {"es": "Ella <b>vive</b> en Madrid.", "ru": "Она живёт в Мадриде."},
+          {"es": "Nosotros <b>comemos</b> a las dos.", "ru": "Мы едим в два часа."},
+          {"es": "Yo <b>tengo</b> dos hermanos.", "ru": "У меня двое братьев/сестёр."},
+          {"es": "Él <b>va</b> al trabajo en metro.", "ru": "Он ездит на работу на метро."}
+        ]
+      },
       "questions": [
         {"sentence": "Yo (hablar) ___ español muy bien.", "answer": "hablo"},
         {"sentence": "Ella (vivir) ___ en Barcelona.", "answer": "vive"},
@@ -859,6 +948,37 @@
       "id": "ejercicio_4",
       "title": "desde / desde hace",
       "hint": "desde / desde hace",
+      "rule": {
+        "title": "DESDE vs DESDE HACE: точка во времени и период",
+        "explanation": "Оба выражения переводятся как «с/уже», но используются по-разному. DESDE указывает на конкретную точку во времени (дату, событие, момент), с которой началось действие. DESDE HACE указывает на длительность периода, сколько времени продолжается действие. Ключевое отличие: после DESDE идёт момент, после DESDE HACE — период времени.",
+        "sections": [
+          {
+            "subtitle": "DESDE — точка во времени (с какого момента?)",
+            "points": [
+              "После DESDE идёт: год, месяц, дата, событие",
+              "<b>desde</b> 2015 — с 2015 года",
+              "<b>desde</b> enero — с января",
+              "<b>desde</b> la universidad — со времён университета",
+              "<b>desde</b> niño — с детства"
+            ]
+          },
+          {
+            "subtitle": "DESDE HACE — период времени (как долго?)",
+            "points": [
+              "После DESDE HACE идёт: количество времени",
+              "<b>desde hace</b> tres años — уже три года",
+              "<b>desde hace</b> dos meses — уже два месяца",
+              "<b>desde hace</b> mucho tiempo — уже давно"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Vivo en Madrid <b>desde</b> 2018.", "ru": "Я живу в Мадриде с 2018 года."},
+          {"es": "Vivo en Madrid <b>desde hace</b> cinco años.", "ru": "Я живу в Мадриде уже пять лет."},
+          {"es": "Estudio español <b>desde</b> septiembre.", "ru": "Я учу испанский с сентября."},
+          {"es": "Estudio español <b>desde hace</b> seis meses.", "ru": "Я учу испанский уже шесть месяцев."}
+        ]
+      },
       "questions": [
         {"sentence": "Vivo en España ___ 2015.", "answer": "desde"},
         {"sentence": "Estudio español ___ tres años.", "answer": "desde hace"},
@@ -881,6 +1001,45 @@
       "id": "ejercicio_5",
       "title": "ser vs estar / sentirse",
       "hint": "ser / estar / sentirse",
+      "rule": {
+        "title": "SER vs ESTAR vs SENTIRSE",
+        "explanation": "В испанском два глагола «быть» — SER и ESTAR, плюс возвратный глагол SENTIRSE (чувствовать себя). SER описывает постоянные, неизменные характеристики. ESTAR описывает временные состояния, местоположение и результат действия. SENTIRSE используется для выражения эмоций и физического самочувствия.",
+        "sections": [
+          {
+            "subtitle": "SER — постоянные характеристики",
+            "points": [
+              "Происхождение: Soy <b>de</b> Rusia — Я из России",
+              "Профессия: Es médico — Он врач",
+              "Характер: María es simpática — Мария симпатичная",
+              "Материал: La mesa es <b>de</b> madera — Стол из дерева",
+              "Время/дата: Hoy es lunes — Сегодня понедельник"
+            ]
+          },
+          {
+            "subtitle": "ESTAR — временные состояния и место",
+            "points": [
+              "Местоположение: Madrid está en España — Мадрид находится в Испании",
+              "Временное состояние: Estoy cansado — Я устал (сейчас)",
+              "Результат действия: La puerta está cerrada — Дверь закрыта",
+              "Настроение: Está triste hoy — Он грустный сегодня"
+            ]
+          },
+          {
+            "subtitle": "SENTIRSE — чувствовать себя",
+            "points": [
+              "Эмоции: Me siento feliz — Я чувствую себя счастливым",
+              "Самочувствие: ¿Cómo te sientes? — Как ты себя чувствуешь?",
+              "Спряжение: me siento, te sientes, se siente, nos sentimos..."
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "María <b>es</b> alta y simpática.", "ru": "Мария высокая и симпатичная. (постоянно)"},
+          {"es": "María <b>está</b> cansada hoy.", "ru": "Мария устала сегодня. (временно)"},
+          {"es": "El café <b>está</b> frío.", "ru": "Кофе холодный. (стал холодным)"},
+          {"es": "<b>Me siento</b> muy bien hoy.", "ru": "Я чувствую себя очень хорошо сегодня."}
+        ]
+      },
       "questions": [
         {"sentence": "María ___ muy simpática.", "answer": "es"},
         {"sentence": "Hoy yo ___ muy cansado.", "answer": "estoy"},
@@ -903,6 +1062,43 @@
       "id": "ejercicio_6",
       "title": "Recomendaciones: tienes que / lo mejor es / va muy bien",
       "hint": "tienes que / lo mejor es / va muy bien",
+      "rule": {
+        "title": "Конструкции для рекомендаций и советов",
+        "explanation": "В испанском есть несколько способов давать советы и рекомендации. TIENES QUE выражает необходимость или обязанность (ты должен). LO MEJOR ES предлагает лучший вариант действия (лучше всего). VA MUY BIEN указывает, что что-то хорошо помогает или подходит для определённой цели.",
+        "sections": [
+          {
+            "subtitle": "TIENES QUE + инфинитив — необходимость",
+            "points": [
+              "Выражает долженствование: «ты должен», «тебе нужно»",
+              "<b>Tienes que</b> estudiar más — Тебе нужно больше учиться",
+              "<b>Tienes que</b> hablar con nativos — Ты должен говорить с носителями"
+            ]
+          },
+          {
+            "subtitle": "LO MEJOR ES + инфинитив — лучший совет",
+            "points": [
+              "Предлагает оптимальное решение: «лучше всего»",
+              "<b>Lo mejor es</b> practicar cada día — Лучше всего практиковаться каждый день",
+              "<b>Lo mejor es</b> no preocuparse — Лучше всего не беспокоиться"
+            ]
+          },
+          {
+            "subtitle": "VA MUY BIEN — хорошо помогает",
+            "points": [
+              "Указывает, что что-то эффективно для чего-то",
+              "Структура: [что-то] <b>va muy bien</b> para [цель]",
+              "El té <b>va muy bien</b> para relajarse — Чай хорошо помогает расслабиться",
+              "Caminar <b>va muy bien</b> para la salud — Прогулки очень полезны для здоровья"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "<b>Tienes que</b> dormir 8 horas.", "ru": "Тебе нужно спать 8 часов."},
+          {"es": "<b>Lo mejor es</b> empezar poco a poco.", "ru": "Лучше всего начинать постепенно."},
+          {"es": "El yoga <b>va muy bien</b> para el estrés.", "ru": "Йога очень помогает от стресса."},
+          {"es": "Para aprender, <b>tienes que</b> practicar.", "ru": "Чтобы учиться, тебе нужно практиковаться."}
+        ]
+      },
       "questions": [
         {"sentence": "Para aprender español, ___ practicar todos los días.", "answer": "tienes que"},
         {"sentence": "Para relajarte, ___ hacer yoga.", "answer": "va muy bien"},
@@ -925,6 +1121,57 @@
       "id": "ejercicio_7",
       "title": "Presente: verbos reflexivos e irregulares",
       "hint": "Conjuga el verbo en presente",
+      "rule": {
+        "title": "Возвратные и неправильные глаголы в настоящем времени",
+        "explanation": "Возвратные глаголы (verbos reflexivos) обозначают действие, направленное на самого себя, и используются с возвратными местоимениями (me, te, se, nos, os, se). Неправильные глаголы имеют изменения в корне (e→ie, o→ue, e→i) или особые формы в первом лице.",
+        "sections": [
+          {
+            "subtitle": "Возвратные глаголы — структура",
+            "points": [
+              "Местоимение ставится ПЕРЕД глаголом",
+              "<b>me</b> levanto — я встаю",
+              "<b>te</b> duchas — ты принимаешь душ",
+              "<b>se</b> viste — он/она одевается",
+              "<b>nos</b> acostamos — мы ложимся спать"
+            ]
+          },
+          {
+            "subtitle": "Чередование в корне: e → ie",
+            "points": [
+              "<b>pensar</b>: pienso, piensas, piensa, pensamos, pensáis, piensan",
+              "<b>empezar</b>: empiezo, empiezas, empieza...",
+              "<b>despertarse</b>: me despierto, te despiertas..."
+            ]
+          },
+          {
+            "subtitle": "Чередование в корне: o → ue",
+            "points": [
+              "<b>poder</b>: puedo, puedes, puede, podemos, podéis, pueden",
+              "<b>acostarse</b>: me acuesto, te acuestas, se acuesta..."
+            ]
+          },
+          {
+            "subtitle": "Чередование в корне: e → i",
+            "points": [
+              "<b>vestirse</b>: me visto, te vistes, se viste, nos vestimos..."
+            ]
+          },
+          {
+            "subtitle": "Неправильные в 1-м лице (yo)",
+            "points": [
+              "<b>salir</b>: salgo, sales, sale...",
+              "<b>conocer</b>: conozco, conoces, conoce...",
+              "<b>hacer</b>: hago, haces, hace..."
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "<b>Me levanto</b> a las 7 de la mañana.", "ru": "Я встаю в 7 утра."},
+          {"es": "<b>Me ducho</b> y <b>me visto</b> rápido.", "ru": "Я быстро принимаю душ и одеваюсь."},
+          {"es": "<b>Empiezo</b> a trabajar a las 9.", "ru": "Я начинаю работать в 9."},
+          {"es": "<b>Salgo</b> de casa a las 8.", "ru": "Я выхожу из дома в 8."}
+        ]
+      },
       "questions": [
         {"sentence": "(Vivir/yo) ___ en Madrid desde hace 15 años.", "answer": "Vivo"},
         {"sentence": "(Conocer/yo) ___ a mucha gente aquí.", "answer": "Conozco"},
@@ -947,6 +1194,42 @@
       "id": "ejercicio_8",
       "title": "Concordancia: me cuesta/cuestan, va/van",
       "hint": "cuesta / cuestan / va / van",
+      "rule": {
+        "title": "Согласование: CUESTA/CUESTAN и VA/VAN",
+        "explanation": "Глаголы COSTAR (быть трудным) и IR (в значении «подходить, помогать») согласуются с подлежащим, а не с дополнением. Если то, что трудно или помогает — в единственном числе, используем CUESTA/VA. Если во множественном — CUESTAN/VAN. Обратите внимание: инфинитив всегда считается единственным числом!",
+        "sections": [
+          {
+            "subtitle": "ME CUESTA / ME CUESTAN — мне трудно",
+            "points": [
+              "<b>Me cuesta</b> + инфинитив или ед.ч.: Me cuesta <b>hablar</b> — Мне трудно говорить",
+              "<b>Me cuesta</b> + сущ. ед.ч.: Me cuesta <b>la gramática</b> — Мне трудна грамматика",
+              "<b>Me cuestan</b> + сущ. мн.ч.: Me cuestan <b>los verbos</b> — Мне трудны глаголы"
+            ]
+          },
+          {
+            "subtitle": "VA / VAN BIEN — помогает, подходит",
+            "points": [
+              "<b>Va bien</b> + инфинитив: <b>Va bien</b> leer libros — Хорошо помогает читать книги",
+              "<b>Va bien</b> + сущ. ед.ч.: El té <b>va bien</b> — Чай помогает",
+              "<b>Van bien</b> + сущ. мн.ч.: Las películas <b>van bien</b> — Фильмы помогают"
+            ]
+          },
+          {
+            "subtitle": "Ключевое правило",
+            "points": [
+              "Смотри на ТО, ЧТО трудно / помогает — это подлежащее",
+              "Инфинитив = единственное число → cuesta, va",
+              "Существительное мн.ч. = cuestan, van"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Me <b>cuesta</b> pronunciar la erre.", "ru": "Мне трудно произносить «р». (инфинитив = ед.ч.)"},
+          {"es": "Me <b>cuestan</b> los verbos irregulares.", "ru": "Мне трудны неправильные глаголы. (мн.ч.)"},
+          {"es": "Para aprender <b>va</b> bien escuchar música.", "ru": "Для учёбы хорошо помогает слушать музыку. (инфинитив)"},
+          {"es": "Las series <b>van</b> muy bien para practicar.", "ru": "Сериалы очень помогают для практики. (мн.ч.)"}
+        ]
+      },
       "questions": [
         {"sentence": "Me ___ aprender los verbos.", "answer": "cuesta"},
         {"sentence": "Para aprender vocabulario ___ muy bien leer.", "answer": "va"},
@@ -969,6 +1252,42 @@
       "id": "ejercicio_9",
       "title": "Concordancia: me da / me dan",
       "hint": "da / dan",
+      "rule": {
+        "title": "Согласование: ME DA / ME DAN",
+        "explanation": "Конструкция ME DA/DAN используется для выражения эмоций: miedo (страх), vergüenza (стыд), alegría (радость), pena (жалость), tristeza (грусть). Глагол DAR согласуется с тем, ЧТО вызывает эмоцию (подлежащее), а не с тем, КТО её испытывает. Если причина эмоции в единственном числе или инфинитив — DA. Если во множественном — DAN.",
+        "sections": [
+          {
+            "subtitle": "ME DA — единственное число / инфинитив",
+            "points": [
+              "Me <b>da</b> miedo + инфинитив: Me da miedo <b>hablar</b> — Мне страшно говорить",
+              "Me <b>da</b> vergüenza + сущ. ед.ч.: Me da vergüenza <b>el error</b> — Мне стыдно за ошибку",
+              "Me <b>da</b> alegría + инфинитив: Me da alegría <b>verte</b> — Мне радостно тебя видеть"
+            ]
+          },
+          {
+            "subtitle": "ME DAN — множественное число",
+            "points": [
+              "Me <b>dan</b> miedo + сущ. мн.ч.: Me dan miedo <b>los exámenes</b> — Меня пугают экзамены",
+              "Me <b>dan</b> vergüenza + сущ. мн.ч.: Me dan vergüenza <b>mis errores</b> — Мне стыдно за мои ошибки",
+              "Me <b>dan</b> alegría + сущ. мн.ч.: Me dan alegría <b>las buenas noticias</b> — Меня радуют хорошие новости"
+            ]
+          },
+          {
+            "subtitle": "Ключевое правило",
+            "points": [
+              "Смотри на ТО, ЧТО вызывает эмоцию — это подлежащее",
+              "Инфинитив или ед.ч. → da",
+              "Множественное число → dan"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Me <b>da</b> miedo hablar en público.", "ru": "Мне страшно говорить публично. (инфинитив)"},
+          {"es": "Me <b>dan</b> miedo los exámenes orales.", "ru": "Меня пугают устные экзамены. (мн.ч.)"},
+          {"es": "No me <b>da</b> vergüenza cometer errores.", "ru": "Мне не стыдно совершать ошибки. (инфинитив)"},
+          {"es": "Me <b>dan</b> alegría tus progresos.", "ru": "Меня радуют твои успехи. (мн.ч.)"}
+        ]
+      },
       "questions": [
         {"sentence": "No me ___ vergüenza salir a la pizarra.", "answer": "da"},
         {"sentence": "Me ___ miedo los exámenes.", "answer": "dan"},
@@ -991,6 +1310,46 @@
       "id": "ejercicio_10",
       "title": "Expresar dificultad y miedo",
       "hint": "me cuesta / me da miedo / me siento",
+      "rule": {
+        "title": "Выражение трудности, страха и эмоций",
+        "explanation": "В испанском есть три основные конструкции для выражения трудностей и эмоций при изучении языка. ME CUESTA используется для того, что трудно делать. ME DA + эмоция (miedo, vergüenza, alegría) выражает, что что-то вызывает определённую эмоцию. ME SIENTO + прилагательное описывает, как ты себя чувствуешь.",
+        "sections": [
+          {
+            "subtitle": "ME CUESTA + инфинитив — мне трудно",
+            "points": [
+              "Используется для выражения трудности",
+              "<b>Me cuesta</b> hablar rápido — Мне трудно говорить быстро",
+              "<b>Me cuesta</b> entender — Мне трудно понимать",
+              "<b>Me cuesta</b> pronunciar — Мне трудно произносить"
+            ]
+          },
+          {
+            "subtitle": "ME DA + эмоция — мне страшно/стыдно/радостно",
+            "points": [
+              "<b>Me da miedo</b> + инфинитив/сущ.: Me da miedo hablar — Мне страшно говорить",
+              "<b>Me da vergüenza</b>: Me da vergüenza el error — Мне стыдно за ошибку",
+              "<b>Me da alegría</b>: Me da alegría aprobar — Мне радостно сдать"
+            ]
+          },
+          {
+            "subtitle": "ME SIENTO + прилагательное — я чувствую себя",
+            "points": [
+              "Описывает эмоциональное или физическое состояние",
+              "<b>Me siento</b> seguro/a — Я чувствую себя уверенно",
+              "<b>Me siento</b> frustrado/a — Я чувствую себя расстроенным",
+              "<b>Me siento</b> ridículo/a — Я чувствую себя нелепо",
+              "<b>Me siento</b> bien/mal — Я чувствую себя хорошо/плохо"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "<b>Me cuesta</b> mucho la gramática.", "ru": "Мне очень трудна грамматика."},
+          {"es": "<b>Me da miedo</b> hablar en público.", "ru": "Мне страшно говорить публично."},
+          {"es": "<b>Me siento</b> inseguro cuando escribo.", "ru": "Я чувствую себя неуверенно, когда пишу."},
+          {"es": "<b>Me da vergüenza</b> mi acento.", "ru": "Мне стыдно за свой акцент."},
+          {"es": "<b>Me siento</b> muy bien cuando practico.", "ru": "Я чувствую себя очень хорошо, когда практикуюсь."}
+        ]
+      },
       "questions": [
         {"sentence": "___ mucho entender a gente nativa cuando habla.", "answer": "Me cuesta"},
         {"sentence": "___ mucho miedo el examen del lunes.", "answer": "Me da"},

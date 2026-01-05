@@ -2918,7 +2918,7 @@ async function getNavigationState() {
                 el.classList.remove('hidden');
 
                 // Показываем badge для основных меню
-                if (['mainMenu', 'unidadMenu', 'palabrasMenu', 'categoryMenu', 'gramaticaMenu'].includes(targetScreen)) {
+                if (['mainMenu', 'unidadMenu', 'palabrasMenu', 'groupPreviewMenu', 'categoryMenu', 'gramaticaMenu'].includes(targetScreen)) {
                     showUserBadge();
                 }
 
@@ -2936,6 +2936,9 @@ async function getNavigationState() {
                 }
                 if (targetScreen === 'categoryMenu') {
                     showCategoryMenu(currentCategory);
+                }
+                if (targetScreen === 'groupPreviewMenu') {
+                    showGroupPreview(currentCategory);
                 }
                 if (targetScreen === 'gramaticaMenu') {
                     showGramaticaMenu();

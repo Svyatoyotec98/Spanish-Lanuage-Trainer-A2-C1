@@ -2970,11 +2970,13 @@ function hideAllScreens() {
     const screens = [
         'startScreen', 'loginScreen', 'registerScreen',
         'profileSelectScreen', 'profileCreateScreen',
-        'mainMenu', 'unidadMenu', 'categoryMenu',
+        'mainMenu', 'unidadMenu', 'palabrasMenu', 'categoryMenu',
         'questionScreen', 'resultsScreen', 'verbMenu',
         'verbPracticeScreen', 'qaScreen',
         'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
-        'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen'
+        'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
+        'cardMatchingScreen', 'cardMatchingResultsScreen',
+        'examScreen', 'examResultsScreen'
     ];
     screens.forEach(id => {
         const el = document.getElementById(id);

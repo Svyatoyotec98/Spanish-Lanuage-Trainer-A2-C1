@@ -3085,7 +3085,7 @@ function hideAllScreens() {
         'examScreen', 'examResultsScreen',
         'miniDictionaryScreen',
         'exercisePreviewMenu', 'grammarRuleScreen',
-        'referenceMainMenu', 'grammarSubMenu'
+        'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen'
     ];
     screens.forEach(id => {
         const el = document.getElementById(id);
@@ -3885,9 +3885,75 @@ function showMasGramatica() {
     renderGrammarList();
 }
 
-// Show Vocabulario (заглушка для Фазы 2)
+// Show Vocabulario - Full alphabetical list of all words
 function showVocabularyScreen() {
-    alert('Vocabulario — будет реализовано в Фазе 2');
+    hideAllScreens();
+    document.getElementById('vocabularyScreen').classList.remove('hidden');
+
+    // Collect all words from all Unidads
+    const allWords = [];
+
+    Object.keys(vocabularyData).forEach(unidadId => {
+        const unidadData = vocabularyData[unidadId];
+        if (unidadData && unidadData.groups) {
+            Object.keys(unidadData.groups).forEach(groupName => {
+                const words = unidadData.groups[groupName];
+                if (Array.isArray(words)) {
+                    words.forEach(word => {
+                        allWords.push({
+                            spanish: word.spanish,
+                            ru: word.ru,
+                            unidad: unidadId,
+                            group: groupName
+                        });
+                    });
+                }
+            });
+        }
+    });
+
+    // Sort alphabetically by Spanish word (case-insensitive)
+    allWords.sort((a, b) => {
+        const wordA = a.spanish.toLowerCase().replace(/^(el |la |los |las )/, '');
+        const wordB = b.spanish.toLowerCase().replace(/^(el |la |los |las )/, '');
+        return wordA.localeCompare(wordB, 'es');
+    });
+
+    // Update word count
+    document.getElementById('vocabularyWordCount').textContent = `${allWords.length} слов`;
+
+    // Render all words
+    const container = document.getElementById('vocabularyWordsContainer');
+    container.innerHTML = '';
+
+    if (allWords.length === 0) {
+        container.innerHTML = '<p style="text-align: center; color: #fff;">Словарь пуст. Загрузите данные Unidads.</p>';
+        return;
+    }
+
+    allWords.forEach(word => {
+        const wordCard = document.createElement('div');
+        wordCard.style.cssText = `
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            font-size: 1.1em;
+        `;
+
+        wordCard.innerHTML = `
+            <span style="color: #7f8c8d; flex: 1;">${word.ru}</span>
+            <span style="color: #2c3e50; font-weight: 600; flex: 1; text-align: right;">${word.spanish}</span>
+        `;
+
+        container.appendChild(wordCard);
+    });
 }
 
 // Show Ejercicios Gramática (заглушка для Фазы 4)

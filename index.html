@@ -872,6 +872,26 @@
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
+             VOCABULARY SCREEN (Full Alphabetical List)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="vocabularyScreen" class="hidden">
+            <h1>📖 Vocabulario</h1>
+            <p class="subtitle">Все слова из всех Unidads</p>
+
+            <!-- Word count -->
+            <div style="margin: 20px 0; padding: 15px; background: rgba(102, 126, 234, 0.3); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 10px; color: white; text-align: center;">
+                <span id="vocabularyWordCount">0 слов</span>
+            </div>
+
+            <!-- Scrollable words container -->
+            <div id="vocabularyWordsContainer" style="margin-top: 20px; max-height: 500px; overflow-y: auto;">
+                <!-- Words will be rendered here -->
+            </div>
+
+            <button class="btn btn-back" onclick="showReferenceMain()" style="margin-top: 30px;">← Назад</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
              GRAMMAR REFERENCE LIST SCREEN (Más Gramática)
              ═══════════════════════════════════════════════════════════════ -->
         <div id="grammarListScreen" class="hidden">

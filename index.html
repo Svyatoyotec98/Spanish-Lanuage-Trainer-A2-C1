@@ -16,6 +16,10 @@
 
 </head>
 <body>
+    <!-- Azulejos Background with Parallax -->
+    <div id="azulejos-bg"></div>
+    <div id="azulejos-overlay"></div>
+
     <div class="container">
 
         <!-- ═══════════════════════════════════════════════════════════════
@@ -910,6 +914,63 @@
         </div>
     </div>
 
-  <script src="js/app.js"></script> 
+  <script src="js/app.js"></script>
+
+  <!-- Parallax & Click Sound Script -->
+  <script>
+    // ═══════════════════════════════════════════════════════════════
+    // PARALLAX EFFECT FOR AZULEJOS BACKGROUND
+    // ═══════════════════════════════════════════════════════════════
+    const azulejosBg = document.getElementById('azulejos-bg');
+    const container = document.querySelector('.container');
+    let isOverContainer = false;
+
+    // Track if mouse is over the container (menu)
+    container.addEventListener('mouseenter', () => { isOverContainer = true; });
+    container.addEventListener('mouseleave', () => { isOverContainer = false; });
+
+    // Parallax effect - move background based on cursor position
+    document.addEventListener('mousemove', (e) => {
+      if (isOverContainer) return; // Don't move when over menu
+
+      const moveX = (e.clientX - window.innerWidth / 2) * 0.02;
+      const moveY = (e.clientY - window.innerHeight / 2) * 0.02;
+
+      azulejosBg.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+
+    // ═══════════════════════════════════════════════════════════════
+    // MINECRAFT-STYLE CLICK SOUND
+    // ═══════════════════════════════════════════════════════════════
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+    function playClickSound() {
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+
+      oscillator.frequency.setValueAtTime(1000, audioContext.currentTime);
+      oscillator.frequency.exponentialRampToValueAtTime(500, audioContext.currentTime + 0.05);
+
+      gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + 0.1);
+    }
+
+    // Add click sound to all buttons
+    document.addEventListener('click', (e) => {
+      if (e.target.matches('button, .btn, .category-card, .profile-card')) {
+        // Resume audio context if suspended (browser policy)
+        if (audioContext.state === 'suspended') {
+          audioContext.resume();
+        }
+        playClickSound();
+      }
+    });
+  </script>
 </body>
 </html>

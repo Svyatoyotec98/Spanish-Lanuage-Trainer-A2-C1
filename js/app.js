@@ -3719,7 +3719,7 @@ function renderGrammarList() {
     container.innerHTML = '';
     
     if (rulesPage.length === 0) {
-        container.innerHTML = '<p style="text-align: center; color: #7f8c8d;">Нет доступных правил</p>';
+        container.innerHTML = '<p style="text-align: center; color: #fff;">Нет доступных правил</p>';
         return;
     }
     
@@ -3743,7 +3743,7 @@ function renderGrammarList() {
                     <span class="category-icon" onclick="showGrammarDetail('${rule.id}')">→</span>
                 </div>
             </div>
-            <p style="margin: 10px 0 0 0; color: #7f8c8d; font-size: 0.9em;">${rule.topic}</p>
+            <p style="margin: 10px 0 0 0; color: #fff; font-size: 0.9em;">${rule.topic}</p>
         `;
 
         // Make whole card clickable to show detail

@@ -1816,6 +1816,12 @@ if (
                     </div>
                 `;
 
+                // Показываем/скрываем кнопку "Следующий тест"
+                const nextTestBtn = document.getElementById('nextTestBtn');
+                if (nextTestBtn) {
+                    nextTestBtn.style.display = hasNextTest() ? 'inline-block' : 'none';
+                }
+
                 saveNavigationState('cardMatchingResultsScreen');
             }, 1500);
         }
@@ -1827,6 +1833,37 @@ if (
         function exitCardMatching() {
             // Return to Palabras menu (group selection), not category menu
             showPalabrasMenu();
+        }
+
+        // Переход к следующему тесту (следующая семантическая группа)
+        function goToNextTest() {
+            if (!currentUnidad || !currentCategory) return;
+
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups) return;
+
+            const groupNames = Object.keys(unidadData.groups);
+            const currentIndex = groupNames.indexOf(currentCategory);
+
+            if (currentIndex >= 0 && currentIndex < groupNames.length - 1) {
+                // Есть следующая группа - переходим к ней
+                const nextGroup = groupNames[currentIndex + 1];
+                currentCategory = nextGroup;
+                startCardMatchingGame();
+            }
+        }
+
+        // Проверка, есть ли следующий тест
+        function hasNextTest() {
+            if (!currentUnidad || !currentCategory) return false;
+
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups) return false;
+
+            const groupNames = Object.keys(unidadData.groups);
+            const currentIndex = groupNames.indexOf(currentCategory);
+
+            return currentIndex >= 0 && currentIndex < groupNames.length - 1;
         }
 
         // ═══════════════════════════════════════════════════════════════

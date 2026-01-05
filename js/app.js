@@ -1846,10 +1846,9 @@ if (
             const currentIndex = groupNames.indexOf(currentCategory);
 
             if (currentIndex >= 0 && currentIndex < groupNames.length - 1) {
-                // Есть следующая группа - переходим к ней
+                // Есть следующая группа - переходим к её меню
                 const nextGroup = groupNames[currentIndex + 1];
-                currentCategory = nextGroup;
-                startCardMatchingGame();
+                showCategoryMenu(nextGroup);
             }
         }
 

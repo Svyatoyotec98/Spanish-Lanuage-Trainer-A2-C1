@@ -1412,6 +1412,12 @@ if (
             updateCategoryButtons();
             updateUnidadProgressBars();
             updateUnidadUI();
+
+            // Показываем/скрываем кнопку "Следующий тест"
+            const nextTestBtn = document.getElementById('nextTestBtnResults');
+            if (nextTestBtn) {
+                nextTestBtn.style.display = hasNextTest() ? 'inline-block' : 'none';
+            }
         }
 
         function retryTest() {

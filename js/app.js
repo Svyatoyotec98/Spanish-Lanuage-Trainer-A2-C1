@@ -869,7 +869,6 @@ function showProfileSelect() {
                 card.innerHTML = `
                     <div class="category-header">
                         <span class="category-title">${displayName}</span>
-                        <span class="category-icon">📝 ${wordsCount} слов</span>
                     </div>
                     <div class="progress-bar-container">
                         <div class="progress-bar-fill" style="width: ${progress}%"></div>
@@ -950,9 +949,7 @@ function showProfileSelect() {
 
             // Динамический заголовок для группы
             const displayName = category.replace(/_/g, ' ');
-            const wordsCount = groupSize;
-            const title = `${displayName} (${wordsCount} слов)`;
-            document.getElementById('categoryTitle').textContent = title;
+            document.getElementById('categoryTitle').textContent = displayName;
 
             updateCategoryButtons();
 			saveNavigationState('categoryMenu');

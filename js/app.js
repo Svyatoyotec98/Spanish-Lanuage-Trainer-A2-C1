@@ -354,7 +354,8 @@
              'verbMenu', 'verbPracticeScreen', 'qaScreen',
 			 'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
              'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
-             'examScreen', 'examResultsScreen', 'miniDictionaryScreen'].forEach(id => {
+             'examScreen', 'examResultsScreen', 'miniDictionaryScreen',
+             'exercisePreviewMenu', 'grammarRuleScreen'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');
             });
         }
@@ -3082,7 +3083,8 @@ function hideAllScreens() {
         'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
         'cardMatchingScreen', 'cardMatchingResultsScreen',
         'examScreen', 'examResultsScreen',
-        'miniDictionaryScreen'
+        'miniDictionaryScreen',
+        'exercisePreviewMenu', 'grammarRuleScreen'
     ];
     screens.forEach(id => {
         const el = document.getElementById(id);
@@ -3355,7 +3357,7 @@ function renderGramaticaExercises() {
         const card = document.createElement('div');
         card.className = 'category-card';
         card.style.cursor = 'pointer';
-        card.onclick = () => startGramExercise(exercise);
+        card.onclick = () => showExercisePreview(exercise);
 
         card.innerHTML = `
             <div class="category-header">
@@ -3369,6 +3371,166 @@ function renderGramaticaExercises() {
 
         container.appendChild(card);
     });
+}
+
+// ═══════════════════════════════════════════════════════════════
+// EXERCISE PREVIEW & GRAMMAR RULE FUNCTIONS
+// ═══════════════════════════════════════════════════════════════
+
+// Переменная для хранения текущего упражнения при просмотре
+let currentExerciseForPreview = null;
+
+// Показать промежуточный экран упражнения (аналог showGroupPreview для Palabras)
+function showExercisePreview(exercise) {
+    if (!currentUnidad) {
+        console.error('showExercisePreview called without currentUnidad');
+        return;
+    }
+    currentExerciseForPreview = exercise;
+
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('exercisePreviewMenu').classList.remove('hidden');
+
+    // Заголовок
+    document.getElementById('exercisePreviewTitle').textContent = exercise.title;
+
+    // Прогресс упражнения
+    const profile = getActiveProfile();
+    ensureProgressSkeleton(profile);
+    const score = profile.progress[currentUnidad].ejercicios[exercise.id] || 0;
+    document.getElementById('exercise-preview-progress-text').textContent = score;
+
+    saveNavigationState('exercisePreviewMenu');
+}
+
+// Показать грамматическое правило (аналог showMiniDictionary для Palabras)
+function showGrammarRule() {
+    if (!currentExerciseForPreview) {
+        console.error('showGrammarRule: no exercise selected');
+        return;
+    }
+
+    const exercise = currentExerciseForPreview;
+    const rule = exercise.rule;
+
+    if (!rule) {
+        alert('Правило для этого упражнения ещё не добавлено.');
+        return;
+    }
+
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('grammarRuleScreen').classList.remove('hidden');
+
+    // Заголовок
+    document.getElementById('grammarRuleTitle').textContent = `📖 ${rule.title}`;
+    document.getElementById('grammarRuleSubtitle').textContent = exercise.title;
+
+    // Контейнер с правилом
+    const container = document.getElementById('grammarRuleContainer');
+
+    let html = '';
+
+    // Основное объяснение
+    html += `
+        <div style="
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        ">
+            <p style="color: #2c3e50; font-size: 1.1em; line-height: 1.6; margin: 0;">${rule.explanation}</p>
+        </div>
+    `;
+
+    // Секции (если есть)
+    if (rule.sections && rule.sections.length > 0) {
+        rule.sections.forEach(section => {
+            html += `
+                <div style="
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 12px;
+                    padding: 20px;
+                    margin-bottom: 15px;
+                ">
+                    <h3 style="color: #667eea; margin: 0 0 12px 0; font-size: 1.2em;">${section.subtitle}</h3>
+                    <ul style="margin: 0; padding-left: 20px;">
+                        ${section.points.map(point => `
+                            <li style="color: #2c3e50; font-size: 1em; line-height: 1.8; margin-bottom: 5px;">${point}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
+        });
+    }
+
+    // Таблица (если есть)
+    if (rule.table) {
+        html += `
+            <div style="
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                margin-bottom: 15px;
+                overflow-x: auto;
+            ">
+                ${rule.table}
+            </div>
+        `;
+    }
+
+    // Примеры
+    if (rule.examples && rule.examples.length > 0) {
+        html += `
+            <div style="
+                background: rgba(39, 174, 96, 0.2);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(39, 174, 96, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                margin-bottom: 15px;
+            ">
+                <h3 style="color: #27ae60; margin: 0 0 15px 0; font-size: 1.2em;">📝 Примеры</h3>
+                ${rule.examples.map(ex => `
+                    <div style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(39, 174, 96, 0.2);">
+                        <div style="color: #2c3e50; font-size: 1.05em; font-weight: 600;">${ex.es}</div>
+                        <div style="color: #fff; font-size: 0.95em; font-style: italic; margin-top: 4px;">${ex.ru}</div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    container.innerHTML = html;
+
+    saveNavigationState('grammarRuleScreen');
+}
+
+// Вернуться к промежуточному экрану упражнения
+function backToExercisePreview() {
+    if (currentExerciseForPreview) {
+        showExercisePreview(currentExerciseForPreview);
+    } else {
+        showGramaticaMenu();
+    }
+}
+
+// Перейти к тесту (запустить упражнение)
+function proceedToExercise() {
+    if (currentExerciseForPreview) {
+        startGramExercise(currentExerciseForPreview);
+    }
 }
 
 // Pagination functions

@@ -757,6 +757,42 @@
       "id": "ejercicio_1",
       "title": "Preposiciones: con, en, entre",
       "hint": "con / en / entre",
+      "rule": {
+        "title": "Предлоги CON, EN, ENTRE",
+        "explanation": "Эти три предлога часто путают, но у каждого своя чёткая функция. CON указывает на сопровождение (с кем делаешь действие) или инструмент (чем/с помощью чего). EN обозначает место (где находишься или происходит действие) или время (когда). ENTRE используется для обозначения положения между двумя или более объектами, а также для отношений между людьми.",
+        "sections": [
+          {
+            "subtitle": "CON — сопровождение, инструмент",
+            "points": [
+              "С кем делаешь действие: Vivo <b>con</b> mi familia — Живу с семьёй",
+              "Чем/каким инструментом: Escribo <b>con</b> bolígrafo — Пишу ручкой",
+              "Характеристика: Un café <b>con</b> leche — Кофе с молоком"
+            ]
+          },
+          {
+            "subtitle": "EN — место, время",
+            "points": [
+              "Где (место): Estudio <b>en</b> la universidad — Учусь в университете",
+              "Где (внутри): El libro está <b>en</b> la mesa — Книга на столе",
+              "Когда (время): <b>En</b> verano viajo mucho — Летом много путешествую"
+            ]
+          },
+          {
+            "subtitle": "ENTRE — между",
+            "points": [
+              "Между объектами: <b>Entre</b> la mesa y la silla — Между столом и стулом",
+              "Между людьми: <b>Entre</b> nosotros no hay secretos — Между нами нет секретов",
+              "Временной промежуток: <b>Entre</b> las 9 y las 11 — Между 9 и 11 часами"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Trabajo con mi hermano en una oficina.", "ru": "Я работаю с братом в офисе."},
+          {"es": "Vivo en Madrid con mi familia.", "ru": "Я живу в Мадриде с семьёй."},
+          {"es": "La diferencia entre español y portugués no es grande.", "ru": "Разница между испанским и португальским небольшая."},
+          {"es": "Entre tú y yo, esto es un secreto.", "ru": "Между нами, это секрет."}
+        ]
+      },
       "questions": [
         {"sentence": "Estudio español ___ una academia de idiomas.", "answer": "en"},
         {"sentence": "Me gusta practicar ___ mis compañeros de clase.", "answer": "con"},

@@ -1001,8 +1001,8 @@ function showProfileSelect() {
                 ">
                     <!-- Word header -->
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.2);">
-                        <span style="color: #fff; font-size: 1.1em; font-style: italic;">${word.ru}</span>
                         <span style="font-weight: 700; color: #2c3e50; font-size: 1.3em;">${word.spanish}</span>
+                        <span style="color: #fff; font-size: 1.1em; font-style: italic;">${word.ru}</span>
                     </div>
                     <!-- Sentences -->
                     ${sentences.length > 0 ? `
@@ -3357,21 +3357,14 @@ function renderGramaticaExercises() {
         card.style.cursor = 'pointer';
         card.onclick = () => startGramExercise(exercise);
 
-        let progressColor = '#3498db';
-        if (isPassed) progressColor = '#27ae60';
-        else if (score > 0) progressColor = '#f39c12';
-
         card.innerHTML = `
             <div class="category-header">
-                <span class="category-title">${isPassed ? '✅' : '📝'} ${exercise.title}</span>
-                <span class="category-icon">${score}%</span>
+                <span class="category-title">${exercise.title}</span>
             </div>
             <div class="progress-bar-container">
-                <div class="progress-bar-fill" style="width: ${score}%; background: ${progressColor};"></div>
+                <div class="progress-bar-fill" style="width: ${score}%; background: #27ae60;"></div>
             </div>
-            <p class="progress-text" style="font-size: 0.85em; color: ${isPassed ? '#27ae60' : '#7f8c8d'};">
-                ${isPassed ? 'Пройдено!' : score > 0 ? 'Требуется 80% для прохождения' : '15 вопросов • Нажмите для начала'}
-            </p>
+            <p class="progress-text">${score}%</p>
         `;
 
         container.appendChild(card);

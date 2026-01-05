@@ -833,11 +833,8 @@
            GRAMMAR REFERENCE STYLES - Warm & Cozy Theme
            ═══════════════════════════════════════════════════════════════ */
 
-        /* Grammar screens get a warm cream background */
-        #grammarListScreen .container,
-        #grammarDetailScreen .container {
-            background: #FFFBF5 !important;
-        }
+        /* Grammar screens - inherit glassmorphism from .container */
+        /* Background override removed for consistency */
 
         #grammarListScreen h1,
         #grammarDetailScreen h1 {
@@ -853,10 +850,12 @@
             margin-bottom: 30px;
         }
 
-        /* Grammar rule cards - warm beige tones */
+        /* Grammar rule cards - glassmorphism */
         #grammarRulesContainer .category-card {
-            background: linear-gradient(135deg, #FFF8E7 0%, #FFEFD5 100%);
-            border: 2px solid #FFD89C;
+            background: rgba(255, 248, 231, 0.25);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 216, 156, 0.4);
             border-radius: 15px;
             padding: 25px;
             margin: 15px 0;
@@ -867,8 +866,8 @@
         #grammarRulesContainer .category-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(139, 105, 20, 0.2);
-            border-color: #FFC04D;
-            background: linear-gradient(135deg, #FFFAF0 0%, #FFE4B5 100%);
+            border-color: rgba(255, 192, 77, 0.6);
+            background: rgba(255, 248, 231, 0.35);
         }
 
         #grammarRulesContainer .category-title {

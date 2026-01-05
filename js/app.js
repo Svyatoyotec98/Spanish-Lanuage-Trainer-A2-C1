@@ -1994,11 +1994,11 @@ if (
                     };
                 });
 
-                // Fill grammar progress if exists
-                const unidadData = vocabularyData[unidad];
-                if (unidadData && unidadData.gramatica) {
-                    unidadData.gramatica.forEach(exercise => {
-                        profile.progress[unidad].gramatica[exercise.id] = 80;
+                // Fill grammar progress - set ALL existing exercise IDs to 80%
+                // Iterate through all keys in gramatica that are already in progress
+                if (profile.progress[unidad].gramatica) {
+                    Object.keys(profile.progress[unidad].gramatica).forEach(exerciseId => {
+                        profile.progress[unidad].gramatica[exerciseId] = 80;
                     });
                 }
             });

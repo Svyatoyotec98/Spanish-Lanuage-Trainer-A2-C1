@@ -1850,7 +1850,7 @@ if (
                     percentage >= 80 ? '#27ae60' : percentage >= 60 ? '#f39c12' : '#e74c3c';
 
                 document.getElementById('cardMatchingBreakdown').innerHTML = `
-                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                    <div style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); padding: 20px; border-radius: 10px;">
                         <h3 style="margin-top: 0; color: #333;">📊 Результат:</h3>
                         <p style="color: #27ae60; margin: 10px 0;">
                             ✓ Правильно: <strong>${correctMatches}</strong> из ${totalPairs}

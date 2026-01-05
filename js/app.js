@@ -2229,14 +2229,11 @@ async function getNavigationState() {
                         const randomIndex = Math.floor(Math.random() * word.hardSentences.length);
                         const sentence = word.hardSentences[randomIndex];
 
-                        // Заменяем ___ на подсказку: "___ (русский перевод)"
-                        const sentenceWithHint = sentence.replace('___', `___ (${word.ru})`);
-
                         palabrasQuestions.push({
                             type: 'palabra',
                             group: groupName,
                             unidad: currentUnidad,
-                            sentence: sentenceWithHint,
+                            sentence: sentence,
                             correctAnswer: word.spanish,
                             ru: word.ru
                         });

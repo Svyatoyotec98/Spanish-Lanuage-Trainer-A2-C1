@@ -126,7 +126,10 @@
         }
 
         .btn-grammar {
-            background: #f4c430;
+            background: rgba(244, 196, 48, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             color: #333;
             width: auto;
             padding: 24px 22px;
@@ -138,7 +141,7 @@
         }
 
         .btn-grammar:hover {
-            background: #ffd700;
+            background: rgba(244, 196, 48, 0.6);
             box-shadow: 0 5px 20px rgba(244, 196, 48, 0.4);
         }
 
@@ -487,9 +490,11 @@
         }
 
         .switch-profile-btn {
-            background: #95a5a6;
+            background: rgba(149, 165, 166, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             color: white;
-            border: none;
             padding: 8px 15px;
             border-radius: 8px;
             cursor: pointer;
@@ -498,7 +503,7 @@
         }
 
         .switch-profile-btn:hover {
-            background: #7f8c8d;
+            background: rgba(149, 165, 166, 0.6);
             transform: scale(1.05);
         }
 

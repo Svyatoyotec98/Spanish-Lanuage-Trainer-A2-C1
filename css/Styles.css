@@ -212,12 +212,12 @@
             align-content: flex-start;
         }
 
-        /* Vocabulary card - glassmorphism */
+        /* Vocabulary card - glassmorphism transparent */
         .vocabulary-card {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 12px;
             padding: 12px 8px;
             width: 90px;
@@ -233,12 +233,13 @@
 
         .vocabulary-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+            background: rgba(255, 255, 255, 0.25);
         }
 
         .vocabulary-card .card-icon {
             font-size: 24px;
-            color: #667eea;
+            color: #fff;
         }
 
         .vocabulary-card .card-spanish {
@@ -251,7 +252,7 @@
 
         .vocabulary-card .card-russian {
             font-size: 0.75em;
-            color: #7f8c8d;
+            color: #fff;
             text-align: center;
             line-height: 1.2;
         }

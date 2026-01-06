@@ -1841,17 +1841,19 @@ if (
                                 class="hard-test-input"
                                 data-index="${globalIdx}"
                                 value="${savedAnswer}"
-                                placeholder="..."
+                                placeholder="···"
                                 oninput="saveHardTestAnswer(${globalIdx}, this.value)"
                                 style="
-                                    width: 140px;
-                                    padding: 8px 12px;
-                                    border: 2px solid rgba(102, 126, 234, 0.5);
-                                    border-radius: 8px;
+                                    width: 120px;
+                                    padding: 4px 8px;
+                                    border: none;
+                                    border-bottom: 2px dashed rgba(102, 126, 234, 0.6);
+                                    border-radius: 0;
                                     font-size: 1em;
                                     text-align: center;
-                                    background: rgba(255, 255, 255, 0.9);
+                                    background: transparent;
                                     color: #2c3e50;
+                                    outline: none;
                                 "
                             />
                             <span>${afterBlank}</span>

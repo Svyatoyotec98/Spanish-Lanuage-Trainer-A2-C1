@@ -1753,12 +1753,22 @@ if (
             const shuffled = shuffleArray(words);
 
             // Формируем массив вопросов из предложений
-            hardTestQuestions = shuffled.map((word, index) => ({
-                index: index,
-                word: word,
-                sentence: word.sentence || `___ (${word.ru})`, // fallback если нет предложения
-                answer: word.spanish.toLowerCase().trim()
-            }));
+            hardTestQuestions = shuffled.map((word, index) => {
+                // Выбираем случайное предложение из hardSentences
+                let sentence = `___ (${word.ru})`; // fallback
+                if (word.hardSentences && word.hardSentences.length > 0) {
+                    const randomIdx = Math.floor(Math.random() * word.hardSentences.length);
+                    sentence = word.hardSentences[randomIdx];
+                }
+
+                return {
+                    index: index,
+                    word: word,
+                    sentence: sentence,
+                    answer: word.spanish.toLowerCase().trim(),
+                    hint: word.ru // подсказка - русский перевод
+                };
+            });
 
             // Вычисляем количество страниц
             hardTestTotalPages = Math.ceil(hardTestQuestions.length / HARD_TEST_PER_PAGE);
@@ -1845,6 +1855,12 @@ if (
                                 "
                             />
                             <span>${afterBlank}</span>
+                            <span style="
+                                color: rgba(255, 255, 255, 0.7);
+                                font-size: 0.85em;
+                                font-style: italic;
+                                margin-left: 10px;
+                            ">(${q.hint})</span>
                         </div>
                     </div>
                 `;

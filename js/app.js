@@ -714,6 +714,18 @@ function showProfileSelect() {
         let examTimeLeft = EXAM_TIMER_DURATION; // оставшееся время на текущий вопрос
         let examStartTime = null; // время начала экзамена (для статистики)
 
+        // ═══════════════════════════════════════════════════════════════
+        // HARD TEST ALL QUESTIONS MODE (для групп > 10 слов)
+        // ═══════════════════════════════════════════════════════════════
+        const HARD_TEST_PER_PAGE = 5; // вопросов на страницу
+        const HARD_TEST_TIME_PER_QUESTION = 20; // секунд на вопрос
+        let hardTestQuestions = []; // массив всех вопросов {word, sentence, answer}
+        let hardTestAnswers = {}; // ответы пользователя {0: "palabra", 1: "cosa", ...}
+        let hardTestCurrentPage = 0; // текущая страница (0-indexed)
+        let hardTestTotalPages = 0; // всего страниц
+        let hardTestTimerInterval = null; // интервал таймера
+        let hardTestTimeLeft = 0; // оставшееся время в секундах
+
         // Словарь загружается из JSON файлов при инициализации
         const vocabularyData = {};
 
@@ -1416,6 +1428,14 @@ if (
                 return;
             }
 
+            // ═══════════════════════════════════════════════════════════════
+            // HARD TEST для групп > 10 слов — новый формат (все вопросы на экране)
+            // ═══════════════════════════════════════════════════════════════
+            if (level === 'hard' && words.length > 10) {
+                startHardTestAllQuestions(words);
+                return;
+            }
+
             // Используем ВСЕ слова из группы
             const count = words.length;
 
@@ -1714,6 +1734,202 @@ if (
             stopTimer();
             currentQuestionIndex++;
             showQuestion();
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // HARD TEST ALL QUESTIONS MODE (для групп > 10 слов)
+        // ═══════════════════════════════════════════════════════════════
+
+        /**
+         * Запуск нового формата hard-теста для групп > 10 слов
+         * @param {Array} words - массив слов из группы
+         */
+        function startHardTestAllQuestions(words) {
+            // Сброс состояния
+            hardTestAnswers = {};
+            hardTestCurrentPage = 0;
+
+            // Перемешиваем слова
+            const shuffled = shuffleArray(words);
+
+            // Формируем массив вопросов из предложений
+            hardTestQuestions = shuffled.map((word, index) => ({
+                index: index,
+                word: word,
+                sentence: word.sentence || `___ (${word.ru})`, // fallback если нет предложения
+                answer: word.spanish.toLowerCase().trim()
+            }));
+
+            // Вычисляем количество страниц
+            hardTestTotalPages = Math.ceil(hardTestQuestions.length / HARD_TEST_PER_PAGE);
+
+            // Показываем экран
+            hideAll();
+            showUserBadge();
+            document.getElementById('hardTestAllQuestionsScreen').classList.remove('hidden');
+
+            // Устанавливаем заголовок группы
+            document.getElementById('hardTestGroupTitle').textContent = currentCategory;
+
+            // Рендерим первую страницу
+            renderHardTestPage();
+
+            // Обновляем индикаторы
+            updateHardTestPageIndicator();
+        }
+
+        /**
+         * Рендер текущей страницы вопросов
+         */
+        function renderHardTestPage() {
+            const container = document.getElementById('hardTestQuestionsContainer');
+            const startIdx = hardTestCurrentPage * HARD_TEST_PER_PAGE;
+            const endIdx = Math.min(startIdx + HARD_TEST_PER_PAGE, hardTestQuestions.length);
+            const pageQuestions = hardTestQuestions.slice(startIdx, endIdx);
+
+            let html = '';
+
+            pageQuestions.forEach((q, localIdx) => {
+                const globalIdx = startIdx + localIdx;
+                const savedAnswer = hardTestAnswers[globalIdx] || '';
+
+                // Заменяем ___ на input
+                const sentenceParts = q.sentence.split('___');
+                const beforeBlank = sentenceParts[0] || '';
+                const afterBlank = sentenceParts[1] || '';
+
+                html += `
+                    <div class="hard-test-question-item" style="
+                        background: rgba(255, 255, 255, 0.15);
+                        backdrop-filter: blur(10px);
+                        -webkit-backdrop-filter: blur(10px);
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+                        border-radius: 12px;
+                        padding: 18px 20px;
+                    ">
+                        <div style="
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            gap: 8px;
+                            font-size: 1.2em;
+                            color: #2c3e50;
+                            line-height: 1.8;
+                        ">
+                            <span style="
+                                background: rgba(102, 126, 234, 0.3);
+                                color: #667eea;
+                                font-weight: bold;
+                                padding: 2px 10px;
+                                border-radius: 50%;
+                                font-size: 0.9em;
+                                margin-right: 5px;
+                            ">${globalIdx + 1}</span>
+                            <span>${beforeBlank}</span>
+                            <input
+                                type="text"
+                                class="hard-test-input"
+                                data-index="${globalIdx}"
+                                value="${savedAnswer}"
+                                placeholder="..."
+                                oninput="saveHardTestAnswer(${globalIdx}, this.value)"
+                                style="
+                                    width: 140px;
+                                    padding: 8px 12px;
+                                    border: 2px solid rgba(102, 126, 234, 0.5);
+                                    border-radius: 8px;
+                                    font-size: 1em;
+                                    text-align: center;
+                                    background: rgba(255, 255, 255, 0.9);
+                                    color: #2c3e50;
+                                "
+                            />
+                            <span>${afterBlank}</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+
+            // Фокус на первый пустой input
+            const inputs = container.querySelectorAll('.hard-test-input');
+            for (let input of inputs) {
+                if (!input.value) {
+                    input.focus();
+                    break;
+                }
+            }
+        }
+
+        /**
+         * Сохранение ответа пользователя
+         */
+        function saveHardTestAnswer(index, value) {
+            hardTestAnswers[index] = value.trim();
+        }
+
+        /**
+         * Обновление индикатора страницы
+         */
+        function updateHardTestPageIndicator() {
+            const indicator = document.getElementById('hardTestPageIndicator');
+            const pageNumbers = document.getElementById('hardTestPageNumbers');
+            const prevBtn = document.getElementById('hardTestPrevBtn');
+            const nextBtn = document.getElementById('hardTestNextBtn');
+
+            indicator.textContent = `Страница ${hardTestCurrentPage + 1} из ${hardTestTotalPages}`;
+            pageNumbers.textContent = `${hardTestCurrentPage + 1} / ${hardTestTotalPages}`;
+
+            // Управление кнопками навигации
+            prevBtn.disabled = hardTestCurrentPage === 0;
+            prevBtn.style.opacity = hardTestCurrentPage === 0 ? '0.5' : '1';
+
+            nextBtn.disabled = hardTestCurrentPage === hardTestTotalPages - 1;
+            nextBtn.style.opacity = hardTestCurrentPage === hardTestTotalPages - 1 ? '0.5' : '1';
+        }
+
+        /**
+         * Переход на предыдущую страницу
+         */
+        function hardTestPrevPage() {
+            if (hardTestCurrentPage > 0) {
+                hardTestCurrentPage--;
+                renderHardTestPage();
+                updateHardTestPageIndicator();
+            }
+        }
+
+        /**
+         * Переход на следующую страницу
+         */
+        function hardTestNextPage() {
+            if (hardTestCurrentPage < hardTestTotalPages - 1) {
+                hardTestCurrentPage++;
+                renderHardTestPage();
+                updateHardTestPageIndicator();
+            }
+        }
+
+        /**
+         * Выход из hard-теста
+         */
+        function exitHardTest() {
+            if (confirm('Выйти из теста? Прогресс не будет сохранён.')) {
+                // Останавливаем таймер если есть
+                if (hardTestTimerInterval) {
+                    clearInterval(hardTestTimerInterval);
+                    hardTestTimerInterval = null;
+                }
+                showCategoryMenu(currentCategory);
+            }
+        }
+
+        /**
+         * Заглушка для submit (будет реализована в Фазе 5)
+         */
+        function hardTestSubmit() {
+            alert('Функция проверки будет добавлена в следующей фазе');
         }
 
         // ═══════════════════════════════════════════════════════════════

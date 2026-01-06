@@ -257,6 +257,17 @@
             line-height: 1.2;
         }
 
+        /* Locked vocabulary card */
+        .vocabulary-card.locked {
+            opacity: 0.6;
+        }
+
+        .vocabulary-card.locked .card-spanish,
+        .vocabulary-card.locked .card-russian {
+            color: rgba(255, 255, 255, 0.5);
+            font-style: italic;
+        }
+
         /* Back button in vocabulary */
         .vocabulary-footer {
             background: rgba(255, 255, 255, 0.15);

@@ -3885,6 +3885,18 @@ function showMasGramatica() {
     renderGrammarList();
 }
 
+// Check if a vocabulary group is unlocked (any difficulty >= 80%)
+function isGroupUnlocked(unidadId, groupName) {
+    const profile = getActiveProfile();
+    if (!profile || !profile.progress) return false;
+
+    const groupProgress = profile.progress[unidadId]?.[groupName];
+    if (!groupProgress) return false;
+
+    // Check if any difficulty level has >= 80%
+    return (groupProgress.easy >= 80 || groupProgress.medium >= 80 || groupProgress.hard >= 80);
+}
+
 // Show Vocabulario - Full screen overlay with all words in grid
 function showVocabularyScreen() {
     hideAllScreens();
@@ -3892,12 +3904,15 @@ function showVocabularyScreen() {
 
     // Collect all words from all Unidads with icon info
     const allWords = [];
+    let unlockedCount = 0;
 
     Object.keys(vocabularyData).forEach(unidadId => {
         const unidadData = vocabularyData[unidadId];
         if (unidadData && unidadData.groups) {
             Object.keys(unidadData.groups).forEach(groupName => {
                 const words = unidadData.groups[groupName];
+                const isUnlocked = isGroupUnlocked(unidadId, groupName);
+
                 if (Array.isArray(words)) {
                     words.forEach(word => {
                         allWords.push({
@@ -3905,8 +3920,10 @@ function showVocabularyScreen() {
                             ru: word.ru,
                             icon: word.icon || 'book-open',
                             unidad: unidadId,
-                            group: groupName
+                            group: groupName,
+                            unlocked: isUnlocked
                         });
+                        if (isUnlocked) unlockedCount++;
                     });
                 }
             });
@@ -3920,8 +3937,8 @@ function showVocabularyScreen() {
         return wordA.localeCompare(wordB, 'es');
     });
 
-    // Update word count
-    document.getElementById('vocabularyWordCount').textContent = `${allWords.length} слов`;
+    // Update word count with unlocked info
+    document.getElementById('vocabularyWordCount').textContent = `${unlockedCount} / ${allWords.length} слов`;
 
     // Render all words in grid layout
     const container = document.getElementById('vocabularyWordsContainer');
@@ -3938,15 +3955,19 @@ function showVocabularyScreen() {
 
     allWords.forEach(word => {
         const wordCard = document.createElement('div');
-        wordCard.className = 'vocabulary-card';
+        wordCard.className = 'vocabulary-card' + (word.unlocked ? '' : ' locked');
 
-        // Use Phosphor icon
-        const iconHtml = `<i class="ph ph-${word.icon}" style="font-size: 28px; color: #667eea;"></i>`;
+        // Use Phosphor icon (always visible)
+        const iconHtml = `<i class="ph ph-${word.icon}" style="font-size: 28px; color: ${word.unlocked ? '#fff' : 'rgba(255,255,255,0.5)' };"></i>`;
+
+        // Show "???" for locked words
+        const spanishText = word.unlocked ? word.spanish : '???';
+        const russianText = word.unlocked ? word.ru : '???';
 
         wordCard.innerHTML = `
             <div class="card-icon">${iconHtml}</div>
-            <div class="card-spanish">${word.spanish}</div>
-            <div class="card-russian">${word.ru}</div>
+            <div class="card-spanish">${spanishText}</div>
+            <div class="card-russian">${russianText}</div>
         `;
 
         gridWrapper.appendChild(wordCard);

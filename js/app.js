@@ -947,10 +947,41 @@ function showProfileSelect() {
             const progress = calculateCategoryProgress(currentUnidad, category);
             document.getElementById('group-preview-progress-text').textContent = progress;
 
+            // ═══════════════════════════════════════════════════════════════
+            // БЛОКИРОВКА КНОПКИ ТЕСТА: если словарь не просмотрен
+            // ═══════════════════════════════════════════════════════════════
+            const wordsViewed = isWordsViewed(currentUnidad, category);
+            const testBtn = document.getElementById('groupTestBtn');
+            const testBtnLabel = document.getElementById('groupTestBtnLabel');
+            const testHint = document.getElementById('groupTestHint');
+
+            if (wordsViewed) {
+                // Разблокировано
+                testBtn.disabled = false;
+                testBtn.style.opacity = '1';
+                testBtn.style.cursor = 'pointer';
+                testBtn.style.borderColor = '#27ae60';
+                testBtnLabel.innerHTML = 'Пройти<br>тест';
+                testHint.classList.add('hidden');
+            } else {
+                // Заблокировано
+                testBtn.disabled = true;
+                testBtn.style.opacity = '0.5';
+                testBtn.style.cursor = 'not-allowed';
+                testBtn.style.borderColor = '#95a5a6';
+                testBtnLabel.innerHTML = '🔒 Пройти<br>тест';
+                testHint.classList.remove('hidden');
+            }
+
             saveNavigationState('groupPreviewMenu');
         }
 
         function proceedToTest() {
+            // Проверяем, просмотрен ли словарь
+            if (!isWordsViewed(currentUnidad, currentCategory)) {
+                alert('Сначала просмотрите словарь до конца!');
+                return;
+            }
             // Вызывает старую логику showCategoryMenu
             // которая проверяет размер группы и решает: Card Matching или меню уровней
             showCategoryMenu(currentCategory);
@@ -1025,7 +1056,90 @@ function showProfileSelect() {
                 </div>
             `}).join('');
 
+            // ═══════════════════════════════════════════════════════════════
+            // SCROLL TRACKING: Отслеживаем просмотр до конца словаря
+            // ═══════════════════════════════════════════════════════════════
+            const alreadyViewed = isWordsViewed(currentUnidad, currentCategory);
+
+            // Добавляем кнопку "Перейти к тесту" (скрытую изначально если не просмотрено)
+            const goToTestBtnHtml = `
+                <div id="miniDictGoToTestBlock" style="
+                    display: ${alreadyViewed ? 'block' : 'none'};
+                    background: rgba(39, 174, 96, 0.3);
+                    border: 1px solid rgba(39, 174, 96, 0.5);
+                    border-radius: 12px;
+                    padding: 20px;
+                    text-align: center;
+                    margin-top: 15px;
+                ">
+                    <span style="font-size: 2em;">✅</span>
+                    <p style="color: #27ae60; font-weight: 600; margin: 10px 0; font-size: 1.1em;">
+                        Словарь просмотрен!
+                    </p>
+                    <button class="btn btn-success" onclick="goToTestFromDictionary()" style="
+                        background: linear-gradient(135deg, #27ae60, #2ecc71);
+                        color: white;
+                        border: none;
+                        padding: 12px 30px;
+                        border-radius: 10px;
+                        font-size: 1.1em;
+                        font-weight: 600;
+                        cursor: pointer;
+                        margin-top: 10px;
+                    ">
+                        Перейти к тесту →
+                    </button>
+                </div>
+            `;
+            container.innerHTML += goToTestBtnHtml;
+
+            // Обработчик скролла
+            if (!alreadyViewed) {
+                container.addEventListener('scroll', handleDictionaryScroll);
+            }
+
             saveNavigationState('miniDictionaryScreen');
+        }
+
+        // Обработчик скролла в словаре
+        function handleDictionaryScroll() {
+            const container = document.getElementById('miniDictWordsContainer');
+            if (!container) return;
+
+            // Проверяем, долистали ли до конца (с небольшим запасом в 50px)
+            const isAtBottom = container.scrollHeight - container.scrollTop - container.clientHeight < 50;
+
+            if (isAtBottom && currentUnidad && currentCategory) {
+                // Сохраняем флаг и показываем кнопку
+                saveWordsViewed(currentUnidad, currentCategory);
+
+                const goToTestBlock = document.getElementById('miniDictGoToTestBlock');
+                if (goToTestBlock) {
+                    goToTestBlock.style.display = 'block';
+                    // Плавно прокрутим к блоку
+                    goToTestBlock.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                // Убираем обработчик, т.к. уже просмотрено
+                container.removeEventListener('scroll', handleDictionaryScroll);
+            }
+        }
+
+        // Перейти к тесту из словаря
+        function goToTestFromDictionary() {
+            if (!currentUnidad || !currentCategory) return;
+
+            // Проверяем размер группы
+            const unidadData = vocabularyData[currentUnidad];
+            const groupSize = unidadData?.groups?.[currentCategory]?.length || 0;
+
+            if (groupSize < 10) {
+                // Маленькая группа - сразу Card Matching
+                startCardMatchingGame();
+            } else {
+                // Большая группа - меню выбора уровня
+                showCategoryMenu(currentCategory);
+            }
         }
 
         function backToGroupPreview() {
@@ -3410,6 +3524,32 @@ function showExercisePreview(exercise) {
     const score = profile.progress[currentUnidad].ejercicios[exercise.id] || 0;
     document.getElementById('exercise-preview-progress-text').textContent = score;
 
+    // ═══════════════════════════════════════════════════════════════
+    // БЛОКИРОВКА КНОПКИ ТЕСТА: если микро-тесты не пройдены
+    // ═══════════════════════════════════════════════════════════════
+    const microTestsCompleted = areMicroTestsCompleted(currentUnidad, exercise.id);
+    const testBtn = document.getElementById('exerciseTestBtn');
+    const testBtnLabel = document.getElementById('exerciseTestBtnLabel');
+    const testHint = document.getElementById('exerciseTestHint');
+
+    if (microTestsCompleted) {
+        // Разблокировано
+        testBtn.disabled = false;
+        testBtn.style.opacity = '1';
+        testBtn.style.cursor = 'pointer';
+        testBtn.style.borderColor = '#27ae60';
+        testBtnLabel.innerHTML = 'Пройти<br>тест';
+        testHint.classList.add('hidden');
+    } else {
+        // Заблокировано
+        testBtn.disabled = true;
+        testBtn.style.opacity = '0.5';
+        testBtn.style.cursor = 'not-allowed';
+        testBtn.style.borderColor = '#95a5a6';
+        testBtnLabel.innerHTML = '🔒 Пройти<br>тест';
+        testHint.classList.remove('hidden');
+    }
+
     saveNavigationState('exercisePreviewMenu');
 }
 
@@ -3444,7 +3584,7 @@ function showGrammarRule() {
 
     let html = '';
 
-    // Основное объяснение
+    // Основное объяснение (шрифт увеличен на 35%)
     html += `
         <div style="
             background: rgba(255, 255, 255, 0.2);
@@ -3452,14 +3592,14 @@ function showGrammarRule() {
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 15px;
+            padding: 25px;
+            margin-bottom: 18px;
         ">
-            <p style="color: #2c3e50; font-size: 1.1em; line-height: 1.6; margin: 0;">${rule.explanation}</p>
+            <p style="color: #2c3e50; font-size: 1.49em; line-height: 1.7; margin: 0;">${rule.explanation}</p>
         </div>
     `;
 
-    // Секции (если есть)
+    // Секции (если есть) - шрифт увеличен на 35%
     if (rule.sections && rule.sections.length > 0) {
         rule.sections.forEach(section => {
             html += `
@@ -3469,13 +3609,13 @@ function showGrammarRule() {
                     -webkit-backdrop-filter: blur(10px);
                     border: 1px solid rgba(255, 255, 255, 0.3);
                     border-radius: 12px;
-                    padding: 20px;
-                    margin-bottom: 15px;
+                    padding: 25px;
+                    margin-bottom: 18px;
                 ">
-                    <h3 style="color: #667eea; margin: 0 0 12px 0; font-size: 1.2em;">${section.subtitle}</h3>
-                    <ul style="margin: 0; padding-left: 20px;">
+                    <h3 style="color: #667eea; margin: 0 0 15px 0; font-size: 1.62em;">${section.subtitle}</h3>
+                    <ul style="margin: 0; padding-left: 25px;">
                         ${section.points.map(point => `
-                            <li style="color: #2c3e50; font-size: 1em; line-height: 1.8; margin-bottom: 5px;">${point}</li>
+                            <li style="color: #2c3e50; font-size: 1.35em; line-height: 1.9; margin-bottom: 8px;">${point}</li>
                         `).join('')}
                     </ul>
                 </div>
@@ -3501,7 +3641,7 @@ function showGrammarRule() {
         `;
     }
 
-    // Примеры
+    // Примеры (шрифт увеличен на 35%)
     if (rule.examples && rule.examples.length > 0) {
         html += `
             <div style="
@@ -3510,14 +3650,14 @@ function showGrammarRule() {
                 -webkit-backdrop-filter: blur(10px);
                 border: 1px solid rgba(39, 174, 96, 0.3);
                 border-radius: 12px;
-                padding: 20px;
-                margin-bottom: 15px;
+                padding: 25px;
+                margin-bottom: 18px;
             ">
-                <h3 style="color: #27ae60; margin: 0 0 15px 0; font-size: 1.2em;">📝 Примеры</h3>
+                <h3 style="color: #27ae60; margin: 0 0 18px 0; font-size: 1.62em;">📝 Примеры</h3>
                 ${rule.examples.map(ex => `
-                    <div style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(39, 174, 96, 0.2);">
-                        <div style="color: #2c3e50; font-size: 1.05em; font-weight: 600;">${ex.es}</div>
-                        <div style="color: #fff; font-size: 0.95em; font-style: italic; margin-top: 4px;">${ex.ru}</div>
+                    <div style="margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid rgba(39, 174, 96, 0.2);">
+                        <div style="color: #2c3e50; font-size: 1.42em; font-weight: 600;">${ex.es}</div>
+                        <div style="color: #fff; font-size: 1.28em; font-style: italic; margin-top: 6px;">${ex.ru}</div>
                     </div>
                 `).join('')}
             </div>
@@ -3554,6 +3694,12 @@ function showMicroTestsScreen() {
     showUserBadge();
     document.getElementById('microTestsScreen').classList.remove('hidden');
 
+    // Скрываем кнопку "Перейти к тесту" при загрузке (будет показана если все тесты пройдены)
+    const goToTestBtn = document.getElementById('microTestsGoToTestBtn');
+    if (goToTestBtn) {
+        goToTestBtn.classList.add('hidden');
+    }
+
     // Заголовок
     document.getElementById('microTestsSubtitle').textContent = exercise.title;
     document.getElementById('microTestsTotal').textContent = microTests.length;
@@ -3570,21 +3716,21 @@ function showMicroTestsScreen() {
                 -webkit-backdrop-filter: blur(10px);
                 border: 1px solid rgba(155, 89, 182, 0.3);
                 border-radius: 12px;
-                padding: 15px;
-                margin-bottom: 15px;
+                padding: 20px;
+                margin-bottom: 18px;
             ">
                 <div class="micro-test-sentence" style="
                     color: #2c3e50;
-                    font-size: 1.05em;
-                    margin-bottom: 12px;
-                    line-height: 1.5;
+                    font-size: 1.42em;
+                    margin-bottom: 15px;
+                    line-height: 1.6;
                 ">
                     ${test.sentence.replace('___', '<span class="micro-test-blank">______</span>')}
                 </div>
 
                 <div class="micro-test-input-row" style="
                     display: flex;
-                    gap: 10px;
+                    gap: 12px;
                     align-items: center;
                     flex-wrap: wrap;
                 ">
@@ -3595,23 +3741,23 @@ function showMicroTestsScreen() {
                            autocomplete="off"
                            style="
                                flex: 1;
-                               min-width: 120px;
-                               padding: 10px 15px;
+                               min-width: 140px;
+                               padding: 12px 18px;
                                border: 2px solid rgba(155, 89, 182, 0.4);
                                border-radius: 8px;
-                               font-size: 1em;
+                               font-size: 1.35em;
                                background: rgba(255, 255, 255, 0.9);
                                color: #2c3e50;
                            "
                     />
                     <button class="micro-test-check-btn" data-index="${index}" style="
-                        padding: 10px 20px;
+                        padding: 12px 24px;
                         background: linear-gradient(135deg, #9b59b6, #8e44ad);
                         color: white;
                         border: none;
                         border-radius: 8px;
                         cursor: pointer;
-                        font-size: 0.95em;
+                        font-size: 1.28em;
                         font-weight: 600;
                     ">
                         Проверить
@@ -3620,8 +3766,8 @@ function showMicroTestsScreen() {
 
                 <div class="micro-test-hint" style="
                     color: rgba(255, 255, 255, 0.7);
-                    font-size: 0.85em;
-                    margin-top: 8px;
+                    font-size: 1.15em;
+                    margin-top: 10px;
                     font-style: italic;
                     cursor: pointer;
                 " onclick="this.innerHTML = '💡 ' + '${test.hint}'">
@@ -3787,6 +3933,18 @@ function showAllMicroTestsDone() {
     if (doneBlock) {
         doneBlock.style.display = 'block';
     }
+
+    // Показываем кнопку "Перейти к тесту"
+    const goToTestBtn = document.getElementById('microTestsGoToTestBtn');
+    if (goToTestBtn) {
+        goToTestBtn.classList.remove('hidden');
+    }
+}
+
+// Перейти к тесту из microTestsScreen
+function goToTestFromMicroTests() {
+    if (!currentExerciseForPreview) return;
+    startGramExercise(currentExerciseForPreview);
 }
 
 // Сохранить прогресс микро-тестов
@@ -3863,6 +4021,37 @@ function isRuleViewed(unidadId, exerciseId) {
     return profile.ruleViewed[unidadId]?.[exerciseId] === true;
 }
 
+// ═══════════════════════════════════════════════════════════════
+// WORDS VIEWED (аналогично ruleViewed для Palabras)
+// ═══════════════════════════════════════════════════════════════
+
+// Сохранить, что словарь группы был просмотрен
+function saveWordsViewed(unidadId, groupName) {
+    const profile = getActiveProfile();
+    if (!profile) return;
+
+    if (!profile.wordsViewed) {
+        profile.wordsViewed = {};
+    }
+    if (!profile.wordsViewed[unidadId]) {
+        profile.wordsViewed[unidadId] = {};
+    }
+
+    profile.wordsViewed[unidadId][groupName] = true;
+
+    // Сохраняем в localStorage
+    const state = loadAppState();
+    state.profiles[profile.id] = profile;
+    saveAppState(state);
+}
+
+// Проверить, был ли словарь группы просмотрен
+function isWordsViewed(unidadId, groupName) {
+    const profile = getActiveProfile();
+    if (!profile || !profile.wordsViewed) return false;
+    return profile.wordsViewed[unidadId]?.[groupName] === true;
+}
+
 // Вернуться к промежуточному экрану упражнения
 function backToExercisePreview() {
     if (currentExerciseForPreview) {
@@ -3874,9 +4063,15 @@ function backToExercisePreview() {
 
 // Перейти к тесту (запустить упражнение)
 function proceedToExercise() {
-    if (currentExerciseForPreview) {
-        startGramExercise(currentExerciseForPreview);
+    if (!currentExerciseForPreview) return;
+
+    // Проверяем, пройдены ли микро-тесты
+    if (!areMicroTestsCompleted(currentUnidad, currentExerciseForPreview.id)) {
+        alert('Сначала пройдите все микро-тесты в разделе "Проверь себя"!');
+        return;
     }
+
+    startGramExercise(currentExerciseForPreview);
 }
 
 // Pagination functions
@@ -4489,7 +4684,7 @@ function showGrammarRuleFromRef(exercise) {
 
     let html = '';
 
-    // Основное объяснение
+    // Основное объяснение (шрифт увеличен на 35%)
     html += `
         <div style="
             background: rgba(255, 255, 255, 0.2);
@@ -4497,14 +4692,14 @@ function showGrammarRuleFromRef(exercise) {
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 15px;
+            padding: 25px;
+            margin-bottom: 18px;
         ">
-            <p style="color: #2c3e50; font-size: 1.1em; line-height: 1.6; margin: 0;">${rule.explanation}</p>
+            <p style="color: #2c3e50; font-size: 1.49em; line-height: 1.7; margin: 0;">${rule.explanation}</p>
         </div>
     `;
 
-    // Секции (если есть)
+    // Секции (если есть) - шрифт увеличен на 35%
     if (rule.sections && rule.sections.length > 0) {
         rule.sections.forEach(section => {
             html += `
@@ -4514,13 +4709,13 @@ function showGrammarRuleFromRef(exercise) {
                     -webkit-backdrop-filter: blur(10px);
                     border: 1px solid rgba(255, 255, 255, 0.3);
                     border-radius: 12px;
-                    padding: 20px;
-                    margin-bottom: 15px;
+                    padding: 25px;
+                    margin-bottom: 18px;
                 ">
-                    <h3 style="color: #667eea; margin: 0 0 12px 0; font-size: 1.2em;">${section.subtitle}</h3>
-                    <ul style="margin: 0; padding-left: 20px;">
+                    <h3 style="color: #667eea; margin: 0 0 15px 0; font-size: 1.62em;">${section.subtitle}</h3>
+                    <ul style="margin: 0; padding-left: 25px;">
                         ${section.points.map(point => `
-                            <li style="color: #2c3e50; font-size: 1em; line-height: 1.8; margin-bottom: 5px;">${point}</li>
+                            <li style="color: #2c3e50; font-size: 1.35em; line-height: 1.9; margin-bottom: 8px;">${point}</li>
                         `).join('')}
                     </ul>
                 </div>

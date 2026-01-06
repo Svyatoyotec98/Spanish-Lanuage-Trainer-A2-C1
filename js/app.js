@@ -3795,7 +3795,11 @@ function saveMicroTestProgress(exerciseId, completedIndices) {
     }
 
     profile.microTestsProgress[currentUnidad][exerciseId] = completedIndices;
-    saveProfile(profile);
+
+    // Сохраняем в localStorage
+    const state = loadAppState();
+    state.profiles[profile.id] = profile;
+    saveAppState(state);
 }
 
 // Отметить, что все микро-тесты пройдены (для проверки условия разблокировки)
@@ -3811,7 +3815,11 @@ function saveMicroTestsCompleted(exerciseId) {
     }
 
     profile.microTestsCompleted[currentUnidad][exerciseId] = true;
-    saveProfile(profile);
+
+    // Сохраняем в localStorage
+    const state = loadAppState();
+    state.profiles[profile.id] = profile;
+    saveAppState(state);
 }
 
 // Проверить, пройдены ли все микро-тесты для упражнения
@@ -3834,7 +3842,11 @@ function saveRuleViewed(exerciseId) {
     }
 
     profile.ruleViewed[currentUnidad][exerciseId] = true;
-    saveProfile(profile);
+
+    // Сохраняем в localStorage
+    const state = loadAppState();
+    state.profiles[profile.id] = profile;
+    saveAppState(state);
 }
 
 // Проверить, было ли правило просмотрено

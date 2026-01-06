@@ -4313,14 +4313,13 @@ function showEjerciciosGramatica() {
     showUserBadge();
     document.getElementById('ejerciciosGramaticaRefScreen').classList.remove('hidden');
 
-    // Получим данные упражнений текущего юнита
-    const unidadData = allUnidadesData[currentUnidad];
-    if (!unidadData || !unidadData.ejercicios) {
+    // Используем глобальную переменную gramaticaExercises
+    if (!gramaticaExercises || gramaticaExercises.length === 0) {
         document.getElementById('ejerciciosGramaticaContainer').innerHTML = '<p style="text-align: center; color: #7f8c8d;">Нет упражнений для отображения</p>';
         return;
     }
 
-    const ejercicios = unidadData.ejercicios;
+    const ejercicios = gramaticaExercises;
     const profile = getActiveProfile();
 
     let unlockedCount = 0;
@@ -4399,10 +4398,9 @@ function showEjerciciosGramatica() {
 
 // Показать разблокированное правило из справочника
 function showUnlockedRule(exerciseId) {
-    const unidadData = allUnidadesData[currentUnidad];
-    if (!unidadData || !unidadData.ejercicios) return;
+    if (!gramaticaExercises || gramaticaExercises.length === 0) return;
 
-    const exercise = unidadData.ejercicios.find(ex => ex.id === exerciseId);
+    const exercise = gramaticaExercises.find(ex => ex.id === exerciseId);
     if (!exercise || !exercise.rule) {
         alert('Правило не найдено');
         return;

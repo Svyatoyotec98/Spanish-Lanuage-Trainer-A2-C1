@@ -3173,7 +3173,7 @@ async function getNavigationState() {
 // ═══════════════════════════════════════════════════════════════
 
 const API_URL = 'http://localhost:8000';
-const ENABLE_BACKEND_SYNC = false; // Отключить синхронизацию с бэкендом
+const ENABLE_BACKEND_SYNC = true; // Включить синхронизацию с бэкендом
 
 // Навигация между экранами
 function showStart() {

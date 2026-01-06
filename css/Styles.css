@@ -1282,3 +1282,64 @@
             filter: blur(3px);
         }
 
+/* ============================================= */
+/* Микро-тесты                                   */
+/* ============================================= */
+
+/* Анимация встряхивания для неправильного ответа */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-8px); }
+    40% { transform: translateX(8px); }
+    60% { transform: translateX(-6px); }
+    80% { transform: translateX(6px); }
+}
+
+/* Стили для пропуска в предложении */
+.micro-test-blank {
+    background: rgba(155, 89, 182, 0.3);
+    padding: 2px 10px;
+    border-radius: 4px;
+    border-bottom: 2px dashed #9b59b6;
+    color: #9b59b6;
+    font-weight: 600;
+}
+
+/* Адаптация микро-тестов для мобильных */
+@media (max-width: 480px) {
+    .micro-test-input-row {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+
+    .micro-test-input {
+        min-width: 100% !important;
+        margin-bottom: 8px;
+    }
+
+    .micro-test-check-btn {
+        width: 100%;
+    }
+
+    .micro-test-sentence {
+        font-size: 0.95em !important;
+    }
+}
+
+/* Фокус на input */
+.micro-test-input:focus {
+    outline: none;
+    border-color: #9b59b6 !important;
+    box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.2);
+}
+
+/* Hover эффект для кнопки */
+.micro-test-check-btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(155, 89, 182, 0.4);
+}
+
+.micro-test-check-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+

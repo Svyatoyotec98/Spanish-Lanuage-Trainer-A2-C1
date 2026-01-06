@@ -809,6 +809,23 @@
         {"sentence": "Estamos ___ una situación difícil.", "answer": "en"},
         {"sentence": "Comparto piso ___ dos compañeros.", "answer": "con"},
         {"sentence": "El examen es ___ las 9 y las 11.", "answer": "entre"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Preparo la cena ___ mi madre.",
+          "answer": "con",
+          "hint": "С кем ты готовишь ужин?"
+        },
+        {
+          "sentence": "Los documentos están ___ el cajón.",
+          "answer": "en",
+          "hint": "Где находятся документы?"
+        },
+        {
+          "sentence": "Hay un jardín ___ las dos casas.",
+          "answer": "entre",
+          "hint": "Где расположен сад?"
+        }
       ]
     },
     {
@@ -859,6 +876,18 @@
         {"sentence": "Necesitas pasaporte ___ viajar a España.", "answer": "para"},
         {"sentence": "Me levanto temprano ___ tengo clase a las 8.", "answer": "porque"},
         {"sentence": "Hago ejercicio ___ mantenerme en forma.", "answer": "para"}
+      ],
+      "microTests": [
+        {
+          "sentence": "No voy al gimnasio ___ me duele la espalda.",
+          "answer": "porque",
+          "hint": "Почему ты не идёшь в зал? (причина)"
+        },
+        {
+          "sentence": "Compré flores ___ mi novia.",
+          "answer": "para",
+          "hint": "Для кого ты купил цветы? (цель/адресат)"
+        }
       ]
     },
     {
@@ -942,6 +971,28 @@
         {"sentence": "Nosotros (conocer) ___ bien la ciudad.", "answer": "conocemos"},
         {"sentence": "Tú (venir) ___ a la fiesta?", "answer": "vienes"},
         {"sentence": "Él (decir) ___ siempre la verdad.", "answer": "dice"}
+      ],
+      "microTests": [
+        {
+          "sentence": "María (cantar) ___ muy bien.",
+          "answer": "canta",
+          "hint": "Глагол -AR, 3-е лицо ед.ч."
+        },
+        {
+          "sentence": "Los niños (beber) ___ mucha agua.",
+          "answer": "beben",
+          "hint": "Глагол -ER, 3-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (escribir) ___ cartas a los abuelos.",
+          "answer": "escribimos",
+          "hint": "Глагол -IR, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Yo no (poder) ___ dormir por la noche.",
+          "answer": "puedo",
+          "hint": "Неправильный глагол, 1-е лицо ед.ч."
+        }
       ]
     },
     {
@@ -995,6 +1046,18 @@
         {"sentence": "No como carne ___ 2020.", "answer": "desde"},
         {"sentence": "Aprendo alemán ___ seis meses.", "answer": "desde hace"},
         {"sentence": "Conozco este lugar ___ siempre.", "answer": "desde"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Trabajo en esta empresa ___ marzo.",
+          "answer": "desde",
+          "hint": "С какого месяца? (точка во времени)"
+        },
+        {
+          "sentence": "Estudio francés ___ cuatro años.",
+          "answer": "desde hace",
+          "hint": "Как долго? (период времени)"
+        }
       ]
     },
     {
@@ -1056,6 +1119,23 @@
         {"sentence": "La comida ___ deliciosa.", "answer": "está"},
         {"sentence": "Ellos ___ muy contentos.", "answer": "están"},
         {"sentence": "Mi habitación ___ ordenada hoy.", "answer": "está"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Mi padre ___ ingeniero.",
+          "answer": "es",
+          "hint": "Профессия — постоянная характеристика"
+        },
+        {
+          "sentence": "El supermercado ___ al lado de mi casa.",
+          "answer": "está",
+          "hint": "Местоположение — где находится?"
+        },
+        {
+          "sentence": "Hoy me ___ muy mal, tengo fiebre.",
+          "answer": "siento",
+          "hint": "Физическое самочувствие"
+        }
       ]
     },
     {
@@ -1115,6 +1195,23 @@
         {"sentence": "___ escuchar podcasts en español.", "answer": "Tienes que"},
         {"sentence": "___ practicar la pronunciación.", "answer": "Lo mejor es"},
         {"sentence": "La meditación ___ para concentrarse.", "answer": "va muy bien"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Para aprobar el examen, ___ estudiar mucho.",
+          "answer": "tienes que",
+          "hint": "Обязанность, необходимость (ты должен)"
+        },
+        {
+          "sentence": "Si estás enfermo, ___ quedarte en casa.",
+          "answer": "lo mejor es",
+          "hint": "Лучший совет (лучше всего)"
+        },
+        {
+          "sentence": "Dormir bien ___ para la memoria.",
+          "answer": "va muy bien",
+          "hint": "Что хорошо помогает для чего-то"
+        }
       ]
     },
     {
@@ -1188,6 +1285,28 @@
         {"sentence": "Desde pequeña (sentir/yo) ___ un cariño especial por los animales.", "answer": "siento"},
         {"sentence": "¿A qué hora (acostarse/tú) ___ normalmente?", "answer": "te acuestas"},
         {"sentence": "Mi hermano (despertarse) ___ muy temprano.", "answer": "se despierta"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Cada mañana (ducharse/yo) ___ con agua fría.",
+          "answer": "me ducho",
+          "hint": "Возвратный глагол, 1-е лицо"
+        },
+        {
+          "sentence": "El partido (empezar) ___ a las 8.",
+          "answer": "empieza",
+          "hint": "Чередование e → ie, 3-е лицо"
+        },
+        {
+          "sentence": "Nosotros no (poder) ___ venir mañana.",
+          "answer": "podemos",
+          "hint": "Чередование o → ue, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Yo siempre (salir) ___ tarde del trabajo.",
+          "answer": "salgo",
+          "hint": "Неправильный в 1-м лице (yo)"
+        }
       ]
     },
     {
@@ -1246,6 +1365,18 @@
         {"sentence": "Le ___ mucho recordar el vocabulario.", "answer": "cuesta"},
         {"sentence": "Para la gramática ___ muy bien hacer ejercicios.", "answer": "va"},
         {"sentence": "Me ___ las conjugaciones del subjuntivo.", "answer": "cuestan"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Me ___ mucho pronunciar la erre.",
+          "answer": "cuesta",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Las películas ___ muy bien para aprender.",
+          "answer": "van",
+          "hint": "Películas — множественное число"
+        }
       ]
     },
     {
@@ -1304,6 +1435,18 @@
         {"sentence": "Te ___ miedo el examen oral.", "answer": "da"},
         {"sentence": "Nos ___ miedo los trabajos en grupo.", "answer": "dan"},
         {"sentence": "Me ___ tristeza no tener tiempo para estudiar.", "answer": "da"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Me ___ vergüenza cantar en público.",
+          "answer": "da",
+          "hint": "Инфинитив = единственное число → da"
+        },
+        {
+          "sentence": "Me ___ miedo las arañas.",
+          "answer": "dan",
+          "hint": "Arañas — множественное число → dan"
+        }
       ]
     },
     {
@@ -1366,6 +1509,23 @@
         {"sentence": "___ alegría cuando apruebo un examen.", "answer": "Me da"},
         {"sentence": "___ seguro cuando practico en casa.", "answer": "Me siento"},
         {"sentence": "___ mucho pronunciar correctamente.", "answer": "Me cuesta"}
+      ],
+      "microTests": [
+        {
+          "sentence": "___ hablar por teléfono en español.",
+          "answer": "Me cuesta",
+          "hint": "Выражение трудности"
+        },
+        {
+          "sentence": "___ miedo el examen final.",
+          "answer": "Me da",
+          "hint": "Что вызывает страх"
+        },
+        {
+          "sentence": "___ nervioso antes de presentaciones.",
+          "answer": "Me siento",
+          "hint": "Как я себя чувствую"
+        }
       ]
     }
   ]

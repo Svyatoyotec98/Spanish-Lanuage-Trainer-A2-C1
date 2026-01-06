@@ -3513,9 +3513,287 @@ function showGrammarRule() {
         `;
     }
 
+    // Микро-тесты (если есть)
+    if (exercise.microTests && exercise.microTests.length > 0) {
+        html += `
+            <div class="micro-tests-section" style="
+                background: rgba(155, 89, 182, 0.2);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(155, 89, 182, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                margin-bottom: 15px;
+            ">
+                <h3 style="color: #9b59b6; margin: 0 0 5px 0; font-size: 1.2em;">🧪 Проверь себя</h3>
+                <p style="color: #fff; font-size: 0.9em; margin: 0 0 15px 0; opacity: 0.8;">
+                    Заполни пропуски, чтобы закрепить правило
+                </p>
+                <div id="microTestsProgress" style="
+                    color: #9b59b6;
+                    font-size: 0.9em;
+                    margin-bottom: 15px;
+                    font-weight: 600;
+                ">
+                    Выполнено: <span id="microTestsCompleted">0</span> / ${exercise.microTests.length}
+                </div>
+
+                ${exercise.microTests.map((test, index) => `
+                    <div class="micro-test-item" data-index="${index}" data-answer="${test.answer}" style="
+                        background: rgba(255, 255, 255, 0.1);
+                        border-radius: 10px;
+                        padding: 15px;
+                        margin-bottom: 12px;
+                    ">
+                        <div class="micro-test-sentence" style="
+                            color: #2c3e50;
+                            font-size: 1.05em;
+                            margin-bottom: 10px;
+                            line-height: 1.5;
+                        ">
+                            ${test.sentence.replace('___', '<span class="micro-test-blank">______</span>')}
+                        </div>
+
+                        <div class="micro-test-input-row" style="
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            flex-wrap: wrap;
+                        ">
+                            <input type="text"
+                                   class="micro-test-input"
+                                   data-index="${index}"
+                                   placeholder="Твой ответ..."
+                                   autocomplete="off"
+                                   style="
+                                       flex: 1;
+                                       min-width: 120px;
+                                       padding: 10px 15px;
+                                       border: 2px solid rgba(155, 89, 182, 0.4);
+                                       border-radius: 8px;
+                                       font-size: 1em;
+                                       background: rgba(255, 255, 255, 0.9);
+                                       color: #2c3e50;
+                                   "
+                            />
+                            <button class="micro-test-check-btn" data-index="${index}" style="
+                                padding: 10px 20px;
+                                background: linear-gradient(135deg, #9b59b6, #8e44ad);
+                                color: white;
+                                border: none;
+                                border-radius: 8px;
+                                cursor: pointer;
+                                font-size: 0.95em;
+                                font-weight: 600;
+                            ">
+                                Проверить
+                            </button>
+                        </div>
+
+                        <div class="micro-test-hint" style="
+                            color: rgba(255, 255, 255, 0.7);
+                            font-size: 0.85em;
+                            margin-top: 8px;
+                            font-style: italic;
+                            cursor: pointer;
+                        " onclick="this.innerHTML = '💡 ' + '${test.hint}'">
+                            💡 Показать подсказку
+                        </div>
+
+                        <div class="micro-test-feedback" data-index="${index}" style="
+                            margin-top: 10px;
+                            padding: 10px;
+                            border-radius: 8px;
+                            display: none;
+                            font-weight: 600;
+                        "></div>
+                    </div>
+                `).join('')}
+
+                <div id="microTestsAllDone" style="
+                    display: none;
+                    background: rgba(39, 174, 96, 0.3);
+                    border: 1px solid rgba(39, 174, 96, 0.5);
+                    border-radius: 10px;
+                    padding: 15px;
+                    text-align: center;
+                    margin-top: 15px;
+                ">
+                    <span style="font-size: 1.5em;">🎉</span>
+                    <p style="color: #27ae60; font-weight: 600; margin: 10px 0 0 0;">
+                        Все микро-тесты пройдены!
+                    </p>
+                </div>
+            </div>
+        `;
+    }
+
     container.innerHTML = html;
 
+    // Инициализация обработчиков микро-тестов
+    if (exercise.microTests && exercise.microTests.length > 0) {
+        initMicroTestsHandlers(exercise);
+    }
+
     saveNavigationState('grammarRuleScreen');
+}
+
+// Инициализация обработчиков микро-тестов
+function initMicroTestsHandlers(exercise) {
+    const microTests = exercise.microTests;
+    const completedTests = new Set();
+
+    // Загрузим уже выполненные тесты из localStorage
+    const profile = getActiveProfile();
+    if (profile && profile.microTestsProgress && profile.microTestsProgress[currentUnidad]) {
+        const savedProgress = profile.microTestsProgress[currentUnidad][exercise.id];
+        if (savedProgress && Array.isArray(savedProgress)) {
+            savedProgress.forEach(idx => completedTests.add(idx));
+        }
+    }
+
+    // Обновим счётчик и UI для уже выполненных тестов
+    updateMicroTestsCounter(completedTests.size, microTests.length);
+    completedTests.forEach(idx => {
+        markMicroTestAsCompleted(idx, microTests[idx].answer);
+    });
+
+    // Проверка, все ли тесты пройдены
+    if (completedTests.size === microTests.length) {
+        showAllMicroTestsDone();
+    }
+
+    // Обработчики для кнопок "Проверить"
+    document.querySelectorAll('.micro-test-check-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const index = parseInt(this.dataset.index);
+            if (completedTests.has(index)) return; // Уже выполнен
+
+            const input = document.querySelector(`.micro-test-input[data-index="${index}"]`);
+            const userAnswer = input.value.trim().toLowerCase();
+            const correctAnswer = microTests[index].answer.toLowerCase();
+
+            const feedback = document.querySelector(`.micro-test-feedback[data-index="${index}"]`);
+
+            if (userAnswer === correctAnswer) {
+                // Правильный ответ
+                completedTests.add(index);
+                markMicroTestAsCompleted(index, microTests[index].answer);
+                saveMicroTestProgress(exercise.id, Array.from(completedTests));
+                updateMicroTestsCounter(completedTests.size, microTests.length);
+
+                feedback.style.display = 'block';
+                feedback.style.background = 'rgba(39, 174, 96, 0.3)';
+                feedback.style.color = '#27ae60';
+                feedback.innerHTML = '✓ Правильно!';
+
+                // Проверка завершения всех тестов
+                if (completedTests.size === microTests.length) {
+                    showAllMicroTestsDone();
+                    saveMicroTestsCompleted(exercise.id);
+                }
+            } else {
+                // Неправильный ответ
+                feedback.style.display = 'block';
+                feedback.style.background = 'rgba(231, 76, 60, 0.3)';
+                feedback.style.color = '#e74c3c';
+                feedback.innerHTML = '✗ Попробуй ещё раз';
+
+                // Встряхнём поле ввода
+                input.style.animation = 'shake 0.3s';
+                setTimeout(() => { input.style.animation = ''; }, 300);
+            }
+        });
+    });
+
+    // Обработчик Enter для input
+    document.querySelectorAll('.micro-test-input').forEach(input => {
+        input.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const index = this.dataset.index;
+                const btn = document.querySelector(`.micro-test-check-btn[data-index="${index}"]`);
+                if (btn) btn.click();
+            }
+        });
+    });
+}
+
+// Обновить счётчик выполненных микро-тестов
+function updateMicroTestsCounter(completed, total) {
+    const counter = document.getElementById('microTestsCompleted');
+    if (counter) {
+        counter.textContent = completed;
+    }
+}
+
+// Отметить микро-тест как выполненный
+function markMicroTestAsCompleted(index, correctAnswer) {
+    const item = document.querySelector(`.micro-test-item[data-index="${index}"]`);
+    if (!item) return;
+
+    const input = item.querySelector('.micro-test-input');
+    const btn = item.querySelector('.micro-test-check-btn');
+
+    if (input) {
+        input.value = correctAnswer;
+        input.disabled = true;
+        input.style.background = 'rgba(39, 174, 96, 0.2)';
+        input.style.borderColor = 'rgba(39, 174, 96, 0.5)';
+    }
+    if (btn) {
+        btn.disabled = true;
+        btn.style.opacity = '0.5';
+        btn.style.cursor = 'default';
+    }
+
+    item.style.opacity = '0.7';
+}
+
+// Показать сообщение о завершении всех микро-тестов
+function showAllMicroTestsDone() {
+    const doneBlock = document.getElementById('microTestsAllDone');
+    if (doneBlock) {
+        doneBlock.style.display = 'block';
+    }
+}
+
+// Сохранить прогресс микро-тестов
+function saveMicroTestProgress(exerciseId, completedIndices) {
+    const profile = getActiveProfile();
+    if (!profile) return;
+
+    if (!profile.microTestsProgress) {
+        profile.microTestsProgress = {};
+    }
+    if (!profile.microTestsProgress[currentUnidad]) {
+        profile.microTestsProgress[currentUnidad] = {};
+    }
+
+    profile.microTestsProgress[currentUnidad][exerciseId] = completedIndices;
+    saveProfile(profile);
+}
+
+// Отметить, что все микро-тесты пройдены (для проверки условия разблокировки)
+function saveMicroTestsCompleted(exerciseId) {
+    const profile = getActiveProfile();
+    if (!profile) return;
+
+    if (!profile.microTestsCompleted) {
+        profile.microTestsCompleted = {};
+    }
+    if (!profile.microTestsCompleted[currentUnidad]) {
+        profile.microTestsCompleted[currentUnidad] = {};
+    }
+
+    profile.microTestsCompleted[currentUnidad][exerciseId] = true;
+    saveProfile(profile);
+}
+
+// Проверить, пройдены ли все микро-тесты для упражнения
+function areMicroTestsCompleted(unidadId, exerciseId) {
+    const profile = getActiveProfile();
+    if (!profile || !profile.microTestsCompleted) return false;
+    return profile.microTestsCompleted[unidadId]?.[exerciseId] === true;
 }
 
 // Вернуться к промежуточному экрану упражнения

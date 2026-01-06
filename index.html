@@ -682,9 +682,10 @@
             <div id="gramRetryMessage" class="hidden" style="margin: 15px 0; padding: 15px; background: #fff3cd; border-radius: 10px; color: #856404;">
                 Для прохождения требуется 80%. Попробуйте ещё раз!
             </div>
-            <div style="margin: 30px 0;">
-                <button class="btn btn-primary" onclick="retryGramTest()">Повторить упражнение</button>
-                <button class="btn btn-secondary" onclick="showGramaticaMenu()">Назад к упражнениям</button>
+            <div class="result-buttons-row">
+                <button class="result-btn" onclick="showGramaticaMenu()">Назад в меню</button>
+                <button class="result-btn" onclick="retryGramTest()">Попробовать снова</button>
+                <button class="result-btn" id="nextGramTestBtn" onclick="goToNextExerciseSmart()">Продолжить</button>
             </div>
         </div>
 
@@ -797,10 +798,10 @@
                 <!-- Will show which cards were correct/incorrect -->
             </div>
 
-            <div style="margin: 30px 0;">
-                <button class="btn btn-primary" onclick="retryCardMatching()">Попробовать снова</button>
-                <button class="btn btn-success" id="nextTestBtn" onclick="goToNextTest()" style="display: none;">Следующий тест →</button>
-                <button class="btn btn-secondary" onclick="backToUnidadMenu()">Назад в меню</button>
+            <div class="result-buttons-row">
+                <button class="result-btn" onclick="backToUnidadMenu()">Назад в меню</button>
+                <button class="result-btn" onclick="retryCardMatching()">Попробовать снова</button>
+                <button class="result-btn" id="nextTestBtn" onclick="goToNextTestSmart()">Продолжить</button>
             </div>
         </div>
 

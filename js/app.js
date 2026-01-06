@@ -5451,6 +5451,51 @@ function renderMatchTranslationExercise(exercise, container) {
     renderFillBlankExercise(exercise, container); // Same as multiple choice
 }
 
+// ═══════════════════════════════════════════════════════════════
+// SMART CONTINUE FUNCTIONS
+// ═══════════════════════════════════════════════════════════════
+
+// Умный переход для Card Matching (Palabras)
+function goToNextTestSmart() {
+    // Для Palabras просто используем обычную логику перехода к следующему тесту
+    goToNextTest();
+}
+
+// Умный переход для Ejercicios (Grammar)
+// Если правило следующего упражнения не просмотрено - открываем правило
+// Если уже просмотрено - сразу на тест
+function goToNextExerciseSmart() {
+    if (!currentUnidad || !gramCurrentExercise) {
+        showGramaticaMenu();
+        return;
+    }
+
+    // Находим индекс текущего упражнения
+    const currentIndex = gramaticaExercises.findIndex(ex => ex.id === gramCurrentExercise.id);
+
+    if (currentIndex === -1 || currentIndex >= gramaticaExercises.length - 1) {
+        // Это последнее упражнение или не найдено - возвращаемся в меню
+        showGramaticaMenu();
+        return;
+    }
+
+    // Получаем следующее упражнение
+    const nextExercise = gramaticaExercises[currentIndex + 1];
+
+    // Проверяем, было ли просмотрено правило для следующего упражнения
+    const ruleViewed = isRuleViewed(currentUnidad, nextExercise.id);
+
+    if (ruleViewed) {
+        // Правило уже просмотрено - переходим сразу к тесту
+        currentExerciseForPreview = nextExercise;
+        gramCurrentExercise = nextExercise;
+        startGramExercise(nextExercise);
+    } else {
+        // Правило не просмотрено - показываем превью с правилом
+        showExercisePreview(nextExercise);
+    }
+}
+
 // Initialize Grammar Data on page load
 document.addEventListener('DOMContentLoaded', () => {
     loadGrammarData();

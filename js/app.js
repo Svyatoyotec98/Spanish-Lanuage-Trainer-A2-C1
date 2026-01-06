@@ -3885,12 +3885,12 @@ function showMasGramatica() {
     renderGrammarList();
 }
 
-// Show Vocabulario - Full screen overlay with all words
+// Show Vocabulario - Full screen overlay with all words in grid
 function showVocabularyScreen() {
     hideAllScreens();
     document.getElementById('vocabularyScreen').classList.remove('hidden');
 
-    // Collect all words from all Unidads
+    // Collect all words from all Unidads with icon info
     const allWords = [];
 
     Object.keys(vocabularyData).forEach(unidadId => {
@@ -3903,6 +3903,7 @@ function showVocabularyScreen() {
                         allWords.push({
                             spanish: word.spanish,
                             ru: word.ru,
+                            icon: word.icon || 'book-open',
                             unidad: unidadId,
                             group: groupName
                         });
@@ -3922,36 +3923,36 @@ function showVocabularyScreen() {
     // Update word count
     document.getElementById('vocabularyWordCount').textContent = `${allWords.length} слов`;
 
-    // Render all words in full-width cards
+    // Render all words in grid layout
     const container = document.getElementById('vocabularyWordsContainer');
     container.innerHTML = '';
 
     if (allWords.length === 0) {
-        container.innerHTML = '<p style="text-align: center; color: #fff;">Словарь пуст. Загрузите данные Unidads.</p>';
+        container.innerHTML = '<p style="text-align: center; color: #2c3e50; background: rgba(255,255,255,0.8); padding: 20px; border-radius: 10px;">Словарь пуст. Загрузите данные Unidads.</p>';
         return;
     }
 
+    // Create grid wrapper
+    const gridWrapper = document.createElement('div');
+    gridWrapper.className = 'vocabulary-grid';
+
     allWords.forEach(word => {
         const wordCard = document.createElement('div');
-        wordCard.style.cssText = `
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 30px;
-            margin-bottom: 8px;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            font-size: 1.15em;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        `;
+        wordCard.className = 'vocabulary-card';
+
+        // Use Phosphor icon
+        const iconHtml = `<i class="ph ph-${word.icon}" style="font-size: 28px; color: #667eea;"></i>`;
 
         wordCard.innerHTML = `
-            <span style="color: #7f8c8d; flex: 1;">${word.ru}</span>
-            <span style="color: #2c3e50; font-weight: 600; flex: 1; text-align: right;">${word.spanish}</span>
+            <div class="card-icon">${iconHtml}</div>
+            <div class="card-spanish">${word.spanish}</div>
+            <div class="card-russian">${word.ru}</div>
         `;
 
-        container.appendChild(wordCard);
+        gridWrapper.appendChild(wordCard);
     });
+
+    container.appendChild(gridWrapper);
 }
 
 // Hide vocabulary screen (for back button)

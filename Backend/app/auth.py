@@ -83,7 +83,7 @@ def login(payload: LoginRequest, db: Session) -> Token:
         )
 
     token = _create_access_token(email)
-    return Token(access_token=token)
+    return Token(access_token=token, user_id=db_user.id)
 
 
 

@@ -5456,9 +5456,56 @@ function renderMatchTranslationExercise(exercise, container) {
 // ═══════════════════════════════════════════════════════════════
 
 // Умный переход для Card Matching (Palabras)
+// Если словарь следующей группы не просмотрен - открываем превью группы
+// Если уже просмотрен - сразу на тест
 function goToNextTestSmart() {
-    // Для Palabras просто используем обычную логику перехода к следующему тесту
-    goToNextTest();
+    if (!currentUnidad || !currentCategory) {
+        showPalabrasMenu();
+        return;
+    }
+
+    const unidadData = vocabularyData[currentUnidad];
+    if (!unidadData || !unidadData.groups) {
+        showPalabrasMenu();
+        return;
+    }
+
+    const groupSize = unidadData.groups[currentCategory]?.length || 0;
+
+    // Для групп 10+ слов - проверяем следующий уровень (тут не нужна проверка словаря)
+    if (groupSize >= 10 && currentLevel) {
+        const levels = ['easy', 'medium', 'hard'];
+        const currentLevelIndex = levels.indexOf(currentLevel);
+
+        if (currentLevelIndex >= 0 && currentLevelIndex < levels.length - 1) {
+            // Есть следующий уровень - запускаем его
+            const nextLevel = levels[currentLevelIndex + 1];
+            startTest(nextLevel);
+            return;
+        }
+    }
+
+    // Переходим к следующей группе
+    const groupNames = Object.keys(unidadData.groups);
+    const currentIndex = groupNames.indexOf(currentCategory);
+
+    if (currentIndex >= 0 && currentIndex < groupNames.length - 1) {
+        const nextGroup = groupNames[currentIndex + 1];
+
+        // Проверяем, был ли просмотрен словарь для следующей группы
+        const wordsViewed = isWordsViewed(currentUnidad, nextGroup);
+
+        if (wordsViewed) {
+            // Словарь уже просмотрен - сразу на тест
+            showCategoryMenu(nextGroup);
+        } else {
+            // Словарь не просмотрен - показываем превью группы
+            showGroupPreview(nextGroup);
+        }
+    } else {
+        // Это последняя группа - возвращаемся в меню
+        showPalabrasMenu();
+    }
 }
 
 // Умный переход для Ejercicios (Grammar)

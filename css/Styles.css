@@ -837,7 +837,6 @@
         }
 
         .result-btn {
-            background: rgba(149, 165, 166, 0.4);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -851,8 +850,28 @@
         }
 
         .result-btn:hover {
-            background: rgba(149, 165, 166, 0.6);
             transform: scale(1.05);
+        }
+
+        .result-btn-menu {
+            background: rgba(155, 89, 182, 0.5);
+        }
+        .result-btn-menu:hover {
+            background: rgba(155, 89, 182, 0.7);
+        }
+
+        .result-btn-retry {
+            background: rgba(52, 152, 219, 0.5);
+        }
+        .result-btn-retry:hover {
+            background: rgba(52, 152, 219, 0.7);
+        }
+
+        .result-btn-continue {
+            background: rgba(39, 174, 96, 0.5);
+        }
+        .result-btn-continue:hover {
+            background: rgba(39, 174, 96, 0.7);
         }
 
         /* ═══════════════════════════════════════════════════════════════

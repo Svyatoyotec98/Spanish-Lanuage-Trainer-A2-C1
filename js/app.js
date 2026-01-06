@@ -3420,6 +3420,9 @@ function showGrammarRule() {
         return;
     }
 
+    // Сохраняем, что правило было просмотрено
+    saveRuleViewed(exercise.id);
+
     hideAllScreens();
     showUserBadge();
     document.getElementById('grammarRuleScreen').classList.remove('hidden');
@@ -3815,6 +3818,29 @@ function areMicroTestsCompleted(unidadId, exerciseId) {
     const profile = getActiveProfile();
     if (!profile || !profile.microTestsCompleted) return false;
     return profile.microTestsCompleted[unidadId]?.[exerciseId] === true;
+}
+
+// Сохранить, что правило было просмотрено
+function saveRuleViewed(exerciseId) {
+    const profile = getActiveProfile();
+    if (!profile) return;
+
+    if (!profile.ruleViewed) {
+        profile.ruleViewed = {};
+    }
+    if (!profile.ruleViewed[currentUnidad]) {
+        profile.ruleViewed[currentUnidad] = {};
+    }
+
+    profile.ruleViewed[currentUnidad][exerciseId] = true;
+    saveProfile(profile);
+}
+
+// Проверить, было ли правило просмотрено
+function isRuleViewed(unidadId, exerciseId) {
+    const profile = getActiveProfile();
+    if (!profile || !profile.ruleViewed) return false;
+    return profile.ruleViewed[unidadId]?.[exerciseId] === true;
 }
 
 // Вернуться к промежуточному экрану упражнения

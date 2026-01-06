@@ -355,7 +355,8 @@
 			 'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
              'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
              'examScreen', 'examResultsScreen', 'miniDictionaryScreen',
-             'exercisePreviewMenu', 'grammarRuleScreen', 'hardTestAllQuestionsScreen'].forEach(id => {
+             'exercisePreviewMenu', 'grammarRuleScreen', 'hardTestAllQuestionsScreen',
+             'hardTestResultsScreen'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');
             });
         }
@@ -2027,23 +2028,19 @@ if (
         }
 
         /**
-         * Отправка теста на проверку
+         * Отправка теста на проверку — показывает модальное окно подтверждения
          */
         function hardTestSubmit() {
-            // Проверяем, есть ли пустые поля
-            const emptyCount = countEmptyAnswers();
+            // Показываем красивое модальное окно подтверждения
+            document.getElementById('hardTestConfirmModal').classList.remove('hidden');
+        }
 
-            if (emptyCount > 0) {
-                // Есть незаполненные поля
-                if (!confirm(`У вас есть незаполненные поля (${emptyCount} из ${hardTestQuestions.length}).\n\nПродолжить?`)) {
-                    return; // Пользователь отменил
-                }
-            }
-
-            // Подтверждение отправки
-            if (!confirm('Вы уверены, что хотите завершить тест?')) {
-                return; // Пользователь отменил
-            }
+        /**
+         * Подтверждение — Да
+         */
+        function hardTestConfirmYes() {
+            // Скрываем модальное окно
+            document.getElementById('hardTestConfirmModal').classList.add('hidden');
 
             // Останавливаем таймер
             stopHardTestTimer();
@@ -2056,17 +2053,11 @@ if (
         }
 
         /**
-         * Подсчёт пустых ответов
+         * Подтверждение — Нет
          */
-        function countEmptyAnswers() {
-            let empty = 0;
-            for (let i = 0; i < hardTestQuestions.length; i++) {
-                const answer = hardTestAnswers[i];
-                if (!answer || answer.trim() === '') {
-                    empty++;
-                }
-            }
-            return empty;
+        function hardTestConfirmNo() {
+            // Просто скрываем модальное окно
+            document.getElementById('hardTestConfirmModal').classList.add('hidden');
         }
 
         /**
@@ -2118,13 +2109,90 @@ if (
                 saveHardTestProgress(percentage);
             }
 
-            // Пока показываем alert, в Фазе 6 будет красивый экран
-            const status = passed ? '✅ ЗАЧЁТ!' : '❌ НЕ ЗАЧЁТ';
-            const message = `${status}\n\nПравильно: ${correct} из ${total}\nРезультат: ${percentage}%\n\nМинимум для зачёта: 80%`;
+            // Показываем экран результатов
+            hideAll();
+            showUserBadge();
+            document.getElementById('hardTestResultsScreen').classList.remove('hidden');
 
-            alert(message);
+            // Статус
+            const statusEl = document.getElementById('hardTestResultStatus');
+            if (passed) {
+                statusEl.innerHTML = '✅ ЗАЧЁТ!';
+                statusEl.style.color = '#27ae60';
+            } else {
+                statusEl.innerHTML = '❌ НЕ ЗАЧЁТ';
+                statusEl.style.color = '#e74c3c';
+            }
 
-            // Возвращаемся в меню категории
+            // Статистика
+            document.getElementById('hardTestResultCorrect').textContent = correct;
+            document.getElementById('hardTestResultWrong').textContent = wrong;
+            document.getElementById('hardTestResultPercent').textContent = percentage + '%';
+
+            // Детали с подсветкой
+            const detailsContainer = document.getElementById('hardTestResultDetails');
+            let detailsHtml = '';
+
+            details.forEach((item, idx) => {
+                const bgColor = item.isCorrect
+                    ? 'rgba(39, 174, 96, 0.2)'
+                    : 'rgba(231, 76, 60, 0.2)';
+                const borderColor = item.isCorrect
+                    ? 'rgba(39, 174, 96, 0.5)'
+                    : 'rgba(231, 76, 60, 0.5)';
+
+                // Заменяем ___ на ответ пользователя с подсветкой
+                let sentenceWithAnswer = item.sentence;
+                if (item.isCorrect) {
+                    sentenceWithAnswer = item.sentence.replace('___',
+                        `<span style="color: #27ae60; font-weight: bold; border-bottom: 2px solid #27ae60;">${item.correctAnswer}</span>`
+                    );
+                } else {
+                    const userPart = item.userAnswer
+                        ? `<span style="color: #e74c3c; text-decoration: line-through;">${item.userAnswer}</span> → `
+                        : '';
+                    sentenceWithAnswer = item.sentence.replace('___',
+                        `${userPart}<span style="color: #27ae60; font-weight: bold;">${item.correctAnswer}</span>`
+                    );
+                }
+
+                detailsHtml += `
+                    <div style="
+                        background: ${bgColor};
+                        border: 1px solid ${borderColor};
+                        border-radius: 10px;
+                        padding: 12px 15px;
+                        margin-bottom: 10px;
+                    ">
+                        <span style="
+                            background: ${item.isCorrect ? 'rgba(39, 174, 96, 0.3)' : 'rgba(231, 76, 60, 0.3)'};
+                            color: ${item.isCorrect ? '#27ae60' : '#e74c3c'};
+                            font-weight: bold;
+                            padding: 2px 8px;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                            font-size: 0.9em;
+                        ">${idx + 1}</span>
+                        <span style="color: #2c3e50; font-size: 1.1em;">${sentenceWithAnswer}</span>
+                    </div>
+                `;
+            });
+
+            detailsContainer.innerHTML = detailsHtml;
+        }
+
+        /**
+         * Повторить hard-тест
+         */
+        function retryHardTest() {
+            const words = vocabularyData[currentUnidad].groups[currentCategory];
+            startHardTestAllQuestions(words);
+        }
+
+        /**
+         * Вернуться к категории из результатов hard-теста
+         */
+        function backToCategoryFromHardTest() {
             showCategoryMenu(currentCategory);
         }
 

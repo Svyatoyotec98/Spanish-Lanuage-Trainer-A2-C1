@@ -872,23 +872,27 @@
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
-             VOCABULARY SCREEN (Full Alphabetical List)
+             VOCABULARY SCREEN (Full Screen Overlay)
              ═══════════════════════════════════════════════════════════════ -->
-        <div id="vocabularyScreen" class="hidden">
-            <h1>📖 Vocabulario</h1>
-            <p class="subtitle">Все слова из всех Unidads</p>
-
-            <!-- Word count -->
-            <div style="margin: 20px 0; padding: 15px; background: rgba(102, 126, 234, 0.3); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 10px; color: white; text-align: center;">
-                <span id="vocabularyWordCount">0 слов</span>
+        <div id="vocabularyScreen" class="hidden" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%); z-index: 9999; display: flex; flex-direction: column; padding: 20px; box-sizing: border-box;">
+            <!-- Header -->
+            <div style="text-align: center; flex-shrink: 0;">
+                <h1 style="color: white; margin: 0;">📖 Vocabulario</h1>
+                <p style="color: rgba(255,255,255,0.8); margin: 10px 0;">Все слова из всех Unidads</p>
+                <div style="display: inline-block; padding: 10px 25px; background: rgba(255,255,255,0.2); border-radius: 20px; color: white; font-weight: 600;">
+                    <span id="vocabularyWordCount">0 слов</span>
+                </div>
             </div>
 
             <!-- Scrollable words container -->
-            <div id="vocabularyWordsContainer" style="margin-top: 20px; max-height: 500px; overflow-y: auto;">
+            <div id="vocabularyWordsContainer" style="flex: 1; overflow-y: auto; margin: 20px 0; padding: 0 10px;">
                 <!-- Words will be rendered here -->
             </div>
 
-            <button class="btn btn-back" onclick="showReferenceMain()" style="margin-top: 30px;">← Назад</button>
+            <!-- Footer with back button -->
+            <div style="text-align: center; flex-shrink: 0;">
+                <button class="btn btn-back" onclick="hideVocabularyScreen(); showReferenceMain();" style="background: rgba(255,255,255,0.2); color: white; border: 2px solid white;">← Назад</button>
+            </div>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════

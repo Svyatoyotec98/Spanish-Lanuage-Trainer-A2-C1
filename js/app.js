@@ -3885,10 +3885,12 @@ function showMasGramatica() {
     renderGrammarList();
 }
 
-// Show Vocabulario - Full alphabetical list of all words
+// Show Vocabulario - Full screen overlay with all words
 function showVocabularyScreen() {
     hideAllScreens();
-    document.getElementById('vocabularyScreen').classList.remove('hidden');
+    const vocabScreen = document.getElementById('vocabularyScreen');
+    vocabScreen.classList.remove('hidden');
+    vocabScreen.style.display = 'flex'; // Override hidden class
 
     // Collect all words from all Unidads
     const allWords = [];
@@ -3922,7 +3924,7 @@ function showVocabularyScreen() {
     // Update word count
     document.getElementById('vocabularyWordCount').textContent = `${allWords.length} слов`;
 
-    // Render all words
+    // Render all words in full-width cards
     const container = document.getElementById('vocabularyWordsContainer');
     container.innerHTML = '';
 
@@ -3937,14 +3939,12 @@ function showVocabularyScreen() {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
-            margin-bottom: 10px;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 10px;
-            font-size: 1.1em;
+            padding: 18px 30px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            font-size: 1.15em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         `;
 
         wordCard.innerHTML = `
@@ -3954,6 +3954,13 @@ function showVocabularyScreen() {
 
         container.appendChild(wordCard);
     });
+}
+
+// Hide vocabulary screen (for back button)
+function hideVocabularyScreen() {
+    const vocabScreen = document.getElementById('vocabularyScreen');
+    vocabScreen.classList.add('hidden');
+    vocabScreen.style.display = 'none';
 }
 
 // Show Ejercicios Gramática (заглушка для Фазы 4)

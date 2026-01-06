@@ -3827,12 +3827,13 @@ function renderMicroTestsSlots() {
     const microTests = currentExerciseForPreview.microTests;
     let html = '';
 
-    // Считаем сколько слотов завершено
+    // Считаем сколько слотов завершено (текущий вопрос в слоте отвечен)
     let completedSlots = 0;
     microTestsAnswerTypes.forEach(answerType => {
-        const questions = microTestsQuestionBank[answerType];
-        const allUsed = questions.every(q => microTestsUsedQuestions.has(q.index));
-        if (allUsed) completedSlots++;
+        const currentQuestionIndex = microTestsCurrentSlots[answerType];
+        if (microTestsUsedQuestions.has(currentQuestionIndex)) {
+            completedSlots++;
+        }
     });
 
     microTestsAnswerTypes.forEach((answerType, slotIndex) => {
@@ -3848,6 +3849,11 @@ function renderMicroTestsSlots() {
 
         // Проверяем, был ли этот вопрос уже отвечен
         const isAnswered = microTestsUsedQuestions.has(currentQuestionIndex);
+
+        // Формируем предложение с ответом или пропуском
+        const sentenceHtml = isAnswered
+            ? test.sentence.replace('___', `<span style="color: #27ae60; font-weight: 600; border-bottom: 2px solid #27ae60; padding: 0 4px;">${test.answer}</span>`)
+            : test.sentence.replace('___', '<span class="micro-test-blank" style="border-bottom: 2px dashed rgba(155, 89, 182, 0.6); padding: 0 8px;">______</span>');
 
         html += `
             <div class="micro-test-item" data-slot="${slotIndex}" data-answer-type="${answerType}" data-question-index="${currentQuestionIndex}" style="
@@ -3882,98 +3888,93 @@ function renderMicroTestsSlots() {
                 <div class="micro-test-sentence" style="
                     color: #2c3e50;
                     font-size: 1.42em;
-                    margin-bottom: 15px;
+                    margin-bottom: ${isAnswered ? '0' : '15px'};
                     line-height: 1.6;
                     padding-right: ${!isAnswered && canRefresh ? '50px' : '0'};
                 ">
-                    ${test.sentence.replace('___', '<span class="micro-test-blank">______</span>')}
+                    ${sentenceHtml}
                 </div>
 
-                <div class="micro-test-input-row" style="
-                    display: flex;
-                    gap: 12px;
-                    align-items: center;
-                    flex-wrap: wrap;
-                ">
-                    <input type="text"
-                           class="micro-test-input"
-                           data-slot="${slotIndex}"
-                           data-answer-type="${answerType}"
-                           placeholder="Твой ответ..."
-                           autocomplete="off"
-                           ${isAnswered ? 'disabled' : ''}
-                           value="${isAnswered ? test.answer : ''}"
-                           style="
-                               flex: 1;
-                               min-width: 140px;
-                               padding: 12px 18px;
-                               border: 2px solid ${isAnswered ? 'rgba(39, 174, 96, 0.4)' : 'rgba(155, 89, 182, 0.4)'};
-                               border-radius: 8px;
-                               font-size: 1.35em;
-                               background: ${isAnswered ? 'rgba(39, 174, 96, 0.2)' : 'rgba(255, 255, 255, 0.9)'};
-                               color: #2c3e50;
-                           "
-                    />
-                    <button class="micro-test-check-btn" data-slot="${slotIndex}" data-answer-type="${answerType}" ${isAnswered ? 'disabled' : ''} style="
-                        padding: 12px 24px;
-                        background: ${isAnswered ? 'rgba(39, 174, 96, 0.5)' : 'linear-gradient(135deg, #9b59b6, #8e44ad)'};
-                        color: white;
-                        border: none;
-                        border-radius: 8px;
-                        cursor: ${isAnswered ? 'default' : 'pointer'};
-                        font-size: 1.28em;
-                        font-weight: 600;
-                        opacity: ${isAnswered ? '0.7' : '1'};
+                ${!isAnswered ? `
+                    <div class="micro-test-input-row" style="
+                        display: flex;
+                        gap: 12px;
+                        align-items: center;
+                        flex-wrap: wrap;
                     ">
-                        ${isAnswered ? '✓' : 'Проверить'}
-                    </button>
-                </div>
+                        <input type="text"
+                               class="micro-test-input"
+                               data-slot="${slotIndex}"
+                               data-answer-type="${answerType}"
+                               placeholder="Твой ответ..."
+                               autocomplete="off"
+                               style="
+                                   flex: 1;
+                                   min-width: 140px;
+                                   padding: 12px 18px;
+                                   border: 2px solid rgba(155, 89, 182, 0.4);
+                                   border-radius: 8px;
+                                   font-size: 1.35em;
+                                   background: rgba(255, 255, 255, 0.9);
+                                   color: #2c3e50;
+                               "
+                        />
+                        <button class="micro-test-check-btn" data-slot="${slotIndex}" data-answer-type="${answerType}" style="
+                            padding: 12px 24px;
+                            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+                            color: white;
+                            border: none;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            font-size: 1.28em;
+                            font-weight: 600;
+                        ">
+                            Проверить
+                        </button>
+                    </div>
 
-                <div class="micro-test-hint" data-slot="${slotIndex}" style="
-                    color: rgba(255, 255, 255, 0.7);
-                    font-size: 1.15em;
-                    margin-top: 10px;
-                    font-style: italic;
-                    cursor: pointer;
-                ">
-                    💡 Показать подсказку
-                </div>
+                    <div class="micro-test-hint" data-slot="${slotIndex}" style="
+                        color: rgba(255, 255, 255, 0.7);
+                        font-size: 1.15em;
+                        margin-top: 10px;
+                        font-style: italic;
+                        cursor: pointer;
+                    ">
+                        💡 Показать подсказку
+                    </div>
 
-                <div class="micro-test-feedback" data-slot="${slotIndex}" style="
-                    margin-top: 10px;
-                    padding: 10px;
-                    border-radius: 8px;
-                    display: ${isAnswered ? 'block' : 'none'};
-                    background: rgba(39, 174, 96, 0.3);
-                    color: #27ae60;
-                    font-weight: 600;
-                ">${isAnswered ? '✓ Правильно!' : ''}</div>
+                    <div class="micro-test-feedback" data-slot="${slotIndex}" style="
+                        margin-top: 10px;
+                        padding: 10px;
+                        border-radius: 8px;
+                        display: none;
+                        font-weight: 600;
+                    "></div>
+                ` : ''}
             </div>
         `;
     });
 
-    // Блок завершения
-    html += `
-        <div id="microTestsAllDone" style="
-            display: ${completedSlots === microTestsAnswerTypes.length ? 'block' : 'none'};
-            background: rgba(39, 174, 96, 0.3);
-            border: 1px solid rgba(39, 174, 96, 0.5);
-            border-radius: 12px;
-            padding: 20px;
-            text-align: center;
-            margin-top: 15px;
-        ">
-            <span style="font-size: 2em;">🎉</span>
-            <p style="color: #27ae60; font-weight: 600; margin: 10px 0 0 0; font-size: 1.1em;">
-                Все микро-тесты пройдены!
-            </p>
-        </div>
-    `;
+    // Блок завершения + кнопки (показываются когда ВСЕ слоты завершены)
+    const allCompleted = completedSlots === microTestsAnswerTypes.length && microTestsAnswerTypes.length > 0;
 
-    // Кнопка "Попробовать снова" (показывается ТОЛЬКО когда ВСЕ слоты завершены)
-    if (completedSlots === microTestsAnswerTypes.length && microTestsAnswerTypes.length > 0) {
+    if (allCompleted) {
         html += `
-            <div style="text-align: center; margin-top: 20px;">
+            <div id="microTestsAllDone" style="
+                background: rgba(39, 174, 96, 0.3);
+                border: 1px solid rgba(39, 174, 96, 0.5);
+                border-radius: 12px;
+                padding: 20px;
+                text-align: center;
+                margin-top: 15px;
+            ">
+                <span style="font-size: 2em;">🎉</span>
+                <p style="color: #27ae60; font-weight: 600; margin: 10px 0 0 0; font-size: 1.1em;">
+                    Все микро-тесты пройдены!
+                </p>
+            </div>
+
+            <div style="display: flex; gap: 15px; justify-content: center; margin-top: 20px; flex-wrap: wrap;">
                 <button id="microTestsRetryBtn" onclick="resetMicroTestsBank()" style="
                     padding: 14px 28px;
                     background: rgba(52, 152, 219, 0.5);
@@ -3989,16 +3990,36 @@ function renderMicroTestsSlots() {
                     align-items: center;
                     justify-content: center;
                     gap: 8px;
-                    margin: 0 auto;
                 ">
                     <img src="icons/arrows-clockwise.svg" alt="" style="width: 20px; height: 20px; filter: brightness(0) invert(1);">
                     Попробовать снова
+                </button>
+
+                <button onclick="goToTestFromMicroTests()" style="
+                    padding: 14px 28px;
+                    background: rgba(39, 174, 96, 0.5);
+                    backdrop-filter: blur(10px);
+                    border: 1px solid rgba(39, 174, 96, 0.5);
+                    border-radius: 10px;
+                    color: white;
+                    font-size: 1.15em;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                ">
+                    Перейти к тесту →
                 </button>
             </div>
         `;
     }
 
     container.innerHTML = html;
+
+    // Скрываем/показываем старую кнопку "Перейти к тесту" в шапке
+    const goToTestBtn = document.getElementById('microTestsGoToTestBtn');
+    if (goToTestBtn) {
+        goToTestBtn.classList.toggle('hidden', !allCompleted);
+    }
 }
 
 // Сброс банка вопросов
@@ -4052,12 +4073,13 @@ function initMicroTestsHandlers(exercise) {
         }
     }
 
-    // Считаем завершённые слоты
+    // Считаем завершённые слоты (текущий вопрос в слоте отвечен)
     let completedSlots = 0;
     microTestsAnswerTypes.forEach(answerType => {
-        const questions = microTestsQuestionBank[answerType];
-        const allUsed = questions.every(q => microTestsUsedQuestions.has(q.index));
-        if (allUsed) completedSlots++;
+        const currentQuestionIndex = microTestsCurrentSlots[answerType];
+        if (microTestsUsedQuestions.has(currentQuestionIndex)) {
+            completedSlots++;
+        }
     });
 
     // Обновим счётчик
@@ -4085,12 +4107,13 @@ function initMicroTestsHandlers(exercise) {
                 microTestsUsedQuestions.add(questionIndex);
                 saveMicroTestProgress(exercise.id, Array.from(microTestsUsedQuestions));
 
-                // Считаем завершённые слоты
+                // Считаем завершённые слоты (текущий вопрос в слоте отвечен)
                 let newCompletedSlots = 0;
                 microTestsAnswerTypes.forEach(at => {
-                    const questions = microTestsQuestionBank[at];
-                    const allUsed = questions.every(q => microTestsUsedQuestions.has(q.index));
-                    if (allUsed) newCompletedSlots++;
+                    const idx = microTestsCurrentSlots[at];
+                    if (microTestsUsedQuestions.has(idx)) {
+                        newCompletedSlots++;
+                    }
                 });
 
                 updateMicroTestsCounter(newCompletedSlots, microTestsAnswerTypes.length);
@@ -4102,11 +4125,6 @@ function initMicroTestsHandlers(exercise) {
                 // Проверка завершения всех слотов
                 if (newCompletedSlots === microTestsAnswerTypes.length) {
                     saveMicroTestsCompleted(exercise.id);
-                    // Показываем кнопку перехода к тесту
-                    const goToTestBtn = document.getElementById('microTestsGoToTestBtn');
-                    if (goToTestBtn) {
-                        goToTestBtn.classList.remove('hidden');
-                    }
                 }
             } else {
                 // Неправильный ответ

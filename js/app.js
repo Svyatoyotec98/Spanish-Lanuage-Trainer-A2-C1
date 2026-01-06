@@ -684,7 +684,17 @@ function showProfileSelect() {
         // Timer variables
         let timerInterval = null;
         let timeLeft = 10;
-        const TIMER_DURATION = 10;
+        const TIMER_DURATION_DEFAULT = 10;
+        const TIMER_DURATION_HARD_LONG = 20; // для сложного уровня с группами > 10 слов
+
+        // Функция для получения длительности таймера
+        function getTimerDuration() {
+            // Для сложного уровня (ввод текста) с группами > 10 слов - 20 секунд
+            if (currentLevel === 'hard' && currentQuestions && currentQuestions.length > 10) {
+                return TIMER_DURATION_HARD_LONG;
+            }
+            return TIMER_DURATION_DEFAULT;
+        }
 
         // Exam constants (ДОЛЖНЫ БЫТЬ ДО переменных состояния!)
         const EXAM_TIMER_DURATION = 10; // секунд на вопрос
@@ -1431,7 +1441,7 @@ if (
 
         function startTimer() {
             stopTimer();
-            timeLeft = TIMER_DURATION;
+            timeLeft = getTimerDuration();
             updateTimerDisplay();
 
             timerInterval = setInterval(() => {
@@ -1458,7 +1468,7 @@ if (
 
             if (!timerBar || !timerText) return;
 
-            const percentage = (timeLeft / TIMER_DURATION) * 100;
+            const percentage = (timeLeft / getTimerDuration()) * 100;
             timerBar.style.width = percentage + '%';
             timerText.textContent = Math.ceil(timeLeft);
 
@@ -1466,11 +1476,15 @@ if (
             timerBar.classList.remove('timer-warning', 'timer-danger');
             timerText.classList.remove('timer-text-warning', 'timer-text-danger');
 
-            // Add color based on time left
-            if (timeLeft <= 3) {
+            // Add color based on time left (пропорционально длительности)
+            const duration = getTimerDuration();
+            const dangerThreshold = duration * 0.3; // 30% времени - красный
+            const warningThreshold = duration * 0.5; // 50% времени - оранжевый
+
+            if (timeLeft <= dangerThreshold) {
                 timerBar.classList.add('timer-danger');
                 timerText.classList.add('timer-text-danger');
-            } else if (timeLeft <= 5) {
+            } else if (timeLeft <= warningThreshold) {
                 timerBar.classList.add('timer-warning');
                 timerText.classList.add('timer-text-warning');
             }

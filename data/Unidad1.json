@@ -817,19 +817,19 @@
           "hint": "С кем ты готовишь ужин?"
         },
         {
-          "sentence": "Viajo siempre ___ mi familia.",
+          "sentence": "Desayuno ___ mis hijos cada mañana.",
           "answer": "con",
-          "hint": "С кем ты путешествуешь?"
+          "hint": "С кем ты завтракаешь?"
         },
         {
-          "sentence": "Escribo ___ bolígrafo azul.",
+          "sentence": "Abro la puerta ___ la llave.",
           "answer": "con",
-          "hint": "Чем ты пишешь? (инструмент)"
+          "hint": "Чем открываешь? (инструмент)"
         },
         {
-          "sentence": "Estudio ___ mis compañeros de clase.",
+          "sentence": "Corto el pan ___ un cuchillo.",
           "answer": "con",
-          "hint": "С кем ты учишься?"
+          "hint": "Чем режешь? (инструмент)"
         },
         {
           "sentence": "Tomo el café ___ leche.",
@@ -842,14 +842,14 @@
           "hint": "Где находятся документы?"
         },
         {
-          "sentence": "Vivimos ___ Barcelona desde hace años.",
+          "sentence": "Mi abuelo vive ___ un pueblo pequeño.",
           "answer": "en",
-          "hint": "Где вы живёте?"
+          "hint": "Где живёт дедушка?"
         },
         {
-          "sentence": "Trabajo ___ una oficina moderna.",
+          "sentence": "Las llaves están ___ mi bolso.",
           "answer": "en",
-          "hint": "Где ты работаешь?"
+          "hint": "Где находятся ключи?"
         },
         {
           "sentence": "El gato duerme ___ el sofá.",
@@ -857,9 +857,9 @@
           "hint": "Где спит кот?"
         },
         {
-          "sentence": "___ verano vamos a la playa.",
+          "sentence": "___ primavera florecen los árboles.",
           "answer": "En",
-          "hint": "Когда вы ходите на пляж? (время)"
+          "hint": "Когда цветут деревья? (время)"
         },
         {
           "sentence": "Hay un jardín ___ las dos casas.",
@@ -867,9 +867,9 @@
           "hint": "Где расположен сад?"
         },
         {
-          "sentence": "___ tú y yo no hay secretos.",
-          "answer": "Entre",
-          "hint": "Между кем нет секретов?"
+          "sentence": "El parque está ___ el colegio y la biblioteca.",
+          "answer": "entre",
+          "hint": "Где находится парк?"
         },
         {
           "sentence": "La farmacia está ___ el banco y el supermercado.",
@@ -877,14 +877,14 @@
           "hint": "Где находится аптека?"
         },
         {
-          "sentence": "Tenemos una reunión ___ las 10 y las 12.",
+          "sentence": "La cita es ___ las 3 y las 5 de la tarde.",
           "answer": "entre",
           "hint": "Когда встреча? (временной промежуток)"
         },
         {
-          "sentence": "La diferencia ___ español y catalán es pequeña.",
+          "sentence": "Hay buena comunicación ___ los vecinos.",
           "answer": "entre",
-          "hint": "Между чем разница?"
+          "hint": "Между кем хорошая коммуникация?"
         }
       ]
     },
@@ -944,19 +944,19 @@
           "hint": "Почему ты не идёшь в зал? (причина)"
         },
         {
-          "sentence": "Llego tarde ___ hay mucho tráfico.",
+          "sentence": "Bebo agua ___ tengo sed.",
           "answer": "porque",
-          "hint": "Почему опаздываешь? (причина)"
+          "hint": "Почему пьёшь воду? (причина)"
         },
         {
-          "sentence": "No salgo hoy ___ estoy muy cansado.",
+          "sentence": "No salgo hoy ___ está lloviendo.",
           "answer": "porque",
           "hint": "Почему не выходишь? (причина)"
         },
         {
-          "sentence": "Estudio mucho ___ quiero aprobar.",
+          "sentence": "Llevo abrigo ___ hace frío.",
           "answer": "porque",
-          "hint": "Почему много учишься? (причина)"
+          "hint": "Почему в пальто? (причина)"
         },
         {
           "sentence": "No como carne ___ soy vegetariano.",
@@ -969,24 +969,24 @@
           "hint": "Для кого ты купил цветы? (цель/адресат)"
         },
         {
-          "sentence": "Ahorro dinero ___ viajar a España.",
+          "sentence": "Estudio medicina ___ ser doctor.",
           "answer": "para",
-          "hint": "Для чего копишь? (цель)"
+          "hint": "Для чего учишься? (цель)"
         },
         {
-          "sentence": "Necesito el pasaporte ___ ir al extranjero.",
+          "sentence": "Necesito gafas ___ leer.",
           "answer": "para",
-          "hint": "Для чего нужен паспорт? (цель)"
+          "hint": "Для чего нужны очки? (цель)"
         },
         {
-          "sentence": "Uso esta aplicación ___ practicar español.",
+          "sentence": "Este regalo es ___ mi abuela.",
           "answer": "para",
-          "hint": "Для чего используешь? (цель)"
+          "hint": "Для кого подарок? (адресат)"
         },
         {
-          "sentence": "Este libro es ___ ti.",
+          "sentence": "Trabajo mucho ___ comprarme un coche.",
           "answer": "para",
-          "hint": "Для кого эта книга? (адресат)"
+          "hint": "Для чего работаешь? (цель)"
         }
       ]
     },
@@ -1159,7 +1159,7 @@
           "hint": "Неправильный глагол tener, 1-е лицо ед.ч."
         },
         {
-          "sentence": "Yo (hacer) ___ deporte todos los días.",
+          "sentence": "Yo (hacer) ___ la cama cada mañana.",
           "answer": "hago",
           "hint": "Неправильный глагол hacer, 1-е лицо ед.ч."
         },
@@ -1234,24 +1234,24 @@
           "hint": "С какого месяца? (точка во времени)"
         },
         {
-          "sentence": "Vivo en España ___ 2018.",
+          "sentence": "Estudio en esta universidad ___ septiembre.",
           "answer": "desde",
-          "hint": "С какого года? (точка во времени)"
+          "hint": "С какого месяца? (точка во времени)"
         },
         {
-          "sentence": "Conozco a María ___ la universidad.",
+          "sentence": "No bebo alcohol ___ mi cumpleaños.",
           "answer": "desde",
-          "hint": "С какого момента? (событие)"
+          "hint": "С какого события? (момент)"
         },
         {
-          "sentence": "No fumo ___ el año pasado.",
-          "answer": "desde",
-          "hint": "С какого времени? (точка)"
-        },
-        {
-          "sentence": "Toco la guitarra ___ niño.",
+          "sentence": "Hablo inglés ___ pequeño.",
           "answer": "desde",
           "hint": "С какого возраста? (момент)"
+        },
+        {
+          "sentence": "Leo este autor ___ mi juventud.",
+          "answer": "desde",
+          "hint": "С какого периода? (момент)"
         },
         {
           "sentence": "Estudio francés ___ cuatro años.",
@@ -1259,22 +1259,22 @@
           "hint": "Как долго? (период времени)"
         },
         {
-          "sentence": "Practico yoga ___ dos meses.",
+          "sentence": "Vivo en este apartamento ___ un año.",
           "answer": "desde hace",
           "hint": "Как долго? (период)"
         },
         {
-          "sentence": "Tengo este coche ___ cinco años.",
+          "sentence": "Trabajo como profesor ___ quince años.",
           "answer": "desde hace",
           "hint": "Как долго? (период)"
         },
         {
-          "sentence": "Esperamos aquí ___ media hora.",
+          "sentence": "No como dulces ___ una semana.",
           "answer": "desde hace",
           "hint": "Как долго? (период)"
         },
         {
-          "sentence": "Estamos casados ___ diez años.",
+          "sentence": "Conocemos a los vecinos ___ poco tiempo.",
           "answer": "desde hace",
           "hint": "Как долго? (период)"
         }
@@ -1352,7 +1352,7 @@
           "hint": "Происхождение — постоянная характеристика"
         },
         {
-          "sentence": "Esta casa ___ muy grande.",
+          "sentence": "El edificio ___ muy antiguo.",
           "answer": "es",
           "hint": "Характеристика объекта — постоянно"
         },
@@ -1377,7 +1377,7 @@
           "hint": "Временное состояние — стала холодной"
         },
         {
-          "sentence": "Mi habitación ___ ordenada hoy.",
+          "sentence": "El coche ___ aparcado en la calle.",
           "answer": "está",
           "hint": "Временное состояние — результат действия"
         },
@@ -1483,7 +1483,7 @@
           "hint": "Обязанность, необходимость (ты должен)"
         },
         {
-          "sentence": "___ hablar con nativos para mejorar.",
+          "sentence": "___ beber mucha agua cada día.",
           "answer": "Tienes que",
           "hint": "Обязанность, необходимость (ты должен)"
         },
@@ -1493,7 +1493,7 @@
           "hint": "Обязанность, необходимость (ты должен)"
         },
         {
-          "sentence": "___ hacer ejercicio regularmente.",
+          "sentence": "___ levantarte temprano mañana.",
           "answer": "Tienes que",
           "hint": "Обязанность, необходимость (ты должен)"
         },
@@ -1538,12 +1538,12 @@
           "hint": "Что хорошо помогает для чего-то"
         },
         {
-          "sentence": "Caminar ___ para la salud.",
+          "sentence": "Nadar ___ para los músculos.",
           "answer": "va muy bien",
           "hint": "Что хорошо помогает для чего-то"
         },
         {
-          "sentence": "La meditación ___ para concentrarse.",
+          "sentence": "El yoga ___ para el estrés.",
           "answer": "va muy bien",
           "hint": "Что хорошо помогает для чего-то"
         },
@@ -1818,14 +1818,14 @@
           "hint": "Verbos — множественное число"
         },
         {
-          "sentence": "Me ___ las conjugaciones del subjuntivo.",
+          "sentence": "Me ___ las expresiones idiomáticas.",
           "answer": "cuestan",
-          "hint": "Conjugaciones — множественное число"
+          "hint": "Expresiones — множественное число"
         },
         {
-          "sentence": "Me ___ algunos sonidos del español.",
+          "sentence": "Me ___ los números en español.",
           "answer": "cuestan",
-          "hint": "Sonidos — множественное число"
+          "hint": "Números — множественное число"
         },
         {
           "sentence": "Me ___ las palabras muy largas.",
@@ -1963,7 +1963,7 @@
           "hint": "Инфинитив = единственное число → da"
         },
         {
-          "sentence": "Me ___ pena no poder practicar más.",
+          "sentence": "Me ___ pena no verte más.",
           "answer": "da",
           "hint": "Инфинитив = единственное число → da"
         },
@@ -1978,9 +1978,9 @@
           "hint": "Arañas — множественное число → dan"
         },
         {
-          "sentence": "Me ___ miedo los exámenes.",
+          "sentence": "Me ___ miedo los perros grandes.",
           "answer": "dan",
-          "hint": "Exámenes — множественное число → dan"
+          "hint": "Perros — множественное число → dan"
         },
         {
           "sentence": "Me ___ vergüenza mis errores.",
@@ -2077,12 +2077,12 @@
           "hint": "Выражение трудности"
         },
         {
-          "sentence": "___ recordar todas las conjugaciones.",
+          "sentence": "___ escribir sin errores.",
           "answer": "Me cuesta",
           "hint": "Выражение трудности"
         },
         {
-          "sentence": "___ mucho la gramática avanzada.",
+          "sentence": "___ mucho el subjuntivo.",
           "answer": "Me cuesta",
           "hint": "Выражение трудности"
         },
@@ -2097,12 +2097,12 @@
           "hint": "Что вызывает страх"
         },
         {
-          "sentence": "___ vergüenza cometer errores.",
+          "sentence": "___ vergüenza pedir ayuda.",
           "answer": "Me da",
           "hint": "Что вызывает стыд"
         },
         {
-          "sentence": "___ alegría cuando apruebo un examen.",
+          "sentence": "___ alegría hablar con amigos españoles.",
           "answer": "Me da",
           "hint": "Что вызывает радость"
         },
@@ -2117,7 +2117,7 @@
           "hint": "Как я себя чувствую"
         },
         {
-          "sentence": "___ inseguro cuando tengo que escribir.",
+          "sentence": "___ inseguro al hablar rápido.",
           "answer": "Me siento",
           "hint": "Как я себя чувствую"
         },

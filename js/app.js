@@ -3868,12 +3868,14 @@ function renderMicroTestsSlots() {
                         background: rgba(52, 152, 219, 0.3);
                         border: 1px solid rgba(52, 152, 219, 0.5);
                         border-radius: 8px;
-                        padding: 8px 12px;
+                        padding: 8px;
                         cursor: pointer;
-                        font-size: 1.1em;
                         transition: all 0.2s;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     " title="Другой вопрос">
-                        🔄
+                        <img src="icons/arrows-clockwise.svg" alt="" style="width: 18px; height: 18px; filter: brightness(0) invert(1);">
                     </button>
                 ` : ''}
 
@@ -3968,8 +3970,8 @@ function renderMicroTestsSlots() {
         </div>
     `;
 
-    // Кнопка "Попробовать снова" (показывается если есть хотя бы один использованный вопрос)
-    if (microTestsUsedQuestions.size > 0) {
+    // Кнопка "Попробовать снова" (показывается ТОЛЬКО когда ВСЕ слоты завершены)
+    if (completedSlots === microTestsAnswerTypes.length && microTestsAnswerTypes.length > 0) {
         html += `
             <div style="text-align: center; margin-top: 20px;">
                 <button id="microTestsRetryBtn" onclick="resetMicroTestsBank()" style="
@@ -3983,8 +3985,14 @@ function renderMicroTestsSlots() {
                     font-weight: 600;
                     cursor: pointer;
                     transition: all 0.2s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    margin: 0 auto;
                 ">
-                    🔄 Попробовать снова
+                    <img src="icons/arrows-clockwise.svg" alt="" style="width: 20px; height: 20px; filter: brightness(0) invert(1);">
+                    Попробовать снова
                 </button>
             </div>
         `;

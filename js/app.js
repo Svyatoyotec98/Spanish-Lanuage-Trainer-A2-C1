@@ -3091,7 +3091,11 @@ async function getNavigationState() {
                 'questionScreen': 'categoryMenu',
                 'gramaticaQuestionScreen': 'gramaticaMenu',
                 'cardMatchingScreen': 'categoryMenu',
-                'grammarInteractiveScreen': 'grammarListScreen'
+                'grammarInteractiveScreen': 'grammarListScreen',
+                // Ejercicios экраны - откатываем на gramaticaMenu при refresh
+                'exercisePreviewMenu': 'gramaticaMenu',
+                'grammarRuleScreen': 'gramaticaMenu',
+                'microTestsScreen': 'gramaticaMenu'
             };
 
             if (testScreens[targetScreen]) {

@@ -978,9 +978,8 @@ function showProfileSelect() {
             const displayName = currentCategory.replace(/_/g, ' ');
             document.getElementById('miniDictTitle').textContent = `📖 ${displayName}`;
             document.getElementById('miniDictSubtitle').textContent = `Мини-Словарь группы`;
-            document.getElementById('miniDictWordCount').textContent = `${words.length} слов`;
 
-            // Render words list with sentences
+            // Render words list with sentences (шрифты увеличены на 50%)
             const container = document.getElementById('miniDictWordsContainer');
             container.innerHTML = words.map((word, index) => {
                 // Get 2 sentences (or less if not available)
@@ -997,21 +996,21 @@ function showProfileSelect() {
                     -webkit-backdrop-filter: blur(10px);
                     border: 1px solid rgba(255, 255, 255, 0.3);
                     border-radius: 12px;
-                    padding: 20px;
-                    margin-bottom: 15px;
+                    padding: 15px;
+                    margin-bottom: 12px;
                 ">
                     <!-- Word header -->
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.2);">
-                        <span style="font-weight: 700; color: #2c3e50; font-size: 1.3em;">${word.spanish}</span>
-                        <span style="color: #fff; font-size: 1.1em; font-style: italic;">${word.ru}</span>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.2);">
+                        <span style="font-weight: 700; color: #2c3e50; font-size: 1.95em;">${word.spanish}</span>
+                        <span style="color: #fff; font-size: 1.65em; font-style: italic;">${word.ru}</span>
                     </div>
                     <!-- Sentences -->
                     ${sentences.length > 0 ? `
-                    <div style="margin-top: 8px;">
+                    <div style="margin-top: 6px;">
                         ${sentences.map((s, i) => `
-                            <div style="margin-bottom: 8px;">
-                                <div style="color: #2c3e50; font-size: 0.95em;">${fillSentence(s)}</div>
-                                ${sentencesRu[i] ? `<div style="color: #fff; font-size: 0.9em; font-style: italic; margin-top: 3px;">${sentencesRu[i]}</div>` : ''}
+                            <div style="margin-bottom: 6px;">
+                                <div style="color: #2c3e50; font-size: 1.4em;">${fillSentence(s)}</div>
+                                ${sentencesRu[i] ? `<div style="color: #fff; font-size: 1.35em; font-style: italic; margin-top: 2px;">${sentencesRu[i]}</div>` : ''}
                             </div>
                         `).join('')}
                     </div>

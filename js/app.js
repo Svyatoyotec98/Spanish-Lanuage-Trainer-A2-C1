@@ -4349,17 +4349,42 @@ function showEjerciciosGramatica() {
     hideAllScreens();
     document.getElementById('ejerciciosGramaticaRefScreen').classList.remove('hidden');
 
-    // Используем глобальную переменную gramaticaExercises
-    if (!gramaticaExercises || gramaticaExercises.length === 0) {
-        document.getElementById('ejerciciosGramaticaContainer').innerHTML = '<p style="text-align: center; color: #7f8c8d;">Нет упражнений для отображения</p>';
+    const profile = getActiveProfile();
+
+    // Собираем все ejercicios из ВСЕХ юнидадов
+    const allEjercicios = [];
+
+    Object.keys(vocabularyData).forEach(unidadId => {
+        const unidadData = vocabularyData[unidadId];
+        if (unidadData && unidadData.ejercicios && Array.isArray(unidadData.ejercicios)) {
+            unidadData.ejercicios.forEach(exercise => {
+                // Проверяем три условия разблокировки для данной юнидад
+                const ruleViewed = isRuleViewed(unidadId, exercise.id);
+                const testScore = profile?.progress?.[unidadId]?.ejercicios?.[exercise.id] || 0;
+                const testPassed = testScore >= 60;
+                const microTestsDone = areMicroTestsCompleted(unidadId, exercise.id);
+
+                // Правило разблокировано только если ВСЕ три условия выполнены
+                const isUnlocked = ruleViewed && testPassed && microTestsDone;
+
+                allEjercicios.push({
+                    ...exercise,
+                    unidadId: unidadId,
+                    isUnlocked: isUnlocked
+                });
+            });
+        }
+    });
+
+    if (allEjercicios.length === 0) {
+        document.getElementById('ejerciciosGramaticaContainer').innerHTML = '<p style="text-align: center; color: rgba(255,255,255,0.8); background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px;">Нет упражнений для отображения. Загрузите данные Unidads.</p>';
+        document.getElementById('gramUnlockedCount').textContent = '0';
+        document.getElementById('gramTotalCount').textContent = '0';
         return;
     }
 
-    const ejercicios = gramaticaExercises;
-    const profile = getActiveProfile();
-
-    let unlockedCount = 0;
-    const totalCount = ejercicios.length;
+    let unlockedCount = allEjercicios.filter(e => e.isUnlocked).length;
+    const totalCount = allEjercicios.length;
 
     const container = document.getElementById('ejerciciosGramaticaContainer');
     container.innerHTML = '';
@@ -4368,33 +4393,23 @@ function showEjerciciosGramatica() {
     const gridWrapper = document.createElement('div');
     gridWrapper.className = 'grammar-grid';
 
-    ejercicios.forEach(exercise => {
-        // Проверяем три условия разблокировки
-        const ruleViewed = isRuleViewed(currentUnidad, exercise.id);
-        const testScore = profile?.progress?.[currentUnidad]?.ejercicios?.[exercise.id] || 0;
-        const testPassed = testScore >= 60;
-        const microTestsDone = areMicroTestsCompleted(currentUnidad, exercise.id);
-
-        // Правило разблокировано только если ВСЕ три условия выполнены
-        const isUnlocked = ruleViewed && testPassed && microTestsDone;
-        if (isUnlocked) unlockedCount++;
-
+    allEjercicios.forEach(exercise => {
         // Название правила (короткое)
         const ruleTitle = exercise.rule?.title || exercise.title;
-        const shortTitle = isUnlocked ? (ruleTitle.length > 20 ? ruleTitle.substring(0, 18) + '...' : ruleTitle) : '???';
+        const shortTitle = exercise.isUnlocked ? (ruleTitle.length > 20 ? ruleTitle.substring(0, 18) + '...' : ruleTitle) : '???';
 
         // Создаём карточку
         const card = document.createElement('div');
-        card.className = 'grammar-card' + (isUnlocked ? ' clickable' : ' locked');
+        card.className = 'grammar-card' + (exercise.isUnlocked ? ' clickable' : ' locked');
 
         card.innerHTML = `
             <div class="card-icon"><i class="ph ph-book-open"></i></div>
             <div class="card-title">${shortTitle}</div>
-            <div class="card-status">${isUnlocked ? '🔓' : '🔒'}</div>
+            <div class="card-status">${exercise.isUnlocked ? '🔓' : '🔒'}</div>
         `;
 
         // Add click handler for unlocked cards
-        if (isUnlocked) {
+        if (exercise.isUnlocked) {
             card.onclick = () => expandGrammarCard(exercise.id, ruleTitle, exercise.rule?.explanation || '');
         }
 

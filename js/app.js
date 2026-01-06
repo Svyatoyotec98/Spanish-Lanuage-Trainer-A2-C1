@@ -2027,10 +2027,132 @@ if (
         }
 
         /**
-         * Заглушка для submit (будет реализована в Фазе 5)
+         * Отправка теста на проверку
          */
         function hardTestSubmit() {
-            alert('Функция проверки будет добавлена в следующей фазе');
+            // Проверяем, есть ли пустые поля
+            const emptyCount = countEmptyAnswers();
+
+            if (emptyCount > 0) {
+                // Есть незаполненные поля
+                if (!confirm(`У вас есть незаполненные поля (${emptyCount} из ${hardTestQuestions.length}).\n\nПродолжить?`)) {
+                    return; // Пользователь отменил
+                }
+            }
+
+            // Подтверждение отправки
+            if (!confirm('Вы уверены, что хотите завершить тест?')) {
+                return; // Пользователь отменил
+            }
+
+            // Останавливаем таймер
+            stopHardTestTimer();
+
+            // Проверяем ответы
+            const results = checkHardTestAnswers();
+
+            // Показываем результаты
+            showHardTestResults(results);
+        }
+
+        /**
+         * Подсчёт пустых ответов
+         */
+        function countEmptyAnswers() {
+            let empty = 0;
+            for (let i = 0; i < hardTestQuestions.length; i++) {
+                const answer = hardTestAnswers[i];
+                if (!answer || answer.trim() === '') {
+                    empty++;
+                }
+            }
+            return empty;
+        }
+
+        /**
+         * Проверка ответов
+         * @returns {Object} { correct, wrong, total, percentage, details }
+         */
+        function checkHardTestAnswers() {
+            let correct = 0;
+            let wrong = 0;
+            const details = []; // Детали по каждому вопросу
+
+            hardTestQuestions.forEach((q, index) => {
+                const userAnswer = (hardTestAnswers[index] || '').trim().toLowerCase();
+                const correctAnswer = q.answer.toLowerCase();
+
+                const isCorrect = userAnswer === correctAnswer;
+
+                if (isCorrect) {
+                    correct++;
+                } else {
+                    wrong++;
+                }
+
+                details.push({
+                    index: index,
+                    sentence: q.sentence,
+                    userAnswer: hardTestAnswers[index] || '',
+                    correctAnswer: q.word.spanish,
+                    isCorrect: isCorrect
+                });
+            });
+
+            const total = hardTestQuestions.length;
+            const percentage = Math.round((correct / total) * 100);
+
+            return { correct, wrong, total, percentage, details };
+        }
+
+        /**
+         * Показ результатов теста
+         * @param {Object} results - результаты проверки
+         */
+        function showHardTestResults(results) {
+            const { correct, wrong, total, percentage, details } = results;
+            const passed = percentage >= 80;
+
+            // Сохраняем прогресс если прошёл (≥80%)
+            if (passed) {
+                saveHardTestProgress(percentage);
+            }
+
+            // Пока показываем alert, в Фазе 6 будет красивый экран
+            const status = passed ? '✅ ЗАЧЁТ!' : '❌ НЕ ЗАЧЁТ';
+            const message = `${status}\n\nПравильно: ${correct} из ${total}\nРезультат: ${percentage}%\n\nМинимум для зачёта: 80%`;
+
+            alert(message);
+
+            // Возвращаемся в меню категории
+            showCategoryMenu(currentCategory);
+        }
+
+        /**
+         * Сохранение прогресса hard-теста
+         */
+        function saveHardTestProgress(percentage) {
+            const profile = getActiveProfile();
+            if (!profile) return;
+
+            // Убеждаемся что структура progress существует
+            ensureProgressSkeleton(profile);
+
+            // Сохраняем результат для текущей категории
+            if (!profile.progress[currentUnidad].palabras) {
+                profile.progress[currentUnidad].palabras = {};
+            }
+
+            // Обновляем только если новый результат лучше
+            const currentScore = profile.progress[currentUnidad].palabras[currentCategory] || 0;
+            if (percentage > currentScore) {
+                profile.progress[currentUnidad].palabras[currentCategory] = percentage;
+            }
+
+            // Сохраняем в localStorage
+            const state = loadAppState();
+            state.profiles[profile.id] = profile;
+            saveAppState(state);
         }
 
         // ═══════════════════════════════════════════════════════════════

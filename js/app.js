@@ -1786,6 +1786,99 @@ if (
 
             // Обновляем индикаторы
             updateHardTestPageIndicator();
+
+            // Запускаем общий таймер (20 сек на вопрос)
+            startHardTestTimer();
+        }
+
+        /**
+         * Запуск общего таймера
+         */
+        function startHardTestTimer() {
+            // Останавливаем предыдущий таймер если был
+            if (hardTestTimerInterval) {
+                clearInterval(hardTestTimerInterval);
+            }
+
+            // Общее время = 20 сек × количество вопросов
+            hardTestTimeLeft = HARD_TEST_TIME_PER_QUESTION * hardTestQuestions.length;
+
+            // Обновляем отображение
+            updateHardTestTimerDisplay();
+
+            // Запускаем интервал (каждую секунду)
+            hardTestTimerInterval = setInterval(() => {
+                hardTestTimeLeft--;
+                updateHardTestTimerDisplay();
+
+                if (hardTestTimeLeft <= 0) {
+                    hardTestTimeUp();
+                }
+            }, 1000);
+        }
+
+        /**
+         * Обновление отображения таймера
+         */
+        function updateHardTestTimerDisplay() {
+            const timerText = document.getElementById('hardTestGlobalTimer');
+            const timerBar = document.getElementById('hardTestTimerBar');
+
+            if (!timerText || !timerBar) return;
+
+            // Форматируем время как M:SS
+            const minutes = Math.floor(hardTestTimeLeft / 60);
+            const seconds = hardTestTimeLeft % 60;
+            timerText.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+            // Вычисляем процент оставшегося времени
+            const totalTime = HARD_TEST_TIME_PER_QUESTION * hardTestQuestions.length;
+            const percentage = (hardTestTimeLeft / totalTime) * 100;
+
+            // Обновляем прогресс-бар
+            timerBar.style.width = percentage + '%';
+
+            // Меняем цвет в зависимости от оставшегося времени
+            if (percentage > 50) {
+                // Зелёный (больше 50%)
+                timerBar.style.background = 'linear-gradient(90deg, #27ae60, #2ecc71)';
+                timerText.style.color = '#27ae60';
+            } else if (percentage > 20) {
+                // Оранжевый (20-50%)
+                timerBar.style.background = 'linear-gradient(90deg, #f39c12, #e67e22)';
+                timerText.style.color = '#f39c12';
+            } else {
+                // Красный (меньше 20%)
+                timerBar.style.background = 'linear-gradient(90deg, #e74c3c, #c0392b)';
+                timerText.style.color = '#e74c3c';
+            }
+        }
+
+        /**
+         * Время вышло — автоматический не зачёт
+         */
+        function hardTestTimeUp() {
+            // Останавливаем таймер
+            if (hardTestTimerInterval) {
+                clearInterval(hardTestTimerInterval);
+                hardTestTimerInterval = null;
+            }
+
+            // Показываем сообщение и результат 0%
+            alert('⏱ Время вышло! Результат: 0%');
+
+            // Возвращаемся к меню категории
+            showCategoryMenu(currentCategory);
+        }
+
+        /**
+         * Остановка таймера
+         */
+        function stopHardTestTimer() {
+            if (hardTestTimerInterval) {
+                clearInterval(hardTestTimerInterval);
+                hardTestTimerInterval = null;
+            }
         }
 
         /**
@@ -1928,11 +2021,7 @@ if (
          */
         function exitHardTest() {
             if (confirm('Выйти из теста? Прогресс не будет сохранён.')) {
-                // Останавливаем таймер если есть
-                if (hardTestTimerInterval) {
-                    clearInterval(hardTestTimerInterval);
-                    hardTestTimerInterval = null;
-                }
+                stopHardTestTimer();
                 showCategoryMenu(currentCategory);
             }
         }

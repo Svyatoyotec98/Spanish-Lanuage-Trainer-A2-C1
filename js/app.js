@@ -5495,12 +5495,15 @@ function goToNextTestSmart() {
         // Проверяем, был ли просмотрен словарь для следующей группы
         const wordsViewed = isWordsViewed(currentUnidad, nextGroup);
 
+        // Устанавливаем следующую группу как текущую
+        currentCategory = nextGroup;
+
         if (wordsViewed) {
             // Словарь уже просмотрен - сразу на тест
             showCategoryMenu(nextGroup);
         } else {
-            // Словарь не просмотрен - показываем превью группы
-            showGroupPreview(nextGroup);
+            // Словарь не просмотрен - сразу открываем словарь
+            showMiniDictionary();
         }
     } else {
         // Это последняя группа - возвращаемся в меню
@@ -5532,14 +5535,16 @@ function goToNextExerciseSmart() {
     // Проверяем, было ли просмотрено правило для следующего упражнения
     const ruleViewed = isRuleViewed(currentUnidad, nextExercise.id);
 
+    // Устанавливаем следующее упражнение как текущее
+    currentExerciseForPreview = nextExercise;
+    gramCurrentExercise = nextExercise;
+
     if (ruleViewed) {
         // Правило уже просмотрено - переходим сразу к тесту
-        currentExerciseForPreview = nextExercise;
-        gramCurrentExercise = nextExercise;
         startGramExercise(nextExercise);
     } else {
-        // Правило не просмотрено - показываем превью с правилом
-        showExercisePreview(nextExercise);
+        // Правило не просмотрено - сразу открываем правило
+        showGrammarRule();
     }
 }
 

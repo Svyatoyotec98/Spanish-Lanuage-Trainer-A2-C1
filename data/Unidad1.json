@@ -817,14 +817,74 @@
           "hint": "С кем ты готовишь ужин?"
         },
         {
+          "sentence": "Viajo siempre ___ mi familia.",
+          "answer": "con",
+          "hint": "С кем ты путешествуешь?"
+        },
+        {
+          "sentence": "Escribo ___ bolígrafo azul.",
+          "answer": "con",
+          "hint": "Чем ты пишешь? (инструмент)"
+        },
+        {
+          "sentence": "Estudio ___ mis compañeros de clase.",
+          "answer": "con",
+          "hint": "С кем ты учишься?"
+        },
+        {
+          "sentence": "Tomo el café ___ leche.",
+          "answer": "con",
+          "hint": "С чем ты пьёшь кофе?"
+        },
+        {
           "sentence": "Los documentos están ___ el cajón.",
           "answer": "en",
           "hint": "Где находятся документы?"
         },
         {
+          "sentence": "Vivimos ___ Barcelona desde hace años.",
+          "answer": "en",
+          "hint": "Где вы живёте?"
+        },
+        {
+          "sentence": "Trabajo ___ una oficina moderna.",
+          "answer": "en",
+          "hint": "Где ты работаешь?"
+        },
+        {
+          "sentence": "El gato duerme ___ el sofá.",
+          "answer": "en",
+          "hint": "Где спит кот?"
+        },
+        {
+          "sentence": "___ verano vamos a la playa.",
+          "answer": "En",
+          "hint": "Когда вы ходите на пляж? (время)"
+        },
+        {
           "sentence": "Hay un jardín ___ las dos casas.",
           "answer": "entre",
           "hint": "Где расположен сад?"
+        },
+        {
+          "sentence": "___ tú y yo no hay secretos.",
+          "answer": "Entre",
+          "hint": "Между кем нет секретов?"
+        },
+        {
+          "sentence": "La farmacia está ___ el banco y el supermercado.",
+          "answer": "entre",
+          "hint": "Где находится аптека?"
+        },
+        {
+          "sentence": "Tenemos una reunión ___ las 10 y las 12.",
+          "answer": "entre",
+          "hint": "Когда встреча? (временной промежуток)"
+        },
+        {
+          "sentence": "La diferencia ___ español y catalán es pequeña.",
+          "answer": "entre",
+          "hint": "Между чем разница?"
         }
       ]
     },
@@ -884,9 +944,49 @@
           "hint": "Почему ты не идёшь в зал? (причина)"
         },
         {
+          "sentence": "Llego tarde ___ hay mucho tráfico.",
+          "answer": "porque",
+          "hint": "Почему опаздываешь? (причина)"
+        },
+        {
+          "sentence": "No salgo hoy ___ estoy muy cansado.",
+          "answer": "porque",
+          "hint": "Почему не выходишь? (причина)"
+        },
+        {
+          "sentence": "Estudio mucho ___ quiero aprobar.",
+          "answer": "porque",
+          "hint": "Почему много учишься? (причина)"
+        },
+        {
+          "sentence": "No como carne ___ soy vegetariano.",
+          "answer": "porque",
+          "hint": "Почему не ешь мясо? (причина)"
+        },
+        {
           "sentence": "Compré flores ___ mi novia.",
           "answer": "para",
           "hint": "Для кого ты купил цветы? (цель/адресат)"
+        },
+        {
+          "sentence": "Ahorro dinero ___ viajar a España.",
+          "answer": "para",
+          "hint": "Для чего копишь? (цель)"
+        },
+        {
+          "sentence": "Necesito el pasaporte ___ ir al extranjero.",
+          "answer": "para",
+          "hint": "Для чего нужен паспорт? (цель)"
+        },
+        {
+          "sentence": "Uso esta aplicación ___ practicar español.",
+          "answer": "para",
+          "hint": "Для чего используешь? (цель)"
+        },
+        {
+          "sentence": "Este libro es ___ ti.",
+          "answer": "para",
+          "hint": "Для кого эта книга? (адресат)"
         }
       ]
     },
@@ -979,8 +1079,48 @@
           "hint": "Глагол -AR, 3-е лицо ед.ч."
         },
         {
+          "sentence": "Mi hermano (estudiar) ___ medicina.",
+          "answer": "estudia",
+          "hint": "Глагол -AR, 3-е лицо ед.ч."
+        },
+        {
+          "sentence": "El profesor (explicar) ___ la gramática.",
+          "answer": "explica",
+          "hint": "Глагол -AR, 3-е лицо ед.ч."
+        },
+        {
+          "sentence": "Ana (trabajar) ___ en un hospital.",
+          "answer": "trabaja",
+          "hint": "Глагол -AR, 3-е лицо ед.ч."
+        },
+        {
+          "sentence": "Mi padre (hablar) ___ tres idiomas.",
+          "answer": "habla",
+          "hint": "Глагол -AR, 3-е лицо ед.ч."
+        },
+        {
           "sentence": "Los niños (beber) ___ mucha agua.",
           "answer": "beben",
+          "hint": "Глагол -ER, 3-е лицо мн.ч."
+        },
+        {
+          "sentence": "Mis padres (comer) ___ en un restaurante.",
+          "answer": "comen",
+          "hint": "Глагол -ER, 3-е лицо мн.ч."
+        },
+        {
+          "sentence": "Los estudiantes (leer) ___ muchos libros.",
+          "answer": "leen",
+          "hint": "Глагол -ER, 3-е лицо мн.ч."
+        },
+        {
+          "sentence": "Ellos no (comprender) ___ esta regla.",
+          "answer": "comprenden",
+          "hint": "Глагол -ER, 3-е лицо мн.ч."
+        },
+        {
+          "sentence": "Los gatos (correr) ___ muy rápido.",
+          "answer": "corren",
           "hint": "Глагол -ER, 3-е лицо мн.ч."
         },
         {
@@ -989,9 +1129,49 @@
           "hint": "Глагол -IR, 1-е лицо мн.ч."
         },
         {
+          "sentence": "Nosotros (vivir) ___ en el centro de la ciudad.",
+          "answer": "vivimos",
+          "hint": "Глагол -IR, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (abrir) ___ las ventanas por la mañana.",
+          "answer": "abrimos",
+          "hint": "Глагол -IR, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (subir) ___ las escaleras cada día.",
+          "answer": "subimos",
+          "hint": "Глагол -IR, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (decidir) ___ juntos.",
+          "answer": "decidimos",
+          "hint": "Глагол -IR, 1-е лицо мн.ч."
+        },
+        {
           "sentence": "Yo no (poder) ___ dormir por la noche.",
           "answer": "puedo",
-          "hint": "Неправильный глагол, 1-е лицо ед.ч."
+          "hint": "Неправильный глагол poder, 1-е лицо ед.ч."
+        },
+        {
+          "sentence": "Yo (tener) ___ mucho trabajo hoy.",
+          "answer": "tengo",
+          "hint": "Неправильный глагол tener, 1-е лицо ед.ч."
+        },
+        {
+          "sentence": "Yo (hacer) ___ deporte todos los días.",
+          "answer": "hago",
+          "hint": "Неправильный глагол hacer, 1-е лицо ед.ч."
+        },
+        {
+          "sentence": "Yo (saber) ___ hablar español.",
+          "answer": "sé",
+          "hint": "Неправильный глагол saber, 1-е лицо ед.ч."
+        },
+        {
+          "sentence": "Yo (conocer) ___ bien esta ciudad.",
+          "answer": "conozco",
+          "hint": "Неправильный глагол conocer, 1-е лицо ед.ч."
         }
       ]
     },
@@ -1054,9 +1234,49 @@
           "hint": "С какого месяца? (точка во времени)"
         },
         {
+          "sentence": "Vivo en España ___ 2018.",
+          "answer": "desde",
+          "hint": "С какого года? (точка во времени)"
+        },
+        {
+          "sentence": "Conozco a María ___ la universidad.",
+          "answer": "desde",
+          "hint": "С какого момента? (событие)"
+        },
+        {
+          "sentence": "No fumo ___ el año pasado.",
+          "answer": "desde",
+          "hint": "С какого времени? (точка)"
+        },
+        {
+          "sentence": "Toco la guitarra ___ niño.",
+          "answer": "desde",
+          "hint": "С какого возраста? (момент)"
+        },
+        {
           "sentence": "Estudio francés ___ cuatro años.",
           "answer": "desde hace",
           "hint": "Как долго? (период времени)"
+        },
+        {
+          "sentence": "Practico yoga ___ dos meses.",
+          "answer": "desde hace",
+          "hint": "Как долго? (период)"
+        },
+        {
+          "sentence": "Tengo este coche ___ cinco años.",
+          "answer": "desde hace",
+          "hint": "Как долго? (период)"
+        },
+        {
+          "sentence": "Esperamos aquí ___ media hora.",
+          "answer": "desde hace",
+          "hint": "Как долго? (период)"
+        },
+        {
+          "sentence": "Estamos casados ___ diez años.",
+          "answer": "desde hace",
+          "hint": "Как долго? (период)"
         }
       ]
     },
@@ -1127,14 +1347,74 @@
           "hint": "Профессия — постоянная характеристика"
         },
         {
+          "sentence": "María ___ de Argentina.",
+          "answer": "es",
+          "hint": "Происхождение — постоянная характеристика"
+        },
+        {
+          "sentence": "Esta casa ___ muy grande.",
+          "answer": "es",
+          "hint": "Характеристика объекта — постоянно"
+        },
+        {
+          "sentence": "Mi hermana ___ profesora de español.",
+          "answer": "es",
+          "hint": "Профессия — постоянная характеристика"
+        },
+        {
+          "sentence": "El agua ___ importante para la vida.",
+          "answer": "es",
+          "hint": "Общая истина — постоянно"
+        },
+        {
           "sentence": "El supermercado ___ al lado de mi casa.",
           "answer": "está",
           "hint": "Местоположение — где находится?"
         },
         {
+          "sentence": "La sopa ___ fría.",
+          "answer": "está",
+          "hint": "Временное состояние — стала холодной"
+        },
+        {
+          "sentence": "Mi habitación ___ ordenada hoy.",
+          "answer": "está",
+          "hint": "Временное состояние — результат действия"
+        },
+        {
+          "sentence": "El museo ___ cerrado los lunes.",
+          "answer": "está",
+          "hint": "Состояние — закрыт (не постоянно)"
+        },
+        {
+          "sentence": "Hoy yo ___ muy cansado después del trabajo.",
+          "answer": "estoy",
+          "hint": "Временное состояние — сейчас устал"
+        },
+        {
           "sentence": "Hoy me ___ muy mal, tengo fiebre.",
           "answer": "siento",
           "hint": "Физическое самочувствие"
+        },
+        {
+          "sentence": "Me ___ nervioso antes de los exámenes.",
+          "answer": "siento",
+          "hint": "Эмоциональное состояние"
+        },
+        {
+          "sentence": "¿Cómo te ___ después de la operación?",
+          "answer": "sientes",
+          "hint": "Как ты себя чувствуешь?"
+        },
+        {
+          "sentence": "Me ___ feliz cuando estoy con mi familia.",
+          "answer": "siento",
+          "hint": "Эмоциональное состояние"
+        },
+        {
+          "sentence": "Nos ___ muy bien en este hotel.",
+          "answer": "sentimos",
+          "hint": "Как мы себя чувствуем?"
         }
       ]
     },
@@ -1203,12 +1483,72 @@
           "hint": "Обязанность, необходимость (ты должен)"
         },
         {
+          "sentence": "___ hablar con nativos para mejorar.",
+          "answer": "Tienes que",
+          "hint": "Обязанность, необходимость (ты должен)"
+        },
+        {
+          "sentence": "Para aprender, ___ practicar todos los días.",
+          "answer": "tienes que",
+          "hint": "Обязанность, необходимость (ты должен)"
+        },
+        {
+          "sentence": "___ hacer ejercicio regularmente.",
+          "answer": "Tienes que",
+          "hint": "Обязанность, необходимость (ты должен)"
+        },
+        {
+          "sentence": "Para viajar al extranjero, ___ tener pasaporte.",
+          "answer": "tienes que",
+          "hint": "Обязанность, необходимость (ты должен)"
+        },
+        {
           "sentence": "Si estás enfermo, ___ quedarte en casa.",
           "answer": "lo mejor es",
           "hint": "Лучший совет (лучше всего)"
         },
         {
+          "sentence": "___ empezar poco a poco.",
+          "answer": "Lo mejor es",
+          "hint": "Лучший совет (лучше всего)"
+        },
+        {
+          "sentence": "Para ahorrar dinero, ___ cocinar en casa.",
+          "answer": "lo mejor es",
+          "hint": "Лучший совет (лучше всего)"
+        },
+        {
+          "sentence": "___ no usar el móvil antes de dormir.",
+          "answer": "Lo mejor es",
+          "hint": "Лучший совет (лучше всего)"
+        },
+        {
+          "sentence": "Para aprender vocabulario, ___ leer mucho.",
+          "answer": "lo mejor es",
+          "hint": "Лучший совет (лучше всего)"
+        },
+        {
           "sentence": "Dormir bien ___ para la memoria.",
+          "answer": "va muy bien",
+          "hint": "Что хорошо помогает для чего-то"
+        },
+        {
+          "sentence": "El té ___ para relajarse.",
+          "answer": "va muy bien",
+          "hint": "Что хорошо помогает для чего-то"
+        },
+        {
+          "sentence": "Caminar ___ para la salud.",
+          "answer": "va muy bien",
+          "hint": "Что хорошо помогает для чего-то"
+        },
+        {
+          "sentence": "La meditación ___ para concentrarse.",
+          "answer": "va muy bien",
+          "hint": "Что хорошо помогает для чего-то"
+        },
+        {
+          "sentence": "Escuchar música ___ para estudiar.",
           "answer": "va muy bien",
           "hint": "Что хорошо помогает для чего-то"
         }
@@ -1293,8 +1633,48 @@
           "hint": "Возвратный глагол, 1-е лицо"
         },
         {
+          "sentence": "(Levantarse/yo) ___ a las 7 de la mañana.",
+          "answer": "Me levanto",
+          "hint": "Возвратный глагол, 1-е лицо"
+        },
+        {
+          "sentence": "(Vestirse/yo) ___ rápidamente antes de salir.",
+          "answer": "Me visto",
+          "hint": "Возвратный глагол, 1-е лицо"
+        },
+        {
+          "sentence": "(Acostarse/yo) ___ tarde los fines de semana.",
+          "answer": "Me acuesto",
+          "hint": "Возвратный глагол, 1-е лицо"
+        },
+        {
+          "sentence": "(Sentirse/yo) ___ mejor después de dormir.",
+          "answer": "Me siento",
+          "hint": "Возвратный глагол, 1-е лицо"
+        },
+        {
           "sentence": "El partido (empezar) ___ a las 8.",
           "answer": "empieza",
+          "hint": "Чередование e → ie, 3-е лицо"
+        },
+        {
+          "sentence": "La película (empezar) ___ en cinco minutos.",
+          "answer": "empieza",
+          "hint": "Чередование e → ie, 3-е лицо"
+        },
+        {
+          "sentence": "¿A qué hora (cerrar) ___ la tienda?",
+          "answer": "cierra",
+          "hint": "Чередование e → ie, 3-е лицо"
+        },
+        {
+          "sentence": "Mi hermano (pensar) ___ que es fácil.",
+          "answer": "piensa",
+          "hint": "Чередование e → ie, 3-е лицо"
+        },
+        {
+          "sentence": "El concierto (comenzar) ___ a las 9.",
+          "answer": "comienza",
           "hint": "Чередование e → ie, 3-е лицо"
         },
         {
@@ -1303,8 +1683,48 @@
           "hint": "Чередование o → ue, 1-е лицо мн.ч."
         },
         {
+          "sentence": "Nosotros (volver) ___ a casa a las 6.",
+          "answer": "volvemos",
+          "hint": "Чередование o → ue, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (dormir) ___ ocho horas cada noche.",
+          "answer": "dormimos",
+          "hint": "Чередование o → ue, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (encontrar) ___ buenos restaurantes aquí.",
+          "answer": "encontramos",
+          "hint": "Чередование o → ue, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (recordar) ___ ese día perfectamente.",
+          "answer": "recordamos",
+          "hint": "Чередование o → ue, 1-е лицо мн.ч."
+        },
+        {
           "sentence": "Yo siempre (salir) ___ tarde del trabajo.",
           "answer": "salgo",
+          "hint": "Неправильный в 1-м лице (yo)"
+        },
+        {
+          "sentence": "Yo (poner) ___ la mesa antes de cenar.",
+          "answer": "pongo",
+          "hint": "Неправильный в 1-м лице (yo)"
+        },
+        {
+          "sentence": "Yo (traer) ___ el café para todos.",
+          "answer": "traigo",
+          "hint": "Неправильный в 1-м лице (yo)"
+        },
+        {
+          "sentence": "Yo no (oír) ___ bien la música.",
+          "answer": "oigo",
+          "hint": "Неправильный в 1-м лице (yo)"
+        },
+        {
+          "sentence": "Yo (decir) ___ siempre la verdad.",
+          "answer": "digo",
           "hint": "Неправильный в 1-м лице (yo)"
         }
       ]
@@ -1373,9 +1793,99 @@
           "hint": "Инфинитив = единственное число"
         },
         {
+          "sentence": "Me ___ entender a la gente nativa.",
+          "answer": "cuesta",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Me ___ hablar rápido.",
+          "answer": "cuesta",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Me ___ la gramática española.",
+          "answer": "cuesta",
+          "hint": "Gramática — единственное число"
+        },
+        {
+          "sentence": "Me ___ recordar el vocabulario.",
+          "answer": "cuesta",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Me ___ los verbos irregulares.",
+          "answer": "cuestan",
+          "hint": "Verbos — множественное число"
+        },
+        {
+          "sentence": "Me ___ las conjugaciones del subjuntivo.",
+          "answer": "cuestan",
+          "hint": "Conjugaciones — множественное число"
+        },
+        {
+          "sentence": "Me ___ algunos sonidos del español.",
+          "answer": "cuestan",
+          "hint": "Sonidos — множественное число"
+        },
+        {
+          "sentence": "Me ___ las palabras muy largas.",
+          "answer": "cuestan",
+          "hint": "Palabras — множественное число"
+        },
+        {
+          "sentence": "Me ___ los tiempos verbales.",
+          "answer": "cuestan",
+          "hint": "Tiempos — множественное число"
+        },
+        {
           "sentence": "Las películas ___ muy bien para aprender.",
           "answer": "van",
           "hint": "Películas — множественное число"
+        },
+        {
+          "sentence": "Las series españolas ___ muy bien para practicar.",
+          "answer": "van",
+          "hint": "Series — множественное число"
+        },
+        {
+          "sentence": "Los podcasts ___ muy bien para el oído.",
+          "answer": "van",
+          "hint": "Podcasts — множественное число"
+        },
+        {
+          "sentence": "Los ejercicios escritos ___ muy bien para la gramática.",
+          "answer": "van",
+          "hint": "Ejercicios — множественное число"
+        },
+        {
+          "sentence": "Las conversaciones con nativos ___ muy bien.",
+          "answer": "van",
+          "hint": "Conversaciones — множественное число"
+        },
+        {
+          "sentence": "Leer libros ___ muy bien para el vocabulario.",
+          "answer": "va",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Escuchar música ___ muy bien para practicar.",
+          "answer": "va",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Ver películas ___ muy bien para aprender.",
+          "answer": "va",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Tener una gramática ___ muy bien.",
+          "answer": "va",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Hablar con nativos ___ muy bien para la fluidez.",
+          "answer": "va",
+          "hint": "Инфинитив = единственное число"
         }
       ]
     },
@@ -1443,9 +1953,49 @@
           "hint": "Инфинитив = единственное число → da"
         },
         {
+          "sentence": "Me ___ miedo hablar en inglés por teléfono.",
+          "answer": "da",
+          "hint": "Инфинитив = единственное число → da"
+        },
+        {
+          "sentence": "Me ___ alegría aprender idiomas.",
+          "answer": "da",
+          "hint": "Инфинитив = единственное число → da"
+        },
+        {
+          "sentence": "Me ___ pena no poder practicar más.",
+          "answer": "da",
+          "hint": "Инфинитив = единственное число → da"
+        },
+        {
+          "sentence": "Me ___ miedo el examen oral.",
+          "answer": "da",
+          "hint": "Examen — единственное число → da"
+        },
+        {
           "sentence": "Me ___ miedo las arañas.",
           "answer": "dan",
           "hint": "Arañas — множественное число → dan"
+        },
+        {
+          "sentence": "Me ___ miedo los exámenes.",
+          "answer": "dan",
+          "hint": "Exámenes — множественное число → dan"
+        },
+        {
+          "sentence": "Me ___ vergüenza mis errores.",
+          "answer": "dan",
+          "hint": "Errores — множественное число → dan"
+        },
+        {
+          "sentence": "Me ___ alegría los progresos en español.",
+          "answer": "dan",
+          "hint": "Progresos — множественное число → dan"
+        },
+        {
+          "sentence": "Me ___ miedo las presentaciones orales.",
+          "answer": "dan",
+          "hint": "Presentaciones — множественное число → dan"
         }
       ]
     },
@@ -1517,12 +2067,72 @@
           "hint": "Выражение трудности"
         },
         {
+          "sentence": "___ mucho entender a gente nativa.",
+          "answer": "Me cuesta",
+          "hint": "Выражение трудности"
+        },
+        {
+          "sentence": "___ pronunciar la erre española.",
+          "answer": "Me cuesta",
+          "hint": "Выражение трудности"
+        },
+        {
+          "sentence": "___ recordar todas las conjugaciones.",
+          "answer": "Me cuesta",
+          "hint": "Выражение трудности"
+        },
+        {
+          "sentence": "___ mucho la gramática avanzada.",
+          "answer": "Me cuesta",
+          "hint": "Выражение трудности"
+        },
+        {
           "sentence": "___ miedo el examen final.",
           "answer": "Me da",
           "hint": "Что вызывает страх"
         },
         {
+          "sentence": "___ miedo hablar en público.",
+          "answer": "Me da",
+          "hint": "Что вызывает страх"
+        },
+        {
+          "sentence": "___ vergüenza cometer errores.",
+          "answer": "Me da",
+          "hint": "Что вызывает стыд"
+        },
+        {
+          "sentence": "___ alegría cuando apruebo un examen.",
+          "answer": "Me da",
+          "hint": "Что вызывает радость"
+        },
+        {
+          "sentence": "___ pena no poder practicar más.",
+          "answer": "Me da",
+          "hint": "Что вызывает жалость"
+        },
+        {
           "sentence": "___ nervioso antes de presentaciones.",
+          "answer": "Me siento",
+          "hint": "Как я себя чувствую"
+        },
+        {
+          "sentence": "___ inseguro cuando tengo que escribir.",
+          "answer": "Me siento",
+          "hint": "Как я себя чувствую"
+        },
+        {
+          "sentence": "___ muy bien cuando practico con nativos.",
+          "answer": "Me siento",
+          "hint": "Как я себя чувствую"
+        },
+        {
+          "sentence": "___ frustrado cuando no entiendo nada.",
+          "answer": "Me siento",
+          "hint": "Как я себя чувствую"
+        },
+        {
+          "sentence": "___ ridículo cuando pronuncio mal.",
           "answer": "Me siento",
           "hint": "Как я себя чувствую"
         }

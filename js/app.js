@@ -3888,9 +3888,7 @@ function showMasGramatica() {
 // Show Vocabulario - Full screen overlay with all words
 function showVocabularyScreen() {
     hideAllScreens();
-    const vocabScreen = document.getElementById('vocabularyScreen');
-    vocabScreen.classList.remove('hidden');
-    vocabScreen.style.display = 'flex'; // Override hidden class
+    document.getElementById('vocabularyScreen').classList.remove('hidden');
 
     // Collect all words from all Unidads
     const allWords = [];
@@ -3958,9 +3956,7 @@ function showVocabularyScreen() {
 
 // Hide vocabulary screen (for back button)
 function hideVocabularyScreen() {
-    const vocabScreen = document.getElementById('vocabularyScreen');
-    vocabScreen.classList.add('hidden');
-    vocabScreen.style.display = 'none';
+    document.getElementById('vocabularyScreen').classList.add('hidden');
 }
 
 // Show Ejercicios Gramática (заглушка для Фазы 4)

@@ -4071,8 +4071,12 @@ let currentExerciseForPreview = null;
 // ═══════════════════════════════════════════════════════════════
 // MICRO-TESTS BANK SYSTEM
 // ═══════════════════════════════════════════════════════════════
+// Максимальное количество слотов (микро-тестов на экране)
+const MAX_MICRO_TEST_SLOTS = 4;
 // Банк вопросов сгруппированный по типу ответа
 let microTestsQuestionBank = {};
+// Полный список всех вопросов (для refresh когда нет вопросов с тем же ответом)
+let microTestsAllQuestions = [];
 // Индексы использованных вопросов (вопросы, на которые уже ответили)
 let microTestsUsedQuestions = new Set();
 // Текущие отображаемые вопросы (индекс вопроса для каждого слота)
@@ -4298,6 +4302,17 @@ function initMicroTestsBank(microTests) {
     microTestsUsedQuestions = new Set();
     microTestsCurrentSlots = {};
     microTestsAnswerTypes = [];
+    microTestsAllQuestions = [];
+
+    // Сохраняем все вопросы для fallback refresh
+    microTests.forEach((test, index) => {
+        microTestsAllQuestions.push({
+            index: index,
+            sentence: test.sentence,
+            answer: test.answer,
+            hint: test.hint
+        });
+    });
 
     // Группируем вопросы по типу ответа (нормализуем к lowercase)
     microTests.forEach((test, index) => {
@@ -4314,6 +4329,13 @@ function initMicroTestsBank(microTests) {
         });
     });
 
+    // Если типов ответов больше MAX_MICRO_TEST_SLOTS, выбираем случайные
+    if (microTestsAnswerTypes.length > MAX_MICRO_TEST_SLOTS) {
+        // Перемешиваем и берём первые MAX_MICRO_TEST_SLOTS
+        const shuffled = [...microTestsAnswerTypes].sort(() => Math.random() - 0.5);
+        microTestsAnswerTypes = shuffled.slice(0, MAX_MICRO_TEST_SLOTS);
+    }
+
     // Выбираем случайный вопрос для каждого типа ответа
     microTestsAnswerTypes.forEach(answerType => {
         const questions = microTestsQuestionBank[answerType];
@@ -4323,17 +4345,31 @@ function initMicroTestsBank(microTests) {
 }
 
 // Получить случайный неиспользованный вопрос для типа ответа
-function getRandomUnusedQuestion(answerType) {
+// Если нет вопросов с таким же ответом, берём любой из банка (fallback)
+function getRandomUnusedQuestion(answerType, currentQuestionIndex) {
     const questions = microTestsQuestionBank[answerType];
-    if (!questions) return null;
 
-    // Фильтруем неиспользованные вопросы
-    const availableQuestions = questions.filter(q => !microTestsUsedQuestions.has(q.index));
-    if (availableQuestions.length === 0) return null;
+    // Сначала пробуем найти вопрос с тем же типом ответа
+    if (questions) {
+        const availableQuestions = questions.filter(q =>
+            !microTestsUsedQuestions.has(q.index) && q.index !== currentQuestionIndex
+        );
+        if (availableQuestions.length > 0) {
+            const randomIndex = Math.floor(Math.random() * availableQuestions.length);
+            return availableQuestions[randomIndex];
+        }
+    }
 
-    // Выбираем случайный
-    const randomIndex = Math.floor(Math.random() * availableQuestions.length);
-    return availableQuestions[randomIndex];
+    // Fallback: берём любой неиспользованный вопрос из общего банка
+    const allAvailable = microTestsAllQuestions.filter(q =>
+        !microTestsUsedQuestions.has(q.index) && q.index !== currentQuestionIndex
+    );
+    if (allAvailable.length > 0) {
+        const randomIndex = Math.floor(Math.random() * allAvailable.length);
+        return allAvailable[randomIndex];
+    }
+
+    return null;
 }
 
 // Рендер слотов микро-тестов
@@ -4357,10 +4393,15 @@ function renderMicroTestsSlots() {
         const questions = microTestsQuestionBank[answerType];
 
         // Проверяем, есть ли ещё доступные вопросы для refresh
-        const availableQuestions = questions.filter(q =>
+        // Сначала проверяем вопросы с тем же типом ответа
+        const sameTypeAvailable = questions.filter(q =>
             !microTestsUsedQuestions.has(q.index) && q.index !== currentQuestionIndex
         );
-        const canRefresh = availableQuestions.length > 0;
+        // Затем проверяем общий банк (fallback)
+        const anyAvailable = microTestsAllQuestions.filter(q =>
+            !microTestsUsedQuestions.has(q.index) && q.index !== currentQuestionIndex
+        );
+        const canRefresh = sameTypeAvailable.length > 0 || anyAvailable.length > 0;
 
         // Проверяем, был ли этот вопрос уже отвечен
         const isAnswered = microTestsUsedQuestions.has(currentQuestionIndex);
@@ -4553,7 +4594,8 @@ function resetMicroTestsBank() {
 
 // Обновить вопрос в слоте (refresh)
 function refreshMicroTestSlot(answerType) {
-    const newQuestion = getRandomUnusedQuestion(answerType);
+    const currentQuestionIndex = microTestsCurrentSlots[answerType];
+    const newQuestion = getRandomUnusedQuestion(answerType, currentQuestionIndex);
     if (!newQuestion) return;
 
     // Обновляем текущий слот

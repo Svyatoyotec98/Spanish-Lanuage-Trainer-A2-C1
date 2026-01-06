@@ -1368,9 +1368,8 @@ if (
                 // Если есть hardSentences, показываем случайное предложение
                 if (question.hardSentences && question.hardSentences.length > 0) {
                     const randomSentence = question.hardSentences[Math.floor(Math.random() * question.hardSentences.length)];
-                    // Заменяем ___ на подсказку (перевод)
-                    const sentenceWithHint = randomSentence.replace('___', `___ (${question.ru})`);
-                    document.getElementById('questionText').textContent = sentenceWithHint;
+                    // Показываем предложение без подсказки
+                    document.getElementById('questionText').textContent = randomSentence;
                 } else {
                     // Fallback: показываем просто русский перевод
                     document.getElementById('questionText').textContent = question.ru;
@@ -1534,6 +1533,13 @@ if (
                 stopTimer();
                 showCategoryMenu(currentCategory);
             }
+        }
+
+        // Skip current question and move to next (counts as wrong answer)
+        function skipQuestion() {
+            stopTimer();
+            currentQuestionIndex++;
+            showQuestion();
         }
 
         // ═══════════════════════════════════════════════════════════════
@@ -2551,14 +2557,9 @@ async function getNavigationState() {
             // Показываем вопрос
             document.getElementById('examQuestionText').textContent = question.sentence;
 
-            // Показываем подсказку (hint) для ejercicios
+            // Подсказки отключены
             const hintElement = document.getElementById('examCategoryHint');
-            if (question.type === 'ejercicio' && question.hint) {
-                hintElement.textContent = `Подсказка: ${question.hint}`;
-                hintElement.style.display = 'block';
-            } else {
-                hintElement.style.display = 'none';
-            }
+            hintElement.style.display = 'none';
 
             // Очищаем поле ввода
             const inputElement = document.getElementById('examAnswerInput');

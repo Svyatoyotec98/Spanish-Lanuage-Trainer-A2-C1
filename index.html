@@ -506,7 +506,7 @@
             </div>
             <!-- End of abcdTestsSection -->
 
-            <button class="btn btn-back" onclick="backToUnidadMenu()">← Назад к категориям</button>
+            <button class="btn btn-back" onclick="showPalabrasMenu()">← Назад к категориям</button>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
@@ -626,7 +626,7 @@
                 <div class="timer-bar" id="gramTimerBar"></div>
             </div>
 
-            <div style="text-align: center; margin-bottom: 10px; color: #7f8c8d; font-size: 0.9em;" id="gramHintText">
+            <div style="display: none; text-align: center; margin-bottom: 10px; color: #7f8c8d; font-size: 0.9em;" id="gramHintText">
                 Подсказка: con / en / entre
             </div>
 
@@ -703,8 +703,9 @@
                 <button class="btn btn-primary" onclick="submitManualAnswer()">Отправить</button>
             </div>
 
-            <div style="text-align: center; margin-top: 30px;">
+            <div style="text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="btn btn-back" onclick="exitTest()">← Назад к выбору теста</button>
+                <button class="btn" onclick="skipQuestion()" style="background: rgba(149, 165, 166, 0.6); color: white; border: none;">Пропустить →</button>
             </div>
         </div>
 

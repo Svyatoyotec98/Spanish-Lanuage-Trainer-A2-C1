@@ -1084,6 +1084,15 @@
         <!-- Parallax background -->
         <div id="vocabulary-bg" class="vocabulary-parallax-bg"></div>
 
+        <!-- Expanded card overlay -->
+        <div id="expandedCardOverlay" class="expanded-card-overlay hidden" onclick="closeExpandedCard()">
+            <div class="expanded-card" onclick="event.stopPropagation()">
+                <div class="expanded-card-icon"></div>
+                <div class="expanded-card-spanish"></div>
+                <div class="expanded-card-russian"></div>
+            </div>
+        </div>
+
         <!-- Header with glassmorphism -->
         <div class="vocabulary-header" style="flex-shrink: 0;">
             <h1 style="color: #2c3e50; margin: 0; font-size: 1.8em;">📖 Vocabulario</h1>

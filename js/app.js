@@ -4293,7 +4293,7 @@ function showVocabularyScreen() {
 
     allWords.forEach(word => {
         const wordCard = document.createElement('div');
-        wordCard.className = 'vocabulary-card' + (word.unlocked ? '' : ' locked');
+        wordCard.className = 'vocabulary-card' + (word.unlocked ? ' clickable' : ' locked');
 
         // Use Phosphor icon (always visible)
         const iconHtml = `<i class="ph ph-${word.icon}" style="font-size: 28px; color: ${word.unlocked ? '#fff' : 'rgba(255,255,255,0.5)' };"></i>`;
@@ -4308,6 +4308,11 @@ function showVocabularyScreen() {
             <div class="card-russian">${russianText}</div>
         `;
 
+        // Add click handler for unlocked cards
+        if (word.unlocked) {
+            wordCard.onclick = () => expandVocabularyCard(word.icon, word.spanish, word.ru);
+        }
+
         gridWrapper.appendChild(wordCard);
     });
 
@@ -4317,6 +4322,26 @@ function showVocabularyScreen() {
 // Hide vocabulary screen (for back button)
 function hideVocabularyScreen() {
     document.getElementById('vocabularyScreen').classList.add('hidden');
+}
+
+// Expand vocabulary card (show enlarged view)
+function expandVocabularyCard(icon, spanish, russian) {
+    const overlay = document.getElementById('expandedCardOverlay');
+    const iconEl = overlay.querySelector('.expanded-card-icon');
+    const spanishEl = overlay.querySelector('.expanded-card-spanish');
+    const russianEl = overlay.querySelector('.expanded-card-russian');
+
+    iconEl.innerHTML = `<i class="ph ph-${icon}"></i>`;
+    spanishEl.textContent = spanish;
+    russianEl.textContent = russian;
+
+    overlay.classList.remove('hidden');
+}
+
+// Close expanded card
+function closeExpandedCard() {
+    const overlay = document.getElementById('expandedCardOverlay');
+    overlay.classList.add('hidden');
 }
 
 // Show Ejercicios Gramática (справочник грамматических правил из упражнений)

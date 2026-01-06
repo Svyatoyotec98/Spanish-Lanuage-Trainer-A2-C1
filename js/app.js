@@ -925,6 +925,13 @@ function showProfileSelect() {
         }
 
         // ═══════════════════════════════════════════════════════════════
+        // MINI DICTIONARY PAGINATION
+        // ═══════════════════════════════════════════════════════════════
+        let miniDictCurrentPage = 0;
+        const MINI_DICT_ITEMS_PER_PAGE = 6;
+        let miniDictAllWords = [];
+
+        // ═══════════════════════════════════════════════════════════════
         // GROUP PREVIEW MENU (промежуточный экран)
         // ═══════════════════════════════════════════════════════════════
 
@@ -999,7 +1006,9 @@ function showProfileSelect() {
                 return;
             }
 
-            const words = unidadData.groups[currentCategory];
+            // Сохраняем все слова и сбрасываем пагинацию
+            miniDictAllWords = unidadData.groups[currentCategory];
+            miniDictCurrentPage = 0;
 
             hideAll();
             showUserBadge();
@@ -1010,20 +1019,37 @@ function showProfileSelect() {
             document.getElementById('miniDictTitle').textContent = `📖 ${displayName}`;
             document.getElementById('miniDictSubtitle').textContent = `Мини-Словарь группы`;
 
-            // Helper: capitalize first letter of each word
-            const capitalize = (str) => str.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+            // Рендерим первую страницу
+            renderMiniDictPage();
+            updateMiniDictPagination();
 
-            // Helper: remove article (el/la/los/las) from word for sentence insertion
+            saveNavigationState('miniDictionaryScreen');
+        }
+
+        // Рендер текущей страницы словаря
+        function renderMiniDictPage() {
+            const container = document.getElementById('miniDictWordsContainer');
+            const totalPages = Math.ceil(miniDictAllWords.length / MINI_DICT_ITEMS_PER_PAGE);
+            const isLastPage = miniDictCurrentPage >= totalPages - 1;
+            const alreadyViewed = isWordsViewed(currentUnidad, currentCategory);
+
+            // Обновляем информацию о странице
+            document.getElementById('miniDictPageInfo').textContent =
+                `Страница ${miniDictCurrentPage + 1} из ${totalPages}`;
+
+            // Получаем слова для текущей страницы
+            const startIdx = miniDictCurrentPage * MINI_DICT_ITEMS_PER_PAGE;
+            const endIdx = Math.min(startIdx + MINI_DICT_ITEMS_PER_PAGE, miniDictAllWords.length);
+            const pageWords = miniDictAllWords.slice(startIdx, endIdx);
+
+            // Helper functions
+            const capitalize = (str) => str.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
             const removeArticle = (word) => word.replace(/^(el|la|los|las)\s+/i, '');
 
-            // Render words list with sentences (шрифты увеличены на 50%)
-            const container = document.getElementById('miniDictWordsContainer');
-            container.innerHTML = words.map((word, index) => {
-                // Get 2 sentences (or less if not available)
+            // Рендерим слова текущей страницы
+            container.innerHTML = pageWords.map((word) => {
                 const sentences = word.hardSentences ? word.hardSentences.slice(0, 2) : [];
                 const sentencesRu = word.hardSentencesRu ? word.hardSentencesRu.slice(0, 2) : [];
-
-                // Replace ___ with the word WITHOUT article (to avoid "mi el abuelo")
                 const wordWithoutArticle = removeArticle(word.spanish);
                 const fillSentence = (s) => s.replace('___', `<strong>${wordWithoutArticle}</strong>`);
 
@@ -1037,12 +1063,10 @@ function showProfileSelect() {
                     padding: 15px;
                     margin-bottom: 12px;
                 ">
-                    <!-- Word header -->
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.2);">
                         <span style="font-weight: 700; color: #2c3e50; font-size: 1.95em;">${capitalize(word.spanish)}</span>
                         <span style="color: #fff; font-size: 1.65em; font-style: italic;">${capitalize(word.ru)}</span>
                     </div>
-                    <!-- Sentences -->
                     ${sentences.length > 0 ? `
                     <div style="margin-top: 6px;">
                         ${sentences.map((s, i) => `
@@ -1056,71 +1080,87 @@ function showProfileSelect() {
                 </div>
             `}).join('');
 
-            // ═══════════════════════════════════════════════════════════════
-            // SCROLL TRACKING: Отслеживаем просмотр до конца словаря
-            // ═══════════════════════════════════════════════════════════════
-            const alreadyViewed = isWordsViewed(currentUnidad, currentCategory);
+            // Скролл наверх контейнера
+            container.scrollTop = 0;
 
-            // Добавляем кнопку "Перейти к тесту" (скрытую изначально если не просмотрено)
-            const goToTestBtnHtml = `
-                <div id="miniDictGoToTestBlock" style="
-                    display: ${alreadyViewed ? 'block' : 'none'};
-                    background: rgba(39, 174, 96, 0.3);
-                    border: 1px solid rgba(39, 174, 96, 0.5);
-                    border-radius: 12px;
-                    padding: 20px;
-                    text-align: center;
-                    margin-top: 15px;
-                ">
-                    <span style="font-size: 2em;">✅</span>
-                    <p style="color: #27ae60; font-weight: 600; margin: 10px 0; font-size: 1.1em;">
-                        Словарь просмотрен!
-                    </p>
-                    <button class="btn btn-success" onclick="goToTestFromDictionary()" style="
-                        background: linear-gradient(135deg, #27ae60, #2ecc71);
-                        color: white;
-                        border: none;
-                        padding: 12px 30px;
-                        border-radius: 10px;
-                        font-size: 1.1em;
-                        font-weight: 600;
-                        cursor: pointer;
-                        margin-top: 10px;
-                    ">
-                        Перейти к тесту →
-                    </button>
-                </div>
-            `;
-            container.innerHTML += goToTestBtnHtml;
-
-            // Обработчик скролла
-            if (!alreadyViewed) {
+            // Обработчик скролла только на последней странице
+            container.removeEventListener('scroll', handleDictionaryScroll);
+            if (isLastPage && !alreadyViewed) {
                 container.addEventListener('scroll', handleDictionaryScroll);
             }
-
-            saveNavigationState('miniDictionaryScreen');
         }
 
-        // Обработчик скролла в словаре
+        // Обновление кнопок пагинации
+        function updateMiniDictPagination() {
+            const totalPages = Math.ceil(miniDictAllWords.length / MINI_DICT_ITEMS_PER_PAGE);
+            const isFirstPage = miniDictCurrentPage === 0;
+            const isLastPage = miniDictCurrentPage >= totalPages - 1;
+            const alreadyViewed = isWordsViewed(currentUnidad, currentCategory);
+
+            const prevBtn = document.getElementById('miniDictPrevBtn');
+            const nextBtn = document.getElementById('miniDictNextBtn');
+            const goToTestBlock = document.getElementById('miniDictGoToTestBlock');
+
+            // Кнопка "Назад" - показываем только со 2-й страницы
+            if (isFirstPage) {
+                prevBtn.classList.add('hidden');
+            } else {
+                prevBtn.classList.remove('hidden');
+            }
+
+            // Кнопка "Дальше" - скрываем на последней странице
+            if (isLastPage) {
+                nextBtn.classList.add('hidden');
+            } else {
+                nextBtn.classList.remove('hidden');
+            }
+
+            // Блок "Словарь просмотрен" - показываем на последней странице если уже просмотрено
+            if (isLastPage && alreadyViewed) {
+                goToTestBlock.classList.remove('hidden');
+            } else {
+                goToTestBlock.classList.add('hidden');
+            }
+        }
+
+        // Следующая страница словаря
+        function nextMiniDictPage() {
+            const totalPages = Math.ceil(miniDictAllWords.length / MINI_DICT_ITEMS_PER_PAGE);
+            if (miniDictCurrentPage < totalPages - 1) {
+                miniDictCurrentPage++;
+                renderMiniDictPage();
+                updateMiniDictPagination();
+            }
+        }
+
+        // Предыдущая страница словаря
+        function prevMiniDictPage() {
+            if (miniDictCurrentPage > 0) {
+                miniDictCurrentPage--;
+                renderMiniDictPage();
+                updateMiniDictPagination();
+            }
+        }
+
+        // Обработчик скролла в словаре (только на последней странице)
         function handleDictionaryScroll() {
             const container = document.getElementById('miniDictWordsContainer');
             if (!container) return;
 
-            // Проверяем, долистали ли до конца (с небольшим запасом в 50px)
+            // Проверяем, долистали ли до конца
             const isAtBottom = container.scrollHeight - container.scrollTop - container.clientHeight < 50;
 
             if (isAtBottom && currentUnidad && currentCategory) {
-                // Сохраняем флаг и показываем кнопку
+                // Сохраняем флаг просмотра
                 saveWordsViewed(currentUnidad, currentCategory);
 
+                // Показываем блок "Перейти к тесту"
                 const goToTestBlock = document.getElementById('miniDictGoToTestBlock');
                 if (goToTestBlock) {
-                    goToTestBlock.style.display = 'block';
-                    // Плавно прокрутим к блоку
-                    goToTestBlock.scrollIntoView({ behavior: 'smooth' });
+                    goToTestBlock.classList.remove('hidden');
                 }
 
-                // Убираем обработчик, т.к. уже просмотрено
+                // Убираем обработчик
                 container.removeEventListener('scroll', handleDictionaryScroll);
             }
         }

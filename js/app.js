@@ -3750,12 +3750,6 @@ function showMicroTestsScreen() {
     showUserBadge();
     document.getElementById('microTestsScreen').classList.remove('hidden');
 
-    // Скрываем кнопку "Перейти к тесту" при загрузке (будет показана если все тесты пройдены)
-    const goToTestBtn = document.getElementById('microTestsGoToTestBtn');
-    if (goToTestBtn) {
-        goToTestBtn.classList.add('hidden');
-    }
-
     // Заголовок
     document.getElementById('microTestsSubtitle').textContent = exercise.title;
 
@@ -4014,12 +4008,6 @@ function renderMicroTestsSlots() {
     }
 
     container.innerHTML = html;
-
-    // Скрываем/показываем старую кнопку "Перейти к тесту" в шапке
-    const goToTestBtn = document.getElementById('microTestsGoToTestBtn');
-    if (goToTestBtn) {
-        goToTestBtn.classList.toggle('hidden', !allCompleted);
-    }
 }
 
 // Сброс банка вопросов
@@ -4214,12 +4202,6 @@ function showAllMicroTestsDone() {
     const doneBlock = document.getElementById('microTestsAllDone');
     if (doneBlock) {
         doneBlock.style.display = 'block';
-    }
-
-    // Показываем кнопку "Перейти к тесту"
-    const goToTestBtn = document.getElementById('microTestsGoToTestBtn');
-    if (goToTestBtn) {
-        goToTestBtn.classList.remove('hidden');
     }
 }
 

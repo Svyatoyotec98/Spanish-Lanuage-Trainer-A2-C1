@@ -355,7 +355,7 @@
 			 'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
              'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
              'examScreen', 'examResultsScreen', 'miniDictionaryScreen',
-             'exercisePreviewMenu', 'grammarRuleScreen'].forEach(id => {
+             'exercisePreviewMenu', 'grammarRuleScreen', 'hardTestAllQuestionsScreen'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');
             });
         }

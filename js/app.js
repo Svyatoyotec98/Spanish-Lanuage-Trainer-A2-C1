@@ -3085,7 +3085,8 @@ function hideAllScreens() {
         'examScreen', 'examResultsScreen',
         'miniDictionaryScreen',
         'exercisePreviewMenu', 'grammarRuleScreen', 'microTestsScreen',
-        'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen'
+        'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen',
+        'ejerciciosGramaticaRefScreen'
     ];
     screens.forEach(id => {
         const el = document.getElementById(id);
@@ -4306,9 +4307,220 @@ function hideVocabularyScreen() {
     document.getElementById('vocabularyScreen').classList.add('hidden');
 }
 
-// Show Ejercicios Gramática (заглушка для Фазы 4)
+// Show Ejercicios Gramática (справочник грамматических правил из упражнений)
 function showEjerciciosGramatica() {
-    alert('Ejercicios Gramática — будет реализовано в Фазе 4');
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('ejerciciosGramaticaRefScreen').classList.remove('hidden');
+
+    // Получим данные упражнений текущего юнита
+    const unidadData = allUnidadesData[currentUnidad];
+    if (!unidadData || !unidadData.ejercicios) {
+        document.getElementById('ejerciciosGramaticaContainer').innerHTML = '<p style="text-align: center; color: #7f8c8d;">Нет упражнений для отображения</p>';
+        return;
+    }
+
+    const ejercicios = unidadData.ejercicios;
+    const profile = getActiveProfile();
+
+    let unlockedCount = 0;
+    const totalCount = ejercicios.length;
+
+    const container = document.getElementById('ejerciciosGramaticaContainer');
+    let html = '';
+
+    ejercicios.forEach(exercise => {
+        // Проверяем три условия разблокировки
+        const ruleViewed = isRuleViewed(currentUnidad, exercise.id);
+        const testScore = profile?.progress?.[currentUnidad]?.ejercicios?.[exercise.id] || 0;
+        const testPassed = testScore >= 60;
+        const microTestsDone = areMicroTestsCompleted(currentUnidad, exercise.id);
+
+        // Правило разблокировано только если ВСЕ три условия выполнены
+        const isUnlocked = ruleViewed && testPassed && microTestsDone;
+        if (isUnlocked) unlockedCount++;
+
+        // Название правила
+        const ruleTitle = exercise.rule?.title || exercise.title;
+
+        html += `
+            <div class="ejercicio-gram-card ${isUnlocked ? 'unlocked' : 'locked'}"
+                 onclick="${isUnlocked ? `showUnlockedRule('${exercise.id}')` : ''}"
+                 style="
+                    background: ${isUnlocked ? 'rgba(155, 89, 182, 0.2)' : 'rgba(100, 100, 100, 0.15)'};
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    border: 1px solid ${isUnlocked ? 'rgba(155, 89, 182, 0.4)' : 'rgba(100, 100, 100, 0.3)'};
+                    border-radius: 12px;
+                    padding: 15px;
+                    margin-bottom: 12px;
+                    cursor: ${isUnlocked ? 'pointer' : 'default'};
+                    opacity: ${isUnlocked ? '1' : '0.7'};
+                    transition: transform 0.2s, box-shadow 0.2s;
+                 ">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="flex: 1;">
+                        <div style="
+                            color: ${isUnlocked ? '#9b59b6' : '#7f8c8d'};
+                            font-weight: 600;
+                            font-size: 1.05em;
+                            margin-bottom: 8px;
+                        ">
+                            ${isUnlocked ? ruleTitle : '???'}
+                        </div>
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                            <span style="font-size: 0.85em; color: ${ruleViewed ? '#27ae60' : '#e74c3c'};">
+                                ${ruleViewed ? '✓' : '✗'} Правило
+                            </span>
+                            <span style="font-size: 0.85em; color: ${testPassed ? '#27ae60' : '#e74c3c'};">
+                                ${testPassed ? '✓' : '✗'} Тест ${testScore}%
+                            </span>
+                            <span style="font-size: 0.85em; color: ${microTestsDone ? '#27ae60' : '#e74c3c'};">
+                                ${microTestsDone ? '✓' : '✗'} Микро-тесты
+                            </span>
+                        </div>
+                    </div>
+                    <div style="font-size: 1.5em; margin-left: 10px;">
+                        ${isUnlocked ? '🔓' : '🔒'}
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+
+    container.innerHTML = html;
+
+    // Обновляем счётчик
+    document.getElementById('gramUnlockedCount').textContent = unlockedCount;
+    document.getElementById('gramTotalCount').textContent = totalCount;
+
+    saveNavigationState('ejerciciosGramaticaRefScreen');
+}
+
+// Показать разблокированное правило из справочника
+function showUnlockedRule(exerciseId) {
+    const unidadData = allUnidadesData[currentUnidad];
+    if (!unidadData || !unidadData.ejercicios) return;
+
+    const exercise = unidadData.ejercicios.find(ex => ex.id === exerciseId);
+    if (!exercise || !exercise.rule) {
+        alert('Правило не найдено');
+        return;
+    }
+
+    // Сохраняем для навигации обратно
+    currentExerciseForPreview = exercise;
+
+    // Показываем правило (используем существующую функцию, но без сохранения ruleViewed повторно)
+    showGrammarRuleFromRef(exercise);
+}
+
+// Показать правило из справочника (без изменения ruleViewed)
+function showGrammarRuleFromRef(exercise) {
+    const rule = exercise.rule;
+
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('grammarRuleScreen').classList.remove('hidden');
+
+    // Заголовок
+    document.getElementById('grammarRuleTitle').textContent = `📖 ${rule.title}`;
+    document.getElementById('grammarRuleSubtitle').textContent = exercise.title;
+
+    // Контейнер с правилом
+    const container = document.getElementById('grammarRuleContainer');
+
+    let html = '';
+
+    // Основное объяснение
+    html += `
+        <div style="
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        ">
+            <p style="color: #2c3e50; font-size: 1.1em; line-height: 1.6; margin: 0;">${rule.explanation}</p>
+        </div>
+    `;
+
+    // Секции (если есть)
+    if (rule.sections && rule.sections.length > 0) {
+        rule.sections.forEach(section => {
+            html += `
+                <div style="
+                    background: rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(10px);
+                    -webkit-backdrop-filter: blur(10px);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    border-radius: 12px;
+                    padding: 20px;
+                    margin-bottom: 15px;
+                ">
+                    <h3 style="color: #667eea; margin: 0 0 12px 0; font-size: 1.2em;">${section.subtitle}</h3>
+                    <ul style="margin: 0; padding-left: 20px;">
+                        ${section.points.map(point => `
+                            <li style="color: #2c3e50; font-size: 1em; line-height: 1.8; margin-bottom: 5px;">${point}</li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
+        });
+    }
+
+    // Таблица (если есть)
+    if (rule.table) {
+        html += `
+            <div style="
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                margin-bottom: 15px;
+                overflow-x: auto;
+            ">
+                ${rule.table}
+            </div>
+        `;
+    }
+
+    // Примеры
+    if (rule.examples && rule.examples.length > 0) {
+        html += `
+            <div style="
+                background: rgba(39, 174, 96, 0.2);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(39, 174, 96, 0.3);
+                border-radius: 12px;
+                padding: 20px;
+                margin-bottom: 15px;
+            ">
+                <h3 style="color: #27ae60; margin: 0 0 15px 0; font-size: 1.2em;">📝 Примеры</h3>
+                ${rule.examples.map(ex => `
+                    <div style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid rgba(39, 174, 96, 0.2);">
+                        <div style="color: #2c3e50; font-size: 1.05em; font-weight: 600;">${ex.es}</div>
+                        <div style="color: #fff; font-size: 0.95em; font-style: italic; margin-top: 4px;">${ex.ru}</div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+
+    container.innerHTML = html;
+
+    // Скрыть кнопку "Проверь себя" при просмотре из справочника
+    const microTestsBtn = document.getElementById('microTestsBtn');
+    if (microTestsBtn) {
+        microTestsBtn.style.display = 'none';
+    }
+
+    saveNavigationState('grammarRuleScreen');
 }
 
 // Go back from Reference Main Menu

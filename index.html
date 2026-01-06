@@ -900,6 +900,31 @@
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
+             EJERCICIOS GRAMÁTICA REFERENCE SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="ejerciciosGramaticaRefScreen" class="hidden">
+            <h1>📝 Ejercicios Gramática</h1>
+            <p class="subtitle">Грамматические правила из упражнений</p>
+
+            <div id="ejerciciosGramaticaUnlockedCount" style="
+                color: #9b59b6;
+                font-size: 1em;
+                margin: 15px 0;
+                font-weight: 600;
+                text-align: center;
+            ">
+                Разблокировано: <span id="gramUnlockedCount">0</span> / <span id="gramTotalCount">0</span>
+            </div>
+
+            <!-- Exercises Container -->
+            <div id="ejerciciosGramaticaContainer" style="margin-top: 20px;">
+                <!-- Exercises will be rendered dynamically -->
+            </div>
+
+            <button class="btn btn-back" onclick="showGrammarSubMenu()" style="margin-top: 30px;">← Назад</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
              GRAMMAR REFERENCE LIST SCREEN (Más Gramática)
              ═══════════════════════════════════════════════════════════════ -->
         <div id="grammarListScreen" class="hidden">

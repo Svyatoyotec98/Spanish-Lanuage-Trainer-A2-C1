@@ -1343,3 +1343,16 @@
     transform: translateY(0);
 }
 
+/* ============================================= */
+/* Ejercicios Gramática Reference Cards          */
+/* ============================================= */
+
+.ejercicio-gram-card.unlocked:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(155, 89, 182, 0.3);
+}
+
+.ejercicio-gram-card.unlocked:active {
+    transform: translateY(0);
+}
+

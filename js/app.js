@@ -4064,13 +4064,20 @@ function backToGrammarRule() {
 function initMicroTestsHandlers(exercise) {
     const microTests = exercise.microTests;
 
-    // Загрузим уже выполненные тесты из localStorage
+    // Загрузим уже выполненные тесты из localStorage (только для ТЕКУЩИХ слотов)
     const profile = getActiveProfile();
     if (profile && profile.microTestsProgress && profile.microTestsProgress[currentUnidad]) {
-        const savedProgress = profile.microTestsProgress[currentUnidad][exercise.id];
-        if (savedProgress && Array.isArray(savedProgress)) {
-            savedProgress.forEach(idx => microTestsUsedQuestions.add(idx));
+        const savedData = profile.microTestsProgress[currentUnidad][exercise.id];
+        // Новый формат: { slots: {...}, answered: [...] }
+        if (savedData && savedData.slots && savedData.answered) {
+            // Проверяем, совпадают ли сохранённые слоты с текущими
+            const slotsMatch = JSON.stringify(savedData.slots) === JSON.stringify(microTestsCurrentSlots);
+            if (slotsMatch) {
+                savedData.answered.forEach(idx => microTestsUsedQuestions.add(idx));
+            }
+            // Если слоты не совпадают - игнорируем старый прогресс
         }
+        // Старый формат (массив) - игнорируем, т.к. не знаем какие были слоты
     }
 
     // Считаем завершённые слоты (текущий вопрос в слоте отвечен)
@@ -4234,7 +4241,12 @@ function saveMicroTestProgress(exerciseId, completedIndices) {
         profile.microTestsProgress[currentUnidad] = {};
     }
 
-    profile.microTestsProgress[currentUnidad][exerciseId] = completedIndices;
+    // Сохраняем слоты вместе с отвеченными индексами
+    // Это позволяет проверить при загрузке, что слоты совпадают
+    profile.microTestsProgress[currentUnidad][exerciseId] = {
+        slots: { ...microTestsCurrentSlots },
+        answered: completedIndices
+    };
 
     // Сохраняем в localStorage
     const state = loadAppState();

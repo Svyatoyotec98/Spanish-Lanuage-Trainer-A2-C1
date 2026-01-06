@@ -3084,7 +3084,7 @@ function hideAllScreens() {
         'cardMatchingScreen', 'cardMatchingResultsScreen',
         'examScreen', 'examResultsScreen',
         'miniDictionaryScreen',
-        'exercisePreviewMenu', 'grammarRuleScreen',
+        'exercisePreviewMenu', 'grammarRuleScreen', 'microTestsScreen',
         'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen'
     ];
     screens.forEach(id => {
@@ -3513,129 +3513,150 @@ function showGrammarRule() {
         `;
     }
 
-    // Микро-тесты (если есть)
-    if (exercise.microTests && exercise.microTests.length > 0) {
+    container.innerHTML = html;
+
+    // Показать/скрыть кнопку "Проверь себя" в зависимости от наличия микро-тестов
+    const microTestsBtn = document.getElementById('microTestsBtn');
+    if (microTestsBtn) {
+        microTestsBtn.style.display = (exercise.microTests && exercise.microTests.length > 0) ? 'inline-block' : 'none';
+    }
+
+    saveNavigationState('grammarRuleScreen');
+}
+
+// Показать экран микро-тестов
+function showMicroTestsScreen() {
+    if (!currentExerciseForPreview) {
+        console.error('showMicroTestsScreen: no exercise selected');
+        return;
+    }
+
+    const exercise = currentExerciseForPreview;
+    const microTests = exercise.microTests;
+
+    if (!microTests || microTests.length === 0) {
+        alert('Для этого упражнения нет микро-тестов.');
+        return;
+    }
+
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('microTestsScreen').classList.remove('hidden');
+
+    // Заголовок
+    document.getElementById('microTestsSubtitle').textContent = exercise.title;
+    document.getElementById('microTestsTotal').textContent = microTests.length;
+
+    // Рендер микро-тестов
+    const container = document.getElementById('microTestsContainer');
+    let html = '';
+
+    microTests.forEach((test, index) => {
         html += `
-            <div class="micro-tests-section" style="
-                background: rgba(155, 89, 182, 0.2);
+            <div class="micro-test-item" data-index="${index}" data-answer="${test.answer}" style="
+                background: rgba(155, 89, 182, 0.15);
                 backdrop-filter: blur(10px);
                 -webkit-backdrop-filter: blur(10px);
                 border: 1px solid rgba(155, 89, 182, 0.3);
                 border-radius: 12px;
-                padding: 20px;
+                padding: 15px;
                 margin-bottom: 15px;
             ">
-                <h3 style="color: #9b59b6; margin: 0 0 5px 0; font-size: 1.2em;">🧪 Проверь себя</h3>
-                <p style="color: #fff; font-size: 0.9em; margin: 0 0 15px 0; opacity: 0.8;">
-                    Заполни пропуски, чтобы закрепить правило
-                </p>
-                <div id="microTestsProgress" style="
-                    color: #9b59b6;
-                    font-size: 0.9em;
-                    margin-bottom: 15px;
-                    font-weight: 600;
+                <div class="micro-test-sentence" style="
+                    color: #2c3e50;
+                    font-size: 1.05em;
+                    margin-bottom: 12px;
+                    line-height: 1.5;
                 ">
-                    Выполнено: <span id="microTestsCompleted">0</span> / ${exercise.microTests.length}
+                    ${test.sentence.replace('___', '<span class="micro-test-blank">______</span>')}
                 </div>
 
-                ${exercise.microTests.map((test, index) => `
-                    <div class="micro-test-item" data-index="${index}" data-answer="${test.answer}" style="
-                        background: rgba(255, 255, 255, 0.1);
-                        border-radius: 10px;
-                        padding: 15px;
-                        margin-bottom: 12px;
+                <div class="micro-test-input-row" style="
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    flex-wrap: wrap;
+                ">
+                    <input type="text"
+                           class="micro-test-input"
+                           data-index="${index}"
+                           placeholder="Твой ответ..."
+                           autocomplete="off"
+                           style="
+                               flex: 1;
+                               min-width: 120px;
+                               padding: 10px 15px;
+                               border: 2px solid rgba(155, 89, 182, 0.4);
+                               border-radius: 8px;
+                               font-size: 1em;
+                               background: rgba(255, 255, 255, 0.9);
+                               color: #2c3e50;
+                           "
+                    />
+                    <button class="micro-test-check-btn" data-index="${index}" style="
+                        padding: 10px 20px;
+                        background: linear-gradient(135deg, #9b59b6, #8e44ad);
+                        color: white;
+                        border: none;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        font-size: 0.95em;
+                        font-weight: 600;
                     ">
-                        <div class="micro-test-sentence" style="
-                            color: #2c3e50;
-                            font-size: 1.05em;
-                            margin-bottom: 10px;
-                            line-height: 1.5;
-                        ">
-                            ${test.sentence.replace('___', '<span class="micro-test-blank">______</span>')}
-                        </div>
-
-                        <div class="micro-test-input-row" style="
-                            display: flex;
-                            gap: 10px;
-                            align-items: center;
-                            flex-wrap: wrap;
-                        ">
-                            <input type="text"
-                                   class="micro-test-input"
-                                   data-index="${index}"
-                                   placeholder="Твой ответ..."
-                                   autocomplete="off"
-                                   style="
-                                       flex: 1;
-                                       min-width: 120px;
-                                       padding: 10px 15px;
-                                       border: 2px solid rgba(155, 89, 182, 0.4);
-                                       border-radius: 8px;
-                                       font-size: 1em;
-                                       background: rgba(255, 255, 255, 0.9);
-                                       color: #2c3e50;
-                                   "
-                            />
-                            <button class="micro-test-check-btn" data-index="${index}" style="
-                                padding: 10px 20px;
-                                background: linear-gradient(135deg, #9b59b6, #8e44ad);
-                                color: white;
-                                border: none;
-                                border-radius: 8px;
-                                cursor: pointer;
-                                font-size: 0.95em;
-                                font-weight: 600;
-                            ">
-                                Проверить
-                            </button>
-                        </div>
-
-                        <div class="micro-test-hint" style="
-                            color: rgba(255, 255, 255, 0.7);
-                            font-size: 0.85em;
-                            margin-top: 8px;
-                            font-style: italic;
-                            cursor: pointer;
-                        " onclick="this.innerHTML = '💡 ' + '${test.hint}'">
-                            💡 Показать подсказку
-                        </div>
-
-                        <div class="micro-test-feedback" data-index="${index}" style="
-                            margin-top: 10px;
-                            padding: 10px;
-                            border-radius: 8px;
-                            display: none;
-                            font-weight: 600;
-                        "></div>
-                    </div>
-                `).join('')}
-
-                <div id="microTestsAllDone" style="
-                    display: none;
-                    background: rgba(39, 174, 96, 0.3);
-                    border: 1px solid rgba(39, 174, 96, 0.5);
-                    border-radius: 10px;
-                    padding: 15px;
-                    text-align: center;
-                    margin-top: 15px;
-                ">
-                    <span style="font-size: 1.5em;">🎉</span>
-                    <p style="color: #27ae60; font-weight: 600; margin: 10px 0 0 0;">
-                        Все микро-тесты пройдены!
-                    </p>
+                        Проверить
+                    </button>
                 </div>
+
+                <div class="micro-test-hint" style="
+                    color: rgba(255, 255, 255, 0.7);
+                    font-size: 0.85em;
+                    margin-top: 8px;
+                    font-style: italic;
+                    cursor: pointer;
+                " onclick="this.innerHTML = '💡 ' + '${test.hint}'">
+                    💡 Показать подсказку
+                </div>
+
+                <div class="micro-test-feedback" data-index="${index}" style="
+                    margin-top: 10px;
+                    padding: 10px;
+                    border-radius: 8px;
+                    display: none;
+                    font-weight: 600;
+                "></div>
             </div>
         `;
-    }
+    });
+
+    // Блок завершения
+    html += `
+        <div id="microTestsAllDone" style="
+            display: none;
+            background: rgba(39, 174, 96, 0.3);
+            border: 1px solid rgba(39, 174, 96, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 15px;
+        ">
+            <span style="font-size: 2em;">🎉</span>
+            <p style="color: #27ae60; font-weight: 600; margin: 10px 0 0 0; font-size: 1.1em;">
+                Все микро-тесты пройдены!
+            </p>
+        </div>
+    `;
 
     container.innerHTML = html;
 
-    // Инициализация обработчиков микро-тестов
-    if (exercise.microTests && exercise.microTests.length > 0) {
-        initMicroTestsHandlers(exercise);
-    }
+    // Инициализация обработчиков
+    initMicroTestsHandlers(exercise);
 
-    saveNavigationState('grammarRuleScreen');
+    saveNavigationState('microTestsScreen');
+}
+
+// Вернуться к экрану правила
+function backToGrammarRule() {
+    showGrammarRule();
 }
 
 // Инициализация обработчиков микро-тестов

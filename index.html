@@ -584,7 +584,35 @@
                 <!-- Rule content will be rendered dynamically -->
             </div>
 
-            <button class="btn btn-back" onclick="backToExercisePreview()" style="margin-top: 30px;">← Назад</button>
+            <div style="display: flex; gap: 15px; margin-top: 30px; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-back" onclick="backToExercisePreview()">← Назад</button>
+                <button id="microTestsBtn" class="btn btn-primary" onclick="showMicroTestsScreen()" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">🧪 Проверь себя</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             MICRO TESTS SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="microTestsScreen" class="hidden">
+            <h1 style="color: #9b59b6;">🧪 Проверь себя</h1>
+            <p class="subtitle" id="microTestsSubtitle">Упражнение</p>
+
+            <div id="microTestsProgressBlock" style="
+                color: #9b59b6;
+                font-size: 1em;
+                margin: 15px 0;
+                font-weight: 600;
+                text-align: center;
+            ">
+                Выполнено: <span id="microTestsCompleted">0</span> / <span id="microTestsTotal">0</span>
+            </div>
+
+            <!-- Micro Tests Container -->
+            <div id="microTestsContainer" style="margin-top: 20px;">
+                <!-- Micro tests will be rendered dynamically -->
+            </div>
+
+            <button class="btn btn-back" onclick="backToGrammarRule()" style="margin-top: 30px;">← Назад к правилу</button>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════

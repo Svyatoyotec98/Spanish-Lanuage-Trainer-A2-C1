@@ -364,6 +364,108 @@
             cursor: pointer;
         }
 
+        /* ============================================= */
+        /* Grammar Reference Full Screen (like Vocabulary) */
+        /* ============================================= */
+
+        .grammar-ref-overlay {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            z-index: 9999 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            padding: 30px !important;
+            box-sizing: border-box !important;
+            overflow: hidden !important;
+        }
+
+        .grammar-ref-overlay.hidden {
+            display: none !important;
+        }
+
+        .grammar-ref-parallax-bg {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            background-image: url('../Wallpapers/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            transition: transform 0.1s ease-out;
+        }
+
+        /* Grammar card styles (same as vocabulary) */
+        .grammar-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 12px 8px;
+            width: 90px;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .grammar-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .grammar-card.clickable {
+            cursor: pointer;
+        }
+
+        .grammar-card.locked {
+            opacity: 0.6;
+        }
+
+        .grammar-card .card-icon {
+            font-size: 28px;
+            color: #9b59b6;
+        }
+
+        .grammar-card.locked .card-icon {
+            color: rgba(155, 89, 182, 0.5);
+        }
+
+        .grammar-card .card-title {
+            font-size: 0.7em;
+            font-weight: 600;
+            color: #2c3e50;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .grammar-card.locked .card-title {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .grammar-card .card-status {
+            font-size: 16px;
+        }
+
+        /* Grammar grid */
+        .grammar-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            padding: 15px;
+        }
+
         .radio-group {
             margin: 20px 0;
             padding: 20px;

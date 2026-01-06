@@ -4347,7 +4347,6 @@ function closeExpandedCard() {
 // Show Ejercicios Gramática (справочник грамматических правил из упражнений)
 function showEjerciciosGramatica() {
     hideAllScreens();
-    showUserBadge();
     document.getElementById('ejerciciosGramaticaRefScreen').classList.remove('hidden');
 
     // Используем глобальную переменную gramaticaExercises
@@ -4363,7 +4362,11 @@ function showEjerciciosGramatica() {
     const totalCount = ejercicios.length;
 
     const container = document.getElementById('ejerciciosGramaticaContainer');
-    let html = '';
+    container.innerHTML = '';
+
+    // Create grid wrapper
+    const gridWrapper = document.createElement('div');
+    gridWrapper.className = 'grammar-grid';
 
     ejercicios.forEach(exercise => {
         // Проверяем три условия разблокировки
@@ -4376,61 +4379,58 @@ function showEjerciciosGramatica() {
         const isUnlocked = ruleViewed && testPassed && microTestsDone;
         if (isUnlocked) unlockedCount++;
 
-        // Название правила
+        // Название правила (короткое)
         const ruleTitle = exercise.rule?.title || exercise.title;
+        const shortTitle = isUnlocked ? (ruleTitle.length > 20 ? ruleTitle.substring(0, 18) + '...' : ruleTitle) : '???';
 
-        html += `
-            <div class="ejercicio-gram-card ${isUnlocked ? 'unlocked' : 'locked'}"
-                 onclick="${isUnlocked ? `showUnlockedRule('${exercise.id}')` : ''}"
-                 style="
-                    background: ${isUnlocked ? 'rgba(155, 89, 182, 0.2)' : 'rgba(100, 100, 100, 0.15)'};
-                    backdrop-filter: blur(10px);
-                    -webkit-backdrop-filter: blur(10px);
-                    border: 1px solid ${isUnlocked ? 'rgba(155, 89, 182, 0.4)' : 'rgba(100, 100, 100, 0.3)'};
-                    border-radius: 12px;
-                    padding: 15px;
-                    margin-bottom: 12px;
-                    cursor: ${isUnlocked ? 'pointer' : 'default'};
-                    opacity: ${isUnlocked ? '1' : '0.7'};
-                    transition: transform 0.2s, box-shadow 0.2s;
-                 ">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div style="flex: 1;">
-                        <div style="
-                            color: ${isUnlocked ? '#9b59b6' : '#7f8c8d'};
-                            font-weight: 600;
-                            font-size: 1.05em;
-                            margin-bottom: 8px;
-                        ">
-                            ${isUnlocked ? ruleTitle : '???'}
-                        </div>
-                        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                            <span style="font-size: 0.85em; color: ${ruleViewed ? '#27ae60' : '#e74c3c'};">
-                                ${ruleViewed ? '✓' : '✗'} Правило
-                            </span>
-                            <span style="font-size: 0.85em; color: ${testPassed ? '#27ae60' : '#e74c3c'};">
-                                ${testPassed ? '✓' : '✗'} Тест ${testScore}%
-                            </span>
-                            <span style="font-size: 0.85em; color: ${microTestsDone ? '#27ae60' : '#e74c3c'};">
-                                ${microTestsDone ? '✓' : '✗'} Микро-тесты
-                            </span>
-                        </div>
-                    </div>
-                    <div style="font-size: 1.5em; margin-left: 10px;">
-                        ${isUnlocked ? '🔓' : '🔒'}
-                    </div>
-                </div>
-            </div>
+        // Создаём карточку
+        const card = document.createElement('div');
+        card.className = 'grammar-card' + (isUnlocked ? ' clickable' : ' locked');
+
+        card.innerHTML = `
+            <div class="card-icon"><i class="ph ph-book-open"></i></div>
+            <div class="card-title">${shortTitle}</div>
+            <div class="card-status">${isUnlocked ? '🔓' : '🔒'}</div>
         `;
+
+        // Add click handler for unlocked cards
+        if (isUnlocked) {
+            card.onclick = () => expandGrammarCard(exercise.id, ruleTitle, exercise.rule?.explanation || '');
+        }
+
+        gridWrapper.appendChild(card);
     });
 
-    container.innerHTML = html;
+    container.appendChild(gridWrapper);
 
     // Обновляем счётчик
     document.getElementById('gramUnlockedCount').textContent = unlockedCount;
     document.getElementById('gramTotalCount').textContent = totalCount;
+}
 
-    saveNavigationState('ejerciciosGramaticaRefScreen');
+// Hide grammar ref screen
+function hideGrammarRefScreen() {
+    document.getElementById('ejerciciosGramaticaRefScreen').classList.add('hidden');
+}
+
+// Expand grammar card (show enlarged view)
+function expandGrammarCard(exerciseId, title, explanation) {
+    const overlay = document.getElementById('expandedGrammarCardOverlay');
+    const iconEl = overlay.querySelector('.expanded-card-icon');
+    const spanishEl = overlay.querySelector('.expanded-card-spanish');
+    const russianEl = overlay.querySelector('.expanded-card-russian');
+
+    iconEl.innerHTML = `<i class="ph ph-book-open"></i>`;
+    spanishEl.textContent = title;
+    russianEl.textContent = explanation.substring(0, 100) + (explanation.length > 100 ? '...' : '');
+
+    overlay.classList.remove('hidden');
+}
+
+// Close expanded grammar card
+function closeExpandedGrammarCard() {
+    const overlay = document.getElementById('expandedGrammarCardOverlay');
+    overlay.classList.add('hidden');
 }
 
 // Показать разблокированное правило из справочника

@@ -979,6 +979,12 @@ function showProfileSelect() {
             document.getElementById('miniDictTitle').textContent = `📖 ${displayName}`;
             document.getElementById('miniDictSubtitle').textContent = `Мини-Словарь группы`;
 
+            // Helper: capitalize first letter of each word
+            const capitalize = (str) => str.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+            // Helper: remove article (el/la/los/las) from word for sentence insertion
+            const removeArticle = (word) => word.replace(/^(el|la|los|las)\s+/i, '');
+
             // Render words list with sentences (шрифты увеличены на 50%)
             const container = document.getElementById('miniDictWordsContainer');
             container.innerHTML = words.map((word, index) => {
@@ -986,8 +992,9 @@ function showProfileSelect() {
                 const sentences = word.hardSentences ? word.hardSentences.slice(0, 2) : [];
                 const sentencesRu = word.hardSentencesRu ? word.hardSentencesRu.slice(0, 2) : [];
 
-                // Replace ___ with the word in sentences
-                const fillSentence = (s) => s.replace('___', `<strong>${word.spanish}</strong>`);
+                // Replace ___ with the word WITHOUT article (to avoid "mi el abuelo")
+                const wordWithoutArticle = removeArticle(word.spanish);
+                const fillSentence = (s) => s.replace('___', `<strong>${wordWithoutArticle}</strong>`);
 
                 return `
                 <div class="mini-dict-word" style="
@@ -1001,8 +1008,8 @@ function showProfileSelect() {
                 ">
                     <!-- Word header -->
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.2);">
-                        <span style="font-weight: 700; color: #2c3e50; font-size: 1.95em;">${word.spanish}</span>
-                        <span style="color: #fff; font-size: 1.65em; font-style: italic;">${word.ru}</span>
+                        <span style="font-weight: 700; color: #2c3e50; font-size: 1.95em;">${capitalize(word.spanish)}</span>
+                        <span style="color: #fff; font-size: 1.65em; font-style: italic;">${capitalize(word.ru)}</span>
                     </div>
                     <!-- Sentences -->
                     ${sentences.length > 0 ? `

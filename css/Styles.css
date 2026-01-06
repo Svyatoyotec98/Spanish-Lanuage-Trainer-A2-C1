@@ -177,18 +177,30 @@
             left: 0 !important;
             width: 100vw !important;
             height: 100vh !important;
-            background-image: url('../Wallpapers/maxresdefault.jpg') !important;
-            background-size: cover !important;
-            background-position: center !important;
             z-index: 9999 !important;
             display: flex !important;
             flex-direction: column !important;
             padding: 30px !important;
             box-sizing: border-box !important;
+            overflow: hidden !important;
         }
 
         .vocabulary-overlay.hidden {
             display: none !important;
+        }
+
+        /* Vocabulary Parallax Background */
+        .vocabulary-parallax-bg {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            background-image: url('../Wallpapers/maxresdefault.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            transition: transform 0.1s ease-out;
         }
 
         /* Vocabulary header glassmorphism */

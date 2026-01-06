@@ -1081,6 +1081,9 @@
          VOCABULARY SCREEN (Full Screen Overlay - OUTSIDE CONTAINER)
          ═══════════════════════════════════════════════════════════════ -->
     <div id="vocabularyScreen" class="vocabulary-overlay hidden">
+        <!-- Parallax background -->
+        <div id="vocabulary-bg" class="vocabulary-parallax-bg"></div>
+
         <!-- Header with glassmorphism -->
         <div class="vocabulary-header" style="flex-shrink: 0;">
             <h1 style="color: #2c3e50; margin: 0; font-size: 1.8em;">📖 Vocabulario</h1>
@@ -1135,6 +1138,21 @@
       const moveY = (e.clientY - window.innerHeight / 2) * 0.02;
 
       azulejosBg.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+
+    // ═══════════════════════════════════════════════════════════════
+    // PARALLAX EFFECT FOR VOCABULARY SCREEN
+    // ═══════════════════════════════════════════════════════════════
+    const vocabularyBg = document.getElementById('vocabulary-bg');
+    const vocabularyScreen = document.getElementById('vocabularyScreen');
+
+    vocabularyScreen.addEventListener('mousemove', (e) => {
+      if (!vocabularyBg) return;
+
+      const moveX = (e.clientX - window.innerWidth / 2) * 0.015;
+      const moveY = (e.clientY - window.innerHeight / 2) * 0.015;
+
+      vocabularyBg.style.transform = `translate(${moveX}px, ${moveY}px)`;
     });
   </script>
 </body>

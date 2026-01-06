@@ -4967,7 +4967,7 @@ function showGramQuestion() {
 // Timer for grammar
 function startGramTimer() {
     stopGramTimer();
-    gramTimeLeft = TIMER_DURATION;
+    gramTimeLeft = TIMER_DURATION_DEFAULT;
     updateGramTimerDisplay();
 
     gramTimerInterval = setInterval(() => {
@@ -4994,7 +4994,7 @@ function updateGramTimerDisplay() {
 
     if (!timerBar || !timerText) return;
 
-    const percentage = (gramTimeLeft / TIMER_DURATION) * 100;
+    const percentage = (gramTimeLeft / TIMER_DURATION_DEFAULT) * 100;
     timerBar.style.width = percentage + '%';
     timerText.textContent = Math.ceil(gramTimeLeft);
 

@@ -1855,12 +1855,6 @@ if (
                                 "
                             />
                             <span>${afterBlank}</span>
-                            <span style="
-                                color: rgba(255, 255, 255, 0.7);
-                                font-size: 0.85em;
-                                font-style: italic;
-                                margin-left: 10px;
-                            ">(${q.hint})</span>
                         </div>
                     </div>
                 `;

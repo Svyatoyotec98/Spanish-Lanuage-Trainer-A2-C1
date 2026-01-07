@@ -5260,7 +5260,7 @@ function updateBankMasteryUI() {
 
     const testBtn = document.getElementById('exerciseTestBtn');
     const testBtnLabel = document.getElementById('exerciseTestBtnLabel');
-    const fullTestBtn = document.getElementById('fullTestBtn');
+    const fullTestBtnLabel = document.getElementById('fullTestBtnLabel');
 
     if (!testBtn || !testBtnLabel) return;
 
@@ -5277,8 +5277,8 @@ function updateBankMasteryUI() {
         testBtnLabel.innerHTML = '✅ Банк<br>освоен';
 
         // Полный тест — меняем текст на "Повторить"
-        if (fullTestBtn) {
-            fullTestBtn.innerHTML = '🔄 Повторить весь банк (60 вопросов)';
+        if (fullTestBtnLabel) {
+            fullTestBtnLabel.innerHTML = 'Повторить<br>банк';
         }
     } else {
         // Обычное состояние — активная кнопка
@@ -5289,8 +5289,8 @@ function updateBankMasteryUI() {
         testBtnLabel.innerHTML = 'Пройти<br>тест';
 
         // Полный тест — стандартный текст
-        if (fullTestBtn) {
-            fullTestBtn.innerHTML = '📝 Пройти полный тест (60 вопросов)';
+        if (fullTestBtnLabel) {
+            fullTestBtnLabel.innerHTML = 'Полный<br>тест';
         }
     }
 }

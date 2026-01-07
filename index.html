@@ -605,7 +605,7 @@
             </div>
 
             <!-- Action Buttons -->
-            <div style="display: flex; flex-direction: row; gap: 40px; margin-top: 30px; justify-content: center;">
+            <div style="display: flex; flex-direction: row; gap: 40px; margin-top: 30px; justify-content: center; flex-wrap: wrap;">
                 <button class="btn" onclick="showGrammarRule()" style="background: transparent; color: #2c3e50; padding: 25px; font-size: 1.4em; border: 4px solid #667eea; border-radius: 15px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 15px; width: 160px; height: 160px; justify-content: center; font-family: 'Nunito', sans-serif;">
                     <span style="font-weight: 700;">Просмотреть<br>правило</span>
                     <img src="icons/book-open-text.svg" alt="Правило" style="width: 48px; height: 48px; opacity: 0.8;">
@@ -614,12 +614,9 @@
                     <span id="exerciseTestBtnLabel" style="font-weight: 700;">Пройти<br>тест</span>
                     <img src="icons/exam.svg" alt="Тест" style="width: 48px; height: 48px; opacity: 0.8;">
                 </button>
-            </div>
-
-            <!-- Full Test Button (60 questions) -->
-            <div style="margin-top: 20px; text-align: center;">
-                <button id="fullTestBtn" class="btn" onclick="startFullTest()" style="background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; padding: 15px 40px; font-size: 1.1em; border: none; border-radius: 12px; cursor: pointer; font-family: 'Nunito', sans-serif; font-weight: 700; box-shadow: 0 4px 15px rgba(155, 89, 182, 0.3);">
-                    📝 Пройти полный тест (60 вопросов)
+                <button id="fullTestBtn" class="btn" onclick="startFullTest()" style="background: transparent; color: #2c3e50; padding: 25px; font-size: 1.4em; border: 4px solid #9b59b6; border-radius: 15px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 15px; width: 160px; height: 160px; justify-content: center; font-family: 'Nunito', sans-serif;">
+                    <span id="fullTestBtnLabel" style="font-weight: 700;">Полный<br>тест</span>
+                    <img src="icons/trophy.svg" alt="Полный тест" style="width: 48px; height: 48px; opacity: 0.8;">
                 </button>
             </div>
 

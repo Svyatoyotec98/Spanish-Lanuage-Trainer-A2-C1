@@ -3984,9 +3984,12 @@ async function getNavigationState() {
                         background: rgba(255,255,255,0.1);
                         padding: 12px 15px;
                         border-radius: 10px;
+                        display: flex;
+                        align-items: baseline;
+                        gap: 8px;
                     ">
-                        <div style="color: #ecf0f1; line-height: 1.8;">
-                            <span style="color: #9b59b6; font-weight: bold;">${idx + 1}.</span>
+                        <span style="color: #9b59b6; font-weight: bold; min-width: 20px;">${idx + 1}.</span>
+                        <div style="color: #ecf0f1; line-height: 1.8; flex: 1;">
                             ${sentenceWithInput}
                             <button onclick="toggleGrammarHint(${q.globalIndex})" style="
                                 background: rgba(241, 196, 15, 0.3);

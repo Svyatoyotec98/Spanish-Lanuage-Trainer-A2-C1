@@ -5019,9 +5019,65 @@ function selectQuestionsForTest(exercise) {
     return selected;
 }
 
+// ═══════════════════════════════════════════════════════════════
+// REFRESH PROTECTION - защита от обновления страницы mid-test
+// ═══════════════════════════════════════════════════════════════
+
+// Пометить тест как "в процессе"
+function markTestInProgress(exerciseId) {
+    const profile = getActiveProfile();
+    if (!profile) return;
+
+    if (!profile.gramTestInProgress) {
+        profile.gramTestInProgress = {};
+    }
+    if (!profile.gramTestInProgress[currentUnidad]) {
+        profile.gramTestInProgress[currentUnidad] = {};
+    }
+
+    profile.gramTestInProgress[currentUnidad][exerciseId] = true;
+    saveProfiles();
+}
+
+// Убрать флаг "в процессе" (тест завершён нормально)
+function clearTestInProgress(exerciseId) {
+    const profile = getActiveProfile();
+    if (!profile) return;
+
+    if (profile.gramTestInProgress &&
+        profile.gramTestInProgress[currentUnidad]) {
+        delete profile.gramTestInProgress[currentUnidad][exerciseId];
+        saveProfiles();
+    }
+}
+
+// Проверить, был ли брошенный тест (refresh mid-test)
+// Если да — вопросы уже заблокированы через saveExcludedQuestionIndices
+function checkAndHandleAbandonedTest(exerciseId) {
+    const profile = getActiveProfile();
+    if (!profile) return false;
+
+    if (profile.gramTestInProgress &&
+        profile.gramTestInProgress[currentUnidad] &&
+        profile.gramTestInProgress[currentUnidad][exerciseId]) {
+        // Был брошенный тест — вопросы уже сохранены как заблокированные
+        // Просто очищаем флаг
+        console.log(`⚠️ Обнаружен брошенный тест для ${exerciseId}. Вопросы заблокированы.`);
+        clearTestInProgress(exerciseId);
+        return true;
+    }
+    return false;
+}
+
 // Start a grammar exercise
 function startGramExercise(exercise) {
     gramCurrentExercise = exercise;
+
+    // Проверяем, был ли брошенный тест (refresh mid-test)
+    const wasAbandoned = checkAndHandleAbandonedTest(exercise.id);
+    if (wasAbandoned) {
+        console.log('📝 Предыдущая попытка была прервана. Новые вопросы будут другими.');
+    }
 
     // Выбираем вопросы с учётом банка и исключений
     gramCurrentQuestions = selectQuestionsForTest(exercise);
@@ -5029,6 +5085,9 @@ function startGramExercise(exercise) {
     gramCurrentQuestionIndex = 0;
     gramScore = 0;
     __gramIsAwaitingNext = false;
+
+    // Помечаем тест как "в процессе"
+    markTestInProgress(exercise.id);
 
     hideAllScreens();
     showUserBadge();
@@ -5160,6 +5219,9 @@ closeModal = function() {
 
 // Show grammar results
 function showGramResults() {
+    // Тест завершён нормально — убираем флаг "в процессе"
+    clearTestInProgress(gramCurrentExercise.id);
+
     hideAllScreens();
     showUserBadge();
     document.getElementById('gramaticaResultsScreen').classList.remove('hidden');

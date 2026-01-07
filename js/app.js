@@ -3511,6 +3511,28 @@ async function getNavigationState() {
             }
         }
 
+        // Функция проверки ответа с учётом артиклей
+        function checkAnswerWithArticle(userAnswer, correctAnswer) {
+            const user = userAnswer.toLowerCase().trim();
+            const correct = correctAnswer.toLowerCase().trim();
+
+            // Точное совпадение
+            if (user === correct) return true;
+
+            // Артикли испанского
+            const articles = ['el ', 'la ', 'los ', 'las ', 'un ', 'una ', 'unos ', 'unas '];
+
+            // Убираем артикль из правильного ответа и сравниваем
+            for (const article of articles) {
+                if (correct.startsWith(article)) {
+                    const correctWithoutArticle = correct.slice(article.length);
+                    if (user === correctWithoutArticle) return true;
+                }
+            }
+
+            return false;
+        }
+
         function showPalabrasExamResults() {
             // Подсчитываем результаты
             let correct = 0;
@@ -3523,9 +3545,9 @@ async function getNavigationState() {
                 }
 
                 page.questions.forEach(q => {
-                    const userAnswer = (palabrasExamAnswers[q.globalIndex] || '').toLowerCase().trim();
-                    const correctAnswer = q.answer.toLowerCase().trim();
-                    const isCorrect = userAnswer === correctAnswer;
+                    const userAnswer = palabrasExamAnswers[q.globalIndex] || '';
+                    const correctAnswer = q.answer;
+                    const isCorrect = checkAnswerWithArticle(userAnswer, correctAnswer);
 
                     if (isCorrect) {
                         correct++;
@@ -3537,7 +3559,7 @@ async function getNavigationState() {
                     resultsByGroup[page.groupName].total++;
                     resultsByGroup[page.groupName].details.push({
                         sentence: q.sentence,
-                        userAnswer: palabrasExamAnswers[q.globalIndex] || '(пусто)',
+                        userAnswer: userAnswer || '(пусто)',
                         correctAnswer: q.word.spanish,
                         isCorrect: isCorrect
                     });
@@ -3567,9 +3589,10 @@ async function getNavigationState() {
             document.getElementById('palabrasExamResultWrong').textContent = wrong;
             document.getElementById('palabrasExamResultPercent').textContent = percentage + '%';
 
-            // Детали по группам
+            // Детали по группам (аккордеон)
             const detailsContainer = document.getElementById('palabrasExamResultDetails');
             let detailsHtml = '';
+            let groupIndex = 0;
 
             Object.keys(resultsByGroup).forEach(groupName => {
                 const group = resultsByGroup[groupName];
@@ -3580,47 +3603,85 @@ async function getNavigationState() {
                     <div style="
                         background: rgba(255,255,255,0.1);
                         border-radius: 10px;
-                        padding: 15px;
-                        margin-bottom: 15px;
+                        margin-bottom: 10px;
+                        overflow: hidden;
                     ">
-                        <div style="
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            margin-bottom: 10px;
-                        ">
-                            <strong style="color: #f39c12;">${groupName.replace(/_/g, ' ')}</strong>
-                            <span style="color: ${groupColor}; font-weight: bold;">${group.correct}/${group.total} (${groupPercent}%)</span>
+                        <div
+                            onclick="toggleResultGroup(${groupIndex})"
+                            style="
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 15px;
+                                cursor: pointer;
+                                transition: background 0.2s;
+                            "
+                            onmouseover="this.style.background='rgba(255,255,255,0.1)'"
+                            onmouseout="this.style.background='transparent'"
+                        >
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span id="arrow-${groupIndex}" style="color: #ecf0f1; transition: transform 0.3s;">▶</span>
+                                <strong style="color: #f39c12;">${groupName.replace(/_/g, ' ')}</strong>
+                            </div>
+                            <span style="
+                                background: ${groupColor};
+                                color: white;
+                                padding: 4px 12px;
+                                border-radius: 15px;
+                                font-weight: bold;
+                                font-size: 0.9em;
+                            ">${group.correct}/${group.total} (${groupPercent}%)</span>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <div id="group-details-${groupIndex}" style="display: none; padding: 0 15px 15px 15px;">
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
                 `;
 
                 group.details.forEach(d => {
-                    const bgColor = d.isCorrect ? 'rgba(39, 174, 96, 0.2)' : 'rgba(231, 76, 60, 0.2)';
-                    const borderColor = d.isCorrect ? 'rgba(39, 174, 96, 0.4)' : 'rgba(231, 76, 60, 0.4)';
+                    const bgColor = d.isCorrect ? 'rgba(39, 174, 96, 0.3)' : 'rgba(231, 76, 60, 0.3)';
+                    const borderColor = d.isCorrect ? 'rgba(39, 174, 96, 0.6)' : 'rgba(231, 76, 60, 0.6)';
                     const icon = d.isCorrect ? '✅' : '❌';
 
                     detailsHtml += `
                         <div style="
                             background: ${bgColor};
                             border: 1px solid ${borderColor};
-                            border-radius: 6px;
-                            padding: 8px 12px;
-                            font-size: 0.9em;
+                            border-radius: 8px;
+                            padding: 10px 12px;
                         ">
-                            <div style="color: #ecf0f1;">${icon} ${d.sentence.replace('___', '<strong style="color: #3498db;">[___]</strong>')}</div>
-                            <div style="margin-top: 5px;">
-                                <span style="color: ${d.isCorrect ? '#27ae60' : '#e74c3c'};">Ваш ответ: ${d.userAnswer}</span>
-                                ${!d.isCorrect ? `<span style="color: #27ae60; margin-left: 15px;">Правильно: ${d.correctAnswer}</span>` : ''}
+                            <div style="color: #ecf0f1; margin-bottom: 6px;">
+                                ${icon} ${d.sentence.replace('___', '<strong style="color: #3498db; background: rgba(52,152,219,0.3); padding: 2px 8px; border-radius: 4px;">[___]</strong>')}
+                            </div>
+                            <div style="font-size: 0.9em;">
+                                <span style="color: #bdc3c7;">Ваш ответ:</span>
+                                <span style="color: ${d.isCorrect ? '#2ecc71' : '#ff6b6b'}; font-weight: bold; margin-left: 5px;">${d.userAnswer}</span>
+                                ${!d.isCorrect ? `
+                                    <span style="color: #bdc3c7; margin-left: 15px;">Правильно:</span>
+                                    <span style="color: #2ecc71; font-weight: bold; margin-left: 5px;">${d.correctAnswer}</span>
+                                ` : ''}
                             </div>
                         </div>
                     `;
                 });
 
-                detailsHtml += `</div></div>`;
+                detailsHtml += `</div></div></div>`;
+                groupIndex++;
             });
 
             detailsContainer.innerHTML = detailsHtml;
+        }
+
+        function toggleResultGroup(index) {
+            const details = document.getElementById('group-details-' + index);
+            const arrow = document.getElementById('arrow-' + index);
+            if (details && arrow) {
+                if (details.style.display === 'none') {
+                    details.style.display = 'block';
+                    arrow.style.transform = 'rotate(90deg)';
+                } else {
+                    details.style.display = 'none';
+                    arrow.style.transform = 'rotate(0deg)';
+                }
+            }
         }
 
         function exitPalabrasExam() {

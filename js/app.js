@@ -3157,6 +3157,27 @@ async function getNavigationState() {
         // EXAM SYSTEM - Exam Logic
         // ═══════════════════════════════════════════════════════════════
 
+        // Show Exam Menu (Test Type Selection)
+        function showExamMenu() {
+            console.log('🔵 showExamMenu() вызвана');
+            hideAllScreens();
+            document.getElementById('examMenuScreen').classList.remove('hidden');
+        }
+
+        // Start Palabras Exam (Words Test)
+        function startPalabrasExam() {
+            console.log('🔵 startPalabrasExam() вызвана');
+            // TODO: Фаза 4 - реализация теста на слова
+            alert('Тест на слова - в разработке');
+        }
+
+        // Start Grammar Exam (Ejercicios Test)
+        function startGrammarExam() {
+            console.log('🔵 startGrammarExam() вызвана');
+            // TODO: Фаза 5 - реализация теста на грамматику
+            alert('Тест на грамматику - в разработке');
+        }
+
         function startExam() {
             console.log('🔵 startExam() вызвана');
 
@@ -3758,7 +3779,7 @@ function hideAllScreens() {
         'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
         'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
         'cardMatchingScreen', 'cardMatchingResultsScreen',
-        'examScreen', 'examResultsScreen',
+        'examMenuScreen', 'examScreen', 'examResultsScreen',
         'miniDictionaryScreen',
         'exercisePreviewMenu', 'grammarRuleScreen', 'microTestsScreen',
         'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen',

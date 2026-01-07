@@ -346,9 +346,9 @@
 
                 <!-- Exam Section -->
                 <div class="exam-section">
-                    <h3>🎓 Финальный экзамен</h3>
-                    <p class="exam-requirement">Требуется средний прогресс 80% для разблокировки</p>
-                    <button class="btn btn-success" id="examBtn" onclick="startExam()">
+                    <h3>🎓 Экзамен</h3>
+                    <p class="exam-requirement">Проверьте свои знания</p>
+                    <button class="btn btn-success" id="examBtn" onclick="showExamMenu()">
                         Пройти экзамен
                     </button>
                 </div>
@@ -1294,6 +1294,30 @@
             </div>
 
             <button class="btn btn-back" onclick="exitInteractiveMode()" style="margin-top: 30px;">← Выйти из интерактивного режима</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             EXAM MENU (Test Type Selection)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="examMenuScreen" class="menu-container hidden">
+            <h1>🎓 Экзамен</h1>
+            <p class="subtitle">Выберите тип теста</p>
+
+            <div class="exam-type-buttons">
+                <button class="btn btn-exam-type btn-palabras-exam" onclick="startPalabrasExam()">
+                    <span class="exam-type-icon">📝</span>
+                    <span class="exam-type-title">Тест на слова</span>
+                    <span class="exam-type-desc">Проверка словарного запаса</span>
+                </button>
+
+                <button class="btn btn-exam-type btn-grammar-exam" onclick="startGrammarExam()">
+                    <span class="exam-type-icon">📖</span>
+                    <span class="exam-type-title">Тест на грамматику</span>
+                    <span class="exam-type-desc">Проверка знания правил</span>
+                </button>
+            </div>
+
+            <button class="btn btn-back" onclick="showUnidadMenu(currentUnidad)" style="margin-top: 30px;">← Назад</button>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════

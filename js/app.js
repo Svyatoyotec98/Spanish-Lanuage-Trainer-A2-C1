@@ -4095,7 +4095,13 @@ function showExercisePreview(exercise) {
     const profile = getActiveProfile();
     ensureProgressSkeleton(profile);
     const score = profile.progress[currentUnidad].ejercicios[exercise.id] || 0;
-    document.getElementById('exercise-preview-progress-text').textContent = score;
+    document.getElementById('exercise-preview-progress-text').textContent = score + '%';
+    document.getElementById('exercise-preview-progress-bar').style.width = score + '%';
+
+    // Освоение банка
+    const bankMastery = getBankMasteryPercent(exercise.id);
+    document.getElementById('exercise-bank-mastery-text').textContent = bankMastery + '%';
+    document.getElementById('exercise-bank-mastery-bar').style.width = bankMastery + '%';
 
     // ═══════════════════════════════════════════════════════════════
     // БЛОКИРОВКА КНОПКИ ТЕСТА: если микро-тесты не пройдены

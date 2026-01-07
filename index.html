@@ -584,9 +584,23 @@
 
             <!-- Progress for this exercise -->
             <div style="margin: 20px 0; padding: 20px; background: rgba(102, 126, 234, 0.4); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 15px; color: white;">
-                <h3 style="margin: 0 0 10px 0; color: white;">📊 Прогресс упражнения</h3>
-                <div style="font-size: 28px; font-weight: bold;">
-                    <span id="exercise-preview-progress-text">0</span>%
+                <div style="margin-bottom: 15px;">
+                    <h3 style="margin: 0 0 8px 0; color: white; font-size: 1em;">📊 Прогресс упражнения</h3>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="flex: 1; height: 8px; background: rgba(255,255,255,0.3); border-radius: 4px; overflow: hidden;">
+                            <div id="exercise-preview-progress-bar" style="height: 100%; background: linear-gradient(90deg, #27ae60, #2ecc71); width: 0%; transition: width 0.3s;"></div>
+                        </div>
+                        <span id="exercise-preview-progress-text" style="font-size: 1em; min-width: 45px;">0%</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="margin: 0 0 8px 0; color: white; font-size: 1em;">📚 Освоение банка</h3>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="flex: 1; height: 8px; background: rgba(255,255,255,0.3); border-radius: 4px; overflow: hidden;">
+                            <div id="exercise-bank-mastery-bar" style="height: 100%; background: linear-gradient(90deg, #9b59b6, #8e44ad); width: 0%; transition: width 0.3s;"></div>
+                        </div>
+                        <span id="exercise-bank-mastery-text" style="font-size: 1em; min-width: 45px;">0%</span>
+                    </div>
                 </div>
             </div>
 

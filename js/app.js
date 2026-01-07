@@ -3984,35 +3984,29 @@ async function getNavigationState() {
                         background: rgba(255,255,255,0.1);
                         padding: 12px 15px;
                         border-radius: 10px;
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
                     ">
-                        <span style="
-                            color: #9b59b6;
-                            font-weight: bold;
-                        ">${idx + 1}.</span>
-                        <div style="flex: 1; color: #ecf0f1; line-height: 1.5;">
+                        <div style="color: #ecf0f1; line-height: 1.8;">
+                            <span style="color: #9b59b6; font-weight: bold;">${idx + 1}.</span>
                             ${sentenceWithInput}
+                            <button onclick="toggleGrammarHint(${q.globalIndex})" style="
+                                background: rgba(241, 196, 15, 0.3);
+                                border: none;
+                                border-radius: 50%;
+                                width: 28px;
+                                height: 28px;
+                                cursor: pointer;
+                                font-size: 0.9em;
+                                vertical-align: middle;
+                                margin-left: 8px;
+                            ">💡</button>
+                            <span id="grammar-hint-${q.globalIndex}" style="
+                                display: none;
+                                color: rgba(255,255,255,0.5);
+                                font-size: 0.9em;
+                                font-style: italic;
+                                margin-left: 8px;
+                            ">${q.hint}</span>
                         </div>
-                        <button onclick="toggleGrammarHint(${q.globalIndex})" style="
-                            background: rgba(241, 196, 15, 0.3);
-                            border: none;
-                            border-radius: 50%;
-                            width: 32px;
-                            height: 32px;
-                            cursor: pointer;
-                            font-size: 1.1em;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                        ">💡</button>
-                        <span id="grammar-hint-${q.globalIndex}" style="
-                            display: none;
-                            color: rgba(255,255,255,0.5);
-                            font-size: 0.9em;
-                            font-style: italic;
-                        ">${q.hint}</span>
                     </div>
                 `;
             });

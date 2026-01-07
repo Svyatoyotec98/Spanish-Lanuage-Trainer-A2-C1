@@ -5096,7 +5096,10 @@ function markTestInProgress(exerciseId) {
         profile.gramTestInProgress[currentUnidad] = {};
     }
 
-    profile.gramTestInProgress[currentUnidad][exerciseId] = true;
+    // Сохраняем тип теста (полный или обычный)
+    profile.gramTestInProgress[currentUnidad][exerciseId] = {
+        isFullTest: gramFullTestMode
+    };
 
     // Сохраняем в localStorage
     const state = loadAppState();
@@ -5120,7 +5123,7 @@ function clearTestInProgress(exerciseId) {
 }
 
 // Проверить, был ли брошенный тест (refresh mid-test)
-// Если да — вопросы уже заблокированы через saveExcludedQuestionIndices
+// Если да — вопросы уже заблокированы через saveExcludedQuestionIndices (для обычного теста)
 function checkAndHandleAbandonedTest(exerciseId) {
     const profile = getActiveProfile();
     if (!profile) return false;
@@ -5128,9 +5131,18 @@ function checkAndHandleAbandonedTest(exerciseId) {
     if (profile.gramTestInProgress &&
         profile.gramTestInProgress[currentUnidad] &&
         profile.gramTestInProgress[currentUnidad][exerciseId]) {
-        // Был брошенный тест — вопросы уже сохранены как заблокированные
-        // Просто очищаем флаг
-        console.log(`⚠️ Обнаружен брошенный тест для ${exerciseId}. Вопросы заблокированы.`);
+
+        const testInfo = profile.gramTestInProgress[currentUnidad][exerciseId];
+
+        // Поддержка старого формата (просто true) и нового ({isFullTest: bool})
+        const wasFullTest = typeof testInfo === 'object' ? testInfo.isFullTest : false;
+
+        if (wasFullTest) {
+            console.log(`⚠️ Обнаружен брошенный ПОЛНЫЙ тест для ${exerciseId}. Блокировки нет.`);
+        } else {
+            console.log(`⚠️ Обнаружен брошенный тест для ${exerciseId}. Вопросы заблокированы.`);
+        }
+
         clearTestInProgress(exerciseId);
         return true;
     }

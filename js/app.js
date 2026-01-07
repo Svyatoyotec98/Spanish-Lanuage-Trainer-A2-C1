@@ -341,7 +341,7 @@
              'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
              'examMenuScreen', 'examScreen', 'examResultsScreen', 'miniDictionaryScreen',
              'exercisePreviewMenu', 'grammarRuleScreen', 'hardTestAllQuestionsScreen',
-             'hardTestResultsScreen'].forEach(id => {
+             'hardTestResultsScreen', 'palabrasExamScreen', 'palabrasExamResultsScreen'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');
             });
         }
@@ -3182,7 +3182,21 @@ async function getNavigationState() {
             document.getElementById('examMenuScreen').classList.remove('hidden');
         }
 
-        // Start Palabras Exam (Words Test)
+        // ═══════════════════════════════════════════════════════════════
+        // PALABRAS EXAM - Test on words (grouped by semantic groups)
+        // ═══════════════════════════════════════════════════════════════
+
+        // Palabras Exam state variables
+        let palabrasExamPages = [];      // массив страниц [{groupName, questions: [...]}]
+        let palabrasExamCurrentPage = 0; // текущая страница
+        let palabrasExamAnswers = {};    // ответы пользователя {globalIndex: "answer"}
+        let palabrasExamTimerInterval = null;
+        let palabrasExamTimeLeft = 0;
+        let palabrasExamTotalQuestions = 0;
+
+        const PALABRAS_EXAM_MAX_PER_PAGE = 10; // максимум слов на странице
+        const PALABRAS_EXAM_TIME_PER_QUESTION = 20; // секунд на вопрос
+
         // Правила отбора слов:
         // ≤5 слов → 100%
         // 6-15 слов → 75%
@@ -3207,9 +3221,15 @@ async function getNavigationState() {
                 return;
             }
 
-            // Собираем слова из всех групп с учётом правил процентов
-            let allSelectedWords = [];
+            // Сбрасываем состояние
+            palabrasExamPages = [];
+            palabrasExamCurrentPage = 0;
+            palabrasExamAnswers = {};
+            palabrasExamTotalQuestions = 0;
 
+            let globalIndex = 0;
+
+            // Собираем слова по группам
             Object.keys(unidadData.groups).forEach(groupName => {
                 const groupWords = unidadData.groups[groupName];
                 const count = groupWords.length;
@@ -3229,29 +3249,357 @@ async function getNavigationState() {
 
                 // Перемешиваем и выбираем
                 const shuffled = shuffleArray([...groupWords]);
-                const selected = shuffled.slice(0, selectCount);
+                const selectedWords = shuffled.slice(0, selectCount);
 
                 console.log(`📁 ${groupName}: ${count} слов → ${Math.round(percentage * 100)}% → ${selectCount} выбрано`);
 
-                allSelectedWords = allSelectedWords.concat(selected);
+                // Создаём вопросы для этой группы
+                const questions = selectedWords.map(word => {
+                    let sentence = `___ (${word.ru})`;
+                    if (word.hardSentences && word.hardSentences.length > 0) {
+                        const randomIdx = Math.floor(Math.random() * word.hardSentences.length);
+                        sentence = word.hardSentences[randomIdx];
+                    }
+
+                    return {
+                        globalIndex: globalIndex++,
+                        word: word,
+                        sentence: sentence,
+                        answer: word.spanish.toLowerCase().trim(),
+                        hint: word.ru
+                    };
+                });
+
+                // Разбиваем на страницы если > 10 слов
+                for (let i = 0; i < questions.length; i += PALABRAS_EXAM_MAX_PER_PAGE) {
+                    const pageQuestions = questions.slice(i, i + PALABRAS_EXAM_MAX_PER_PAGE);
+                    palabrasExamPages.push({
+                        groupName: groupName,
+                        questions: pageQuestions
+                    });
+                }
+
+                palabrasExamTotalQuestions += questions.length;
             });
 
-            console.log(`📊 Всего выбрано слов для экзамена: ${allSelectedWords.length}`);
+            console.log(`📊 Всего страниц: ${palabrasExamPages.length}, вопросов: ${palabrasExamTotalQuestions}`);
 
-            if (allSelectedWords.length === 0) {
+            if (palabrasExamTotalQuestions === 0) {
                 alert('❌ Нет слов для теста');
                 return;
             }
 
-            // Сохраняем что это экзамен (для правильного возврата)
-            window.palabrasExamMode = true;
+            // Показываем экран
+            hideAll();
+            showUserBadge();
+            document.getElementById('palabrasExamScreen').classList.remove('hidden');
 
-            // Используем существующий hardTest
-            startHardTestAllQuestions(allSelectedWords);
-
-            // Меняем заголовок на "Тест на слова"
-            document.getElementById('hardTestGroupTitle').textContent =
+            // Устанавливаем заголовок
+            document.getElementById('palabrasExamTitle').textContent =
                 `📝 ТЕСТ НА СЛОВА - ${currentUnidad.toUpperCase().replace('_', ' ')}`;
+
+            // Рендерим первую страницу
+            renderPalabrasExamPage();
+
+            // Запускаем таймер
+            startPalabrasExamTimer();
+        }
+
+        function renderPalabrasExamPage() {
+            const page = palabrasExamPages[palabrasExamCurrentPage];
+            if (!page) return;
+
+            // Обновляем название группы
+            document.getElementById('palabrasExamGroupName').textContent = page.groupName.replace(/_/g, ' ');
+
+            // Обновляем индикатор страницы
+            document.getElementById('palabrasExamPageIndicator').textContent =
+                `Страница ${palabrasExamCurrentPage + 1} из ${palabrasExamPages.length}`;
+            document.getElementById('palabrasExamPageNumbers').textContent =
+                `${palabrasExamCurrentPage + 1} / ${palabrasExamPages.length}`;
+
+            // Обновляем кнопки навигации
+            const prevBtn = document.getElementById('palabrasExamPrevBtn');
+            const nextBtn = document.getElementById('palabrasExamNextBtn');
+
+            prevBtn.disabled = palabrasExamCurrentPage === 0;
+            prevBtn.style.opacity = palabrasExamCurrentPage === 0 ? '0.5' : '1';
+
+            nextBtn.disabled = palabrasExamCurrentPage === palabrasExamPages.length - 1;
+            nextBtn.style.opacity = palabrasExamCurrentPage === palabrasExamPages.length - 1 ? '0.5' : '1';
+
+            // Рендерим вопросы
+            const container = document.getElementById('palabrasExamQuestionsContainer');
+            let html = '';
+
+            page.questions.forEach((q, idx) => {
+                const savedAnswer = palabrasExamAnswers[q.globalIndex] || '';
+                const questionNumber = q.globalIndex + 1;
+
+                // Разбиваем предложение на части (до и после ___)
+                const parts = q.sentence.split('___');
+                const beforeBlank = parts[0] || '';
+                const afterBlank = parts[1] || '';
+
+                html += `
+                    <div style="
+                        background: rgba(255, 193, 7, 0.15);
+                        border: 1px solid rgba(255, 193, 7, 0.3);
+                        border-radius: 10px;
+                        padding: 12px 15px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    ">
+                        <span style="
+                            background: rgba(102, 126, 234, 0.5);
+                            color: white;
+                            width: 28px;
+                            height: 28px;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-weight: bold;
+                            font-size: 0.9em;
+                            flex-shrink: 0;
+                        ">${questionNumber}</span>
+                        <div style="flex: 1; display: flex; align-items: center; flex-wrap: wrap; gap: 5px;">
+                            <span style="color: #ecf0f1;">${beforeBlank}</span>
+                            <input
+                                type="text"
+                                value="${savedAnswer}"
+                                oninput="palabrasExamSaveAnswer(${q.globalIndex}, this.value)"
+                                placeholder="..."
+                                style="
+                                    width: 120px;
+                                    padding: 6px 10px;
+                                    border: 2px solid rgba(102, 126, 234, 0.5);
+                                    border-radius: 6px;
+                                    background: rgba(255,255,255,0.95);
+                                    color: #2c3e50;
+                                    font-size: 1em;
+                                    text-align: center;
+                                "
+                            />
+                            <span style="color: #ecf0f1;">${afterBlank}</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function palabrasExamSaveAnswer(index, value) {
+            palabrasExamAnswers[index] = value.trim();
+        }
+
+        function palabrasExamPrevPage() {
+            if (palabrasExamCurrentPage > 0) {
+                palabrasExamCurrentPage--;
+                renderPalabrasExamPage();
+            }
+        }
+
+        function palabrasExamNextPage() {
+            if (palabrasExamCurrentPage < palabrasExamPages.length - 1) {
+                palabrasExamCurrentPage++;
+                renderPalabrasExamPage();
+            }
+        }
+
+        function startPalabrasExamTimer() {
+            if (palabrasExamTimerInterval) {
+                clearInterval(palabrasExamTimerInterval);
+            }
+
+            palabrasExamTimeLeft = PALABRAS_EXAM_TIME_PER_QUESTION * palabrasExamTotalQuestions;
+            updatePalabrasExamTimerDisplay();
+
+            palabrasExamTimerInterval = setInterval(() => {
+                palabrasExamTimeLeft--;
+                updatePalabrasExamTimerDisplay();
+
+                if (palabrasExamTimeLeft <= 0) {
+                    palabrasExamTimeUp();
+                }
+            }, 1000);
+        }
+
+        function updatePalabrasExamTimerDisplay() {
+            const timerText = document.getElementById('palabrasExamTimer');
+            const timerBar = document.getElementById('palabrasExamTimerBar');
+
+            const minutes = Math.floor(palabrasExamTimeLeft / 60);
+            const seconds = palabrasExamTimeLeft % 60;
+            timerText.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+
+            const totalTime = PALABRAS_EXAM_TIME_PER_QUESTION * palabrasExamTotalQuestions;
+            const percentage = (palabrasExamTimeLeft / totalTime) * 100;
+            timerBar.style.width = percentage + '%';
+
+            // Цвет таймера
+            if (percentage > 50) {
+                timerText.style.color = '#27ae60';
+                timerBar.style.background = 'linear-gradient(90deg, #27ae60, #2ecc71)';
+            } else if (percentage > 20) {
+                timerText.style.color = '#f39c12';
+                timerBar.style.background = 'linear-gradient(90deg, #f39c12, #e67e22)';
+            } else {
+                timerText.style.color = '#e74c3c';
+                timerBar.style.background = 'linear-gradient(90deg, #e74c3c, #c0392b)';
+            }
+        }
+
+        function palabrasExamTimeUp() {
+            if (palabrasExamTimerInterval) {
+                clearInterval(palabrasExamTimerInterval);
+                palabrasExamTimerInterval = null;
+            }
+            alert('⏰ Время вышло!');
+            showPalabrasExamResults();
+        }
+
+        function stopPalabrasExamTimer() {
+            if (palabrasExamTimerInterval) {
+                clearInterval(palabrasExamTimerInterval);
+                palabrasExamTimerInterval = null;
+            }
+        }
+
+        function palabrasExamSubmit() {
+            if (confirm('Отправить тест на проверку?')) {
+                stopPalabrasExamTimer();
+                showPalabrasExamResults();
+            }
+        }
+
+        function showPalabrasExamResults() {
+            // Подсчитываем результаты
+            let correct = 0;
+            let wrong = 0;
+            const resultsByGroup = {};
+
+            palabrasExamPages.forEach(page => {
+                if (!resultsByGroup[page.groupName]) {
+                    resultsByGroup[page.groupName] = { correct: 0, total: 0, details: [] };
+                }
+
+                page.questions.forEach(q => {
+                    const userAnswer = (palabrasExamAnswers[q.globalIndex] || '').toLowerCase().trim();
+                    const correctAnswer = q.answer.toLowerCase().trim();
+                    const isCorrect = userAnswer === correctAnswer;
+
+                    if (isCorrect) {
+                        correct++;
+                        resultsByGroup[page.groupName].correct++;
+                    } else {
+                        wrong++;
+                    }
+
+                    resultsByGroup[page.groupName].total++;
+                    resultsByGroup[page.groupName].details.push({
+                        sentence: q.sentence,
+                        userAnswer: palabrasExamAnswers[q.globalIndex] || '(пусто)',
+                        correctAnswer: q.word.spanish,
+                        isCorrect: isCorrect
+                    });
+                });
+            });
+
+            const percentage = Math.round((correct / palabrasExamTotalQuestions) * 100);
+            const passed = percentage >= 80;
+
+            // Показываем экран результатов
+            hideAll();
+            showUserBadge();
+            document.getElementById('palabrasExamResultsScreen').classList.remove('hidden');
+
+            // Статус
+            const statusEl = document.getElementById('palabrasExamResultStatus');
+            if (passed) {
+                statusEl.textContent = '✅ ЗАЧЁТ!';
+                statusEl.style.color = '#27ae60';
+            } else {
+                statusEl.textContent = '❌ НЕ ЗАЧЁТ';
+                statusEl.style.color = '#e74c3c';
+            }
+
+            // Статистика
+            document.getElementById('palabrasExamResultCorrect').textContent = correct;
+            document.getElementById('palabrasExamResultWrong').textContent = wrong;
+            document.getElementById('palabrasExamResultPercent').textContent = percentage + '%';
+
+            // Детали по группам
+            const detailsContainer = document.getElementById('palabrasExamResultDetails');
+            let detailsHtml = '';
+
+            Object.keys(resultsByGroup).forEach(groupName => {
+                const group = resultsByGroup[groupName];
+                const groupPercent = Math.round((group.correct / group.total) * 100);
+                const groupColor = groupPercent >= 80 ? '#27ae60' : groupPercent >= 50 ? '#f39c12' : '#e74c3c';
+
+                detailsHtml += `
+                    <div style="
+                        background: rgba(255,255,255,0.1);
+                        border-radius: 10px;
+                        padding: 15px;
+                        margin-bottom: 15px;
+                    ">
+                        <div style="
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 10px;
+                        ">
+                            <strong style="color: #f39c12;">${groupName.replace(/_/g, ' ')}</strong>
+                            <span style="color: ${groupColor}; font-weight: bold;">${group.correct}/${group.total} (${groupPercent}%)</span>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                `;
+
+                group.details.forEach(d => {
+                    const bgColor = d.isCorrect ? 'rgba(39, 174, 96, 0.2)' : 'rgba(231, 76, 60, 0.2)';
+                    const borderColor = d.isCorrect ? 'rgba(39, 174, 96, 0.4)' : 'rgba(231, 76, 60, 0.4)';
+                    const icon = d.isCorrect ? '✅' : '❌';
+
+                    detailsHtml += `
+                        <div style="
+                            background: ${bgColor};
+                            border: 1px solid ${borderColor};
+                            border-radius: 6px;
+                            padding: 8px 12px;
+                            font-size: 0.9em;
+                        ">
+                            <div style="color: #ecf0f1;">${icon} ${d.sentence.replace('___', '<strong style="color: #3498db;">[___]</strong>')}</div>
+                            <div style="margin-top: 5px;">
+                                <span style="color: ${d.isCorrect ? '#27ae60' : '#e74c3c'};">Ваш ответ: ${d.userAnswer}</span>
+                                ${!d.isCorrect ? `<span style="color: #27ae60; margin-left: 15px;">Правильно: ${d.correctAnswer}</span>` : ''}
+                            </div>
+                        </div>
+                    `;
+                });
+
+                detailsHtml += `</div></div>`;
+            });
+
+            detailsContainer.innerHTML = detailsHtml;
+        }
+
+        function exitPalabrasExam() {
+            if (confirm('Выйти из теста? Прогресс не будет сохранён.')) {
+                stopPalabrasExamTimer();
+                showExamMenu();
+            }
+        }
+
+        function retryPalabrasExam() {
+            startPalabrasExam();
+        }
+
+        function backToExamMenu() {
+            showExamMenu();
         }
 
         // Start Grammar Exam (Ejercicios Test)
@@ -3864,6 +4212,7 @@ function hideAllScreens() {
         'cardMatchingScreen', 'cardMatchingResultsScreen',
         'examMenuScreen', 'examScreen', 'examResultsScreen',
         'hardTestAllQuestionsScreen', 'hardTestResultsScreen',
+        'palabrasExamScreen', 'palabrasExamResultsScreen',
         'miniDictionaryScreen',
         'exercisePreviewMenu', 'grammarRuleScreen', 'microTestsScreen',
         'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen',

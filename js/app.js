@@ -3977,7 +3977,8 @@ function loadGramaticaExercises() {
 }
 
 // Show Gramática menu with pagination
-async function showGramaticaMenu() {
+// preservePage = true означает сохранить текущую страницу (при возврате из теста)
+async function showGramaticaMenu(preservePage = false) {
     if (!currentUnidad) {
         console.error('showGramaticaMenu called without currentUnidad');
         return;
@@ -3996,7 +3997,11 @@ async function showGramaticaMenu() {
     console.log(`✅ Using data for ${currentUnidad}`);
 
     loadGramaticaExercises();
-    gramCurrentPage = 0;
+
+    // Сбрасываем страницу только если не возвращаемся из теста
+    if (!preservePage) {
+        gramCurrentPage = 0;
+    }
 
     hideAllScreens();
     showUserBadge();
@@ -6353,10 +6358,10 @@ function goToNextExerciseSmart() {
     gramCurrentExercise = nextExercise;
 
     if (ruleViewed) {
-        // Правило уже просмотрено - переходим сразу к тесту
-        startGramExercise(nextExercise);
+        // Правило уже просмотрено - показываем превью (там проверяются микро-тесты)
+        showExercisePreview(nextExercise);
     } else {
-        // Правило не просмотрено - сразу открываем правило
+        // Правило не просмотрено - открываем правило
         showGrammarRule();
     }
 }

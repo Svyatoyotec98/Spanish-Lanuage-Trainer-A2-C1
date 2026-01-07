@@ -5082,6 +5082,51 @@ function checkAndHandleAbandonedTest(exerciseId) {
     return false;
 }
 
+// ═══════════════════════════════════════════════════════════════
+// MASTERED QUESTIONS (освоенные вопросы банка)
+// ═══════════════════════════════════════════════════════════════
+
+// Получить список освоенных вопросов для упражнения
+function getMasteredQuestions(exerciseId) {
+    const profile = getActiveProfile();
+    if (!profile) return [];
+    if (!profile.masteredQuestions) return [];
+    if (!profile.masteredQuestions[currentUnidad]) return [];
+    return profile.masteredQuestions[currentUnidad][exerciseId] || [];
+}
+
+// Сохранить освоенные вопросы (добавить новые к существующим)
+function addMasteredQuestions(exerciseId, newQuestionIndices) {
+    const profile = getActiveProfile();
+    if (!profile) return;
+
+    // Инициализация структуры
+    if (!profile.masteredQuestions) profile.masteredQuestions = {};
+    if (!profile.masteredQuestions[currentUnidad]) profile.masteredQuestions[currentUnidad] = {};
+    if (!profile.masteredQuestions[currentUnidad][exerciseId]) {
+        profile.masteredQuestions[currentUnidad][exerciseId] = [];
+    }
+
+    // Добавляем только уникальные индексы
+    const existing = profile.masteredQuestions[currentUnidad][exerciseId];
+    const merged = [...new Set([...existing, ...newQuestionIndices])];
+    profile.masteredQuestions[currentUnidad][exerciseId] = merged;
+
+    // Сохраняем в localStorage
+    const state = loadAppState();
+    state.profiles[profile.id] = profile;
+    saveAppState(state);
+
+    // Синхронизируем с бэкендом
+    syncProgressToBackend();
+}
+
+// Получить процент освоения банка (0-100)
+function getBankMasteryPercent(exerciseId, totalQuestions = 60) {
+    const mastered = getMasteredQuestions(exerciseId);
+    return Math.round((mastered.length / totalQuestions) * 100);
+}
+
 // Start a grammar exercise
 function startGramExercise(exercise) {
     gramCurrentExercise = exercise;

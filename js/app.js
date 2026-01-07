@@ -2010,7 +2010,14 @@ if (
         function exitHardTest() {
             if (confirm('Выйти из теста? Прогресс не будет сохранён.')) {
                 stopHardTestTimer();
-                showCategoryMenu(currentCategory);
+
+                // Если это был экзамен на слова - возвращаемся в меню экзамена
+                if (window.palabrasExamMode) {
+                    window.palabrasExamMode = false;
+                    showExamMenu();
+                } else {
+                    showCategoryMenu(currentCategory);
+                }
             }
         }
 
@@ -2172,15 +2179,26 @@ if (
          * Повторить hard-тест
          */
         function retryHardTest() {
-            const words = vocabularyData[currentUnidad].groups[currentCategory];
-            startHardTestAllQuestions(words);
+            // Если это был экзамен на слова - перезапускаем экзамен
+            if (window.palabrasExamMode) {
+                startPalabrasExam();
+            } else {
+                const words = vocabularyData[currentUnidad].groups[currentCategory];
+                startHardTestAllQuestions(words);
+            }
         }
 
         /**
          * Вернуться к категории из результатов hard-теста
          */
         function backToCategoryFromHardTest() {
-            showCategoryMenu(currentCategory);
+            // Если это был экзамен на слова - возвращаемся в меню экзамена
+            if (window.palabrasExamMode) {
+                window.palabrasExamMode = false;
+                showExamMenu();
+            } else {
+                showCategoryMenu(currentCategory);
+            }
         }
 
         /**
@@ -3165,10 +3183,75 @@ async function getNavigationState() {
         }
 
         // Start Palabras Exam (Words Test)
+        // Правила отбора слов:
+        // ≤5 слов → 100%
+        // 6-15 слов → 75%
+        // 15+ слов → 50%
         function startPalabrasExam() {
             console.log('🔵 startPalabrasExam() вызвана');
-            // TODO: Фаза 4 - реализация теста на слова
-            alert('Тест на слова - в разработке');
+
+            const profile = getActiveProfile();
+            if (!profile) {
+                alert('❌ Нет активного профиля');
+                return;
+            }
+
+            if (!currentUnidad) {
+                alert('❌ Не выбрана Unidad');
+                return;
+            }
+
+            const unidadData = vocabularyData[currentUnidad];
+            if (!unidadData || !unidadData.groups) {
+                alert('❌ Нет данных для ' + currentUnidad);
+                return;
+            }
+
+            // Собираем слова из всех групп с учётом правил процентов
+            let allSelectedWords = [];
+
+            Object.keys(unidadData.groups).forEach(groupName => {
+                const groupWords = unidadData.groups[groupName];
+                const count = groupWords.length;
+
+                // Определяем процент по правилам
+                let percentage;
+                if (count <= 5) {
+                    percentage = 1.0; // 100%
+                } else if (count <= 15) {
+                    percentage = 0.75; // 75%
+                } else {
+                    percentage = 0.5; // 50%
+                }
+
+                // Вычисляем количество слов для выбора
+                const selectCount = Math.ceil(count * percentage);
+
+                // Перемешиваем и выбираем
+                const shuffled = shuffleArray([...groupWords]);
+                const selected = shuffled.slice(0, selectCount);
+
+                console.log(`📁 ${groupName}: ${count} слов → ${Math.round(percentage * 100)}% → ${selectCount} выбрано`);
+
+                allSelectedWords = allSelectedWords.concat(selected);
+            });
+
+            console.log(`📊 Всего выбрано слов для экзамена: ${allSelectedWords.length}`);
+
+            if (allSelectedWords.length === 0) {
+                alert('❌ Нет слов для теста');
+                return;
+            }
+
+            // Сохраняем что это экзамен (для правильного возврата)
+            window.palabrasExamMode = true;
+
+            // Используем существующий hardTest
+            startHardTestAllQuestions(allSelectedWords);
+
+            // Меняем заголовок на "Тест на слова"
+            document.getElementById('hardTestGroupTitle').textContent =
+                `📝 ТЕСТ НА СЛОВА - ${currentUnidad.toUpperCase().replace('_', ' ')}`;
         }
 
         // Start Grammar Exam (Ejercicios Test)
@@ -3780,6 +3863,7 @@ function hideAllScreens() {
         'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
         'cardMatchingScreen', 'cardMatchingResultsScreen',
         'examMenuScreen', 'examScreen', 'examResultsScreen',
+        'hardTestAllQuestionsScreen', 'hardTestResultsScreen',
         'miniDictionaryScreen',
         'exercisePreviewMenu', 'grammarRuleScreen', 'microTestsScreen',
         'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen',

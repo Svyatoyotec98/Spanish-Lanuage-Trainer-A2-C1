@@ -225,26 +225,11 @@
 
             ensureProgressSkeleton(profile);
 
-            let totalProgress = 0;
-            let groupCount = 0;
+            // Формула 50/50: (Palabras + Ejercicios) / 2
+            const palabrasProgress = calculatePalabrasProgress(unidad);
+            const ejerciciosProgress = calculateGramaticaProgressForUnidad(unidad) || 0;
 
-            // Динамически подсчитываем прогресс для всех групп
-            const unidadData = vocabularyData[unidad];
-            if (unidadData && unidadData.groups) {
-                Object.keys(unidadData.groups).forEach(groupName => {
-                    totalProgress += calculateCategoryProgress(unidad, groupName, profile);
-                    groupCount++;
-                });
-            }
-
-            // Include exercises progress if exercises exist
-            const exercisesProgress = calculateGramaticaProgressForUnidad(unidad);
-            if (exercisesProgress !== null) {
-                totalProgress += exercisesProgress;
-                return Math.round(totalProgress / (groupCount + 1));
-            }
-
-            return groupCount > 0 ? Math.round(totalProgress / groupCount) : 0;
+            return Math.round((palabrasProgress + ejerciciosProgress) / 2);
         }
 
         // Helper to calculate exercises progress for a specific unidad

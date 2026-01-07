@@ -339,7 +339,7 @@
              'verbMenu', 'verbPracticeScreen', 'qaScreen',
 			 'gramaticaMenu', 'gramaticaQuestionScreen', 'gramaticaResultsScreen',
              'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
-             'examScreen', 'examResultsScreen', 'miniDictionaryScreen',
+             'examMenuScreen', 'examScreen', 'examResultsScreen', 'miniDictionaryScreen',
              'exercisePreviewMenu', 'grammarRuleScreen', 'hardTestAllQuestionsScreen',
              'hardTestResultsScreen'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');

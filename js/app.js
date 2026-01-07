@@ -3989,7 +3989,7 @@ async function getNavigationState() {
                         gap: 8px;
                     ">
                         <span style="color: #9b59b6; font-weight: bold; min-width: 20px;">${idx + 1}.</span>
-                        <div style="color: #ecf0f1; line-height: 1.8; flex: 1;">
+                        <div style="color: #ecf0f1; line-height: 1.8; flex: 1; text-align: left;">
                             ${sentenceWithInput}
                             <button onclick="toggleGrammarHint(${q.globalIndex})" style="
                                 background: rgba(241, 196, 15, 0.3);

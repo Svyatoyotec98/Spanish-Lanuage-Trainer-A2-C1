@@ -616,6 +616,17 @@
                 </button>
             </div>
 
+            <!-- Repetition Toggle -->
+            <div id="repetitionToggleBlock" style="margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <span style="color: #2c3e50; font-weight: 600;">Повторение</span>
+                <label style="position: relative; display: inline-block; width: 50px; height: 26px; cursor: pointer;">
+                    <input type="checkbox" id="repetitionToggle" checked style="opacity: 0; width: 0; height: 0;">
+                    <span id="repetitionToggleBg" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #27ae60; border-radius: 26px; transition: 0.3s;"></span>
+                    <span id="repetitionToggleSlider" style="position: absolute; height: 20px; width: 20px; left: 27px; bottom: 3px; background-color: white; border-radius: 50%; transition: 0.3s;"></span>
+                </label>
+                <span id="repetitionToggleLabel" style="color: #27ae60; font-weight: 600; min-width: 40px;">ВКЛ</span>
+            </div>
+
             <!-- Подсказка о необходимости прохождения микро-тестов -->
             <div id="exerciseTestHint" class="hidden" style="margin-top: 15px; padding: 12px 20px; background: rgba(243, 156, 18, 0.3); border: 1px solid rgba(243, 156, 18, 0.5); border-radius: 10px; text-align: center;">
                 <span style="color: #f39c12; font-weight: 600;">🔒 Сначала пройдите все микро-тесты в разделе "Проверь себя"</span>

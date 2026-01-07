@@ -3700,6 +3700,9 @@ async function getNavigationState() {
 	  console.log('✅ Spanish Vocabulary Trainer v4.0 (Профили) загружен');
 	  console.log('✅ Система профилей инициализирована');
 
+    // Инициализация toggle повторения
+    initRepetitionToggle();
+
     // Проверяем доступность экзамена при загрузке
     checkExamAvailability();
 });
@@ -5131,6 +5134,52 @@ function addMasteredQuestions(exerciseId, newQuestionIndices) {
 function getBankMasteryPercent(exerciseId, totalQuestions = 60) {
     const mastered = getMasteredQuestions(exerciseId);
     return Math.round((mastered.length / totalQuestions) * 100);
+}
+
+// ═══════════════════════════════════════════════════════════════
+// REPETITION TOGGLE (переключатель повторения)
+// ═══════════════════════════════════════════════════════════════
+
+// Глобальная переменная: true = все вопросы доступны (ВКЛ), false = освоенные исключены (ВЫКЛ)
+let gramRepetitionMode = true;
+
+// Инициализация toggle при загрузке страницы
+function initRepetitionToggle() {
+    const toggle = document.getElementById('repetitionToggle');
+    if (!toggle) return;
+
+    // Устанавливаем начальное состояние
+    toggle.checked = gramRepetitionMode;
+    updateRepetitionToggleUI();
+
+    // Обработчик изменения
+    toggle.addEventListener('change', function() {
+        gramRepetitionMode = this.checked;
+        updateRepetitionToggleUI();
+    });
+}
+
+// Обновить внешний вид toggle
+function updateRepetitionToggleUI() {
+    const toggleBg = document.getElementById('repetitionToggleBg');
+    const toggleSlider = document.getElementById('repetitionToggleSlider');
+    const toggleLabel = document.getElementById('repetitionToggleLabel');
+
+    if (!toggleBg || !toggleSlider || !toggleLabel) return;
+
+    if (gramRepetitionMode) {
+        // ВКЛ - зеленый, ползунок справа
+        toggleBg.style.backgroundColor = '#27ae60';
+        toggleSlider.style.left = '27px';
+        toggleLabel.textContent = 'ВКЛ';
+        toggleLabel.style.color = '#27ae60';
+    } else {
+        // ВЫКЛ - серый, ползунок слева
+        toggleBg.style.backgroundColor = '#ccc';
+        toggleSlider.style.left = '3px';
+        toggleLabel.textContent = 'ВЫКЛ';
+        toggleLabel.style.color = '#888';
+    }
 }
 
 // Start a grammar exercise

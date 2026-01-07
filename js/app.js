@@ -4122,6 +4122,9 @@ function showExercisePreview(exercise) {
         testBtn.style.borderColor = '#27ae60';
         testBtnLabel.innerHTML = 'Пройти<br>тест';
         testHint.classList.add('hidden');
+
+        // Проверяем состояние "Банк освоен"
+        updateBankMasteryUI();
     } else {
         // Заблокировано
         testBtn.disabled = true;
@@ -5240,6 +5243,55 @@ function updateRepetitionToggleUI() {
         toggleSlider.style.left = '3px';
         toggleLabel.textContent = 'ВЫКЛ';
         toggleLabel.style.color = '#888';
+    }
+
+    // Обновить состояние кнопок в зависимости от освоения банка
+    updateBankMasteryUI();
+}
+
+// Обновить UI кнопок в зависимости от состояния "Банк освоен"
+function updateBankMasteryUI() {
+    if (!currentExerciseForPreview) return;
+
+    const exercise = currentExerciseForPreview;
+    const bankMastery = getBankMasteryPercent(exercise.id);
+    const isBankMastered = bankMastery === 100;
+    const microTestsCompleted = areMicroTestsCompleted(currentUnidad, exercise.id);
+
+    const testBtn = document.getElementById('exerciseTestBtn');
+    const testBtnLabel = document.getElementById('exerciseTestBtnLabel');
+    const fullTestBtn = document.getElementById('fullTestBtn');
+
+    if (!testBtn || !testBtnLabel) return;
+
+    // Если микро-тесты не пройдены — кнопки заблокированы (это уже обрабатывается)
+    if (!microTestsCompleted) return;
+
+    // Если банк 100% освоен И режим повторения ВЫКЛ
+    if (isBankMastered && !gramRepetitionMode) {
+        // Обычный тест — показываем "Банк освоен"
+        testBtn.disabled = true;
+        testBtn.style.opacity = '0.7';
+        testBtn.style.cursor = 'not-allowed';
+        testBtn.style.borderColor = '#9b59b6';
+        testBtnLabel.innerHTML = '✅ Банк<br>освоен';
+
+        // Полный тест — меняем текст на "Повторить"
+        if (fullTestBtn) {
+            fullTestBtn.innerHTML = '🔄 Повторить весь банк (60 вопросов)';
+        }
+    } else {
+        // Обычное состояние — активная кнопка
+        testBtn.disabled = false;
+        testBtn.style.opacity = '1';
+        testBtn.style.cursor = 'pointer';
+        testBtn.style.borderColor = '#27ae60';
+        testBtnLabel.innerHTML = 'Пройти<br>тест';
+
+        // Полный тест — стандартный текст
+        if (fullTestBtn) {
+            fullTestBtn.innerHTML = '📝 Пройти полный тест (60 вопросов)';
+        }
     }
 }
 

@@ -3176,11 +3176,98 @@ async function getNavigationState() {
         // EXAM SYSTEM - Exam Logic
         // ═══════════════════════════════════════════════════════════════
 
+        // Exam session scores (reset when entering exam menu from unidad)
+        let examSessionScores = {
+            palabras: null,
+            grammar: null
+        };
+
         // Show Exam Menu (Test Type Selection)
-        function showExamMenu() {
+        function showExamMenu(resetScores = false) {
             console.log('🔵 showExamMenu() вызвана');
             hideAllScreens();
             document.getElementById('examMenuScreen').classList.remove('hidden');
+
+            // Сбрасываем результаты при первом входе в экзамен
+            if (resetScores) {
+                examSessionScores = { palabras: null, grammar: null };
+            }
+
+            // Обновляем отображение результатов
+            updateExamScoresDisplay();
+        }
+
+        function updateExamScoresDisplay() {
+            const container = document.getElementById('examScoresContainer');
+            const palabrasEl = document.getElementById('examPalabrasScore');
+            const grammarEl = document.getElementById('examGrammarScore');
+            const averageEl = document.getElementById('examAverageScore');
+            const statusEl = document.getElementById('examPassStatus');
+
+            // Показываем контейнер только если есть хотя бы один результат
+            if (examSessionScores.palabras !== null || examSessionScores.grammar !== null) {
+                container.style.display = 'block';
+
+                // Показываем результат слов
+                if (examSessionScores.palabras !== null) {
+                    palabrasEl.textContent = examSessionScores.palabras + '%';
+                    palabrasEl.style.color = examSessionScores.palabras >= 80 ? '#27ae60' : '#e74c3c';
+                } else {
+                    palabrasEl.textContent = '—';
+                    palabrasEl.style.color = '#667eea';
+                }
+
+                // Показываем результат грамматики
+                if (examSessionScores.grammar !== null) {
+                    grammarEl.textContent = examSessionScores.grammar + '%';
+                    grammarEl.style.color = examSessionScores.grammar >= 80 ? '#27ae60' : '#e74c3c';
+                } else {
+                    grammarEl.textContent = '—';
+                    grammarEl.style.color = '#9b59b6';
+                }
+
+                // Показываем средний балл если оба теста пройдены
+                if (examSessionScores.palabras !== null && examSessionScores.grammar !== null) {
+                    const average = Math.round((examSessionScores.palabras + examSessionScores.grammar) / 2);
+                    averageEl.textContent = average + '%';
+
+                    if (average >= 80) {
+                        averageEl.style.color = '#27ae60';
+                        statusEl.innerHTML = '✅ <span style="color: #27ae60;">ЗАЧЁТ! Следующий юнит разблокирован!</span>';
+                        // Разблокируем следующий юнит
+                        unlockNextUnit();
+                    } else {
+                        averageEl.style.color = '#e74c3c';
+                        statusEl.innerHTML = '❌ <span style="color: #e74c3c;">Нужно минимум 80% для зачёта</span>';
+                    }
+                } else {
+                    averageEl.textContent = '—';
+                    averageEl.style.color = '#f39c12';
+                    statusEl.textContent = 'Пройдите оба теста';
+                    statusEl.style.color = 'rgba(255,255,255,0.7)';
+                }
+            } else {
+                container.style.display = 'none';
+            }
+        }
+
+        function unlockNextUnit() {
+            const profile = getActiveProfile();
+            if (!profile || !currentUnidad) return;
+
+            // Определяем следующий юнит
+            const currentNum = parseInt(currentUnidad.replace('unidad_', ''));
+            const nextUnidad = 'unidad_' + (currentNum + 1);
+
+            // Проверяем, есть ли следующий юнит в данных
+            if (vocabularyData[nextUnidad]) {
+                // Проверяем, не разблокирован ли уже
+                if (!profile.unlocks[nextUnidad]) {
+                    profile.unlocks[nextUnidad] = true;
+                    saveProfiles();
+                    console.log(`🔓 Разблокирован ${nextUnidad}!`);
+                }
+            }
         }
 
         // ═══════════════════════════════════════════════════════════════
@@ -3570,6 +3657,9 @@ async function getNavigationState() {
             const percentage = Math.round((correct / palabrasExamTotalQuestions) * 100);
             const passed = percentage >= 80;
 
+            // Сохраняем результат в сессию экзамена
+            examSessionScores.palabras = percentage;
+
             // Показываем экран результатов
             hideAll();
             showUserBadge();
@@ -3896,12 +3986,11 @@ async function getNavigationState() {
                         border-radius: 10px;
                         display: flex;
                         align-items: center;
-                        gap: 10px;
+                        gap: 8px;
                     ">
                         <span style="
                             color: #9b59b6;
                             font-weight: bold;
-                            min-width: 25px;
                         ">${idx + 1}.</span>
                         <div style="flex: 1; color: #ecf0f1; line-height: 1.5;">
                             ${sentenceWithInput}
@@ -4015,6 +4104,9 @@ async function getNavigationState() {
 
             const percentage = Math.round((correct / grammarExamTotalQuestions) * 100);
             const passed = percentage >= 80;
+
+            // Сохраняем результат в сессию экзамена
+            examSessionScores.grammar = percentage;
 
             // Показываем экран результатов
             hideAll();
@@ -4746,6 +4838,7 @@ function hideAllScreens() {
         'examMenuScreen', 'examScreen', 'examResultsScreen',
         'hardTestAllQuestionsScreen', 'hardTestResultsScreen',
         'palabrasExamScreen', 'palabrasExamResultsScreen',
+        'grammarExamScreen', 'grammarExamResultsScreen',
         'miniDictionaryScreen',
         'exercisePreviewMenu', 'grammarRuleScreen', 'microTestsScreen',
         'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen',

@@ -754,11 +754,9 @@ function showProfileSelect() {
             // Average progress (now includes grammar)
             const avgProgress = calculateUnidadProgress(currentUnidad);
 
-            // Update average progress (text + bar)
+            // Update average progress (just text, no bar in v3 style)
             const avgText = document.getElementById('avg-progress-text');
-            const avgBar = document.getElementById('avg-progress-bar');
             if (avgText) avgText.textContent = avgProgress;
-            if (avgBar) avgBar.style.width = avgProgress + '%';
 
             // Individual groups (dynamic)
             const unidadData = vocabularyData[currentUnidad];

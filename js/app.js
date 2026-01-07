@@ -341,7 +341,8 @@
              'grammarListScreen', 'grammarDetailScreen', 'grammarInteractiveScreen',
              'examMenuScreen', 'examScreen', 'examResultsScreen', 'miniDictionaryScreen',
              'exercisePreviewMenu', 'grammarRuleScreen', 'hardTestAllQuestionsScreen',
-             'hardTestResultsScreen', 'palabrasExamScreen', 'palabrasExamResultsScreen'].forEach(id => {
+             'hardTestResultsScreen', 'palabrasExamScreen', 'palabrasExamResultsScreen',
+             'grammarExamScreen', 'grammarExamResultsScreen'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');
             });
         }
@@ -3699,11 +3700,446 @@ async function getNavigationState() {
             showExamMenu();
         }
 
-        // Start Grammar Exam (Ejercicios Test)
+        // ═══════════════════════════════════════════════════════════════
+        // GRAMMAR EXAM (Ejercicios Test)
+        // ═══════════════════════════════════════════════════════════════
+
+        let grammarExamPages = [];
+        let grammarExamCurrentPage = 0;
+        let grammarExamAnswers = {};
+        let grammarExamTotalQuestions = 0;
+        let grammarExamTimerInterval = null;
+        let grammarExamTimeRemaining = 600; // 10 минут
+
         function startGrammarExam() {
             console.log('🔵 startGrammarExam() вызвана');
-            // TODO: Фаза 5 - реализация теста на грамматику
-            alert('Тест на грамматику - в разработке');
+
+            const profile = getActiveProfile();
+            if (!profile) {
+                alert('❌ Нет активного профиля');
+                return;
+            }
+
+            // Собираем все ejercicios из ВСЕХ юнидадов
+            const allEjercicios = [];
+
+            Object.keys(vocabularyData).forEach(unidadId => {
+                const unidadData = vocabularyData[unidadId];
+                if (unidadData && unidadData.ejercicios && Array.isArray(unidadData.ejercicios)) {
+                    unidadData.ejercicios.forEach(ejercicio => {
+                        if (ejercicio.questions && ejercicio.questions.length >= 5) {
+                            allEjercicios.push({
+                                ...ejercicio,
+                                unidadId: unidadId
+                            });
+                        }
+                    });
+                }
+            });
+
+            console.log(`📊 Найдено ${allEjercicios.length} упражнений с вопросами`);
+
+            if (allEjercicios.length === 0) {
+                alert('❌ Нет упражнений для теста');
+                return;
+            }
+
+            // Берём максимум 10 упражнений (или все, если меньше)
+            const ejerciciosToUse = shuffleArray(allEjercicios).slice(0, 10);
+
+            // Формируем страницы - по одному упражнению на страницу, 5 вопросов из каждого
+            grammarExamPages = [];
+            let globalIndex = 0;
+
+            ejerciciosToUse.forEach(ejercicio => {
+                // Случайно выбираем 5 вопросов из банка
+                const shuffledQuestions = shuffleArray(ejercicio.questions);
+                const selectedQuestions = shuffledQuestions.slice(0, 5);
+
+                const pageQuestions = selectedQuestions.map(q => ({
+                    globalIndex: globalIndex++,
+                    sentence: q.sentence,
+                    answer: q.answer,
+                    hint: ejercicio.hint || ''
+                }));
+
+                grammarExamPages.push({
+                    exerciseId: ejercicio.id,
+                    exerciseTitle: ejercicio.title,
+                    questions: pageQuestions
+                });
+            });
+
+            grammarExamTotalQuestions = globalIndex;
+            grammarExamCurrentPage = 0;
+            grammarExamAnswers = {};
+
+            console.log(`📊 Сформировано ${grammarExamPages.length} страниц, ${grammarExamTotalQuestions} вопросов`);
+
+            // Показываем экран
+            hideAll();
+            showUserBadge();
+            document.getElementById('grammarExamScreen').classList.remove('hidden');
+
+            // Заголовок
+            document.getElementById('grammarExamTitle').textContent = `✍️ ТЕСТ НА ГРАММАТИКУ`;
+
+            // Запускаем таймер
+            grammarExamTimeRemaining = 600;
+            startGrammarExamTimer();
+
+            // Показываем первую страницу
+            showGrammarExamPage();
+        }
+
+        function startGrammarExamTimer() {
+            updateGrammarExamTimerDisplay();
+            grammarExamTimerInterval = setInterval(() => {
+                grammarExamTimeRemaining--;
+                updateGrammarExamTimerDisplay();
+
+                if (grammarExamTimeRemaining <= 0) {
+                    stopGrammarExamTimer();
+                    alert('⏰ Время вышло!');
+                    showGrammarExamResults();
+                }
+            }, 1000);
+        }
+
+        function updateGrammarExamTimerDisplay() {
+            const minutes = Math.floor(grammarExamTimeRemaining / 60);
+            const seconds = grammarExamTimeRemaining % 60;
+            const timerText = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+            document.getElementById('grammarExamTimer').textContent = timerText;
+
+            // Цвет таймера
+            const timerEl = document.getElementById('grammarExamTimer');
+            if (grammarExamTimeRemaining <= 60) {
+                timerEl.style.color = '#e74c3c';
+            } else if (grammarExamTimeRemaining <= 180) {
+                timerEl.style.color = '#f39c12';
+            } else {
+                timerEl.style.color = '#27ae60';
+            }
+
+            // Прогресс-бар
+            const percentage = (grammarExamTimeRemaining / 600) * 100;
+            document.getElementById('grammarExamTimerBar').style.width = percentage + '%';
+        }
+
+        function stopGrammarExamTimer() {
+            if (grammarExamTimerInterval) {
+                clearInterval(grammarExamTimerInterval);
+                grammarExamTimerInterval = null;
+            }
+        }
+
+        function showGrammarExamPage() {
+            const page = grammarExamPages[grammarExamCurrentPage];
+            if (!page) return;
+
+            // Обновляем название упражнения
+            document.getElementById('grammarExamExerciseName').textContent = page.exerciseTitle;
+
+            // Индикатор страницы
+            document.getElementById('grammarExamPageIndicator').textContent =
+                `Упражнение ${grammarExamCurrentPage + 1} из ${grammarExamPages.length}`;
+            document.getElementById('grammarExamPageNumbers').textContent =
+                `${grammarExamCurrentPage + 1} / ${grammarExamPages.length}`;
+
+            // Кнопки навигации
+            const prevBtn = document.getElementById('grammarExamPrevBtn');
+            const nextBtn = document.getElementById('grammarExamNextBtn');
+
+            prevBtn.disabled = grammarExamCurrentPage === 0;
+            prevBtn.style.opacity = grammarExamCurrentPage === 0 ? '0.5' : '1';
+
+            if (grammarExamCurrentPage === grammarExamPages.length - 1) {
+                nextBtn.textContent = '✓ Завершить';
+                nextBtn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+            } else {
+                nextBtn.textContent = 'Далее →';
+                nextBtn.style.background = 'rgba(155, 89, 182, 0.5)';
+            }
+
+            // Генерируем вопросы
+            const container = document.getElementById('grammarExamQuestionsContainer');
+            let html = '';
+
+            page.questions.forEach((q, idx) => {
+                const savedAnswer = grammarExamAnswers[q.globalIndex] || '';
+                const sentenceWithInput = q.sentence.replace('___',
+                    `<input type="text"
+                        id="grammar-input-${q.globalIndex}"
+                        value="${savedAnswer}"
+                        oninput="grammarExamAnswers[${q.globalIndex}] = this.value"
+                        style="
+                            background: transparent;
+                            border: none;
+                            border-bottom: 2px dashed rgba(255,255,255,0.5);
+                            color: white;
+                            font-size: 1em;
+                            padding: 4px 8px;
+                            width: 120px;
+                            text-align: center;
+                            outline: none;
+                        "
+                        autocomplete="off"
+                        autocapitalize="off"
+                    />`
+                );
+
+                html += `
+                    <div style="
+                        background: rgba(255,255,255,0.1);
+                        padding: 12px 15px;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    ">
+                        <span style="
+                            color: #9b59b6;
+                            font-weight: bold;
+                            min-width: 25px;
+                        ">${idx + 1}.</span>
+                        <div style="flex: 1; color: #ecf0f1; line-height: 1.5;">
+                            ${sentenceWithInput}
+                        </div>
+                        <button onclick="toggleGrammarHint(${q.globalIndex})" style="
+                            background: rgba(241, 196, 15, 0.3);
+                            border: none;
+                            border-radius: 50%;
+                            width: 32px;
+                            height: 32px;
+                            cursor: pointer;
+                            font-size: 1.1em;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        ">💡</button>
+                        <span id="grammar-hint-${q.globalIndex}" style="
+                            display: none;
+                            color: rgba(255,255,255,0.5);
+                            font-size: 0.9em;
+                            font-style: italic;
+                        ">${q.hint}</span>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+
+            // Фокус на первый пустой инпут
+            setTimeout(() => {
+                for (const q of page.questions) {
+                    if (!grammarExamAnswers[q.globalIndex]) {
+                        const input = document.getElementById(`grammar-input-${q.globalIndex}`);
+                        if (input) {
+                            input.focus();
+                            break;
+                        }
+                    }
+                }
+            }, 100);
+        }
+
+        function toggleGrammarHint(index) {
+            const hint = document.getElementById('grammar-hint-' + index);
+            if (hint) {
+                hint.style.display = hint.style.display === 'none' ? 'inline' : 'none';
+            }
+        }
+
+        function grammarExamPrevPage() {
+            if (grammarExamCurrentPage > 0) {
+                grammarExamCurrentPage--;
+                showGrammarExamPage();
+            }
+        }
+
+        function grammarExamNextPage() {
+            if (grammarExamCurrentPage < grammarExamPages.length - 1) {
+                grammarExamCurrentPage++;
+                showGrammarExamPage();
+            } else {
+                // Последняя страница - завершаем
+                grammarExamSubmit();
+            }
+        }
+
+        function grammarExamSubmit() {
+            if (confirm('Отправить тест на проверку?')) {
+                stopGrammarExamTimer();
+                showGrammarExamResults();
+            }
+        }
+
+        function showGrammarExamResults() {
+            // Подсчитываем результаты
+            let correct = 0;
+            let wrong = 0;
+            const resultsByExercise = {};
+
+            grammarExamPages.forEach(page => {
+                if (!resultsByExercise[page.exerciseId]) {
+                    resultsByExercise[page.exerciseId] = {
+                        title: page.exerciseTitle,
+                        correct: 0,
+                        total: 0,
+                        details: []
+                    };
+                }
+
+                page.questions.forEach(q => {
+                    const userAnswer = (grammarExamAnswers[q.globalIndex] || '').toLowerCase().trim();
+                    const correctAnswer = q.answer.toLowerCase().trim();
+                    const isCorrect = userAnswer === correctAnswer;
+
+                    if (isCorrect) {
+                        correct++;
+                        resultsByExercise[page.exerciseId].correct++;
+                    } else {
+                        wrong++;
+                    }
+
+                    resultsByExercise[page.exerciseId].total++;
+                    resultsByExercise[page.exerciseId].details.push({
+                        sentence: q.sentence,
+                        userAnswer: grammarExamAnswers[q.globalIndex] || '(пусто)',
+                        correctAnswer: q.answer,
+                        isCorrect: isCorrect
+                    });
+                });
+            });
+
+            const percentage = Math.round((correct / grammarExamTotalQuestions) * 100);
+            const passed = percentage >= 80;
+
+            // Показываем экран результатов
+            hideAll();
+            showUserBadge();
+            document.getElementById('grammarExamResultsScreen').classList.remove('hidden');
+
+            // Статус
+            const statusEl = document.getElementById('grammarExamResultStatus');
+            if (passed) {
+                statusEl.textContent = '✅ ЗАЧЁТ!';
+                statusEl.style.color = '#27ae60';
+            } else {
+                statusEl.textContent = '❌ НЕ ЗАЧЁТ';
+                statusEl.style.color = '#e74c3c';
+            }
+
+            // Статистика
+            document.getElementById('grammarExamResultCorrect').textContent = correct;
+            document.getElementById('grammarExamResultWrong').textContent = wrong;
+            document.getElementById('grammarExamResultPercent').textContent = percentage + '%';
+
+            // Детали по упражнениям (аккордеон)
+            const detailsContainer = document.getElementById('grammarExamResultDetails');
+            let detailsHtml = '';
+            let exerciseIndex = 0;
+
+            Object.keys(resultsByExercise).forEach(exerciseId => {
+                const exercise = resultsByExercise[exerciseId];
+                const exercisePercent = Math.round((exercise.correct / exercise.total) * 100);
+                const exerciseColor = exercisePercent >= 80 ? '#27ae60' : exercisePercent >= 50 ? '#f39c12' : '#e74c3c';
+
+                detailsHtml += `
+                    <div style="
+                        background: rgba(255,255,255,0.1);
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                        overflow: hidden;
+                    ">
+                        <div
+                            onclick="toggleGrammarResultGroup(${exerciseIndex})"
+                            style="
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 15px;
+                                cursor: pointer;
+                                transition: background 0.2s;
+                            "
+                            onmouseover="this.style.background='rgba(255,255,255,0.1)'"
+                            onmouseout="this.style.background='transparent'"
+                        >
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span id="grammar-arrow-${exerciseIndex}" style="color: #ecf0f1; transition: transform 0.3s;">▶</span>
+                                <strong style="color: #9b59b6;">${exercise.title}</strong>
+                            </div>
+                            <span style="
+                                background: ${exerciseColor};
+                                color: white;
+                                padding: 4px 12px;
+                                border-radius: 15px;
+                                font-weight: bold;
+                                font-size: 0.9em;
+                            ">${exercise.correct}/${exercise.total} (${exercisePercent}%)</span>
+                        </div>
+                        <div id="grammar-details-${exerciseIndex}" style="display: none; padding: 0 15px 15px 15px;">
+                            <div style="display: flex; flex-direction: column; gap: 8px;">
+                `;
+
+                exercise.details.forEach(d => {
+                    const bgColor = d.isCorrect ? 'rgba(39, 174, 96, 0.3)' : 'rgba(231, 76, 60, 0.3)';
+                    const borderColor = d.isCorrect ? 'rgba(39, 174, 96, 0.6)' : 'rgba(231, 76, 60, 0.6)';
+                    const icon = d.isCorrect ? '✅' : '❌';
+
+                    detailsHtml += `
+                        <div style="
+                            background: ${bgColor};
+                            border: 1px solid ${borderColor};
+                            border-radius: 8px;
+                            padding: 10px 12px;
+                        ">
+                            <div style="color: #ecf0f1; margin-bottom: 6px;">
+                                ${icon} ${d.sentence.replace('___', '<strong style="color: #3498db; background: rgba(52,152,219,0.3); padding: 2px 8px; border-radius: 4px;">[___]</strong>')}
+                            </div>
+                            <div style="font-size: 0.9em;">
+                                <span style="color: #bdc3c7;">Ваш ответ:</span>
+                                <span style="color: ${d.isCorrect ? '#2ecc71' : '#ff6b6b'}; font-weight: bold; margin-left: 5px;">${d.userAnswer}</span>
+                                ${!d.isCorrect ? `
+                                    <span style="color: #bdc3c7; margin-left: 15px;">Правильно:</span>
+                                    <span style="color: #2ecc71; font-weight: bold; margin-left: 5px;">${d.correctAnswer}</span>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `;
+                });
+
+                detailsHtml += `</div></div></div>`;
+                exerciseIndex++;
+            });
+
+            detailsContainer.innerHTML = detailsHtml;
+        }
+
+        function toggleGrammarResultGroup(index) {
+            const details = document.getElementById('grammar-details-' + index);
+            const arrow = document.getElementById('grammar-arrow-' + index);
+            if (details && arrow) {
+                if (details.style.display === 'none') {
+                    details.style.display = 'block';
+                    arrow.style.transform = 'rotate(90deg)';
+                } else {
+                    details.style.display = 'none';
+                    arrow.style.transform = 'rotate(0deg)';
+                }
+            }
+        }
+
+        function exitGrammarExam() {
+            if (confirm('Выйти из теста? Прогресс не будет сохранён.')) {
+                stopGrammarExamTimer();
+                showExamMenu();
+            }
+        }
+
+        function retryGrammarExam() {
+            startGrammarExam();
         }
 
         function startExam() {

@@ -4112,26 +4112,44 @@ function showExercisePreview(exercise) {
     const microTestsCompleted = areMicroTestsCompleted(currentUnidad, exercise.id);
     const testBtn = document.getElementById('exerciseTestBtn');
     const testBtnLabel = document.getElementById('exerciseTestBtnLabel');
+    const fullTestBtn = document.getElementById('fullTestBtn');
+    const fullTestBtnLabel = document.getElementById('fullTestBtnLabel');
     const testHint = document.getElementById('exerciseTestHint');
 
     if (microTestsCompleted) {
-        // Разблокировано
+        // Разблокировано - обычный тест
         testBtn.disabled = false;
         testBtn.style.opacity = '1';
         testBtn.style.cursor = 'pointer';
         testBtn.style.borderColor = '#27ae60';
         testBtnLabel.innerHTML = 'Пройти<br>тест';
+
+        // Разблокировано - полный тест
+        fullTestBtn.disabled = false;
+        fullTestBtn.style.opacity = '1';
+        fullTestBtn.style.cursor = 'pointer';
+        fullTestBtn.style.borderColor = '#9b59b6';
+        fullTestBtnLabel.innerHTML = 'Полный<br>тест';
+
         testHint.classList.add('hidden');
 
         // Проверяем состояние "Банк освоен"
         updateBankMasteryUI();
     } else {
-        // Заблокировано
+        // Заблокировано - обычный тест
         testBtn.disabled = true;
         testBtn.style.opacity = '0.5';
         testBtn.style.cursor = 'not-allowed';
         testBtn.style.borderColor = '#95a5a6';
         testBtnLabel.innerHTML = '🔒 Пройти<br>тест';
+
+        // Заблокировано - полный тест
+        fullTestBtn.disabled = true;
+        fullTestBtn.style.opacity = '0.5';
+        fullTestBtn.style.cursor = 'not-allowed';
+        fullTestBtn.style.borderColor = '#95a5a6';
+        fullTestBtnLabel.innerHTML = '🔒 Полный<br>тест';
+
         testHint.classList.remove('hidden');
     }
 

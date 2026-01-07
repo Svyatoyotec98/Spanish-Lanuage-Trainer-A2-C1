@@ -3385,23 +3385,14 @@ async function getNavigationState() {
                             />
                             <span style="color: #ecf0f1;">${afterBlank}</span>
                         </div>
-                        <button
-                            onclick="alert('💡 Подсказка: ${q.hint}')"
-                            title="Показать подсказку"
-                            style="
-                                background: rgba(52, 152, 219, 0.3);
-                                border: 1px solid rgba(52, 152, 219, 0.5);
-                                border-radius: 50%;
-                                width: 30px;
-                                height: 30px;
-                                cursor: pointer;
-                                font-size: 1em;
-                                flex-shrink: 0;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            "
-                        >💡</button>
+                        <span style="
+                            color: rgba(255,255,255,0.5);
+                            font-size: 0.85em;
+                            font-style: italic;
+                            flex-shrink: 0;
+                            max-width: 120px;
+                            text-align: right;
+                        ">💡 ${q.hint}</span>
                     </div>
                 `;
             });

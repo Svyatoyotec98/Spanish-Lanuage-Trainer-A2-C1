@@ -3374,12 +3374,13 @@ async function getNavigationState() {
                                 style="
                                     width: 120px;
                                     padding: 6px 10px;
-                                    border: 2px solid rgba(102, 126, 234, 0.5);
-                                    border-radius: 6px;
-                                    background: rgba(255,255,255,0.95);
-                                    color: #2c3e50;
+                                    border: none;
+                                    border-bottom: 2px dashed rgba(102, 126, 234, 0.6);
+                                    background: transparent;
+                                    color: #ecf0f1;
                                     font-size: 1em;
                                     text-align: center;
+                                    outline: none;
                                 "
                             />
                             <span style="color: #ecf0f1;">${afterBlank}</span>

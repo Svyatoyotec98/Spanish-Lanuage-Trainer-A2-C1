@@ -1243,7 +1243,9 @@ if (
     progress: profile.progress
   });
   ensureProgressSkeleton(profile);
-  saveProfiles();
+  const state = loadAppState();
+  state.profiles[profile.id] = profile;
+  saveAppState(state);
 }
 
 
@@ -4984,7 +4986,11 @@ function saveExcludedQuestionIndices(exerciseId, questionIndices) {
     }
 
     profile.gramTestExcluded[currentUnidad][exerciseId] = questionIndices;
-    saveProfiles();
+
+    // Сохраняем в localStorage
+    const state = loadAppState();
+    state.profiles[profile.id] = profile;
+    saveAppState(state);
 }
 
 // Выбрать вопросы для теста с учётом исключений
@@ -5036,7 +5042,11 @@ function markTestInProgress(exerciseId) {
     }
 
     profile.gramTestInProgress[currentUnidad][exerciseId] = true;
-    saveProfiles();
+
+    // Сохраняем в localStorage
+    const state = loadAppState();
+    state.profiles[profile.id] = profile;
+    saveAppState(state);
 }
 
 // Убрать флаг "в процессе" (тест завершён нормально)
@@ -5047,7 +5057,10 @@ function clearTestInProgress(exerciseId) {
     if (profile.gramTestInProgress &&
         profile.gramTestInProgress[currentUnidad]) {
         delete profile.gramTestInProgress[currentUnidad][exerciseId];
-        saveProfiles();
+        // Сохраняем в localStorage
+        const state = loadAppState();
+        state.profiles[profile.id] = profile;
+        saveAppState(state);
     }
 }
 

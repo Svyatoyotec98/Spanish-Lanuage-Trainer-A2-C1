@@ -4955,10 +4955,77 @@ function updateGramaticaProgress() {
     if (avgText) avgText.textContent = avgProgress;
 }
 
+// ═══════════════════════════════════════════════════════════════
+// GRAMMAR TEST QUESTION BANK SYSTEM
+// ═══════════════════════════════════════════════════════════════
+const GRAM_TEST_QUESTIONS_COUNT = 15; // Количество вопросов в тесте
+
+// Получить индексы заблокированных вопросов (из предыдущего теста)
+function getExcludedQuestionIndices(exerciseId) {
+    const profile = getActiveProfile();
+    if (!profile) return [];
+
+    if (!profile.gramTestExcluded) return [];
+    if (!profile.gramTestExcluded[currentUnidad]) return [];
+
+    return profile.gramTestExcluded[currentUnidad][exerciseId] || [];
+}
+
+// Сохранить индексы текущего теста как заблокированные для следующего
+function saveExcludedQuestionIndices(exerciseId, questionIndices) {
+    const profile = getActiveProfile();
+    if (!profile) return;
+
+    if (!profile.gramTestExcluded) {
+        profile.gramTestExcluded = {};
+    }
+    if (!profile.gramTestExcluded[currentUnidad]) {
+        profile.gramTestExcluded[currentUnidad] = {};
+    }
+
+    profile.gramTestExcluded[currentUnidad][exerciseId] = questionIndices;
+    saveProfiles();
+}
+
+// Выбрать вопросы для теста с учётом исключений
+function selectQuestionsForTest(exercise) {
+    const allQuestions = exercise.questions;
+    const excluded = getExcludedQuestionIndices(exercise.id);
+
+    // Создаём массив с индексами для отслеживания
+    const questionsWithIndices = allQuestions.map((q, idx) => ({
+        ...q,
+        originalIndex: idx
+    }));
+
+    // Фильтруем: исключаем вопросы из предыдущего теста
+    let available = questionsWithIndices.filter(q => !excluded.includes(q.originalIndex));
+
+    // Если после исключения осталось меньше чем нужно — берём все доступные
+    // + добавляем случайные из исключённых
+    if (available.length < GRAM_TEST_QUESTIONS_COUNT && excluded.length > 0) {
+        const excludedQuestions = questionsWithIndices.filter(q => excluded.includes(q.originalIndex));
+        available = [...available, ...shuffleArray(excludedQuestions)];
+    }
+
+    // Перемешиваем и берём нужное количество
+    const shuffled = shuffleArray(available);
+    const selected = shuffled.slice(0, Math.min(GRAM_TEST_QUESTIONS_COUNT, shuffled.length));
+
+    // Сохраняем индексы выбранных вопросов для блокировки в следующий раз
+    const selectedIndices = selected.map(q => q.originalIndex);
+    saveExcludedQuestionIndices(exercise.id, selectedIndices);
+
+    return selected;
+}
+
 // Start a grammar exercise
 function startGramExercise(exercise) {
     gramCurrentExercise = exercise;
-    gramCurrentQuestions = shuffleArray([...exercise.questions]);
+
+    // Выбираем вопросы с учётом банка и исключений
+    gramCurrentQuestions = selectQuestionsForTest(exercise);
+
     gramCurrentQuestionIndex = 0;
     gramScore = 0;
     __gramIsAwaitingNext = false;

@@ -5019,10 +5019,14 @@ function saveExcludedQuestionIndices(exerciseId, questionIndices) {
     saveAppState(state);
 }
 
-// Выбрать вопросы для теста с учётом исключений
+// Выбрать вопросы для теста с учётом исключений и режимов
 function selectQuestionsForTest(exercise) {
     const allQuestions = exercise.questions;
     const excluded = getExcludedQuestionIndices(exercise.id);
+    const mastered = getMasteredQuestions(exercise.id);
+
+    // Определяем целевое количество вопросов
+    const targetCount = gramFullTestMode ? allQuestions.length : GRAM_TEST_QUESTIONS_COUNT;
 
     // Создаём массив с индексами для отслеживания
     const questionsWithIndices = allQuestions.map((q, idx) => ({
@@ -5030,23 +5034,48 @@ function selectQuestionsForTest(exercise) {
         originalIndex: idx
     }));
 
-    // Фильтруем: исключаем вопросы из предыдущего теста
-    let available = questionsWithIndices.filter(q => !excluded.includes(q.originalIndex));
+    // Фильтруем вопросы
+    let available = questionsWithIndices.filter(q => {
+        // 1. Исключаем вопросы из предыдущего теста (если не полный тест)
+        if (!gramFullTestMode && excluded.includes(q.originalIndex)) {
+            return false;
+        }
 
-    // Если после исключения осталось меньше чем нужно — берём все доступные
-    // + добавляем случайные из исключённых
-    if (available.length < GRAM_TEST_QUESTIONS_COUNT && excluded.length > 0) {
-        const excludedQuestions = questionsWithIndices.filter(q => excluded.includes(q.originalIndex));
-        available = [...available, ...shuffleArray(excludedQuestions)];
+        // 2. Если режим повторения ВЫКЛ - исключаем освоенные вопросы
+        if (!gramRepetitionMode && mastered.includes(q.originalIndex)) {
+            return false;
+        }
+
+        return true;
+    });
+
+    // Если после исключения осталось меньше чем нужно
+    if (available.length < targetCount) {
+        // Для полного теста: добавляем освоенные если нужно
+        if (gramFullTestMode && !gramRepetitionMode && mastered.length > 0) {
+            const masteredQuestions = questionsWithIndices.filter(q => mastered.includes(q.originalIndex));
+            available = [...available, ...shuffleArray(masteredQuestions)];
+        }
+        // Для обычного теста: добавляем исключённые если нужно
+        else if (!gramFullTestMode && excluded.length > 0) {
+            const excludedQuestions = questionsWithIndices.filter(q =>
+                excluded.includes(q.originalIndex) &&
+                (gramRepetitionMode || !mastered.includes(q.originalIndex))
+            );
+            available = [...available, ...shuffleArray(excludedQuestions)];
+        }
     }
 
     // Перемешиваем и берём нужное количество
     const shuffled = shuffleArray(available);
-    const selected = shuffled.slice(0, Math.min(GRAM_TEST_QUESTIONS_COUNT, shuffled.length));
+    const selected = shuffled.slice(0, Math.min(targetCount, shuffled.length));
 
     // Сохраняем индексы выбранных вопросов для блокировки в следующий раз
-    const selectedIndices = selected.map(q => q.originalIndex);
-    saveExcludedQuestionIndices(exercise.id, selectedIndices);
+    // (только для обычного теста)
+    if (!gramFullTestMode) {
+        const selectedIndices = selected.map(q => q.originalIndex);
+        saveExcludedQuestionIndices(exercise.id, selectedIndices);
+    }
 
     return selected;
 }

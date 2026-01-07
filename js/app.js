@@ -4904,6 +4904,23 @@ function proceedToExercise() {
         return;
     }
 
+    // Обычный тест (15 вопросов)
+    gramFullTestMode = false;
+    startGramExercise(currentExerciseForPreview);
+}
+
+// Полный тест (60 вопросов)
+function startFullTest() {
+    if (!currentExerciseForPreview) return;
+
+    // Проверяем, пройдены ли микро-тесты
+    if (!areMicroTestsCompleted(currentUnidad, currentExerciseForPreview.id)) {
+        alert('Сначала пройдите все микро-тесты в разделе "Проверь себя"!');
+        return;
+    }
+
+    // Полный тест (все 60 вопросов)
+    gramFullTestMode = true;
     startGramExercise(currentExerciseForPreview);
 }
 
@@ -5142,6 +5159,9 @@ function getBankMasteryPercent(exerciseId, totalQuestions = 60) {
 
 // Глобальная переменная: true = все вопросы доступны (ВКЛ), false = освоенные исключены (ВЫКЛ)
 let gramRepetitionMode = true;
+
+// Глобальная переменная: true = полный тест (60 вопросов), false = обычный тест (15 вопросов)
+let gramFullTestMode = false;
 
 // Инициализация toggle при загрузке страницы
 function initRepetitionToggle() {

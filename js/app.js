@@ -6682,6 +6682,13 @@ function renderVerbosTimesCards() {
             card.onclick = () => showVerbosCategoryMenu(tiempo.id);
         }
 
+        // Get unlock hint for locked times
+        let unlockHint = '';
+        if (!isUnlocked && tiempo.unlockBy) {
+            const ejercicioNum = tiempo.unlockBy.replace('ejercicio_', '');
+            unlockHint = `<small style="color: #999; display: block; margin-top: 5px;">Пройди микротест Ejercicio ${ejercicioNum} (≥80%)</small>`;
+        }
+
         card.innerHTML = `
             <div class="category-header">
                 <span class="category-title">${isUnlocked ? '🔓' : '🔒'} ${isUnlocked ? tiempo.nombre : '???'}</span>
@@ -6690,6 +6697,7 @@ function renderVerbosTimesCards() {
                 <div class="progress-bar-fill" style="width: ${progress}%; background: #27ae60;"></div>
             </div>
             <p class="progress-text">${isUnlocked ? progress + '%' : 'Заблокировано'}</p>
+            ${unlockHint}
         `;
 
         container.appendChild(card);
@@ -6711,24 +6719,28 @@ function isVerbosTimeUnlocked(timeId) {
         return true;
     }
 
-    // Check if unlocked via ejercicio microtest
+    // Find the ejercicio that unlocks this time (check current unidad data)
     const unidadData = vocabularyData[currentUnidad];
     if (!unidadData || !unidadData.verbos || !unidadData.verbos.tiempos) return false;
 
     const tiempo = unidadData.verbos.tiempos.find(t => t.id === timeId);
     if (!tiempo || !tiempo.unlockBy) return false;
 
-    // Check if the ejercicio microtest was passed
     const ejercicioId = tiempo.unlockBy;
-    if (profile.progress[currentUnidad] &&
-        profile.progress[currentUnidad].ejercicios &&
-        profile.progress[currentUnidad].ejercicios[ejercicioId] >= 80) {
-        // Unlock globally
-        profile.verbosUnlocks[timeId] = true;
-        const state = loadAppState();
-        state.profiles[profile.id] = profile;
-        saveAppState(state);
-        return true;
+
+    // GLOBAL CHECK: Check if the ejercicio microtest was passed in ANY unidad
+    const allUnidades = Object.keys(profile.progress || {});
+    for (const unidadId of allUnidades) {
+        if (profile.progress[unidadId] &&
+            profile.progress[unidadId].ejercicios &&
+            profile.progress[unidadId].ejercicios[ejercicioId] >= 80) {
+            // Unlock globally
+            profile.verbosUnlocks[timeId] = true;
+            const state = loadAppState();
+            state.profiles[profile.id] = profile;
+            saveAppState(state);
+            return true;
+        }
     }
 
     return false;

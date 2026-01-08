@@ -1970,5 +1970,162 @@
         {"sentence": "___ reconocimiento internacional.", "answer": "Recibió", "hint": "Recibir + reconocimiento"}
       ]
     }
-  ]
+  ],
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "preterito_indefinido",
+        "nombre": "Pretérito indefinido",
+        "requiredEjercicio": "ejercicio_1",
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "yo": "hablé",
+              "tu": "hablaste",
+              "el": "habló",
+              "nosotros": "hablamos",
+              "vosotros": "hablasteis",
+              "ellos": "hablaron"
+            }
+          },
+          {
+            "infinitivo": "pasar",
+            "traduccion": "проводить (время), проходить",
+            "formas": {
+              "yo": "pasé",
+              "tu": "pasaste",
+              "el": "pasó",
+              "nosotros": "pasamos",
+              "vosotros": "pasasteis",
+              "ellos": "pasaron"
+            }
+          },
+          {
+            "infinitivo": "visitar",
+            "traduccion": "посещать",
+            "formas": {
+              "yo": "visité",
+              "tu": "visitaste",
+              "el": "visitó",
+              "nosotros": "visitamos",
+              "vosotros": "visitasteis",
+              "ellos": "visitaron"
+            }
+          },
+          {
+            "infinitivo": "estudiar",
+            "traduccion": "учиться, изучать",
+            "formas": {
+              "yo": "estudié",
+              "tu": "estudiaste",
+              "el": "estudió",
+              "nosotros": "estudiamos",
+              "vosotros": "estudiasteis",
+              "ellos": "estudiaron"
+            }
+          },
+          {
+            "infinitivo": "trabajar",
+            "traduccion": "работать",
+            "formas": {
+              "yo": "trabajé",
+              "tu": "trabajaste",
+              "el": "trabajó",
+              "nosotros": "trabajamos",
+              "vosotros": "trabajasteis",
+              "ellos": "trabajaron"
+            }
+          },
+          {
+            "infinitivo": "ganar",
+            "traduccion": "выигрывать, зарабатывать",
+            "formas": {
+              "yo": "gané",
+              "tu": "ganaste",
+              "el": "ganó",
+              "nosotros": "ganamos",
+              "vosotros": "ganasteis",
+              "ellos": "ganaron"
+            }
+          },
+          {
+            "infinitivo": "conocer",
+            "traduccion": "познакомиться, узнать",
+            "formas": {
+              "yo": "conocí",
+              "tu": "conociste",
+              "el": "conoció",
+              "nosotros": "conocimos",
+              "vosotros": "conocisteis",
+              "ellos": "conocieron"
+            }
+          },
+          {
+            "infinitivo": "nacer",
+            "traduccion": "родиться",
+            "formas": {
+              "yo": "nací",
+              "tu": "naciste",
+              "el": "nació",
+              "nosotros": "nacimos",
+              "vosotros": "nacisteis",
+              "ellos": "nacieron"
+            }
+          },
+          {
+            "infinitivo": "aprender",
+            "traduccion": "учить, изучать",
+            "formas": {
+              "yo": "aprendí",
+              "tu": "aprendiste",
+              "el": "aprendió",
+              "nosotros": "aprendimos",
+              "vosotros": "aprendisteis",
+              "ellos": "aprendieron"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "viví",
+              "tu": "viviste",
+              "el": "vivió",
+              "nosotros": "vivimos",
+              "vosotros": "vivisteis",
+              "ellos": "vivieron"
+            }
+          },
+          {
+            "infinitivo": "escribir",
+            "traduccion": "писать",
+            "formas": {
+              "yo": "escribí",
+              "tu": "escribiste",
+              "el": "escribió",
+              "nosotros": "escribimos",
+              "vosotros": "escribisteis",
+              "ellos": "escribieron"
+            }
+          },
+          {
+            "infinitivo": "recibir",
+            "traduccion": "получать",
+            "formas": {
+              "yo": "recibí",
+              "tu": "recibiste",
+              "el": "recibió",
+              "nosotros": "recibimos",
+              "vosotros": "recibisteis",
+              "ellos": "recibieron"
+            }
+          }
+        ],
+        "irregulares": [],
+        "otras": []
+      }
+    ]
+  }
 }

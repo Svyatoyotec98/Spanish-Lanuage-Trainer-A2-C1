@@ -2269,7 +2269,86 @@
             }
           }
         ],
-        "otras": []
+        "otras": [
+          {
+            "id": "reflexivos",
+            "nombre": "Verbos reflexivos",
+            "verbos": [
+              {
+                "infinitivo": "casarse",
+                "traduccion": "жениться, выходить замуж",
+                "formas": {
+                  "yo": "me casé",
+                  "tu": "te casaste",
+                  "el": "se casó",
+                  "nosotros": "nos casamos",
+                  "vosotros": "os casasteis",
+                  "ellos": "se casaron"
+                }
+              },
+              {
+                "infinitivo": "enamorarse",
+                "traduccion": "влюбиться",
+                "formas": {
+                  "yo": "me enamoré",
+                  "tu": "te enamoraste",
+                  "el": "se enamoró",
+                  "nosotros": "nos enamoramos",
+                  "vosotros": "os enamorasteis",
+                  "ellos": "se enamoraron"
+                }
+              },
+              {
+                "infinitivo": "mudarse",
+                "traduccion": "переезжать",
+                "formas": {
+                  "yo": "me mudé",
+                  "tu": "te mudaste",
+                  "el": "se mudó",
+                  "nosotros": "nos mudamos",
+                  "vosotros": "os mudasteis",
+                  "ellos": "se mudaron"
+                }
+              },
+              {
+                "infinitivo": "divorciarse",
+                "traduccion": "разводиться",
+                "formas": {
+                  "yo": "me divorcié",
+                  "tu": "te divorciaste",
+                  "el": "se divorció",
+                  "nosotros": "nos divorciamos",
+                  "vosotros": "os divorciasteis",
+                  "ellos": "se divorciaron"
+                }
+              },
+              {
+                "infinitivo": "irse",
+                "traduccion": "уходить, уезжать",
+                "formas": {
+                  "yo": "me fui",
+                  "tu": "te fuiste",
+                  "el": "se fue",
+                  "nosotros": "nos fuimos",
+                  "vosotros": "os fuisteis",
+                  "ellos": "se fueron"
+                }
+              },
+              {
+                "infinitivo": "convertirse",
+                "traduccion": "становиться",
+                "formas": {
+                  "yo": "me convertí",
+                  "tu": "te convertiste",
+                  "el": "se convirtió",
+                  "nosotros": "nos convertimos",
+                  "vosotros": "os convertisteis",
+                  "ellos": "se convirtieron"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   }

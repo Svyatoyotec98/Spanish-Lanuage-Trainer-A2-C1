@@ -254,6 +254,7 @@
         }
 
         // Проверка доступности экзамена (требуется средний прогресс ≥80% по ТЕКУЩЕЙ Unidad)
+        // Формула: (Palabras 33% + Ejercicios 33% + Verbos 33%) / 3 >= 80%
         function checkExamAvailability() {
             const profile = getActiveProfile();
             if (!profile || !currentUnidad) return;
@@ -268,10 +269,13 @@
             // Считаем прогресс Ejercicios (среднее по упражнениям)
             const ejerciciosProgress = calculateGramaticaProgressForUnidad(currentUnidad) || 0;
 
-            // Средний прогресс = (Palabras + Ejercicios) / 2
-            const averageProgress = Math.round((palabrasProgress + ejerciciosProgress) / 2);
+            // Считаем прогресс Verbos (среднее по временам)
+            const verbosProgress = calculateVerbosProgress(currentUnidad) || 0;
 
-            console.log(`📊 Прогресс ${currentUnidad}: Palabras=${palabrasProgress}%, Ejercicios=${ejerciciosProgress}%, Среднее=${averageProgress}%`);
+            // Средний прогресс = (Palabras + Ejercicios + Verbos) / 3
+            const averageProgress = Math.round((palabrasProgress + ejerciciosProgress + verbosProgress) / 3);
+
+            console.log(`📊 Прогресс ${currentUnidad}: Palabras=${palabrasProgress}%, Ejercicios=${ejerciciosProgress}%, Verbos=${verbosProgress}%, Среднее=${averageProgress}%`);
 
             // Получаем кнопку экзамена
             const examBtn = document.getElementById('examBtn');

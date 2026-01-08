@@ -4847,7 +4847,7 @@ function hideAllScreens() {
         'exercisePreviewMenu', 'grammarRuleScreen', 'microTestsScreen',
         'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen',
         'ejerciciosGramaticaRefScreen',
-        'verbosMenu', 'verbosCategoryMenu'
+        'verbosMenu', 'verbosCategoryMenu', 'verbosTestScreen', 'verbosFeedbackScreen', 'verbosResultsScreen'
     ];
     screens.forEach(id => {
         const el = document.getElementById(id);
@@ -6824,11 +6824,328 @@ function updateVerbosProgress() {
     if (avgText) avgText.textContent = progress;
 }
 
-// Start Verbos test (placeholder - will be implemented in Phase 3)
+// ═══════════════════════════════════════════════════════════════
+// VERBOS TEST MECHANICS
+// ═══════════════════════════════════════════════════════════════
+
+const VERBOS_PER_TEST = 5;
+const VERBOS_TIMER_SECONDS = 30;
+const VERBOS_FORMS = ['yo', 'tu', 'el', 'nosotros', 'vosotros', 'ellos'];
+
+let verbosTestVerbs = [];       // Array of verbs for current test
+let verbosCurrentIndex = 0;     // Current verb index
+let verbosTimerInterval = null; // Timer interval
+let verbosTimeLeft = 0;         // Seconds left
+let verbosTestResults = [];     // Results for each verb [{verb, correctCount, totalForms}]
+let verbosCurrentVerb = null;   // Current verb object
+
+// Start Verbos test
 function startVerbosTest(category) {
     currentVerbosCategory = category;
-    alert(`Тест для "${category}" будет реализован в следующей фазе.\n\nВремя: ${currentVerbosTime}\nКатегория: ${category}`);
-    // TODO: Implement in Phase 3
+
+    // Get verbs for this category
+    const unidadData = vocabularyData[currentUnidad];
+    if (!unidadData || !unidadData.verbos || !unidadData.verbos.tiempos) {
+        alert('Нет данных о глаголах');
+        return;
+    }
+
+    const tiempo = unidadData.verbos.tiempos.find(t => t.id === currentVerbosTime);
+    if (!tiempo || !tiempo[category]) {
+        alert(`Нет глаголов в категории "${category}"`);
+        return;
+    }
+
+    const allVerbs = tiempo[category];
+    if (allVerbs.length === 0) {
+        alert('Нет глаголов для тренировки');
+        return;
+    }
+
+    // Shuffle and take VERBOS_PER_TEST verbs (or all if less)
+    const shuffled = [...allVerbs].sort(() => Math.random() - 0.5);
+    verbosTestVerbs = shuffled.slice(0, Math.min(VERBOS_PER_TEST, shuffled.length));
+
+    // Reset state
+    verbosCurrentIndex = 0;
+    verbosTestResults = [];
+
+    // Update total number display
+    document.getElementById('verbosTotalNum').textContent = verbosTestVerbs.length;
+
+    // Show test screen and load first verb
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('verbosTestScreen').classList.remove('hidden');
+
+    loadCurrentVerbo();
+}
+
+// Load current verb into test screen
+function loadCurrentVerbo() {
+    if (verbosCurrentIndex >= verbosTestVerbs.length) {
+        finishVerbosTest();
+        return;
+    }
+
+    verbosCurrentVerb = verbosTestVerbs[verbosCurrentIndex];
+
+    // Update display
+    document.getElementById('verbosTestInfinitivo').textContent = verbosCurrentVerb.infinitivo;
+    document.getElementById('verbosTestTranslation').textContent = verbosCurrentVerb.traduccion;
+    document.getElementById('verbosCurrentNum').textContent = verbosCurrentIndex + 1;
+
+    // Clear inputs
+    VERBOS_FORMS.forEach(form => {
+        const input = document.getElementById('verbos' + capitalizeFirst(form));
+        if (input) {
+            input.value = '';
+            input.style.borderColor = '#555';
+            input.disabled = false;
+        }
+    });
+
+    // Focus first input
+    const firstInput = document.getElementById('verbosYo');
+    if (firstInput) firstInput.focus();
+
+    // Start timer
+    startVerbosTimer();
+}
+
+// Load next verb (called from feedback screen)
+function loadNextVerbo() {
+    verbosCurrentIndex++;
+
+    if (verbosCurrentIndex >= verbosTestVerbs.length) {
+        finishVerbosTest();
+        return;
+    }
+
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('verbosTestScreen').classList.remove('hidden');
+    loadCurrentVerbo();
+}
+
+// Capitalize first letter helper
+function capitalizeFirst(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// Start timer
+function startVerbosTimer() {
+    stopVerbosTimer();
+    verbosTimeLeft = VERBOS_TIMER_SECONDS;
+    updateVerbosTimerDisplay();
+
+    verbosTimerInterval = setInterval(() => {
+        verbosTimeLeft--;
+        updateVerbosTimerDisplay();
+
+        if (verbosTimeLeft <= 0) {
+            stopVerbosTimer();
+            submitVerbosAnswer(true); // Time's up - auto submit
+        }
+    }, 1000);
+}
+
+// Stop timer
+function stopVerbosTimer() {
+    if (verbosTimerInterval) {
+        clearInterval(verbosTimerInterval);
+        verbosTimerInterval = null;
+    }
+}
+
+// Update timer display
+function updateVerbosTimerDisplay() {
+    const timerEl = document.getElementById('verbosTimer');
+    if (timerEl) {
+        timerEl.textContent = verbosTimeLeft;
+        timerEl.style.color = verbosTimeLeft <= 5 ? '#e74c3c' : 'white';
+    }
+}
+
+// Submit answer
+function submitVerbosAnswer(isTimeout = false) {
+    stopVerbosTimer();
+
+    if (!verbosCurrentVerb) return;
+
+    const correctFormas = verbosCurrentVerb.formas;
+    let correctCount = 0;
+    const results = [];
+
+    // Check each form
+    VERBOS_FORMS.forEach(form => {
+        const input = document.getElementById('verbos' + capitalizeFirst(form));
+        if (!input) return;
+
+        const userAnswer = input.value.trim().toLowerCase();
+        const correctAnswer = correctFormas[form].toLowerCase();
+        const isCorrect = userAnswer === correctAnswer;
+
+        if (isCorrect) correctCount++;
+
+        results.push({
+            form: form,
+            userAnswer: input.value.trim(),
+            correctAnswer: correctFormas[form],
+            isCorrect: isCorrect
+        });
+
+        // Visual feedback on inputs
+        input.disabled = true;
+        input.style.borderColor = isCorrect ? '#2ecc71' : '#e74c3c';
+    });
+
+    // Save result for this verb
+    verbosTestResults.push({
+        verb: verbosCurrentVerb,
+        correctCount: correctCount,
+        totalForms: VERBOS_FORMS.length,
+        results: results
+    });
+
+    // Show feedback screen
+    showVerbosFeedback(correctCount, results, isTimeout);
+}
+
+// Show feedback after each verb
+function showVerbosFeedback(correctCount, results, isTimeout) {
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('verbosFeedbackScreen').classList.remove('hidden');
+
+    // Title
+    const title = document.getElementById('verbosFeedbackTitle');
+    if (isTimeout) {
+        title.textContent = '⏱️ Время вышло!';
+        title.style.color = '#e74c3c';
+    } else if (correctCount === VERBOS_FORMS.length) {
+        title.textContent = '🎉 Отлично!';
+        title.style.color = '#2ecc71';
+    } else if (correctCount >= VERBOS_FORMS.length / 2) {
+        title.textContent = '👍 Неплохо!';
+        title.style.color = '#f39c12';
+    } else {
+        title.textContent = '📚 Нужно повторить';
+        title.style.color = '#e74c3c';
+    }
+
+    // Verb name
+    document.getElementById('verbosFeedbackVerb').textContent = verbosCurrentVerb.infinitivo + ' — ' + verbosCurrentVerb.traduccion;
+
+    // Score
+    const scorePercent = Math.round((correctCount / VERBOS_FORMS.length) * 100);
+    const scoreEl = document.getElementById('verbosFeedbackScore');
+    scoreEl.textContent = `${correctCount}/${VERBOS_FORMS.length} (${scorePercent}%)`;
+    scoreEl.style.color = correctCount === VERBOS_FORMS.length ? '#2ecc71' : (correctCount >= 3 ? '#f39c12' : '#e74c3c');
+
+    // Answers display
+    const answersContainer = document.getElementById('verbosFeedbackAnswers');
+    answersContainer.innerHTML = results.map(r => {
+        const icon = r.isCorrect ? '✓' : '✗';
+        const color = r.isCorrect ? '#2ecc71' : '#e74c3c';
+        const userPart = r.userAnswer ? r.userAnswer : '<em style="color:#888">пусто</em>';
+        const correction = r.isCorrect ? '' : ` → <strong style="color:#2ecc71">${r.correctAnswer}</strong>`;
+
+        return `<div style="display: flex; align-items: center; margin: 8px 0; padding: 8px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+            <span style="width: 100px; color: #888; text-align: right; margin-right: 10px;">${r.form}:</span>
+            <span style="color: ${color}; margin-right: 5px;">${icon}</span>
+            <span>${userPart}${correction}</span>
+        </div>`;
+    }).join('');
+
+    // Update button text for last verb
+    const nextBtn = document.querySelector('#verbosFeedbackScreen .btn-success');
+    if (nextBtn) {
+        nextBtn.textContent = (verbosCurrentIndex >= verbosTestVerbs.length - 1) ? 'Завершить тест' : 'Далее →';
+    }
+}
+
+// Finish test and show results
+function finishVerbosTest() {
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('verbosResultsScreen').classList.remove('hidden');
+
+    // Calculate totals
+    let totalCorrect = 0;
+    let totalForms = 0;
+    verbosTestResults.forEach(r => {
+        totalCorrect += r.correctCount;
+        totalForms += r.totalForms;
+    });
+
+    const scorePercent = totalForms > 0 ? Math.round((totalCorrect / totalForms) * 100) : 0;
+
+    // Category name
+    const categoryNames = {
+        regulares: 'Verbos Regulares',
+        irregulares: 'Verbos Irregulares',
+        otras: 'Otras (Возвратные)'
+    };
+    document.getElementById('verbosResultsCategory').textContent = categoryNames[currentVerbosCategory] || currentVerbosCategory;
+
+    // Score display
+    const scoreEl = document.getElementById('verbosResultsScore');
+    scoreEl.textContent = scorePercent + '%';
+    scoreEl.style.color = scorePercent >= 80 ? '#2ecc71' : (scorePercent >= 50 ? '#f39c12' : '#e74c3c');
+
+    // Stats
+    document.getElementById('verbosResultsCorrect').textContent = totalCorrect;
+    document.getElementById('verbosResultsWrong').textContent = totalForms - totalCorrect;
+    document.getElementById('verbosResultsTotal').textContent = totalForms;
+
+    // Save progress and get best score
+    const bestScore = saveVerbosTestProgress(scorePercent);
+    document.getElementById('verbosResultsBest').textContent = bestScore;
+}
+
+// Save test progress
+function saveVerbosTestProgress(score) {
+    const profile = getActiveProfile();
+    if (!profile) return 0;
+
+    // Ensure progress structure exists
+    if (!profile.progress[currentUnidad]) {
+        profile.progress[currentUnidad] = {};
+    }
+    if (!profile.progress[currentUnidad].verbos) {
+        profile.progress[currentUnidad].verbos = {};
+    }
+    if (!profile.progress[currentUnidad].verbos[currentVerbosTime]) {
+        profile.progress[currentUnidad].verbos[currentVerbosTime] = {};
+    }
+
+    const currentBest = profile.progress[currentUnidad].verbos[currentVerbosTime][currentVerbosCategory] || 0;
+
+    if (score > currentBest) {
+        profile.progress[currentUnidad].verbos[currentVerbosTime][currentVerbosCategory] = score;
+        console.log(`Verbos progress updated: ${currentUnidad}/${currentVerbosTime}/${currentVerbosCategory} = ${score}%`);
+    }
+
+    // Save to localStorage
+    const state = loadAppState();
+    state.profiles[profile.id] = profile;
+    saveAppState(state);
+
+    return Math.max(score, currentBest);
+}
+
+// Retry test
+function retryVerbosTest() {
+    startVerbosTest(currentVerbosCategory);
+}
+
+// Exit test
+function exitVerbosTest() {
+    if (confirm('Выйти из теста? Прогресс этой попытки не будет сохранён.')) {
+        stopVerbosTimer();
+        showVerbosCategoryMenu(currentVerbosTime);
+    }
 }
 
 // ═══════════════════════════════════════════════════════════════

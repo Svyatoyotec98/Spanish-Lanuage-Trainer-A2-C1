@@ -655,6 +655,103 @@
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
+             VERBOS TEST SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="verbosTestScreen" class="hidden">
+            <h1 style="font-size: 2.5em; margin-bottom: 5px;">🔤 <span id="verbosTestInfinitivo">hablar</span></h1>
+            <p class="subtitle" id="verbosTestTranslation" style="font-size: 1.2em; color: #aaa;">говорить</p>
+
+            <!-- Timer -->
+            <div style="margin: 15px 0; padding: 10px 20px; background: rgba(231, 76, 60, 0.3); border-radius: 10px; display: inline-block;">
+                <span style="font-size: 1.5em;">⏱️ <span id="verbosTimer" style="font-weight: bold;">30</span></span>
+            </div>
+
+            <!-- Progress -->
+            <p style="margin: 10px 0; color: #ccc;">Глагол <span id="verbosCurrentNum" style="font-weight: bold;">1</span> / <span id="verbosTotalNum">5</span></p>
+
+            <!-- 6 Input Fields -->
+            <div id="verbosInputsContainer" style="margin: 20px auto; max-width: 400px; text-align: left;">
+                <div style="display: flex; align-items: center; margin: 10px 0; gap: 10px;">
+                    <label style="width: 100px; text-align: right; color: #888;">yo:</label>
+                    <input type="text" id="verbosYo" class="verbos-input" style="flex: 1; padding: 12px; font-size: 1.1em; border-radius: 8px; border: 2px solid #555; background: rgba(255,255,255,0.1); color: white;" autocomplete="off" autocapitalize="off" />
+                </div>
+                <div style="display: flex; align-items: center; margin: 10px 0; gap: 10px;">
+                    <label style="width: 100px; text-align: right; color: #888;">tú:</label>
+                    <input type="text" id="verbosTu" class="verbos-input" style="flex: 1; padding: 12px; font-size: 1.1em; border-radius: 8px; border: 2px solid #555; background: rgba(255,255,255,0.1); color: white;" autocomplete="off" autocapitalize="off" />
+                </div>
+                <div style="display: flex; align-items: center; margin: 10px 0; gap: 10px;">
+                    <label style="width: 100px; text-align: right; color: #888;">él/ella:</label>
+                    <input type="text" id="verbosEl" class="verbos-input" style="flex: 1; padding: 12px; font-size: 1.1em; border-radius: 8px; border: 2px solid #555; background: rgba(255,255,255,0.1); color: white;" autocomplete="off" autocapitalize="off" />
+                </div>
+                <div style="display: flex; align-items: center; margin: 10px 0; gap: 10px;">
+                    <label style="width: 100px; text-align: right; color: #888;">nosotros:</label>
+                    <input type="text" id="verbosNosotros" class="verbos-input" style="flex: 1; padding: 12px; font-size: 1.1em; border-radius: 8px; border: 2px solid #555; background: rgba(255,255,255,0.1); color: white;" autocomplete="off" autocapitalize="off" />
+                </div>
+                <div style="display: flex; align-items: center; margin: 10px 0; gap: 10px;">
+                    <label style="width: 100px; text-align: right; color: #888;">vosotros:</label>
+                    <input type="text" id="verbosVosotros" class="verbos-input" style="flex: 1; padding: 12px; font-size: 1.1em; border-radius: 8px; border: 2px solid #555; background: rgba(255,255,255,0.1); color: white;" autocomplete="off" autocapitalize="off" />
+                </div>
+                <div style="display: flex; align-items: center; margin: 10px 0; gap: 10px;">
+                    <label style="width: 100px; text-align: right; color: #888;">ellos:</label>
+                    <input type="text" id="verbosEllos" class="verbos-input" style="flex: 1; padding: 12px; font-size: 1.1em; border-radius: 8px; border: 2px solid #555; background: rgba(255,255,255,0.1); color: white;" autocomplete="off" autocapitalize="off" />
+                </div>
+            </div>
+
+            <button class="btn btn-success" onclick="submitVerbosAnswer()" style="margin-top: 10px; padding: 15px 40px; font-size: 1.1em;">Проверить ✓</button>
+
+            <div style="margin-top: 20px;">
+                <button class="btn btn-secondary" onclick="exitVerbosTest()" style="padding: 10px 20px;">Выйти из теста</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             VERBOS FEEDBACK SCREEN (показ правильных ответов)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="verbosFeedbackScreen" class="hidden">
+            <h1 id="verbosFeedbackTitle" style="font-size: 2em;">Результат</h1>
+            <p id="verbosFeedbackVerb" style="font-size: 1.5em; color: #aaa; margin: 10px 0;"></p>
+
+            <!-- Score for this verb -->
+            <div id="verbosFeedbackScore" style="font-size: 1.8em; margin: 20px 0; font-weight: bold;"></div>
+
+            <!-- Correct answers display -->
+            <div id="verbosFeedbackAnswers" style="margin: 20px auto; max-width: 450px; text-align: left; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 15px;">
+                <!-- Will be filled dynamically -->
+            </div>
+
+            <button class="btn btn-success" onclick="loadNextVerbo()" style="margin-top: 20px; padding: 15px 40px; font-size: 1.1em;">Далее →</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             VERBOS RESULTS SCREEN
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="verbosResultsScreen" class="hidden">
+            <h1>🏆 Результаты теста</h1>
+            <p class="subtitle" id="verbosResultsCategory">Verbos Regulares</p>
+
+            <!-- Final Score -->
+            <div style="margin: 30px 0; padding: 30px; background: rgba(102, 126, 234, 0.4); backdrop-filter: blur(10px); border-radius: 15px;">
+                <h2 style="margin: 0 0 10px 0; color: white;">Ваш результат</h2>
+                <div id="verbosResultsScore" style="font-size: 3em; font-weight: bold; color: #2ecc71;">0%</div>
+            </div>
+
+            <!-- Stats -->
+            <div style="margin: 20px auto; max-width: 300px; text-align: left;">
+                <p style="margin: 10px 0;"><span style="color: #2ecc71;">✓</span> Правильных форм: <span id="verbosResultsCorrect">0</span></p>
+                <p style="margin: 10px 0;"><span style="color: #e74c3c;">✗</span> Ошибок: <span id="verbosResultsWrong">0</span></p>
+                <p style="margin: 10px 0;">📊 Всего форм: <span id="verbosResultsTotal">0</span></p>
+            </div>
+
+            <!-- Best Score -->
+            <p style="color: #888; margin: 20px 0;">Лучший результат: <span id="verbosResultsBest">0</span>%</p>
+
+            <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-success" onclick="retryVerbosTest()">🔄 Пройти ещё раз</button>
+                <button class="btn btn-secondary" onclick="showVerbosCategoryMenu(currentVerbosTime)">← К категориям</button>
+            </div>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
              EXERCISE PREVIEW MENU (аналог groupPreviewMenu для Palabras)
              ═══════════════════════════════════════════════════════════════ -->
         <div id="exercisePreviewMenu" class="hidden">

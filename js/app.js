@@ -2922,7 +2922,8 @@ async function saveNavigationState(screenId) {
     const navState = {
         screen_id: screenId,
         current_unidad: currentUnidad,
-        current_category: currentCategory
+        current_category: currentCategory,
+        current_verbos_time: currentVerbosTime // Add Verbos time
     };
     localStorage.setItem('navigation_state', JSON.stringify(navState));
 
@@ -4712,6 +4713,7 @@ async function getNavigationState() {
             // Восстанавливаем переменные
             currentUnidad = navState.current_unidad;
             currentCategory = navState.current_category;
+            currentVerbosTime = navState.current_verbos_time; // Restore Verbos time
 
             let targetScreen = navState.screen_id;
 
@@ -4724,7 +4726,12 @@ async function getNavigationState() {
                 // Ejercicios экраны - откатываем на gramaticaMenu при refresh
                 'exercisePreviewMenu': 'gramaticaMenu',
                 'grammarRuleScreen': 'gramaticaMenu',
-                'microTestsScreen': 'gramaticaMenu'
+                'microTestsScreen': 'gramaticaMenu',
+                // Verbos тесты - откатываем на меню категорий
+                'verbosTestScreen': 'verbosCategoryMenu',
+                'verbosFeedbackScreen': 'verbosCategoryMenu',
+                'verbosResultsScreen': 'verbosCategoryMenu',
+                'verbosOtrasMenu': 'verbosCategoryMenu'
             };
 
             if (testScreens[targetScreen]) {
@@ -4738,7 +4745,7 @@ async function getNavigationState() {
                 el.classList.remove('hidden');
 
                 // Показываем badge для основных меню
-                if (['mainMenu', 'unidadMenu', 'palabrasMenu', 'groupPreviewMenu', 'categoryMenu', 'gramaticaMenu', 'miniDictionaryScreen'].includes(targetScreen)) {
+                if (['mainMenu', 'unidadMenu', 'palabrasMenu', 'groupPreviewMenu', 'categoryMenu', 'gramaticaMenu', 'miniDictionaryScreen', 'verbosMenu', 'verbosCategoryMenu'].includes(targetScreen)) {
                     showUserBadge();
                 }
 
@@ -4768,6 +4775,17 @@ async function getNavigationState() {
                 }
                 if (targetScreen === 'grammarListScreen') {
                     showGrammarList();
+                }
+                // Verbos screens initialization
+                if (targetScreen === 'verbosMenu') {
+                    showVerbosMenu();
+                }
+                if (targetScreen === 'verbosCategoryMenu') {
+                    if (currentVerbosTime) {
+                        showVerbosCategoryMenu(currentVerbosTime);
+                    } else {
+                        showVerbosMenu(); // Fallback if no time saved
+                    }
                 }
             } else {
                 showProfileSelect();

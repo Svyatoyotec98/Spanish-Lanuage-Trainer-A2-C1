@@ -344,6 +344,18 @@
                     <p class="progress-text" id="gramatica-progress-text">0%</p>
                 </div>
 
+                <!-- Verbos Button -->
+                <div class="category-card" onclick="showVerbosMenu()">
+                    <div class="category-header">
+                        <span class="category-title">🔤 Verbos (Глаголы)</span>
+                        <span class="category-icon">🔤</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="verbos-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="verbos-progress-text">0%</p>
+                </div>
+
                 <!-- Exam Section -->
                 <div class="exam-section">
                     <h3>🎓 Экзамен</h3>
@@ -572,6 +584,74 @@
             </div>
 
             <button class="btn btn-back" onclick="backToUnidadMenu()" style="margin-top: 20px;">← Назад к категориям</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             VERBOS MENU (Time Selection)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="verbosMenu" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1>🔤 Verbos</h1>
+            <p class="subtitle">Выберите грамматическое время</p>
+
+            <!-- Average Progress for Verbos -->
+            <div style="margin: 20px 0; padding: 20px; background: rgba(102, 126, 234, 0.4); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 15px; color: white;">
+                <h3 style="margin: 0 0 10px 0; color: white;">📊 Прогресс спряжений</h3>
+                <div style="font-size: 28px; font-weight: bold;">
+                    <span id="verbos-avg-progress-text">0</span>%
+                </div>
+            </div>
+
+            <!-- Time Selection Container -->
+            <div id="verbosTimesContainer" style="margin-top: 20px;">
+                <!-- Times will be rendered dynamically -->
+            </div>
+
+            <button class="btn btn-back" onclick="backToUnidadMenu()" style="margin-top: 20px;">← Назад к категориям</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             VERBOS CATEGORY MENU (Regulares/Irregulares/Otras)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="verbosCategoryMenu" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1 id="verbosCategoryTitle">Presente de indicativo</h1>
+            <p class="subtitle">Выберите тип глаголов</p>
+
+            <!-- Category Cards -->
+            <div style="margin-top: 30px;">
+                <div class="category-card" onclick="startVerbosTest('regulares')">
+                    <div class="category-header">
+                        <span class="category-title">📗 Verbos Regulares</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="verbos-regulares-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="verbos-regulares-progress-text">0%</p>
+                </div>
+
+                <div class="category-card" onclick="startVerbosTest('irregulares')">
+                    <div class="category-header">
+                        <span class="category-title">📕 Verbos Irregulares</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="verbos-irregulares-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="verbos-irregulares-progress-text">0%</p>
+                </div>
+
+                <div class="category-card" onclick="startVerbosTest('otras')">
+                    <div class="category-header">
+                        <span class="category-title">📙 Otras (Возвратные)</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="verbos-otras-progress-bar" style="width: 0%"></div>
+                    </div>
+                    <p class="progress-text" id="verbos-otras-progress-text">0%</p>
+                </div>
+            </div>
+
+            <button class="btn btn-back" onclick="showVerbosMenu()" style="margin-top: 20px;">← Назад к временам</button>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════

@@ -792,6 +792,13 @@ function showProfileSelect() {
             if (palabrasBar) palabrasBar.style.width = palabrasProgress + '%';
             if (palabrasText) palabrasText.textContent = palabrasProgress + '%';
 
+            // Update Verbos progress bar in unidadMenu
+            const verbosProgress = calculateVerbosProgress(currentUnidad);
+            const verbosBar = document.getElementById('verbos-progress-bar');
+            const verbosText = document.getElementById('verbos-progress-text');
+            if (verbosBar) verbosBar.style.width = verbosProgress + '%';
+            if (verbosText) verbosText.textContent = verbosProgress + '%';
+
             // Проверяем доступность экзамена после обновления прогресса
             checkExamAvailability();
         }
@@ -4839,7 +4846,8 @@ function hideAllScreens() {
         'miniDictionaryScreen',
         'exercisePreviewMenu', 'grammarRuleScreen', 'microTestsScreen',
         'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen',
-        'ejerciciosGramaticaRefScreen'
+        'ejerciciosGramaticaRefScreen',
+        'verbosMenu', 'verbosCategoryMenu'
     ];
     screens.forEach(id => {
         const el = document.getElementById(id);
@@ -6622,7 +6630,207 @@ function exitGramTest() {
         showGramaticaMenu();
     }
 }
-	
+
+// ═══════════════════════════════════════════════════════════════
+// VERBOS MODULE - Verb Conjugation Training
+// ═══════════════════════════════════════════════════════════════
+
+let currentVerbosTime = null; // Currently selected time (e.g., "presente")
+let currentVerbosCategory = null; // Currently selected category (regulares/irregulares/otras)
+
+// Show Verbos menu (time selection)
+function showVerbosMenu() {
+    if (!currentUnidad) {
+        console.error('showVerbosMenu called without currentUnidad');
+        return;
+    }
+
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('verbosMenu').classList.remove('hidden');
+
+    renderVerbosTimesCards();
+    updateVerbosProgress();
+    saveNavigationState('verbosMenu');
+}
+
+// Render time selection cards
+function renderVerbosTimesCards() {
+    const container = document.getElementById('verbosTimesContainer');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const unidadData = vocabularyData[currentUnidad];
+    if (!unidadData || !unidadData.verbos || !unidadData.verbos.tiempos) {
+        container.innerHTML = '<p style="color: white; text-align: center;">Нет данных о глаголах для этого юнита</p>';
+        return;
+    }
+
+    const profile = getActiveProfile();
+    const tiempos = unidadData.verbos.tiempos;
+
+    tiempos.forEach(tiempo => {
+        const isUnlocked = isVerbosTimeUnlocked(tiempo.id);
+        const progress = calculateVerbosTimeProgress(tiempo.id);
+
+        const card = document.createElement('div');
+        card.className = 'category-card';
+        card.style.cursor = isUnlocked ? 'pointer' : 'not-allowed';
+        card.style.opacity = isUnlocked ? '1' : '0.5';
+
+        if (isUnlocked) {
+            card.onclick = () => showVerbosCategoryMenu(tiempo.id);
+        }
+
+        card.innerHTML = `
+            <div class="category-header">
+                <span class="category-title">${isUnlocked ? '🔓' : '🔒'} ${isUnlocked ? tiempo.nombre : '???'}</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" style="width: ${progress}%; background: #27ae60;"></div>
+            </div>
+            <p class="progress-text">${isUnlocked ? progress + '%' : 'Заблокировано'}</p>
+        `;
+
+        container.appendChild(card);
+    });
+}
+
+// Check if a verbos time is unlocked
+function isVerbosTimeUnlocked(timeId) {
+    const profile = getActiveProfile();
+    if (!profile) return false;
+
+    // Initialize verbos unlocks if not exists
+    if (!profile.verbosUnlocks) {
+        profile.verbosUnlocks = {};
+    }
+
+    // Check global unlock (unlocked in any unidad = available everywhere)
+    if (profile.verbosUnlocks[timeId]) {
+        return true;
+    }
+
+    // Check if unlocked via ejercicio microtest
+    const unidadData = vocabularyData[currentUnidad];
+    if (!unidadData || !unidadData.verbos || !unidadData.verbos.tiempos) return false;
+
+    const tiempo = unidadData.verbos.tiempos.find(t => t.id === timeId);
+    if (!tiempo || !tiempo.unlockBy) return false;
+
+    // Check if the ejercicio microtest was passed
+    const ejercicioId = tiempo.unlockBy;
+    if (profile.progress[currentUnidad] &&
+        profile.progress[currentUnidad].ejercicios &&
+        profile.progress[currentUnidad].ejercicios[ejercicioId] >= 80) {
+        // Unlock globally
+        profile.verbosUnlocks[timeId] = true;
+        const state = loadAppState();
+        state.profiles[profile.id] = profile;
+        saveAppState(state);
+        return true;
+    }
+
+    return false;
+}
+
+// Show category selection menu (Regulares/Irregulares/Otras)
+function showVerbosCategoryMenu(timeId) {
+    currentVerbosTime = timeId;
+
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('verbosCategoryMenu').classList.remove('hidden');
+
+    // Update title
+    const unidadData = vocabularyData[currentUnidad];
+    const tiempo = unidadData.verbos.tiempos.find(t => t.id === timeId);
+    document.getElementById('verbosCategoryTitle').textContent = tiempo ? tiempo.nombre : timeId;
+
+    // Update progress bars for each category
+    updateVerbosCategoryProgress(timeId);
+    saveNavigationState('verbosCategoryMenu');
+}
+
+// Update progress for each verb category
+function updateVerbosCategoryProgress(timeId) {
+    const categories = ['regulares', 'irregulares', 'otras'];
+
+    categories.forEach(cat => {
+        const progress = calculateVerbosCategoryProgress(timeId, cat);
+        const bar = document.getElementById(`verbos-${cat}-progress-bar`);
+        const text = document.getElementById(`verbos-${cat}-progress-text`);
+        if (bar) bar.style.width = progress + '%';
+        if (text) text.textContent = progress + '%';
+    });
+}
+
+// Calculate progress for a specific time
+function calculateVerbosTimeProgress(timeId) {
+    const profile = getActiveProfile();
+    if (!profile || !profile.progress[currentUnidad] || !profile.progress[currentUnidad].verbos) {
+        return 0;
+    }
+
+    const verbosProgress = profile.progress[currentUnidad].verbos[timeId];
+    if (!verbosProgress) return 0;
+
+    // Average of all categories (33% each)
+    const regProgress = verbosProgress.regulares || 0;
+    const irregProgress = verbosProgress.irregulares || 0;
+    const otrasProgress = verbosProgress.otras || 0;
+
+    return Math.round((regProgress + irregProgress + otrasProgress) / 3);
+}
+
+// Calculate progress for a specific category within a time
+function calculateVerbosCategoryProgress(timeId, category) {
+    const profile = getActiveProfile();
+    if (!profile || !profile.progress[currentUnidad] || !profile.progress[currentUnidad].verbos) {
+        return 0;
+    }
+
+    const verbosProgress = profile.progress[currentUnidad].verbos[timeId];
+    if (!verbosProgress) return 0;
+
+    return verbosProgress[category] || 0;
+}
+
+// Calculate overall Verbos progress for the unidad
+function calculateVerbosProgress(unidad) {
+    const profile = getActiveProfile();
+    if (!profile) return 0;
+
+    const unidadData = vocabularyData[unidad];
+    if (!unidadData || !unidadData.verbos || !unidadData.verbos.tiempos) return 0;
+
+    let totalProgress = 0;
+    let unlockedCount = 0;
+
+    unidadData.verbos.tiempos.forEach(tiempo => {
+        if (isVerbosTimeUnlocked(tiempo.id)) {
+            totalProgress += calculateVerbosTimeProgress(tiempo.id);
+            unlockedCount++;
+        }
+    });
+
+    return unlockedCount > 0 ? Math.round(totalProgress / unlockedCount) : 0;
+}
+
+// Update Verbos progress display
+function updateVerbosProgress() {
+    const progress = calculateVerbosProgress(currentUnidad);
+    const avgText = document.getElementById('verbos-avg-progress-text');
+    if (avgText) avgText.textContent = progress;
+}
+
+// Start Verbos test (placeholder - will be implemented in Phase 3)
+function startVerbosTest(category) {
+    currentVerbosCategory = category;
+    alert(`Тест для "${category}" будет реализован в следующей фазе.\n\nВремя: ${currentVerbosTime}\nКатегория: ${category}`);
+    // TODO: Implement in Phase 3
+}
+
 // ═══════════════════════════════════════════════════════════════
 // GRAMMAR REFERENCE SYSTEM
 // ═══════════════════════════════════════════════════════════════

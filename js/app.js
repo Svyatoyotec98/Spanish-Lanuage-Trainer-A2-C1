@@ -225,11 +225,12 @@
 
             ensureProgressSkeleton(profile);
 
-            // Формула 50/50: (Palabras + Ejercicios) / 2
+            // Формула 33/33/33: (Palabras + Ejercicios + Verbos) / 3
             const palabrasProgress = calculatePalabrasProgress(unidad);
             const ejerciciosProgress = calculateGramaticaProgressForUnidad(unidad) || 0;
+            const verbosProgress = calculateVerbosProgress(unidad) || 0;
 
-            return Math.round((palabrasProgress + ejerciciosProgress) / 2);
+            return Math.round((palabrasProgress + ejerciciosProgress + verbosProgress) / 3);
         }
 
         // Helper to calculate exercises progress for a specific unidad

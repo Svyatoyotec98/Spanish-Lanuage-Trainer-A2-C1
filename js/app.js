@@ -282,12 +282,16 @@
             const examBtn = document.getElementById('examBtn');
             if (!examBtn) return;
 
-            // Разблокируем кнопку, если средний прогресс ≥80%
-            if (averageProgress >= 80) {
+            // Разблокируем кнопку, если средний прогресс ≥80% ИЛИ dev mode активен
+            if (devExamUnlocked || averageProgress >= 80) {
                 examBtn.disabled = false;
                 examBtn.classList.remove('btn-warning');
                 examBtn.classList.add('btn-success');
-                console.log(`✅ Экзамен разблокирован! Средний прогресс: ${averageProgress}%`);
+                if (devExamUnlocked) {
+                    console.log(`✅ Экзамен разблокирован (dev mode). Реальный прогресс: ${averageProgress}%`);
+                } else {
+                    console.log(`✅ Экзамен разблокирован! Средний прогресс: ${averageProgress}%`);
+                }
             } else {
                 examBtn.disabled = true;
                 examBtn.classList.remove('btn-success');
@@ -296,16 +300,26 @@
             }
         }
 
-        // QA функция для принудительной разблокировки экзамена
-        function unlockExam() {
-            const examBtn = document.getElementById('examBtn');
-            if (examBtn) {
-                examBtn.disabled = false;
-                examBtn.classList.remove('btn-warning');
-                examBtn.classList.add('btn-success');
-                console.log('🎓 QA: Экзамен разблокирован принудительно');
-                alert('✅ Экзамен разблокирован!');
+        // QA функция для toggle разблокировки экзамена (не влияет на прогресс)
+        function toggleDevExamUnlock() {
+            devExamUnlocked = !devExamUnlocked;
+
+            // Обновляем текст кнопки в dev-панели
+            const devBtn = document.getElementById('devExamToggleBtn');
+            if (devBtn) {
+                devBtn.textContent = devExamUnlocked ? '🔓 Заблокировать экзамен' : '🎓 Разблокировать экзамен';
             }
+
+            // Обновляем состояние кнопки экзамена
+            checkExamAvailability();
+
+            console.log(`🎓 QA: Экзамен ${devExamUnlocked ? 'разблокирован' : 'заблокирован'} (dev mode)`);
+            alert(devExamUnlocked ? '✅ Экзамен разблокирован (dev mode)' : '🔒 Экзамен заблокирован (dev mode)');
+        }
+
+        // Legacy alias для совместимости
+        function unlockExam() {
+            toggleDevExamUnlock();
         }
 
         function updateUnlocks() {
@@ -705,6 +719,7 @@ function showProfileSelect() {
         let examTimerInterval = null; // интервал таймера экзамена
         let examTimeLeft = EXAM_TIMER_DURATION; // оставшееся время на текущий вопрос
         let examStartTime = null; // время начала экзамена (для статистики)
+        let devExamUnlocked = false; // QA toggle для принудительной разблокировки экзамена (не влияет на прогресс)
 
         // ═══════════════════════════════════════════════════════════════
         // HARD TEST ALL QUESTIONS MODE (для групп > 10 слов)

@@ -6686,7 +6686,7 @@ function renderVerbosTimesCards() {
         let unlockHint = '';
         if (!isUnlocked && tiempo.unlockBy) {
             const ejercicioNum = tiempo.unlockBy.replace('ejercicio_', '');
-            unlockHint = `<small style="color: #999; display: block; margin-top: 5px;">Пройди микротест Ejercicio ${ejercicioNum} (≥80%)</small>`;
+            unlockHint = `<small style="color: #999; display: block; margin-top: 5px;">Пройди "Проверь себя" в Ejercicio ${ejercicioNum}</small>`;
         }
 
         card.innerHTML = `
@@ -6728,12 +6728,13 @@ function isVerbosTimeUnlocked(timeId) {
 
     const ejercicioId = tiempo.unlockBy;
 
-    // GLOBAL CHECK: Check if the ejercicio microtest was passed in ANY unidad
-    const allUnidades = Object.keys(profile.progress || {});
+    // GLOBAL CHECK: Check if "Проверь себя" microtests were completed in ANY unidad
+    if (!profile.microTestsCompleted) return false;
+
+    const allUnidades = Object.keys(profile.microTestsCompleted);
     for (const unidadId of allUnidades) {
-        if (profile.progress[unidadId] &&
-            profile.progress[unidadId].ejercicios &&
-            profile.progress[unidadId].ejercicios[ejercicioId] >= 80) {
+        if (profile.microTestsCompleted[unidadId] &&
+            profile.microTestsCompleted[unidadId][ejercicioId] === true) {
             // Unlock globally
             profile.verbosUnlocks[timeId] = true;
             const state = loadAppState();

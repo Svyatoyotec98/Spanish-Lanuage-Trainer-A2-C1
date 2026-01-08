@@ -1054,5 +1054,921 @@
       }
     ]
   },
-  "ejercicios": []
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Pretérito indefinido: verbos regulares",
+      "hint": "-é / -aste / -ó / -amos / -asteis / -aron (para -ar) | -í / -iste / -ió / -imos / -isteis / -ieron (para -er/-ir)",
+      "rule": {
+        "title": "Pretérito indefinido: VERBOS REGULARES",
+        "explanation": "El pretérito indefinido se usa para hablar de acciones completadas en el pasado. Los verbos regulares siguen patrones predecibles según su terminación (-ar, -er, -ir).",
+        "sections": [
+          {
+            "subtitle": "Verbos en -AR (hablar, trabajar, estudiar)",
+            "points": [
+              "yo: <b>-é</b> → hablé, trabajé, estudié",
+              "tú: <b>-aste</b> → hablaste, trabajaste, estudiaste",
+              "él/ella: <b>-ó</b> → habló, trabajó, estudió",
+              "nosotros: <b>-amos</b> → hablamos, trabajamos, estudiamos",
+              "vosotros: <b>-asteis</b> → hablasteis, trabajasteis, estudiasteis",
+              "ellos: <b>-aron</b> → hablaron, trabajaron, estudiaron"
+            ]
+          },
+          {
+            "subtitle": "Verbos en -ER/-IR (comer, vivir, escribir)",
+            "points": [
+              "yo: <b>-í</b> → comí, viví, escribí",
+              "tú: <b>-iste</b> → comiste, viviste, escribiste",
+              "él/ella: <b>-ió</b> → comió, vivió, escribió",
+              "nosotros: <b>-imos</b> → comimos, vivimos, escribimos",
+              "vosotros: <b>-isteis</b> → comisteis, vivisteis, escribisteis",
+              "ellos: <b>-ieron</b> → comieron, vivieron, escribieron"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Ayer estudié español durante tres horas.", "ru": "Вчера я учил испанский три часа."},
+          {"es": "María trabajó en una empresa internacional.", "ru": "Мария работала в международной компании."},
+          {"es": "Mis padres vivieron en México diez años.", "ru": "Мои родители жили в Мексике десять лет."},
+          {"es": "Comimos paella en un restaurante.", "ru": "Мы ели паэлью в ресторане."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Ayer yo ___ (estudiar) mucho para el examen.", "answer": "estudié"},
+        {"sentence": "María ___ (trabajar) en un banco el año pasado.", "answer": "trabajó"},
+        {"sentence": "Nosotros ___ (viajar) a España en 2019.", "answer": "viajamos"},
+        {"sentence": "¿Tú ___ (hablar) con el profesor ayer?", "answer": "hablaste"},
+        {"sentence": "Ellos ___ (terminar) el proyecto la semana pasada.", "answer": "terminaron"},
+        {"sentence": "Yo ___ (comer) paella por primera vez en Valencia.", "answer": "comí"},
+        {"sentence": "Mi hermana ___ (vivir) en París durante dos años.", "answer": "vivió"},
+        {"sentence": "Vosotros ___ (escribir) muchas cartas.", "answer": "escribisteis"},
+        {"sentence": "Los estudiantes ___ (aprender) mucho en el curso.", "answer": "aprendieron"},
+        {"sentence": "Tú ___ (recibir) un regalo muy bonito.", "answer": "recibiste"},
+        {"sentence": "Nosotros ___ (pasar) las vacaciones en la playa.", "answer": "pasamos"},
+        {"sentence": "Ella ___ (cambiar) de trabajo hace un mes.", "answer": "cambió"},
+        {"sentence": "Yo ___ (encontrar) un billete en la calle.", "answer": "encontré"},
+        {"sentence": "Ustedes ___ (visitar) el museo ayer.", "answer": "visitaron"},
+        {"sentence": "Mi padre ___ (nacer) en 1960.", "answer": "nació"},
+        {"sentence": "Tú ___ (conocer) a mucha gente en la fiesta.", "answer": "conociste"},
+        {"sentence": "Nosotras ___ (bailar) toda la noche.", "answer": "bailamos"},
+        {"sentence": "El director ___ (rodar) la película en México.", "answer": "rodó"},
+        {"sentence": "Yo ___ (empezar) a trabajar a las ocho.", "answer": "empecé"},
+        {"sentence": "Ellas ___ (comprar) ropa nueva.", "answer": "compraron"},
+        {"sentence": "¿Vosotros ___ (cenar) en ese restaurante?", "answer": "cenasteis"},
+        {"sentence": "La película ___ (durar) más de dos horas.", "answer": "duró"},
+        {"sentence": "Mis abuelos ___ (celebrar) su aniversario.", "answer": "celebraron"},
+        {"sentence": "Tú ___ (llegar) tarde a la reunión.", "answer": "llegaste"},
+        {"sentence": "Nosotros ___ (decidir) ir de vacaciones.", "answer": "decidimos"},
+        {"sentence": "Ella ___ (subir) las escaleras corriendo.", "answer": "subió"},
+        {"sentence": "Yo ___ (salir) de casa a las siete.", "answer": "salí"},
+        {"sentence": "Los niños ___ (jugar) en el parque.", "answer": "jugaron"},
+        {"sentence": "Tú ___ (abrir) la puerta.", "answer": "abriste"},
+        {"sentence": "Mi madre ___ (cocinar) una cena deliciosa.", "answer": "cocinó"},
+        {"sentence": "Vosotros ___ (beber) mucha agua.", "answer": "bebisteis"},
+        {"sentence": "Ellos ___ (ganar) el partido.", "answer": "ganaron"},
+        {"sentence": "Yo ___ (perder) las llaves.", "answer": "perdí"},
+        {"sentence": "Ella ___ (correr) cinco kilómetros.", "answer": "corrió"},
+        {"sentence": "Nosotros ___ (leer) el libro en una semana.", "answer": "leímos"},
+        {"sentence": "Tú ___ (creer) su historia.", "answer": "creíste"},
+        {"sentence": "Los actores ___ (actuar) muy bien.", "answer": "actuaron"},
+        {"sentence": "Yo ___ (buscar) trabajo durante meses.", "answer": "busqué"},
+        {"sentence": "Él ___ (pagar) la cuenta.", "answer": "pagó"},
+        {"sentence": "Nosotros ___ (organizar) una fiesta.", "answer": "organizamos"},
+        {"sentence": "Ellas ___ (practicar) español todos los días.", "answer": "practicaron"},
+        {"sentence": "Tú ___ (necesitar) ayuda.", "answer": "necesitaste"},
+        {"sentence": "La empresa ___ (contratar) a diez personas.", "answer": "contrató"},
+        {"sentence": "Yo ___ (llamar) a mi madre.", "answer": "llamé"},
+        {"sentence": "Vosotros ___ (escuchar) la canción.", "answer": "escuchasteis"},
+        {"sentence": "Él ___ (explicar) la lección.", "answer": "explicó"},
+        {"sentence": "Nosotros ___ (regresar) a casa tarde.", "answer": "regresamos"},
+        {"sentence": "Ella ___ (desayunar) a las ocho.", "answer": "desayunó"},
+        {"sentence": "Los turistas ___ (fotografiar) el monumento.", "answer": "fotografiaron"},
+        {"sentence": "Yo ___ (preguntar) la hora.", "answer": "pregunté"},
+        {"sentence": "Tú ___ (contestar) todas las preguntas.", "answer": "contestaste"},
+        {"sentence": "Él ___ (compartir) su comida.", "answer": "compartió"},
+        {"sentence": "Nosotros ___ (discutir) el problema.", "answer": "discutimos"},
+        {"sentence": "Ellos ___ (insistir) en pagar.", "answer": "insistieron"},
+        {"sentence": "Yo ___ (asistir) a la conferencia.", "answer": "asistí"},
+        {"sentence": "Ella ___ (partir) hacia Madrid.", "answer": "partió"},
+        {"sentence": "Vosotros ___ (sufrir) mucho.", "answer": "sufristeis"},
+        {"sentence": "Tú ___ (cumplir) treinta años.", "answer": "cumpliste"},
+        {"sentence": "El equipo ___ (perder) el campeonato.", "answer": "perdió"},
+        {"sentence": "Nosotros ___ (meter) las maletas en el coche.", "answer": "metimos"}
+      ],
+      "microTests": [
+        {"sentence": "Ayer yo ___ (estudiar) español.", "answer": "estudié", "hint": "Yo + verbo -ar → -é"},
+        {"sentence": "María ___ (trabajar) mucho.", "answer": "trabajó", "hint": "Él/ella + verbo -ar → -ó"},
+        {"sentence": "Nosotros ___ (viajar) a Italia.", "answer": "viajamos", "hint": "Nosotros + verbo -ar → -amos"},
+        {"sentence": "Tú ___ (hablar) con ella.", "answer": "hablaste", "hint": "Tú + verbo -ar → -aste"},
+        {"sentence": "Ellos ___ (cantar) muy bien.", "answer": "cantaron", "hint": "Ellos + verbo -ar → -aron"},
+        {"sentence": "Yo ___ (comer) mucho.", "answer": "comí", "hint": "Yo + verbo -er → -í"},
+        {"sentence": "Ella ___ (vivir) en Madrid.", "answer": "vivió", "hint": "Él/ella + verbo -ir → -ió"},
+        {"sentence": "Nosotros ___ (escribir) una carta.", "answer": "escribimos", "hint": "Nosotros + verbo -ir → -imos"},
+        {"sentence": "Tú ___ (recibir) el paquete.", "answer": "recibiste", "hint": "Tú + verbo -ir → -iste"},
+        {"sentence": "Ellos ___ (aprender) español.", "answer": "aprendieron", "hint": "Ellos + verbo -er → -ieron"},
+        {"sentence": "Yo ___ (terminar) el trabajo.", "answer": "terminé", "hint": "Yo + verbo -ar → -é"},
+        {"sentence": "Ella ___ (beber) agua.", "answer": "bebió", "hint": "Él/ella + verbo -er → -ió"},
+        {"sentence": "Vosotros ___ (bailar) salsa.", "answer": "bailasteis", "hint": "Vosotros + verbo -ar → -asteis"},
+        {"sentence": "Tú ___ (subir) las escaleras.", "answer": "subiste", "hint": "Tú + verbo -ir → -iste"},
+        {"sentence": "Nosotros ___ (cenar) juntos.", "answer": "cenamos", "hint": "Nosotros + verbo -ar → -amos"}
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Pretérito indefinido: verbos irregulares",
+      "hint": "tuve / hice / estuve / pude / puse / supe / quise / vine / dije",
+      "rule": {
+        "title": "Pretérito indefinido: VERBOS IRREGULARES",
+        "explanation": "Muchos verbos importantes en español tienen formas irregulares en pretérito indefinido. La raíz cambia pero las terminaciones son las mismas: -e, -iste, -o, -imos, -isteis, -ieron.",
+        "sections": [
+          {
+            "subtitle": "Verbos con raíz irregular (terminaciones: -e, -iste, -o, -imos, -isteis, -ieron)",
+            "points": [
+              "<b>tener</b> → tuv-: tuve, tuviste, tuvo, tuvimos, tuvisteis, tuvieron",
+              "<b>estar</b> → estuv-: estuve, estuviste, estuvo, estuvimos, estuvisteis, estuvieron",
+              "<b>hacer</b> → hic-/hiz-: hice, hiciste, <b>hizo</b>, hicimos, hicisteis, hicieron",
+              "<b>poder</b> → pud-: pude, pudiste, pudo, pudimos, pudisteis, pudieron",
+              "<b>poner</b> → pus-: puse, pusiste, puso, pusimos, pusisteis, pusieron",
+              "<b>saber</b> → sup-: supe, supiste, supo, supimos, supisteis, supieron",
+              "<b>querer</b> → quis-: quise, quisiste, quiso, quisimos, quisisteis, quisieron",
+              "<b>venir</b> → vin-: vine, viniste, vino, vinimos, vinisteis, vinieron",
+              "<b>decir</b> → dij-: dije, dijiste, dijo, dijimos, dijisteis, <b>dijeron</b>"
+            ]
+          },
+          {
+            "subtitle": "Verbos derivados",
+            "points": [
+              "<b>obtener</b> (como tener) → obtuve, obtuviste, obtuvo...",
+              "<b>componer</b> (como poner) → compuse, compusiste, compuso...",
+              "<b>proponer</b> (como poner) → propuse, propusiste, propuso..."
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Ayer tuve que trabajar hasta tarde.", "ru": "Вчера мне пришлось работать допоздна."},
+          {"es": "¿Qué hiciste el fin de semana?", "ru": "Что ты делал в выходные?"},
+          {"es": "No pude ir a la fiesta.", "ru": "Я не смог пойти на вечеринку."},
+          {"es": "Estuvimos en París la semana pasada.", "ru": "На прошлой неделе мы были в Париже."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Ayer yo ___ (tener) mucho trabajo.", "answer": "tuve"},
+        {"sentence": "Ella ___ (hacer) la cena anoche.", "answer": "hizo"},
+        {"sentence": "Nosotros ___ (estar) en la playa.", "answer": "estuvimos"},
+        {"sentence": "¿Tú ___ (poder) terminar el proyecto?", "answer": "pudiste"},
+        {"sentence": "Ellos ___ (poner) la mesa.", "answer": "pusieron"},
+        {"sentence": "Yo ___ (saber) la noticia ayer.", "answer": "supe"},
+        {"sentence": "María ___ (querer) venir pero no pudo.", "answer": "quiso"},
+        {"sentence": "¿Vosotros ___ (venir) en coche?", "answer": "vinisteis"},
+        {"sentence": "El profesor ___ (decir) la verdad.", "answer": "dijo"},
+        {"sentence": "Nosotros no ___ (tener) tiempo.", "answer": "tuvimos"},
+        {"sentence": "Yo ___ (hacer) los deberes.", "answer": "hice"},
+        {"sentence": "¿Dónde ___ (estar) tú ayer?", "answer": "estuviste"},
+        {"sentence": "Ella no ___ (poder) venir.", "answer": "pudo"},
+        {"sentence": "Yo ___ (poner) los libros en la mesa.", "answer": "puse"},
+        {"sentence": "Ellos ___ (saber) la respuesta.", "answer": "supieron"},
+        {"sentence": "Tú ___ (querer) ayudarme.", "answer": "quisiste"},
+        {"sentence": "Mis padres ___ (venir) a visitarme.", "answer": "vinieron"},
+        {"sentence": "¿Qué ___ (decir) ellos?", "answer": "dijeron"},
+        {"sentence": "El equipo ___ (obtener) el primer lugar.", "answer": "obtuvo"},
+        {"sentence": "Mozart ___ (componer) muchas sinfonías.", "answer": "compuso"},
+        {"sentence": "Yo ___ (tener) que salir temprano.", "answer": "tuve"},
+        {"sentence": "¿Qué ___ (hacer) ustedes ayer?", "answer": "hicieron"},
+        {"sentence": "Ella ___ (estar) enferma la semana pasada.", "answer": "estuvo"},
+        {"sentence": "No ___ (poder) encontrar mis llaves.", "answer": "pude"},
+        {"sentence": "Él ___ (poner) la música muy alta.", "answer": "puso"},
+        {"sentence": "Nosotros ___ (saber) la verdad demasiado tarde.", "answer": "supimos"},
+        {"sentence": "Ella no ___ (querer) escucharme.", "answer": "quiso"},
+        {"sentence": "¿Cuándo ___ (venir) tú a España?", "answer": "viniste"},
+        {"sentence": "Yo le ___ (decir) que no.", "answer": "dije"},
+        {"sentence": "El científico ___ (obtener) el Premio Nobel.", "answer": "obtuvo"},
+        {"sentence": "Beethoven ___ (componer) nueve sinfonías.", "answer": "compuso"},
+        {"sentence": "Nosotros ___ (tener) suerte.", "answer": "tuvimos"},
+        {"sentence": "¿Quién ___ (hacer) este pastel?", "answer": "hizo"},
+        {"sentence": "Los niños ___ (estar) en el parque.", "answer": "estuvieron"},
+        {"sentence": "Tú ___ (poder) resolver el problema.", "answer": "pudiste"},
+        {"sentence": "Ella ___ (poner) flores en la mesa.", "answer": "puso"},
+        {"sentence": "Yo no ___ (saber) qué hacer.", "answer": "supe"},
+        {"sentence": "Ellos ___ (querer) comprar la casa.", "answer": "quisieron"},
+        {"sentence": "Mi hermano ___ (venir) de Londres.", "answer": "vino"},
+        {"sentence": "¿Qué te ___ (decir) el médico?", "answer": "dijo"},
+        {"sentence": "La empresa ___ (obtener) buenos resultados.", "answer": "obtuvo"},
+        {"sentence": "El compositor ___ (componer) una ópera.", "answer": "compuso"},
+        {"sentence": "Yo ___ (tener) una idea genial.", "answer": "tuve"},
+        {"sentence": "Ella ___ (hacer) un viaje increíble.", "answer": "hizo"},
+        {"sentence": "Nosotros ___ (estar) muy contentos.", "answer": "estuvimos"},
+        {"sentence": "Él no ___ (poder) dormir.", "answer": "pudo"},
+        {"sentence": "Vosotros ___ (poner) la televisión.", "answer": "pusisteis"},
+        {"sentence": "¿Cómo ___ (saber) tú eso?", "answer": "supiste"},
+        {"sentence": "Yo ___ (querer) llamarte pero perdí tu número.", "answer": "quise"},
+        {"sentence": "Ellas ___ (venir) a la fiesta.", "answer": "vinieron"},
+        {"sentence": "Nosotros no ___ (decir) nada.", "answer": "dijimos"},
+        {"sentence": "Él ___ (obtener) una beca.", "answer": "obtuvo"},
+        {"sentence": "Ellos ___ (proponer) una solución.", "answer": "propusieron"},
+        {"sentence": "Yo ___ (tener) fiebre ayer.", "answer": "tuve"},
+        {"sentence": "¿Qué ___ (hacer) tú el domingo?", "answer": "hiciste"},
+        {"sentence": "Ella ___ (estar) muy ocupada.", "answer": "estuvo"},
+        {"sentence": "Nosotros no ___ (poder) ir.", "answer": "pudimos"},
+        {"sentence": "Él ___ (poner) todo en orden.", "answer": "puso"},
+        {"sentence": "Ellos ___ (saber) la noticia por la radio.", "answer": "supieron"},
+        {"sentence": "Tú ___ (querer) verla.", "answer": "quisiste"}
+      ],
+      "microTests": [
+        {"sentence": "Ayer yo ___ (tener) un problema.", "answer": "tuve", "hint": "tener → tuv- (yo: tuve)"},
+        {"sentence": "Ella ___ (hacer) la tarea.", "answer": "hizo", "hint": "hacer → hic-/hiz- (él/ella: hizo)"},
+        {"sentence": "Nosotros ___ (estar) en casa.", "answer": "estuvimos", "hint": "estar → estuv-"},
+        {"sentence": "Tú no ___ (poder) venir.", "answer": "pudiste", "hint": "poder → pud-"},
+        {"sentence": "Yo ___ (poner) las llaves aquí.", "answer": "puse", "hint": "poner → pus-"},
+        {"sentence": "¿___ (saber) tú la respuesta?", "answer": "Supiste", "hint": "saber → sup-"},
+        {"sentence": "Ella ___ (querer) ayudar.", "answer": "quiso", "hint": "querer → quis-"},
+        {"sentence": "Ellos ___ (venir) tarde.", "answer": "vinieron", "hint": "venir → vin-"},
+        {"sentence": "¿Qué ___ (decir) él?", "answer": "dijo", "hint": "decir → dij-"},
+        {"sentence": "El atleta ___ (obtener) una medalla.", "answer": "obtuvo", "hint": "obtener (como tener) → obtuv-"},
+        {"sentence": "Yo ___ (hacer) un pastel.", "answer": "hice", "hint": "hacer → hic- (yo: hice)"},
+        {"sentence": "Ellos ___ (tener) suerte.", "answer": "tuvieron", "hint": "tener → tuv-"},
+        {"sentence": "Tú ___ (estar) enfermo.", "answer": "estuviste", "hint": "estar → estuv-"},
+        {"sentence": "Nosotros ___ (decir) la verdad.", "answer": "dijimos", "hint": "decir → dij-"},
+        {"sentence": "Ella ___ (poder) hacerlo.", "answer": "pudo", "hint": "poder → pud-"}
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Ser vs Ir en pretérito indefinido",
+      "hint": "fui / fuiste / fue / fuimos / fuisteis / fueron",
+      "rule": {
+        "title": "SER e IR en pretérito indefinido",
+        "explanation": "Los verbos SER e IR tienen exactamente las mismas formas en pretérito indefinido. El contexto de la frase indica cuál de los dos verbos se está usando.",
+        "sections": [
+          {
+            "subtitle": "Formas (iguales para SER e IR)",
+            "points": [
+              "yo: <b>fui</b>",
+              "tú: <b>fuiste</b>",
+              "él/ella/usted: <b>fue</b>",
+              "nosotros: <b>fuimos</b>",
+              "vosotros: <b>fuisteis</b>",
+              "ellos/ustedes: <b>fueron</b>"
+            ]
+          },
+          {
+            "subtitle": "¿Cómo distinguirlos?",
+            "points": [
+              "<b>IR</b>: indica movimiento → Fui <b>a</b> Madrid (= I went to Madrid)",
+              "<b>SER</b>: describe característica o identidad → La película fue un éxito (= The movie was a success)",
+              "Pista: si hay <b>a + lugar</b>, es IR; si describe <b>qué/cómo era algo</b>, es SER"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Ayer fui al cine. (IR)", "ru": "Вчера я ходил в кино."},
+          {"es": "La fiesta fue increíble. (SER)", "ru": "Вечеринка была невероятной."},
+          {"es": "Mis padres fueron muy deportistas. (SER)", "ru": "Мои родители были очень спортивными."},
+          {"es": "Fuimos a la playa el domingo. (IR)", "ru": "Мы ездили на пляж в воскресенье."}
+        ]
+      },
+      "questions": [
+        {"sentence": "La película ___ un éxito. (ser)", "answer": "fue"},
+        {"sentence": "Mi hermano no ___ a verla. (ir)", "answer": "fue"},
+        {"sentence": "Mis hermanos y yo ___ siempre los primeros de la clase. (ser)", "answer": "fuimos"},
+        {"sentence": "Mis hermanos y yo ___ a un colegio bilingüe. (ir)", "answer": "fuimos"},
+        {"sentence": "Minerva y Martín ___ a Suecia en 1970. (ir)", "answer": "fueron"},
+        {"sentence": "Mis padres ___ muy deportistas en su juventud. (ser)", "answer": "fueron"},
+        {"sentence": "Ayer ___ al cine con mis amigos. (ir)", "answer": "fui"},
+        {"sentence": "El concierto ___ increíble. (ser)", "answer": "fue"},
+        {"sentence": "Nosotros ___ a París el verano pasado. (ir)", "answer": "fuimos"},
+        {"sentence": "Ella ___ una gran actriz. (ser)", "answer": "fue"},
+        {"sentence": "¿Vosotros ___ a la fiesta? (ir)", "answer": "fuisteis"},
+        {"sentence": "El evento ___ muy interesante. (ser)", "answer": "fue"},
+        {"sentence": "Ellos ___ a vivir a México. (ir)", "answer": "fueron"},
+        {"sentence": "La experiencia ___ maravillosa. (ser)", "answer": "fue"},
+        {"sentence": "Tú ___ el mejor estudiante de la clase. (ser)", "answer": "fuiste"},
+        {"sentence": "¿___ tú a la reunión? (ir)", "answer": "Fuiste"},
+        {"sentence": "La comida ___ deliciosa. (ser)", "answer": "fue"},
+        {"sentence": "Nosotros ___ al museo ayer. (ir)", "answer": "fuimos"},
+        {"sentence": "Él ___ mi mejor amigo. (ser)", "answer": "fue"},
+        {"sentence": "Ellas ___ al supermercado. (ir)", "answer": "fueron"},
+        {"sentence": "La reunión ___ muy larga. (ser)", "answer": "fue"},
+        {"sentence": "Yo ___ a la universidad en autobús. (ir)", "answer": "fui"},
+        {"sentence": "Los resultados ___ excelentes. (ser)", "answer": "fueron"},
+        {"sentence": "¿Adónde ___ ustedes de vacaciones? (ir)", "answer": "fueron"},
+        {"sentence": "La decisión ___ difícil. (ser)", "answer": "fue"},
+        {"sentence": "Vosotros ___ muy amables. (ser)", "answer": "fuisteis"},
+        {"sentence": "Yo ___ a comprar pan. (ir)", "answer": "fui"},
+        {"sentence": "El viaje ___ largo pero agradable. (ser)", "answer": "fue"},
+        {"sentence": "Nosotros ___ a cenar a un restaurante. (ir)", "answer": "fuimos"},
+        {"sentence": "Él ___ el director de la empresa. (ser)", "answer": "fue"},
+        {"sentence": "Mis abuelos ___ a visitarnos. (ir)", "answer": "fueron"},
+        {"sentence": "La película ___ muy aburrida. (ser)", "answer": "fue"},
+        {"sentence": "¿___ tú al médico? (ir)", "answer": "Fuiste"},
+        {"sentence": "Ellos ___ los ganadores del concurso. (ser)", "answer": "fueron"},
+        {"sentence": "Nosotras ___ de compras. (ir)", "answer": "fuimos"},
+        {"sentence": "El partido ___ emocionante. (ser)", "answer": "fue"},
+        {"sentence": "Yo ___ a la biblioteca. (ir)", "answer": "fui"},
+        {"sentence": "María ___ profesora durante veinte años. (ser)", "answer": "fue"},
+        {"sentence": "Ellos ___ a la playa. (ir)", "answer": "fueron"},
+        {"sentence": "La conferencia ___ muy informativa. (ser)", "answer": "fue"},
+        {"sentence": "Vosotros ___ al concierto. (ir)", "answer": "fuisteis"},
+        {"sentence": "Tú ___ muy valiente. (ser)", "answer": "fuiste"},
+        {"sentence": "Nosotros ___ a ver una película. (ir)", "answer": "fuimos"},
+        {"sentence": "El examen ___ fácil. (ser)", "answer": "fue"},
+        {"sentence": "Ella ___ a la oficina. (ir)", "answer": "fue"},
+        {"sentence": "Los estudiantes ___ muy aplicados. (ser)", "answer": "fueron"},
+        {"sentence": "Yo ___ al gimnasio esta mañana. (ir)", "answer": "fui"},
+        {"sentence": "La boda ___ preciosa. (ser)", "answer": "fue"},
+        {"sentence": "Ellas ___ a bailar. (ir)", "answer": "fueron"},
+        {"sentence": "El libro ___ un bestseller. (ser)", "answer": "fue"},
+        {"sentence": "¿Adónde ___ tú ayer? (ir)", "answer": "fuiste"},
+        {"sentence": "La obra de teatro ___ fantástica. (ser)", "answer": "fue"},
+        {"sentence": "Nosotros ___ a esquiar. (ir)", "answer": "fuimos"},
+        {"sentence": "Él ___ un gran científico. (ser)", "answer": "fue"},
+        {"sentence": "Ustedes ___ a la conferencia. (ir)", "answer": "fueron"},
+        {"sentence": "El día ___ perfecto. (ser)", "answer": "fue"},
+        {"sentence": "Yo ___ a correr al parque. (ir)", "answer": "fui"},
+        {"sentence": "Las vacaciones ___ geniales. (ser)", "answer": "fueron"},
+        {"sentence": "Ellos ___ a un concierto de rock. (ir)", "answer": "fueron"},
+        {"sentence": "La cena ___ romántica. (ser)", "answer": "fue"}
+      ],
+      "microTests": [
+        {"sentence": "La película ___ un éxito.", "answer": "fue", "hint": "¿Qué fue la película? → SER"},
+        {"sentence": "Ayer ___ al cine.", "answer": "fui", "hint": "¿Adónde? Al cine → IR"},
+        {"sentence": "Mis padres ___ muy jóvenes.", "answer": "fueron", "hint": "¿Cómo eran? → SER"},
+        {"sentence": "Nosotros ___ a la playa.", "answer": "fuimos", "hint": "¿Adónde? A la playa → IR"},
+        {"sentence": "Tú ___ el mejor.", "answer": "fuiste", "hint": "¿Qué eras? → SER"},
+        {"sentence": "¿___ a la fiesta?", "answer": "Fuiste", "hint": "¿Adónde? A la fiesta → IR"},
+        {"sentence": "El concierto ___ increíble.", "answer": "fue", "hint": "¿Cómo fue? → SER"},
+        {"sentence": "Ellos ___ a México.", "answer": "fueron", "hint": "¿Adónde? A México → IR"},
+        {"sentence": "Ella ___ presidenta.", "answer": "fue", "hint": "¿Qué fue? → SER"},
+        {"sentence": "Yo ___ a comprar.", "answer": "fui", "hint": "¿Adónde? A comprar → IR"},
+        {"sentence": "El viaje ___ largo.", "answer": "fue", "hint": "¿Cómo fue el viaje? → SER"},
+        {"sentence": "Vosotros ___ al museo.", "answer": "fuisteis", "hint": "¿Adónde? Al museo → IR"}
+      ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Marcadores temporales del pasado",
+      "hint": "ayer / anteayer / la semana pasada / el mes pasado / el año pasado / hace + tiempo / en + año",
+      "rule": {
+        "title": "MARCADORES TEMPORALES del pasado",
+        "explanation": "Los marcadores temporales nos ayudan a situar las acciones en el pasado. Con el pretérito indefinido usamos expresiones que indican un momento concreto y terminado.",
+        "sections": [
+          {
+            "subtitle": "Marcadores con 'pasado/a'",
+            "points": [
+              "<b>ayer</b> — вчера",
+              "<b>anteayer</b> — позавчера",
+              "<b>la semana pasada</b> — на прошлой неделе",
+              "<b>el mes pasado</b> — в прошлом месяце",
+              "<b>el año pasado</b> — в прошлом году",
+              "<b>el verano pasado</b> — прошлым летом"
+            ]
+          },
+          {
+            "subtitle": "Marcadores con 'hace' y 'en'",
+            "points": [
+              "<b>hace + tiempo</b>: hace dos días, hace una semana, hace un año — X назад",
+              "<b>en + año/mes</b>: en 2010, en mayo, en Navidad — в X году/месяце"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Ayer fui al médico.", "ru": "Вчера я ходил к врачу."},
+          {"es": "La semana pasada viajé a Barcelona.", "ru": "На прошлой неделе я ездил в Барселону."},
+          {"es": "Hace dos años terminé la universidad.", "ru": "Два года назад я закончил университет."},
+          {"es": "En 2015 me casé.", "ru": "В 2015 году я женился."}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ fui al dentista.", "answer": "Ayer"},
+        {"sentence": "Terminé el proyecto ___ pasada.", "answer": "la semana"},
+        {"sentence": "Viajé a Italia ___ dos años.", "answer": "hace"},
+        {"sentence": "___ 2019 empecé a trabajar aquí.", "answer": "En"},
+        {"sentence": "___ pasado fuimos de vacaciones a la playa.", "answer": "El verano"},
+        {"sentence": "Conocí a mi esposa ___ cinco años.", "answer": "hace"},
+        {"sentence": "___ compré un coche nuevo.", "answer": "Anteayer"},
+        {"sentence": "Nació ___ 1990.", "answer": "en"},
+        {"sentence": "___ mes pasado cambié de trabajo.", "answer": "El"},
+        {"sentence": "Empecé a estudiar español ___ un año.", "answer": "hace"},
+        {"sentence": "___ fui a una fiesta.", "answer": "Ayer"},
+        {"sentence": "Se casaron ___ 2018.", "answer": "en"},
+        {"sentence": "___ pasada no trabajé.", "answer": "La semana"},
+        {"sentence": "Terminé la carrera ___ tres años.", "answer": "hace"},
+        {"sentence": "___ pasado viajé mucho.", "answer": "El año"},
+        {"sentence": "Me mudé a esta ciudad ___ 2015.", "answer": "en"},
+        {"sentence": "___ por la noche cené con mis amigos.", "answer": "Ayer"},
+        {"sentence": "Aprendí a conducir ___ diez años.", "answer": "hace"},
+        {"sentence": "___ pasado hizo mucho frío.", "answer": "El invierno"},
+        {"sentence": "La empresa se fundó ___ 2005.", "answer": "en"},
+        {"sentence": "___ no fui a trabajar.", "answer": "Anteayer"},
+        {"sentence": "Conocí a Pedro ___ dos meses.", "answer": "hace"},
+        {"sentence": "___ pasada fui al cine.", "answer": "La semana"},
+        {"sentence": "Publicó su primer libro ___ 2010.", "answer": "en"},
+        {"sentence": "___ pasado celebramos su cumpleaños.", "answer": "El mes"},
+        {"sentence": "Empecé este curso ___ tres semanas.", "answer": "hace"},
+        {"sentence": "___ tuve una reunión importante.", "answer": "Ayer"},
+        {"sentence": "Se divorciaron ___ 2020.", "answer": "en"},
+        {"sentence": "___ pasada llovió mucho.", "answer": "La semana"},
+        {"sentence": "Acabé el libro ___ dos días.", "answer": "hace"},
+        {"sentence": "___ pasado fuimos a esquiar.", "answer": "El invierno"},
+        {"sentence": "La película se estrenó ___ 2019.", "answer": "en"},
+        {"sentence": "___ comí demasiado.", "answer": "Ayer"},
+        {"sentence": "Visité París ___ cinco años.", "answer": "hace"},
+        {"sentence": "___ pasada empecé el gimnasio.", "answer": "La semana"},
+        {"sentence": "Obtuve el título ___ 2017.", "answer": "en"},
+        {"sentence": "___ pasado ahorramos mucho dinero.", "answer": "El año"},
+        {"sentence": "Compré esta casa ___ diez años.", "answer": "hace"},
+        {"sentence": "___ por la mañana fui a correr.", "answer": "Ayer"},
+        {"sentence": "Nació su hijo ___ 2021.", "answer": "en"},
+        {"sentence": "___ tuve un accidente.", "answer": "Anteayer"},
+        {"sentence": "Dejé de fumar ___ seis meses.", "answer": "hace"},
+        {"sentence": "___ pasado trabajé mucho.", "answer": "El mes"},
+        {"sentence": "Ganó el premio ___ 2018.", "answer": "en"},
+        {"sentence": "___ pasada no dormí bien.", "answer": "La semana"},
+        {"sentence": "Empezó a llover ___ una hora.", "answer": "hace"},
+        {"sentence": "___ vi una película muy buena.", "answer": "Ayer"},
+        {"sentence": "Se jubilaron ___ 2019.", "answer": "en"},
+        {"sentence": "___ pasado hicimos un viaje largo.", "answer": "El verano"},
+        {"sentence": "Perdí mi cartera ___ tres días.", "answer": "hace"},
+        {"sentence": "___ por la tarde estudié.", "answer": "Ayer"},
+        {"sentence": "Publicaron el artículo ___ 2020.", "answer": "en"},
+        {"sentence": "___ pasada hablé con mi madre.", "answer": "La semana"},
+        {"sentence": "Conocí a María ___ muchos años.", "answer": "hace"},
+        {"sentence": "___ pasado cambié de casa.", "answer": "El año"},
+        {"sentence": "Firmaron el contrato ___ mayo.", "answer": "en"},
+        {"sentence": "___ cené solo.", "answer": "Anteayer"},
+        {"sentence": "Terminé de leer el libro ___ una semana.", "answer": "hace"},
+        {"sentence": "___ hablé con el jefe.", "answer": "Ayer"},
+        {"sentence": "Empezó la pandemia ___ 2020.", "answer": "en"}
+      ],
+      "microTests": [
+        {"sentence": "___ fui al médico.", "answer": "Ayer", "hint": "¿Cuándo? El día anterior a hoy"},
+        {"sentence": "Viajé a Italia ___ dos años.", "answer": "hace", "hint": "___ + cantidad de tiempo = X tiempo atrás"},
+        {"sentence": "___ 2019 me casé.", "answer": "En", "hint": "___ + año específico"},
+        {"sentence": "___ pasada fui al cine.", "answer": "La semana", "hint": "La semana anterior a esta"},
+        {"sentence": "___ pasado viajé mucho.", "answer": "El año", "hint": "El año anterior a este"},
+        {"sentence": "Conocí a Pedro ___ tres meses.", "answer": "hace", "hint": "___ + cantidad de tiempo"},
+        {"sentence": "___ no fui a trabajar.", "answer": "Anteayer", "hint": "Dos días antes de hoy"},
+        {"sentence": "Nació ___ 1990.", "answer": "en", "hint": "___ + año de nacimiento"},
+        {"sentence": "___ pasado cambié de trabajo.", "answer": "El mes", "hint": "El mes anterior a este"},
+        {"sentence": "Empecé a estudiar ___ un año.", "answer": "hace", "hint": "___ + tiempo transcurrido"}
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Expresiones de duración: desde, hasta, durante, de...a",
+      "hint": "desde / hasta / durante / de / a",
+      "rule": {
+        "title": "Expresiones de DURACIÓN",
+        "explanation": "Para hablar de la duración de acciones o períodos en el pasado, usamos diferentes preposiciones según queramos indicar el inicio, el final, o la extensión del tiempo.",
+        "sections": [
+          {
+            "subtitle": "DESDE — punto de inicio (desde cuándo)",
+            "points": [
+              "Indica el <b>comienzo</b> de una acción o período",
+              "Vivo en Madrid <b>desde</b> 2015 — Живу в Мадриде с 2015 года",
+              "Estudio español <b>desde</b> septiembre — Учу испанский с сентября"
+            ]
+          },
+          {
+            "subtitle": "HASTA — punto final (hasta cuándo)",
+            "points": [
+              "Indica el <b>final</b> de una acción o período",
+              "Trabajé allí <b>hasta</b> 2020 — Работал там до 2020 года",
+              "Viví con mis padres <b>hasta</b> los 25 años — Жил с родителями до 25 лет"
+            ]
+          },
+          {
+            "subtitle": "DURANTE — extensión del tiempo",
+            "points": [
+              "Indica <b>cuánto tiempo</b> duró algo",
+              "Estudié <b>durante</b> tres años — Учился в течение трёх лет",
+              "Vivimos allí <b>durante</b> un mes — Жили там в течение месяца"
+            ]
+          },
+          {
+            "subtitle": "DE...A — período con inicio y final",
+            "points": [
+              "Indica un período completo: inicio → final",
+              "Trabajé <b>de</b> 2010 <b>a</b> 2015 — Работал с 2010 по 2015",
+              "Viví en París <b>de</b> enero <b>a</b> mayo — Жил в Париже с января по май"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Trabajo aquí desde 2018.", "ru": "Работаю здесь с 2018 года."},
+          {"es": "Estudié hasta las diez de la noche.", "ru": "Я учился до десяти вечера."},
+          {"es": "Viví en Londres durante dos años.", "ru": "Я жил в Лондоне два года."},
+          {"es": "Trabajé en esa empresa de 2015 a 2020.", "ru": "Я работал в той компании с 2015 по 2020."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Vivo en España ___ 2015.", "answer": "desde"},
+        {"sentence": "Trabajé allí ___ 2020.", "answer": "hasta"},
+        {"sentence": "Estudié español ___ tres años.", "answer": "durante"},
+        {"sentence": "Viví en París ___ 2010 ___ 2015.", "answer": "de"},
+        {"sentence": "Trabajé en un banco ___ 2006 ___ 2012.", "answer": "de"},
+        {"sentence": "Estudio chino ___ septiembre.", "answer": "desde"},
+        {"sentence": "Viví con mis padres ___ los 25 años.", "answer": "hasta"},
+        {"sentence": "Pasé ___ un año en un barco.", "answer": "durante"},
+        {"sentence": "Hago yoga ___ enero.", "answer": "desde"},
+        {"sentence": "Esperé ___ las siete.", "answer": "hasta"},
+        {"sentence": "Estudió en Cambridge ___ un año.", "answer": "durante"},
+        {"sentence": "Conozco a María ___ la universidad.", "answer": "desde"},
+        {"sentence": "No fumo ___ hace cinco años.", "answer": "desde"},
+        {"sentence": "Viví solo ___ 2020.", "answer": "hasta"},
+        {"sentence": "Estuvimos en París ___ una semana.", "answer": "durante"},
+        {"sentence": "Trabajó como periodista ___ dos años.", "answer": "durante"},
+        {"sentence": "Vivo aquí ___ febrero.", "answer": "desde"},
+        {"sentence": "Estudié ___ medianoche.", "answer": "hasta"},
+        {"sentence": "Viajamos ___ todo el verano.", "answer": "durante"},
+        {"sentence": "Tengo este coche ___ 2018.", "answer": "desde"},
+        {"sentence": "Trabajé ___ las cinco de la tarde.", "answer": "hasta"},
+        {"sentence": "Estuve enfermo ___ dos semanas.", "answer": "durante"},
+        {"sentence": "Somos amigos ___ el colegio.", "answer": "desde"},
+        {"sentence": "Esperé en la cola ___ una hora.", "answer": "durante"},
+        {"sentence": "Vivió en casa de sus abuelos ___ los 15 años.", "answer": "hasta"},
+        {"sentence": "Estuvo en el hospital ___ dos meses.", "answer": "durante"},
+        {"sentence": "Trabajo en esta empresa ___ 2010.", "answer": "desde"},
+        {"sentence": "El concierto duró ___ tres horas.", "answer": "durante"},
+        {"sentence": "Estudié francés ___ 2005 ___ 2010.", "answer": "de"},
+        {"sentence": "No como carne ___ hace un año.", "answer": "desde"},
+        {"sentence": "Viví en Italia ___ mayo.", "answer": "hasta"},
+        {"sentence": "Llovió ___ toda la noche.", "answer": "durante"},
+        {"sentence": "Conozco a Juan ___ hace diez años.", "answer": "desde"},
+        {"sentence": "Estuve de vacaciones ___ agosto.", "answer": "hasta"},
+        {"sentence": "Trabajé ___ muchas horas.", "answer": "durante"},
+        {"sentence": "Vivo con mi pareja ___ 2019.", "answer": "desde"},
+        {"sentence": "El curso dura ___ enero ___ junio.", "answer": "de"},
+        {"sentence": "Esperé ___ que llegaste.", "answer": "hasta"},
+        {"sentence": "Estudié ___ toda la tarde.", "answer": "durante"},
+        {"sentence": "No veo a mi hermano ___ Navidad.", "answer": "desde"},
+        {"sentence": "Me quedé ___ el final de la película.", "answer": "hasta"},
+        {"sentence": "Viajé ___ dos meses por Europa.", "answer": "durante"},
+        {"sentence": "Tengo dolor de cabeza ___ ayer.", "answer": "desde"},
+        {"sentence": "Trabajó ___ los 65 años.", "answer": "hasta"},
+        {"sentence": "Estuvo lloviendo ___ todo el día.", "answer": "durante"},
+        {"sentence": "Estudio en esta universidad ___ 2020.", "answer": "desde"},
+        {"sentence": "Vivimos en Londres ___ 2015 ___ 2018.", "answer": "de"},
+        {"sentence": "Esperé ___ las nueve.", "answer": "hasta"},
+        {"sentence": "Caminamos ___ dos horas.", "answer": "durante"},
+        {"sentence": "Toco el piano ___ los 8 años.", "answer": "desde"},
+        {"sentence": "Estudié ___ aprobar el examen.", "answer": "hasta"},
+        {"sentence": "Dormí ___ diez horas.", "answer": "durante"},
+        {"sentence": "No como dulces ___ enero.", "answer": "desde"},
+        {"sentence": "Trabajé ___ muy tarde.", "answer": "hasta"},
+        {"sentence": "Estuvimos hablando ___ horas.", "answer": "durante"},
+        {"sentence": "Hago deporte ___ hace tres meses.", "answer": "desde"},
+        {"sentence": "Viví con mis padres ___ que me casé.", "answer": "hasta"},
+        {"sentence": "El viaje duró ___ cinco horas.", "answer": "durante"},
+        {"sentence": "Trabajo aquí ___ 2017.", "answer": "desde"},
+        {"sentence": "Estudié medicina ___ 2010 ___ 2016.", "answer": "de"}
+      ],
+      "microTests": [
+        {"sentence": "Vivo aquí ___ 2015.", "answer": "desde", "hint": "¿Desde cuándo? Punto de inicio"},
+        {"sentence": "Trabajé allí ___ 2020.", "answer": "hasta", "hint": "¿Hasta cuándo? Punto final"},
+        {"sentence": "Estudié ___ tres años.", "answer": "durante", "hint": "¿Cuánto tiempo? Extensión"},
+        {"sentence": "Viví en París ___ 2010 ___ 2015.", "answer": "de", "hint": "Período: inicio → final (___ ... a)"},
+        {"sentence": "Hago yoga ___ enero.", "answer": "desde", "hint": "¿Desde cuándo empezaste?"},
+        {"sentence": "Esperé ___ las siete.", "answer": "hasta", "hint": "¿Hasta qué hora?"},
+        {"sentence": "Pasé ___ un mes en Italia.", "answer": "durante", "hint": "¿Cuánto tiempo pasaste?"},
+        {"sentence": "Conozco a María ___ la universidad.", "answer": "desde", "hint": "¿Desde qué momento?"},
+        {"sentence": "Viví solo ___ los 30 años.", "answer": "hasta", "hint": "¿Hasta qué edad?"},
+        {"sentence": "Estudié ___ toda la noche.", "answer": "durante", "hint": "¿Cuánto tiempo estudiaste?"}
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Empezar vs Empezar a + infinitivo",
+      "hint": "empezó / empezó a",
+      "rule": {
+        "title": "EMPEZAR vs EMPEZAR A + infinitivo",
+        "explanation": "El verbo EMPEZAR puede usarse solo o seguido de A + infinitivo. La diferencia está en lo que sigue al verbo.",
+        "sections": [
+          {
+            "subtitle": "EMPEZAR + sustantivo/complemento",
+            "points": [
+              "Cuando sigue un <b>sustantivo</b>, usamos solo EMPEZAR",
+              "Empezó <b>la carrera</b> en 2006 — Начал учёбу в 2006",
+              "Empezamos <b>el curso</b> en septiembre — Мы начали курс в сентябре",
+              "Empezó <b>su primer trabajo</b> a los 18 años"
+            ]
+          },
+          {
+            "subtitle": "EMPEZAR A + infinitivo",
+            "points": [
+              "Cuando sigue un <b>verbo en infinitivo</b>, usamos EMPEZAR A",
+              "Empezó <b>a estudiar</b> en 2006 — Начал учиться в 2006",
+              "Empezamos <b>a trabajar</b> a las ocho — Мы начали работать в восемь",
+              "Empezó <b>a llover</b> — Начался дождь (начало лить)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Nicolás empezó a estudiar en la universidad en 2003.", "ru": "Николас начал учиться в университете в 2003 году."},
+          {"es": "Damián empezó la carrera en 2006.", "ru": "Дамиан начал учёбу в 2006 году."},
+          {"es": "Rosa empezó a actuar en películas a los 10 años.", "ru": "Роса начала сниматься в кино в 10 лет."},
+          {"es": "Empezamos el proyecto la semana pasada.", "ru": "Мы начали проект на прошлой неделе."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Nicolás ___ estudiar en la universidad en 2003.", "answer": "empezó a"},
+        {"sentence": "Damián ___ la carrera en 2006.", "answer": "empezó"},
+        {"sentence": "Germán y Clara ___ salir hace tres años.", "answer": "empezaron a"},
+        {"sentence": "Pablo ___ trabajar como traductor en 2010.", "answer": "empezó a"},
+        {"sentence": "Rosa ___ actuar en películas a los 10 años.", "answer": "empezó a"},
+        {"sentence": "Yo ___ el curso el mes pasado.", "answer": "empecé"},
+        {"sentence": "Ella ___ pintar cuando era muy joven.", "answer": "empezó a"},
+        {"sentence": "Nosotros ___ las clases en septiembre.", "answer": "empezamos"},
+        {"sentence": "Él ___ interesarse por el cine de pequeño.", "answer": "empezó a"},
+        {"sentence": "Ellos ___ la carrera juntos.", "answer": "empezaron"},
+        {"sentence": "Tú ___ aprender español hace dos años.", "answer": "empezaste a"},
+        {"sentence": "Vosotros ___ el proyecto en enero.", "answer": "empezasteis"},
+        {"sentence": "Yo ___ estudiar medicina en 2015.", "answer": "empecé a"},
+        {"sentence": "Ella ___ su primer trabajo a los 18 años.", "answer": "empezó"},
+        {"sentence": "Nosotros ___ vivir juntos el año pasado.", "answer": "empezamos a"},
+        {"sentence": "Él ___ el libro ayer.", "answer": "empezó"},
+        {"sentence": "Ellas ___ correr todas las mañanas.", "answer": "empezaron a"},
+        {"sentence": "Yo ___ la dieta el lunes.", "answer": "empecé"},
+        {"sentence": "Tú ___ trabajar muy joven.", "answer": "empezaste a"},
+        {"sentence": "María ___ sus estudios en 2018.", "answer": "empezó"},
+        {"sentence": "Nosotros ___ hacer ejercicio.", "answer": "empezamos a"},
+        {"sentence": "El concierto ___ a las nueve.", "answer": "empezó"},
+        {"sentence": "Ellos ___ construir la casa.", "answer": "empezaron a"},
+        {"sentence": "Yo ___ leer este libro la semana pasada.", "answer": "empecé a"},
+        {"sentence": "Ella ___ un nuevo proyecto.", "answer": "empezó"},
+        {"sentence": "Vosotros ___ preparar la cena.", "answer": "empezasteis a"},
+        {"sentence": "El bebé ___ caminar a los 11 meses.", "answer": "empezó a"},
+        {"sentence": "Nosotros ___ el viaje en Madrid.", "answer": "empezamos"},
+        {"sentence": "Tú ___ fumar muy joven.", "answer": "empezaste a"},
+        {"sentence": "La película ___ a las ocho.", "answer": "empezó"},
+        {"sentence": "Ellas ___ su negocio en 2019.", "answer": "empezaron"},
+        {"sentence": "Yo ___ entender español.", "answer": "empecé a"},
+        {"sentence": "Él ___ la reunión puntualmente.", "answer": "empezó"},
+        {"sentence": "Nosotros ___ ahorrar dinero.", "answer": "empezamos a"},
+        {"sentence": "Ella ___ llorar de repente.", "answer": "empezó a"},
+        {"sentence": "Ellos ___ el campeonato en mayo.", "answer": "empezaron"},
+        {"sentence": "Tú ___ cocinar muy bien.", "answer": "empezaste a"},
+        {"sentence": "Yo ___ mi tesis el año pasado.", "answer": "empecé"},
+        {"sentence": "El niño ___ hablar a los dos años.", "answer": "empezó a"},
+        {"sentence": "Vosotros ___ quejaros demasiado.", "answer": "empezasteis a"},
+        {"sentence": "Nosotras ___ el examen a las diez.", "answer": "empezamos"},
+        {"sentence": "Ella ___ salir con él en verano.", "answer": "empezó a"},
+        {"sentence": "Ellos ___ nevar en diciembre.", "answer": "empezó a"},
+        {"sentence": "Yo ___ preocuparme por su salud.", "answer": "empecé a"},
+        {"sentence": "La empresa ___ su actividad en 2000.", "answer": "empezó"},
+        {"sentence": "Tú ___ ir al gimnasio.", "answer": "empezaste a"},
+        {"sentence": "El partido ___ con retraso.", "answer": "empezó"},
+        {"sentence": "Nosotros ___ buscar casa.", "answer": "empezamos a"},
+        {"sentence": "Ella ___ escribir poesía de adolescente.", "answer": "empezó a"},
+        {"sentence": "Él ___ un nuevo capítulo de su vida.", "answer": "empezó"},
+        {"sentence": "Ellos ___ dudar de él.", "answer": "empezaron a"},
+        {"sentence": "Yo ___ la semana con energía.", "answer": "empecé"},
+        {"sentence": "Vosotros ___ colaborar en el proyecto.", "answer": "empezasteis a"},
+        {"sentence": "Ella ___ sentirse mejor.", "answer": "empezó a"},
+        {"sentence": "El día ___ bien.", "answer": "empezó"},
+        {"sentence": "Nosotros ___ pensar en el futuro.", "answer": "empezamos a"},
+        {"sentence": "Tú ___ tus vacaciones ayer.", "answer": "empezaste"},
+        {"sentence": "Ellas ___ reírse.", "answer": "empezaron a"},
+        {"sentence": "La historia ___ así.", "answer": "empezó"},
+        {"sentence": "Yo ___ notar cambios.", "answer": "empecé a"}
+      ],
+      "microTests": [
+        {"sentence": "Nicolás ___ estudiar en 2003.", "answer": "empezó a", "hint": "estudiar = verbo → empezar A + infinitivo"},
+        {"sentence": "Damián ___ la carrera en 2006.", "answer": "empezó", "hint": "la carrera = sustantivo → empezar + sustantivo"},
+        {"sentence": "Ella ___ actuar a los 10 años.", "answer": "empezó a", "hint": "actuar = verbo → empezar A + infinitivo"},
+        {"sentence": "Yo ___ el curso el lunes.", "answer": "empecé", "hint": "el curso = sustantivo → empezar + sustantivo"},
+        {"sentence": "Nosotros ___ vivir juntos.", "answer": "empezamos a", "hint": "vivir = verbo → empezar A + infinitivo"},
+        {"sentence": "Ellos ___ el proyecto.", "answer": "empezaron", "hint": "el proyecto = sustantivo → empezar + sustantivo"},
+        {"sentence": "Tú ___ trabajar muy joven.", "answer": "empezaste a", "hint": "trabajar = verbo → empezar A + infinitivo"},
+        {"sentence": "La película ___ a las ocho.", "answer": "empezó", "hint": "a las ocho = hora → empezar (sin 'a')"},
+        {"sentence": "Ella ___ llorar.", "answer": "empezó a", "hint": "llorar = verbo → empezar A + infinitivo"},
+        {"sentence": "Yo ___ mi tesis.", "answer": "empecé", "hint": "mi tesis = sustantivo → empezar + sustantivo"}
+      ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Relacionar acontecimientos del pasado",
+      "hint": "después / más tarde / al mes siguiente / al año siguiente",
+      "rule": {
+        "title": "RELACIONAR acontecimientos del pasado",
+        "explanation": "Para conectar eventos en una secuencia temporal usamos expresiones que indican qué pasó después de otra cosa.",
+        "sections": [
+          {
+            "subtitle": "DESPUÉS / MÁS TARDE + cantidad de tiempo",
+            "points": [
+              "Se casaron en 2016 y tres años <b>más tarde</b> se divorciaron",
+              "Nos conocimos en 2015 y seis meses <b>después</b> nos fuimos a vivir juntos",
+              "Terminé la carrera y dos años <b>después</b> hice un máster"
+            ]
+          },
+          {
+            "subtitle": "AL + período + SIGUIENTE",
+            "points": [
+              "<b>Al mes siguiente</b> encontró trabajo — В следующем месяце",
+              "<b>Al año siguiente</b> se mudaron — В следующем году",
+              "<b>A la semana siguiente</b> empezaron a salir — На следующей неделе"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Se casaron en 2016 y tres años más tarde se divorciaron.", "ru": "Они поженились в 2016, а три года спустя развелись."},
+          {"es": "Ernesto acabó la carrera en julio y al mes siguiente encontró trabajo.", "ru": "Эрнесто закончил учёбу в июле, а в следующем месяце нашёл работу."},
+          {"es": "Viví en México y después fui a Londres.", "ru": "Я жил в Мексике, а потом поехал в Лондон."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Se casaron en 2016 y tres años ___ se divorciaron.", "answer": "más tarde"},
+        {"sentence": "Nos conocimos en 2015 y seis meses ___ nos fuimos a vivir juntos.", "answer": "después"},
+        {"sentence": "Ernesto acabó la carrera en julio y al mes ___ encontró trabajo.", "answer": "siguiente"},
+        {"sentence": "Estudió en Cambridge de 2006 a 2007 y al año ___ empezó en una universidad francesa.", "answer": "siguiente"},
+        {"sentence": "Terminó la carrera en 2010 y dos años ___ hizo un máster.", "answer": "después"},
+        {"sentence": "Viví en México en 2008-2009 y ___ fui a Londres.", "answer": "después"},
+        {"sentence": "En 2016 conoció a Rosa y un año ___ se casaron.", "answer": "más tarde"},
+        {"sentence": "Empezó a trabajar en 2012 y al año ___ cambió de empresa.", "answer": "siguiente"},
+        {"sentence": "Se mudaron a Madrid y poco tiempo ___ compraron una casa.", "answer": "después"},
+        {"sentence": "Terminó el doctorado en 2015 y tres años ___ publicó un libro.", "answer": "más tarde"},
+        {"sentence": "Viajó a Kenia en 2016 y al mes ___ regresó a España.", "answer": "siguiente"},
+        {"sentence": "Dirigió su primera película en 1988 y ocho años ___ rodó su primer filme en inglés.", "answer": "después"},
+        {"sentence": "El accidente fue en 2016 y dos años ___ se despertó del coma.", "answer": "más tarde"},
+        {"sentence": "Nació en 1985 y al año ___ su familia se mudó a otra ciudad.", "answer": "siguiente"},
+        {"sentence": "Se conocieron en mayo y una semana ___ empezaron a salir.", "answer": "después"},
+        {"sentence": "Empezó la universidad y tres meses ___ la dejó.", "answer": "después"},
+        {"sentence": "Llegó a España en enero y al mes ___ encontró trabajo.", "answer": "siguiente"},
+        {"sentence": "Se divorciaron en 2015 y poco tiempo ___ él se volvió a casar.", "answer": "después"},
+        {"sentence": "Ganó el premio en 2018 y un año ___ ganó otro.", "answer": "más tarde"},
+        {"sentence": "Terminó el proyecto y a la semana ___ empezó otro.", "answer": "siguiente"},
+        {"sentence": "Publicó su primer libro y cinco años ___ escribió el segundo.", "answer": "después"},
+        {"sentence": "Se jubilaron en 2020 y meses ___ se mudaron al campo.", "answer": "más tarde"},
+        {"sentence": "Aprendió español y ___ aprendió portugués.", "answer": "después"},
+        {"sentence": "Empezó a trabajar en mayo y al año ___ le ascendieron.", "answer": "siguiente"},
+        {"sentence": "Nació su primer hijo y dos años ___ nació el segundo.", "answer": "más tarde"},
+        {"sentence": "Terminó la carrera y poco ___ encontró trabajo.", "answer": "después"},
+        {"sentence": "Llegaron en junio y al mes ___ compraron una casa.", "answer": "siguiente"},
+        {"sentence": "Se conocieron en 2010 y años ___ se casaron.", "answer": "más tarde"},
+        {"sentence": "Estudió en Madrid y ___ se fue a Barcelona.", "answer": "después"},
+        {"sentence": "Obtuvo el título y a la semana ___ empezó a trabajar.", "answer": "siguiente"},
+        {"sentence": "Vivió en París tres años y ___ volvió a España.", "answer": "después"},
+        {"sentence": "Estrenó la película y meses ___ ganó un premio.", "answer": "más tarde"},
+        {"sentence": "Empezó el curso y al mes ___ lo abandonó.", "answer": "siguiente"},
+        {"sentence": "Se separaron y poco tiempo ___ se reconciliaron.", "answer": "después"},
+        {"sentence": "Compró la empresa en 2010 y cinco años ___ la vendió.", "answer": "más tarde"},
+        {"sentence": "Terminó el máster y ___ empezó el doctorado.", "answer": "después"},
+        {"sentence": "Se mudó a Londres y al año ___ volvió.", "answer": "siguiente"},
+        {"sentence": "Publicó el artículo y semanas ___ recibió muchas críticas.", "answer": "más tarde"},
+        {"sentence": "Llegó a la ciudad y días ___ encontró apartamento.", "answer": "después"},
+        {"sentence": "Empezó a escribir el libro y al año ___ lo terminó.", "answer": "siguiente"},
+        {"sentence": "Se graduó en junio y tres meses ___ empezó a trabajar.", "answer": "después"},
+        {"sentence": "Tuvo el accidente y un año ___ se recuperó.", "answer": "más tarde"},
+        {"sentence": "Conoció a su esposa y meses ___ se casaron.", "answer": "después"},
+        {"sentence": "Abrió la tienda y al año ___ abrió otra.", "answer": "siguiente"},
+        {"sentence": "Dejó el trabajo y poco ___ encontró otro mejor.", "answer": "después"},
+        {"sentence": "Empezó la dieta y semanas ___ perdió 5 kilos.", "answer": "más tarde"},
+        {"sentence": "Se fue de casa y ___ alquiló un apartamento.", "answer": "después"},
+        {"sentence": "Firmó el contrato y a la semana ___ empezó.", "answer": "siguiente"},
+        {"sentence": "Escribió la novela y años ___ la adaptaron al cine.", "answer": "más tarde"},
+        {"sentence": "Viajó a Japón y ___ visitó China.", "answer": "después"},
+        {"sentence": "Aprobó el examen y al día ___ lo celebró.", "answer": "siguiente"},
+        {"sentence": "Rompieron en 2018 y meses ___ volvieron.", "answer": "más tarde"},
+        {"sentence": "Terminó la reunión y ___ fue a comer.", "answer": "después"},
+        {"sentence": "Llegó el paquete y al día ___ lo abrió.", "answer": "siguiente"},
+        {"sentence": "Compró el coche y un año ___ lo vendió.", "answer": "más tarde"},
+        {"sentence": "Empezó a llover y ___ granizó.", "answer": "después"},
+        {"sentence": "Se operó y a los días ___ salió del hospital.", "answer": "siguientes"},
+        {"sentence": "Pidió el préstamo y semanas ___ se lo concedieron.", "answer": "más tarde"},
+        {"sentence": "Envió el currículum y ___ le llamaron.", "answer": "después"},
+        {"sentence": "Presentó el proyecto y al mes ___ lo aprobaron.", "answer": "siguiente"}
+      ],
+      "microTests": [
+        {"sentence": "Se casaron en 2016 y tres años ___ se divorciaron.", "answer": "más tarde", "hint": "Tres años ___ = tres años después"},
+        {"sentence": "Nos conocimos y seis meses ___ empezamos a salir.", "answer": "después", "hint": "Seis meses ___ = posteriormente"},
+        {"sentence": "Acabó en julio y al mes ___ encontró trabajo.", "answer": "siguiente", "hint": "Al mes ___ = el mes posterior"},
+        {"sentence": "Terminó la carrera y dos años ___ hizo un máster.", "answer": "después", "hint": "Dos años ___ = dos años más tarde"},
+        {"sentence": "Empezó en 2012 y al año ___ cambió de empresa.", "answer": "siguiente", "hint": "Al año ___ = el año posterior"},
+        {"sentence": "Conoció a Rosa y un año ___ se casaron.", "answer": "más tarde", "hint": "Un año ___ = posteriormente"},
+        {"sentence": "Se mudaron y poco tiempo ___ compraron casa.", "answer": "después", "hint": "Poco tiempo ___ = poco después"},
+        {"sentence": "Nació en 1985 y al año ___ se mudaron.", "answer": "siguiente", "hint": "Al año ___ = el año posterior"},
+        {"sentence": "Se conocieron y una semana ___ empezaron a salir.", "answer": "después", "hint": "Una semana ___ = posteriormente"},
+        {"sentence": "Ganó en 2018 y meses ___ ganó otro.", "answer": "más tarde", "hint": "Meses ___ = meses después"}
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Verbos de logros y éxitos",
+      "hint": "ganar / recibir / obtener / convertirse en",
+      "rule": {
+        "title": "Verbos de LOGROS y éxitos",
+        "explanation": "Para hablar de logros y éxitos en la vida de una persona, usamos verbos específicos que se combinan con diferentes complementos.",
+        "sections": [
+          {
+            "subtitle": "GANAR — выигрывать",
+            "points": [
+              "Ganar + competición/premio: <b>ganar</b> el Mundial, las elecciones, un premio, una medalla",
+              "Ganó el Premio Nobel — Получил Нобелевскую премию",
+              "Ganaron el Mundial — Выиграли чемпионат мира"
+            ]
+          },
+          {
+            "subtitle": "RECIBIR — получать",
+            "points": [
+              "Recibir + premio/reconocimiento: <b>recibir</b> un premio, una medalla, un homenaje",
+              "Recibió el Premio Grammy — Получил премию Грэмми"
+            ]
+          },
+          {
+            "subtitle": "OBTENER — получать, добиваться",
+            "points": [
+              "Obtener + resultado/título: <b>obtener</b> un título, el primer puesto, buenos resultados",
+              "Obtuvo el título de campeón — Получил титул чемпиона"
+            ]
+          },
+          {
+            "subtitle": "CONVERTIRSE EN — становиться",
+            "points": [
+              "Convertirse en + profesión/estado: <b>convertirse en</b> presidente, campeón, estrella",
+              "Se convirtió en el número uno — Стал номером один"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "España ganó el Mundial de Fútbol en 2010.", "ru": "Испания выиграла чемпионат мира по футболу в 2010."},
+          {"es": "César Milstein recibió el Premio Nobel de Medicina.", "ru": "Сесар Мильштейн получил Нобелевскую премию по медицине."},
+          {"es": "Obtuvo el primer puesto en la competición.", "ru": "Он занял первое место на соревновании."},
+          {"es": "Se convirtió en el primer latinoamericano en ganar ese premio.", "ru": "Он стал первым латиноамериканцем, получившим эту награду."}
+        ]
+      },
+      "questions": [
+        {"sentence": "España ___ el Mundial de Fútbol en 2010.", "answer": "ganó"},
+        {"sentence": "César Milstein ___ el Premio Nobel de Medicina en 1984.", "answer": "recibió"},
+        {"sentence": "El atleta ___ el primer puesto en la competición.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en el primer latinoamericano número uno del mundo.", "answer": "convirtió"},
+        {"sentence": "El equipo ___ la medalla de oro.", "answer": "ganó"},
+        {"sentence": "La actriz ___ un Óscar por su actuación.", "answer": "recibió"},
+        {"sentence": "El científico ___ resultados extraordinarios.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en una estrella de cine.", "answer": "convirtió"},
+        {"sentence": "El partido político ___ las elecciones.", "answer": "ganó"},
+        {"sentence": "El director ___ el premio a la mejor película.", "answer": "recibió"},
+        {"sentence": "El estudiante ___ la mejor nota de la clase.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en presidente a los 45 años.", "answer": "convirtió"},
+        {"sentence": "El tenista ___ cinco Grand Slams.", "answer": "ganó"},
+        {"sentence": "La escritora ___ el Premio Cervantes.", "answer": "recibió"},
+        {"sentence": "La empresa ___ beneficios récord.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en la mujer más rica del país.", "answer": "convirtió"},
+        {"sentence": "El ciclista ___ el Tour de Francia.", "answer": "ganó"},
+        {"sentence": "El músico ___ un Grammy Latino.", "answer": "recibió"},
+        {"sentence": "El investigador ___ una beca importante.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en un símbolo de la lucha social.", "answer": "convirtió"},
+        {"sentence": "La selección ___ el campeonato europeo.", "answer": "ganó"},
+        {"sentence": "El artista ___ un homenaje en su ciudad natal.", "answer": "recibió"},
+        {"sentence": "El candidato ___ el apoyo de los votantes.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en director de la empresa.", "answer": "convirtió"},
+        {"sentence": "El boxeador ___ el título mundial.", "answer": "ganó"},
+        {"sentence": "La organización ___ el Premio Nobel de la Paz.", "answer": "recibió"},
+        {"sentence": "El proyecto ___ financiación del gobierno.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en el jugador más valioso.", "answer": "convirtió"},
+        {"sentence": "El nadador ___ tres medallas olímpicas.", "answer": "ganó"},
+        {"sentence": "El actor ___ críticas muy positivas.", "answer": "recibió"},
+        {"sentence": "La película ___ varios premios Goya.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en una leyenda del deporte.", "answer": "convirtió"},
+        {"sentence": "El cantante ___ el concurso de Eurovisión.", "answer": "ganó"},
+        {"sentence": "La científica ___ reconocimiento internacional.", "answer": "recibió"},
+        {"sentence": "El abogado ___ la victoria en el juicio.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en campeona mundial.", "answer": "convirtió"},
+        {"sentence": "El equipo de baloncesto ___ la liga.", "answer": "ganó"},
+        {"sentence": "El poeta ___ el premio más importante de su país.", "answer": "recibió"},
+        {"sentence": "La empresa ___ permiso para construir.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en el actor mejor pagado de Hollywood.", "answer": "convirtió"},
+        {"sentence": "El ajedrecista ___ el campeonato mundial.", "answer": "ganó"},
+        {"sentence": "El hospital ___ una donación millonaria.", "answer": "recibió"},
+        {"sentence": "El político ___ la mayoría de votos.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en un referente para los jóvenes.", "answer": "convirtió"},
+        {"sentence": "La gimnasta ___ la medalla de plata.", "answer": "ganó"},
+        {"sentence": "El arquitecto ___ el encargo más importante de su carrera.", "answer": "recibió"},
+        {"sentence": "El país ___ su independencia en 1821.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en la primera mujer en ocupar ese cargo.", "answer": "convirtió"},
+        {"sentence": "El piloto ___ la carrera de Fórmula 1.", "answer": "ganó"},
+        {"sentence": "La fundación ___ apoyo de muchas celebridades.", "answer": "recibió"},
+        {"sentence": "El alumno ___ una calificación excelente.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en millonario antes de los 30.", "answer": "convirtió"},
+        {"sentence": "El equipo de fútbol ___ la Copa del Rey.", "answer": "ganó"},
+        {"sentence": "El periodista ___ amenazas por su trabajo.", "answer": "recibió"},
+        {"sentence": "La investigación ___ conclusiones sorprendentes.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en el artista más vendido del año.", "answer": "convirtió"},
+        {"sentence": "El golfista ___ el Masters de Augusta.", "answer": "ganó"},
+        {"sentence": "El voluntario ___ las gracias de toda la comunidad.", "answer": "recibió"},
+        {"sentence": "La start-up ___ inversión de varios millones.", "answer": "obtuvo"},
+        {"sentence": "Se ___ en un icono de la moda.", "answer": "convirtió"}
+      ],
+      "microTests": [
+        {"sentence": "España ___ el Mundial en 2010.", "answer": "ganó", "hint": "Ganar + competición (Mundial)"},
+        {"sentence": "___ el Premio Nobel de Medicina.", "answer": "Recibió", "hint": "Recibir + premio"},
+        {"sentence": "___ el primer puesto.", "answer": "Obtuvo", "hint": "Obtener + resultado/posición"},
+        {"sentence": "Se ___ en presidente.", "answer": "convirtió", "hint": "Convertirse en + cargo/profesión"},
+        {"sentence": "El equipo ___ la medalla de oro.", "answer": "ganó", "hint": "Ganar + medalla"},
+        {"sentence": "La actriz ___ un Óscar.", "answer": "recibió", "hint": "Recibir + premio"},
+        {"sentence": "___ resultados extraordinarios.", "answer": "Obtuvo", "hint": "Obtener + resultados"},
+        {"sentence": "Se ___ en estrella de cine.", "answer": "convirtió", "hint": "Convertirse en + profesión/estado"},
+        {"sentence": "El partido ___ las elecciones.", "answer": "ganó", "hint": "Ganar + elecciones"},
+        {"sentence": "___ reconocimiento internacional.", "answer": "Recibió", "hint": "Recibir + reconocimiento"}
+      ]
+    }
+  ]
 }

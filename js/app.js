@@ -4847,7 +4847,7 @@ function hideAllScreens() {
         'exercisePreviewMenu', 'grammarRuleScreen', 'microTestsScreen',
         'referenceMainMenu', 'grammarSubMenu', 'vocabularyScreen',
         'ejerciciosGramaticaRefScreen',
-        'verbosMenu', 'verbosCategoryMenu', 'verbosTestScreen', 'verbosFeedbackScreen', 'verbosResultsScreen'
+        'verbosMenu', 'verbosCategoryMenu', 'verbosOtrasMenu', 'verbosTestScreen', 'verbosFeedbackScreen', 'verbosResultsScreen'
     ];
     screens.forEach(id => {
         const el = document.getElementById(id);
@@ -6765,6 +6765,131 @@ function showVerbosCategoryMenu(timeId) {
     saveNavigationState('verbosCategoryMenu');
 }
 
+// Show Otras submenu (for subcategories like reflexivos)
+let currentVerbosOtrasSubcategory = null;
+
+function showVerbosOtrasMenu() {
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('verbosOtrasMenu').classList.remove('hidden');
+
+    // Update title with time name
+    const unidadData = vocabularyData[currentUnidad];
+    const tiempo = unidadData.verbos.tiempos.find(t => t.id === currentVerbosTime);
+    document.getElementById('verbosOtrasTitle').textContent = tiempo ? tiempo.nombre : currentVerbosTime;
+
+    // Render subcategory cards
+    renderVerbosOtrasCards();
+    updateVerbosOtrasProgress();
+    saveNavigationState('verbosOtrasMenu');
+}
+
+// Render subcategory cards for Otras
+function renderVerbosOtrasCards() {
+    const container = document.getElementById('verbosOtrasContainer');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const unidadData = vocabularyData[currentUnidad];
+    if (!unidadData || !unidadData.verbos || !unidadData.verbos.tiempos) {
+        container.innerHTML = '<p style="color: white; text-align: center;">Нет данных</p>';
+        return;
+    }
+
+    const tiempo = unidadData.verbos.tiempos.find(t => t.id === currentVerbosTime);
+    if (!tiempo || !tiempo.otras || tiempo.otras.length === 0) {
+        container.innerHTML = '<p style="color: white; text-align: center;">Нет подкатегорий для этого времени</p>';
+        return;
+    }
+
+    // tiempo.otras is now an array of subcategories
+    tiempo.otras.forEach(subcategory => {
+        const progress = calculateVerbosOtrasSubcategoryProgress(subcategory.id);
+        const verbCount = subcategory.verbos ? subcategory.verbos.length : 0;
+
+        const card = document.createElement('div');
+        card.className = 'category-card';
+        card.style.cursor = 'pointer';
+        card.onclick = () => startVerbosOtrasTest(subcategory.id);
+
+        card.innerHTML = `
+            <div class="category-header">
+                <span class="category-title">📙 ${subcategory.nombre}</span>
+            </div>
+            <p style="color: #aaa; margin: 5px 0;">${verbCount} глаголов</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" style="width: ${progress}%; background: #e67e22;"></div>
+            </div>
+            <p class="progress-text">${progress}%</p>
+        `;
+
+        container.appendChild(card);
+    });
+}
+
+// Calculate progress for an Otras subcategory
+function calculateVerbosOtrasSubcategoryProgress(subcategoryId) {
+    const profile = getActiveProfile();
+    if (!profile || !profile.progress[currentUnidad] || !profile.progress[currentUnidad].verbos) {
+        return 0;
+    }
+
+    const verbosProgress = profile.progress[currentUnidad].verbos[currentVerbosTime];
+    if (!verbosProgress || !verbosProgress.otras) return 0;
+
+    // otras is now an object with subcategory IDs as keys
+    return verbosProgress.otras[subcategoryId] || 0;
+}
+
+// Update average progress for Otras
+function updateVerbosOtrasProgress() {
+    const unidadData = vocabularyData[currentUnidad];
+    const tiempo = unidadData?.verbos?.tiempos?.find(t => t.id === currentVerbosTime);
+
+    if (!tiempo || !tiempo.otras || tiempo.otras.length === 0) {
+        document.getElementById('verbos-otras-avg-progress-text').textContent = '0';
+        return;
+    }
+
+    let totalProgress = 0;
+    tiempo.otras.forEach(subcategory => {
+        totalProgress += calculateVerbosOtrasSubcategoryProgress(subcategory.id);
+    });
+
+    const avgProgress = Math.round(totalProgress / tiempo.otras.length);
+    document.getElementById('verbos-otras-avg-progress-text').textContent = avgProgress;
+}
+
+// Start test for an Otras subcategory
+function startVerbosOtrasTest(subcategoryId) {
+    currentVerbosOtrasSubcategory = subcategoryId;
+
+    const unidadData = vocabularyData[currentUnidad];
+    const tiempo = unidadData.verbos.tiempos.find(t => t.id === currentVerbosTime);
+    const subcategory = tiempo.otras.find(s => s.id === subcategoryId);
+
+    if (!subcategory || !subcategory.verbos || subcategory.verbos.length === 0) {
+        alert('Нет глаголов для этой подкатегории');
+        return;
+    }
+
+    // Select random verbs for test
+    const shuffled = [...subcategory.verbos].sort(() => Math.random() - 0.5);
+    verbosTestVerbs = shuffled.slice(0, Math.min(VERBOS_PER_TEST, shuffled.length));
+    verbosCurrentIndex = 0;
+    verbosTestResults = [];
+
+    // Update total number display
+    document.getElementById('verbosTotalNum').textContent = verbosTestVerbs.length;
+
+    // Show test screen and load first verb
+    hideAllScreens();
+    showUserBadge();
+    document.getElementById('verbosTestScreen').classList.remove('hidden');
+
+    loadCurrentVerbo();
+}
+
 // Update progress for each verb category
 function updateVerbosCategoryProgress(timeId) {
     const categories = ['regulares', 'irregulares', 'otras'];
@@ -6791,7 +6916,19 @@ function calculateVerbosTimeProgress(timeId) {
     // Average of all categories (33% each)
     const regProgress = verbosProgress.regulares || 0;
     const irregProgress = verbosProgress.irregulares || 0;
-    const otrasProgress = verbosProgress.otras || 0;
+
+    // For otras, calculate average from subcategories
+    let otrasProgress = 0;
+    if (verbosProgress.otras && typeof verbosProgress.otras === 'object') {
+        const subcategoryIds = Object.keys(verbosProgress.otras);
+        if (subcategoryIds.length > 0) {
+            let total = 0;
+            subcategoryIds.forEach(id => {
+                total += verbosProgress.otras[id] || 0;
+            });
+            otrasProgress = Math.round(total / subcategoryIds.length);
+        }
+    }
 
     return Math.round((regProgress + irregProgress + otrasProgress) / 3);
 }
@@ -6805,6 +6942,21 @@ function calculateVerbosCategoryProgress(timeId, category) {
 
     const verbosProgress = profile.progress[currentUnidad].verbos[timeId];
     if (!verbosProgress) return 0;
+
+    // For 'otras', calculate average of all subcategories
+    if (category === 'otras') {
+        const otrasProgress = verbosProgress.otras;
+        if (!otrasProgress || typeof otrasProgress !== 'object') return 0;
+
+        const subcategoryIds = Object.keys(otrasProgress);
+        if (subcategoryIds.length === 0) return 0;
+
+        let total = 0;
+        subcategoryIds.forEach(id => {
+            total += otrasProgress[id] || 0;
+        });
+        return Math.round(total / subcategoryIds.length);
+    }
 
     return verbosProgress[category] || 0;
 }
@@ -6855,6 +7007,7 @@ let verbosCurrentVerb = null;   // Current verb object
 // Start Verbos test
 function startVerbosTest(category) {
     currentVerbosCategory = category;
+    currentVerbosOtrasSubcategory = null; // Reset otras subcategory
 
     // Get verbs for this category
     const unidadData = vocabularyData[currentUnidad];
@@ -7094,13 +7247,22 @@ function finishVerbosTest() {
 
     const scorePercent = totalForms > 0 ? Math.round((totalCorrect / totalForms) * 100) : 0;
 
-    // Category name
-    const categoryNames = {
-        regulares: 'Verbos Regulares',
-        irregulares: 'Verbos Irregulares',
-        otras: 'Otras (Возвратные)'
-    };
-    document.getElementById('verbosResultsCategory').textContent = categoryNames[currentVerbosCategory] || currentVerbosCategory;
+    // Category name - handle otras subcategories
+    let categoryName;
+    if (currentVerbosOtrasSubcategory) {
+        // Get subcategory name from data
+        const unidadData = vocabularyData[currentUnidad];
+        const tiempo = unidadData?.verbos?.tiempos?.find(t => t.id === currentVerbosTime);
+        const subcategory = tiempo?.otras?.find(s => s.id === currentVerbosOtrasSubcategory);
+        categoryName = subcategory ? subcategory.nombre : currentVerbosOtrasSubcategory;
+    } else {
+        const categoryNames = {
+            regulares: 'Verbos Regulares',
+            irregulares: 'Verbos Irregulares'
+        };
+        categoryName = categoryNames[currentVerbosCategory] || currentVerbosCategory;
+    }
+    document.getElementById('verbosResultsCategory').textContent = categoryName;
 
     // Score display
     const scoreEl = document.getElementById('verbosResultsScore');
@@ -7133,11 +7295,28 @@ function saveVerbosTestProgress(score) {
         profile.progress[currentUnidad].verbos[currentVerbosTime] = {};
     }
 
-    const currentBest = profile.progress[currentUnidad].verbos[currentVerbosTime][currentVerbosCategory] || 0;
+    let currentBest;
 
-    if (score > currentBest) {
-        profile.progress[currentUnidad].verbos[currentVerbosTime][currentVerbosCategory] = score;
-        console.log(`Verbos progress updated: ${currentUnidad}/${currentVerbosTime}/${currentVerbosCategory} = ${score}%`);
+    // Handle otras subcategories separately
+    if (currentVerbosOtrasSubcategory) {
+        // Save to otras.subcategoryId
+        if (!profile.progress[currentUnidad].verbos[currentVerbosTime].otras) {
+            profile.progress[currentUnidad].verbos[currentVerbosTime].otras = {};
+        }
+        currentBest = profile.progress[currentUnidad].verbos[currentVerbosTime].otras[currentVerbosOtrasSubcategory] || 0;
+
+        if (score > currentBest) {
+            profile.progress[currentUnidad].verbos[currentVerbosTime].otras[currentVerbosOtrasSubcategory] = score;
+            console.log(`Verbos progress updated: ${currentUnidad}/${currentVerbosTime}/otras/${currentVerbosOtrasSubcategory} = ${score}%`);
+        }
+    } else {
+        // Save to regulares/irregulares
+        currentBest = profile.progress[currentUnidad].verbos[currentVerbosTime][currentVerbosCategory] || 0;
+
+        if (score > currentBest) {
+            profile.progress[currentUnidad].verbos[currentVerbosTime][currentVerbosCategory] = score;
+            console.log(`Verbos progress updated: ${currentUnidad}/${currentVerbosTime}/${currentVerbosCategory} = ${score}%`);
+        }
     }
 
     // Save to localStorage
@@ -7150,13 +7329,31 @@ function saveVerbosTestProgress(score) {
 
 // Retry test
 function retryVerbosTest() {
-    startVerbosTest(currentVerbosCategory);
+    if (currentVerbosOtrasSubcategory) {
+        startVerbosOtrasTest(currentVerbosOtrasSubcategory);
+    } else {
+        startVerbosTest(currentVerbosCategory);
+    }
 }
 
 // Exit test
 function exitVerbosTest() {
     if (confirm('Выйти из теста? Прогресс этой попытки не будет сохранён.')) {
         stopVerbosTimer();
+        if (currentVerbosOtrasSubcategory) {
+            showVerbosOtrasMenu();
+        } else {
+            showVerbosCategoryMenu(currentVerbosTime);
+        }
+    }
+}
+
+// Back from results screen
+function backFromVerbosResults() {
+    if (currentVerbosOtrasSubcategory) {
+        currentVerbosOtrasSubcategory = null; // Reset subcategory
+        showVerbosOtrasMenu();
+    } else {
         showVerbosCategoryMenu(currentVerbosTime);
     }
 }

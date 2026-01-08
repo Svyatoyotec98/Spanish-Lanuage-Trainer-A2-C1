@@ -640,9 +640,9 @@
                     <p class="progress-text" id="verbos-irregulares-progress-text">0%</p>
                 </div>
 
-                <div class="category-card" onclick="startVerbosTest('otras')">
+                <div class="category-card" onclick="showVerbosOtrasMenu()">
                     <div class="category-header">
-                        <span class="category-title">📙 Otras (Возвратные)</span>
+                        <span class="category-title">📙 Otras</span>
                     </div>
                     <div class="progress-bar-container">
                         <div class="progress-bar-fill" id="verbos-otras-progress-bar" style="width: 0%"></div>
@@ -652,6 +652,30 @@
             </div>
 
             <button class="btn btn-back" onclick="showVerbosMenu()" style="margin-top: 20px;">← Назад к временам</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             VERBOS OTRAS MENU (Subcategories for Otras)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="verbosOtrasMenu" class="hidden">
+            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            <h1>📙 Otras</h1>
+            <p class="subtitle" id="verbosOtrasTitle">Presente de indicativo</p>
+
+            <!-- Average Progress for Otras -->
+            <div style="margin: 20px 0; padding: 20px; background: rgba(230, 126, 34, 0.4); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.3); border-radius: 15px; color: white;">
+                <h3 style="margin: 0 0 10px 0; color: white;">📊 Прогресс Otras</h3>
+                <div style="font-size: 28px; font-weight: bold;">
+                    <span id="verbos-otras-avg-progress-text">0</span>%
+                </div>
+            </div>
+
+            <!-- Subcategories Container -->
+            <div id="verbosOtrasContainer" style="margin-top: 20px;">
+                <!-- Subcategories will be rendered dynamically -->
+            </div>
+
+            <button class="btn btn-back" onclick="showVerbosCategoryMenu(currentVerbosTime)" style="margin-top: 20px;">← Назад к категориям</button>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
@@ -747,7 +771,7 @@
 
             <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
                 <button class="btn btn-success" onclick="retryVerbosTest()">🔄 Пройти ещё раз</button>
-                <button class="btn btn-secondary" onclick="showVerbosCategoryMenu(currentVerbosTime)">← К категориям</button>
+                <button class="btn btn-secondary" onclick="backFromVerbosResults()">← Назад</button>
             </div>
         </div>
 

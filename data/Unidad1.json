@@ -3358,172 +3358,178 @@
 
         "otras": [
           {
-            "infinitivo": "levantarse",
-            "traduccion": "вставать",
-            "formas": {
-              "yo": "me levanto",
-              "tu": "te levantas",
-              "el": "se levanta",
-              "nosotros": "nos levantamos",
-              "vosotros": "os levantáis",
-              "ellos": "se levantan"
-            }
-          },
-          {
-            "infinitivo": "ducharse",
-            "traduccion": "принимать душ",
-            "formas": {
-              "yo": "me ducho",
-              "tu": "te duchas",
-              "el": "se ducha",
-              "nosotros": "nos duchamos",
-              "vosotros": "os ducháis",
-              "ellos": "se duchan"
-            }
-          },
-          {
-            "infinitivo": "vestirse",
-            "traduccion": "одеваться",
-            "formas": {
-              "yo": "me visto",
-              "tu": "te vistes",
-              "el": "se viste",
-              "nosotros": "nos vestimos",
-              "vosotros": "os vestís",
-              "ellos": "se visten"
-            }
-          },
-          {
-            "infinitivo": "acostarse",
-            "traduccion": "ложиться спать",
-            "formas": {
-              "yo": "me acuesto",
-              "tu": "te acuestas",
-              "el": "se acuesta",
-              "nosotros": "nos acostamos",
-              "vosotros": "os acostáis",
-              "ellos": "se acuestan"
-            }
-          },
-          {
-            "infinitivo": "despertarse",
-            "traduccion": "просыпаться",
-            "formas": {
-              "yo": "me despierto",
-              "tu": "te despiertas",
-              "el": "se despierta",
-              "nosotros": "nos despertamos",
-              "vosotros": "os despertáis",
-              "ellos": "se despiertan"
-            }
-          },
-          {
-            "infinitivo": "peinarse",
-            "traduccion": "причёсываться",
-            "formas": {
-              "yo": "me peino",
-              "tu": "te peinas",
-              "el": "se peina",
-              "nosotros": "nos peinamos",
-              "vosotros": "os peináis",
-              "ellos": "se peinan"
-            }
-          },
-          {
-            "infinitivo": "lavarse",
-            "traduccion": "мыться, умываться",
-            "formas": {
-              "yo": "me lavo",
-              "tu": "te lavas",
-              "el": "se lava",
-              "nosotros": "nos lavamos",
-              "vosotros": "os laváis",
-              "ellos": "se lavan"
-            }
-          },
-          {
-            "infinitivo": "afeitarse",
-            "traduccion": "бриться",
-            "formas": {
-              "yo": "me afeito",
-              "tu": "te afeitas",
-              "el": "se afeita",
-              "nosotros": "nos afeitamos",
-              "vosotros": "os afeitáis",
-              "ellos": "se afeitan"
-            }
-          },
-          {
-            "infinitivo": "maquillarse",
-            "traduccion": "краситься",
-            "formas": {
-              "yo": "me maquillo",
-              "tu": "te maquillas",
-              "el": "se maquilla",
-              "nosotros": "nos maquillamos",
-              "vosotros": "os maquilláis",
-              "ellos": "se maquillan"
-            }
-          },
-          {
-            "infinitivo": "prepararse",
-            "traduccion": "готовиться",
-            "formas": {
-              "yo": "me preparo",
-              "tu": "te preparas",
-              "el": "se prepara",
-              "nosotros": "nos preparamos",
-              "vosotros": "os preparáis",
-              "ellos": "se preparan"
-            }
-          },
-          {
-            "infinitivo": "dormirse",
-            "traduccion": "засыпать",
-            "formas": {
-              "yo": "me duermo",
-              "tu": "te duermes",
-              "el": "se duerme",
-              "nosotros": "nos dormimos",
-              "vosotros": "os dormís",
-              "ellos": "se duermen"
-            }
-          },
-          {
-            "infinitivo": "bañarse",
-            "traduccion": "купаться",
-            "formas": {
-              "yo": "me baño",
-              "tu": "te bañas",
-              "el": "se baña",
-              "nosotros": "nos bañamos",
-              "vosotros": "os bañáis",
-              "ellos": "se bañan"
-            }
-          },
-          {
-            "infinitivo": "relajarse",
-            "traduccion": "расслабляться",
-            "formas": {
-              "yo": "me relajo",
-              "tu": "te relajas",
-              "el": "se relaja",
-              "nosotros": "nos relajamos",
-              "vosotros": "os relajáis",
-              "ellos": "se relajan"
-            }
-          },
-          {
-            "infinitivo": "sentirse",
-            "traduccion": "чувствовать себя",
-            "formas": {
-              "yo": "me siento",
-              "tu": "te sientes",
-              "el": "se siente",
-              "nosotros": "nos sentimos",
-              "vosotros": "os sentís",
-              "ellos": "se sienten"
-            }
+            "id": "reflexivos",
+            "nombre": "Verbos reflexivos",
+            "verbos": [
+              {
+                "infinitivo": "levantarse",
+                "traduccion": "вставать",
+                "formas": {
+                  "yo": "me levanto",
+                  "tu": "te levantas",
+                  "el": "se levanta",
+                  "nosotros": "nos levantamos",
+                  "vosotros": "os levantáis",
+                  "ellos": "se levantan"
+                }
+              },
+              {
+                "infinitivo": "ducharse",
+                "traduccion": "принимать душ",
+                "formas": {
+                  "yo": "me ducho",
+                  "tu": "te duchas",
+                  "el": "se ducha",
+                  "nosotros": "nos duchamos",
+                  "vosotros": "os ducháis",
+                  "ellos": "se duchan"
+                }
+              },
+              {
+                "infinitivo": "vestirse",
+                "traduccion": "одеваться",
+                "formas": {
+                  "yo": "me visto",
+                  "tu": "te vistes",
+                  "el": "se viste",
+                  "nosotros": "nos vestimos",
+                  "vosotros": "os vestís",
+                  "ellos": "se visten"
+                }
+              },
+              {
+                "infinitivo": "acostarse",
+                "traduccion": "ложиться спать",
+                "formas": {
+                  "yo": "me acuesto",
+                  "tu": "te acuestas",
+                  "el": "se acuesta",
+                  "nosotros": "nos acostamos",
+                  "vosotros": "os acostáis",
+                  "ellos": "se acuestan"
+                }
+              },
+              {
+                "infinitivo": "despertarse",
+                "traduccion": "просыпаться",
+                "formas": {
+                  "yo": "me despierto",
+                  "tu": "te despiertas",
+                  "el": "se despierta",
+                  "nosotros": "nos despertamos",
+                  "vosotros": "os despertáis",
+                  "ellos": "se despiertan"
+                }
+              },
+              {
+                "infinitivo": "peinarse",
+                "traduccion": "причёсываться",
+                "formas": {
+                  "yo": "me peino",
+                  "tu": "te peinas",
+                  "el": "se peina",
+                  "nosotros": "nos peinamos",
+                  "vosotros": "os peináis",
+                  "ellos": "se peinan"
+                }
+              },
+              {
+                "infinitivo": "lavarse",
+                "traduccion": "мыться, умываться",
+                "formas": {
+                  "yo": "me lavo",
+                  "tu": "te lavas",
+                  "el": "se lava",
+                  "nosotros": "nos lavamos",
+                  "vosotros": "os laváis",
+                  "ellos": "se lavan"
+                }
+              },
+              {
+                "infinitivo": "afeitarse",
+                "traduccion": "бриться",
+                "formas": {
+                  "yo": "me afeito",
+                  "tu": "te afeitas",
+                  "el": "se afeita",
+                  "nosotros": "nos afeitamos",
+                  "vosotros": "os afeitáis",
+                  "ellos": "se afeitan"
+                }
+              },
+              {
+                "infinitivo": "maquillarse",
+                "traduccion": "краситься",
+                "formas": {
+                  "yo": "me maquillo",
+                  "tu": "te maquillas",
+                  "el": "se maquilla",
+                  "nosotros": "nos maquillamos",
+                  "vosotros": "os maquilláis",
+                  "ellos": "se maquillan"
+                }
+              },
+              {
+                "infinitivo": "prepararse",
+                "traduccion": "готовиться",
+                "formas": {
+                  "yo": "me preparo",
+                  "tu": "te preparas",
+                  "el": "se prepara",
+                  "nosotros": "nos preparamos",
+                  "vosotros": "os preparáis",
+                  "ellos": "se preparan"
+                }
+              },
+              {
+                "infinitivo": "dormirse",
+                "traduccion": "засыпать",
+                "formas": {
+                  "yo": "me duermo",
+                  "tu": "te duermes",
+                  "el": "se duerme",
+                  "nosotros": "nos dormimos",
+                  "vosotros": "os dormís",
+                  "ellos": "se duermen"
+                }
+              },
+              {
+                "infinitivo": "bañarse",
+                "traduccion": "купаться",
+                "formas": {
+                  "yo": "me baño",
+                  "tu": "te bañas",
+                  "el": "se baña",
+                  "nosotros": "nos bañamos",
+                  "vosotros": "os bañáis",
+                  "ellos": "se bañan"
+                }
+              },
+              {
+                "infinitivo": "relajarse",
+                "traduccion": "расслабляться",
+                "formas": {
+                  "yo": "me relajo",
+                  "tu": "te relajas",
+                  "el": "se relaja",
+                  "nosotros": "nos relajamos",
+                  "vosotros": "os relajáis",
+                  "ellos": "se relajan"
+                }
+              },
+              {
+                "infinitivo": "sentirse",
+                "traduccion": "чувствовать себя",
+                "formas": {
+                  "yo": "me siento",
+                  "tu": "te sientes",
+                  "el": "se siente",
+                  "nosotros": "nos sentimos",
+                  "vosotros": "os sentís",
+                  "ellos": "se sienten"
+                }
+              }
+            ]
           }
         ]
       }

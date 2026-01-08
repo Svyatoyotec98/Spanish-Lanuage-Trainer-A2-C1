@@ -2585,5 +2585,948 @@
         }
       ]
     }
-  ]
+  ],
+
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "presente",
+        "nombre": "Presente de indicativo",
+        "unlockBy": "ejercicio_3",
+
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "yo": "hablo",
+              "tu": "hablas",
+              "el": "habla",
+              "nosotros": "hablamos",
+              "vosotros": "habláis",
+              "ellos": "hablan"
+            }
+          },
+          {
+            "infinitivo": "estudiar",
+            "traduccion": "учиться",
+            "formas": {
+              "yo": "estudio",
+              "tu": "estudias",
+              "el": "estudia",
+              "nosotros": "estudiamos",
+              "vosotros": "estudiáis",
+              "ellos": "estudian"
+            }
+          },
+          {
+            "infinitivo": "trabajar",
+            "traduccion": "работать",
+            "formas": {
+              "yo": "trabajo",
+              "tu": "trabajas",
+              "el": "trabaja",
+              "nosotros": "trabajamos",
+              "vosotros": "trabajáis",
+              "ellos": "trabajan"
+            }
+          },
+          {
+            "infinitivo": "bailar",
+            "traduccion": "танцевать",
+            "formas": {
+              "yo": "bailo",
+              "tu": "bailas",
+              "el": "baila",
+              "nosotros": "bailamos",
+              "vosotros": "bailáis",
+              "ellos": "bailan"
+            }
+          },
+          {
+            "infinitivo": "cocinar",
+            "traduccion": "готовить",
+            "formas": {
+              "yo": "cocino",
+              "tu": "cocinas",
+              "el": "cocina",
+              "nosotros": "cocinamos",
+              "vosotros": "cocináis",
+              "ellos": "cocinan"
+            }
+          },
+          {
+            "infinitivo": "comprar",
+            "traduccion": "покупать",
+            "formas": {
+              "yo": "compro",
+              "tu": "compras",
+              "el": "compra",
+              "nosotros": "compramos",
+              "vosotros": "compráis",
+              "ellos": "compran"
+            }
+          },
+          {
+            "infinitivo": "escuchar",
+            "traduccion": "слушать",
+            "formas": {
+              "yo": "escucho",
+              "tu": "escuchas",
+              "el": "escucha",
+              "nosotros": "escuchamos",
+              "vosotros": "escucháis",
+              "ellos": "escuchan"
+            }
+          },
+          {
+            "infinitivo": "viajar",
+            "traduccion": "путешествовать",
+            "formas": {
+              "yo": "viajo",
+              "tu": "viajas",
+              "el": "viaja",
+              "nosotros": "viajamos",
+              "vosotros": "viajáis",
+              "ellos": "viajan"
+            }
+          },
+          {
+            "infinitivo": "necesitar",
+            "traduccion": "нуждаться",
+            "formas": {
+              "yo": "necesito",
+              "tu": "necesitas",
+              "el": "necesita",
+              "nosotros": "necesitamos",
+              "vosotros": "necesitáis",
+              "ellos": "necesitan"
+            }
+          },
+          {
+            "infinitivo": "preparar",
+            "traduccion": "готовить, подготавливать",
+            "formas": {
+              "yo": "preparo",
+              "tu": "preparas",
+              "el": "prepara",
+              "nosotros": "preparamos",
+              "vosotros": "preparáis",
+              "ellos": "preparan"
+            }
+          },
+          {
+            "infinitivo": "llamar",
+            "traduccion": "звонить, называть",
+            "formas": {
+              "yo": "llamo",
+              "tu": "llamas",
+              "el": "llama",
+              "nosotros": "llamamos",
+              "vosotros": "llamáis",
+              "ellos": "llaman"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "yo": "como",
+              "tu": "comes",
+              "el": "come",
+              "nosotros": "comemos",
+              "vosotros": "coméis",
+              "ellos": "comen"
+            }
+          },
+          {
+            "infinitivo": "beber",
+            "traduccion": "пить",
+            "formas": {
+              "yo": "bebo",
+              "tu": "bebes",
+              "el": "bebe",
+              "nosotros": "bebemos",
+              "vosotros": "bebéis",
+              "ellos": "beben"
+            }
+          },
+          {
+            "infinitivo": "leer",
+            "traduccion": "читать",
+            "formas": {
+              "yo": "leo",
+              "tu": "lees",
+              "el": "lee",
+              "nosotros": "leemos",
+              "vosotros": "leéis",
+              "ellos": "leen"
+            }
+          },
+          {
+            "infinitivo": "correr",
+            "traduccion": "бегать",
+            "formas": {
+              "yo": "corro",
+              "tu": "corres",
+              "el": "corre",
+              "nosotros": "corremos",
+              "vosotros": "corréis",
+              "ellos": "corren"
+            }
+          },
+          {
+            "infinitivo": "comprender",
+            "traduccion": "понимать",
+            "formas": {
+              "yo": "comprendo",
+              "tu": "comprendes",
+              "el": "comprende",
+              "nosotros": "comprendemos",
+              "vosotros": "comprendéis",
+              "ellos": "comprenden"
+            }
+          },
+          {
+            "infinitivo": "vender",
+            "traduccion": "продавать",
+            "formas": {
+              "yo": "vendo",
+              "tu": "vendes",
+              "el": "vende",
+              "nosotros": "vendemos",
+              "vosotros": "vendéis",
+              "ellos": "venden"
+            }
+          },
+          {
+            "infinitivo": "aprender",
+            "traduccion": "учить, изучать",
+            "formas": {
+              "yo": "aprendo",
+              "tu": "aprendes",
+              "el": "aprende",
+              "nosotros": "aprendemos",
+              "vosotros": "aprendéis",
+              "ellos": "aprenden"
+            }
+          },
+          {
+            "infinitivo": "creer",
+            "traduccion": "верить",
+            "formas": {
+              "yo": "creo",
+              "tu": "crees",
+              "el": "cree",
+              "nosotros": "creemos",
+              "vosotros": "creéis",
+              "ellos": "creen"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "vivo",
+              "tu": "vives",
+              "el": "vive",
+              "nosotros": "vivimos",
+              "vosotros": "vivís",
+              "ellos": "viven"
+            }
+          },
+          {
+            "infinitivo": "escribir",
+            "traduccion": "писать",
+            "formas": {
+              "yo": "escribo",
+              "tu": "escribes",
+              "el": "escribe",
+              "nosotros": "escribimos",
+              "vosotros": "escribís",
+              "ellos": "escriben"
+            }
+          },
+          {
+            "infinitivo": "abrir",
+            "traduccion": "открывать",
+            "formas": {
+              "yo": "abro",
+              "tu": "abres",
+              "el": "abre",
+              "nosotros": "abrimos",
+              "vosotros": "abrís",
+              "ellos": "abren"
+            }
+          },
+          {
+            "infinitivo": "recibir",
+            "traduccion": "получать",
+            "formas": {
+              "yo": "recibo",
+              "tu": "recibes",
+              "el": "recibe",
+              "nosotros": "recibimos",
+              "vosotros": "recibís",
+              "ellos": "reciben"
+            }
+          },
+          {
+            "infinitivo": "subir",
+            "traduccion": "подниматься",
+            "formas": {
+              "yo": "subo",
+              "tu": "subes",
+              "el": "sube",
+              "nosotros": "subimos",
+              "vosotros": "subís",
+              "ellos": "suben"
+            }
+          },
+          {
+            "infinitivo": "decidir",
+            "traduccion": "решать",
+            "formas": {
+              "yo": "decido",
+              "tu": "decides",
+              "el": "decide",
+              "nosotros": "decidimos",
+              "vosotros": "decidís",
+              "ellos": "deciden"
+            }
+          }
+        ],
+
+        "irregulares": [
+          {
+            "infinitivo": "ser",
+            "traduccion": "быть (характеристика)",
+            "formas": {
+              "yo": "soy",
+              "tu": "eres",
+              "el": "es",
+              "nosotros": "somos",
+              "vosotros": "sois",
+              "ellos": "son"
+            }
+          },
+          {
+            "infinitivo": "ir",
+            "traduccion": "идти, ехать",
+            "formas": {
+              "yo": "voy",
+              "tu": "vas",
+              "el": "va",
+              "nosotros": "vamos",
+              "vosotros": "vais",
+              "ellos": "van"
+            }
+          },
+          {
+            "infinitivo": "tener",
+            "traduccion": "иметь",
+            "formas": {
+              "yo": "tengo",
+              "tu": "tienes",
+              "el": "tiene",
+              "nosotros": "tenemos",
+              "vosotros": "tenéis",
+              "ellos": "tienen"
+            }
+          },
+          {
+            "infinitivo": "hacer",
+            "traduccion": "делать",
+            "formas": {
+              "yo": "hago",
+              "tu": "haces",
+              "el": "hace",
+              "nosotros": "hacemos",
+              "vosotros": "hacéis",
+              "ellos": "hacen"
+            }
+          },
+          {
+            "infinitivo": "poder",
+            "traduccion": "мочь",
+            "formas": {
+              "yo": "puedo",
+              "tu": "puedes",
+              "el": "puede",
+              "nosotros": "podemos",
+              "vosotros": "podéis",
+              "ellos": "pueden"
+            }
+          },
+          {
+            "infinitivo": "querer",
+            "traduccion": "хотеть",
+            "formas": {
+              "yo": "quiero",
+              "tu": "quieres",
+              "el": "quiere",
+              "nosotros": "queremos",
+              "vosotros": "queréis",
+              "ellos": "quieren"
+            }
+          },
+          {
+            "infinitivo": "saber",
+            "traduccion": "знать",
+            "formas": {
+              "yo": "sé",
+              "tu": "sabes",
+              "el": "sabe",
+              "nosotros": "sabemos",
+              "vosotros": "sabéis",
+              "ellos": "saben"
+            }
+          },
+          {
+            "infinitivo": "conocer",
+            "traduccion": "знать (быть знакомым)",
+            "formas": {
+              "yo": "conozco",
+              "tu": "conoces",
+              "el": "conoce",
+              "nosotros": "conocemos",
+              "vosotros": "conocéis",
+              "ellos": "conocen"
+            }
+          },
+          {
+            "infinitivo": "venir",
+            "traduccion": "приходить",
+            "formas": {
+              "yo": "vengo",
+              "tu": "vienes",
+              "el": "viene",
+              "nosotros": "venimos",
+              "vosotros": "venís",
+              "ellos": "vienen"
+            }
+          },
+          {
+            "infinitivo": "decir",
+            "traduccion": "говорить, сказать",
+            "formas": {
+              "yo": "digo",
+              "tu": "dices",
+              "el": "dice",
+              "nosotros": "decimos",
+              "vosotros": "decís",
+              "ellos": "dicen"
+            }
+          },
+          {
+            "infinitivo": "pensar",
+            "traduccion": "думать",
+            "formas": {
+              "yo": "pienso",
+              "tu": "piensas",
+              "el": "piensa",
+              "nosotros": "pensamos",
+              "vosotros": "pensáis",
+              "ellos": "piensan"
+            }
+          },
+          {
+            "infinitivo": "empezar",
+            "traduccion": "начинать",
+            "formas": {
+              "yo": "empiezo",
+              "tu": "empiezas",
+              "el": "empieza",
+              "nosotros": "empezamos",
+              "vosotros": "empezáis",
+              "ellos": "empiezan"
+            }
+          },
+          {
+            "infinitivo": "cerrar",
+            "traduccion": "закрывать",
+            "formas": {
+              "yo": "cierro",
+              "tu": "cierras",
+              "el": "cierra",
+              "nosotros": "cerramos",
+              "vosotros": "cerráis",
+              "ellos": "cierran"
+            }
+          },
+          {
+            "infinitivo": "sentir",
+            "traduccion": "чувствовать",
+            "formas": {
+              "yo": "siento",
+              "tu": "sientes",
+              "el": "siente",
+              "nosotros": "sentimos",
+              "vosotros": "sentís",
+              "ellos": "sienten"
+            }
+          },
+          {
+            "infinitivo": "entender",
+            "traduccion": "понимать",
+            "formas": {
+              "yo": "entiendo",
+              "tu": "entiendes",
+              "el": "entiende",
+              "nosotros": "entendemos",
+              "vosotros": "entendéis",
+              "ellos": "entienden"
+            }
+          },
+          {
+            "infinitivo": "preferir",
+            "traduccion": "предпочитать",
+            "formas": {
+              "yo": "prefiero",
+              "tu": "prefieres",
+              "el": "prefiere",
+              "nosotros": "preferimos",
+              "vosotros": "preferís",
+              "ellos": "prefieren"
+            }
+          },
+          {
+            "infinitivo": "perder",
+            "traduccion": "терять",
+            "formas": {
+              "yo": "pierdo",
+              "tu": "pierdes",
+              "el": "pierde",
+              "nosotros": "perdemos",
+              "vosotros": "perdéis",
+              "ellos": "pierden"
+            }
+          },
+          {
+            "infinitivo": "comenzar",
+            "traduccion": "начинать",
+            "formas": {
+              "yo": "comienzo",
+              "tu": "comienzas",
+              "el": "comienza",
+              "nosotros": "comenzamos",
+              "vosotros": "comenzáis",
+              "ellos": "comienzan"
+            }
+          },
+          {
+            "infinitivo": "volver",
+            "traduccion": "возвращаться",
+            "formas": {
+              "yo": "vuelvo",
+              "tu": "vuelves",
+              "el": "vuelve",
+              "nosotros": "volvemos",
+              "vosotros": "volvéis",
+              "ellos": "vuelven"
+            }
+          },
+          {
+            "infinitivo": "dormir",
+            "traduccion": "спать",
+            "formas": {
+              "yo": "duermo",
+              "tu": "duermes",
+              "el": "duerme",
+              "nosotros": "dormimos",
+              "vosotros": "dormís",
+              "ellos": "duermen"
+            }
+          },
+          {
+            "infinitivo": "recordar",
+            "traduccion": "помнить",
+            "formas": {
+              "yo": "recuerdo",
+              "tu": "recuerdas",
+              "el": "recuerda",
+              "nosotros": "recordamos",
+              "vosotros": "recordáis",
+              "ellos": "recuerdan"
+            }
+          },
+          {
+            "infinitivo": "encontrar",
+            "traduccion": "находить",
+            "formas": {
+              "yo": "encuentro",
+              "tu": "encuentras",
+              "el": "encuentra",
+              "nosotros": "encontramos",
+              "vosotros": "encontráis",
+              "ellos": "encuentran"
+            }
+          },
+          {
+            "infinitivo": "contar",
+            "traduccion": "считать, рассказывать",
+            "formas": {
+              "yo": "cuento",
+              "tu": "cuentas",
+              "el": "cuenta",
+              "nosotros": "contamos",
+              "vosotros": "contáis",
+              "ellos": "cuentan"
+            }
+          },
+          {
+            "infinitivo": "costar",
+            "traduccion": "стоить",
+            "formas": {
+              "yo": "cuesto",
+              "tu": "cuestas",
+              "el": "cuesta",
+              "nosotros": "costamos",
+              "vosotros": "costáis",
+              "ellos": "cuestan"
+            }
+          },
+          {
+            "infinitivo": "almorzar",
+            "traduccion": "обедать",
+            "formas": {
+              "yo": "almuerzo",
+              "tu": "almuerzas",
+              "el": "almuerza",
+              "nosotros": "almorzamos",
+              "vosotros": "almorzáis",
+              "ellos": "almuerzan"
+            }
+          },
+          {
+            "infinitivo": "pedir",
+            "traduccion": "просить",
+            "formas": {
+              "yo": "pido",
+              "tu": "pides",
+              "el": "pide",
+              "nosotros": "pedimos",
+              "vosotros": "pedís",
+              "ellos": "piden"
+            }
+          },
+          {
+            "infinitivo": "servir",
+            "traduccion": "служить, подавать",
+            "formas": {
+              "yo": "sirvo",
+              "tu": "sirves",
+              "el": "sirve",
+              "nosotros": "servimos",
+              "vosotros": "servís",
+              "ellos": "sirven"
+            }
+          },
+          {
+            "infinitivo": "repetir",
+            "traduccion": "повторять",
+            "formas": {
+              "yo": "repito",
+              "tu": "repites",
+              "el": "repite",
+              "nosotros": "repetimos",
+              "vosotros": "repetís",
+              "ellos": "repiten"
+            }
+          },
+          {
+            "infinitivo": "seguir",
+            "traduccion": "следовать, продолжать",
+            "formas": {
+              "yo": "sigo",
+              "tu": "sigues",
+              "el": "sigue",
+              "nosotros": "seguimos",
+              "vosotros": "seguís",
+              "ellos": "siguen"
+            }
+          },
+          {
+            "infinitivo": "medir",
+            "traduccion": "измерять",
+            "formas": {
+              "yo": "mido",
+              "tu": "mides",
+              "el": "mide",
+              "nosotros": "medimos",
+              "vosotros": "medís",
+              "ellos": "miden"
+            }
+          },
+          {
+            "infinitivo": "competir",
+            "traduccion": "соревноваться",
+            "formas": {
+              "yo": "compito",
+              "tu": "compites",
+              "el": "compite",
+              "nosotros": "competimos",
+              "vosotros": "competís",
+              "ellos": "compiten"
+            }
+          },
+          {
+            "infinitivo": "salir",
+            "traduccion": "выходить",
+            "formas": {
+              "yo": "salgo",
+              "tu": "sales",
+              "el": "sale",
+              "nosotros": "salimos",
+              "vosotros": "salís",
+              "ellos": "salen"
+            }
+          },
+          {
+            "infinitivo": "poner",
+            "traduccion": "ставить, класть",
+            "formas": {
+              "yo": "pongo",
+              "tu": "pones",
+              "el": "pone",
+              "nosotros": "ponemos",
+              "vosotros": "ponéis",
+              "ellos": "ponen"
+            }
+          },
+          {
+            "infinitivo": "traer",
+            "traduccion": "приносить",
+            "formas": {
+              "yo": "traigo",
+              "tu": "traes",
+              "el": "trae",
+              "nosotros": "traemos",
+              "vosotros": "traéis",
+              "ellos": "traen"
+            }
+          },
+          {
+            "infinitivo": "dar",
+            "traduccion": "давать",
+            "formas": {
+              "yo": "doy",
+              "tu": "das",
+              "el": "da",
+              "nosotros": "damos",
+              "vosotros": "dais",
+              "ellos": "dan"
+            }
+          },
+          {
+            "infinitivo": "oír",
+            "traduccion": "слышать",
+            "formas": {
+              "yo": "oigo",
+              "tu": "oyes",
+              "el": "oye",
+              "nosotros": "oímos",
+              "vosotros": "oís",
+              "ellos": "oyen"
+            }
+          },
+          {
+            "infinitivo": "conducir",
+            "traduccion": "водить",
+            "formas": {
+              "yo": "conduzco",
+              "tu": "conduces",
+              "el": "conduce",
+              "nosotros": "conducimos",
+              "vosotros": "conducís",
+              "ellos": "conducen"
+            }
+          },
+          {
+            "infinitivo": "traducir",
+            "traduccion": "переводить",
+            "formas": {
+              "yo": "traduzco",
+              "tu": "traduces",
+              "el": "traduce",
+              "nosotros": "traducimos",
+              "vosotros": "traducís",
+              "ellos": "traducen"
+            }
+          }
+        ],
+
+        "otras": [
+          {
+            "infinitivo": "levantarse",
+            "traduccion": "вставать",
+            "formas": {
+              "yo": "me levanto",
+              "tu": "te levantas",
+              "el": "se levanta",
+              "nosotros": "nos levantamos",
+              "vosotros": "os levantáis",
+              "ellos": "se levantan"
+            }
+          },
+          {
+            "infinitivo": "ducharse",
+            "traduccion": "принимать душ",
+            "formas": {
+              "yo": "me ducho",
+              "tu": "te duchas",
+              "el": "se ducha",
+              "nosotros": "nos duchamos",
+              "vosotros": "os ducháis",
+              "ellos": "se duchan"
+            }
+          },
+          {
+            "infinitivo": "vestirse",
+            "traduccion": "одеваться",
+            "formas": {
+              "yo": "me visto",
+              "tu": "te vistes",
+              "el": "se viste",
+              "nosotros": "nos vestimos",
+              "vosotros": "os vestís",
+              "ellos": "se visten"
+            }
+          },
+          {
+            "infinitivo": "acostarse",
+            "traduccion": "ложиться спать",
+            "formas": {
+              "yo": "me acuesto",
+              "tu": "te acuestas",
+              "el": "se acuesta",
+              "nosotros": "nos acostamos",
+              "vosotros": "os acostáis",
+              "ellos": "se acuestan"
+            }
+          },
+          {
+            "infinitivo": "despertarse",
+            "traduccion": "просыпаться",
+            "formas": {
+              "yo": "me despierto",
+              "tu": "te despiertas",
+              "el": "se despierta",
+              "nosotros": "nos despertamos",
+              "vosotros": "os despertáis",
+              "ellos": "se despiertan"
+            }
+          },
+          {
+            "infinitivo": "peinarse",
+            "traduccion": "причёсываться",
+            "formas": {
+              "yo": "me peino",
+              "tu": "te peinas",
+              "el": "se peina",
+              "nosotros": "nos peinamos",
+              "vosotros": "os peináis",
+              "ellos": "se peinan"
+            }
+          },
+          {
+            "infinitivo": "lavarse",
+            "traduccion": "мыться, умываться",
+            "formas": {
+              "yo": "me lavo",
+              "tu": "te lavas",
+              "el": "se lava",
+              "nosotros": "nos lavamos",
+              "vosotros": "os laváis",
+              "ellos": "se lavan"
+            }
+          },
+          {
+            "infinitivo": "afeitarse",
+            "traduccion": "бриться",
+            "formas": {
+              "yo": "me afeito",
+              "tu": "te afeitas",
+              "el": "se afeita",
+              "nosotros": "nos afeitamos",
+              "vosotros": "os afeitáis",
+              "ellos": "se afeitan"
+            }
+          },
+          {
+            "infinitivo": "maquillarse",
+            "traduccion": "краситься",
+            "formas": {
+              "yo": "me maquillo",
+              "tu": "te maquillas",
+              "el": "se maquilla",
+              "nosotros": "nos maquillamos",
+              "vosotros": "os maquilláis",
+              "ellos": "se maquillan"
+            }
+          },
+          {
+            "infinitivo": "prepararse",
+            "traduccion": "готовиться",
+            "formas": {
+              "yo": "me preparo",
+              "tu": "te preparas",
+              "el": "se prepara",
+              "nosotros": "nos preparamos",
+              "vosotros": "os preparáis",
+              "ellos": "se preparan"
+            }
+          },
+          {
+            "infinitivo": "dormirse",
+            "traduccion": "засыпать",
+            "formas": {
+              "yo": "me duermo",
+              "tu": "te duermes",
+              "el": "se duerme",
+              "nosotros": "nos dormimos",
+              "vosotros": "os dormís",
+              "ellos": "se duermen"
+            }
+          },
+          {
+            "infinitivo": "bañarse",
+            "traduccion": "купаться",
+            "formas": {
+              "yo": "me baño",
+              "tu": "te bañas",
+              "el": "se baña",
+              "nosotros": "nos bañamos",
+              "vosotros": "os bañáis",
+              "ellos": "se bañan"
+            }
+          },
+          {
+            "infinitivo": "relajarse",
+            "traduccion": "расслабляться",
+            "formas": {
+              "yo": "me relajo",
+              "tu": "te relajas",
+              "el": "se relaja",
+              "nosotros": "nos relajamos",
+              "vosotros": "os relajáis",
+              "ellos": "se relajan"
+            }
+          },
+          {
+            "infinitivo": "sentirse",
+            "traduccion": "чувствовать себя",
+            "formas": {
+              "yo": "me siento",
+              "tu": "te sientes",
+              "el": "se siente",
+              "nosotros": "nos sentimos",
+              "vosotros": "os sentís",
+              "ellos": "se sienten"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

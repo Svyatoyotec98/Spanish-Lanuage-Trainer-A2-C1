@@ -6837,8 +6837,10 @@ function calculateVerbosOtrasSubcategoryProgress(subcategoryId) {
     const verbosProgress = profile.progress[currentUnidad].verbos[currentVerbosTime];
     if (!verbosProgress || !verbosProgress.otras) return 0;
 
-    // otras is now an object with subcategory IDs as keys
-    return verbosProgress.otras[subcategoryId] || 0;
+    // Handle both old format (number) and new format (object with score)
+    const subData = verbosProgress.otras[subcategoryId];
+    if (!subData) return 0;
+    return (typeof subData === 'object' && subData.score !== undefined) ? subData.score : subData;
 }
 
 // Update average progress for Otras
@@ -6861,8 +6863,9 @@ function updateVerbosOtrasProgress() {
 }
 
 // Start test for an Otras subcategory
-function startVerbosOtrasTest(subcategoryId) {
+function startVerbosOtrasTest(subcategoryId, continueMode = false) {
     currentVerbosOtrasSubcategory = subcategoryId;
+    currentVerbosCategory = 'otras'; // Set category for proper handling
 
     const unidadData = vocabularyData[currentUnidad];
     const tiempo = unidadData.verbos.tiempos.find(t => t.id === currentVerbosTime);
@@ -6873,14 +6876,30 @@ function startVerbosOtrasTest(subcategoryId) {
         return;
     }
 
+    // On first start (not continue), initialize mastery tracking
+    if (!continueMode) {
+        verbosAllVerbs = [...subcategory.verbos];
+        verbosMasteredSet = loadMasteredVerbs(currentVerbosTime, 'otras', subcategoryId);
+    }
+
+    // Get non-mastered verbs
+    const nonMasteredVerbs = verbosAllVerbs.filter(v => !verbosMasteredSet.has(v.infinitivo));
+
+    if (nonMasteredVerbs.length === 0) {
+        alert('🎉 Все глаголы в этой подкатегории освоены!');
+        showVerbosOtrasMenu();
+        return;
+    }
+
     // Select random verbs for test
-    const shuffled = [...subcategory.verbos].sort(() => Math.random() - 0.5);
+    const shuffled = [...nonMasteredVerbs].sort(() => Math.random() - 0.5);
     verbosTestVerbs = shuffled.slice(0, Math.min(VERBOS_PER_TEST, shuffled.length));
     verbosCurrentIndex = 0;
     verbosTestResults = [];
 
-    // Update total number display
+    // Update displays
     document.getElementById('verbosTotalNum').textContent = verbosTestVerbs.length;
+    updateVerbosBankProgress();
 
     // Show test screen and load first verb
     hideAllScreens();
@@ -6913,9 +6932,15 @@ function calculateVerbosTimeProgress(timeId) {
     const verbosProgress = profile.progress[currentUnidad].verbos[timeId];
     if (!verbosProgress) return 0;
 
+    // Helper to extract score from old (number) or new (object) format
+    const getScore = (data) => {
+        if (!data) return 0;
+        return (typeof data === 'object' && data.score !== undefined) ? data.score : data;
+    };
+
     // Average of all categories (33% each)
-    const regProgress = verbosProgress.regulares || 0;
-    const irregProgress = verbosProgress.irregulares || 0;
+    const regProgress = getScore(verbosProgress.regulares);
+    const irregProgress = getScore(verbosProgress.irregulares);
 
     // For otras, calculate average from subcategories
     let otrasProgress = 0;
@@ -6924,7 +6949,7 @@ function calculateVerbosTimeProgress(timeId) {
         if (subcategoryIds.length > 0) {
             let total = 0;
             subcategoryIds.forEach(id => {
-                total += verbosProgress.otras[id] || 0;
+                total += getScore(verbosProgress.otras[id]);
             });
             otrasProgress = Math.round(total / subcategoryIds.length);
         }
@@ -6953,12 +6978,17 @@ function calculateVerbosCategoryProgress(timeId, category) {
 
         let total = 0;
         subcategoryIds.forEach(id => {
-            total += otrasProgress[id] || 0;
+            const subData = otrasProgress[id];
+            // Handle both old format (number) and new format (object with score)
+            total += (typeof subData === 'object' && subData.score !== undefined) ? subData.score : (subData || 0);
         });
         return Math.round(total / subcategoryIds.length);
     }
 
-    return verbosProgress[category] || 0;
+    // Handle both old format (number) and new format (object with score)
+    const catData = verbosProgress[category];
+    if (!catData) return 0;
+    return (typeof catData === 'object' && catData.score !== undefined) ? catData.score : catData;
 }
 
 // Calculate overall Verbos progress for the unidad
@@ -6997,15 +7027,20 @@ const VERBOS_PER_TEST = 5;
 const VERBOS_TIMER_SECONDS = 30;
 const VERBOS_FORMS = ['yo', 'tu', 'el', 'nosotros', 'vosotros', 'ellos'];
 
-let verbosTestVerbs = [];       // Array of verbs for current test
-let verbosCurrentIndex = 0;     // Current verb index
+let verbosTestVerbs = [];       // Array of verbs for current test batch
+let verbosCurrentIndex = 0;     // Current verb index in batch
 let verbosTimerInterval = null; // Timer interval
 let verbosTimeLeft = 0;         // Seconds left
+let verbosTimerStartTime = 0;   // When timer started (for smooth animation)
 let verbosTestResults = [];     // Results for each verb [{verb, correctCount, totalForms}]
 let verbosCurrentVerb = null;   // Current verb object
 
+// Mastery tracking
+let verbosAllVerbs = [];        // Full bank of verbs for current category
+let verbosMasteredSet = new Set(); // Infinitivos of mastered verbs (100% = all 6 forms correct)
+
 // Start Verbos test
-function startVerbosTest(category) {
+function startVerbosTest(category, continueMode = false) {
     currentVerbosCategory = category;
     currentVerbosOtrasSubcategory = null; // Reset otras subcategory
 
@@ -7028,16 +7063,32 @@ function startVerbosTest(category) {
         return;
     }
 
+    // On first start (not continue), initialize mastery tracking
+    if (!continueMode) {
+        verbosAllVerbs = [...allVerbs];
+        verbosMasteredSet = loadMasteredVerbs(currentVerbosTime, category);
+    }
+
+    // Get non-mastered verbs
+    const nonMasteredVerbs = verbosAllVerbs.filter(v => !verbosMasteredSet.has(v.infinitivo));
+
+    if (nonMasteredVerbs.length === 0) {
+        alert('🎉 Все глаголы в этой категории освоены!');
+        showVerbosCategoryMenu(currentVerbosTime);
+        return;
+    }
+
     // Shuffle and take VERBOS_PER_TEST verbs (or all if less)
-    const shuffled = [...allVerbs].sort(() => Math.random() - 0.5);
+    const shuffled = [...nonMasteredVerbs].sort(() => Math.random() - 0.5);
     verbosTestVerbs = shuffled.slice(0, Math.min(VERBOS_PER_TEST, shuffled.length));
 
-    // Reset state
+    // Reset state for this batch
     verbosCurrentIndex = 0;
     verbosTestResults = [];
 
-    // Update total number display
+    // Update displays
     document.getElementById('verbosTotalNum').textContent = verbosTestVerbs.length;
+    updateVerbosBankProgress();
 
     // Show test screen and load first verb
     hideAllScreens();
@@ -7045,6 +7096,42 @@ function startVerbosTest(category) {
     document.getElementById('verbosTestScreen').classList.remove('hidden');
 
     loadCurrentVerbo();
+}
+
+// Load mastered verbs from profile
+function loadMasteredVerbs(timeId, category, subcategoryId = null) {
+    const profile = getActiveProfile();
+    const mastered = new Set();
+
+    if (!profile || !profile.progress[currentUnidad] || !profile.progress[currentUnidad].verbos) {
+        return mastered;
+    }
+
+    const verbosProgress = profile.progress[currentUnidad].verbos[timeId];
+    if (!verbosProgress) return mastered;
+
+    let progressData;
+    if (subcategoryId) {
+        progressData = verbosProgress.otras?.[subcategoryId];
+    } else {
+        progressData = verbosProgress[category];
+    }
+
+    // Handle both old format (number) and new format (object with mastered array)
+    if (progressData && typeof progressData === 'object' && Array.isArray(progressData.mastered)) {
+        progressData.mastered.forEach(v => mastered.add(v));
+    }
+
+    return mastered;
+}
+
+// Update bank progress display
+function updateVerbosBankProgress() {
+    const masteredCount = document.getElementById('verbosMasteredCount');
+    const bankTotal = document.getElementById('verbosBankTotal');
+
+    if (masteredCount) masteredCount.textContent = verbosMasteredSet.size;
+    if (bankTotal) bankTotal.textContent = verbosAllVerbs.length;
 }
 
 // Load current verb into test screen
@@ -7099,21 +7186,36 @@ function capitalizeFirst(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// Start timer
+// Start timer with visual bar animation
 function startVerbosTimer() {
     stopVerbosTimer();
     verbosTimeLeft = VERBOS_TIMER_SECONDS;
-    updateVerbosTimerDisplay();
+    verbosTimerStartTime = Date.now();
 
+    // Reset bar to full
+    const timerBar = document.getElementById('verbosTimerBar');
+    const timerText = document.getElementById('verbosTimerText');
+    if (timerBar) {
+        timerBar.style.width = '100%';
+        timerBar.style.background = 'linear-gradient(90deg, #27ae60, #2ecc71)'; // Green
+    }
+    if (timerText) {
+        timerText.textContent = VERBOS_TIMER_SECONDS + ' сек';
+        timerText.style.color = '#aaa';
+    }
+
+    // Update every 100ms for smooth animation
     verbosTimerInterval = setInterval(() => {
-        verbosTimeLeft--;
+        const elapsed = (Date.now() - verbosTimerStartTime) / 1000;
+        verbosTimeLeft = Math.max(0, VERBOS_TIMER_SECONDS - elapsed);
+
         updateVerbosTimerDisplay();
 
         if (verbosTimeLeft <= 0) {
             stopVerbosTimer();
             submitVerbosAnswer(true); // Time's up - auto submit
         }
-    }, 1000);
+    }, 100);
 }
 
 // Stop timer
@@ -7124,12 +7226,35 @@ function stopVerbosTimer() {
     }
 }
 
-// Update timer display
+// Update timer display with visual bar and color change
 function updateVerbosTimerDisplay() {
-    const timerEl = document.getElementById('verbosTimer');
-    if (timerEl) {
-        timerEl.textContent = verbosTimeLeft;
-        timerEl.style.color = verbosTimeLeft <= 5 ? '#e74c3c' : 'white';
+    const timerBar = document.getElementById('verbosTimerBar');
+    const timerText = document.getElementById('verbosTimerText');
+
+    const percent = (verbosTimeLeft / VERBOS_TIMER_SECONDS) * 100;
+    const seconds = Math.ceil(verbosTimeLeft);
+
+    // Update bar width
+    if (timerBar) {
+        timerBar.style.width = percent + '%';
+
+        // Change color based on time remaining
+        // 30-20s: green, 20-10s: yellow, 10-5s: orange, 5-0s: red
+        if (verbosTimeLeft > 20) {
+            timerBar.style.background = 'linear-gradient(90deg, #27ae60, #2ecc71)'; // Green
+        } else if (verbosTimeLeft > 10) {
+            timerBar.style.background = 'linear-gradient(90deg, #f39c12, #f1c40f)'; // Yellow
+        } else if (verbosTimeLeft > 5) {
+            timerBar.style.background = 'linear-gradient(90deg, #e67e22, #f39c12)'; // Orange
+        } else {
+            timerBar.style.background = 'linear-gradient(90deg, #c0392b, #e74c3c)'; // Red
+        }
+    }
+
+    // Update text
+    if (timerText) {
+        timerText.textContent = seconds + ' сек';
+        timerText.style.color = verbosTimeLeft <= 5 ? '#e74c3c' : '#aaa';
     }
 }
 
@@ -7166,12 +7291,20 @@ function submitVerbosAnswer(isTimeout = false) {
         input.style.borderColor = isCorrect ? '#2ecc71' : '#e74c3c';
     });
 
+    // Track mastery: 100% = all 6 forms correct
+    const isMastered = (correctCount === VERBOS_FORMS.length);
+    if (isMastered) {
+        verbosMasteredSet.add(verbosCurrentVerb.infinitivo);
+        updateVerbosBankProgress();
+    }
+
     // Save result for this verb
     verbosTestResults.push({
         verb: verbosCurrentVerb,
         correctCount: correctCount,
         totalForms: VERBOS_FORMS.length,
-        results: results
+        results: results,
+        mastered: isMastered
     });
 
     // Show feedback screen
@@ -7274,15 +7407,53 @@ function finishVerbosTest() {
     document.getElementById('verbosResultsWrong').textContent = totalForms - totalCorrect;
     document.getElementById('verbosResultsTotal').textContent = totalForms;
 
-    // Save progress and get best score
-    const bestScore = saveVerbosTestProgress(scorePercent);
-    document.getElementById('verbosResultsBest').textContent = bestScore;
+    // Save progress (including mastered verbs)
+    saveVerbosTestProgress(scorePercent);
+
+    // Update bank progress display
+    const masteredCount = verbosMasteredSet.size;
+    const totalVerbs = verbosAllVerbs.length;
+    const remainingVerbs = totalVerbs - masteredCount;
+    const bankPercent = totalVerbs > 0 ? Math.round((masteredCount / totalVerbs) * 100) : 0;
+
+    const bankBar = document.getElementById('verbosBankProgressBar');
+    const bankText = document.getElementById('verbosBankProgressText');
+    const bankStatus = document.getElementById('verbosBankStatus');
+    const continueBtn = document.getElementById('verbosContinueBtn');
+    const retryBtn = document.getElementById('verbosRetryBtn');
+
+    if (bankBar) bankBar.style.width = bankPercent + '%';
+    if (bankText) bankText.textContent = `${masteredCount}/${totalVerbs}`;
+
+    if (remainingVerbs > 0) {
+        // Still have verbs to learn
+        if (bankStatus) bankStatus.textContent = `Осталось глаголов: ${remainingVerbs}`;
+        if (continueBtn) continueBtn.style.display = 'inline-block';
+        if (retryBtn) retryBtn.style.display = 'none'; // Hide retry, show continue
+    } else {
+        // All verbs mastered!
+        if (bankStatus) {
+            bankStatus.textContent = '🎉 Все глаголы освоены!';
+            bankStatus.style.color = '#2ecc71';
+        }
+        if (continueBtn) continueBtn.style.display = 'none';
+        if (retryBtn) retryBtn.style.display = 'inline-block';
+    }
 }
 
-// Save test progress
+// Continue testing non-mastered verbs
+function continueVerbosTest() {
+    if (currentVerbosOtrasSubcategory) {
+        startVerbosOtrasTest(currentVerbosOtrasSubcategory, true);
+    } else {
+        startVerbosTest(currentVerbosCategory, true);
+    }
+}
+
+// Save test progress including mastered verbs
 function saveVerbosTestProgress(score) {
     const profile = getActiveProfile();
-    if (!profile) return 0;
+    if (!profile) return;
 
     // Ensure progress structure exists
     if (!profile.progress[currentUnidad]) {
@@ -7295,7 +7466,10 @@ function saveVerbosTestProgress(score) {
         profile.progress[currentUnidad].verbos[currentVerbosTime] = {};
     }
 
-    let currentBest;
+    const masteredArray = Array.from(verbosMasteredSet);
+    const bankProgress = verbosAllVerbs.length > 0
+        ? Math.round((masteredArray.length / verbosAllVerbs.length) * 100)
+        : 0;
 
     // Handle otras subcategories separately
     if (currentVerbosOtrasSubcategory) {
@@ -7303,28 +7477,28 @@ function saveVerbosTestProgress(score) {
         if (!profile.progress[currentUnidad].verbos[currentVerbosTime].otras) {
             profile.progress[currentUnidad].verbos[currentVerbosTime].otras = {};
         }
-        currentBest = profile.progress[currentUnidad].verbos[currentVerbosTime].otras[currentVerbosOtrasSubcategory] || 0;
 
-        if (score > currentBest) {
-            profile.progress[currentUnidad].verbos[currentVerbosTime].otras[currentVerbosOtrasSubcategory] = score;
-            console.log(`Verbos progress updated: ${currentUnidad}/${currentVerbosTime}/otras/${currentVerbosOtrasSubcategory} = ${score}%`);
-        }
+        // Store both score (based on mastery %) and mastered array
+        profile.progress[currentUnidad].verbos[currentVerbosTime].otras[currentVerbosOtrasSubcategory] = {
+            score: bankProgress,
+            mastered: masteredArray
+        };
+
+        console.log(`Verbos progress updated: ${currentUnidad}/${currentVerbosTime}/otras/${currentVerbosOtrasSubcategory} = ${bankProgress}% (${masteredArray.length} mastered)`);
     } else {
         // Save to regulares/irregulares
-        currentBest = profile.progress[currentUnidad].verbos[currentVerbosTime][currentVerbosCategory] || 0;
+        profile.progress[currentUnidad].verbos[currentVerbosTime][currentVerbosCategory] = {
+            score: bankProgress,
+            mastered: masteredArray
+        };
 
-        if (score > currentBest) {
-            profile.progress[currentUnidad].verbos[currentVerbosTime][currentVerbosCategory] = score;
-            console.log(`Verbos progress updated: ${currentUnidad}/${currentVerbosTime}/${currentVerbosCategory} = ${score}%`);
-        }
+        console.log(`Verbos progress updated: ${currentUnidad}/${currentVerbosTime}/${currentVerbosCategory} = ${bankProgress}% (${masteredArray.length} mastered)`);
     }
 
     // Save to localStorage
     const state = loadAppState();
     state.profiles[profile.id] = profile;
     saveAppState(state);
-
-    return Math.max(score, currentBest);
 }
 
 // Retry test

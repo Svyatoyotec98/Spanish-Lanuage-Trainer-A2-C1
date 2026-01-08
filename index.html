@@ -685,13 +685,22 @@
             <h1 style="font-size: 2.5em; margin-bottom: 5px;">🔤 <span id="verbosTestInfinitivo">hablar</span></h1>
             <p class="subtitle" id="verbosTestTranslation" style="font-size: 1.2em; color: #aaa;">говорить</p>
 
-            <!-- Timer -->
-            <div style="margin: 15px 0; padding: 10px 20px; background: rgba(231, 76, 60, 0.3); border-radius: 10px; display: inline-block;">
-                <span style="font-size: 1.5em;">⏱️ <span id="verbosTimer" style="font-weight: bold;">30</span></span>
+            <!-- Timer Bar -->
+            <div style="margin: 15px auto; max-width: 400px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                    <span style="color: #aaa; font-size: 0.9em;">⏱️ Время</span>
+                    <span id="verbosTimerText" style="color: #aaa; font-size: 0.9em;">30 сек</span>
+                </div>
+                <div style="height: 12px; background: rgba(255,255,255,0.2); border-radius: 6px; overflow: hidden;">
+                    <div id="verbosTimerBar" style="height: 100%; width: 100%; background: linear-gradient(90deg, #27ae60, #2ecc71); border-radius: 6px; transition: width 0.1s linear;"></div>
+                </div>
             </div>
 
-            <!-- Progress -->
+            <!-- Progress in current batch -->
             <p style="margin: 10px 0; color: #ccc;">Глагол <span id="verbosCurrentNum" style="font-weight: bold;">1</span> / <span id="verbosTotalNum">5</span></p>
+
+            <!-- Overall bank progress -->
+            <p style="margin: 5px 0; color: #888; font-size: 0.9em;">Освоено: <span id="verbosMasteredCount">0</span> / <span id="verbosBankTotal">0</span> глаголов</p>
 
             <!-- 6 Input Fields -->
             <div id="verbosInputsContainer" style="margin: 20px auto; max-width: 400px; text-align: left;">
@@ -766,11 +775,21 @@
                 <p style="margin: 10px 0;">📊 Всего форм: <span id="verbosResultsTotal">0</span></p>
             </div>
 
-            <!-- Best Score -->
-            <p style="color: #888; margin: 20px 0;">Лучший результат: <span id="verbosResultsBest">0</span>%</p>
+            <!-- Bank Progress -->
+            <div id="verbosBankProgressContainer" style="margin: 20px auto; max-width: 350px; padding: 20px; background: rgba(0,0,0,0.3); border-radius: 15px;">
+                <h3 style="margin: 0 0 10px 0; color: white; font-size: 1.1em;">📚 Прогресс освоения банка</h3>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div style="flex: 1; height: 10px; background: rgba(255,255,255,0.2); border-radius: 5px; overflow: hidden;">
+                        <div id="verbosBankProgressBar" style="height: 100%; width: 0%; background: linear-gradient(90deg, #27ae60, #2ecc71); border-radius: 5px; transition: width 0.3s;"></div>
+                    </div>
+                    <span id="verbosBankProgressText" style="color: white; font-weight: bold;">0/0</span>
+                </div>
+                <p id="verbosBankStatus" style="margin: 10px 0 0 0; color: #aaa; font-size: 0.9em;">Осталось глаголов: 0</p>
+            </div>
 
             <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <button class="btn btn-success" onclick="retryVerbosTest()">🔄 Пройти ещё раз</button>
+                <button id="verbosContinueBtn" class="btn btn-success" onclick="continueVerbosTest()" style="display: none;">▶️ Продолжить</button>
+                <button id="verbosRetryBtn" class="btn btn-success" onclick="retryVerbosTest()">🔄 Пройти ещё раз</button>
                 <button class="btn btn-secondary" onclick="backFromVerbosResults()">← Назад</button>
             </div>
         </div>

@@ -2123,7 +2123,152 @@
             }
           }
         ],
-        "irregulares": [],
+        "irregulares": [
+          {
+            "infinitivo": "ser",
+            "traduccion": "быть",
+            "formas": {
+              "yo": "fui",
+              "tu": "fuiste",
+              "el": "fue",
+              "nosotros": "fuimos",
+              "vosotros": "fuisteis",
+              "ellos": "fueron"
+            }
+          },
+          {
+            "infinitivo": "ir",
+            "traduccion": "идти, ехать",
+            "formas": {
+              "yo": "fui",
+              "tu": "fuiste",
+              "el": "fue",
+              "nosotros": "fuimos",
+              "vosotros": "fuisteis",
+              "ellos": "fueron"
+            }
+          },
+          {
+            "infinitivo": "estar",
+            "traduccion": "быть, находиться",
+            "formas": {
+              "yo": "estuve",
+              "tu": "estuviste",
+              "el": "estuvo",
+              "nosotros": "estuvimos",
+              "vosotros": "estuvisteis",
+              "ellos": "estuvieron"
+            }
+          },
+          {
+            "infinitivo": "tener",
+            "traduccion": "иметь",
+            "formas": {
+              "yo": "tuve",
+              "tu": "tuviste",
+              "el": "tuvo",
+              "nosotros": "tuvimos",
+              "vosotros": "tuvisteis",
+              "ellos": "tuvieron"
+            }
+          },
+          {
+            "infinitivo": "hacer",
+            "traduccion": "делать",
+            "formas": {
+              "yo": "hice",
+              "tu": "hiciste",
+              "el": "hizo",
+              "nosotros": "hicimos",
+              "vosotros": "hicisteis",
+              "ellos": "hicieron"
+            }
+          },
+          {
+            "infinitivo": "poder",
+            "traduccion": "мочь",
+            "formas": {
+              "yo": "pude",
+              "tu": "pudiste",
+              "el": "pudo",
+              "nosotros": "pudimos",
+              "vosotros": "pudisteis",
+              "ellos": "pudieron"
+            }
+          },
+          {
+            "infinitivo": "poner",
+            "traduccion": "класть, ставить",
+            "formas": {
+              "yo": "puse",
+              "tu": "pusiste",
+              "el": "puso",
+              "nosotros": "pusimos",
+              "vosotros": "pusisteis",
+              "ellos": "pusieron"
+            }
+          },
+          {
+            "infinitivo": "venir",
+            "traduccion": "приходить",
+            "formas": {
+              "yo": "vine",
+              "tu": "viniste",
+              "el": "vino",
+              "nosotros": "vinimos",
+              "vosotros": "vinisteis",
+              "ellos": "vinieron"
+            }
+          },
+          {
+            "infinitivo": "decir",
+            "traduccion": "говорить, сказать",
+            "formas": {
+              "yo": "dije",
+              "tu": "dijiste",
+              "el": "dijo",
+              "nosotros": "dijimos",
+              "vosotros": "dijisteis",
+              "ellos": "dijeron"
+            }
+          },
+          {
+            "infinitivo": "saber",
+            "traduccion": "знать",
+            "formas": {
+              "yo": "supe",
+              "tu": "supiste",
+              "el": "supo",
+              "nosotros": "supimos",
+              "vosotros": "supisteis",
+              "ellos": "supieron"
+            }
+          },
+          {
+            "infinitivo": "querer",
+            "traduccion": "хотеть, любить",
+            "formas": {
+              "yo": "quise",
+              "tu": "quisiste",
+              "el": "quiso",
+              "nosotros": "quisimos",
+              "vosotros": "quisisteis",
+              "ellos": "quisieron"
+            }
+          },
+          {
+            "infinitivo": "morir",
+            "traduccion": "умирать",
+            "formas": {
+              "yo": "morí",
+              "tu": "moriste",
+              "el": "murió",
+              "nosotros": "morimos",
+              "vosotros": "moristeis",
+              "ellos": "murieron"
+            }
+          }
+        ],
         "otras": []
       }
     ]

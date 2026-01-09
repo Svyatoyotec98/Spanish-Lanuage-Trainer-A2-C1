@@ -2720,8 +2720,136 @@
     }
   ],
   "verbos": {
-    "tiempoTitle": "Verbos de la unidad",
-    "requiredEjercicio": null,
-    "tiempos": []
+    "tiempos": [
+      {
+        "id": "presente",
+        "nombre": "Presente de indicativo",
+        "requiredEjercicio": "ejercicio_1",
+        "regulares": [
+          {
+            "infinitivo": "alquilar",
+            "traduccion": "снимать/сдавать в аренду",
+            "formas": {
+              "yo": "alquilo",
+              "tu": "alquilas",
+              "el": "alquila",
+              "nosotros": "alquilamos",
+              "vosotros": "alquiláis",
+              "ellos": "alquilan"
+            }
+          },
+          {
+            "infinitivo": "comprar",
+            "traduccion": "покупать",
+            "formas": {
+              "yo": "compro",
+              "tu": "compras",
+              "el": "compra",
+              "nosotros": "compramos",
+              "vosotros": "compráis",
+              "ellos": "compran"
+            }
+          },
+          {
+            "infinitivo": "vender",
+            "traduccion": "продавать",
+            "formas": {
+              "yo": "vendo",
+              "tu": "vendes",
+              "el": "vende",
+              "nosotros": "vendemos",
+              "vosotros": "vendéis",
+              "ellos": "venden"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "vivo",
+              "tu": "vives",
+              "el": "vive",
+              "nosotros": "vivimos",
+              "vosotros": "vivís",
+              "ellos": "viven"
+            }
+          },
+          {
+            "infinitivo": "buscar",
+            "traduccion": "искать",
+            "formas": {
+              "yo": "busco",
+              "tu": "buscas",
+              "el": "busca",
+              "nosotros": "buscamos",
+              "vosotros": "buscáis",
+              "ellos": "buscan"
+            }
+          },
+          {
+            "infinitivo": "necesitar",
+            "traduccion": "нуждаться",
+            "formas": {
+              "yo": "necesito",
+              "tu": "necesitas",
+              "el": "necesita",
+              "nosotros": "necesitamos",
+              "vosotros": "necesitáis",
+              "ellos": "necesitan"
+            }
+          },
+          {
+            "infinitivo": "compartir",
+            "traduccion": "делить/разделять",
+            "formas": {
+              "yo": "comparto",
+              "tu": "compartes",
+              "el": "comparte",
+              "nosotros": "compartimos",
+              "vosotros": "compartís",
+              "ellos": "comparten"
+            }
+          },
+          {
+            "infinitivo": "limpiar",
+            "traduccion": "убирать/чистить",
+            "formas": {
+              "yo": "limpio",
+              "tu": "limpias",
+              "el": "limpia",
+              "nosotros": "limpiamos",
+              "vosotros": "limpiáis",
+              "ellos": "limpian"
+            }
+          },
+          {
+            "infinitivo": "decorar",
+            "traduccion": "украшать",
+            "formas": {
+              "yo": "decoro",
+              "tu": "decoras",
+              "el": "decora",
+              "nosotros": "decoramos",
+              "vosotros": "decoráis",
+              "ellos": "decoran"
+            }
+          },
+          {
+            "infinitivo": "reformar",
+            "traduccion": "ремонтировать",
+            "formas": {
+              "yo": "reformo",
+              "tu": "reformas",
+              "el": "reforma",
+              "nosotros": "reformamos",
+              "vosotros": "reformáis",
+              "ellos": "reforman"
+            }
+          }
+        ],
+        "irregulares": [],
+        "otras": []
+      }
+    ]
   }
 }

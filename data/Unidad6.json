@@ -1447,6 +1447,370 @@
         {"sentence": "___ hemos cenado.", "answer": "Ya", "hint": "Действие завершено"},
         {"sentence": "___ han abierto.", "answer": "Todavía no", "hint": "Действие не завершено"}
       ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Pronombres con parecer, gustar, encantar",
+      "hint": "me / te / le / nos / os / les",
+      "rule": {
+        "title": "Местоимения с глаголами PARECER, GUSTAR, ENCANTAR",
+        "explanation": "Глаголы parecer (казаться), gustar (нравиться) и encantar (очень нравиться) используются с косвенными местоимениями. Они согласуются не с человеком, а с объектом, который нравится или кажется каким-то.",
+        "sections": [
+          {
+            "subtitle": "Косвенные местоимения",
+            "points": [
+              "A mí → <b>me</b> (мне)",
+              "A ti → <b>te</b> (тебе)",
+              "A él/ella/usted → <b>le</b> (ему/ей/Вам)",
+              "A nosotros/as → <b>nos</b> (нам)",
+              "A vosotros/as → <b>os</b> (вам)",
+              "A ellos/ellas/ustedes → <b>les</b> (им/Вам)"
+            ]
+          },
+          {
+            "subtitle": "Конструкция с GUSTAR / ENCANTAR",
+            "points": [
+              "<b>Me</b> gusta el cine — Мне нравится кино",
+              "<b>Te</b> encantan las películas — Тебе очень нравятся фильмы",
+              "A Juan <b>le</b> gusta viajar — Хуану нравится путешествовать"
+            ]
+          },
+          {
+            "subtitle": "Конструкция с PARECER",
+            "points": [
+              "¿Qué <b>te</b> pareció la película? — Как тебе показался фильм?",
+              "<b>Me</b> pareció interesante — Мне показалось интересным",
+              "A ellos <b>les</b> pareció aburrido — Им показалось скучным"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¿Qué te pareció el concierto?", "ru": "Как тебе показался концерт?"},
+          {"es": "Me encantó la película.", "ru": "Мне очень понравился фильм."},
+          {"es": "A mis padres les gusta viajar.", "ru": "Моим родителям нравится путешествовать."},
+          {"es": "Nos pareció muy interesante la exposición.", "ru": "Выставка показалась нам очень интересной."}
+        ]
+      },
+      "questions": [
+        {"sentence": "¿Qué ___ pareció la película? (a ti)", "answer": "te"},
+        {"sentence": "___ encantó el concierto. (a mí)", "answer": "Me"},
+        {"sentence": "A Juan ___ gusta el fútbol.", "answer": "le"},
+        {"sentence": "___ pareció muy interesante. (a nosotros)", "answer": "Nos"},
+        {"sentence": "¿___ gustó la cena? (a vosotros)", "answer": "Os"},
+        {"sentence": "A ellos ___ encantaron las tapas.", "answer": "les"},
+        {"sentence": "___ pareció aburrida la conferencia. (a mí)", "answer": "Me"},
+        {"sentence": "¿A tu madre qué ___ pareció el libro?", "answer": "le"},
+        {"sentence": "A todos ___ parecen muy divertidas las clases.", "answer": "nos"},
+        {"sentence": "___ encantó el restaurante. (a ella)", "answer": "Le"},
+        {"sentence": "¿Qué ___ pareció la tarta a tus primos?", "answer": "les"},
+        {"sentence": "___ gustó mucho el museo. (a ti)", "answer": "Te"},
+        {"sentence": "A mis hijos no ___ gustó nada.", "answer": "les"},
+        {"sentence": "___ pareció buenísima la película. (a nosotros)", "answer": "Nos"},
+        {"sentence": "¿___ encantó el viaje? (a vosotros)", "answer": "Os"},
+        {"sentence": "A María ___ pareció un rollo.", "answer": "le"},
+        {"sentence": "___ gustaron mucho los cuadros. (a mí)", "answer": "Me"},
+        {"sentence": "A los niños ___ encanta jugar.", "answer": "les"},
+        {"sentence": "¿Qué ___ pareció el hotel? (a usted)", "answer": "le"},
+        {"sentence": "___ pareció muy caro. (a ellos)", "answer": "Les"},
+        {"sentence": "A nosotros ___ gusta la música clásica.", "answer": "nos"},
+        {"sentence": "¿___ gustó el regalo? (a ti)", "answer": "Te"},
+        {"sentence": "___ encantó la obra de teatro. (a él)", "answer": "Le"},
+        {"sentence": "A vosotros ___ pareció difícil, ¿no?", "answer": "os"},
+        {"sentence": "___ gustaron las fotos. (a ella)", "answer": "Le"},
+        {"sentence": "¿Qué ___ pareció la comida? (a ustedes)", "answer": "les"},
+        {"sentence": "___ encantó el parque. (a nosotros)", "answer": "Nos"},
+        {"sentence": "A mi hermano ___ gusta leer.", "answer": "le"},
+        {"sentence": "¿___ pareció interesante? (a vosotros)", "answer": "Os"},
+        {"sentence": "___ gustó mucho la serie. (a mí)", "answer": "Me"},
+        {"sentence": "A los turistas ___ encantó la ciudad.", "answer": "les"},
+        {"sentence": "¿Qué ___ pareció el espectáculo? (a ti)", "answer": "te"},
+        {"sentence": "___ pareció genial. (a ella)", "answer": "Le"},
+        {"sentence": "A mis abuelos ___ gusta pasear.", "answer": "les"},
+        {"sentence": "___ encantaron los postres. (a nosotros)", "answer": "Nos"},
+        {"sentence": "¿___ gustó la fiesta? (a ellos)", "answer": "Les"},
+        {"sentence": "___ pareció muy largo el viaje. (a mí)", "answer": "Me"},
+        {"sentence": "A tu padre ___ encantó el regalo, ¿no?", "answer": "le"},
+        {"sentence": "___ gustó la decoración. (a vosotros)", "answer": "Os"},
+        {"sentence": "¿Qué ___ pareció la exposición? (a ustedes)", "answer": "les"},
+        {"sentence": "___ encanta viajar. (a nosotros)", "answer": "Nos"},
+        {"sentence": "A Elena ___ pareció horrible.", "answer": "le"},
+        {"sentence": "¿___ gustaron los libros? (a ti)", "answer": "Te"},
+        {"sentence": "___ pareció muy bonito el lugar. (a ellos)", "answer": "Les"},
+        {"sentence": "A mi madre ___ encanta cocinar.", "answer": "le"},
+        {"sentence": "___ gustó el ambiente del bar. (a mí)", "answer": "Me"},
+        {"sentence": "¿Qué ___ pareció el partido? (a vosotros)", "answer": "os"},
+        {"sentence": "___ encantó la película. (a ella)", "answer": "Le"},
+        {"sentence": "A los estudiantes ___ pareció fácil.", "answer": "les"},
+        {"sentence": "___ gusta mucho el teatro. (a ti)", "answer": "Te"},
+        {"sentence": "¿___ pareció bien la propuesta? (a él)", "answer": "Le"},
+        {"sentence": "___ gustaron mucho las canciones. (a nosotros)", "answer": "Nos"},
+        {"sentence": "A ustedes ___ encantó el hotel, ¿verdad?", "answer": "les"},
+        {"sentence": "___ pareció increíble el concierto. (a mí)", "answer": "Me"},
+        {"sentence": "¿Qué ___ pareció el restaurante? (a ella)", "answer": "le"},
+        {"sentence": "___ gustó la cerveza. (a ellos)", "answer": "Les"},
+        {"sentence": "A mi amiga ___ encantaron los zapatos.", "answer": "le"},
+        {"sentence": "___ pareció un poco aburrido. (a vosotros)", "answer": "Os"},
+        {"sentence": "¿___ gustó el menú? (a usted)", "answer": "Le"},
+        {"sentence": "___ encanta esta ciudad. (a mí)", "answer": "Me"}
+      ],
+      "microTests": [
+        {"sentence": "¿Qué ___ pareció la película? (a ti)", "answer": "te", "hint": "Segunda persona singular (tú)"},
+        {"sentence": "___ encantó el concierto. (a mí)", "answer": "Me", "hint": "Primera persona singular (yo)"},
+        {"sentence": "A Juan ___ gusta el fútbol.", "answer": "le", "hint": "Tercera persona singular (él)"},
+        {"sentence": "___ pareció muy interesante. (a nosotros)", "answer": "Nos", "hint": "Primera persona plural (nosotros)"},
+        {"sentence": "¿___ gustó la cena? (a vosotros)", "answer": "Os", "hint": "Segunda persona plural (vosotros)"},
+        {"sentence": "A ellos ___ encantaron las tapas.", "answer": "les", "hint": "Tercera persona plural (ellos)"},
+        {"sentence": "¿A tu madre qué ___ pareció?", "answer": "le", "hint": "Tercera persona singular (ella)"},
+        {"sentence": "___ gustó mucho el museo. (a mí)", "answer": "Me", "hint": "Primera persona singular (yo)"},
+        {"sentence": "A mis padres ___ gusta viajar.", "answer": "les", "hint": "Tercera persona plural (ellos)"},
+        {"sentence": "___ pareció genial. (a nosotros)", "answer": "Nos", "hint": "Primera persona plural (nosotros)"},
+        {"sentence": "¿___ encantó el viaje? (a ti)", "answer": "Te", "hint": "Segunda persona singular (tú)"},
+        {"sentence": "A los niños ___ encanta jugar.", "answer": "les", "hint": "Tercera persona plural (ellos)"}
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Pronombres de objeto: lo, la, le, se",
+      "hint": "lo / la / le / se",
+      "rule": {
+        "title": "Местоимения прямого и косвенного дополнения",
+        "explanation": "В испанском языке местоимения заменяют существительные, чтобы избежать повторений. LO/LA — прямое дополнение (что? кого?), LE — косвенное дополнение (кому?), SE — возвратное или замена LE перед LO/LA.",
+        "sections": [
+          {
+            "subtitle": "LO — прямое дополнение (муж. род / нейтральное)",
+            "points": [
+              "Заменяет существительное мужского рода: El libro → <b>Lo</b> he leído",
+              "Заменяет нейтральное понятие: ¿<b>Lo</b> pasaste bien? — Хорошо провёл время?",
+              "He comprado el vestido → <b>Lo</b> he comprado"
+            ]
+          },
+          {
+            "subtitle": "LA — прямое дополнение (жен. род)",
+            "points": [
+              "Заменяет существительное женского рода: La película → <b>La</b> he visto",
+              "He devuelto la falda → <b>La</b> he devuelto",
+              "Vi a María → <b>La</b> vi ayer"
+            ]
+          },
+          {
+            "subtitle": "LE — косвенное дополнение (кому?)",
+            "points": [
+              "A mi madre <b>le</b> gustó — Маме понравилось",
+              "A Alfredo <b>le</b> pareció un rollo — Альфредо показалось скучным",
+              "Di el libro a Juan → <b>Le</b> di el libro"
+            ]
+          },
+          {
+            "subtitle": "SE — возвратное / замена LE + LO/LA",
+            "points": [
+              "<b>Se</b> lo pasaron fenomenal — Они отлично провели время",
+              "No me <b>lo</b> pasé muy bien — Я не очень хорошо провёл время",
+              "LE + LO → <b>SE</b> lo di (я ему это дал)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¿Has visto la película? — Sí, la he visto.", "ru": "Ты видел фильм? — Да, я его видел."},
+          {"es": "¿Qué le ha parecido el vestido a tu madre?", "ru": "Как твоей маме показалось платье?"},
+          {"es": "Lo ha gustado, pero lo va a devolver.", "ru": "Ей понравилось, но она его вернёт."},
+          {"es": "Los niños se lo pasaron fenomenal.", "ru": "Дети отлично провели время."}
+        ]
+      },
+      "questions": [
+        {"sentence": "¿Has visto la película? — Sí, ___ he visto.", "answer": "la"},
+        {"sentence": "A Alfredo ___ pareció un rollo.", "answer": "le"},
+        {"sentence": "¿Qué tal la cena? — No me ___ pasé muy bien.", "answer": "lo"},
+        {"sentence": "¿___ ha gustado el vestido a tu madre?", "answer": "Le"},
+        {"sentence": "Los niños ___ lo pasaron fenomenal.", "answer": "se"},
+        {"sentence": "El libro es bueno. ___ leí en una noche.", "answer": "Lo"},
+        {"sentence": "A mis hijos no ___ gustó nada.", "answer": "les"},
+        {"sentence": "La falda no me queda bien. ___ voy a devolver.", "answer": "La"},
+        {"sentence": "¿Qué ___ pareció la conferencia?", "answer": "te"},
+        {"sentence": "El pastel estaba rico. ___ comí todo.", "answer": "Lo"},
+        {"sentence": "A María ___ encantó el regalo.", "answer": "le"},
+        {"sentence": "¿Has comprado la camisa? — Sí, ___ he comprado.", "answer": "la"},
+        {"sentence": "Ellos ___ lo pasaron genial en la fiesta.", "answer": "se"},
+        {"sentence": "El coche es nuevo. ___ compré ayer.", "answer": "Lo"},
+        {"sentence": "A mi hermano ___ pareció muy interesante.", "answer": "le"},
+        {"sentence": "La serie es buena. ___ estoy viendo ahora.", "answer": "La"},
+        {"sentence": "¿Qué tal el viaje? — ___ lo pasamos muy bien.", "answer": "Nos"},
+        {"sentence": "A mis padres ___ gustó mucho el hotel.", "answer": "les"},
+        {"sentence": "El café estaba frío. No ___ bebí.", "answer": "lo"},
+        {"sentence": "La película ___ pareció aburrida. (a él)", "answer": "le"},
+        {"sentence": "¿Has leído el artículo? — No, no ___ he leído.", "answer": "lo"},
+        {"sentence": "A ella ___ encantaron los cuadros.", "answer": "le"},
+        {"sentence": "La tarta estaba deliciosa. ___ comimos toda.", "answer": "La"},
+        {"sentence": "Ayer ___ lo pasé fatal.", "answer": "me"},
+        {"sentence": "A los turistas ___ pareció increíble.", "answer": "les"},
+        {"sentence": "El museo es interesante. ___ visité ayer.", "answer": "Lo"},
+        {"sentence": "¿___ ha gustado la obra a Juan?", "answer": "Le"},
+        {"sentence": "La canción es bonita. ___ escucho todos los días.", "answer": "La"},
+        {"sentence": "Ellos ___ lo pasaron muy mal.", "answer": "se"},
+        {"sentence": "A nosotros ___ pareció genial el concierto.", "answer": "nos"},
+        {"sentence": "El examen fue difícil. No ___ aprobé.", "answer": "lo"},
+        {"sentence": "A mi madre ___ encanta cocinar.", "answer": "le"},
+        {"sentence": "¿Has visto las fotos? — Sí, ___ he visto.", "answer": "las"},
+        {"sentence": "¿Qué tal la fiesta? — ___ lo pasamos genial.", "answer": "Nos"},
+        {"sentence": "A mis abuelos ___ pareció muy largo.", "answer": "les"},
+        {"sentence": "La cerveza estaba fría. ___ bebí rápido.", "answer": "La"},
+        {"sentence": "El documental es bueno. ___ recomiendo.", "answer": "Lo"},
+        {"sentence": "A ella ___ pareció horrible la película.", "answer": "le"},
+        {"sentence": "¿___ lo pasaste bien en la fiesta?", "answer": "Te"},
+        {"sentence": "La novela es interesante. ___ terminé ayer.", "answer": "La"},
+        {"sentence": "A mi padre ___ gustó mucho el restaurante.", "answer": "le"},
+        {"sentence": "El problema era difícil. No ___ resolví.", "answer": "lo"},
+        {"sentence": "Ellos ___ lo pasan bien juntos.", "answer": "se"},
+        {"sentence": "A los estudiantes ___ pareció fácil el examen.", "answer": "les"},
+        {"sentence": "La comida estaba buena. ___ comí toda.", "answer": "La"},
+        {"sentence": "¿Has comprado el regalo? — Sí, ___ he comprado.", "answer": "lo"},
+        {"sentence": "A mi hermana ___ encantó el vestido.", "answer": "le"},
+        {"sentence": "El partido fue aburrido. No ___ vi entero.", "answer": "lo"},
+        {"sentence": "¿___ lo pasasteis bien? (vosotros)", "answer": "Os"},
+        {"sentence": "A ellos ___ pareció muy caro.", "answer": "les"},
+        {"sentence": "La casa es bonita. ___ vi ayer.", "answer": "La"},
+        {"sentence": "A usted ___ ha gustado el hotel, ¿verdad?", "answer": "le"},
+        {"sentence": "El postre era delicioso. ___ repetí.", "answer": "Lo"},
+        {"sentence": "Nosotros ___ lo pasamos fenomenal.", "answer": "nos"},
+        {"sentence": "A mi amigo ___ pareció increíble.", "answer": "le"},
+        {"sentence": "La exposición fue interesante. ___ visité dos veces.", "answer": "La"},
+        {"sentence": "¿___ ha gustado el menú a ustedes?", "answer": "Les"},
+        {"sentence": "El vino era bueno. ___ bebimos todo.", "answer": "Lo"},
+        {"sentence": "A ella ___ encantó la sorpresa.", "answer": "le"},
+        {"sentence": "¿Qué tal el fin de semana? — ___ lo pasé genial.", "answer": "Me"}
+      ],
+      "microTests": [
+        {"sentence": "¿Has visto la película? — Sí, ___ he visto.", "answer": "la", "hint": "Прямое дополнение (la película = жен. род)"},
+        {"sentence": "A Alfredo ___ pareció un rollo.", "answer": "le", "hint": "Косвенное дополнение (a Alfredo = кому?)"},
+        {"sentence": "No me ___ pasé muy bien.", "answer": "lo", "hint": "Pasarlo bien = провести время"},
+        {"sentence": "Los niños ___ lo pasaron fenomenal.", "answer": "se", "hint": "Pasárselo = провести время (возвратное)"},
+        {"sentence": "El libro es bueno. ___ leí en una noche.", "answer": "Lo", "hint": "Прямое дополнение (el libro = муж. род)"},
+        {"sentence": "A mis hijos no ___ gustó nada.", "answer": "les", "hint": "Косвенное дополнение (a mis hijos = кому?)"},
+        {"sentence": "La camisa ___ he comprado ayer.", "answer": "la", "hint": "Прямое дополнение (la camisa = жен. род)"},
+        {"sentence": "A María ___ encantó el regalo.", "answer": "le", "hint": "Косвенное дополнение (a María = кому?)"},
+        {"sentence": "¿___ lo pasaste bien?", "answer": "Te", "hint": "Pasárselo (tú) = ты провёл время"},
+        {"sentence": "El coche ___ compré ayer.", "answer": "lo", "hint": "Прямое дополнение (el coche = муж. род)"}
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Frases exclamativas con ¡Qué...!",
+      "hint": "¡Qué + sustantivo/adjetivo! / ¡Qué + sustantivo + tan/más + adjetivo!",
+      "rule": {
+        "title": "Восклицательные предложения с ¡QUÉ...!",
+        "explanation": "Восклицательные предложения с QUÉ используются для выражения эмоций: удивления, восхищения, сочувствия. Есть несколько конструкций в зависимости от того, что мы хотим подчеркнуть.",
+        "sections": [
+          {
+            "subtitle": "¡Qué + существительное! (Какой/Какая...!)",
+            "points": [
+              "¡<b>Qué</b> suerte! — Какая удача!",
+              "¡<b>Qué</b> pena! — Какая жалость!",
+              "¡<b>Qué</b> horror! — Какой ужас!",
+              "¡<b>Qué</b> rollo! — Какая скука!"
+            ]
+          },
+          {
+            "subtitle": "¡Qué + прилагательное! (Как...!)",
+            "points": [
+              "¡<b>Qué</b> bonito! — Как красиво!",
+              "¡<b>Qué</b> interesante! — Как интересно!",
+              "¡<b>Qué</b> bien! — Как хорошо!",
+              "¡<b>Qué</b> mal! — Как плохо!"
+            ]
+          },
+          {
+            "subtitle": "¡Qué + сущ. + tan/más + прил.! (Какой... такой...!)",
+            "points": [
+              "¡<b>Qué</b> película <b>tan</b> buena! — Какой хороший фильм!",
+              "¡<b>Qué</b> lugar <b>más</b> bonito! — Какое красивое место!",
+              "¡<b>Qué</b> día <b>tan</b> largo! — Какой длинный день!",
+              "¡<b>Qué</b> templo <b>tan</b> espectacular! — Какой впечатляющий храм!"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¡Qué bien!", "ru": "Как хорошо!"},
+          {"es": "¡Qué envidia me das!", "ru": "Как я тебе завидую!"},
+          {"es": "¡Qué película tan interesante!", "ru": "Какой интересный фильм!"},
+          {"es": "¡Qué lugar más bonito!", "ru": "Какое красивое место!"},
+          {"es": "¡Qué emocionante!", "ru": "Как волнующе!"}
+        ]
+      },
+      "questions": [
+        {"sentence": "¡___ bonito!", "answer": "Qué"},
+        {"sentence": "¡___ suerte tienes!", "answer": "Qué"},
+        {"sentence": "¡Qué película ___ buena!", "answer": "tan"},
+        {"sentence": "¡___ interesante!", "answer": "Qué"},
+        {"sentence": "¡Qué lugar ___ bonito!", "answer": "más"},
+        {"sentence": "¡___ pena!", "answer": "Qué"},
+        {"sentence": "¡Qué día ___ largo!", "answer": "tan"},
+        {"sentence": "¡___ bien!", "answer": "Qué"},
+        {"sentence": "¡Qué libro ___ interesante!", "answer": "tan"},
+        {"sentence": "¡___ horror!", "answer": "Qué"},
+        {"sentence": "¡Qué templo ___ espectacular!", "answer": "tan"},
+        {"sentence": "¡___ mal!", "answer": "Qué"},
+        {"sentence": "¡Qué viaje ___ emocionante!", "answer": "tan"},
+        {"sentence": "¡___ rollo!", "answer": "Qué"},
+        {"sentence": "¡Qué casa ___ grande!", "answer": "más"},
+        {"sentence": "¡___ emocionante!", "answer": "Qué"},
+        {"sentence": "¡Qué playa ___ bonita!", "answer": "tan"},
+        {"sentence": "¡___ aburrimiento!", "answer": "Qué"},
+        {"sentence": "¡Qué ciudad ___ increíble!", "answer": "más"},
+        {"sentence": "¡___ envidia me das!", "answer": "Qué"},
+        {"sentence": "¡Qué comida ___ rica!", "answer": "tan"},
+        {"sentence": "¡___ barato!", "answer": "Qué"},
+        {"sentence": "¡Qué concierto ___ bueno!", "answer": "tan"},
+        {"sentence": "¡___ caro!", "answer": "Qué"},
+        {"sentence": "¡Qué museo ___ interesante!", "answer": "más"},
+        {"sentence": "¡___ curioso!", "answer": "Qué"},
+        {"sentence": "¡Qué restaurante ___ acogedor!", "answer": "tan"},
+        {"sentence": "¡___ maravilla!", "answer": "Qué"},
+        {"sentence": "¡Qué experiencia ___ increíble!", "answer": "tan"},
+        {"sentence": "¡___ sorpresa!", "answer": "Qué"},
+        {"sentence": "¡Qué fiesta ___ divertida!", "answer": "más"},
+        {"sentence": "¡___ lástima!", "answer": "Qué"},
+        {"sentence": "¡Qué hotel ___ bonito!", "answer": "tan"},
+        {"sentence": "¡___ genial!", "answer": "Qué"},
+        {"sentence": "¡Qué parque ___ grande!", "answer": "más"},
+        {"sentence": "¡___ desastre!", "answer": "Qué"},
+        {"sentence": "¡Qué obra ___ original!", "answer": "tan"},
+        {"sentence": "¡___ divertido!", "answer": "Qué"},
+        {"sentence": "¡Qué serie ___ entretenida!", "answer": "tan"},
+        {"sentence": "¡___ vergüenza!", "answer": "Qué"},
+        {"sentence": "¡Qué jardín ___ precioso!", "answer": "más"},
+        {"sentence": "¡___ impresionante!", "answer": "Qué"},
+        {"sentence": "¡Qué cuadro ___ bonito!", "answer": "tan"},
+        {"sentence": "¡___ alegría!", "answer": "Qué"},
+        {"sentence": "¡Qué pastel ___ delicioso!", "answer": "tan"},
+        {"sentence": "¡___ aburrido!", "answer": "Qué"},
+        {"sentence": "¡Qué vista ___ espectacular!", "answer": "más"},
+        {"sentence": "¡___ raro!", "answer": "Qué"},
+        {"sentence": "¡Qué persona ___ amable!", "answer": "tan"},
+        {"sentence": "¡___ rico!", "answer": "Qué"},
+        {"sentence": "¡Qué plato ___ sabroso!", "answer": "tan"},
+        {"sentence": "¡___ triste!", "answer": "Qué"},
+        {"sentence": "¡Qué exposición ___ interesante!", "answer": "más"},
+        {"sentence": "¡___ fantástico!", "answer": "Qué"},
+        {"sentence": "¡Qué actuación ___ increíble!", "answer": "tan"},
+        {"sentence": "¡___ horrible!", "answer": "Qué"},
+        {"sentence": "¡Qué regalo ___ original!", "answer": "más"},
+        {"sentence": "¡___ gracioso!", "answer": "Qué"},
+        {"sentence": "¡Qué historia ___ emocionante!", "answer": "tan"},
+        {"sentence": "¡___ espectacular!", "answer": "Qué"}
+      ],
+      "microTests": [
+        {"sentence": "¡___ bonito!", "answer": "Qué", "hint": "Qué + adjetivo"},
+        {"sentence": "¡___ suerte!", "answer": "Qué", "hint": "Qué + sustantivo"},
+        {"sentence": "¡Qué película ___ buena!", "answer": "tan", "hint": "Qué + sust. + tan/más + adj."},
+        {"sentence": "¡Qué lugar ___ bonito!", "answer": "más", "hint": "Qué + sust. + tan/más + adj."},
+        {"sentence": "¡___ interesante!", "answer": "Qué", "hint": "Qué + adjetivo"},
+        {"sentence": "¡___ pena!", "answer": "Qué", "hint": "Qué + sustantivo"},
+        {"sentence": "¡Qué día ___ largo!", "answer": "tan", "hint": "Qué + sust. + tan/más + adj."},
+        {"sentence": "¡___ bien!", "answer": "Qué", "hint": "Qué + adverbio"},
+        {"sentence": "¡Qué viaje ___ emocionante!", "answer": "tan", "hint": "Qué + sust. + tan/más + adj."},
+        {"sentence": "¡___ horror!", "answer": "Qué", "hint": "Qué + sustantivo"},
+        {"sentence": "¡Qué casa ___ grande!", "answer": "más", "hint": "Qué + sust. + tan/más + adj."},
+        {"sentence": "¡___ maravilla!", "answer": "Qué", "hint": "Qué + sustantivo"}
+      ]
     }
   ],
   "verbos": {

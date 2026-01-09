@@ -1828,6 +1828,381 @@
         {"sentence": "Los plátanos, ___ como maduros.", "answer": "los", "hint": "Masculino plural (los plátanos)"},
         {"sentence": "Las naranjas, ___ exprimo para zumo.", "answer": "las", "hint": "Femenino plural (las naranjas)"}
       ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Cuantificadores: mucho, poco, bastante, demasiado",
+      "hint": "mucho / poco / bastante / demasiado",
+      "rule": {
+        "title": "Cuantificadores: MUCHO, POCO, BASTANTE, DEMASIADO",
+        "explanation": "Los cuantificadores expresan cantidad. Algunos concuerdan en género y número con el sustantivo (mucho, poco, demasiado), mientras que otros son invariables (bastante en singular, pero bastantes en plural).",
+        "sections": [
+          {
+            "subtitle": "MUCHO/A/OS/AS — много",
+            "points": [
+              "Concuerda con el sustantivo: <b>mucho</b> pan, <b>mucha</b> leche",
+              "Plural: <b>muchos</b> tomates, <b>muchas</b> patatas",
+              "Como adverbio (invariable): Me gusta <b>mucho</b> — Мне очень нравится"
+            ]
+          },
+          {
+            "subtitle": "POCO/A/OS/AS — мало",
+            "points": [
+              "Concuerda con el sustantivo: <b>poco</b> azúcar, <b>poca</b> sal",
+              "Plural: <b>pocos</b> huevos, <b>pocas</b> frutas",
+              "Indica cantidad insuficiente"
+            ]
+          },
+          {
+            "subtitle": "BASTANTE/S — достаточно",
+            "points": [
+              "Singular invariable: <b>bastante</b> arroz, <b>bastante</b> agua",
+              "Plural con -s: <b>bastantes</b> verduras, <b>bastantes</b> ingredientes",
+              "Indica cantidad suficiente"
+            ]
+          },
+          {
+            "subtitle": "DEMASIADO/A/OS/AS — слишком много",
+            "points": [
+              "Concuerda: <b>demasiado</b> aceite, <b>demasiada</b> grasa",
+              "Plural: <b>demasiados</b> dulces, <b>demasiadas</b> calorías",
+              "Indica exceso de cantidad"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Hay mucha fruta en la nevera.", "ru": "В холодильнике много фруктов."},
+          {"es": "Tenemos poco tiempo para cocinar.", "ru": "У нас мало времени на готовку."},
+          {"es": "Hay bastante comida para todos.", "ru": "Еды достаточно для всех."},
+          {"es": "Has puesto demasiada sal.", "ru": "Ты положил слишком много соли."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Hay ___ leche en la nevera.", "answer": "mucha"},
+        {"sentence": "Tenemos ___ huevos para la tortilla.", "answer": "pocos"},
+        {"sentence": "He comprado ___ pan para la semana.", "answer": "bastante"},
+        {"sentence": "Has echado ___ aceite en la sartén.", "answer": "demasiado"},
+        {"sentence": "Necesitamos ___ tomates para la ensalada.", "answer": "muchos"},
+        {"sentence": "Queda ___ arroz en el paquete.", "answer": "poco"},
+        {"sentence": "Hay ___ verduras para hacer sopa.", "answer": "bastantes"},
+        {"sentence": "Tiene ___ grasa esta carne.", "answer": "demasiada"},
+        {"sentence": "Compré ___ manzanas en el mercado.", "answer": "muchas"},
+        {"sentence": "Hay ___ sal en este plato.", "answer": "poca"},
+        {"sentence": "Tenemos ___ ingredientes para la receta.", "answer": "bastantes"},
+        {"sentence": "Has puesto ___ azúcar en el café.", "answer": "demasiado"},
+        {"sentence": "En España se bebe ___ vino.", "answer": "mucho"},
+        {"sentence": "Tengo ___ hambre ahora mismo.", "answer": "poca"},
+        {"sentence": "Hay ___ comida para la fiesta.", "answer": "bastante"},
+        {"sentence": "Come ___ dulces y por eso está gordo.", "answer": "demasiados"},
+        {"sentence": "He preparado ___ ensalada para todos.", "answer": "mucha"},
+        {"sentence": "Quedan ___ galletas en la caja.", "answer": "pocas"},
+        {"sentence": "Tenemos ___ agua para beber.", "answer": "bastante"},
+        {"sentence": "Hay ___ calorías en este postre.", "answer": "demasiadas"},
+        {"sentence": "Necesito ___ harina para el pastel.", "answer": "mucha"},
+        {"sentence": "Solo quedan ___ naranjas.", "answer": "pocas"},
+        {"sentence": "Hay ___ pescado para cenar.", "answer": "bastante"},
+        {"sentence": "Has comprado ___ carne para dos personas.", "answer": "demasiada"},
+        {"sentence": "En verano comemos ___ fruta.", "answer": "mucha"},
+        {"sentence": "Tengo ___ tiempo para cocinar.", "answer": "poco"},
+        {"sentence": "Hay ___ espacio en la nevera.", "answer": "bastante"},
+        {"sentence": "Bebes ___ refrescos.", "answer": "demasiados"},
+        {"sentence": "Mi abuela hace ___ pasteles.", "answer": "muchos"},
+        {"sentence": "Hay ___ variedad en este restaurante.", "answer": "poca"},
+        {"sentence": "Tenemos ___ queso para la pizza.", "answer": "bastante"},
+        {"sentence": "Has cocinado ___ pasta para una persona.", "answer": "demasiada"},
+        {"sentence": "Los españoles comen ___ pescado.", "answer": "mucho"},
+        {"sentence": "Hay ___ lugares para comer aquí.", "answer": "pocos"},
+        {"sentence": "Tenemos ___ tiempo, no te preocupes.", "answer": "bastante"},
+        {"sentence": "Esta sopa tiene ___ pimienta.", "answer": "demasiada"},
+        {"sentence": "He bebido ___ agua hoy.", "answer": "mucha"},
+        {"sentence": "Quedan ___ patatas en casa.", "answer": "pocas"},
+        {"sentence": "Hay ___ sitio en la mesa.", "answer": "bastante"},
+        {"sentence": "Has comprado ___ plátanos.", "answer": "demasiados"},
+        {"sentence": "En mi país se come ___ carne.", "answer": "mucha"},
+        {"sentence": "Tenemos ___ vinagre para el aliño.", "answer": "poco"},
+        {"sentence": "Hay ___ pan para todos.", "answer": "bastante"},
+        {"sentence": "Este plato tiene ___ especias.", "answer": "demasiadas"},
+        {"sentence": "Mi madre prepara ___ comida los domingos.", "answer": "mucha"},
+        {"sentence": "Hay ___ restaurantes buenos aquí.", "answer": "pocos"},
+        {"sentence": "Tenemos ___ mantequilla.", "answer": "bastante"},
+        {"sentence": "Has echado ___ limón.", "answer": "demasiado"},
+        {"sentence": "Como ___ verduras cada día.", "answer": "muchas"},
+        {"sentence": "Tengo ___ apetito hoy.", "answer": "poco"},
+        {"sentence": "Hay ___ café para la mañana.", "answer": "bastante"},
+        {"sentence": "Tomas ___ bebidas con gas.", "answer": "demasiadas"},
+        {"sentence": "En esta tienda hay ___ productos frescos.", "answer": "muchos"},
+        {"sentence": "Queda ___ zumo en el vaso.", "answer": "poco"},
+        {"sentence": "Tenemos ___ aceite de oliva.", "answer": "bastante"},
+        {"sentence": "Comes ___ comida rápida.", "answer": "demasiada"},
+        {"sentence": "Hay ___ clientes en el restaurante.", "answer": "muchos"},
+        {"sentence": "Tenemos ___ leche para el desayuno.", "answer": "poca"},
+        {"sentence": "Hay ___ fruta en casa.", "answer": "bastante"},
+        {"sentence": "Compras ___ cosas innecesarias.", "answer": "demasiadas"}
+      ],
+      "microTests": [
+        {"sentence": "Hay ___ leche en la nevera.", "answer": "mucha", "hint": "Много (fem. sing.)"},
+        {"sentence": "Tenemos ___ huevos.", "answer": "pocos", "hint": "Мало (masc. pl.)"},
+        {"sentence": "Hay ___ pan.", "answer": "bastante", "hint": "Достаточно (invariable)"},
+        {"sentence": "Has puesto ___ sal.", "answer": "demasiada", "hint": "Слишком много (fem. sing.)"},
+        {"sentence": "Comemos ___ fruta.", "answer": "mucha", "hint": "Много (fem. sing.)"},
+        {"sentence": "Queda ___ arroz.", "answer": "poco", "hint": "Мало (masc. sing.)"},
+        {"sentence": "Tenemos ___ verduras.", "answer": "bastantes", "hint": "Достаточно (plural)"},
+        {"sentence": "Hay ___ azúcar.", "answer": "demasiado", "hint": "Слишком много (masc. sing.)"},
+        {"sentence": "He comprado ___ manzanas.", "answer": "muchas", "hint": "Много (fem. pl.)"},
+        {"sentence": "Hay ___ tiempo.", "answer": "poco", "hint": "Мало (masc. sing.)"},
+        {"sentence": "Tenemos ___ comida.", "answer": "bastante", "hint": "Достаточно (invariable)"},
+        {"sentence": "Comes ___ dulces.", "answer": "demasiados", "hint": "Слишком много (masc. pl.)"}
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Indefinidos: algo, nada, alguien, nadie",
+      "hint": "algo / nada / alguien / nadie",
+      "rule": {
+        "title": "Pronombres indefinidos: ALGO, NADA, ALGUIEN, NADIE",
+        "explanation": "Estos pronombres se usan para referirse a cosas o personas de manera indefinida. ALGO y NADA se refieren a cosas, mientras que ALGUIEN y NADIE se refieren a personas.",
+        "sections": [
+          {
+            "subtitle": "ALGO — что-то, что-нибудь",
+            "points": [
+              "Se refiere a una cosa indefinida: ¿Quieres <b>algo</b>? — Хочешь что-нибудь?",
+              "En oraciones afirmativas e interrogativas",
+              "También como adverbio: Es <b>algo</b> difícil — Это немного сложно"
+            ]
+          },
+          {
+            "subtitle": "NADA — ничего, ничто",
+            "points": [
+              "Negación de cosa: No quiero <b>nada</b> — Я ничего не хочу",
+              "Con doble negación en español: No hay <b>nada</b>",
+              "Al principio sin 'no': <b>Nada</b> es imposible — Ничего невозможного нет"
+            ]
+          },
+          {
+            "subtitle": "ALGUIEN — кто-то, кто-нибудь",
+            "points": [
+              "Se refiere a una persona indefinida: ¿Hay <b>alguien</b>? — Есть кто-нибудь?",
+              "En oraciones afirmativas e interrogativas",
+              "<b>Alguien</b> ha llamado — Кто-то звонил"
+            ]
+          },
+          {
+            "subtitle": "NADIE — никто",
+            "points": [
+              "Negación de persona: No conozco a <b>nadie</b> — Я никого не знаю",
+              "Con doble negación: No hay <b>nadie</b> en casa",
+              "Al principio sin 'no': <b>Nadie</b> sabe la respuesta — Никто не знает ответ"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¿Hay algo de comer en la nevera?", "ru": "Есть что-нибудь поесть в холодильнике?"},
+          {"es": "No quiero nada, gracias.", "ru": "Я ничего не хочу, спасибо."},
+          {"es": "¿Conoces a alguien en esta fiesta?", "ru": "Ты знаешь кого-нибудь на этой вечеринке?"},
+          {"es": "No hay nadie en la cocina.", "ru": "На кухне никого нет."}
+        ]
+      },
+      "questions": [
+        {"sentence": "¿Hay ___ de comer en casa?", "answer": "algo"},
+        {"sentence": "No quiero ___, gracias.", "answer": "nada"},
+        {"sentence": "¿Conoces a ___ que cocine bien?", "answer": "alguien"},
+        {"sentence": "No hay ___ en el restaurante.", "answer": "nadie"},
+        {"sentence": "¿Quieres ___ de beber?", "answer": "algo"},
+        {"sentence": "No tengo ___ en la nevera.", "answer": "nada"},
+        {"sentence": "___ ha comido mi sandwich.", "answer": "Alguien"},
+        {"sentence": "___ sabe hacer esta receta.", "answer": "Nadie"},
+        {"sentence": "¿Necesitas ___ del supermercado?", "answer": "algo"},
+        {"sentence": "No me apetece ___ dulce.", "answer": "nada"},
+        {"sentence": "¿Hay ___ que quiera más postre?", "answer": "alguien"},
+        {"sentence": "No conozco a ___ aquí.", "answer": "nadie"},
+        {"sentence": "Tengo que comprar ___ para la cena.", "answer": "algo"},
+        {"sentence": "No he comido ___ hoy.", "answer": "nada"},
+        {"sentence": "¿___ quiere café?", "answer": "Alguien"},
+        {"sentence": "___ ha probado este plato antes.", "answer": "Nadie"},
+        {"sentence": "¿Hay ___ especial en el menú?", "answer": "algo"},
+        {"sentence": "No hay ___ vegetariano en la carta.", "answer": "nada"},
+        {"sentence": "¿Viene ___ a cenar esta noche?", "answer": "alguien"},
+        {"sentence": "No invité a ___.", "answer": "nadie"},
+        {"sentence": "¿Queda ___ de la fiesta?", "answer": "algo"},
+        {"sentence": "No sobró ___.", "answer": "nada"},
+        {"sentence": "¿___ sabe dónde está el azúcar?", "answer": "Alguien"},
+        {"sentence": "___ me ha enseñado a cocinar.", "answer": "Nadie"},
+        {"sentence": "Voy a preparar ___ rápido.", "answer": "algo"},
+        {"sentence": "No encuentro ___ para comer.", "answer": "nada"},
+        {"sentence": "¿___ ha reservado mesa?", "answer": "Alguien"},
+        {"sentence": "___ quiso probar la sopa.", "answer": "Nadie"},
+        {"sentence": "¿Hay ___ que no te guste?", "answer": "algo"},
+        {"sentence": "No me molesta ___.", "answer": "nada"},
+        {"sentence": "¿Esperas a ___ para comer?", "answer": "alguien"},
+        {"sentence": "No espero a ___.", "answer": "nadie"},
+        {"sentence": "Siempre hay ___ en la nevera.", "answer": "algo"},
+        {"sentence": "Nunca hay ___ para comer.", "answer": "nada"},
+        {"sentence": "___ llamó para reservar.", "answer": "Alguien"},
+        {"sentence": "___ contestó el teléfono.", "answer": "Nadie"},
+        {"sentence": "¿Te apetece ___ caliente?", "answer": "algo"},
+        {"sentence": "No queda ___ caliente.", "answer": "nada"},
+        {"sentence": "¿Hay ___ en la cocina?", "answer": "alguien"},
+        {"sentence": "No hay ___ cocinando.", "answer": "nadie"},
+        {"sentence": "Necesito ___ para el desayuno.", "answer": "algo"},
+        {"sentence": "No necesito ___ más.", "answer": "nada"},
+        {"sentence": "¿___ puede ayudarme?", "answer": "Alguien"},
+        {"sentence": "___ puede cocinar como mi abuela.", "answer": "Nadie"},
+        {"sentence": "¿Falta ___ en la mesa?", "answer": "algo"},
+        {"sentence": "No falta ___.", "answer": "nada"},
+        {"sentence": "¿Conoces a ___ vegetariano?", "answer": "alguien"},
+        {"sentence": "No conozco a ___ que no coma carne.", "answer": "nadie"},
+        {"sentence": "Hay ___ raro en este sabor.", "answer": "algo"},
+        {"sentence": "No noto ___ extraño.", "answer": "nada"},
+        {"sentence": "___ ha traído un pastel.", "answer": "Alguien"},
+        {"sentence": "___ trajo postre.", "answer": "Nadie"},
+        {"sentence": "¿Hay ___ sin gluten?", "answer": "algo"},
+        {"sentence": "No tienen ___ sin gluten.", "answer": "nada"},
+        {"sentence": "¿___ quiere repetir?", "answer": "Alguien"},
+        {"sentence": "___ quiso repetir.", "answer": "Nadie"},
+        {"sentence": "¿Compraste ___ para picar?", "answer": "algo"},
+        {"sentence": "No compré ___.", "answer": "nada"},
+        {"sentence": "¿Invitaste a ___ a comer?", "answer": "alguien"},
+        {"sentence": "No invité a ___.", "answer": "nadie"}
+      ],
+      "microTests": [
+        {"sentence": "¿Hay ___ de comer?", "answer": "algo", "hint": "Что-нибудь (вещь, вопрос)"},
+        {"sentence": "No quiero ___.", "answer": "nada", "hint": "Ничего (вещь, отрицание)"},
+        {"sentence": "¿___ quiere café?", "answer": "Alguien", "hint": "Кто-нибудь (человек, вопрос)"},
+        {"sentence": "___ sabe cocinar.", "answer": "Nadie", "hint": "Никто (человек, отрицание)"},
+        {"sentence": "Necesito ___ dulce.", "answer": "algo", "hint": "Что-то (вещь)"},
+        {"sentence": "No hay ___ en la nevera.", "answer": "nada", "hint": "Ничего (вещь, отрицание)"},
+        {"sentence": "¿Conoces a ___?", "answer": "alguien", "hint": "Кого-нибудь (человек)"},
+        {"sentence": "No conozco a ___.", "answer": "nadie", "hint": "Никого (человек, отрицание)"},
+        {"sentence": "¿Quieres ___ de beber?", "answer": "algo", "hint": "Что-нибудь (вещь, вопрос)"},
+        {"sentence": "No tengo ___ que hacer.", "answer": "nada", "hint": "Ничего (вещь, отрицание)"},
+        {"sentence": "___ ha llamado.", "answer": "Alguien", "hint": "Кто-то (человек)"},
+        {"sentence": "___ vino a la cena.", "answer": "Nadie", "hint": "Никто (человек, отрицание)"}
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Verbos tipo gustar: me gusta, me encanta, me apetece",
+      "hint": "gusta / gustan / encanta / encantan / apetece / apetecen",
+      "rule": {
+        "title": "Verbos tipo GUSTAR: construcción especial",
+        "explanation": "Los verbos como gustar, encantar, apetecer tienen una construcción especial: el sujeto gramatical es lo que gusta y la persona va en dativo (me, te, le, nos, os, les). El verbo concuerda con lo que gusta, no con la persona.",
+        "sections": [
+          {
+            "subtitle": "Construcción básica",
+            "points": [
+              "ME + verbo + sujeto: <b>Me gusta</b> el café — Мне нравится кофе",
+              "Singular si es uno o infinitivo: Me <b>gusta</b> cocinar",
+              "Plural si son varios: Me <b>gustan</b> las frutas"
+            ]
+          },
+          {
+            "subtitle": "GUSTAR — нравиться",
+            "points": [
+              "Me <b>gusta</b> la paella — Мне нравится паэлья",
+              "Me <b>gustan</b> los mariscos — Мне нравятся морепродукты",
+              "No me <b>gusta</b> el pescado — Мне не нравится рыба"
+            ]
+          },
+          {
+            "subtitle": "ENCANTAR — очень нравиться, обожать",
+            "points": [
+              "Me <b>encanta</b> el chocolate — Я обожаю шоколад",
+              "Me <b>encantan</b> los postres — Я обожаю десерты",
+              "Más fuerte que gustar"
+            ]
+          },
+          {
+            "subtitle": "APETECER — хотеться",
+            "points": [
+              "Me <b>apetece</b> un helado — Мне хочется мороженого",
+              "Me <b>apetecen</b> unas tapas — Мне хочется тапас",
+              "Expresa deseo en el momento"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Me gusta mucho la comida española.", "ru": "Мне очень нравится испанская еда."},
+          {"es": "¿Te gustan las aceitunas?", "ru": "Тебе нравятся оливки?"},
+          {"es": "A mi madre le encanta cocinar.", "ru": "Моя мама обожает готовить."},
+          {"es": "¿Te apetece un café?", "ru": "Хочешь кофе?"}
+        ]
+      },
+      "questions": [
+        {"sentence": "Me ___ mucho la paella.", "answer": "gusta"},
+        {"sentence": "Me ___ los mariscos.", "answer": "gustan"},
+        {"sentence": "Me ___ el chocolate.", "answer": "encanta"},
+        {"sentence": "Me ___ los helados.", "answer": "encantan"},
+        {"sentence": "¿Te ___ un café?", "answer": "apetece"},
+        {"sentence": "¿Te ___ unas tapas?", "answer": "apetecen"},
+        {"sentence": "No me ___ el pescado crudo.", "answer": "gusta"},
+        {"sentence": "No me ___ las verduras cocidas.", "answer": "gustan"},
+        {"sentence": "A mi madre le ___ cocinar.", "answer": "encanta"},
+        {"sentence": "A mis hijos les ___ los dulces.", "answer": "encantan"},
+        {"sentence": "¿Te ___ algo de beber?", "answer": "apetece"},
+        {"sentence": "Me ___ las frutas tropicales.", "answer": "apetecen"},
+        {"sentence": "¿Te ___ la comida picante?", "answer": "gusta"},
+        {"sentence": "Me ___ las ensaladas frescas.", "answer": "gustan"},
+        {"sentence": "Le ___ la repostería.", "answer": "encanta"},
+        {"sentence": "Nos ___ los platos tradicionales.", "answer": "encantan"},
+        {"sentence": "¿Os ___ cenar fuera?", "answer": "apetece"},
+        {"sentence": "Me ___ unos churros.", "answer": "apetecen"},
+        {"sentence": "No le ___ el ajo.", "answer": "gusta"},
+        {"sentence": "No les ___ los embutidos.", "answer": "gustan"},
+        {"sentence": "Me ___ probar comida nueva.", "answer": "encanta"},
+        {"sentence": "Nos ___ los restaurantes italianos.", "answer": "encantan"},
+        {"sentence": "¿Te ___ una copa de vino?", "answer": "apetece"},
+        {"sentence": "Me ___ unas patatas fritas.", "answer": "apetecen"},
+        {"sentence": "¿Te ___ el café solo?", "answer": "gusta"},
+        {"sentence": "Me ___ las tortillas de patata.", "answer": "gustan"},
+        {"sentence": "A ella le ___ el gazpacho.", "answer": "encanta"},
+        {"sentence": "A ellos les ___ las tapas variadas.", "answer": "encantan"},
+        {"sentence": "¿Le ___ algo caliente?", "answer": "apetece"},
+        {"sentence": "¿Os ___ unos pinchos?", "answer": "apetecen"},
+        {"sentence": "Me ___ desayunar temprano.", "answer": "gusta"},
+        {"sentence": "No me ___ los huevos fritos.", "answer": "gustan"},
+        {"sentence": "Le ___ la cocina asiática.", "answer": "encanta"},
+        {"sentence": "Les ___ los postres caseros.", "answer": "encantan"},
+        {"sentence": "¿Te ___ un zumo natural?", "answer": "apetece"},
+        {"sentence": "Me ___ unas croquetas.", "answer": "apetecen"},
+        {"sentence": "A mi padre le ___ el vino tinto.", "answer": "gusta"},
+        {"sentence": "A mis abuelos les ___ las sopas.", "answer": "gustan"},
+        {"sentence": "Me ___ ir a restaurantes nuevos.", "answer": "encanta"},
+        {"sentence": "Nos ___ las cenas familiares.", "answer": "encantan"},
+        {"sentence": "¿Te ___ probar esto?", "answer": "apetece"},
+        {"sentence": "Me ___ unos calamares.", "answer": "apetecen"},
+        {"sentence": "No me ___ la leche fría.", "answer": "gusta"},
+        {"sentence": "No me ___ las aceitunas negras.", "answer": "gustan"},
+        {"sentence": "Le ___ preparar pasteles.", "answer": "encanta"},
+        {"sentence": "Les ___ las recetas sencillas.", "answer": "encantan"},
+        {"sentence": "¿Os ___ un postre?", "answer": "apetece"},
+        {"sentence": "¿Te ___ unos nachos?", "answer": "apetecen"},
+        {"sentence": "Me ___ el pan recién hecho.", "answer": "gusta"},
+        {"sentence": "Me ___ las galletas de chocolate.", "answer": "gustan"},
+        {"sentence": "A mi hermana le ___ el sushi.", "answer": "encanta"},
+        {"sentence": "A todos les ___ los platos de mi abuela.", "answer": "encantan"},
+        {"sentence": "¿Te ___ merendar?", "answer": "apetece"},
+        {"sentence": "Me ___ unas aceitunas.", "answer": "apetecen"},
+        {"sentence": "¿Le ___ la cerveza?", "answer": "gusta"},
+        {"sentence": "¿Les ___ los bocadillos?", "answer": "gustan"},
+        {"sentence": "Me ___ experimentar en la cocina.", "answer": "encanta"},
+        {"sentence": "Nos ___ los sabores mediterráneos.", "answer": "encantan"},
+        {"sentence": "¿Te ___ algo frío?", "answer": "apetece"},
+        {"sentence": "Me ___ unas gambas al ajillo.", "answer": "apetecen"}
+      ],
+      "microTests": [
+        {"sentence": "Me ___ la paella.", "answer": "gusta", "hint": "Singular (la paella)"},
+        {"sentence": "Me ___ los mariscos.", "answer": "gustan", "hint": "Plural (los mariscos)"},
+        {"sentence": "Me ___ el chocolate.", "answer": "encanta", "hint": "Singular, очень нравится"},
+        {"sentence": "Me ___ los helados.", "answer": "encantan", "hint": "Plural, обожаю"},
+        {"sentence": "¿Te ___ un café?", "answer": "apetece", "hint": "Singular, хочется"},
+        {"sentence": "¿Te ___ unas tapas?", "answer": "apetecen", "hint": "Plural, хочется"},
+        {"sentence": "No me ___ el pescado.", "answer": "gusta", "hint": "Singular (el pescado)"},
+        {"sentence": "Me ___ las frutas.", "answer": "gustan", "hint": "Plural (las frutas)"},
+        {"sentence": "Le ___ cocinar.", "answer": "encanta", "hint": "Infinitivo = singular"},
+        {"sentence": "Nos ___ los postres.", "answer": "encantan", "hint": "Plural, обожаем"},
+        {"sentence": "¿Os ___ cenar fuera?", "answer": "apetece", "hint": "Infinitivo = singular"},
+        {"sentence": "Me ___ unos churros.", "answer": "apetecen", "hint": "Plural, хочется"}
+      ]
     }
   ],
   "verbos": {

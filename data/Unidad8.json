@@ -1417,6 +1417,382 @@
         {"sentence": "Esta ciudad ___ muy bonita.", "answer": "es", "hint": "Характеристика места → SER"},
         {"sentence": "Mis padres ___ muy orgullosos.", "answer": "están", "hint": "Эмоциональное состояние → ESTAR"}
       ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Estructuras para dar consejos",
+      "hint": "Debes / Tienes que / Es bueno / No es bueno / Puedes / Lo mejor es",
+      "rule": {
+        "title": "СТРУКТУРЫ ДЛЯ СОВЕТОВ о здоровье",
+        "explanation": "В испанском языке есть несколько конструкций для выражения советов и рекомендаций. Все они используются с инфинитивом и отличаются степенью обязательности.",
+        "sections": [
+          {
+            "subtitle": "Сильная рекомендация (обязательство)",
+            "points": [
+              "<b>Debes</b> + infinitivo — Ты должен: Debes descansar más",
+              "<b>Tienes que</b> + infinitivo — Тебе нужно: Tienes que ir al médico",
+              "<b>Hay que</b> + infinitivo — Нужно (безлично): Hay que dormir 8 horas"
+            ]
+          },
+          {
+            "subtitle": "Мягкая рекомендация (совет)",
+            "points": [
+              "<b>Es bueno</b> + infinitivo — Хорошо/полезно: Es bueno hacer ejercicio",
+              "<b>No es bueno</b> + infinitivo — Не хорошо/вредно: No es bueno fumar",
+              "<b>Es importante</b> + infinitivo — Важно: Es importante beber agua"
+            ]
+          },
+          {
+            "subtitle": "Возможность и лучший вариант",
+            "points": [
+              "<b>Puedes</b> + infinitivo — Ты можешь: Puedes tomar una infusión",
+              "<b>Lo mejor es</b> + infinitivo — Лучше всего: Lo mejor es descansar",
+              "<b>Es mejor</b> + infinitivo — Лучше: Es mejor no salir con fiebre"
+            ]
+          }
+        ],
+        "examples": [
+          "Debes dormir más, estás muy cansado.",
+          "Tienes que ir al médico si te duele mucho.",
+          "Es bueno caminar 30 minutos al día.",
+          "No es bueno comer mucha grasa.",
+          "Lo mejor es quedarse en casa si tienes fiebre."
+        ]
+      },
+      "questions": [
+        {"sentence": "___ dormir al menos 8 horas.", "answer": "Debes"},
+        {"sentence": "___ ir al médico si tienes fiebre.", "answer": "Tienes que"},
+        {"sentence": "___ hacer ejercicio regularmente.", "answer": "Es bueno"},
+        {"sentence": "___ fumar, es muy malo para la salud.", "answer": "No es bueno"},
+        {"sentence": "___ tomar una infusión para relajarte.", "answer": "Puedes"},
+        {"sentence": "___ descansar si estás cansado.", "answer": "Lo mejor es"},
+        {"sentence": "___ comer frutas y verduras todos los días.", "answer": "Debes"},
+        {"sentence": "___ beber mucha agua.", "answer": "Tienes que"},
+        {"sentence": "___ caminar 30 minutos al día.", "answer": "Es bueno"},
+        {"sentence": "___ comer comida basura.", "answer": "No es bueno"},
+        {"sentence": "___ hacer yoga para reducir el estrés.", "answer": "Puedes"},
+        {"sentence": "___ consultar a un especialista.", "answer": "Lo mejor es"},
+        {"sentence": "___ proteger la piel del sol.", "answer": "Debes"},
+        {"sentence": "___ llevar gafas de sol en verano.", "answer": "Tienes que"},
+        {"sentence": "___ nadar para fortalecer la espalda.", "answer": "Es bueno"},
+        {"sentence": "___ acostarse muy tarde.", "answer": "No es bueno"},
+        {"sentence": "___ tomar miel para la tos.", "answer": "Puedes"},
+        {"sentence": "___ ir al dentista dos veces al año.", "answer": "Lo mejor es"},
+        {"sentence": "___ lavarte las manos antes de comer.", "answer": "Debes"},
+        {"sentence": "___ evitar el estrés.", "answer": "Tienes que"},
+        {"sentence": "___ meditar para relajarse.", "answer": "Es bueno"},
+        {"sentence": "___ beber alcohol en exceso.", "answer": "No es bueno"},
+        {"sentence": "___ usar crema hidratante.", "answer": "Puedes"},
+        {"sentence": "___ dormir de lado para la espalda.", "answer": "Lo mejor es"},
+        {"sentence": "___ calentar antes de hacer deporte.", "answer": "Debes"},
+        {"sentence": "___ cuidar tu alimentación.", "answer": "Tienes que"},
+        {"sentence": "___ desayunar bien por la mañana.", "answer": "Es bueno"},
+        {"sentence": "___ saltarse comidas.", "answer": "No es bueno"},
+        {"sentence": "___ probar remedios naturales.", "answer": "Puedes"},
+        {"sentence": "___ prevenir que curar.", "answer": "Lo mejor es"},
+        {"sentence": "___ estirar después del ejercicio.", "answer": "Debes"},
+        {"sentence": "___ descansar cuando estés enfermo.", "answer": "Tienes que"},
+        {"sentence": "___ reír, es muy saludable.", "answer": "Es bueno"},
+        {"sentence": "___ trabajar demasiado.", "answer": "No es bueno"},
+        {"sentence": "___ hacer natación para la espalda.", "answer": "Puedes"},
+        {"sentence": "___ consultar al médico.", "answer": "Lo mejor es"},
+        {"sentence": "___ hidratarte bien.", "answer": "Debes"},
+        {"sentence": "___ usar protector solar.", "answer": "Tienes que"},
+        {"sentence": "___ tomar vitaminas en invierno.", "answer": "Es bueno"},
+        {"sentence": "___ pasar mucho tiempo sentado.", "answer": "No es bueno"},
+        {"sentence": "___ hacer ejercicios de respiración.", "answer": "Puedes"},
+        {"sentence": "___ actuar rápido si hay síntomas.", "answer": "Lo mejor es"},
+        {"sentence": "___ mantener una dieta equilibrada.", "answer": "Debes"},
+        {"sentence": "___ reducir el consumo de azúcar.", "answer": "Tienes que"},
+        {"sentence": "___ dormir la siesta.", "answer": "Es bueno"},
+        {"sentence": "___ ignorar el dolor.", "answer": "No es bueno"},
+        {"sentence": "___ intentar técnicas de relajación.", "answer": "Puedes"},
+        {"sentence": "___ escuchar a tu cuerpo.", "answer": "Lo mejor es"},
+        {"sentence": "___ vacunarte contra la gripe.", "answer": "Debes"},
+        {"sentence": "___ abrigarte bien en invierno.", "answer": "Tienes que"},
+        {"sentence": "___ salir a pasear al aire libre.", "answer": "Es bueno"},
+        {"sentence": "___ automedicarse.", "answer": "No es bueno"},
+        {"sentence": "___ tomar té de manzanilla.", "answer": "Puedes"},
+        {"sentence": "___ mantener hábitos saludables.", "answer": "Lo mejor es"},
+        {"sentence": "___ cepillarte los dientes tres veces al día.", "answer": "Debes"},
+        {"sentence": "___ hacerte revisiones médicas anuales.", "answer": "Tienes que"},
+        {"sentence": "___ socializar con amigos.", "answer": "Es bueno"},
+        {"sentence": "___ abusar del café.", "answer": "No es bueno"},
+        {"sentence": "___ hacer pausas en el trabajo.", "answer": "Puedes"},
+        {"sentence": "___ empezar a cuidarte ahora.", "answer": "Lo mejor es"}
+      ],
+      "microTests": [
+        {"sentence": "___ dormir al menos 8 horas.", "answer": "Debes", "hint": "Обязательство → Debes + infinitivo"},
+        {"sentence": "___ ir al médico si tienes fiebre.", "answer": "Tienes que", "hint": "Необходимость → Tienes que + infinitivo"},
+        {"sentence": "___ hacer ejercicio regularmente.", "answer": "Es bueno", "hint": "Полезно → Es bueno + infinitivo"},
+        {"sentence": "___ fumar.", "answer": "No es bueno", "hint": "Вредно → No es bueno + infinitivo"},
+        {"sentence": "___ tomar una infusión para relajarte.", "answer": "Puedes", "hint": "Возможность → Puedes + infinitivo"},
+        {"sentence": "___ descansar si estás cansado.", "answer": "Lo mejor es", "hint": "Лучше всего → Lo mejor es + infinitivo"},
+        {"sentence": "___ comer frutas y verduras.", "answer": "Debes", "hint": "Обязательство → Debes + infinitivo"},
+        {"sentence": "___ beber mucha agua.", "answer": "Tienes que", "hint": "Необходимость → Tienes que + infinitivo"},
+        {"sentence": "___ caminar cada día.", "answer": "Es bueno", "hint": "Полезно → Es bueno + infinitivo"},
+        {"sentence": "___ comer comida basura.", "answer": "No es bueno", "hint": "Вредно → No es bueno + infinitivo"},
+        {"sentence": "___ hacer yoga.", "answer": "Puedes", "hint": "Возможность → Puedes + infinitivo"},
+        {"sentence": "___ consultar a un especialista.", "answer": "Lo mejor es", "hint": "Лучше всего → Lo mejor es + infinitivo"},
+        {"sentence": "___ proteger la piel del sol.", "answer": "Debes", "hint": "Обязательство → Debes + infinitivo"},
+        {"sentence": "___ acostarse muy tarde.", "answer": "No es bueno", "hint": "Вредно → No es bueno + infinitivo"},
+        {"sentence": "___ mantener hábitos saludables.", "answer": "Lo mejor es", "hint": "Лучше всего → Lo mejor es + infinitivo"}
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Imperativo afirmativo: formas regulares (tú)",
+      "hint": "compra / come / vive / habla / bebe / escribe / descansa / camina / corre / lee",
+      "rule": {
+        "title": "IMPERATIVO AFIRMATIVO: регулярные формы (tú)",
+        "explanation": "Повелительное наклонение (imperativo) используется для приказов, просьб и советов. Для формы TÚ регулярных глаголов убираем -s от формы presente: hablas → habla, comes → come, vives → vive.",
+        "sections": [
+          {
+            "subtitle": "Глаголы на -AR: hablas → habla",
+            "points": [
+              "<b>Hablar</b> → hablas → ¡<b>Habla</b>! — Говори!",
+              "<b>Caminar</b> → caminas → ¡<b>Camina</b>! — Иди!",
+              "<b>Descansar</b> → descansas → ¡<b>Descansa</b>! — Отдыхай!",
+              "<b>Comprar</b> → compras → ¡<b>Compra</b>! — Купи!",
+              "<b>Escuchar</b> → escuchas → ¡<b>Escucha</b>! — Слушай!"
+            ]
+          },
+          {
+            "subtitle": "Глаголы на -ER: comes → come",
+            "points": [
+              "<b>Comer</b> → comes → ¡<b>Come</b>! — Ешь!",
+              "<b>Beber</b> → bebes → ¡<b>Bebe</b>! — Пей!",
+              "<b>Leer</b> → lees → ¡<b>Lee</b>! — Читай!",
+              "<b>Correr</b> → corres → ¡<b>Corre</b>! — Беги!",
+              "<b>Proteger</b> → proteges → ¡<b>Protege</b>! — Защищай!"
+            ]
+          },
+          {
+            "subtitle": "Глаголы на -IR: vives → vive",
+            "points": [
+              "<b>Vivir</b> → vives → ¡<b>Vive</b>! — Живи!",
+              "<b>Escribir</b> → escribes → ¡<b>Escribe</b>! — Пиши!",
+              "<b>Abrir</b> → abres → ¡<b>Abre</b>! — Открой!",
+              "<b>Subir</b> → subes → ¡<b>Sube</b>! — Поднимайся!",
+              "<b>Decidir</b> → decides → ¡<b>Decide</b>! — Решай!"
+            ]
+          }
+        ],
+        "examples": [
+          "¡Habla más despacio, por favor!",
+          "Come más frutas y verduras.",
+          "Bebe mucha agua todos los días.",
+          "Descansa bien esta noche.",
+          "Escribe tu nombre aquí."
+        ]
+      },
+      "questions": [
+        {"sentence": "¡___ más despacio, no te entiendo! (hablar)", "answer": "Habla"},
+        {"sentence": "___ más frutas y verduras. (comer)", "answer": "Come"},
+        {"sentence": "___ agua antes del ejercicio. (beber)", "answer": "Bebe"},
+        {"sentence": "___ bien esta noche. (descansar)", "answer": "Descansa"},
+        {"sentence": "___ 30 minutos al día. (caminar)", "answer": "Camina"},
+        {"sentence": "___ tu nombre en el formulario. (escribir)", "answer": "Escribe"},
+        {"sentence": "___ la ventana, hace calor. (abrir)", "answer": "Abre"},
+        {"sentence": "___ este libro, es muy bueno. (leer)", "answer": "Lee"},
+        {"sentence": "___ zapatillas cómodas. (comprar)", "answer": "Compra"},
+        {"sentence": "___ a tu madre más a menudo. (llamar)", "answer": "Llama"},
+        {"sentence": "___ las instrucciones del médico. (escuchar)", "answer": "Escucha"},
+        {"sentence": "___ al parque, te sentará bien. (correr)", "answer": "Corre"},
+        {"sentence": "___ la piel del sol. (proteger)", "answer": "Protege"},
+        {"sentence": "___ la puerta al salir. (cerrar)", "answer": "Cierra"},
+        {"sentence": "___ la dieta de manera saludable. (llevar)", "answer": "Lleva"},
+        {"sentence": "___ con tus amigos este fin de semana. (salir)", "answer": "Sal"},
+        {"sentence": "___ el medicamento con agua. (tomar)", "answer": "Toma"},
+        {"sentence": "___ las escaleras, no uses el ascensor. (subir)", "answer": "Sube"},
+        {"sentence": "___ antes de actuar. (pensar)", "answer": "Piensa"},
+        {"sentence": "___ pronto, es tarde. (decidir)", "answer": "Decide"},
+        {"sentence": "___ español todos los días. (practicar)", "answer": "Practica"},
+        {"sentence": "___ la comida despacio. (masticar)", "answer": "Mastica"},
+        {"sentence": "___ los dientes después de comer. (cepillar)", "answer": "Cepilla"},
+        {"sentence": "___ bien antes de ir al gimnasio. (calentar)", "answer": "Calienta"},
+        {"sentence": "___ al menos 2 litros de agua. (beber)", "answer": "Bebe"},
+        {"sentence": "___ una dieta equilibrada. (seguir)", "answer": "Sigue"},
+        {"sentence": "___ después del ejercicio. (estirar)", "answer": "Estira"},
+        {"sentence": "___ en positivo. (pensar)", "answer": "Piensa"},
+        {"sentence": "___ lo que comes. (controlar)", "answer": "Controla"},
+        {"sentence": "___ menos sal en las comidas. (usar)", "answer": "Usa"},
+        {"sentence": "___ las etiquetas de los productos. (leer)", "answer": "Lee"},
+        {"sentence": "___ suficientes horas. (dormir)", "answer": "Duerme"},
+        {"sentence": "___ productos frescos. (comprar)", "answer": "Compra"},
+        {"sentence": "___ el estrés con ejercicio. (combatir)", "answer": "Combate"},
+        {"sentence": "___ tus objetivos de salud. (escribir)", "answer": "Escribe"},
+        {"sentence": "___ las calorías que consumes. (contar)", "answer": "Cuenta"},
+        {"sentence": "___ vitaminas si es necesario. (tomar)", "answer": "Toma"},
+        {"sentence": "___ el alcohol y el tabaco. (evitar)", "answer": "Evita"},
+        {"sentence": "___ un horario de comidas. (establecer)", "answer": "Establece"},
+        {"sentence": "___ música relajante. (escuchar)", "answer": "Escucha"},
+        {"sentence": "___ la tensión con yoga. (reducir)", "answer": "Reduce"},
+        {"sentence": "___ más verduras en tu dieta. (incluir)", "answer": "Incluye"},
+        {"sentence": "___ ejercicio regularmente. (hacer)", "answer": "Haz"},
+        {"sentence": "___ la receta del médico. (seguir)", "answer": "Sigue"},
+        {"sentence": "___ las manos antes de comer. (lavar)", "answer": "Lava"},
+        {"sentence": "___ los consejos del especialista. (seguir)", "answer": "Sigue"},
+        {"sentence": "___ proteína en cada comida. (consumir)", "answer": "Consume"},
+        {"sentence": "___ frutas de temporada. (elegir)", "answer": "Elige"},
+        {"sentence": "___ la basura en su lugar. (tirar)", "answer": "Tira"},
+        {"sentence": "___ tu peso regularmente. (controlar)", "answer": "Controla"},
+        {"sentence": "___ hidratado durante el día. (mantenerse)", "answer": "Mantente"},
+        {"sentence": "___ un paseo después de comer. (dar)", "answer": "Da"},
+        {"sentence": "___ paciencia con el proceso. (tener)", "answer": "Ten"},
+        {"sentence": "___ las grasas saturadas. (reducir)", "answer": "Reduce"},
+        {"sentence": "___ a la cama temprano. (ir)", "answer": "Ve"},
+        {"sentence": "___ bien los alimentos. (cocinar)", "answer": "Cocina"},
+        {"sentence": "___ atención a las señales de tu cuerpo. (prestar)", "answer": "Presta"},
+        {"sentence": "___ momentos para ti. (reservar)", "answer": "Reserva"},
+        {"sentence": "___ tus logros. (celebrar)", "answer": "Celebra"},
+        {"sentence": "___ constante en tus hábitos. (ser)", "answer": "Sé"}
+      ],
+      "microTests": [
+        {"sentence": "___ más despacio. (hablar)", "answer": "Habla", "hint": "-AR: hablas → habla"},
+        {"sentence": "___ más frutas. (comer)", "answer": "Come", "hint": "-ER: comes → come"},
+        {"sentence": "___ agua. (beber)", "answer": "Bebe", "hint": "-ER: bebes → bebe"},
+        {"sentence": "___ bien. (descansar)", "answer": "Descansa", "hint": "-AR: descansas → descansa"},
+        {"sentence": "___ 30 minutos. (caminar)", "answer": "Camina", "hint": "-AR: caminas → camina"},
+        {"sentence": "___ tu nombre. (escribir)", "answer": "Escribe", "hint": "-IR: escribes → escribe"},
+        {"sentence": "___ la ventana. (abrir)", "answer": "Abre", "hint": "-IR: abres → abre"},
+        {"sentence": "___ este libro. (leer)", "answer": "Lee", "hint": "-ER: lees → lee"},
+        {"sentence": "___ al parque. (correr)", "answer": "Corre", "hint": "-ER: corres → corre"},
+        {"sentence": "___ la piel. (proteger)", "answer": "Protege", "hint": "-ER: proteges → protege"},
+        {"sentence": "___ la puerta. (cerrar)", "answer": "Cierra", "hint": "-AR: cierras → cierra (e→ie)"},
+        {"sentence": "___ las escaleras. (subir)", "answer": "Sube", "hint": "-IR: subes → sube"},
+        {"sentence": "___ español. (practicar)", "answer": "Practica", "hint": "-AR: practicas → practica"},
+        {"sentence": "___ el medicamento. (tomar)", "answer": "Toma", "hint": "-AR: tomas → toma"},
+        {"sentence": "___ después del ejercicio. (estirar)", "answer": "Estira", "hint": "-AR: estiras → estira"}
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Imperativo afirmativo: formas irregulares (tú)",
+      "hint": "haz / pon / ven / di / sé / ve / sal / ten",
+      "rule": {
+        "title": "IMPERATIVO AFIRMATIVO: неправильные формы (tú)",
+        "explanation": "Некоторые глаголы имеют неправильные формы в imperativo для TÚ. Их нужно запомнить.",
+        "sections": [
+          {
+            "subtitle": "8 основных неправильных глаголов",
+            "points": [
+              "<b>Hacer</b> → ¡<b>Haz</b>! — Делай! (Haz ejercicio)",
+              "<b>Poner</b> → ¡<b>Pon</b>! — Положи! (Pon la mesa)",
+              "<b>Venir</b> → ¡<b>Ven</b>! — Приходи! (Ven aquí)",
+              "<b>Decir</b> → ¡<b>Di</b>! — Скажи! (Di la verdad)",
+              "<b>Ser</b> → ¡<b>Sé</b>! — Будь! (Sé bueno)",
+              "<b>Ir</b> → ¡<b>Ve</b>! — Иди! (Ve al médico)",
+              "<b>Salir</b> → ¡<b>Sal</b>! — Выходи! (Sal de casa)",
+              "<b>Tener</b> → ¡<b>Ten</b>! — Имей! (Ten cuidado)"
+            ]
+          },
+          {
+            "subtitle": "Использование в советах о здоровье",
+            "points": [
+              "<b>Haz</b> ejercicio todos los días — Делай упражнения каждый день",
+              "<b>Pon</b> crema protectora — Нанеси защитный крем",
+              "<b>Ve</b> al médico si te sientes mal — Сходи к врачу, если плохо себя чувствуешь",
+              "<b>Sal</b> a pasear al aire libre — Выходи гулять на свежий воздух",
+              "<b>Ten</b> cuidado con el sol — Будь осторожен с солнцем"
+            ]
+          },
+          {
+            "subtitle": "Запоминалка",
+            "points": [
+              "Haz, pon, ven, di, sé, ve, sal, ten — 8 форм-исключений",
+              "Все они односложные и короткие",
+              "Некоторые совпадают с другими формами: ve (ir) = ve (ver в presente)"
+            ]
+          }
+        ],
+        "examples": [
+          "¡Haz los deberes antes de salir!",
+          "Pon la mesa, vamos a cenar.",
+          "Ven a mi casa esta tarde.",
+          "Di la verdad, ¿qué ha pasado?",
+          "Sé paciente, todo saldrá bien."
+        ]
+      },
+      "questions": [
+        {"sentence": "¡___ ejercicio todos los días! (hacer)", "answer": "Haz"},
+        {"sentence": "___ crema protectora antes de salir. (poner)", "answer": "Pon"},
+        {"sentence": "___ a mi casa esta tarde. (venir)", "answer": "Ven"},
+        {"sentence": "___ la verdad, ¿qué te pasa? (decir)", "answer": "Di"},
+        {"sentence": "___ paciente, el médico vendrá pronto. (ser)", "answer": "Sé"},
+        {"sentence": "___ al médico si te duele mucho. (ir)", "answer": "Ve"},
+        {"sentence": "___ a pasear, te sentará bien. (salir)", "answer": "Sal"},
+        {"sentence": "___ cuidado con el sol. (tener)", "answer": "Ten"},
+        {"sentence": "___ estiramientos después de correr. (hacer)", "answer": "Haz"},
+        {"sentence": "___ hielo en la lesión. (poner)", "answer": "Pon"},
+        {"sentence": "___ conmigo al gimnasio. (venir)", "answer": "Ven"},
+        {"sentence": "___ cómo te sientes. (decir)", "answer": "Di"},
+        {"sentence": "___ positivo, todo irá bien. (ser)", "answer": "Sé"},
+        {"sentence": "___ a la farmacia a comprar el medicamento. (ir)", "answer": "Ve"},
+        {"sentence": "___ de casa un rato, necesitas aire fresco. (salir)", "answer": "Sal"},
+        {"sentence": "___ paciencia, la recuperación lleva tiempo. (tener)", "answer": "Ten"},
+        {"sentence": "___ una dieta equilibrada. (hacer)", "answer": "Haz"},
+        {"sentence": "___ la mesa, vamos a comer. (poner)", "answer": "Pon"},
+        {"sentence": "___ a verme cuando puedas. (venir)", "answer": "Ven"},
+        {"sentence": "___ qué te duele exactamente. (decir)", "answer": "Di"},
+        {"sentence": "___ fuerte, puedes superarlo. (ser)", "answer": "Sé"},
+        {"sentence": "___ al dentista, tienes que revisarte. (ir)", "answer": "Ve"},
+        {"sentence": "___ a correr por la mañana. (salir)", "answer": "Sal"},
+        {"sentence": "___ cuidado con las alergias en primavera. (tener)", "answer": "Ten"},
+        {"sentence": "___ yoga para relajarte. (hacer)", "answer": "Haz"},
+        {"sentence": "___ el termómetro en la boca. (poner)", "answer": "Pon"},
+        {"sentence": "___ a la consulta a las 10. (venir)", "answer": "Ven"},
+        {"sentence": "___ siempre la verdad al médico. (decir)", "answer": "Di"},
+        {"sentence": "___ responsable con tu salud. (ser)", "answer": "Sé"},
+        {"sentence": "___ a urgencias si es grave. (ir)", "answer": "Ve"},
+        {"sentence": "___ a caminar todos los días. (salir)", "answer": "Sal"},
+        {"sentence": "___ fe, te vas a curar. (tener)", "answer": "Ten"},
+        {"sentence": "___ deporte regularmente. (hacer)", "answer": "Haz"},
+        {"sentence": "___ atención a los síntomas. (poner)", "answer": "Pon"},
+        {"sentence": "___ a buscarme a las 5. (venir)", "answer": "Ven"},
+        {"sentence": "___ adiós a los malos hábitos. (decir)", "answer": "Di"},
+        {"sentence": "___ constante en el tratamiento. (ser)", "answer": "Sé"},
+        {"sentence": "___ despacio si te mareas. (ir)", "answer": "Ve"},
+        {"sentence": "___ temprano de trabajar hoy. (salir)", "answer": "Sal"},
+        {"sentence": "___ mucho cuidado con la fiebre alta. (tener)", "answer": "Ten"},
+        {"sentence": "___ caso al médico. (hacer)", "answer": "Haz"},
+        {"sentence": "___ la crema después del baño. (poner)", "answer": "Pon"},
+        {"sentence": "___ a cenar con nosotros. (venir)", "answer": "Ven"},
+        {"sentence": "___ que sí, acepta la ayuda. (decir)", "answer": "Di"},
+        {"sentence": "___ optimista, la recuperación va bien. (ser)", "answer": "Sé"},
+        {"sentence": "___ con cuidado, el suelo está mojado. (ir)", "answer": "Ve"},
+        {"sentence": "___ al jardín a tomar el sol. (salir)", "answer": "Sal"},
+        {"sentence": "___ confianza en los médicos. (tener)", "answer": "Ten"},
+        {"sentence": "___ lo que te digo y descansa. (hacer)", "answer": "Haz"},
+        {"sentence": "___ el despertador temprano. (poner)", "answer": "Pon"},
+        {"sentence": "___ cuando quieras, estoy en casa. (venir)", "answer": "Ven"},
+        {"sentence": "___ no al tabaco. (decir)", "answer": "Di"},
+        {"sentence": "___ valiente y afronta el problema. (ser)", "answer": "Sé"},
+        {"sentence": "___ a comprar fruta fresca. (ir)", "answer": "Ve"},
+        {"sentence": "___ a dar un paseo. (salir)", "answer": "Sal"},
+        {"sentence": "___ calma, no te pongas nervioso. (tener)", "answer": "Ten"},
+        {"sentence": "___ una pausa en el trabajo. (hacer)", "answer": "Haz"},
+        {"sentence": "___ música relajante. (poner)", "answer": "Pon"},
+        {"sentence": "___ a visitarme al hospital. (venir)", "answer": "Ven"},
+        {"sentence": "___ bueno y tómate la medicina. (ser)", "answer": "Sé"}
+      ],
+      "microTests": [
+        {"sentence": "___ ejercicio. (hacer)", "answer": "Haz", "hint": "Hacer → Haz (неправильный)"},
+        {"sentence": "___ crema protectora. (poner)", "answer": "Pon", "hint": "Poner → Pon (неправильный)"},
+        {"sentence": "___ a mi casa. (venir)", "answer": "Ven", "hint": "Venir → Ven (неправильный)"},
+        {"sentence": "___ la verdad. (decir)", "answer": "Di", "hint": "Decir → Di (неправильный)"},
+        {"sentence": "___ paciente. (ser)", "answer": "Sé", "hint": "Ser → Sé (неправильный)"},
+        {"sentence": "___ al médico. (ir)", "answer": "Ve", "hint": "Ir → Ve (неправильный)"},
+        {"sentence": "___ a pasear. (salir)", "answer": "Sal", "hint": "Salir → Sal (неправильный)"},
+        {"sentence": "___ cuidado. (tener)", "answer": "Ten", "hint": "Tener → Ten (неправильный)"},
+        {"sentence": "___ estiramientos. (hacer)", "answer": "Haz", "hint": "Hacer → Haz"},
+        {"sentence": "___ hielo. (poner)", "answer": "Pon", "hint": "Poner → Pon"},
+        {"sentence": "___ conmigo. (venir)", "answer": "Ven", "hint": "Venir → Ven"},
+        {"sentence": "___ cómo te sientes. (decir)", "answer": "Di", "hint": "Decir → Di"},
+        {"sentence": "___ fuerte. (ser)", "answer": "Sé", "hint": "Ser → Sé"},
+        {"sentence": "___ a la farmacia. (ir)", "answer": "Ve", "hint": "Ir → Ve"},
+        {"sentence": "___ paciencia. (tener)", "answer": "Ten", "hint": "Tener → Ten"}
+      ]
     }
   ]
 }

@@ -1,21 +1,494 @@
 {
   "id": "unidad_5",
-  "title": "Unidad 5",
-  "categories": {
-    "sustantivos": [
-      {"spanish": "el ejemplo", "ru": "пример"},
-      {"spanish": "la palabra", "ru": "слово"},
-      {"spanish": "el texto", "ru": "текст"}
+  "title": "Unidad 5: Estar + gerundio",
+  "groups": {
+    "VERBOS_REGULARES_AR": [
+      {
+        "spanish": "hablar",
+        "ru": "говорить",
+        "type": "verbo",
+        "icon": "message-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ por teléfono.",
+          "María está ___ con su madre.",
+          "¿Con quién estás ___?",
+          "Estamos ___ de las vacaciones."
+        ],
+        "hardSentencesRu": [
+          "Я разговариваю по телефону.",
+          "Мария разговаривает с мамой.",
+          "С кем ты разговариваешь?",
+          "Мы говорим об отпуске."
+        ]
+      },
+      {
+        "spanish": "trabajar",
+        "ru": "работать",
+        "type": "verbo",
+        "icon": "briefcase",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ en un proyecto.",
+          "Mi padre está ___ mucho.",
+          "¿Dónde estás ___?",
+          "Están ___ toda la noche."
+        ],
+        "hardSentencesRu": [
+          "Я работаю над проектом.",
+          "Мой отец много работает.",
+          "Где ты работаешь?",
+          "Они работают всю ночь."
+        ]
+      },
+      {
+        "spanish": "estudiar",
+        "ru": "учиться",
+        "type": "verbo",
+        "icon": "book-open",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ español.",
+          "Los niños están ___ para el examen.",
+          "¿Qué estás ___?",
+          "Ella está ___ medicina."
+        ],
+        "hardSentencesRu": [
+          "Я изучаю испанский.",
+          "Дети готовятся к экзамену.",
+          "Что ты изучаешь?",
+          "Она изучает медицину."
+        ]
+      },
+      {
+        "spanish": "cocinar",
+        "ru": "готовить",
+        "type": "verbo",
+        "icon": "chef-hat",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi madre está ___ la cena.",
+          "¿Qué estás ___?",
+          "Estoy ___ paella.",
+          "Están ___ para la fiesta."
+        ],
+        "hardSentencesRu": [
+          "Моя мама готовит ужин.",
+          "Что ты готовишь?",
+          "Я готовлю паэлью.",
+          "Они готовят для вечеринки."
+        ]
+      },
+      {
+        "spanish": "escuchar",
+        "ru": "слушать",
+        "type": "verbo",
+        "icon": "headphones",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ música.",
+          "¿Estás ___ la radio?",
+          "Él está ___ un podcast.",
+          "Estamos ___ las noticias."
+        ],
+        "hardSentencesRu": [
+          "Я слушаю музыку.",
+          "Ты слушаешь радио?",
+          "Он слушает подкаст.",
+          "Мы слушаем новости."
+        ]
+      }
     ],
-    "adjetivos": [
-      {"spanish": "nuevo", "ru": "новый"},
-      {"spanish": "viejo", "ru": "старый"}
+    "VERBOS_REGULARES_ER_IR": [
+      {
+        "spanish": "comer",
+        "ru": "есть",
+        "type": "verbo",
+        "icon": "utensils",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ una manzana.",
+          "¿Qué estás ___?",
+          "Los niños están ___ en el comedor.",
+          "Está ___ demasiado rápido."
+        ],
+        "hardSentencesRu": [
+          "Я ем яблоко.",
+          "Что ты ешь?",
+          "Дети едят в столовой.",
+          "Он ест слишком быстро."
+        ]
+      },
+      {
+        "spanish": "beber",
+        "ru": "пить",
+        "type": "verbo",
+        "icon": "glass-water",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ agua.",
+          "¿Qué estás ___?",
+          "Él está ___ café.",
+          "Están ___ cerveza."
+        ],
+        "hardSentencesRu": [
+          "Я пью воду.",
+          "Что ты пьёшь?",
+          "Он пьёт кофе.",
+          "Они пьют пиво."
+        ]
+      },
+      {
+        "spanish": "escribir",
+        "ru": "писать",
+        "type": "verbo",
+        "icon": "pen",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ un correo.",
+          "¿Qué estás ___?",
+          "Ella está ___ una novela.",
+          "Están ___ el informe."
+        ],
+        "hardSentencesRu": [
+          "Я пишу письмо.",
+          "Что ты пишешь?",
+          "Она пишет роман.",
+          "Они пишут отчёт."
+        ]
+      },
+      {
+        "spanish": "vivir",
+        "ru": "жить",
+        "type": "verbo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ con mis padres.",
+          "¿Dónde estás ___?",
+          "Ahora está ___ en Madrid.",
+          "Están ___ en un hotel."
+        ],
+        "hardSentencesRu": [
+          "Я живу с родителями.",
+          "Где ты живёшь?",
+          "Сейчас он живёт в Мадриде.",
+          "Они живут в отеле."
+        ]
+      },
+      {
+        "spanish": "aprender",
+        "ru": "учить",
+        "type": "verbo",
+        "icon": "graduation-cap",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ a conducir.",
+          "¿Qué estás ___?",
+          "Ella está ___ italiano.",
+          "Están ___ mucho."
+        ],
+        "hardSentencesRu": [
+          "Я учусь водить.",
+          "Что ты учишь?",
+          "Она учит итальянский.",
+          "Они многому учатся."
+        ]
+      }
     ],
-    "verbos": [
-      {"spanish": "crear", "ru": "создавать"},
-      {"spanish": "usar", "ru": "использовать"}
+    "VERBOS_IRREGULARES_GERUNDIO": [
+      {
+        "spanish": "leer",
+        "ru": "читать",
+        "type": "verbo",
+        "icon": "book",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ un libro.",
+          "¿Qué estás ___?",
+          "Ella está ___ el periódico.",
+          "Están ___ las noticias."
+        ],
+        "hardSentencesRu": [
+          "Я читаю книгу.",
+          "Что ты читаешь?",
+          "Она читает газету.",
+          "Они читают новости."
+        ]
+      },
+      {
+        "spanish": "dormir",
+        "ru": "спать",
+        "type": "verbo",
+        "icon": "moon",
+        "useIcon": true,
+        "hardSentences": [
+          "El bebé está ___.",
+          "¿Por qué estás ___?",
+          "Ella está ___ la siesta.",
+          "Los niños están ___."
+        ],
+        "hardSentencesRu": [
+          "Малыш спит.",
+          "Почему ты спишь?",
+          "Она спит сиесту.",
+          "Дети спят."
+        ]
+      },
+      {
+        "spanish": "decir",
+        "ru": "говорить/сказать",
+        "type": "verbo",
+        "icon": "message-square",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Qué estás ___?",
+          "Él está ___ la verdad.",
+          "Están ___ mentiras.",
+          "¿Qué me estás ___?"
+        ],
+        "hardSentencesRu": [
+          "Что ты говоришь?",
+          "Он говорит правду.",
+          "Они говорят неправду.",
+          "Что ты мне говоришь?"
+        ]
+      },
+      {
+        "spanish": "pedir",
+        "ru": "просить",
+        "type": "verbo",
+        "icon": "hand",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ un favor.",
+          "¿Qué estás ___?",
+          "Ella está ___ ayuda.",
+          "Están ___ la cuenta."
+        ],
+        "hardSentencesRu": [
+          "Я прошу об одолжении.",
+          "Что ты просишь?",
+          "Она просит помощи.",
+          "Они просят счёт."
+        ]
+      },
+      {
+        "spanish": "ir",
+        "ru": "идти",
+        "type": "verbo",
+        "icon": "arrow-right",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ al trabajo.",
+          "¿Adónde estás ___?",
+          "Ella está ___ de compras.",
+          "Están ___ al cine."
+        ],
+        "hardSentencesRu": [
+          "Я иду на работу.",
+          "Куда ты идёшь?",
+          "Она идёт за покупками.",
+          "Они идут в кино."
+        ]
+      }
     ],
-    "gramatica": []
+    "EXPRESIONES_PETICIONES": [
+      {
+        "spanish": "¿Puedo...?",
+        "ru": "Можно мне...?",
+        "type": "expresión",
+        "icon": "help-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "___ usar tu teléfono?",
+          "___ pasar?",
+          "___ sentarme aquí?",
+          "___ hacer una pregunta?"
+        ],
+        "hardSentencesRu": [
+          "Можно воспользоваться твоим телефоном?",
+          "Можно войти?",
+          "Можно здесь сесть?",
+          "Можно задать вопрос?"
+        ]
+      },
+      {
+        "spanish": "¿Te importa si...?",
+        "ru": "Ты не против, если...?",
+        "type": "expresión",
+        "icon": "message-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "___ abro la ventana?",
+          "___ pongo música?",
+          "___ fumo aquí?",
+          "___ cambio el canal?"
+        ],
+        "hardSentencesRu": [
+          "Ты не против, если я открою окно?",
+          "Ты не против, если я включу музыку?",
+          "Ты не против, если я закурю?",
+          "Ты не против, если я переключу канал?"
+        ]
+      },
+      {
+        "spanish": "¿Me dejas...?",
+        "ru": "Дашь мне...?",
+        "type": "expresión",
+        "icon": "hand",
+        "useIcon": true,
+        "hardSentences": [
+          "___ tu bolígrafo?",
+          "___ ver?",
+          "___ tu coche?",
+          "___ pasar?"
+        ],
+        "hardSentencesRu": [
+          "Дашь мне свою ручку?",
+          "Дашь посмотреть?",
+          "Дашь свою машину?",
+          "Позволишь пройти?"
+        ]
+      },
+      {
+        "spanish": "¿Me pone...?",
+        "ru": "Мне..., пожалуйста",
+        "type": "expresión",
+        "icon": "coffee",
+        "useIcon": true,
+        "hardSentences": [
+          "___ un café?",
+          "___ una cerveza?",
+          "___ la cuenta?",
+          "___ un vaso de agua?"
+        ],
+        "hardSentencesRu": [
+          "Мне кофе, пожалуйста.",
+          "Мне пиво, пожалуйста.",
+          "Счёт, пожалуйста.",
+          "Мне стакан воды, пожалуйста."
+        ]
+      }
+    ],
+    "VERBOS_PETICIONES": [
+      {
+        "spanish": "dar",
+        "ru": "давать",
+        "type": "verbo",
+        "icon": "gift",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me ___ un caramelo?",
+          "¿Me ___ tu número?",
+          "¿Me ___ un consejo?",
+          "¿Me ___ permiso?"
+        ],
+        "hardSentencesRu": [
+          "Дашь мне конфетку?",
+          "Дашь свой номер?",
+          "Дашь совет?",
+          "Дашь разрешение?"
+        ]
+      },
+      {
+        "spanish": "pasar",
+        "ru": "передавать",
+        "type": "verbo",
+        "icon": "arrow-right-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me ___ la sal?",
+          "¿Me ___ el pan?",
+          "¿Me ___ el mando?",
+          "¿Me ___ el agua?"
+        ],
+        "hardSentencesRu": [
+          "Передашь соль?",
+          "Передашь хлеб?",
+          "Передашь пульт?",
+          "Передашь воду?"
+        ]
+      },
+      {
+        "spanish": "prestar",
+        "ru": "одалживать",
+        "type": "verbo",
+        "icon": "repeat",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me ___ tu bolígrafo?",
+          "¿Me ___ 10 euros?",
+          "¿Me ___ tu coche?",
+          "¿Me ___ tu diccionario?"
+        ],
+        "hardSentencesRu": [
+          "Одолжишь ручку?",
+          "Одолжишь 10 евро?",
+          "Одолжишь машину?",
+          "Одолжишь словарь?"
+        ]
+      },
+      {
+        "spanish": "poner",
+        "ru": "положить/налить",
+        "type": "verbo",
+        "icon": "coffee",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me ___ un café?",
+          "¿Me ___ la cuenta?",
+          "¿Me ___ una cerveza?",
+          "¿Me ___ más pan?"
+        ],
+        "hardSentencesRu": [
+          "Мне кофе, пожалуйста.",
+          "Счёт, пожалуйста.",
+          "Мне пиво, пожалуйста.",
+          "Мне ещё хлеба, пожалуйста."
+        ]
+      }
+    ],
+    "TENER_VS_TENER_QUE": [
+      {
+        "spanish": "tener",
+        "ru": "иметь",
+        "type": "verbo",
+        "icon": "check-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "___ un hermano.",
+          "___ una reunión.",
+          "___ mucho trabajo.",
+          "___ dolor de cabeza."
+        ],
+        "hardSentencesRu": [
+          "У меня есть брат.",
+          "У меня встреча.",
+          "У меня много работы.",
+          "У меня болит голова."
+        ]
+      },
+      {
+        "spanish": "tener que",
+        "ru": "должен",
+        "type": "expresión",
+        "icon": "alert-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "___ estudiar.",
+          "___ ir al médico.",
+          "___ trabajar mañana.",
+          "___ levantarme temprano."
+        ],
+        "hardSentencesRu": [
+          "Я должен учиться.",
+          "Мне нужно к врачу.",
+          "Я должен работать завтра.",
+          "Я должен встать рано."
+        ]
+      }
+    ]
   },
   "ejercicios": [
     {

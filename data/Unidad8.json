@@ -1039,6 +1039,238 @@
       }
     ]
   },
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "imperativo_afirmativo",
+        "nombre": "Imperativo Afirmativo",
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "tu": "habla",
+              "usted": "hable",
+              "nosotros": "hablemos",
+              "vosotros": "hablad",
+              "ustedes": "hablen"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "tu": "come",
+              "usted": "coma",
+              "nosotros": "comamos",
+              "vosotros": "comed",
+              "ustedes": "coman"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "tu": "vive",
+              "usted": "viva",
+              "nosotros": "vivamos",
+              "vosotros": "vivid",
+              "ustedes": "vivan"
+            }
+          },
+          {
+            "infinitivo": "descansar",
+            "traduccion": "отдыхать",
+            "formas": {
+              "tu": "descansa",
+              "usted": "descanse",
+              "nosotros": "descansemos",
+              "vosotros": "descansad",
+              "ustedes": "descansen"
+            }
+          },
+          {
+            "infinitivo": "caminar",
+            "traduccion": "ходить",
+            "formas": {
+              "tu": "camina",
+              "usted": "camine",
+              "nosotros": "caminemos",
+              "vosotros": "caminad",
+              "ustedes": "caminen"
+            }
+          },
+          {
+            "infinitivo": "beber",
+            "traduccion": "пить",
+            "formas": {
+              "tu": "bebe",
+              "usted": "beba",
+              "nosotros": "bebamos",
+              "vosotros": "bebed",
+              "ustedes": "beban"
+            }
+          },
+          {
+            "infinitivo": "correr",
+            "traduccion": "бегать",
+            "formas": {
+              "tu": "corre",
+              "usted": "corra",
+              "nosotros": "corramos",
+              "vosotros": "corred",
+              "ustedes": "corran"
+            }
+          },
+          {
+            "infinitivo": "escribir",
+            "traduccion": "писать",
+            "formas": {
+              "tu": "escribe",
+              "usted": "escriba",
+              "nosotros": "escribamos",
+              "vosotros": "escribid",
+              "ustedes": "escriban"
+            }
+          }
+        ],
+        "irregulares": [
+          {
+            "infinitivo": "hacer",
+            "traduccion": "делать",
+            "formas": {
+              "tu": "haz",
+              "usted": "haga",
+              "nosotros": "hagamos",
+              "vosotros": "haced",
+              "ustedes": "hagan"
+            }
+          },
+          {
+            "infinitivo": "poner",
+            "traduccion": "класть, ставить",
+            "formas": {
+              "tu": "pon",
+              "usted": "ponga",
+              "nosotros": "pongamos",
+              "vosotros": "poned",
+              "ustedes": "pongan"
+            }
+          },
+          {
+            "infinitivo": "venir",
+            "traduccion": "приходить",
+            "formas": {
+              "tu": "ven",
+              "usted": "venga",
+              "nosotros": "vengamos",
+              "vosotros": "venid",
+              "ustedes": "vengan"
+            }
+          },
+          {
+            "infinitivo": "decir",
+            "traduccion": "говорить, сказать",
+            "formas": {
+              "tu": "di",
+              "usted": "diga",
+              "nosotros": "digamos",
+              "vosotros": "decid",
+              "ustedes": "digan"
+            }
+          },
+          {
+            "infinitivo": "ser",
+            "traduccion": "быть",
+            "formas": {
+              "tu": "sé",
+              "usted": "sea",
+              "nosotros": "seamos",
+              "vosotros": "sed",
+              "ustedes": "sean"
+            }
+          },
+          {
+            "infinitivo": "ir",
+            "traduccion": "идти",
+            "formas": {
+              "tu": "ve",
+              "usted": "vaya",
+              "nosotros": "vayamos",
+              "vosotros": "id",
+              "ustedes": "vayan"
+            }
+          },
+          {
+            "infinitivo": "salir",
+            "traduccion": "выходить",
+            "formas": {
+              "tu": "sal",
+              "usted": "salga",
+              "nosotros": "salgamos",
+              "vosotros": "salid",
+              "ustedes": "salgan"
+            }
+          },
+          {
+            "infinitivo": "tener",
+            "traduccion": "иметь",
+            "formas": {
+              "tu": "ten",
+              "usted": "tenga",
+              "nosotros": "tengamos",
+              "vosotros": "tened",
+              "ustedes": "tengan"
+            }
+          },
+          {
+            "infinitivo": "dormir",
+            "traduccion": "спать",
+            "formas": {
+              "tu": "duerme",
+              "usted": "duerma",
+              "nosotros": "durmamos",
+              "vosotros": "dormid",
+              "ustedes": "duerman"
+            }
+          },
+          {
+            "infinitivo": "pensar",
+            "traduccion": "думать",
+            "formas": {
+              "tu": "piensa",
+              "usted": "piense",
+              "nosotros": "pensemos",
+              "vosotros": "pensad",
+              "ustedes": "piensen"
+            }
+          },
+          {
+            "infinitivo": "cerrar",
+            "traduccion": "закрывать",
+            "formas": {
+              "tu": "cierra",
+              "usted": "cierre",
+              "nosotros": "cerremos",
+              "vosotros": "cerrad",
+              "ustedes": "cierren"
+            }
+          },
+          {
+            "infinitivo": "seguir",
+            "traduccion": "следовать",
+            "formas": {
+              "tu": "sigue",
+              "usted": "siga",
+              "nosotros": "sigamos",
+              "vosotros": "seguid",
+              "ustedes": "sigan"
+            }
+          }
+        ]
+      }
+    ]
+  },
   "ejercicios": [
     {
       "id": "ejercicio_1",

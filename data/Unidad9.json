@@ -1401,6 +1401,350 @@
         {"sentence": "Internet no ___ hace 50 años.", "answer": "existía", "hint": "¿Qué tecnología NO había? (existir, singular)"},
         {"sentence": "___ más tiempo libre antes.", "answer": "Había", "hint": "¿Qué sí tenía la gente? (haber impersonal)"}
       ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Ya no / Todavía: comparar pasado y presente",
+      "hint": "ya no / todavía",
+      "rule": {
+        "title": "YA NO vs TODAVÍA: comparar pasado y presente",
+        "explanation": "Estas dos expresiones nos permiten comparar situaciones del pasado con el presente. YA NO indica que algo ha dejado de existir o de hacerse. TODAVÍA indica que algo del pasado continúa en el presente.",
+        "sections": [
+          {
+            "subtitle": "YA NO — algo que ha cambiado (уже не)",
+            "points": [
+              "<b>Ya no</b> + verbo: indica que una situación del pasado ha terminado",
+              "Antes vivía en Madrid, pero <b>ya no</b> vivo allí — Раньше я жил в Мадриде, но уже не живу там",
+              "Antes había muchas tiendas, pero <b>ya no</b> existen — Раньше было много магазинов, но их уже нет",
+              "La gente <b>ya no</b> escribe cartas — Люди уже не пишут письма"
+            ]
+          },
+          {
+            "subtitle": "TODAVÍA — algo que continúa (всё ещё)",
+            "points": [
+              "<b>Todavía</b> + verbo: indica que una situación del pasado sigue vigente",
+              "<b>Todavía</b> vivo con mis padres — Я всё ещё живу с родителями",
+              "<b>Todavía</b> existen problemas de desigualdad — Всё ещё существуют проблемы неравенства",
+              "Mi abuela <b>todavía</b> usa máquina de escribir — Моя бабушка всё ещё пользуется печатной машинкой"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Antes fumaba mucho, pero ya no fumo.", "ru": "Раньше я много курил, но уже не курю."},
+          {"es": "Todavía recuerdo mi infancia con cariño.", "ru": "Я всё ещё вспоминаю своё детство с теплотой."},
+          {"es": "La gente ya no viaja tanto en tren como antes.", "ru": "Люди уже не ездят на поезде так часто, как раньше."},
+          {"es": "Todavía hay países donde las mujeres no pueden votar.", "ru": "Всё ещё есть страны, где женщины не могут голосовать."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Antes vivía en Madrid, pero ___ vivo allí.", "answer": "ya no"},
+        {"sentence": "___ recuerdo mi infancia con mucho cariño.", "answer": "Todavía"},
+        {"sentence": "La gente ___ escribe cartas a mano.", "answer": "ya no"},
+        {"sentence": "Mi abuela ___ vive en el mismo pueblo.", "answer": "todavía"},
+        {"sentence": "Antes fumaba, pero ___ fumo.", "answer": "ya no"},
+        {"sentence": "___ existen problemas de desigualdad.", "answer": "Todavía"},
+        {"sentence": "Los jóvenes ___ leen tantos libros como antes.", "answer": "ya no"},
+        {"sentence": "Mi abuelo ___ trabaja en el campo.", "answer": "todavía"},
+        {"sentence": "La gente ___ usa máquinas de escribir.", "answer": "ya no"},
+        {"sentence": "___ hay diferencias entre ricos y pobres.", "answer": "Todavía"},
+        {"sentence": "Antes veía mucha televisión, pero ___ la veo.", "answer": "ya no"},
+        {"sentence": "Mi madre ___ cocina todos los días.", "answer": "todavía"},
+        {"sentence": "Los niños ___ juegan tanto en la calle.", "answer": "ya no"},
+        {"sentence": "___ tengo los juguetes de mi infancia.", "answer": "Todavía"},
+        {"sentence": "La gente ___ escucha música en cassettes.", "answer": "ya no"},
+        {"sentence": "___ quedan algunas tradiciones antiguas.", "answer": "Todavía"},
+        {"sentence": "Antes iba al gimnasio, pero ___ voy.", "answer": "ya no"},
+        {"sentence": "Mi padre ___ lee el periódico cada mañana.", "answer": "todavía"},
+        {"sentence": "Los jóvenes ___ respetan tanto a los mayores.", "answer": "ya no"},
+        {"sentence": "___ hay guerras en muchas partes del mundo.", "answer": "Todavía"},
+        {"sentence": "Antes comía carne, pero ___ la como.", "answer": "ya no"},
+        {"sentence": "Mi hermano ___ vive con mis padres.", "answer": "todavía"},
+        {"sentence": "La gente ___ viaja en barco para cruzar el océano.", "answer": "ya no"},
+        {"sentence": "___ conservamos algunas fotos antiguas.", "answer": "Todavía"},
+        {"sentence": "Antes tenía miedo a la oscuridad, pero ___ lo tengo.", "answer": "ya no"},
+        {"sentence": "___ existen pueblos sin electricidad.", "answer": "Todavía"},
+        {"sentence": "Los estudiantes ___ escriben a mano los exámenes.", "answer": "ya no"},
+        {"sentence": "Mi abuela ___ guarda las cartas de mi abuelo.", "answer": "todavía"},
+        {"sentence": "La gente ___ paga tanto en efectivo como antes.", "answer": "ya no"},
+        {"sentence": "___ hay países donde no hay libertad.", "answer": "Todavía"},
+        {"sentence": "Antes trabajaba en una oficina, pero ___ trabajo allí.", "answer": "ya no"},
+        {"sentence": "___ recuerdo el nombre de mi primera maestra.", "answer": "Todavía"},
+        {"sentence": "Los jóvenes ___ hablan tanto por teléfono fijo.", "answer": "ya no"},
+        {"sentence": "___ existen diferencias salariales entre hombres y mujeres.", "answer": "Todavía"},
+        {"sentence": "Antes bebía mucho café, pero ___ lo bebo.", "answer": "ya no"},
+        {"sentence": "Mi tía ___ vive en la casa donde nació.", "answer": "todavía"},
+        {"sentence": "La gente ___ confía tanto en los políticos.", "answer": "ya no"},
+        {"sentence": "___ hay personas que no tienen acceso a internet.", "answer": "Todavía"},
+        {"sentence": "Antes salía todos los fines de semana, pero ___ salgo.", "answer": "ya no"},
+        {"sentence": "___ conservo mi primer libro de español.", "answer": "Todavía"},
+        {"sentence": "Los niños ___ ven tantos dibujos animados en la tele.", "answer": "ya no"},
+        {"sentence": "___ existen enfermedades sin cura.", "answer": "Todavía"},
+        {"sentence": "Antes llevaba gafas, pero ___ las llevo.", "answer": "ya no"},
+        {"sentence": "Mi vecino ___ tiene el mismo coche de hace 20 años.", "answer": "todavía"},
+        {"sentence": "La gente ___ va tanto al cine como antes.", "answer": "ya no"},
+        {"sentence": "___ hay mucha contaminación en las ciudades.", "answer": "Todavía"},
+        {"sentence": "Antes hacía deporte todos los días, pero ___ lo hago.", "answer": "ya no"},
+        {"sentence": "___ me acuerdo de mis compañeros de la escuela.", "answer": "Todavía"},
+        {"sentence": "Los jóvenes ___ compran tantos periódicos.", "answer": "ya no"},
+        {"sentence": "___ quedan algunos edificios antiguos en el centro.", "answer": "Todavía"},
+        {"sentence": "Antes estudiaba inglés, pero ___ lo estudio.", "answer": "ya no"},
+        {"sentence": "___ tengo contacto con algunos amigos de la infancia.", "answer": "Todavía"},
+        {"sentence": "La gente ___ usa tanto el correo postal.", "answer": "ya no"},
+        {"sentence": "___ hay familias que viven sin agua corriente.", "answer": "Todavía"},
+        {"sentence": "Antes jugaba al fútbol, pero ___ juego.", "answer": "ya no"},
+        {"sentence": "___ funciona el reloj de mi abuelo.", "answer": "Todavía"},
+        {"sentence": "Los jóvenes ___ escuchan música en CD.", "answer": "ya no"},
+        {"sentence": "___ hay países con monarquía.", "answer": "Todavía"},
+        {"sentence": "Antes vivía solo, pero ___ vivo solo.", "answer": "ya no"},
+        {"sentence": "___ recuerdo las canciones de mi infancia.", "answer": "Todavía"}
+      ],
+      "microTests": [
+        {"sentence": "Antes vivía allí, pero ___ vivo.", "answer": "ya no", "hint": "¿Algo que ha terminado? (уже не)"},
+        {"sentence": "___ recuerdo mi infancia.", "answer": "Todavía", "hint": "¿Algo que continúa? (всё ещё)"},
+        {"sentence": "La gente ___ escribe cartas.", "answer": "ya no", "hint": "¿Algo que la gente dejó de hacer?"},
+        {"sentence": "Mi abuela ___ vive en el pueblo.", "answer": "todavía", "hint": "¿Algo que sigue igual?"},
+        {"sentence": "Antes fumaba, pero ___ fumo.", "answer": "ya no", "hint": "¿Un hábito que terminó?"},
+        {"sentence": "___ existen problemas de desigualdad.", "answer": "Todavía", "hint": "¿Algo que sigue existiendo?"},
+        {"sentence": "Los niños ___ juegan en la calle.", "answer": "ya no", "hint": "¿Algo que los niños dejaron de hacer?"},
+        {"sentence": "___ tengo los juguetes de mi infancia.", "answer": "Todavía", "hint": "¿Algo que conservas?"},
+        {"sentence": "La gente ___ escucha cassettes.", "answer": "ya no", "hint": "¿Una tecnología obsoleta?"},
+        {"sentence": "___ hay guerras en el mundo.", "answer": "Todavía", "hint": "¿Algo que desafortunadamente continúa?"},
+        {"sentence": "Antes iba al gimnasio, pero ___ voy.", "answer": "ya no", "hint": "¿Una actividad que dejaste?"},
+        {"sentence": "___ conservamos fotos antiguas.", "answer": "Todavía", "hint": "¿Algo que guardamos del pasado?"}
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Homófonos: sabía/sabia, hacía/hacia, medía/media",
+      "hint": "sabía / sabia / hacía / hacia / medía / media",
+      "rule": {
+        "title": "Homófonos con y sin TILDE: sabía/sabia, hacía/hacia, medía/media",
+        "explanation": "En español hay palabras que suenan igual pero se escriben diferente y tienen significados distintos. La tilde marca la diferencia entre verbos en pretérito imperfecto y otras palabras.",
+        "sections": [
+          {
+            "subtitle": "SABÍA (verbo) vs SABIA (adjetivo)",
+            "points": [
+              "<b>Sabía</b> (saber, imperfecto): Yo <b>sabía</b> la respuesta — Я знал ответ",
+              "<b>Sabia</b> (adjetivo, femenino de sabio): Mi abuela era muy <b>sabia</b> — Моя бабушка была очень мудрой",
+              "La tilde indica que es el verbo SABER en imperfecto"
+            ]
+          },
+          {
+            "subtitle": "HACÍA (verbo) vs HACIA (preposición)",
+            "points": [
+              "<b>Hacía</b> (hacer, imperfecto): <b>Hacía</b> mucho calor — Было очень жарко",
+              "<b>Hacia</b> (preposición, dirección): Voy <b>hacia</b> el centro — Иду в направлении центра",
+              "La tilde indica que es el verbo HACER en imperfecto"
+            ]
+          },
+          {
+            "subtitle": "MEDÍA (verbo) vs MEDIA (sustantivo/adjetivo)",
+            "points": [
+              "<b>Medía</b> (medir, imperfecto): <b>Medía</b> 1,70 m — Его рост был 1,70 м",
+              "<b>Media</b> (número): Son las ocho y <b>media</b> — Сейчас половина девятого",
+              "<b>Media</b> (promedio): La <b>media</b> de edad — Средний возраст"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Cuando tenía 12 años, ya medía 1,70 m.", "ru": "Когда мне было 12 лет, мой рост уже был 1,70 м."},
+          {"es": "Mi abuela era una mujer muy sabia.", "ru": "Моя бабушка была очень мудрой женщиной."},
+          {"es": "No estuve mucho rato en la playa, hacía demasiado calor.", "ru": "Я недолго пробыл на пляже, было слишком жарко."},
+          {"es": "Toma el metro hacia Plaza de España.", "ru": "Поезжай на метро в направлении Площади Испании."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Cuando tenía 12 años, ya ___ 1,70 m.", "answer": "medía"},
+        {"sentence": "Mi abuela era una mujer muy ___.", "answer": "sabia"},
+        {"sentence": "No fui a la playa porque ___ mucho calor.", "answer": "hacía"},
+        {"sentence": "Toma el autobús ___ el centro.", "answer": "hacia"},
+        {"sentence": "Son las ocho y ___.", "answer": "media"},
+        {"sentence": "Mi hermana pequeña ___ leer a los 4 años.", "answer": "sabía"},
+        {"sentence": "El camino ___ la montaña era muy largo.", "answer": "hacia"},
+        {"sentence": "Aquel profesor era muy ___.", "answer": "sabio"},
+        {"sentence": "De pequeño yo no ___ nadar.", "answer": "sabía"},
+        {"sentence": "___ mucho frío en invierno.", "answer": "Hacía"},
+        {"sentence": "La ___ de los estudiantes aprobó el examen.", "answer": "media"},
+        {"sentence": "¿___ dónde vas?", "answer": "Hacia"},
+        {"sentence": "Mi abuelo ___ muchas cosas sobre la vida.", "answer": "sabía"},
+        {"sentence": "El árbol ___ más de 10 metros.", "answer": "medía"},
+        {"sentence": "___ buen tiempo ayer.", "answer": "Hacía"},
+        {"sentence": "Nos vemos a las tres y ___.", "answer": "media"},
+        {"sentence": "Era una decisión muy ___.", "answer": "sabia"},
+        {"sentence": "___ cinco años que no lo veía.", "answer": "Hacía"},
+        {"sentence": "Caminaban ___ el norte.", "answer": "hacia"},
+        {"sentence": "Yo no ___ que estabas enfermo.", "answer": "sabía"},
+        {"sentence": "La mesa ___ dos metros de largo.", "answer": "medía"},
+        {"sentence": "Su consejo fue muy ___.", "answer": "sabio"},
+        {"sentence": "___ viento y no podíamos salir.", "answer": "Hacía"},
+        {"sentence": "Mira ___ la derecha.", "answer": "hacia"},
+        {"sentence": "La ___ hora de trabajo.", "answer": "media"},
+        {"sentence": "Nadie ___ la verdad.", "answer": "sabía"},
+        {"sentence": "El edificio ___ 50 metros de altura.", "answer": "medía"},
+        {"sentence": "___ mucho tiempo que no nos veíamos.", "answer": "Hacía"},
+        {"sentence": "Iba ___ su casa.", "answer": "hacia"},
+        {"sentence": "Mi abuela era muy ___ y daba buenos consejos.", "answer": "sabia"},
+        {"sentence": "¿___ cocinar cuando eras joven?", "answer": "Sabías"},
+        {"sentence": "La habitación ___ 20 metros cuadrados.", "answer": "medía"},
+        {"sentence": "___ sol todos los días en verano.", "answer": "Hacía"},
+        {"sentence": "El barco navegaba ___ el sur.", "answer": "hacia"},
+        {"sentence": "Llegó a las diez y ___.", "answer": "media"},
+        {"sentence": "No ___ que era tu cumpleaños.", "answer": "sabía"},
+        {"sentence": "De joven mi padre ___ 1,85 m.", "answer": "medía"},
+        {"sentence": "La frase era muy ___.", "answer": "sabia"},
+        {"sentence": "___ muchos años que vivía allí.", "answer": "Hacía"},
+        {"sentence": "Todos miraban ___ la puerta.", "answer": "hacia"},
+        {"sentence": "La temperatura ___ era de 25 grados.", "answer": "media"},
+        {"sentence": "Mi madre ___ todas las respuestas.", "answer": "sabía"},
+        {"sentence": "El río ___ 100 metros de ancho.", "answer": "medía"},
+        {"sentence": "___ mal tiempo y no salimos.", "answer": "Hacía"},
+        {"sentence": "Corre ___ la salida.", "answer": "hacia"},
+        {"sentence": "Faltan dos horas y ___.", "answer": "media"},
+        {"sentence": "¿___ dónde queda la estación?", "answer": "Sabías"},
+        {"sentence": "La ventana ___ un metro de alto.", "answer": "medía"},
+        {"sentence": "Sus palabras fueron muy ___s.", "answer": "sabia"},
+        {"sentence": "___ tanto calor que no podía dormir.", "answer": "Hacía"},
+        {"sentence": "El avión volaba ___ el este.", "answer": "hacia"},
+        {"sentence": "Es la una y ___.", "answer": "media"},
+        {"sentence": "Nadie ___ lo que iba a pasar.", "answer": "sabía"},
+        {"sentence": "La piscina ___ 25 metros de largo.", "answer": "medía"},
+        {"sentence": "Mi tía era una persona muy ___.", "answer": "sabia"},
+        {"sentence": "___ frío y encendimos la calefacción.", "answer": "Hacía"},
+        {"sentence": "El tren iba ___ Barcelona.", "answer": "hacia"},
+        {"sentence": "La ___ de edad de los participantes era 30 años.", "answer": "media"},
+        {"sentence": "Yo ___ que algo malo pasaba.", "answer": "sabía"},
+        {"sentence": "___ años que no comía eso.", "answer": "Hacía"}
+      ],
+      "microTests": [
+        {"sentence": "Cuando tenía 12 años, ya ___ 1,70 m.", "answer": "medía", "hint": "Verbo MEDIR en imperfecto (él/ella)"},
+        {"sentence": "Mi abuela era muy ___.", "answer": "sabia", "hint": "Adjetivo: мудрая (femenino)"},
+        {"sentence": "___ mucho calor en verano.", "answer": "Hacía", "hint": "Verbo HACER impersonal en imperfecto"},
+        {"sentence": "Toma el autobús ___ el centro.", "answer": "hacia", "hint": "Preposición: в направлении"},
+        {"sentence": "Son las ocho y ___.", "answer": "media", "hint": "Sustantivo: половина"},
+        {"sentence": "Mi hermana ___ leer a los 4 años.", "answer": "sabía", "hint": "Verbo SABER en imperfecto (ella)"},
+        {"sentence": "El camino ___ la montaña era largo.", "answer": "hacia", "hint": "Preposición: к, в направлении"},
+        {"sentence": "La ___ de los estudiantes aprobó.", "answer": "media", "hint": "Sustantivo: средняя (часть)"},
+        {"sentence": "Yo no ___ nadar de pequeño.", "answer": "sabía", "hint": "Verbo SABER en imperfecto (yo)"},
+        {"sentence": "___ buen tiempo ayer.", "answer": "Hacía", "hint": "Verbo HACER (tiempo atmosférico)"},
+        {"sentence": "Su consejo fue muy ___.", "answer": "sabio", "hint": "Adjetivo: мудрый (masculino)"},
+        {"sentence": "El árbol ___ más de 10 metros.", "answer": "medía", "hint": "Verbo MEDIR en imperfecto"}
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Marcadores temporales: antes, ahora, actualmente, entonces",
+      "hint": "antes / ahora / actualmente / entonces / en aquella época",
+      "rule": {
+        "title": "Marcadores temporales para comparar PASADO y PRESENTE",
+        "explanation": "Los marcadores temporales nos ayudan a situar las acciones en el tiempo y a comparar diferentes épocas. Algunos indican el pasado, otros el presente, y algunos sirven para establecer contrastes.",
+        "sections": [
+          {
+            "subtitle": "Marcadores de PASADO",
+            "points": [
+              "<b>Antes</b>: <b>Antes</b> la vida era más tranquila — Раньше жизнь была спокойнее",
+              "<b>Entonces</b>: <b>Entonces</b> no había internet — Тогда не было интернета",
+              "<b>En aquella época</b>: <b>En aquella época</b> no existían los móviles — В ту эпоху не существовало мобильных"
+            ]
+          },
+          {
+            "subtitle": "Marcadores de PRESENTE",
+            "points": [
+              "<b>Ahora</b>: <b>Ahora</b> todo es más rápido — Сейчас всё быстрее",
+              "<b>Actualmente</b>: <b>Actualmente</b> trabajo desde casa — В настоящее время я работаю из дома",
+              "<b>Hoy en día</b>: <b>Hoy en día</b> tenemos más información — Сегодня у нас больше информации"
+            ]
+          },
+          {
+            "subtitle": "Expresiones de contraste",
+            "points": [
+              "<b>Antes... ahora</b>: Antes no había coches, ahora hay millones — Раньше не было машин, сейчас их миллионы",
+              "<b>En cambio</b>: Antes viajaban poco; en cambio, ahora viajan mucho — Раньше мало путешествовали; зато сейчас много путешествуют"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Antes la gente escribía cartas, ahora envía mensajes.", "ru": "Раньше люди писали письма, сейчас отправляют сообщения."},
+          {"es": "En aquella época no existía internet.", "ru": "В ту эпоху не существовало интернета."},
+          {"es": "Actualmente vivo en Madrid, pero antes vivía en Barcelona.", "ru": "В настоящее время живу в Мадриде, но раньше жил в Барселоне."},
+          {"es": "Entonces todo era más barato que ahora.", "ru": "Тогда всё было дешевле, чем сейчас."}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ la vida era más tranquila.", "answer": "Antes"},
+        {"sentence": "___ todo es más rápido que en el pasado.", "answer": "Ahora"},
+        {"sentence": "___ trabajo desde casa.", "answer": "Actualmente"},
+        {"sentence": "___ no existía la televisión.", "answer": "Entonces"},
+        {"sentence": "___ no había tantos coches.", "answer": "Antes"},
+        {"sentence": "___ la tecnología está en todas partes.", "answer": "Ahora"},
+        {"sentence": "___ vivo en Madrid.", "answer": "Actualmente"},
+        {"sentence": "___ la gente viajaba menos.", "answer": "Entonces"},
+        {"sentence": "___ la gente escribía cartas a mano.", "answer": "Antes"},
+        {"sentence": "___ podemos comunicarnos con todo el mundo.", "answer": "Ahora"},
+        {"sentence": "___ hay más oportunidades que en el pasado.", "answer": "Actualmente"},
+        {"sentence": "___ no existían los teléfonos móviles.", "answer": "Entonces"},
+        {"sentence": "___ las familias eran más grandes.", "answer": "Antes"},
+        {"sentence": "___ la esperanza de vida es mayor.", "answer": "Ahora"},
+        {"sentence": "___ estudio español en una academia.", "answer": "Actualmente"},
+        {"sentence": "___ todo era más barato.", "answer": "Entonces"},
+        {"sentence": "___ la gente tenía más tiempo libre.", "answer": "Antes"},
+        {"sentence": "___ todo el mundo tiene smartphone.", "answer": "Ahora"},
+        {"sentence": "___ la situación económica es mejor.", "answer": "Actualmente"},
+        {"sentence": "___ no había internet.", "answer": "Entonces"},
+        {"sentence": "___ los niños jugaban más en la calle.", "answer": "Antes"},
+        {"sentence": "___ mismo voy a llamarte.", "answer": "Ahora"},
+        {"sentence": "___ mi hermano trabaja en otra ciudad.", "answer": "Actualmente"},
+        {"sentence": "___ vivíamos en un pueblo pequeño.", "answer": "Entonces"},
+        {"sentence": "___ la gente iba al cine más a menudo.", "answer": "Antes"},
+        {"sentence": "___ hay muchas opciones de entretenimiento.", "answer": "Ahora"},
+        {"sentence": "___ hay más igualdad entre hombres y mujeres.", "answer": "Actualmente"},
+        {"sentence": "___ no existían los ordenadores personales.", "answer": "Entonces"},
+        {"sentence": "___ se viajaba en barco para cruzar el océano.", "answer": "Antes"},
+        {"sentence": "___ todo es más fácil gracias a internet.", "answer": "Ahora"},
+        {"sentence": "___ mi padre ya no trabaja.", "answer": "Actualmente"},
+        {"sentence": "___ todo parecía más sencillo.", "answer": "Entonces"},
+        {"sentence": "___ la educación no era obligatoria.", "answer": "Antes"},
+        {"sentence": "___ la medicina puede curar muchas enfermedades.", "answer": "Ahora"},
+        {"sentence": "___ estudio en la universidad.", "answer": "Actualmente"},
+        {"sentence": "___ no sabíamos lo que pasaba en otros países.", "answer": "Entonces"},
+        {"sentence": "___ las mujeres no podían votar.", "answer": "Antes"},
+        {"sentence": "___ hay leyes que protegen a los trabajadores.", "answer": "Ahora"},
+        {"sentence": "___ vivo solo en un apartamento.", "answer": "Actualmente"},
+        {"sentence": "___ mi abuela era muy joven.", "answer": "Entonces"},
+        {"sentence": "___ la comida se preparaba en casa.", "answer": "Antes"},
+        {"sentence": "___ mucha gente come en restaurantes.", "answer": "Ahora"},
+        {"sentence": "___ hay más diversidad en las ciudades.", "answer": "Actualmente"},
+        {"sentence": "___ todo el mundo se conocía en el pueblo.", "answer": "Entonces"},
+        {"sentence": "___ los libros eran muy caros.", "answer": "Antes"},
+        {"sentence": "___ cualquiera puede publicar un libro.", "answer": "Ahora"},
+        {"sentence": "___ la contaminación es un problema grave.", "answer": "Actualmente"},
+        {"sentence": "___ no había supermercados.", "answer": "Entonces"},
+        {"sentence": "___ la gente no viajaba en avión.", "answer": "Antes"},
+        {"sentence": "___ los vuelos son muy baratos.", "answer": "Ahora"},
+        {"sentence": "___ trabajo en una empresa internacional.", "answer": "Actualmente"},
+        {"sentence": "___ no existía la electricidad en los pueblos.", "answer": "Entonces"},
+        {"sentence": "___ todo se hacía a mano.", "answer": "Antes"},
+        {"sentence": "___ las máquinas hacen el trabajo pesado.", "answer": "Ahora"},
+        {"sentence": "___ hay muchos más coches que hace 50 años.", "answer": "Actualmente"},
+        {"sentence": "___ la vida era muy diferente.", "answer": "Entonces"},
+        {"sentence": "___ la gente leía más periódicos.", "answer": "Antes"},
+        {"sentence": "___ la información está en internet.", "answer": "Ahora"},
+        {"sentence": "___ mi madre ya está jubilada.", "answer": "Actualmente"},
+        {"sentence": "___ no conocíamos otras culturas.", "answer": "Entonces"}
+      ],
+      "microTests": [
+        {"sentence": "___ la vida era más tranquila.", "answer": "Antes", "hint": "Marcador de pasado: раньше"},
+        {"sentence": "___ todo es más rápido.", "answer": "Ahora", "hint": "Marcador de presente: сейчас"},
+        {"sentence": "___ trabajo desde casa.", "answer": "Actualmente", "hint": "Marcador formal de presente: в настоящее время"},
+        {"sentence": "___ no existía la televisión.", "answer": "Entonces", "hint": "Marcador de pasado: тогда"},
+        {"sentence": "___ la gente escribía cartas.", "answer": "Antes", "hint": "¿En el pasado qué hacía la gente?"},
+        {"sentence": "___ podemos comunicarnos con todo el mundo.", "answer": "Ahora", "hint": "¿Qué podemos hacer en el presente?"},
+        {"sentence": "___ hay más oportunidades.", "answer": "Actualmente", "hint": "¿Qué hay en el presente? (formal)"},
+        {"sentence": "___ todo era más barato.", "answer": "Entonces", "hint": "¿En aquel momento del pasado?"},
+        {"sentence": "___ las familias eran más grandes.", "answer": "Antes", "hint": "¿Cómo eran las familias en el pasado?"},
+        {"sentence": "___ la tecnología está en todas partes.", "answer": "Ahora", "hint": "¿Dónde está la tecnología hoy?"},
+        {"sentence": "___ vivo en Madrid.", "answer": "Actualmente", "hint": "¿Dónde vives en el presente?"},
+        {"sentence": "___ no había internet.", "answer": "Entonces", "hint": "¿Qué no había en el pasado?"}
+      ]
     }
   ],
   "verbos": {

@@ -2203,6 +2203,256 @@
         {"sentence": "¿Os ___ cenar fuera?", "answer": "apetece", "hint": "Infinitivo = singular"},
         {"sentence": "Me ___ unos churros.", "answer": "apetecen", "hint": "Plural, хочется"}
       ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Imperativo positivo para instrucciones",
+      "hint": "corta / corte / cortad / corten | añade / añada / añadid / añadan",
+      "rule": {
+        "title": "Imperativo positivo: instrucciones de cocina",
+        "explanation": "El imperativo se usa para dar órdenes, instrucciones o consejos. En recetas de cocina, se usa principalmente las formas de tú (informal), usted (formal), vosotros y ustedes.",
+        "sections": [
+          {
+            "subtitle": "Imperativo de TÚ (informal)",
+            "points": [
+              "Verbos -AR: corta, añade → <b>Corta</b> la cebolla — Порежь лук",
+              "Verbos -ER: come, bebe → <b>Come</b> despacio — Ешь медленно",
+              "Verbos -IR: sirve, añade → <b>Sirve</b> caliente — Подавай горячим"
+            ]
+          },
+          {
+            "subtitle": "Imperativo de USTED (formal)",
+            "points": [
+              "Verbos -AR: corte, añada → <b>Corte</b> la cebolla — Порежьте лук",
+              "Verbos -ER: coma, beba → <b>Coma</b> despacio — Ешьте медленно",
+              "Verbos -IR: sirva, añada → <b>Sirva</b> caliente — Подавайте горячим"
+            ]
+          },
+          {
+            "subtitle": "Imperativo de VOSOTROS",
+            "points": [
+              "Verbos -AR: cortad, añadid → <b>Cortad</b> las verduras — Порежьте овощи",
+              "Verbos -ER: comed, bebed → <b>Comed</b> todo — Съешьте всё",
+              "Verbos -IR: servid, añadid → <b>Servid</b> caliente — Подавайте горячим"
+            ]
+          },
+          {
+            "subtitle": "Imperativo de USTEDES (formal plural)",
+            "points": [
+              "Verbos -AR: corten, añadan → <b>Corten</b> la cebolla — Порежьте лук",
+              "Verbos -ER: coman, beban → <b>Coman</b> despacio — Ешьте медленно",
+              "Verbos -IR: sirvan, añadan → <b>Sirvan</b> caliente — Подавайте горячим"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Corta la cebolla en trozos pequeños.", "ru": "Порежь лук мелкими кусочками."},
+          {"es": "Añada sal al gusto.", "ru": "Добавьте соль по вкусу."},
+          {"es": "Mezclad bien todos los ingredientes.", "ru": "Хорошо перемешайте все ингредиенты."},
+          {"es": "Sirvan el plato caliente.", "ru": "Подавайте блюдо горячим."}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ las patatas en cubos. (tú, cortar)", "answer": "Corta"},
+        {"sentence": "___ la sal poco a poco. (usted, añadir)", "answer": "Añada"},
+        {"sentence": "___ bien la masa. (vosotros, mezclar)", "answer": "Mezclad"},
+        {"sentence": "___ el plato caliente. (ustedes, servir)", "answer": "Sirvan"},
+        {"sentence": "___ la cebolla finamente. (tú, picar)", "answer": "Pica"},
+        {"sentence": "___ el aceite en la sartén. (usted, poner)", "answer": "Ponga"},
+        {"sentence": "___ los tomates maduros. (vosotros, elegir)", "answer": "Elegid"},
+        {"sentence": "___ con cuidado. (ustedes, cocinar)", "answer": "Cocinen"},
+        {"sentence": "___ el ajo antes de freír. (tú, pelar)", "answer": "Pela"},
+        {"sentence": "___ el fuego a mínimo. (usted, bajar)", "answer": "Baje"},
+        {"sentence": "___ el arroz durante 20 minutos. (vosotros, cocer)", "answer": "Coced"},
+        {"sentence": "___ la carne al horno. (ustedes, meter)", "answer": "Metan"},
+        {"sentence": "___ las verduras antes de cocinar. (tú, lavar)", "answer": "Lava"},
+        {"sentence": "___ agua hasta cubrir. (usted, añadir)", "answer": "Añada"},
+        {"sentence": "___ la sopa con perejil. (vosotros, decorar)", "answer": "Decorad"},
+        {"sentence": "___ todos los ingredientes. (ustedes, preparar)", "answer": "Preparen"},
+        {"sentence": "___ el huevo en el centro. (tú, poner)", "answer": "Pon"},
+        {"sentence": "___ la temperatura del horno. (usted, controlar)", "answer": "Controle"},
+        {"sentence": "___ la carne con sal. (vosotros, sazonar)", "answer": "Sazonad"},
+        {"sentence": "___ la receta exactamente. (ustedes, seguir)", "answer": "Sigan"},
+        {"sentence": "___ la sartén a fuego medio. (tú, calentar)", "answer": "Calienta"},
+        {"sentence": "___ los ingredientes frescos. (usted, usar)", "answer": "Use"},
+        {"sentence": "___ el pescado al horno. (vosotros, hacer)", "answer": "Haced"},
+        {"sentence": "___ el postre frío. (ustedes, servir)", "answer": "Sirvan"},
+        {"sentence": "___ la masa 30 minutos. (tú, dejar)", "answer": "Deja"},
+        {"sentence": "___ pimienta al gusto. (usted, echar)", "answer": "Eche"},
+        {"sentence": "___ los huevos bien. (vosotros, batir)", "answer": "Batid"},
+        {"sentence": "___ el aceite usado. (ustedes, tirar)", "answer": "Tiren"},
+        {"sentence": "___ la comida antes de servir. (tú, probar)", "answer": "Prueba"},
+        {"sentence": "___ el vino con la comida. (usted, acompañar)", "answer": "Acompañe"},
+        {"sentence": "___ las porciones iguales. (vosotros, hacer)", "answer": "Haced"},
+        {"sentence": "___ los platos calientes. (ustedes, mantener)", "answer": "Mantengan"},
+        {"sentence": "___ el limón sobre el pescado. (tú, exprimir)", "answer": "Exprime"},
+        {"sentence": "___ la carne al punto. (usted, cocinar)", "answer": "Cocine"},
+        {"sentence": "___ la ensalada al final. (vosotros, aliñar)", "answer": "Aliñad"},
+        {"sentence": "___ las especias con moderación. (ustedes, usar)", "answer": "Usen"},
+        {"sentence": "___ el caldo poco a poco. (tú, añadir)", "answer": "Añade"},
+        {"sentence": "___ la mantequilla en trozos. (usted, cortar)", "answer": "Corte"},
+        {"sentence": "___ las cebollas hasta dorar. (vosotros, freír)", "answer": "Freíd"},
+        {"sentence": "___ el agua a hervir. (ustedes, poner)", "answer": "Pongan"},
+        {"sentence": "___ la pasta al dente. (tú, cocer)", "answer": "Cuece"},
+        {"sentence": "___ la salsa por encima. (usted, verter)", "answer": "Vierta"},
+        {"sentence": "___ el queso rallado. (vosotros, espolvorear)", "answer": "Espolvoreado"},
+        {"sentence": "___ el plato con hierbas. (ustedes, adornar)", "answer": "Adornen"},
+        {"sentence": "___ la nevera cerrada. (tú, mantener)", "answer": "Mantén"},
+        {"sentence": "___ los restos en un táper. (usted, guardar)", "answer": "Guarde"},
+        {"sentence": "___ la mesa antes de comer. (vosotros, poner)", "answer": "Poned"},
+        {"sentence": "___ la comida en familia. (ustedes, disfrutar)", "answer": "Disfruten"},
+        {"sentence": "___ despacio, sin prisas. (tú, comer)", "answer": "Come"},
+        {"sentence": "___ la receta a los invitados. (usted, explicar)", "answer": "Explique"},
+        {"sentence": "___ los platos al terminar. (vosotros, recoger)", "answer": "Recoged"},
+        {"sentence": "___ la cocina limpia. (ustedes, dejar)", "answer": "Dejen"},
+        {"sentence": "___ los ingredientes con antelación. (tú, comprar)", "answer": "Compra"},
+        {"sentence": "___ la receta paso a paso. (usted, leer)", "answer": "Lea"},
+        {"sentence": "___ el menú para mañana. (vosotros, planificar)", "answer": "Planificad"},
+        {"sentence": "___ las sobras para otro día. (ustedes, aprovechar)", "answer": "Aprovechen"},
+        {"sentence": "___ la fruta bien madura. (tú, elegir)", "answer": "Elige"},
+        {"sentence": "___ las instrucciones del envase. (usted, seguir)", "answer": "Siga"},
+        {"sentence": "___ vuestras recetas favoritas. (vosotros, compartir)", "answer": "Compartid"},
+        {"sentence": "___ nuevos sabores sin miedo. (ustedes, probar)", "answer": "Prueben"}
+      ],
+      "microTests": [
+        {"sentence": "___ las patatas. (tú, cortar)", "answer": "Corta", "hint": "Imperativo tú: -AR → -a"},
+        {"sentence": "___ sal. (usted, añadir)", "answer": "Añada", "hint": "Imperativo usted: -IR → -a"},
+        {"sentence": "___ bien. (vosotros, mezclar)", "answer": "Mezclad", "hint": "Imperativo vosotros: -AR → -ad"},
+        {"sentence": "___ caliente. (ustedes, servir)", "answer": "Sirvan", "hint": "Imperativo ustedes: -IR → -an"},
+        {"sentence": "___ el ajo. (tú, pelar)", "answer": "Pela", "hint": "Imperativo tú: -AR → -a"},
+        {"sentence": "___ el fuego. (usted, bajar)", "answer": "Baje", "hint": "Imperativo usted: -AR → -e"},
+        {"sentence": "___ el arroz. (vosotros, cocer)", "answer": "Coced", "hint": "Imperativo vosotros: -ER → -ed"},
+        {"sentence": "___ la carne. (ustedes, cocinar)", "answer": "Cocinen", "hint": "Imperativo ustedes: -AR → -en"},
+        {"sentence": "___ la sartén. (tú, calentar)", "answer": "Calienta", "hint": "Imperativo tú (e→ie)"},
+        {"sentence": "___ ingredientes frescos. (usted, usar)", "answer": "Use", "hint": "Imperativo usted: -AR → -e"},
+        {"sentence": "___ los huevos. (vosotros, batir)", "answer": "Batid", "hint": "Imperativo vosotros: -IR → -id"},
+        {"sentence": "___ la receta. (ustedes, seguir)", "answer": "Sigan", "hint": "Imperativo ustedes (e→i)"}
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Comparativos: más/menos... que, tan... como",
+      "hint": "más / menos / tan / tanto / tanta / tantos / tantas / como / que",
+      "rule": {
+        "title": "Comparativos: MÁS/MENOS... QUE, TAN... COMO",
+        "explanation": "Los comparativos se usan para comparar personas, cosas o acciones. En español hay comparativos de superioridad (más... que), inferioridad (menos... que) e igualdad (tan... como, tanto... como).",
+        "sections": [
+          {
+            "subtitle": "MÁS... QUE — более... чем (superioridad)",
+            "points": [
+              "Con adjetivos: La paella es <b>más</b> famosa <b>que</b> la tortilla",
+              "Con sustantivos: Tiene <b>más</b> sal <b>que</b> pimienta",
+              "Con verbos: Como <b>más</b> fruta <b>que</b> mi hermano"
+            ]
+          },
+          {
+            "subtitle": "MENOS... QUE — менее... чем (inferioridad)",
+            "points": [
+              "Con adjetivos: Este plato es <b>menos</b> picante <b>que</b> aquel",
+              "Con sustantivos: Hay <b>menos</b> azúcar <b>que</b> antes",
+              "Con verbos: Cocino <b>menos</b> <b>que</b> antes"
+            ]
+          },
+          {
+            "subtitle": "TAN... COMO — такой же... как (igualdad con adjetivos)",
+            "points": [
+              "Con adjetivos: Esta sopa está <b>tan</b> buena <b>como</b> la de mi abuela",
+              "El invariable: <b>tan</b> + adjetivo + <b>como</b>",
+              "También con adverbios: Cocina <b>tan</b> bien <b>como</b> un chef"
+            ]
+          },
+          {
+            "subtitle": "TANTO/A/OS/AS... COMO — столько же... как (igualdad con sustantivos)",
+            "points": [
+              "Concuerda con sustantivo: <b>Tanto</b> arroz <b>como</b> pasta",
+              "<b>Tanta</b> fruta <b>como</b> verdura — Столько же фруктов, как и овощей",
+              "<b>Tantos</b> platos <b>como</b> invitados — Столько же блюд, как и гостей"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "El pescado es más sano que la carne.", "ru": "Рыба полезнее мяса."},
+          {"es": "Este restaurante es menos caro que aquel.", "ru": "Этот ресторан дешевле того."},
+          {"es": "Tu tortilla está tan rica como la de mi madre.", "ru": "Твоя тортилья такая же вкусная, как у моей мамы."},
+          {"es": "Tenemos tantas naranjas como manzanas.", "ru": "У нас столько же апельсинов, как и яблок."}
+        ]
+      },
+      "questions": [
+        {"sentence": "El pescado es ___ sano que la carne.", "answer": "más"},
+        {"sentence": "Este plato tiene ___ sal que aquel.", "answer": "menos"},
+        {"sentence": "Tu paella está ___ buena como la del restaurante.", "answer": "tan"},
+        {"sentence": "Hay ___ tomates como pepinos.", "answer": "tantos"},
+        {"sentence": "La fruta es ___ dulce ___ el chocolate.", "answer": "menos"},
+        {"sentence": "Este vino es ___ caro que el otro.", "answer": "más"},
+        {"sentence": "Mi madre cocina ___ bien ___ un chef profesional.", "answer": "tan"},
+        {"sentence": "Tenemos ___ leche ___ zumo.", "answer": "tanta"},
+        {"sentence": "El desayuno español es ___ fuerte que el americano.", "answer": "menos"},
+        {"sentence": "Esta receta es ___ fácil que la anterior.", "answer": "más"},
+        {"sentence": "El gazpacho está ___ frío ___ debería.", "answer": "tan"},
+        {"sentence": "Hay ___ patatas ___ cebollas en la ensalada.", "answer": "tantas"},
+        {"sentence": "La comida casera es ___ rica que la de restaurante.", "answer": "más"},
+        {"sentence": "Este café tiene ___ azúcar que el mío.", "answer": "menos"},
+        {"sentence": "Tu sopa está ___ caliente ___ la mía.", "answer": "tan"},
+        {"sentence": "Compré ___ manzanas ___ peras.", "answer": "tantas"},
+        {"sentence": "El pollo es ___ barato que la ternera.", "answer": "más"},
+        {"sentence": "Esta tarta tiene ___ calorías que aquella.", "answer": "menos"},
+        {"sentence": "Mi hermano come ___ rápido ___ yo.", "answer": "tan"},
+        {"sentence": "Necesitamos ___ huevos ___ la semana pasada.", "answer": "tantos"},
+        {"sentence": "El aceite de oliva es ___ saludable que la mantequilla.", "answer": "más"},
+        {"sentence": "Este postre es ___ dulce que el anterior.", "answer": "menos"},
+        {"sentence": "La ensalada está ___ fresca ___ siempre.", "answer": "tan"},
+        {"sentence": "Hay ___ fruta ___ verdura en el mercado.", "answer": "tanta"},
+        {"sentence": "El arroz integral es ___ nutritivo que el blanco.", "answer": "más"},
+        {"sentence": "Esta salsa tiene ___ grasa que la otra.", "answer": "menos"},
+        {"sentence": "El pan está ___ crujiente ___ ayer.", "answer": "tan"},
+        {"sentence": "Compramos ___ naranjas ___ limones.", "answer": "tantas"},
+        {"sentence": "La cocina española es ___ variada que la francesa.", "answer": "más"},
+        {"sentence": "Este restaurante es ___ conocido que aquel.", "answer": "menos"},
+        {"sentence": "Tu café está ___ fuerte ___ me gusta.", "answer": "tan"},
+        {"sentence": "Tenemos ___ queso ___ jamón.", "answer": "tanto"},
+        {"sentence": "Las tapas son ___ populares que los menús.", "answer": "más"},
+        {"sentence": "Este vino tiene ___ alcohol que el anterior.", "answer": "menos"},
+        {"sentence": "La paella está ___ sabrosa ___ siempre.", "answer": "tan"},
+        {"sentence": "Hay ___ clientes ___ mesas disponibles.", "answer": "tantos"},
+        {"sentence": "El marisco es ___ caro que el pescado.", "answer": "más"},
+        {"sentence": "Esta pizza tiene ___ ingredientes que la original.", "answer": "menos"},
+        {"sentence": "Mi madre cocina ___ bien ___ la tuya.", "answer": "tan"},
+        {"sentence": "Necesito ___ harina ___ azúcar.", "answer": "tanta"},
+        {"sentence": "Los vegetales son ___ importantes que las proteínas.", "answer": "tan"},
+        {"sentence": "Este helado es ___ cremoso que el de vainilla.", "answer": "más"},
+        {"sentence": "La cena fue ___ abundante que el almuerzo.", "answer": "menos"},
+        {"sentence": "El chocolate está ___ bueno ___ esperaba.", "answer": "tan"},
+        {"sentence": "Hay ___ vasos ___ platos en la mesa.", "answer": "tantos"},
+        {"sentence": "La mantequilla es ___ grasa que el aceite.", "answer": "más"},
+        {"sentence": "Este menú es ___ variado que el de ayer.", "answer": "menos"},
+        {"sentence": "Tu receta es ___ fácil ___ la mía.", "answer": "tan"},
+        {"sentence": "Tenemos ___ carne ___ pescado.", "answer": "tanta"},
+        {"sentence": "El desayuno continental es ___ ligero que el inglés.", "answer": "más"},
+        {"sentence": "Este café es ___ amargo que el otro.", "answer": "menos"},
+        {"sentence": "La tarta está ___ dulce ___ debería.", "answer": "tan"},
+        {"sentence": "Hay ___ bebidas ___ comidas en el menú.", "answer": "tantas"},
+        {"sentence": "Las frutas son ___ saludables que los dulces.", "answer": "más"},
+        {"sentence": "Este plato tiene ___ especias que el anterior.", "answer": "menos"},
+        {"sentence": "Cocinas ___ rápido ___ tu madre.", "answer": "tan"},
+        {"sentence": "Compramos ___ pan ___ la semana pasada.", "answer": "tanto"},
+        {"sentence": "El jamón serrano es ___ famoso que el ibérico.", "answer": "menos"},
+        {"sentence": "Esta tortilla es ___ jugosa ___ la del bar.", "answer": "tan"},
+        {"sentence": "Hay ___ restaurantes ___ bares en esta calle.", "answer": "tantos"}
+      ],
+      "microTests": [
+        {"sentence": "El pescado es ___ sano que la carne.", "answer": "más", "hint": "Superioridad: más... que"},
+        {"sentence": "Este plato tiene ___ sal que aquel.", "answer": "menos", "hint": "Inferioridad: menos... que"},
+        {"sentence": "Tu paella está ___ buena como la del chef.", "answer": "tan", "hint": "Igualdad con adjetivo: tan... como"},
+        {"sentence": "Hay ___ tomates como pepinos.", "answer": "tantos", "hint": "Igualdad: tanto/a/os/as (masc. pl.)"},
+        {"sentence": "La fruta es ___ dulce que el chocolate.", "answer": "menos", "hint": "Inferioridad: menos... que"},
+        {"sentence": "Tenemos ___ leche como zumo.", "answer": "tanta", "hint": "Igualdad: tanto/a/os/as (fem. sing.)"},
+        {"sentence": "El arroz es ___ nutritivo que la pasta.", "answer": "más", "hint": "Superioridad: más... que"},
+        {"sentence": "Cocina ___ bien como un chef.", "answer": "tan", "hint": "Igualdad con adverbio: tan... como"},
+        {"sentence": "Compramos ___ manzanas como peras.", "answer": "tantas", "hint": "Igualdad: tanto/a/os/as (fem. pl.)"},
+        {"sentence": "Este café es ___ fuerte que el otro.", "answer": "menos", "hint": "Inferioridad: menos... que"},
+        {"sentence": "El marisco es ___ caro que el pescado.", "answer": "más", "hint": "Superioridad: más... que"},
+        {"sentence": "Tenemos ___ queso como jamón.", "answer": "tanto", "hint": "Igualdad: tanto/a/os/as (masc. sing.)"}
+      ]
     }
   ],
   "verbos": {

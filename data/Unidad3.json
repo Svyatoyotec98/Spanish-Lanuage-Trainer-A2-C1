@@ -1075,7 +1075,80 @@
       }
     ]
   },
-  "ejercicios": [],
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Presente: verbos irregulares (c>zc, e>i)",
+      "hint": "yo: conozco, parezco, nazco | yo: mido, pido, sigo",
+      "rule": {
+        "title": "VERBOS IRREGULARES en presente",
+        "explanation": "Algunos verbos tienen cambios en la raíz en presente de indicativo. Hay dos grupos importantes:",
+        "sections": [
+          {
+            "subtitle": "Verbos con cambio C > ZC (solo en YO)",
+            "points": [
+              "conocer → yo <b>conozco</b>, tú conoces, él conoce...",
+              "parecer → yo <b>parezco</b>, tú pareces, él parece...",
+              "nacer → yo <b>nazco</b>, tú naces, él nace...",
+              "crecer → yo <b>crezco</b>, tú creces, él crece...",
+              "agradecer → yo <b>agradezco</b>, tú agradeces...",
+              "ofrecer → yo <b>ofrezco</b>, tú ofreces..."
+            ]
+          },
+          {
+            "subtitle": "Verbos con cambio E > I (excepto nosotros/vosotros)",
+            "points": [
+              "medir → yo <b>mido</b>, tú <b>mides</b>, él <b>mide</b>, nosotros medimos, ellos <b>miden</b>",
+              "pedir → yo <b>pido</b>, tú <b>pides</b>, él <b>pide</b>, nosotros pedimos, ellos <b>piden</b>",
+              "servir → yo <b>sirvo</b>, tú <b>sirves</b>, él <b>sirve</b>, nosotros servimos, ellos <b>sirven</b>",
+              "repetir → yo <b>repito</b>, tú <b>repites</b>, él <b>repite</b>, nosotros repetimos, ellos <b>repiten</b>",
+              "seguir → yo <b>sigo</b>, tú <b>sigues</b>, él <b>sigue</b>, nosotros seguimos, ellos <b>siguen</b>",
+              "vestir → yo <b>visto</b>, tú <b>vistes</b>, él <b>viste</b>, nosotros vestimos, ellos <b>visten</b>"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "No conozco a tu hermano.", "ru": "Я не знаю твоего брата."},
+          {"es": "¿Cuánto mides?", "ru": "Какой у тебя рост?"},
+          {"es": "Siempre pido lo mismo en este restaurante.", "ru": "Я всегда заказываю одно и то же в этом ресторане."},
+          {"es": "Me parezco mucho a mi madre.", "ru": "Я очень похож на маму."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Yo no ___ (conocer) a nadie en esta fiesta.", "answer": "conozco"},
+        {"sentence": "¿Tú ___ (conocer) a mi hermano?", "answer": "conoces"},
+        {"sentence": "Ella ___ (parecer) muy simpática.", "answer": "parece"},
+        {"sentence": "Yo ___ (parecer) mayor de lo que soy.", "answer": "parezco"},
+        {"sentence": "Mi hijo ___ (nacer) en Madrid.", "answer": "nace"},
+        {"sentence": "Yo ___ (nacer) en 1990.", "answer": "nazco"},
+        {"sentence": "Los niños ___ (crecer) muy rápido.", "answer": "crecen"},
+        {"sentence": "Yo ___ (crecer) en un pueblo pequeño.", "answer": "crezco"},
+        {"sentence": "Te ___ (agradecer) mucho tu ayuda.", "answer": "agradezco"},
+        {"sentence": "Ella siempre ___ (agradecer) los regalos.", "answer": "agradece"},
+        {"sentence": "¿Qué te ___ (ofrecer) yo?", "answer": "ofrezco"},
+        {"sentence": "El hotel ___ (ofrecer) desayuno gratis.", "answer": "ofrece"},
+        {"sentence": "¿Cuánto ___ (medir) tú?", "answer": "mides"},
+        {"sentence": "Yo ___ (medir) 1,80 metros.", "answer": "mido"},
+        {"sentence": "Él ___ (medir) casi dos metros.", "answer": "mide"},
+        {"sentence": "Nosotros ___ (medir) lo mismo.", "answer": "medimos"},
+        {"sentence": "¿Qué ___ (pedir) tú para cenar?", "answer": "pides"},
+        {"sentence": "Yo siempre ___ (pedir) pizza.", "answer": "pido"},
+        {"sentence": "Ellos ___ (pedir) la cuenta.", "answer": "piden"},
+        {"sentence": "El camarero ___ (servir) la comida.", "answer": "sirve"},
+        {"sentence": "Yo ___ (servir) el vino.", "answer": "sirvo"},
+        {"sentence": "¿Para qué ___ (servir) esto?", "answer": "sirve"},
+        {"sentence": "Los alumnos ___ (repetir) las palabras.", "answer": "repiten"},
+        {"sentence": "Yo ___ (repetir) la pregunta.", "answer": "repito"},
+        {"sentence": "¿Puedes ___ (repetir), por favor?", "answer": "repetir"},
+        {"sentence": "Yo ___ (seguir) estudiando español.", "answer": "sigo"},
+        {"sentence": "Él ___ (seguir) trabajando en la misma empresa.", "answer": "sigue"},
+        {"sentence": "¿Tú ___ (seguir) viviendo en Madrid?", "answer": "sigues"},
+        {"sentence": "Yo ___ (vestir) a mi hija por las mañanas.", "answer": "visto"},
+        {"sentence": "Ella ___ (vestir) muy elegante.", "answer": "viste"},
+        {"sentence": "Ellos ___ (vestir) de negro.", "answer": "visten"}
+      ]
+    }
+  ],
   "verbos": {
     "tiempos": [
       {

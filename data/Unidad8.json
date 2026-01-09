@@ -1039,5 +1039,384 @@
       }
     ]
   },
-  "ejercicios": []
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Verbo DOLER con pronombres",
+      "hint": "me duele / me duelen / te duele / te duelen / le duele / le duelen / nos duele / nos duelen / os duele / os duelen / les duele / les duelen",
+      "rule": {
+        "title": "Глагол DOLER (болеть) с местоимениями",
+        "explanation": "Глагол DOLER работает как GUSTAR: используется с косвенными местоимениями (me, te, le, nos, os, les) и согласуется с тем, что болит, а не с человеком. Если болит одна часть тела — DUELE, если несколько — DUELEN.",
+        "sections": [
+          {
+            "subtitle": "Структура: pronombre + duele/duelen + parte del cuerpo",
+            "points": [
+              "<b>Me duele</b> la cabeza — У меня болит голова",
+              "<b>Te duelen</b> los pies — У тебя болят ноги",
+              "<b>Le duele</b> el estómago — У него/неё болит живот",
+              "<b>Nos duelen</b> las piernas — У нас болят ноги",
+              "<b>Os duele</b> la espalda — У вас болит спина",
+              "<b>Les duelen</b> los ojos — У них болят глаза"
+            ]
+          },
+          {
+            "subtitle": "DUELE vs DUELEN",
+            "points": [
+              "<b>Duele</b> — с единственным числом: la cabeza, el brazo, la espalda",
+              "<b>Duelen</b> — с множественным числом: los pies, las manos, los ojos",
+              "Артикль обязателен: Me duele <b>la</b> cabeza (не 'mi cabeza')"
+            ]
+          },
+          {
+            "subtitle": "Вопросы о боли",
+            "points": [
+              "¿<b>Te duele</b> algo? — У тебя что-то болит?",
+              "¿<b>Qué te duele</b>? — Что у тебя болит?",
+              "¿<b>Te duele mucho</b>? — Сильно болит?"
+            ]
+          }
+        ],
+        "examples": [
+          "Me duele mucho la cabeza después del trabajo.",
+          "A Carlos le duelen los pies de caminar.",
+          "¿Te duele la espalda? Debes ir al médico.",
+          "Nos duelen las piernas después de correr.",
+          "A mi abuela le duelen las rodillas."
+        ]
+      },
+      "questions": [
+        {"sentence": "___ la cabeza desde ayer. (yo)", "answer": "Me duele"},
+        {"sentence": "___ los pies de caminar tanto. (yo)", "answer": "Me duelen"},
+        {"sentence": "___ el estómago después de comer. (tú)", "answer": "Te duele"},
+        {"sentence": "___ las muelas desde hace días. (él)", "answer": "Le duelen"},
+        {"sentence": "___ la espalda por el trabajo. (ella)", "answer": "Le duele"},
+        {"sentence": "___ los ojos de leer. (nosotros)", "answer": "Nos duelen"},
+        {"sentence": "___ la garganta cuando hablo. (yo)", "answer": "Me duele"},
+        {"sentence": "___ las piernas después de correr. (vosotros)", "answer": "Os duelen"},
+        {"sentence": "___ el brazo izquierdo. (usted)", "answer": "Le duele"},
+        {"sentence": "___ los oídos por el ruido. (ellos)", "answer": "Les duelen"},
+        {"sentence": "¿___ algo? (tú)", "answer": "Te duele"},
+        {"sentence": "___ mucho la rodilla. (yo)", "answer": "Me duele"},
+        {"sentence": "___ los hombros de nadar. (nosotros)", "answer": "Nos duelen"},
+        {"sentence": "___ la mano de escribir. (ella)", "answer": "Le duele"},
+        {"sentence": "___ las muñecas del ordenador. (yo)", "answer": "Me duelen"},
+        {"sentence": "___ el cuello de dormir mal. (tú)", "answer": "Te duele"},
+        {"sentence": "___ los tobillos después del partido. (él)", "answer": "Le duelen"},
+        {"sentence": "___ la cabeza a menudo. (ustedes)", "answer": "Les duele"},
+        {"sentence": "___ el pecho cuando respiro. (yo)", "answer": "Me duele"},
+        {"sentence": "___ las manos del frío. (nosotros)", "answer": "Nos duelen"},
+        {"sentence": "A mi madre ___ las caderas.", "answer": "le duelen"},
+        {"sentence": "A los niños ___ la barriga.", "answer": "les duele"},
+        {"sentence": "¿A ti ___ mucho la espalda?", "answer": "te duele"},
+        {"sentence": "A nosotros ___ los pies.", "answer": "nos duelen"},
+        {"sentence": "A mi abuelo ___ las rodillas.", "answer": "le duelen"},
+        {"sentence": "___ la cabeza por el estrés. (yo)", "answer": "Me duele"},
+        {"sentence": "___ los ojos de la alergia. (tú)", "answer": "Te duelen"},
+        {"sentence": "___ el estómago por los nervios. (ella)", "answer": "Le duele"},
+        {"sentence": "___ las piernas del ejercicio. (ellos)", "answer": "Les duelen"},
+        {"sentence": "___ la garganta por el frío. (nosotros)", "answer": "Nos duele"},
+        {"sentence": "¿___ los pies? (usted)", "answer": "Le duelen"},
+        {"sentence": "___ mucho la muela. (yo)", "answer": "Me duele"},
+        {"sentence": "___ los brazos de cargar peso. (tú)", "answer": "Te duelen"},
+        {"sentence": "___ la espalda baja. (él)", "answer": "Le duele"},
+        {"sentence": "___ las orejas del ruido. (nosotros)", "answer": "Nos duelen"},
+        {"sentence": "___ el hombro derecho. (yo)", "answer": "Me duele"},
+        {"sentence": "___ los dedos del frío. (vosotros)", "answer": "Os duelen"},
+        {"sentence": "___ la rodilla izquierda. (ella)", "answer": "Le duele"},
+        {"sentence": "___ los músculos. (ellos)", "answer": "Les duelen"},
+        {"sentence": "___ el cuello de la tensión. (yo)", "answer": "Me duele"},
+        {"sentence": "Cuando como mucho, ___ el estómago. (yo)", "answer": "me duele"},
+        {"sentence": "Si caminas sin descanso, ___ los pies. (tú)", "answer": "te duelen"},
+        {"sentence": "Después de nadar, ___ los hombros. (nosotros)", "answer": "nos duelen"},
+        {"sentence": "Por la mañana ___ la cabeza. (él)", "answer": "le duele"},
+        {"sentence": "Con este frío ___ las manos. (yo)", "answer": "me duelen"},
+        {"sentence": "¿Todavía ___ la espalda? (tú)", "answer": "te duele"},
+        {"sentence": "Siempre ___ las piernas después del gimnasio. (yo)", "answer": "me duelen"},
+        {"sentence": "A veces ___ la cabeza por el calor. (ella)", "answer": "le duele"},
+        {"sentence": "___ los ojos cuando leo mucho. (yo)", "answer": "Me duelen"},
+        {"sentence": "___ el tobillo desde el accidente. (él)", "answer": "Le duele"},
+        {"sentence": "¿___ mucho las muelas? (tú)", "answer": "Te duelen"},
+        {"sentence": "___ la garganta cuando canto. (yo)", "answer": "Me duele"},
+        {"sentence": "___ las articulaciones en invierno. (ellos)", "answer": "Les duelen"},
+        {"sentence": "___ el pecho después de correr. (nosotros)", "answer": "Nos duele"},
+        {"sentence": "___ la cabeza con el ruido. (vosotros)", "answer": "Os duele"},
+        {"sentence": "A María ___ los pies con los tacones.", "answer": "le duelen"},
+        {"sentence": "A mis padres ___ la espalda.", "answer": "les duele"},
+        {"sentence": "¿A ustedes ___ las piernas?", "answer": "les duelen"},
+        {"sentence": "___ mucho el oído izquierdo. (yo)", "answer": "Me duele"},
+        {"sentence": "¿Qué ___ ? — La espalda. (a ti)", "answer": "te duele"}
+      ],
+      "microTests": [
+        {"sentence": "___ la cabeza desde ayer. (yo)", "answer": "Me duele", "hint": "Голова — ед.ч., я → me"},
+        {"sentence": "___ los pies de caminar. (yo)", "answer": "Me duelen", "hint": "Ноги — мн.ч. → duelen"},
+        {"sentence": "___ el estómago. (tú)", "answer": "Te duele", "hint": "Живот — ед.ч., ты → te"},
+        {"sentence": "___ las muelas. (él)", "answer": "Le duelen", "hint": "Зубы — мн.ч., он → le"},
+        {"sentence": "___ la espalda. (ella)", "answer": "Le duele", "hint": "Спина — ед.ч., она → le"},
+        {"sentence": "___ los ojos. (nosotros)", "answer": "Nos duelen", "hint": "Глаза — мн.ч., мы → nos"},
+        {"sentence": "___ la garganta. (yo)", "answer": "Me duele", "hint": "Горло — ед.ч., я → me"},
+        {"sentence": "___ las piernas. (vosotros)", "answer": "Os duelen", "hint": "Ноги — мн.ч., вы → os"},
+        {"sentence": "___ el brazo. (usted)", "answer": "Le duele", "hint": "Рука — ед.ч., Вы → le"},
+        {"sentence": "___ los oídos. (ellos)", "answer": "Les duelen", "hint": "Уши — мн.ч., они → les"},
+        {"sentence": "A mi madre ___ las rodillas.", "answer": "le duelen", "hint": "Колени — мн.ч., ей → le"},
+        {"sentence": "A nosotros ___ la cabeza.", "answer": "nos duele", "hint": "Голова — ед.ч., нам → nos"},
+        {"sentence": "¿A ti ___ los pies?", "answer": "te duelen", "hint": "Ноги — мн.ч., тебе → te"},
+        {"sentence": "___ mucho la muela. (yo)", "answer": "Me duele", "hint": "Зуб — ед.ч., я → me"},
+        {"sentence": "___ los hombros. (ellos)", "answer": "Les duelen", "hint": "Плечи — мн.ч., им → les"}
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "ESTAR vs TENER con síntomas",
+      "hint": "estoy / estás / está / estamos / estáis / están / tengo / tienes / tiene / tenemos / tenéis / tienen",
+      "rule": {
+        "title": "ESTAR vs TENER для описания симптомов и состояний",
+        "explanation": "При описании симптомов и проблем со здоровьем используются разные конструкции: ESTAR + adjetivo (для состояний) и TENER + sustantivo (для симптомов как существительных).",
+        "sections": [
+          {
+            "subtitle": "ESTAR + adjetivo (состояние)",
+            "points": [
+              "<b>Estar resfriado/a</b> — быть простуженным",
+              "<b>Estar mareado/a</b> — чувствовать головокружение",
+              "<b>Estar cansado/a</b> — быть уставшим",
+              "<b>Estar enfermo/a</b> — быть больным",
+              "<b>Estar afónico/a</b> — потерять голос",
+              "<b>Estar estresado/a</b> — быть в стрессе"
+            ]
+          },
+          {
+            "subtitle": "TENER + sustantivo (симптом)",
+            "points": [
+              "<b>Tener fiebre</b> — иметь температуру",
+              "<b>Tener tos</b> — иметь кашель",
+              "<b>Tener gripe</b> — болеть гриппом",
+              "<b>Tener alergia</b> — иметь аллергию",
+              "<b>Tener náuseas</b> — иметь тошноту",
+              "<b>Tener dolor de cabeza</b> — иметь головную боль"
+            ]
+          },
+          {
+            "subtitle": "Особые случаи",
+            "points": [
+              "<b>Tener migraña</b> — страдать мигренью (существительное)",
+              "<b>Tener anemia</b> — иметь анемию (существительное)",
+              "<b>Tener acné</b> — иметь акне (существительное)",
+              "Запомни: прилагательные → ESTAR, существительные → TENER"
+            ]
+          }
+        ],
+        "examples": [
+          "Estoy resfriado, tengo tos y fiebre.",
+          "María está muy cansada y tiene dolor de cabeza.",
+          "¿Tienes fiebre? — No, pero estoy mareado.",
+          "Mi hijo tiene gripe y está muy enfermo.",
+          "Estoy afónica, no puedo hablar."
+        ]
+      },
+      "questions": [
+        {"sentence": "___ resfriado desde el lunes. (yo)", "answer": "Estoy"},
+        {"sentence": "___ mucha tos por la noche. (yo)", "answer": "Tengo"},
+        {"sentence": "___ fiebre de 38 grados. (él)", "answer": "Tiene"},
+        {"sentence": "___ muy cansada después del trabajo. (ella)", "answer": "Está"},
+        {"sentence": "___ gripe y no puedo ir a trabajar. (yo)", "answer": "Tengo"},
+        {"sentence": "___ mareado después del viaje. (tú)", "answer": "Estás"},
+        {"sentence": "___ dolor de cabeza desde ayer. (nosotros)", "answer": "Tenemos"},
+        {"sentence": "___ enfermo y no puede venir. (él)", "answer": "Está"},
+        {"sentence": "___ alergia al polen. (yo)", "answer": "Tengo"},
+        {"sentence": "___ afónica, no puedo hablar. (ella)", "answer": "Está"},
+        {"sentence": "___ náuseas por la mañana. (yo)", "answer": "Tengo"},
+        {"sentence": "___ muy estresado con el trabajo. (él)", "answer": "Está"},
+        {"sentence": "___ migraña y necesito descansar. (yo)", "answer": "Tengo"},
+        {"sentence": "___ resfriadas las dos. (ellas)", "answer": "Están"},
+        {"sentence": "___ anemia y siempre está cansada. (ella)", "answer": "Tiene"},
+        {"sentence": "¿___ fiebre? (tú)", "answer": "Tienes"},
+        {"sentence": "¿___ mejor hoy? (usted)", "answer": "Está"},
+        {"sentence": "___ acné desde la adolescencia. (yo)", "answer": "Tengo"},
+        {"sentence": "___ mareados después de la montaña rusa. (nosotros)", "answer": "Estamos"},
+        {"sentence": "___ dolor de estómago. (ella)", "answer": "Tiene"},
+        {"sentence": "No ___ bien, ___ tos. (yo)", "answer": "estoy"},
+        {"sentence": "Mi hermano ___ enfermo, ___ gripe. (él)", "answer": "está"},
+        {"sentence": "___ cansados del viaje. (nosotros)", "answer": "Estamos"},
+        {"sentence": "___ alergia a los gatos. (tú)", "answer": "Tienes"},
+        {"sentence": "___ afónico por gritar mucho. (yo)", "answer": "Estoy"},
+        {"sentence": "___ dolor de muelas terrible. (él)", "answer": "Tiene"},
+        {"sentence": "___ resfriado, ___ fiebre y tos. (yo)", "answer": "Estoy"},
+        {"sentence": "___ muy enfermos los niños. (ellos)", "answer": "Están"},
+        {"sentence": "___ insomnio desde hace meses. (yo)", "answer": "Tengo"},
+        {"sentence": "___ estresada por los exámenes. (ella)", "answer": "Está"},
+        {"sentence": "¿___ mareada? (tú)", "answer": "Estás"},
+        {"sentence": "___ dolor de espalda crónico. (él)", "answer": "Tiene"},
+        {"sentence": "___ mejor después de descansar. (yo)", "answer": "Estoy"},
+        {"sentence": "___ tos seca desde hace días. (ella)", "answer": "Tiene"},
+        {"sentence": "___ cansadísimo hoy. (yo)", "answer": "Estoy"},
+        {"sentence": "___ mucha fiebre el niño. (él)", "answer": "Tiene"},
+        {"sentence": "___ enferma, ___ gripe. (ella)", "answer": "Está"},
+        {"sentence": "___ resfriados todos en casa. (nosotros)", "answer": "Estamos"},
+        {"sentence": "___ dolor de garganta. (yo)", "answer": "Tengo"},
+        {"sentence": "___ muy mareada en el barco. (ella)", "answer": "Está"},
+        {"sentence": "No puedo comer, ___ náuseas. (yo)", "answer": "tengo"},
+        {"sentence": "Mi madre ___ cansada, ___ anemia. (ella)", "answer": "está"},
+        {"sentence": "___ afónicos de cantar. (nosotros)", "answer": "Estamos"},
+        {"sentence": "___ alergia primaveral. (él)", "answer": "Tiene"},
+        {"sentence": "___ enfermo con gripe. (yo)", "answer": "Estoy"},
+        {"sentence": "___ migraña muy fuerte. (ella)", "answer": "Tiene"},
+        {"sentence": "¿___ cansado? (tú)", "answer": "Estás"},
+        {"sentence": "___ fiebre alta. (ellos)", "answer": "Tienen"},
+        {"sentence": "___ estresados por el trabajo. (nosotros)", "answer": "Estamos"},
+        {"sentence": "___ tos y dolor de cabeza. (yo)", "answer": "Tengo"},
+        {"sentence": "Los niños ___ resfriados.", "answer": "están"},
+        {"sentence": "Mi abuela ___ dolor de rodillas.", "answer": "tiene"},
+        {"sentence": "¿Cómo ___? ¿___ mejor? (tú)", "answer": "estás"},
+        {"sentence": "___ muy enfermo, ___ mucha fiebre. (él)", "answer": "Está"},
+        {"sentence": "___ gripe y ___ muy cansado. (yo)", "answer": "Tengo"},
+        {"sentence": "___ mareados del viaje en coche. (ellos)", "answer": "Están"},
+        {"sentence": "___ acné y ___ preocupado. (yo)", "answer": "Tengo"},
+        {"sentence": "___ afónica, ___ dolor de garganta. (ella)", "answer": "Está"},
+        {"sentence": "___ dolor de oídos. (él)", "answer": "Tiene"},
+        {"sentence": "Hoy ___ mejor, ya no ___ fiebre. (yo)", "answer": "estoy"}
+      ],
+      "microTests": [
+        {"sentence": "___ resfriado. (yo)", "answer": "Estoy", "hint": "Resfriado = adjetivo → ESTAR"},
+        {"sentence": "___ fiebre. (yo)", "answer": "Tengo", "hint": "Fiebre = существительное → TENER"},
+        {"sentence": "___ muy cansada. (ella)", "answer": "Está", "hint": "Cansada = adjetivo → ESTAR"},
+        {"sentence": "___ gripe. (él)", "answer": "Tiene", "hint": "Gripe = существительное → TENER"},
+        {"sentence": "___ mareado. (tú)", "answer": "Estás", "hint": "Mareado = adjetivo → ESTAR"},
+        {"sentence": "___ tos. (yo)", "answer": "Tengo", "hint": "Tos = существительное → TENER"},
+        {"sentence": "___ enfermo. (él)", "answer": "Está", "hint": "Enfermo = adjetivo → ESTAR"},
+        {"sentence": "___ dolor de cabeza. (ella)", "answer": "Tiene", "hint": "Dolor = существительное → TENER"},
+        {"sentence": "___ afónica. (yo)", "answer": "Estoy", "hint": "Afónica = adjetivo → ESTAR"},
+        {"sentence": "___ alergia. (él)", "answer": "Tiene", "hint": "Alergia = существительное → TENER"},
+        {"sentence": "___ estresados. (nosotros)", "answer": "Estamos", "hint": "Estresados = adjetivo → ESTAR"},
+        {"sentence": "___ náuseas. (yo)", "answer": "Tengo", "hint": "Náuseas = существительное → TENER"},
+        {"sentence": "___ mejor hoy. (tú)", "answer": "Estás", "hint": "Mejor = adjetivo → ESTAR"},
+        {"sentence": "___ migraña. (ella)", "answer": "Tiene", "hint": "Migraña = существительное → TENER"},
+        {"sentence": "___ enfermos. (ellos)", "answer": "Están", "hint": "Enfermos = adjetivo → ESTAR"}
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "SER vs ESTAR con adjetivos",
+      "hint": "soy / eres / es / somos / sois / son / estoy / estás / está / estamos / estáis / están",
+      "rule": {
+        "title": "SER vs ESTAR с прилагательными",
+        "explanation": "SER описывает постоянные характеристики (какой человек по натуре), а ESTAR — временные состояния (как себя чувствует сейчас). Некоторые прилагательные меняют значение в зависимости от глагола.",
+        "sections": [
+          {
+            "subtitle": "SER — постоянные характеристики",
+            "points": [
+              "<b>Ser guapo/a</b> — быть красивым (внешность)",
+              "<b>Ser alto/a</b> — быть высоким (рост)",
+              "<b>Ser inteligente</b> — быть умным (характер)",
+              "<b>Ser arquitecto</b> — быть архитектором (профессия)",
+              "<b>Ser español</b> — быть испанцем (национальность)"
+            ]
+          },
+          {
+            "subtitle": "ESTAR — временные состояния",
+            "points": [
+              "<b>Estar cansado/a</b> — быть уставшим (сейчас)",
+              "<b>Estar nervioso/a</b> — нервничать (сейчас)",
+              "<b>Estar contento/a</b> — быть довольным (сейчас)",
+              "<b>Estar triste</b> — быть грустным (сейчас)",
+              "<b>Estar enfadado/a</b> — быть злым (сейчас)"
+            ]
+          },
+          {
+            "subtitle": "Прилагательные, меняющие значение",
+            "points": [
+              "<b>Ser bueno</b> — быть хорошим человеком / <b>Estar bueno</b> — быть вкусным",
+              "<b>Ser listo</b> — быть умным / <b>Estar listo</b> — быть готовым",
+              "<b>Ser malo</b> — быть плохим / <b>Estar malo</b> — болеть",
+              "<b>Ser abierto</b> — быть открытым (характер) / <b>Estar abierto</b> — быть открытым (дверь)"
+            ]
+          }
+        ],
+        "examples": [
+          "Mi hermana es muy guapa, pero hoy está muy cansada.",
+          "Juan es arquitecto y es muy trabajador.",
+          "Estoy nervioso porque tengo un examen.",
+          "La sopa está muy buena. Mi madre es buena cocinera.",
+          "¿Estás listo? — Sí, ya estoy preparado."
+        ]
+      },
+      "questions": [
+        {"sentence": "Alicia ___ una mujer extraordinaria.", "answer": "es"},
+        {"sentence": "No quiero salir, ___ cansado.", "answer": "estoy"},
+        {"sentence": "La ventana ___ abierta.", "answer": "está"},
+        {"sentence": "¿Dónde ___ el jersey amarillo?", "answer": "está"},
+        {"sentence": "Mi marido ___ alemán, de Dortmund.", "answer": "es"},
+        {"sentence": "¿Quién ___ esa chica que ___ sentada ahí?", "answer": "es"},
+        {"sentence": "La casa ___ muy desordenada.", "answer": "está"},
+        {"sentence": "Mis hijos ___ un desastre.", "answer": "son"},
+        {"sentence": "Mi jefa ___ una mujer muy dinámica.", "answer": "es"},
+        {"sentence": "Siempre ___ cansada porque trabaja mucho.", "answer": "está"},
+        {"sentence": "___ muy nervioso por la entrevista.", "answer": "Estoy"},
+        {"sentence": "María ___ profesora de español.", "answer": "es"},
+        {"sentence": "Hoy ___ muy contento porque he aprobado.", "answer": "estoy"},
+        {"sentence": "Esta película ___ muy buena.", "answer": "es"},
+        {"sentence": "La sopa ___ muy buena hoy.", "answer": "está"},
+        {"sentence": "Pedro ___ muy alto para su edad.", "answer": "es"},
+        {"sentence": "¿___ listo? Tenemos que irnos.", "answer": "Estás"},
+        {"sentence": "Mi hermano ___ muy listo, aprende rápido.", "answer": "es"},
+        {"sentence": "El restaurante ___ cerrado los lunes.", "answer": "está"},
+        {"sentence": "Juan ___ una persona muy abierta.", "answer": "es"},
+        {"sentence": "¿Cómo ___? — ___ bien, gracias.", "answer": "estás"},
+        {"sentence": "La fiesta ___ en casa de María.", "answer": "es"},
+        {"sentence": "¿Dónde ___ la fiesta?", "answer": "es"},
+        {"sentence": "Los niños ___ muy aburridos en casa.", "answer": "están"},
+        {"sentence": "Esta clase ___ muy aburrida.", "answer": "es"},
+        {"sentence": "___ muy enfadada contigo.", "answer": "Estoy"},
+        {"sentence": "Mi padre ___ una persona muy paciente.", "answer": "es"},
+        {"sentence": "Hoy ___ triste porque mi amigo se ha ido.", "answer": "estoy"},
+        {"sentence": "El café ___ frío, no me gusta.", "answer": "está"},
+        {"sentence": "En invierno ___ frío en esta ciudad.", "answer": "es"},
+        {"sentence": "Mi hermana ___ médica en un hospital.", "answer": "es"},
+        {"sentence": "___ preocupado por el examen.", "answer": "Estoy"},
+        {"sentence": "La comida ___ lista, podemos comer.", "answer": "está"},
+        {"sentence": "Este ejercicio ___ muy fácil.", "answer": "es"},
+        {"sentence": "¿___ enfermo? No tienes buena cara.", "answer": "Estás"},
+        {"sentence": "Mi abuela ___ muy mayor pero ___ muy activa.", "answer": "es"},
+        {"sentence": "La tienda ___ abierta hasta las 21h.", "answer": "está"},
+        {"sentence": "Carlos ___ muy guapo con ese traje.", "answer": "está"},
+        {"sentence": "Mi novio ___ muy guapo.", "answer": "es"},
+        {"sentence": "Hoy ___ de mal humor.", "answer": "estoy"},
+        {"sentence": "___ las tres de la tarde.", "answer": "Son"},
+        {"sentence": "El examen ___ el lunes.", "answer": "es"},
+        {"sentence": "___ muy sorprendido por la noticia.", "answer": "Estoy"},
+        {"sentence": "Esta casa ___ de mis padres.", "answer": "es"},
+        {"sentence": "El libro ___ encima de la mesa.", "answer": "está"},
+        {"sentence": "Mi madre ___ muy trabajadora.", "answer": "es"},
+        {"sentence": "___ muy emocionado por el viaje.", "answer": "Estoy"},
+        {"sentence": "¿De dónde ___? — ___ de México.", "answer": "eres"},
+        {"sentence": "La puerta ___ abierta, entra.", "answer": "está"},
+        {"sentence": "Mi vecino ___ muy simpático.", "answer": "es"},
+        {"sentence": "___ agotados después del partido.", "answer": "Estamos"},
+        {"sentence": "Tu hermana ___ muy elegante hoy.", "answer": "está"},
+        {"sentence": "Mi tío ___ ingeniero.", "answer": "es"},
+        {"sentence": "Los platos ___ sucios, hay que lavarlos.", "answer": "están"},
+        {"sentence": "___ muy asustado por el ruido.", "answer": "Estoy"},
+        {"sentence": "Esta ciudad ___ muy bonita.", "answer": "es"},
+        {"sentence": "El agua ___ muy fría.", "answer": "está"},
+        {"sentence": "Mis padres ___ muy orgullosos de mí.", "answer": "están"},
+        {"sentence": "Este vino ___ de La Rioja.", "answer": "es"},
+        {"sentence": "___ raro que no haya llamado.", "answer": "Es"}
+      ],
+      "microTests": [
+        {"sentence": "Alicia ___ una mujer extraordinaria.", "answer": "es", "hint": "Характеристика личности → SER"},
+        {"sentence": "No quiero salir, ___ cansado.", "answer": "estoy", "hint": "Временное состояние → ESTAR"},
+        {"sentence": "La ventana ___ abierta.", "answer": "está", "hint": "Состояние предмета → ESTAR"},
+        {"sentence": "Mi marido ___ alemán.", "answer": "es", "hint": "Национальность → SER"},
+        {"sentence": "___ muy nervioso por la entrevista.", "answer": "Estoy", "hint": "Временное состояние → ESTAR"},
+        {"sentence": "María ___ profesora.", "answer": "es", "hint": "Профессия → SER"},
+        {"sentence": "La sopa ___ muy buena hoy.", "answer": "está", "hint": "Вкус еды (сейчас) → ESTAR"},
+        {"sentence": "Pedro ___ muy alto.", "answer": "es", "hint": "Физическая характеристика → SER"},
+        {"sentence": "¿___ listo? Tenemos que irnos.", "answer": "Estás", "hint": "Готов (состояние) → ESTAR"},
+        {"sentence": "Mi hermano ___ muy listo.", "answer": "es", "hint": "Умный (характер) → SER"},
+        {"sentence": "El restaurante ___ cerrado.", "answer": "está", "hint": "Состояние (закрыт) → ESTAR"},
+        {"sentence": "___ las tres de la tarde.", "answer": "Son", "hint": "Время → SER"},
+        {"sentence": "El libro ___ encima de la mesa.", "answer": "está", "hint": "Местоположение → ESTAR"},
+        {"sentence": "Esta ciudad ___ muy bonita.", "answer": "es", "hint": "Характеристика места → SER"},
+        {"sentence": "Mis padres ___ muy orgullosos.", "answer": "están", "hint": "Эмоциональное состояние → ESTAR"}
+      ]
+    }
+  ]
 }

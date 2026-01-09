@@ -156,6 +156,88 @@
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
+             LEVEL SELECTION SCREEN (A2, B1, B2.1, B2.2, C1)
+             ═══════════════════════════════════════════════════════════════ -->
+        <div id="levelSelectScreen" class="level-select-screen hidden">
+            <h1>Выберите уровень</h1>
+            <p class="subtitle">Spanish Language Trainer</p>
+
+            <div class="levels-container">
+                <!-- A2 Level -->
+                <div class="level-card level-a2" onclick="selectLevel('A2')">
+                    <div class="level-header">
+                        <span class="level-badge">A2</span>
+                        <span class="level-status" id="level-A2-status">Доступен</span>
+                    </div>
+                    <h3 class="level-title">Nivel Elemental</h3>
+                    <p class="level-description">10 unidades completas</p>
+                    <div class="level-progress-bar">
+                        <div class="level-progress-fill" id="level-A2-progress" style="width: 0%"></div>
+                    </div>
+                    <p class="level-progress-text" id="level-A2-progress-text">0% завершено</p>
+                </div>
+
+                <!-- B1 Level -->
+                <div class="level-card level-b1 level-coming-soon" onclick="selectLevel('B1')">
+                    <div class="level-header">
+                        <span class="level-badge">B1</span>
+                        <span class="level-status" id="level-B1-status">Скоро</span>
+                    </div>
+                    <h3 class="level-title">Nivel Intermedio</h3>
+                    <p class="level-description">En desarrollo</p>
+                    <div class="level-progress-bar">
+                        <div class="level-progress-fill" id="level-B1-progress" style="width: 0%"></div>
+                    </div>
+                    <p class="level-progress-text" id="level-B1-progress-text">Скоро будет доступно</p>
+                </div>
+
+                <!-- B2.1 Level -->
+                <div class="level-card level-b2-1 level-coming-soon" onclick="selectLevel('B2.1')">
+                    <div class="level-header">
+                        <span class="level-badge">B2.1</span>
+                        <span class="level-status" id="level-B2.1-status">Скоро</span>
+                    </div>
+                    <h3 class="level-title">Nivel Intermedio Alto (Parte 1)</h3>
+                    <p class="level-description">En desarrollo</p>
+                    <div class="level-progress-bar">
+                        <div class="level-progress-fill" id="level-B2.1-progress" style="width: 0%"></div>
+                    </div>
+                    <p class="level-progress-text" id="level-B2.1-progress-text">Скоро будет доступно</p>
+                </div>
+
+                <!-- B2.2 Level -->
+                <div class="level-card level-b2-2 level-coming-soon" onclick="selectLevel('B2.2')">
+                    <div class="level-header">
+                        <span class="level-badge">B2.2</span>
+                        <span class="level-status" id="level-B2.2-status">Скоро</span>
+                    </div>
+                    <h3 class="level-title">Nivel Intermedio Alto (Parte 2)</h3>
+                    <p class="level-description">En desarrollo</p>
+                    <div class="level-progress-bar">
+                        <div class="level-progress-fill" id="level-B2.2-progress" style="width: 0%"></div>
+                    </div>
+                    <p class="level-progress-text" id="level-B2.2-progress-text">Скоро будет доступно</p>
+                </div>
+
+                <!-- C1 Level -->
+                <div class="level-card level-c1 level-coming-soon" onclick="selectLevel('C1')">
+                    <div class="level-header">
+                        <span class="level-badge">C1</span>
+                        <span class="level-status" id="level-C1-status">Скоро</span>
+                    </div>
+                    <h3 class="level-title">Nivel Avanzado</h3>
+                    <p class="level-description">En desarrollo</p>
+                    <div class="level-progress-bar">
+                        <div class="level-progress-fill" id="level-C1-progress" style="width: 0%"></div>
+                    </div>
+                    <p class="level-progress-text" id="level-C1-progress-text">Скоро будет доступно</p>
+                </div>
+            </div>
+
+            <button class="btn btn-back" onclick="switchProfile()">Сменить профиль</button>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════════════════════
              USER BADGE (shown when profile is active)
              ═══════════════════════════════════════════════════════════════ -->
         <div id="userBadge" class="user-badge hidden">
@@ -167,8 +249,11 @@
              MAIN MENU (Unidad Selection)
              ═══════════════════════════════════════════════════════════════ -->
         <div id="mainMenu" class="hidden">
-            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
-            <h1>Spanish Trainer A2</h1>
+            <div class="main-menu-header">
+                <button class="btn btn-back-level" onclick="showLevelSelect()">← Уровни</button>
+                <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
+            </div>
+            <h1 id="mainMenuTitle">Spanish Trainer A2</h1>
             <p class="subtitle">Выберите Unidad для практики</p>
 
             <div style="margin-top: 30px;">

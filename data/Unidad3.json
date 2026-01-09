@@ -1395,6 +1395,63 @@
         {"sentence": "Los hermanos ___ (llevarse) bien.", "answer": "se llevan"},
         {"sentence": "Yo ___ (llevar) este anillo desde mi boda.", "answer": "llevo"}
       ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Caer bien/mal e identificar personas",
+      "hint": "caer bien = нравиться | el/la de + rasgo = тот/та с...",
+      "rule": {
+        "title": "CAER BIEN/MAL e IDENTIFICAR PERSONAS",
+        "explanation": "Para expresar simpatía/antipatía y para identificar personas:",
+        "sections": [
+          {
+            "subtitle": "CAER BIEN/MAL - нравиться/не нравиться (о человеке)",
+            "points": [
+              "Me <b>cae bien</b> tu amigo - Мне нравится твой друг",
+              "No me <b>cae bien</b> ese chico - Мне не нравится тот парень",
+              "Le <b>cae mal</b> a todo el mundo - Он никому не нравится",
+              "¿Te <b>cae bien</b>? - Он тебе нравится?"
+            ]
+          },
+          {
+            "subtitle": "EL/LA/LOS/LAS + DE/QUE - идентификация",
+            "points": [
+              "<b>El de</b> la camiseta roja - Тот в красной футболке",
+              "<b>La de</b> los ojos verdes - Та с зелёными глазами",
+              "<b>El que</b> lleva gafas - Тот, который носит очки",
+              "<b>La que</b> está hablando - Та, которая говорит"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Me cae muy bien tu hermana.", "ru": "Мне очень нравится твоя сестра."},
+          {"es": "El de la barba es mi profesor.", "ru": "Тот с бородой — мой преподаватель."},
+          {"es": "La que lleva el vestido rojo es Ana.", "ru": "Та, что в красном платье — Ана."},
+          {"es": "No me caen bien tus amigos.", "ru": "Мне не нравятся твои друзья."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Tu amigo me ___ (caer) muy bien.", "answer": "cae"},
+        {"sentence": "¿Quién es ___ (el) de la camiseta azul?", "answer": "el"},
+        {"sentence": "No me ___ (caer) bien tu jefe.", "answer": "cae"},
+        {"sentence": "___ (el) que lleva gafas es mi hermano.", "answer": "El"},
+        {"sentence": "Tus padres me ___ (caer) muy bien.", "answer": "caen"},
+        {"sentence": "¿Ves a ___ (la) de los ojos verdes? Es mi prima.", "answer": "la"},
+        {"sentence": "Ese chico no le ___ (caer) bien a nadie.", "answer": "cae"},
+        {"sentence": "___ (los) que están en la puerta son mis vecinos.", "answer": "Los"},
+        {"sentence": "Me ___ (caer) mal desde el primer día.", "answer": "cayó"},
+        {"sentence": "¿___ (la) de la derecha es tu novia?", "answer": "La"},
+        {"sentence": "Tu hermano me ___ (caer) muy bien.", "answer": "cae"},
+        {"sentence": "___ (el) del pelo largo es Mario.", "answer": "El"},
+        {"sentence": "Los nuevos vecinos no me ___ (caer) bien.", "answer": "caen"},
+        {"sentence": "¿Quiénes son ___ (las) que hablan con tu madre?", "answer": "las"},
+        {"sentence": "Le ___ (caer) bien a todo el mundo.", "answer": "cae"},
+        {"sentence": "___ (los) de azul son mis compañeros.", "answer": "Los"},
+        {"sentence": "¿Te ___ (caer) bien mi amiga?", "answer": "cae"},
+        {"sentence": "___ (la) que está sentada es mi profesora.", "answer": "La"},
+        {"sentence": "Me ___ (caer) muy bien tus hijos.", "answer": "caen"},
+        {"sentence": "¿Quién es ___ (el) que lleva barba?", "answer": "el"}
+      ]
     }
   ],
   "verbos": {

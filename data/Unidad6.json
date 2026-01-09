@@ -1096,5 +1096,162 @@
       }
     ]
   },
-  "ejercicios": []
+  "ejercicios": [],
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "preterito_perfecto",
+        "nombre": "Pretérito Perfecto",
+        "requiredEjercicio": "ej1",
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "yo": "he hablado",
+              "tu": "has hablado",
+              "el": "ha hablado",
+              "nosotros": "hemos hablado",
+              "vosotros": "habéis hablado",
+              "ellos": "han hablado"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "yo": "he comido",
+              "tu": "has comido",
+              "el": "ha comido",
+              "nosotros": "hemos comido",
+              "vosotros": "habéis comido",
+              "ellos": "han comido"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "he vivido",
+              "tu": "has vivido",
+              "el": "ha vivido",
+              "nosotros": "hemos vivido",
+              "vosotros": "habéis vivido",
+              "ellos": "han vivido"
+            }
+          },
+          {
+            "infinitivo": "trabajar",
+            "traduccion": "работать",
+            "formas": {
+              "yo": "he trabajado",
+              "tu": "has trabajado",
+              "el": "ha trabajado",
+              "nosotros": "hemos trabajado",
+              "vosotros": "habéis trabajado",
+              "ellos": "han trabajado"
+            }
+          },
+          {
+            "infinitivo": "estudiar",
+            "traduccion": "учиться",
+            "formas": {
+              "yo": "he estudiado",
+              "tu": "has estudiado",
+              "el": "ha estudiado",
+              "nosotros": "hemos estudiado",
+              "vosotros": "habéis estudiado",
+              "ellos": "han estudiado"
+            }
+          },
+          {
+            "infinitivo": "viajar",
+            "traduccion": "путешествовать",
+            "formas": {
+              "yo": "he viajado",
+              "tu": "has viajado",
+              "el": "ha viajado",
+              "nosotros": "hemos viajado",
+              "vosotros": "habéis viajado",
+              "ellos": "han viajado"
+            }
+          },
+          {
+            "infinitivo": "bailar",
+            "traduccion": "танцевать",
+            "formas": {
+              "yo": "he bailado",
+              "tu": "has bailado",
+              "el": "ha bailado",
+              "nosotros": "hemos bailado",
+              "vosotros": "habéis bailado",
+              "ellos": "han bailado"
+            }
+          },
+          {
+            "infinitivo": "cenar",
+            "traduccion": "ужинать",
+            "formas": {
+              "yo": "he cenado",
+              "tu": "has cenado",
+              "el": "ha cenado",
+              "nosotros": "hemos cenado",
+              "vosotros": "habéis cenado",
+              "ellos": "han cenado"
+            }
+          },
+          {
+            "infinitivo": "visitar",
+            "traduccion": "посещать",
+            "formas": {
+              "yo": "he visitado",
+              "tu": "has visitado",
+              "el": "ha visitado",
+              "nosotros": "hemos visitado",
+              "vosotros": "habéis visitado",
+              "ellos": "han visitado"
+            }
+          },
+          {
+            "infinitivo": "escuchar",
+            "traduccion": "слушать",
+            "formas": {
+              "yo": "he escuchado",
+              "tu": "has escuchado",
+              "el": "ha escuchado",
+              "nosotros": "hemos escuchado",
+              "vosotros": "habéis escuchado",
+              "ellos": "han escuchado"
+            }
+          },
+          {
+            "infinitivo": "practicar",
+            "traduccion": "практиковать",
+            "formas": {
+              "yo": "he practicado",
+              "tu": "has practicado",
+              "el": "ha practicado",
+              "nosotros": "hemos practicado",
+              "vosotros": "habéis practicado",
+              "ellos": "han practicado"
+            }
+          },
+          {
+            "infinitivo": "terminar",
+            "traduccion": "заканчивать",
+            "formas": {
+              "yo": "he terminado",
+              "tu": "has terminado",
+              "el": "ha terminado",
+              "nosotros": "hemos terminado",
+              "vosotros": "habéis terminado",
+              "ellos": "han terminado"
+            }
+          }
+        ],
+        "irregulares": [],
+        "otras": []
+      }
+    ]
+  }
 }

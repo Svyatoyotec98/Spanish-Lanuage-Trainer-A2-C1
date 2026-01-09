@@ -1210,7 +1210,567 @@
       }
     ]
   },
-  "ejercicios": [],
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Describir viviendas: es, está, tiene, da",
+      "hint": "es / está / tiene / da",
+      "rule": {
+        "title": "Описание жилья: ES, ESTÁ, TIENE, DA",
+        "explanation": "При описании жилья используются четыре ключевых глагола. Каждый выполняет свою функцию: ES описывает характеристики, ESTÁ указывает на местоположение или состояние, TIENE говорит о наличии чего-то, DA показывает на что выходит окно или балкон.",
+        "sections": [
+          {
+            "subtitle": "ES — характеристики и свойства",
+            "points": [
+              "Размер: El piso <b>es</b> grande/pequeño — Квартира большая/маленькая",
+              "Качество: La casa <b>es</b> luminosa — Дом светлый",
+              "Тип: <b>Es</b> un ático — Это пентхаус",
+              "Цена: El alquiler <b>es</b> caro — Аренда дорогая"
+            ]
+          },
+          {
+            "subtitle": "ESTÁ — местоположение и состояние",
+            "points": [
+              "Где находится: El piso <b>está</b> en el centro — Квартира в центре",
+              "Состояние: <b>Está</b> amueblado — Меблирована",
+              "Готовность: <b>Está</b> listo para entrar — Готова к заселению",
+              "Временное: <b>Está</b> vacío — Пустует"
+            ]
+          },
+          {
+            "subtitle": "TIENE — наличие, что есть",
+            "points": [
+              "Комнаты: <b>Tiene</b> tres habitaciones — Есть три комнаты",
+              "Удобства: <b>Tiene</b> terraza y garaje — Есть терраса и гараж",
+              "Площадь: <b>Tiene</b> 80 metros cuadrados — 80 квадратных метров",
+              "Особенности: <b>Tiene</b> mucha luz — Много света"
+            ]
+          },
+          {
+            "subtitle": "DA (a/al/a la) — на что выходит",
+            "points": [
+              "На улицу: <b>Da a</b> una calle tranquila — Выходит на тихую улицу",
+              "На двор: <b>Da al</b> patio — Выходит во двор",
+              "На сад: <b>Da al</b> jardín — Выходит в сад",
+              "Без вида: No <b>da a</b> la calle — Не выходит на улицу"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Mi piso es pequeño pero está en el centro.", "ru": "Моя квартира маленькая, но находится в центре."},
+          {"es": "La casa tiene cuatro habitaciones y da al jardín.", "ru": "В доме четыре комнаты, и он выходит в сад."},
+          {"es": "El ático es muy luminoso porque tiene grandes ventanas.", "ru": "Пентхаус очень светлый, потому что в нём большие окна."},
+          {"es": "El estudio está amueblado y es muy acogedor.", "ru": "Студия меблирована и очень уютная."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Mi piso ___ muy luminoso.", "answer": "es"},
+        {"sentence": "La casa ___ en las afueras de la ciudad.", "answer": "está"},
+        {"sentence": "El apartamento ___ tres dormitorios.", "answer": "tiene"},
+        {"sentence": "El balcón ___ a la calle principal.", "answer": "da"},
+        {"sentence": "El salón ___ muy grande.", "answer": "es"},
+        {"sentence": "La cocina ___ totalmente equipada.", "answer": "está"},
+        {"sentence": "El piso ___ terraza y garaje.", "answer": "tiene"},
+        {"sentence": "La habitación ___ al jardín.", "answer": "da"},
+        {"sentence": "El edificio ___ antiguo pero bien conservado.", "answer": "es"},
+        {"sentence": "El estudio ___ en el centro.", "answer": "está"},
+        {"sentence": "La casa ___ piscina.", "answer": "tiene"},
+        {"sentence": "La ventana ___ a un parque.", "answer": "da"},
+        {"sentence": "El alquiler ___ bastante caro.", "answer": "es"},
+        {"sentence": "El piso ___ recién reformado.", "answer": "está"},
+        {"sentence": "El ático ___ unas vistas increíbles.", "answer": "tiene"},
+        {"sentence": "El dormitorio principal ___ al patio interior.", "answer": "da"},
+        {"sentence": "La vivienda ___ muy espaciosa.", "answer": "es"},
+        {"sentence": "El apartamento ___ amueblado.", "answer": "está"},
+        {"sentence": "La casa ___ cuatro baños.", "answer": "tiene"},
+        {"sentence": "El salón ___ a una calle muy tranquila.", "answer": "da"},
+        {"sentence": "El chalé ___ de nueva construcción.", "answer": "es"},
+        {"sentence": "La casa ___ en una zona residencial.", "answer": "está"},
+        {"sentence": "El piso ___ ascensor.", "answer": "tiene"},
+        {"sentence": "La terraza ___ al mar.", "answer": "da"},
+        {"sentence": "El barrio ___ muy seguro.", "answer": "es"},
+        {"sentence": "El estudio ___ listo para entrar a vivir.", "answer": "está"},
+        {"sentence": "El edificio ___ portero.", "answer": "tiene"},
+        {"sentence": "Ninguna ventana ___ a la calle.", "answer": "da"},
+        {"sentence": "La decoración ___ moderna.", "answer": "es"},
+        {"sentence": "El piso ___ en el quinto piso.", "answer": "está"},
+        {"sentence": "La vivienda ___ calefacción central.", "answer": "tiene"},
+        {"sentence": "El balcón ___ a una plaza.", "answer": "da"},
+        {"sentence": "El suelo ___ de parqué.", "answer": "es"},
+        {"sentence": "La casa ___ muy bien comunicada.", "answer": "está"},
+        {"sentence": "El apartamento ___ aire acondicionado.", "answer": "tiene"},
+        {"sentence": "La cocina ___ a un patio de luces.", "answer": "da"},
+        {"sentence": "El precio ___ negociable.", "answer": "es"},
+        {"sentence": "El piso ___ vacío desde hace meses.", "answer": "está"},
+        {"sentence": "La casa ___ un jardín de 200 metros.", "answer": "tiene"},
+        {"sentence": "El despacho ___ a la avenida principal.", "answer": "da"},
+        {"sentence": "La zona ___ muy tranquila.", "answer": "es"},
+        {"sentence": "El ático ___ cerca del metro.", "answer": "está"},
+        {"sentence": "El piso ___ dos plazas de garaje.", "answer": "tiene"},
+        {"sentence": "La habitación no ___ a ninguna calle.", "answer": "da"},
+        {"sentence": "El apartamento ___ perfecto para una pareja.", "answer": "es"},
+        {"sentence": "La vivienda ___ en perfectas condiciones.", "answer": "está"},
+        {"sentence": "El chalé ___ piscina y jardín.", "answer": "tiene"},
+        {"sentence": "El salón ___ a un parque muy bonito.", "answer": "da"},
+        {"sentence": "La casa ___ muy acogedora.", "answer": "es"},
+        {"sentence": "El piso ___ a cinco minutos del centro.", "answer": "está"},
+        {"sentence": "El estudio ___ cocina americana.", "answer": "tiene"},
+        {"sentence": "Todas las habitaciones ___ al sur.", "answer": "dan"},
+        {"sentence": "El edificio ___ de los años 80.", "answer": "es"},
+        {"sentence": "La casa ___ orientada al sur.", "answer": "está"},
+        {"sentence": "El apartamento ___ trastero incluido.", "answer": "tiene"},
+        {"sentence": "El dormitorio ___ a una calle con mucho tráfico.", "answer": "da"},
+        {"sentence": "La vivienda ___ ideal para familias.", "answer": "es"},
+        {"sentence": "El piso ___ recién pintado.", "answer": "está"},
+        {"sentence": "La casa ___ un sótano muy grande.", "answer": "tiene"},
+        {"sentence": "La ventana del baño ___ al patio.", "answer": "da"}
+      ],
+      "microTests": [
+        {
+          "sentence": "El piso ___ muy grande.",
+          "answer": "es",
+          "hint": "¿Qué tipo de característica describes? (tamaño)"
+        },
+        {
+          "sentence": "La casa ___ en el centro de la ciudad.",
+          "answer": "está",
+          "hint": "¿Dónde se encuentra? (ubicación)"
+        },
+        {
+          "sentence": "El apartamento ___ tres dormitorios.",
+          "answer": "tiene",
+          "hint": "¿Qué hay en el apartamento? (posesión)"
+        },
+        {
+          "sentence": "El balcón ___ a la calle.",
+          "answer": "da",
+          "hint": "¿A qué lugar mira el balcón? (orientación)"
+        },
+        {
+          "sentence": "El alquiler ___ muy caro.",
+          "answer": "es",
+          "hint": "¿Cómo es el precio? (característica)"
+        },
+        {
+          "sentence": "El piso ___ amueblado.",
+          "answer": "está",
+          "hint": "¿En qué estado se encuentra? (condición)"
+        },
+        {
+          "sentence": "La casa ___ piscina.",
+          "answer": "tiene",
+          "hint": "¿Qué incluye la casa? (posesión)"
+        },
+        {
+          "sentence": "La habitación ___ al jardín.",
+          "answer": "da",
+          "hint": "¿Hacia dónde mira la ventana? (orientación)"
+        },
+        {
+          "sentence": "El edificio ___ antiguo.",
+          "answer": "es",
+          "hint": "¿De qué época es? (característica)"
+        },
+        {
+          "sentence": "El estudio ___ cerca del metro.",
+          "answer": "está",
+          "hint": "¿A qué distancia está? (ubicación)"
+        },
+        {
+          "sentence": "El chalé ___ garaje para dos coches.",
+          "answer": "tiene",
+          "hint": "¿Qué instalaciones tiene? (posesión)"
+        },
+        {
+          "sentence": "La terraza ___ al mar.",
+          "answer": "da",
+          "hint": "¿Qué vistas tiene? (orientación)"
+        },
+        {
+          "sentence": "La cocina ___ totalmente equipada.",
+          "answer": "está",
+          "hint": "¿En qué condición está la cocina?"
+        },
+        {
+          "sentence": "El ático ___ muy luminoso.",
+          "answer": "es",
+          "hint": "¿Cómo describes la luz? (cualidad)"
+        },
+        {
+          "sentence": "La vivienda ___ ascensor.",
+          "answer": "tiene",
+          "hint": "¿Qué servicios incluye? (posesión)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Comparativos: más/menos/tan...que/como",
+      "hint": "más / menos / tan / que / como",
+      "rule": {
+        "title": "Сравнительные конструкции: MÁS, MENOS, TAN...QUE/COMO",
+        "explanation": "В испанском языке для сравнения используются три основные конструкции: MÁS...QUE (больше/более чем), MENOS...QUE (меньше/менее чем) и TAN...COMO (такой же как). Эти конструкции помогают сравнивать характеристики жилья, цены и условия.",
+        "sections": [
+          {
+            "subtitle": "MÁS + adjetivo + QUE — превосходство",
+            "points": [
+              "Размер: Este piso es <b>más</b> grande <b>que</b> el otro — Эта квартира больше той",
+              "Цена: El centro es <b>más</b> caro <b>que</b> las afueras — Центр дороже окраин",
+              "Качество: Mi casa es <b>más</b> luminosa <b>que</b> la tuya — Мой дом светлее твоего"
+            ]
+          },
+          {
+            "subtitle": "MENOS + adjetivo + QUE — недостаток",
+            "points": [
+              "Размер: El estudio es <b>menos</b> espacioso <b>que</b> el piso — Студия менее просторная, чем квартира",
+              "Шум: Las afueras son <b>menos</b> ruidosas <b>que</b> el centro — На окраинах менее шумно, чем в центре",
+              "Цена: Compartir piso es <b>menos</b> caro <b>que</b> vivir solo — Снимать вместе дешевле, чем жить одному"
+            ]
+          },
+          {
+            "subtitle": "TAN + adjetivo + COMO — равенство",
+            "points": [
+              "Равенство: Mi piso es <b>tan</b> grande <b>como</b> el tuyo — Моя квартира такая же большая, как твоя",
+              "Отрицание: No es <b>tan</b> caro <b>como</b> parece — Не так дорого, как кажется",
+              "Сравнение: El salón es <b>tan</b> luminoso <b>como</b> el dormitorio — Гостиная такая же светлая, как спальня"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Vivir en las afueras es más barato que vivir en el centro.", "ru": "Жить на окраине дешевле, чем в центре."},
+          {"es": "El ático de Julio es más grande que el piso de Pepe.", "ru": "Пентхаус Хулио больше квартиры Пепе."},
+          {"es": "Compartir piso no es tan caro como alquilar solo.", "ru": "Снимать квартиру вместе не так дорого, как одному."},
+          {"es": "Mi habitación es menos ruidosa que la tuya.", "ru": "Моя комната менее шумная, чем твоя."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Este piso es ___ grande que el otro.", "answer": "más"},
+        {"sentence": "El centro es más caro ___ las afueras.", "answer": "que"},
+        {"sentence": "Mi casa es ___ luminosa como la tuya.", "answer": "tan"},
+        {"sentence": "El estudio es ___ espacioso que el piso.", "answer": "menos"},
+        {"sentence": "Vivir solo es más caro ___ compartir piso.", "answer": "que"},
+        {"sentence": "Este barrio no es ___ ruidoso como el centro.", "answer": "tan"},
+        {"sentence": "El ático tiene ___ habitaciones que el chalé.", "answer": "más"},
+        {"sentence": "La terraza es tan grande ___ el salón.", "answer": "como"},
+        {"sentence": "El alquiler es ___ económico que comprar.", "answer": "menos"},
+        {"sentence": "Mi piso es más moderno ___ el de mis padres.", "answer": "que"},
+        {"sentence": "Esta zona es ___ tranquila como aquella.", "answer": "tan"},
+        {"sentence": "El garaje tiene ___ plazas que el otro.", "answer": "menos"},
+        {"sentence": "El precio es más alto ___ el año pasado.", "answer": "que"},
+        {"sentence": "La cocina no es ___ grande como el salón.", "answer": "tan"},
+        {"sentence": "Este edificio es ___ antiguo que aquel.", "answer": "más"},
+        {"sentence": "El piso de Juan es tan caro ___ el mío.", "answer": "como"},
+        {"sentence": "Las afueras son ___ caras que el centro.", "answer": "menos"},
+        {"sentence": "Mi habitación es más pequeña ___ la tuya.", "answer": "que"},
+        {"sentence": "El jardín es ___ bonito como el parque.", "answer": "tan"},
+        {"sentence": "El ascensor es ___ rápido que el de antes.", "answer": "más"},
+        {"sentence": "Esta casa tiene menos metros ___ la otra.", "answer": "que"},
+        {"sentence": "El barrio es ___ seguro como antes.", "answer": "tan"},
+        {"sentence": "El salón es ___ amplio que la cocina.", "answer": "más"},
+        {"sentence": "Vivir aquí no es tan caro ___ parece.", "answer": "como"},
+        {"sentence": "El patio es ___ grande que el jardín.", "answer": "menos"},
+        {"sentence": "Este piso es más céntrico ___ el anterior.", "answer": "que"},
+        {"sentence": "La casa es ___ acogedora como un hotel.", "answer": "tan"},
+        {"sentence": "El baño es ___ moderno que la cocina.", "answer": "más"},
+        {"sentence": "El estudio es menos luminoso ___ el ático.", "answer": "que"},
+        {"sentence": "Mi terraza es ___ grande como la tuya.", "answer": "tan"},
+        {"sentence": "Los vecinos son ___ ruidosos que antes.", "answer": "menos"},
+        {"sentence": "El chalé es más caro ___ el apartamento.", "answer": "que"},
+        {"sentence": "Esta calle es ___ tranquila como aquella.", "answer": "tan"},
+        {"sentence": "El edificio es ___ alto que el de enfrente.", "answer": "más"},
+        {"sentence": "La reforma fue menos costosa ___ pensábamos.", "answer": "que"},
+        {"sentence": "El piso es ___ cómodo como una casa.", "answer": "tan"},
+        {"sentence": "El garaje es ___ grande que necesitamos.", "answer": "más"},
+        {"sentence": "La zona no es tan segura ___ dicen.", "answer": "como"},
+        {"sentence": "El alquiler es ___ caro que el año pasado.", "answer": "menos"},
+        {"sentence": "Este piso tiene más luz ___ el anterior.", "answer": "que"},
+        {"sentence": "La cocina es ___ funcional como la otra.", "answer": "tan"},
+        {"sentence": "El dormitorio es ___ pequeño que el salón.", "answer": "más"},
+        {"sentence": "Vivir en el campo es menos estresante ___ la ciudad.", "answer": "que"},
+        {"sentence": "El edificio es ___ nuevo como parece.", "answer": "tan"},
+        {"sentence": "Esta casa es ___ bonita que la de mis vecinos.", "answer": "más"},
+        {"sentence": "El patio es tan acogedor ___ el jardín.", "answer": "como"},
+        {"sentence": "El precio es ___ negociable que antes.", "answer": "menos"},
+        {"sentence": "Mi piso es más silencioso ___ el tuyo.", "answer": "que"},
+        {"sentence": "La terraza no es ___ grande como esperaba.", "answer": "tan"},
+        {"sentence": "El barrio tiene ___ servicios que el centro.", "answer": "menos"},
+        {"sentence": "La casa es más vieja ___ el apartamento.", "answer": "que"},
+        {"sentence": "El estudio es ___ práctico como un piso.", "answer": "tan"},
+        {"sentence": "El ático es ___ caro que el resto.", "answer": "más"},
+        {"sentence": "Esta zona es menos turística ___ el centro.", "answer": "que"},
+        {"sentence": "Mi casa es ___ grande como la tuya.", "answer": "tan"},
+        {"sentence": "El salón tiene ___ ventanas que el dormitorio.", "answer": "más"},
+        {"sentence": "El piso no es tan viejo ___ parece.", "answer": "como"},
+        {"sentence": "La reforma fue ___ difícil que pensábamos.", "answer": "menos"},
+        {"sentence": "Este barrio es más residencial ___ comercial.", "answer": "que"},
+        {"sentence": "El jardín es ___ verde como en primavera.", "answer": "tan"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Este piso es ___ grande que el otro.",
+          "answer": "más",
+          "hint": "¿Cuál es más grande? (superioridad)"
+        },
+        {
+          "sentence": "El centro es más caro ___ las afueras.",
+          "answer": "que",
+          "hint": "Palabra que conecta la comparación"
+        },
+        {
+          "sentence": "Mi casa es ___ luminosa como la tuya.",
+          "answer": "tan",
+          "hint": "Son iguales en luz (igualdad)"
+        },
+        {
+          "sentence": "La terraza es tan grande ___ el salón.",
+          "answer": "como",
+          "hint": "Palabra para comparar igualdad"
+        },
+        {
+          "sentence": "El estudio es ___ espacioso que el piso.",
+          "answer": "menos",
+          "hint": "El estudio tiene menos espacio (inferioridad)"
+        },
+        {
+          "sentence": "Vivir solo es más caro ___ compartir.",
+          "answer": "que",
+          "hint": "Conecta los dos elementos comparados"
+        },
+        {
+          "sentence": "El barrio no es ___ ruidoso como el centro.",
+          "answer": "tan",
+          "hint": "Comparación de igualdad negada"
+        },
+        {
+          "sentence": "El alquiler es ___ económico que comprar.",
+          "answer": "menos",
+          "hint": "Alquilar cuesta menos (inferioridad)"
+        },
+        {
+          "sentence": "Mi piso es más moderno ___ el de mis padres.",
+          "answer": "que",
+          "hint": "Conecta la comparación de superioridad"
+        },
+        {
+          "sentence": "Esta zona es ___ tranquila como aquella.",
+          "answer": "tan",
+          "hint": "Las dos zonas son igual de tranquilas"
+        },
+        {
+          "sentence": "El chalé es ___ grande que el apartamento.",
+          "answer": "más",
+          "hint": "El chalé tiene más espacio (superioridad)"
+        },
+        {
+          "sentence": "El precio no es tan alto ___ parece.",
+          "answer": "como",
+          "hint": "Comparación de igualdad negada"
+        },
+        {
+          "sentence": "Las afueras son ___ caras que el centro.",
+          "answer": "menos",
+          "hint": "Las afueras cuestan menos"
+        },
+        {
+          "sentence": "El ático es ___ luminoso que el bajo.",
+          "answer": "más",
+          "hint": "El ático tiene más luz"
+        },
+        {
+          "sentence": "Mi habitación es tan cómoda ___ la tuya.",
+          "answer": "como",
+          "hint": "Las dos son igual de cómodas"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Posesivos tónicos: el mío, la tuya, el suyo...",
+      "hint": "el mío / la mía / el tuyo / la tuya / el suyo / la suya / el nuestro / la nuestra",
+      "rule": {
+        "title": "Притяжательные местоимения: EL MÍO, LA TUYA, EL SUYO...",
+        "explanation": "Притяжательные местоимения заменяют существительное, чтобы избежать повторения. Они согласуются в роде и числе с объектом владения, а не с владельцем. Используются с определённым артиклем.",
+        "sections": [
+          {
+            "subtitle": "EL MÍO / LA MÍA — мой/моя",
+            "points": [
+              "Мужской род: Tu piso es grande, <b>el mío</b> es pequeño — Твоя квартира большая, моя маленькая",
+              "Женский род: Tu casa es nueva, <b>la mía</b> es antigua — Твой дом новый, мой старый",
+              "Множественное: Tus muebles son modernos, <b>los míos</b> son clásicos — Твоя мебель современная, моя классическая"
+            ]
+          },
+          {
+            "subtitle": "EL TUYO / LA TUYA — твой/твоя",
+            "points": [
+              "Мужской род: Mi salón es oscuro, <b>el tuyo</b> es luminoso — Моя гостиная тёмная, твоя светлая",
+              "Женский род: Mi cocina es pequeña, <b>la tuya</b> es enorme — Моя кухня маленькая, твоя огромная",
+              "Множественное: Mis vecinos son ruidosos, <b>los tuyos</b> son tranquilos — Мои соседи шумные, твои тихие"
+            ]
+          },
+          {
+            "subtitle": "EL SUYO / LA SUYA — его/её/Ваш",
+            "points": [
+              "Его/её: Su balcón es grande, <b>el suyo</b> tiene vistas — Его балкон большой, у него есть вид",
+              "Ваш (usted): Mi piso está aquí, ¿dónde está <b>el suyo</b>? — Моя квартира здесь, а где Ваша?",
+              "Их: Su casa es vieja, <b>la suya</b> es nueva — Их дом старый, их (другой) новый"
+            ]
+          },
+          {
+            "subtitle": "EL NUESTRO / LA NUESTRA — наш/наша",
+            "points": [
+              "Мужской род: Vuestro piso es céntrico, <b>el nuestro</b> está en las afueras — Ваша квартира в центре, наша на окраине",
+              "Женский род: Vuestra terraza es pequeña, <b>la nuestra</b> es grande — Ваша терраса маленькая, наша большая"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Tu barrio es tranquilo, pero el mío es más céntrico.", "ru": "Твой район тихий, но мой более центральный."},
+          {"es": "Mi sofá es viejo, el tuyo es nuevo.", "ru": "Мой диван старый, твой новый."},
+          {"es": "Su casa tiene jardín, la nuestra tiene terraza.", "ru": "В их доме сад, в нашем — терраса."},
+          {"es": "¿Este armario es el tuyo o el mío?", "ru": "Этот шкаф твой или мой?"}
+        ]
+      },
+      "questions": [
+        {"sentence": "Tu piso es grande, ___ es pequeño.", "answer": "el mío"},
+        {"sentence": "Mi casa es antigua, ___ es moderna.", "answer": "la tuya"},
+        {"sentence": "Su balcón tiene vistas, ___ no tiene.", "answer": "el mío"},
+        {"sentence": "Nuestra cocina es pequeña, ___ es enorme.", "answer": "la suya"},
+        {"sentence": "Tu sofá es de piel, ___ es de tela.", "answer": "el mío"},
+        {"sentence": "Mi habitación es luminosa, ___ es oscura.", "answer": "la tuya"},
+        {"sentence": "Su terraza es grande, ___ es más pequeña.", "answer": "la nuestra"},
+        {"sentence": "Vuestro barrio es ruidoso, ___ es tranquilo.", "answer": "el nuestro"},
+        {"sentence": "Tu armario es de madera, ___ es de metal.", "answer": "el mío"},
+        {"sentence": "Mi salón es pequeño, pero ___ es enorme.", "answer": "el tuyo"},
+        {"sentence": "Su piso está en el centro, ___ está en las afueras.", "answer": "el nuestro"},
+        {"sentence": "Tu cama es doble, ___ es individual.", "answer": "la mía"},
+        {"sentence": "Mi jardín tiene flores, ___ tiene árboles.", "answer": "el tuyo"},
+        {"sentence": "Su casa tiene garaje, ___ no tiene.", "answer": "la mía"},
+        {"sentence": "Nuestro edificio es antiguo, ___ es nuevo.", "answer": "el suyo"},
+        {"sentence": "Tu lámpara es moderna, ___ es clásica.", "answer": "la mía"},
+        {"sentence": "Mi baño tiene bañera, ___ tiene ducha.", "answer": "el tuyo"},
+        {"sentence": "Su estudio es céntrico, ___ está lejos.", "answer": "el nuestro"},
+        {"sentence": "Tu mesa es de cristal, ___ es de madera.", "answer": "la mía"},
+        {"sentence": "Mi vecino es ruidoso, ___ es muy tranquilo.", "answer": "el tuyo"},
+        {"sentence": "Su ático tiene terraza, ___ tiene balcón.", "answer": "el mío"},
+        {"sentence": "Vuestra cocina está equipada, ___ no.", "answer": "la nuestra"},
+        {"sentence": "Tu espejo es grande, ___ es pequeño.", "answer": "el mío"},
+        {"sentence": "Mi alfombra es de lana, ___ es sintética.", "answer": "la tuya"},
+        {"sentence": "Su piso es amueblado, ___ está vacío.", "answer": "el nuestro"},
+        {"sentence": "Tu silla es cómoda, ___ es incómoda.", "answer": "la mía"},
+        {"sentence": "Mi despacho tiene ventana, ___ no tiene.", "answer": "el tuyo"},
+        {"sentence": "Su garaje es de dos plazas, ___ es de una.", "answer": "el mío"},
+        {"sentence": "Nuestra entrada es amplia, ___ es pequeña.", "answer": "la suya"},
+        {"sentence": "Tu dormitorio da al jardín, ___ da a la calle.", "answer": "el mío"},
+        {"sentence": "Mi nevera es nueva, ___ es vieja.", "answer": "la tuya"},
+        {"sentence": "Su lavadora funciona bien, ___ está rota.", "answer": "la mía"},
+        {"sentence": "Tu horno es eléctrico, ___ es de gas.", "answer": "el mío"},
+        {"sentence": "Mi ducha tiene agua caliente, ___ no.", "answer": "la tuya"},
+        {"sentence": "Su chalé tiene piscina, ___ no tiene.", "answer": "el nuestro"},
+        {"sentence": "Vuestro suelo es de parqué, ___ es de baldosa.", "answer": "el nuestro"},
+        {"sentence": "Tu pared es blanca, ___ es azul.", "answer": "la mía"},
+        {"sentence": "Mi cuadro es original, ___ es una copia.", "answer": "el tuyo"},
+        {"sentence": "Su estantería está llena, ___ está vacía.", "answer": "la mía"},
+        {"sentence": "Tu mesilla es de noche, ___ es auxiliar.", "answer": "la mía"},
+        {"sentence": "Mi cojín es de tela, ___ es de piel.", "answer": "el tuyo"},
+        {"sentence": "Su recibidor es grande, ___ es muy pequeño.", "answer": "el nuestro"},
+        {"sentence": "Tu planta baja tiene jardín, ___ no tiene.", "answer": "la mía"},
+        {"sentence": "Mi ascensor funciona, ___ está averiado.", "answer": "el tuyo"},
+        {"sentence": "Su portero es simpático, ___ es antipático.", "answer": "el nuestro"},
+        {"sentence": "Vuestras vistas son bonitas, ___ son mejores.", "answer": "las nuestras"},
+        {"sentence": "Tus vecinos son jóvenes, ___ son mayores.", "answer": "los míos"},
+        {"sentence": "Mis muebles son antiguos, ___ son modernos.", "answer": "los tuyos"},
+        {"sentence": "Sus habitaciones son grandes, ___ son pequeñas.", "answer": "las nuestras"},
+        {"sentence": "Tus plantas están vivas, ___ están secas.", "answer": "las mías"},
+        {"sentence": "Mis cortinas son largas, ___ son cortas.", "answer": "las tuyas"},
+        {"sentence": "Sus cuadros son originales, ___ son copias.", "answer": "los míos"},
+        {"sentence": "Vuestros muebles son caros, ___ son baratos.", "answer": "los nuestros"},
+        {"sentence": "Tus sillas son de madera, ___ son de plástico.", "answer": "las mías"},
+        {"sentence": "Mis lámparas son modernas, ___ son clásicas.", "answer": "las tuyas"},
+        {"sentence": "Sus ventanas dan al sur, ___ dan al norte.", "answer": "las nuestras"},
+        {"sentence": "Vuestras alfombras son persas, ___ son turcas.", "answer": "las nuestras"},
+        {"sentence": "Tus espejos son grandes, ___ son pequeños.", "answer": "los míos"},
+        {"sentence": "Mis cojines son de colores, ___ son blancos.", "answer": "los tuyos"},
+        {"sentence": "Sus balcones tienen flores, ___ no tienen.", "answer": "los nuestros"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Tu piso es grande, ___ es pequeño.",
+          "answer": "el mío",
+          "hint": "El piso de quién habla (yo, masculino)"
+        },
+        {
+          "sentence": "Mi casa es antigua, ___ es moderna.",
+          "answer": "la tuya",
+          "hint": "La casa de la persona con quien hablas (tú, femenino)"
+        },
+        {
+          "sentence": "Su terraza es grande, ___ es más pequeña.",
+          "answer": "la nuestra",
+          "hint": "La terraza de nosotros (femenino)"
+        },
+        {
+          "sentence": "Tu sofá es de piel, ___ es de tela.",
+          "answer": "el mío",
+          "hint": "El sofá del hablante (yo, masculino)"
+        },
+        {
+          "sentence": "Mi habitación es luminosa, ___ es oscura.",
+          "answer": "la tuya",
+          "hint": "La habitación de tú (femenino)"
+        },
+        {
+          "sentence": "Vuestro barrio es ruidoso, ___ es tranquilo.",
+          "answer": "el nuestro",
+          "hint": "El barrio de nosotros (masculino)"
+        },
+        {
+          "sentence": "Su piso está en el centro, ___ está lejos.",
+          "answer": "el nuestro",
+          "hint": "El piso de nosotros (masculino)"
+        },
+        {
+          "sentence": "Tu cama es doble, ___ es individual.",
+          "answer": "la mía",
+          "hint": "La cama del hablante (yo, femenino)"
+        },
+        {
+          "sentence": "Mi jardín tiene flores, ___ tiene árboles.",
+          "answer": "el tuyo",
+          "hint": "El jardín de tú (masculino)"
+        },
+        {
+          "sentence": "Nuestro edificio es antiguo, ___ es nuevo.",
+          "answer": "el suyo",
+          "hint": "El edificio de él/ella/ustedes (masculino)"
+        },
+        {
+          "sentence": "Tus vecinos son jóvenes, ___ son mayores.",
+          "answer": "los míos",
+          "hint": "Los vecinos del hablante (yo, masculino plural)"
+        },
+        {
+          "sentence": "Mis plantas están vivas, ___ están secas.",
+          "answer": "las tuyas",
+          "hint": "Las plantas de tú (femenino plural)"
+        },
+        {
+          "sentence": "Sus habitaciones son grandes, ___ son pequeñas.",
+          "answer": "las nuestras",
+          "hint": "Las habitaciones de nosotros (femenino plural)"
+        },
+        {
+          "sentence": "Tu lámpara es moderna, ___ es clásica.",
+          "answer": "la mía",
+          "hint": "La lámpara del hablante (femenino)"
+        },
+        {
+          "sentence": "Mi baño tiene bañera, ___ tiene ducha.",
+          "answer": "el tuyo",
+          "hint": "El baño de tú (masculino)"
+        }
+      ]
+    }
+  ],
   "verbos": {
     "tiempoTitle": "Verbos de la unidad",
     "requiredEjercicio": null,

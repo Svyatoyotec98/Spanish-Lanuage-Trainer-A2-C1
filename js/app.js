@@ -708,8 +708,106 @@ function showProfileSelect() {
                 titleEl.textContent = `Spanish Trainer ${currentLevel}`;
             }
 
-            updateUnidadUI();
+            renderUnitsPage();
 			saveNavigationState('mainMenu');
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // UNITS PAGINATION (4 units per page)
+        // ═══════════════════════════════════════════════════════════════
+
+        const UNITS_PER_PAGE = 4;
+        let currentUnitsPage = 0;
+
+        function renderUnitsPage() {
+            const container = document.getElementById('unidadesContainer');
+            if (!container) return;
+
+            const profile = getActiveProfile();
+            if (!profile) return;
+
+            ensureProgressSkeleton(profile);
+
+            const totalPages = Math.ceil(UNIDADES.length / UNITS_PER_PAGE);
+            const startIndex = currentUnitsPage * UNITS_PER_PAGE;
+            const endIndex = Math.min(startIndex + UNITS_PER_PAGE, UNIDADES.length);
+            const pageUnidades = UNIDADES.slice(startIndex, endIndex);
+
+            // Book emoji icons for different units
+            const unitIcons = ['📚', '📘', '📗', '📕', '📙', '📔', '📓', '📖', '📒', '📑'];
+
+            let html = '';
+            pageUnidades.forEach((unidad, pageIndex) => {
+                const globalIndex = startIndex + pageIndex;
+                const unidadNumber = unidad.split('_')[1];
+                const progress = calculateUnidadProgress(unidad);
+                const isFirstUnit = globalIndex === 0;
+                const isUnlocked = isFirstUnit || profile.unlocks[unidad];
+                const prevUnidadNumber = globalIndex > 0 ? UNIDADES[globalIndex - 1].split('_')[1] : null;
+
+                // Get unit theme from loaded data
+                const unidadData = vocabularyData[unidad];
+                const theme = unidadData && unidadData.title ? unidadData.title.replace(/^Unidad \d+:?\s*/, '') : '';
+
+                const lockedClass = isUnlocked ? '' : 'locked';
+                const lockIcon = isUnlocked ? '🔓' : '🔒';
+                const progressText = isUnlocked
+                    ? `${progress}%`
+                    : `Заблокировано - Завершите Unidad ${prevUnidadNumber} (80%)`;
+
+                html += `
+                    <div class="category-card ${lockedClass}" id="unidad-${unidadNumber}-btn" onclick="showUnidadMenu('${unidad}')">
+                        <div class="category-header">
+                            <span class="category-title">${unitIcons[globalIndex] || '📚'} Unidad ${unidadNumber}${theme ? ' - ' + theme : ''}</span>
+                            <span class="category-icon">${lockIcon}</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="unidad-${unidadNumber}-progress-bar" style="width: ${isUnlocked ? progress : 0}%"></div>
+                        </div>
+                        <p class="progress-text" id="unidad-${unidadNumber}-progress-text">${progressText}</p>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+            updateUnitsPagination();
+        }
+
+        function updateUnitsPagination() {
+            const totalPages = Math.ceil(UNIDADES.length / UNITS_PER_PAGE);
+            const prevBtn = document.getElementById('unitsPrevBtn');
+            const nextBtn = document.getElementById('unitsNextBtn');
+
+            if (prevBtn) {
+                if (currentUnitsPage === 0) {
+                    prevBtn.classList.add('hidden');
+                } else {
+                    prevBtn.classList.remove('hidden');
+                }
+            }
+
+            if (nextBtn) {
+                if (currentUnitsPage >= totalPages - 1) {
+                    nextBtn.classList.add('hidden');
+                } else {
+                    nextBtn.classList.remove('hidden');
+                }
+            }
+        }
+
+        function nextUnitsPage() {
+            const totalPages = Math.ceil(UNIDADES.length / UNITS_PER_PAGE);
+            if (currentUnitsPage < totalPages - 1) {
+                currentUnitsPage++;
+                renderUnitsPage();
+            }
+        }
+
+        function prevUnitsPage() {
+            if (currentUnitsPage > 0) {
+                currentUnitsPage--;
+                renderUnitsPage();
+            }
         }
 
         // ═══════════════════════════════════════════════════════════════
@@ -921,44 +1019,8 @@ function showProfileSelect() {
         }
 
         function updateUnidadUI() {
-            const profile = getActiveProfile();
-            if (!profile) return;
-
-            ensureProgressSkeleton(profile);
-
-            // Динамическое обновление UI для всех unidades
-            UNIDADES.forEach((unidad, index) => {
-                const unidadNumber = unidad.split('_')[1]; // Извлекаем номер: 'unidad_1' → '1'
-                const btn = document.getElementById(`unidad-${unidadNumber}-btn`);
-                const progressBar = document.getElementById(`unidad-${unidadNumber}-progress-bar`);
-                const progressText = document.getElementById(`unidad-${unidadNumber}-progress-text`);
-
-                // Проверяем, что элементы существуют в HTML (некоторые могут ещё не быть добавлены)
-                if (!btn || !progressBar || !progressText) return;
-
-                const progress = calculateUnidadProgress(unidad);
-
-                if (index === 0) {
-                    // Первая unidad всегда разблокирована
-                    progressBar.style.width = progress + '%';
-                    progressText.textContent = progress + '%';
-                } else {
-                    // Остальные unidades могут быть заблокированы
-                    const isUnlocked = profile.unlocks[unidad];
-                    const prevUnidadNumber = UNIDADES[index - 1].split('_')[1];
-
-                    if (isUnlocked) {
-                        btn.classList.remove('locked');
-                        btn.querySelector('.category-icon').textContent = '🔓';
-                        progressBar.style.width = progress + '%';
-                        progressText.textContent = progress + '%';
-                    } else {
-                        btn.classList.add('locked');
-                        btn.querySelector('.category-icon').textContent = '🔒';
-                        progressText.textContent = `Заблокировано - Завершите Unidad ${prevUnidadNumber} (80%)`;
-                    }
-                }
-            });
+            // Now delegates to renderUnitsPage() for dynamic pagination
+            renderUnitsPage();
         }
 
         // ═══════════════════════════════════════════════════════════════

@@ -1338,6 +1338,63 @@
         {"sentence": "___ (este) foto es de mi boda.", "answer": "Esta"},
         {"sentence": "___ (aquel) tiempos eran mejores.", "answer": "Aquellos"}
       ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Llevar vs Llevarse",
+      "hint": "llevar = носить | llevarse (bien/mal) = ладить",
+      "rule": {
+        "title": "LLEVAR vs LLEVARSE",
+        "explanation": "Estos verbos tienen significados muy diferentes:",
+        "sections": [
+          {
+            "subtitle": "LLEVAR - носить, нести",
+            "points": [
+              "<b>Llevar</b> ropa/accesorios - носить одежду",
+              "<b>Llevar</b> el pelo largo/corto - носить длинные/короткие волосы",
+              "<b>Llevar</b> gafas/barba - носить очки/бороду",
+              "<b>Llevar</b> algo a algún lugar - нести что-то куда-то"
+            ]
+          },
+          {
+            "subtitle": "LLEVARSE (bien/mal) - ладить/не ладить",
+            "points": [
+              "Me <b>llevo bien</b> con mi hermano - Я хорошо лажу с братом",
+              "Se <b>llevan mal</b> - Они плохо ладят",
+              "¿Te <b>llevas bien</b> con tus vecinos? - Ты ладишь с соседями?",
+              "No nos <b>llevamos</b> - Мы не ладим"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Llevo gafas desde pequeño.", "ru": "Я ношу очки с детства."},
+          {"es": "Me llevo muy bien con mi jefe.", "ru": "Я очень хорошо лажу с начальником."},
+          {"es": "Ella lleva el pelo muy largo.", "ru": "У неё очень длинные волосы."},
+          {"es": "Mis hermanos se llevan fatal.", "ru": "Мои братья совсем не ладят."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Juan ___ (llevar) barba.", "answer": "lleva"},
+        {"sentence": "Me ___ (llevarse) muy bien con mi hermana.", "answer": "llevo"},
+        {"sentence": "Ella ___ (llevar) gafas de sol.", "answer": "lleva"},
+        {"sentence": "¿Te ___ (llevarse) bien con tu jefe?", "answer": "llevas"},
+        {"sentence": "Mis padres ___ (llevarse) muy bien.", "answer": "se llevan"},
+        {"sentence": "Él ___ (llevar) el pelo muy corto.", "answer": "lleva"},
+        {"sentence": "No me ___ (llevarse) bien con mi vecino.", "answer": "llevo"},
+        {"sentence": "¿Qué ___ (llevar) tú hoy? - Un vestido azul.", "answer": "llevas"},
+        {"sentence": "Ellos ___ (llevarse) fatal desde siempre.", "answer": "se llevan"},
+        {"sentence": "Mi abuelo ___ (llevar) bigote.", "answer": "lleva"},
+        {"sentence": "¿Os ___ (llevarse) bien vosotros?", "answer": "lleváis"},
+        {"sentence": "Yo siempre ___ (llevar) ropa cómoda.", "answer": "llevo"},
+        {"sentence": "Ana y María no ___ (llevarse) nada bien.", "answer": "se llevan"},
+        {"sentence": "¿___ (llevar) tú gafas?", "answer": "Llevas"},
+        {"sentence": "Nos ___ (llevarse) muy bien en el trabajo.", "answer": "llevamos"},
+        {"sentence": "Él ___ (llevar) una camiseta negra.", "answer": "lleva"},
+        {"sentence": "¿Con quién no te ___ (llevarse) bien?", "answer": "llevas"},
+        {"sentence": "Mi madre ___ (llevar) el pelo rizado.", "answer": "lleva"},
+        {"sentence": "Los hermanos ___ (llevarse) bien.", "answer": "se llevan"},
+        {"sentence": "Yo ___ (llevar) este anillo desde mi boda.", "answer": "llevo"}
+      ]
     }
   ],
   "verbos": {

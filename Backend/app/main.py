@@ -11,9 +11,9 @@ from .auth import register_user, login, get_current_user, get_db
 app = FastAPI(title="Spanish Trainer API")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # твой фронтенд
+    allow_origins=["*"],  # Разрешаем все origins для разработки (localhost + IP)
     allow_credentials=True,
-    allow_methods=["*"],  # важно: разрешает OPTIONS + POST
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 

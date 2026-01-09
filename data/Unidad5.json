@@ -1,7 +1,21 @@
 {
   "id": "unidad_5",
-  "title": "Unidad 5: El gerundio y las peticiones",
-  "groups": {
+  "title": "Unidad 5",
+  "categories": {
+    "sustantivos": [
+      {"spanish": "el ejemplo", "ru": "пример"},
+      {"spanish": "la palabra", "ru": "слово"},
+      {"spanish": "el texto", "ru": "текст"}
+    ],
+    "adjetivos": [
+      {"spanish": "nuevo", "ru": "новый"},
+      {"spanish": "viejo", "ru": "старый"}
+    ],
+    "verbos": [
+      {"spanish": "crear", "ru": "создавать"},
+      {"spanish": "usar", "ru": "использовать"}
+    ],
+    "gramatica": []
   },
   "ejercicios": [
     {

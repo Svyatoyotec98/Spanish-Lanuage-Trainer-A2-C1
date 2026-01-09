@@ -1,20 +1,930 @@
 {
-  "id": "unidad_10",
+  "id": "unidad10",
   "title": "Unidad 10",
-  "categories": {
-    "sustantivos": [
-      {"spanish": "el ejemplo", "ru": "пример"},
-      {"spanish": "la palabra", "ru": "слово"},
-      {"spanish": "el texto", "ru": "текст"}
+  "groups": {
+    "RECUERDOS_Y_MOMENTOS": [
+      {
+        "spanish": "recordar",
+        "ru": "помнить, вспоминать",
+        "type": "verbo",
+        "icon": "brain",
+        "useIcon": true,
+        "hardSentences": [
+          "No puedo ___ dónde dejé las llaves.",
+          "Me encanta ___ los buenos momentos de mi infancia.",
+          "¿Puedes ___ qué pasó ese día?",
+          "Necesito ___ perfectamente todos los detalles."
+        ],
+        "hardSentencesRu": [
+          "Не могу вспомнить, где оставил ключи.",
+          "Мне нравится вспоминать хорошие моменты детства.",
+          "Можешь вспомнить, что произошло в тот день?",
+          "Мне нужно вспомнить все детали в точности."
+        ]
+      },
+      {
+        "spanish": "el recuerdo",
+        "ru": "воспоминание",
+        "type": "sustantivo",
+        "icon": "image",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo un ___ muy intenso de aquel día.",
+          "Este ___ me acompaña toda la vida.",
+          "El ___ de mi abuela siempre me hace sonreír.",
+          "Guardo un ___ muy especial de ese viaje."
+        ],
+        "hardSentencesRu": [
+          "У меня очень яркое воспоминание о том дне.",
+          "Это воспоминание сопровождает меня всю жизнь.",
+          "Воспоминание о бабушке всегда заставляет меня улыбаться.",
+          "Храню очень особенное воспоминание о той поездке."
+        ]
+      },
+      {
+        "spanish": "el momento",
+        "ru": "момент",
+        "type": "sustantivo",
+        "icon": "clock",
+        "useIcon": true,
+        "hardSentences": [
+          "Fue un ___ muy especial para todos.",
+          "En ese ___ no sabía qué decir.",
+          "El ___ más emocionante fue cuando ganamos.",
+          "Recuerdo perfectamente cada ___ de la ceremonia."
+        ],
+        "hardSentencesRu": [
+          "Это был очень особенный момент для всех.",
+          "В тот момент я не знал, что сказать.",
+          "Самый волнующий момент был, когда мы выиграли.",
+          "Я прекрасно помню каждый момент церемонии."
+        ]
+      },
+      {
+        "spanish": "especial",
+        "ru": "особенный (м)",
+        "type": "adjetivo",
+        "icon": "star",
+        "useIcon": true,
+        "hardSentences": [
+          "Fue un día muy ___ para nuestra familia.",
+          "Este regalo es ___ porque lo hice yo mismo.",
+          "Quiero hacer algo ___ para su cumpleaños.",
+          "Ese momento fue ___ y nunca lo olvidaré."
+        ],
+        "hardSentencesRu": [
+          "Это был очень особенный день для нашей семьи.",
+          "Этот подарок особенный, потому что я сделал его сам.",
+          "Хочу сделать что-то особенное на её день рождения.",
+          "Тот момент был особенным, и я никогда его не забуду."
+        ]
+      },
+      {
+        "spanish": "emocionante",
+        "ru": "волнующий (м)",
+        "type": "adjetivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "La final del partido fue muy ___.",
+          "Fue un momento ___ ver a mi hijo graduarse.",
+          "El discurso fue tan ___ que lloré.",
+          "Vivimos una experiencia ___ durante el viaje."
+        ],
+        "hardSentencesRu": [
+          "Финал матча был очень волнующим.",
+          "Это был волнующий момент — видеть, как мой сын получает диплом.",
+          "Речь была настолько волнующей, что я заплакал.",
+          "Мы пережили волнующий опыт во время поездки."
+        ]
+      },
+      {
+        "spanish": "increíble",
+        "ru": "невероятный (м)",
+        "type": "adjetivo",
+        "icon": "sparkle",
+        "useIcon": true,
+        "hardSentences": [
+          "Lo que pasó ayer fue ___.",
+          "Tuvimos una vista ___ desde la montaña.",
+          "Es ___ que hayas conseguido el trabajo.",
+          "El concierto fue una experiencia ___."
+        ],
+        "hardSentencesRu": [
+          "То, что произошло вчера, было невероятным.",
+          "У нас был невероятный вид с горы.",
+          "Невероятно, что ты получил эту работу.",
+          "Концерт был невероятным опытом."
+        ]
+      },
+      {
+        "spanish": "sorprendente",
+        "ru": "удивительный (м)",
+        "type": "adjetivo",
+        "icon": "question",
+        "useIcon": true,
+        "hardSentences": [
+          "El final de la película fue ___.",
+          "Es ___ lo rápido que aprendió español.",
+          "Recibí una noticia ___ esta mañana.",
+          "El resultado del examen fue ___."
+        ],
+        "hardSentencesRu": [
+          "Конец фильма был удивительным.",
+          "Удивительно, как быстро он выучил испанский.",
+          "Я получил удивительную новость сегодня утром.",
+          "Результат экзамена был удивительным."
+        ]
+      },
+      {
+        "spanish": "horrible",
+        "ru": "ужасный (м)",
+        "type": "adjetivo",
+        "icon": "skull",
+        "useIcon": true,
+        "hardSentences": [
+          "El accidente fue ___.",
+          "Pasamos un día ___ esperando noticias.",
+          "El tiempo fue ___ durante todo el viaje.",
+          "Tuve un sueño ___ anoche."
+        ],
+        "hardSentencesRu": [
+          "Авария была ужасной.",
+          "Мы провели ужасный день в ожидании новостей.",
+          "Погода была ужасной в течение всей поездки.",
+          "Мне приснился ужасный сон прошлой ночью."
+        ]
+      },
+      {
+        "spanish": "inolvidable",
+        "ru": "незабываемый (м)",
+        "type": "adjetivo",
+        "icon": "bookmark",
+        "useIcon": true,
+        "hardSentences": [
+          "Fue una experiencia ___.",
+          "La boda fue un día ___.",
+          "El viaje a Japón fue ___.",
+          "Pasamos unas vacaciones ___."
+        ],
+        "hardSentencesRu": [
+          "Это был незабываемый опыт.",
+          "Свадьба была незабываемым днём.",
+          "Поездка в Японию была незабываемой.",
+          "Мы провели незабываемый отпуск."
+        ]
+      }
     ],
-    "adjetivos": [
-      {"spanish": "nuevo", "ru": "новый"},
-      {"spanish": "viejo", "ru": "старый"}
+    "ACONTECIMIENTOS_CONFLICTOS": [
+      {
+        "spanish": "la guerra",
+        "ru": "война",
+        "type": "sustantivo",
+        "icon": "shield",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo vivió la ___ civil española.",
+          "La ___ terminó hace muchos años.",
+          "Durante la ___ muchas familias tuvieron que huir.",
+          "La ___ destruyó la ciudad completamente."
+        ],
+        "hardSentencesRu": [
+          "Мой дедушка пережил гражданскую войну в Испании.",
+          "Война закончилась много лет назад.",
+          "Во время войны многим семьям пришлось бежать.",
+          "Война полностью разрушила город."
+        ]
+      },
+      {
+        "spanish": "la revolución",
+        "ru": "революция",
+        "type": "sustantivo",
+        "icon": "flag",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ francesa cambió la historia de Europa.",
+          "Los jóvenes lideraron la ___.",
+          "La ___ industrial transformó la sociedad.",
+          "Estudiamos la ___ mexicana en clase."
+        ],
+        "hardSentencesRu": [
+          "Французская революция изменила историю Европы.",
+          "Молодёжь возглавила революцию.",
+          "Промышленная революция преобразила общество.",
+          "Мы изучали мексиканскую революцию на уроке."
+        ]
+      },
+      {
+        "spanish": "la rebelión",
+        "ru": "восстание, мятеж",
+        "type": "sustantivo",
+        "icon": "fist",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ fue sofocada por el ejército.",
+          "Los campesinos organizaron una ___.",
+          "La ___ duró varios meses.",
+          "El líder de la ___ fue capturado."
+        ],
+        "hardSentencesRu": [
+          "Восстание было подавлено армией.",
+          "Крестьяне организовали восстание.",
+          "Восстание продолжалось несколько месяцев.",
+          "Лидер восстания был схвачен."
+        ]
+      },
+      {
+        "spanish": "el atentado",
+        "ru": "теракт, покушение",
+        "type": "sustantivo",
+        "icon": "warning",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ causó muchas víctimas.",
+          "Recuerdo perfectamente el día del ___.",
+          "El ___ conmocionó a todo el país.",
+          "Sobrevivió al ___ de milagro."
+        ],
+        "hardSentencesRu": [
+          "Теракт унёс много жизней.",
+          "Я прекрасно помню день теракта.",
+          "Теракт потряс всю страну.",
+          "Он чудом выжил после покушения."
+        ]
+      },
+      {
+        "spanish": "la crisis",
+        "ru": "кризис",
+        "type": "sustantivo",
+        "icon": "chart-line-down",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ económica afectó a muchas familias.",
+          "Durante la ___ perdí mi trabajo.",
+          "El país está en ___ política.",
+          "La ___ sanitaria cambió nuestras vidas."
+        ],
+        "hardSentencesRu": [
+          "Экономический кризис затронул многие семьи.",
+          "Во время кризиса я потерял работу.",
+          "Страна находится в политическом кризисе.",
+          "Санитарный кризис изменил наши жизни."
+        ]
+      },
+      {
+        "spanish": "el enfrentamiento",
+        "ru": "столкновение, противостояние",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ entre los dos países duró años.",
+          "Hubo un ___ entre manifestantes y policía.",
+          "El ___ terminó sin víctimas.",
+          "Intentaron evitar el ___ directo."
+        ],
+        "hardSentencesRu": [
+          "Противостояние между двумя странами длилось годы.",
+          "Произошло столкновение между демонстрантами и полицией.",
+          "Столкновение закончилось без жертв.",
+          "Они пытались избежать прямого противостояния."
+        ]
+      },
+      {
+        "spanish": "el golpe de Estado",
+        "ru": "государственный переворот",
+        "type": "sustantivo",
+        "icon": "bank",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ cambió la historia del país.",
+          "El ___ fracasó gracias a la resistencia popular.",
+          "Después del ___ hubo años de dictadura.",
+          "Los militares intentaron dar un ___."
+        ],
+        "hardSentencesRu": [
+          "Государственный переворот изменил историю страны.",
+          "Переворот провалился благодаря народному сопротивлению.",
+          "После переворота наступили годы диктатуры.",
+          "Военные попытались совершить государственный переворот."
+        ]
+      },
+      {
+        "spanish": "el bombardeo",
+        "ru": "бомбардировка",
+        "type": "sustantivo",
+        "icon": "airplane",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ destruyó el centro de la ciudad.",
+          "Durante el ___ nos refugiamos en el sótano.",
+          "El ___ duró varias horas.",
+          "Muchos edificios fueron destruidos por el ___."
+        ],
+        "hardSentencesRu": [
+          "Бомбардировка разрушила центр города.",
+          "Во время бомбардировки мы укрылись в подвале.",
+          "Бомбардировка продолжалась несколько часов.",
+          "Много зданий было разрушено бомбардировкой."
+        ]
+      },
+      {
+        "spanish": "el asesinato",
+        "ru": "убийство",
+        "type": "sustantivo",
+        "icon": "prohibit",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ del presidente conmocionó al país.",
+          "La policía investiga el ___.",
+          "El ___ ocurrió en pleno centro.",
+          "El ___ de Kennedy cambió la historia."
+        ],
+        "hardSentencesRu": [
+          "Убийство президента потрясло страну.",
+          "Полиция расследует убийство.",
+          "Убийство произошло в самом центре.",
+          "Убийство Кеннеди изменило историю."
+        ]
+      },
+      {
+        "spanish": "la manifestación",
+        "ru": "демонстрация, митинг",
+        "type": "sustantivo",
+        "icon": "megaphone",
+        "useIcon": true,
+        "hardSentences": [
+          "Miles de personas participaron en la ___.",
+          "La ___ fue pacífica.",
+          "Organizaron una ___ contra la guerra.",
+          "La ___ terminó en la plaza central."
+        ],
+        "hardSentencesRu": [
+          "Тысячи людей участвовали в демонстрации.",
+          "Демонстрация была мирной.",
+          "Они организовали митинг против войны.",
+          "Демонстрация закончилась на центральной площади."
+        ]
+      },
+      {
+        "spanish": "el discurso",
+        "ru": "речь, выступление",
+        "type": "sustantivo",
+        "icon": "microphone",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ del presidente fue muy emotivo.",
+          "Martin Luther King hizo un ___ histórico.",
+          "Su ___ duró más de una hora.",
+          "El ___ de graduación me emocionó."
+        ],
+        "hardSentencesRu": [
+          "Речь президента была очень эмоциональной.",
+          "Мартин Лютер Кинг произнёс историческую речь.",
+          "Его выступление длилось больше часа.",
+          "Речь на выпускном меня растрогала."
+        ]
+      }
     ],
-    "verbos": [
-      {"spanish": "crear", "ru": "создавать"},
-      {"spanish": "usar", "ru": "использовать"}
+    "CATASTROFES_NATURALES": [
+      {
+        "spanish": "el tsunami",
+        "ru": "цунами",
+        "type": "sustantivo",
+        "icon": "waves",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ destruyó toda la costa.",
+          "Miles de personas murieron en el ___.",
+          "El ___ de Japón fue devastador.",
+          "Después del terremoto llegó el ___."
+        ],
+        "hardSentencesRu": [
+          "Цунами разрушило всё побережье.",
+          "Тысячи людей погибли во время цунами.",
+          "Цунами в Японии было разрушительным.",
+          "После землетрясения пришло цунами."
+        ]
+      },
+      {
+        "spanish": "el terremoto",
+        "ru": "землетрясение",
+        "type": "sustantivo",
+        "icon": "house-line",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ duró solo unos segundos.",
+          "El ___ destruyó muchos edificios.",
+          "Nunca había sentido un ___.",
+          "El ___ se sintió en toda la región."
+        ],
+        "hardSentencesRu": [
+          "Землетрясение длилось всего несколько секунд.",
+          "Землетрясение разрушило много зданий.",
+          "Я никогда раньше не ощущал землетрясение.",
+          "Землетрясение ощущалось во всём регионе."
+        ]
+      },
+      {
+        "spanish": "el huracán",
+        "ru": "ураган",
+        "type": "sustantivo",
+        "icon": "wind",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ Katrina causó enormes daños.",
+          "Tuvimos que evacuar antes del ___.",
+          "El ___ llegó a la costa por la noche.",
+          "Los vientos del ___ alcanzaron 200 km/h."
+        ],
+        "hardSentencesRu": [
+          "Ураган Катрина нанёс огромный ущерб.",
+          "Нам пришлось эвакуироваться до урагана.",
+          "Ураган достиг побережья ночью.",
+          "Ветер урагана достигал 200 км/ч."
+        ]
+      },
+      {
+        "spanish": "el incendio",
+        "ru": "пожар",
+        "type": "sustantivo",
+        "icon": "fire",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ forestal destruyó miles de hectáreas.",
+          "Los bomberos lucharon contra el ___ toda la noche.",
+          "El ___ empezó en la cocina.",
+          "El ___ fue provocado intencionalmente."
+        ],
+        "hardSentencesRu": [
+          "Лесной пожар уничтожил тысячи гектаров.",
+          "Пожарные боролись с пожаром всю ночь.",
+          "Пожар начался на кухне.",
+          "Пожар был устроен намеренно."
+        ]
+      },
+      {
+        "spanish": "la epidemia",
+        "ru": "эпидемия",
+        "type": "sustantivo",
+        "icon": "first-aid-kit",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ de gripe afectó a miles de personas.",
+          "Controlaron la ___ gracias a la vacunación.",
+          "La ___ se extendió rápidamente.",
+          "Durante la ___ muchas escuelas cerraron."
+        ],
+        "hardSentencesRu": [
+          "Эпидемия гриппа затронула тысячи людей.",
+          "Эпидемию удалось остановить благодаря вакцинации.",
+          "Эпидемия распространилась быстро.",
+          "Во время эпидемии многие школы закрылись."
+        ]
+      },
+      {
+        "spanish": "la pandemia",
+        "ru": "пандемия",
+        "type": "sustantivo",
+        "icon": "globe",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ de covid-19 cambió el mundo.",
+          "Durante la ___ trabajé desde casa.",
+          "La ___ afectó a todos los países.",
+          "Nunca olvidaré los años de la ___."
+        ],
+        "hardSentencesRu": [
+          "Пандемия covid-19 изменила мир.",
+          "Во время пандемии я работал из дома.",
+          "Пандемия затронула все страны.",
+          "Никогда не забуду годы пандемии."
+        ]
+      },
+      {
+        "spanish": "el accidente",
+        "ru": "авария, несчастный случай",
+        "type": "sustantivo",
+        "icon": "car",
+        "useIcon": true,
+        "hardSentences": [
+          "Hubo un ___ de tráfico en la autopista.",
+          "El ___ nuclear de Chernóbil fue terrible.",
+          "Sobrevivió al ___ de milagro.",
+          "El ___ ocurrió por la mañana temprano."
+        ],
+        "hardSentencesRu": [
+          "На автомагистрали произошла авария.",
+          "Ядерная авария в Чернобыле была ужасной.",
+          "Он чудом выжил в аварии.",
+          "Авария произошла рано утром."
+        ]
+      },
+      {
+        "spanish": "el descubrimiento",
+        "ru": "открытие",
+        "type": "sustantivo",
+        "icon": "magnifying-glass",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de América cambió la historia.",
+          "Este ___ científico es muy importante.",
+          "El ___ de la penicilina salvó millones de vidas.",
+          "Hicieron un ___ arqueológico sorprendente."
+        ],
+        "hardSentencesRu": [
+          "Открытие Америки изменило историю.",
+          "Это научное открытие очень важно.",
+          "Открытие пенициллина спасло миллионы жизней.",
+          "Они сделали удивительное археологическое открытие."
+        ]
+      },
+      {
+        "spanish": "el invento",
+        "ru": "изобретение",
+        "type": "sustantivo",
+        "icon": "lightbulb",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de la rueda fue fundamental.",
+          "Internet es el ___ más importante del siglo XX.",
+          "Este ___ revolucionó la comunicación.",
+          "El ___ del teléfono cambió nuestras vidas."
+        ],
+        "hardSentencesRu": [
+          "Изобретение колеса было фундаментальным.",
+          "Интернет — важнейшее изобретение XX века.",
+          "Это изобретение произвело революцию в общении.",
+          "Изобретение телефона изменило наши жизни."
+        ]
+      }
     ],
-    "gramatica": []
-  }
+    "EMOCIONES": [
+      {
+        "spanish": "llorar",
+        "ru": "плакать",
+        "type": "verbo",
+        "icon": "drop",
+        "useIcon": true,
+        "hardSentences": [
+          "No pude evitar ___ de emoción.",
+          "El niño empezó a ___ cuando se cayó.",
+          "Me hizo ___ de la risa.",
+          "Es normal ___ cuando estás triste."
+        ],
+        "hardSentencesRu": [
+          "Я не смог сдержать слёзы от волнения.",
+          "Ребёнок начал плакать, когда упал.",
+          "Он довёл меня до слёз от смеха.",
+          "Нормально плакать, когда тебе грустно."
+        ]
+      },
+      {
+        "spanish": "reír",
+        "ru": "смеяться",
+        "type": "verbo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Me encanta ___ con mis amigos.",
+          "No podía parar de ___.",
+          "Es bueno ___ todos los días.",
+          "Empezamos a ___ sin poder parar."
+        ],
+        "hardSentencesRu": [
+          "Мне нравится смеяться с друзьями.",
+          "Я не мог перестать смеяться.",
+          "Хорошо смеяться каждый день.",
+          "Мы начали смеяться и не могли остановиться."
+        ]
+      },
+      {
+        "spanish": "enfadarse",
+        "ru": "злиться, сердиться",
+        "type": "verbo",
+        "icon": "smiley-angry",
+        "useIcon": true,
+        "hardSentences": [
+          "No debes ___ por cosas pequeñas.",
+          "Mi madre suele ___ cuando llego tarde.",
+          "Es fácil ___ en situaciones de estrés.",
+          "Intenté no ___ pero fue imposible."
+        ],
+        "hardSentencesRu": [
+          "Не стоит злиться из-за мелочей.",
+          "Моя мама обычно сердится, когда я опаздываю.",
+          "Легко разозлиться в стрессовых ситуациях.",
+          "Я пытался не злиться, но было невозможно."
+        ]
+      },
+      {
+        "spanish": "emocionarse",
+        "ru": "волноваться, растрогаться",
+        "type": "verbo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Es normal ___ en momentos importantes.",
+          "No pude evitar ___ al ver a mi familia.",
+          "Suelo ___ con las películas románticas.",
+          "Me hizo ___ su discurso de boda."
+        ],
+        "hardSentencesRu": [
+          "Нормально волноваться в важные моменты.",
+          "Я не смог сдержать волнение, увидев семью.",
+          "Я обычно растрогиваюсь от романтических фильмов.",
+          "Его свадебная речь меня растрогала."
+        ]
+      },
+      {
+        "spanish": "el miedo",
+        "ru": "страх",
+        "type": "sustantivo",
+        "icon": "ghost",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ a las arañas.",
+          "Pasé mucho ___ durante la tormenta.",
+          "El ___ me paralizó completamente.",
+          "Superé mi ___ a volar."
+        ],
+        "hardSentencesRu": [
+          "Я боюсь пауков.",
+          "Я сильно испугался во время грозы.",
+          "Страх меня полностью парализовал.",
+          "Я преодолел свой страх летать."
+        ]
+      },
+      {
+        "spanish": "la vergüenza",
+        "ru": "стыд, смущение",
+        "type": "sustantivo",
+        "icon": "face-mask",
+        "useIcon": true,
+        "hardSentences": [
+          "Pasé mucha ___ cuando me caí.",
+          "Me da ___ hablar en público.",
+          "¡Qué ___ lo que pasó ayer!",
+          "Sentí ___ por mi comportamiento."
+        ],
+        "hardSentencesRu": [
+          "Мне было очень стыдно, когда я упал.",
+          "Мне стыдно выступать публично.",
+          "Какой стыд из-за того, что случилось вчера!",
+          "Мне было стыдно за своё поведение."
+        ]
+      },
+      {
+        "spanish": "los nervios",
+        "ru": "нервы, волнение",
+        "type": "sustantivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo muchos ___ antes del examen.",
+          "Los ___ no me dejaron dormir.",
+          "Controla tus ___ y respira hondo.",
+          "Me atacaron los ___ en la entrevista."
+        ],
+        "hardSentencesRu": [
+          "Я очень нервничаю перед экзаменом.",
+          "Нервы не дали мне заснуть.",
+          "Контролируй нервы и дыши глубоко.",
+          "Нервы накрыли меня на собеседовании."
+        ]
+      },
+      {
+        "spanish": "la pena",
+        "ru": "жалость, грусть",
+        "type": "sustantivo",
+        "icon": "smiley-sad",
+        "useIcon": true,
+        "hardSentences": [
+          "Me da ___ que no puedas venir.",
+          "¡Qué ___ que perdiste el vuelo!",
+          "Siento mucha ___ por lo que pasó.",
+          "Es una ___ que no nos veamos más."
+        ],
+        "hardSentencesRu": [
+          "Мне жаль, что ты не можешь прийти.",
+          "Как жаль, что ты опоздал на рейс!",
+          "Мне очень жаль из-за того, что случилось.",
+          "Жаль, что мы больше не увидимся."
+        ]
+      },
+      {
+        "spanish": "nervioso",
+        "ru": "нервный (м)",
+        "type": "adjetivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ por la presentación.",
+          "Me pongo ___ cuando tengo que hablar.",
+          "El conductor estaba muy ___.",
+          "No estés ___, todo saldrá bien."
+        ],
+        "hardSentencesRu": [
+          "Я очень нервничаю из-за презентации.",
+          "Я нервничаю, когда нужно говорить.",
+          "Водитель был очень нервным.",
+          "Не нервничай, всё будет хорошо."
+        ]
+      },
+      {
+        "spanish": "triste",
+        "ru": "грустный (м)",
+        "type": "adjetivo",
+        "icon": "smiley-sad",
+        "useIcon": true,
+        "hardSentences": [
+          "Me puse muy ___ cuando se fue.",
+          "Es ___ ver el mundo así.",
+          "Estaba ___ porque perdió su trabajo.",
+          "No quiero verte ___."
+        ],
+        "hardSentencesRu": [
+          "Мне стало очень грустно, когда он ушёл.",
+          "Грустно видеть мир таким.",
+          "Он был грустным, потому что потерял работу.",
+          "Не хочу видеть тебя грустным."
+        ]
+      },
+      {
+        "spanish": "contento",
+        "ru": "довольный (м)",
+        "type": "adjetivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ con mi nuevo trabajo.",
+          "Se puso ___ cuando recibió la noticia.",
+          "Pareces muy ___ hoy.",
+          "Me siento ___ de estar aquí."
+        ],
+        "hardSentencesRu": [
+          "Я очень доволен своей новой работой.",
+          "Он обрадовался, когда получил новость.",
+          "Ты выглядишь очень довольным сегодня.",
+          "Я рад быть здесь."
+        ]
+      }
+    ],
+    "MARCADORES_TEMPORALES": [
+      {
+        "spanish": "el otro día",
+        "ru": "на днях",
+        "type": "sustantivo",
+        "icon": "calendar",
+        "useIcon": true,
+        "hardSentences": [
+          "___ vi a tu hermano en el centro.",
+          "___ me pasó una cosa increíble.",
+          "___ fui al médico por primera vez.",
+          "___ encontré unas fotos antiguas."
+        ],
+        "hardSentencesRu": [
+          "На днях я видел твоего брата в центре.",
+          "На днях со мной случилась невероятная вещь.",
+          "На днях я впервые пошёл к врачу.",
+          "На днях я нашёл старые фотографии."
+        ]
+      },
+      {
+        "spanish": "entonces",
+        "ru": "тогда, в тот момент",
+        "type": "adjetivo",
+        "icon": "arrow-right",
+        "useIcon": true,
+        "hardSentences": [
+          "Y ___ decidí cambiar de trabajo.",
+          "___ no sabía qué hacer.",
+          "Llegué a casa y ___ empezó a llover.",
+          "___ comprendí todo lo que había pasado."
+        ],
+        "hardSentencesRu": [
+          "И тогда я решил сменить работу.",
+          "Тогда я не знал, что делать.",
+          "Я пришёл домой, и тогда начался дождь.",
+          "Тогда я понял всё, что произошло."
+        ]
+      },
+      {
+        "spanish": "de repente",
+        "ru": "вдруг, внезапно",
+        "type": "adjetivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "___, oí un ruido muy fuerte.",
+          "___ se apagaron todas las luces.",
+          "Estaba durmiendo y ___ sonó el teléfono.",
+          "___ apareció un coche de la nada."
+        ],
+        "hardSentencesRu": [
+          "Вдруг я услышал очень громкий шум.",
+          "Внезапно погас весь свет.",
+          "Я спал, и вдруг зазвонил телефон.",
+          "Внезапно появилась машина из ниоткуда."
+        ]
+      },
+      {
+        "spanish": "luego",
+        "ru": "потом, затем",
+        "type": "adjetivo",
+        "icon": "clock-clockwise",
+        "useIcon": true,
+        "hardSentences": [
+          "Primero comimos y ___ fuimos al cine.",
+          "___ me di cuenta de mi error.",
+          "Estudié español y ___ viajé a México.",
+          "___ te cuento lo que pasó."
+        ],
+        "hardSentencesRu": [
+          "Сначала мы поели, а потом пошли в кино.",
+          "Потом я осознал свою ошибку.",
+          "Я учил испанский, а затем поехал в Мексику.",
+          "Потом расскажу тебе, что случилось."
+        ]
+      },
+      {
+        "spanish": "más tarde",
+        "ru": "позже",
+        "type": "adjetivo",
+        "icon": "clock",
+        "useIcon": true,
+        "hardSentences": [
+          "___ llegaron los demás invitados.",
+          "Te llamo ___, ahora estoy ocupado.",
+          "___ descubrimos la verdad.",
+          "Unas horas ___ todo había cambiado."
+        ],
+        "hardSentencesRu": [
+          "Позже пришли остальные гости.",
+          "Позвоню тебе позже, сейчас занят.",
+          "Позже мы узнали правду.",
+          "Несколько часов спустя всё изменилось."
+        ]
+      },
+      {
+        "spanish": "después",
+        "ru": "после, потом",
+        "type": "adjetivo",
+        "icon": "arrow-right",
+        "useIcon": true,
+        "hardSentences": [
+          "___ de comer fuimos a pasear.",
+          "Poco ___ empezó a llover.",
+          "___ de años, nos volvimos a ver.",
+          "___ de la boda hubo una fiesta."
+        ],
+        "hardSentencesRu": [
+          "После еды мы пошли гулять.",
+          "Вскоре после этого начался дождь.",
+          "Спустя годы мы снова встретились.",
+          "После свадьбы была вечеринка."
+        ]
+      },
+      {
+        "spanish": "resulta que",
+        "ru": "оказалось, что",
+        "type": "adjetivo",
+        "icon": "info",
+        "useIcon": true,
+        "hardSentences": [
+          "___ era el cumpleaños de mi amiga.",
+          "___ el tren no salía ese día.",
+          "___ ya conocía a su familia.",
+          "___ todo había sido un malentendido."
+        ],
+        "hardSentencesRu": [
+          "Оказалось, что это был день рождения моей подруги.",
+          "Оказалось, что поезд в тот день не ходил.",
+          "Оказалось, что я уже знал его семью.",
+          "Оказалось, что всё было недоразумением."
+        ]
+      },
+      {
+        "spanish": "una vez",
+        "ru": "однажды",
+        "type": "adjetivo",
+        "icon": "number-circle-one",
+        "useIcon": true,
+        "hardSentences": [
+          "___ me perdí en el bosque.",
+          "___ conocí a un actor famoso.",
+          "___ fui a España de vacaciones.",
+          "___ tuve un sueño muy extraño."
+        ],
+        "hardSentencesRu": [
+          "Однажды я заблудился в лесу.",
+          "Однажды я познакомился с известным актёром.",
+          "Однажды я ездил в Испанию в отпуск.",
+          "Однажды мне приснился очень странный сон."
+        ]
+      }
+    ]
+  },
+  "verbos": [],
+  "ejercicios": []
 }

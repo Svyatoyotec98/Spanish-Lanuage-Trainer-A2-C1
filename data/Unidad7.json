@@ -1532,18 +1532,6 @@
             }
           },
           {
-            "infinitivo": "calentar",
-            "traduccion": "нагревать",
-            "formas": {
-              "yo": "caliento",
-              "tu": "calientas",
-              "el": "calienta",
-              "nosotros": "calentamos",
-              "vosotros": "calentáis",
-              "ellos": "calientan"
-            }
-          },
-          {
             "infinitivo": "cenar",
             "traduccion": "ужинать",
             "formas": {
@@ -1592,8 +1580,286 @@
             }
           }
         ],
-        "irregulares": [],
-        "otras": []
+        "irregulares": [
+          {
+            "infinitivo": "freír",
+            "traduccion": "жарить",
+            "formas": {
+              "yo": "frío",
+              "tu": "fríes",
+              "el": "fríe",
+              "nosotros": "freímos",
+              "vosotros": "freís",
+              "ellos": "fríen"
+            }
+          },
+          {
+            "infinitivo": "cocer",
+            "traduccion": "варить",
+            "formas": {
+              "yo": "cuezo",
+              "tu": "cueces",
+              "el": "cuece",
+              "nosotros": "cocemos",
+              "vosotros": "cocéis",
+              "ellos": "cuecen"
+            }
+          },
+          {
+            "infinitivo": "hervir",
+            "traduccion": "кипятить",
+            "formas": {
+              "yo": "hiervo",
+              "tu": "hierves",
+              "el": "hierve",
+              "nosotros": "hervimos",
+              "vosotros": "hervís",
+              "ellos": "hierven"
+            }
+          },
+          {
+            "infinitivo": "calentar",
+            "traduccion": "нагревать",
+            "formas": {
+              "yo": "caliento",
+              "tu": "calientas",
+              "el": "calienta",
+              "nosotros": "calentamos",
+              "vosotros": "calentáis",
+              "ellos": "calientan"
+            }
+          },
+          {
+            "infinitivo": "probar",
+            "traduccion": "пробовать",
+            "formas": {
+              "yo": "pruebo",
+              "tu": "pruebas",
+              "el": "prueba",
+              "nosotros": "probamos",
+              "vosotros": "probáis",
+              "ellos": "prueban"
+            }
+          },
+          {
+            "infinitivo": "servir",
+            "traduccion": "подавать",
+            "formas": {
+              "yo": "sirvo",
+              "tu": "sirves",
+              "el": "sirve",
+              "nosotros": "servimos",
+              "vosotros": "servís",
+              "ellos": "sirven"
+            }
+          },
+          {
+            "infinitivo": "pedir",
+            "traduccion": "просить/заказывать",
+            "formas": {
+              "yo": "pido",
+              "tu": "pides",
+              "el": "pide",
+              "nosotros": "pedimos",
+              "vosotros": "pedís",
+              "ellos": "piden"
+            }
+          },
+          {
+            "infinitivo": "poder",
+            "traduccion": "мочь",
+            "formas": {
+              "yo": "puedo",
+              "tu": "puedes",
+              "el": "puede",
+              "nosotros": "podemos",
+              "vosotros": "podéis",
+              "ellos": "pueden"
+            }
+          },
+          {
+            "infinitivo": "querer",
+            "traduccion": "хотеть",
+            "formas": {
+              "yo": "quiero",
+              "tu": "quieres",
+              "el": "quiere",
+              "nosotros": "queremos",
+              "vosotros": "queréis",
+              "ellos": "quieren"
+            }
+          },
+          {
+            "infinitivo": "preferir",
+            "traduccion": "предпочитать",
+            "formas": {
+              "yo": "prefiero",
+              "tu": "prefieres",
+              "el": "prefiere",
+              "nosotros": "preferimos",
+              "vosotros": "preferís",
+              "ellos": "prefieren"
+            }
+          }
+        ],
+        "otras": [
+          {
+            "id": "reflexivos",
+            "nombre": "Verbos reflexivos",
+            "verbos": [
+              {
+                "infinitivo": "alimentarse",
+                "traduccion": "питаться",
+                "formas": {
+                  "yo": "me alimento",
+                  "tu": "te alimentas",
+                  "el": "se alimenta",
+                  "nosotros": "nos alimentamos",
+                  "vosotros": "os alimentáis",
+                  "ellos": "se alimentan"
+                }
+              },
+              {
+                "infinitivo": "servirse",
+                "traduccion": "накладывать себе",
+                "formas": {
+                  "yo": "me sirvo",
+                  "tu": "te sirves",
+                  "el": "se sirve",
+                  "nosotros": "nos servimos",
+                  "vosotros": "os servís",
+                  "ellos": "se sirven"
+                }
+              },
+              {
+                "infinitivo": "comerse",
+                "traduccion": "съедать",
+                "formas": {
+                  "yo": "me como",
+                  "tu": "te comes",
+                  "el": "se come",
+                  "nosotros": "nos comemos",
+                  "vosotros": "os coméis",
+                  "ellos": "se comen"
+                }
+              },
+              {
+                "infinitivo": "beberse",
+                "traduccion": "выпивать",
+                "formas": {
+                  "yo": "me bebo",
+                  "tu": "te bebes",
+                  "el": "se bebe",
+                  "nosotros": "nos bebemos",
+                  "vosotros": "os bebéis",
+                  "ellos": "se beben"
+                }
+              },
+              {
+                "infinitivo": "tomarse",
+                "traduccion": "принимать (еду/напиток)",
+                "formas": {
+                  "yo": "me tomo",
+                  "tu": "te tomas",
+                  "el": "se toma",
+                  "nosotros": "nos tomamos",
+                  "vosotros": "os tomáis",
+                  "ellos": "se toman"
+                }
+              },
+              {
+                "infinitivo": "sentarse",
+                "traduccion": "садиться",
+                "formas": {
+                  "yo": "me siento",
+                  "tu": "te sientas",
+                  "el": "se sienta",
+                  "nosotros": "nos sentamos",
+                  "vosotros": "os sentáis",
+                  "ellos": "se sientan"
+                }
+              }
+            ]
+          },
+          {
+            "id": "gustar_type",
+            "nombre": "Verbos tipo gustar",
+            "verbos": [
+              {
+                "infinitivo": "gustar",
+                "traduccion": "нравиться",
+                "formas": {
+                  "yo": "gusto",
+                  "tu": "gustas",
+                  "el": "gusta",
+                  "nosotros": "gustamos",
+                  "vosotros": "gustáis",
+                  "ellos": "gustan"
+                }
+              },
+              {
+                "infinitivo": "encantar",
+                "traduccion": "очень нравиться",
+                "formas": {
+                  "yo": "encanto",
+                  "tu": "encantas",
+                  "el": "encanta",
+                  "nosotros": "encantamos",
+                  "vosotros": "encantáis",
+                  "ellos": "encantan"
+                }
+              },
+              {
+                "infinitivo": "apetecer",
+                "traduccion": "хотеться",
+                "formas": {
+                  "yo": "apetezco",
+                  "tu": "apeteces",
+                  "el": "apetece",
+                  "nosotros": "apetecemos",
+                  "vosotros": "apetecéis",
+                  "ellos": "apetecen"
+                }
+              },
+              {
+                "infinitivo": "faltar",
+                "traduccion": "не хватать",
+                "formas": {
+                  "yo": "falto",
+                  "tu": "faltas",
+                  "el": "falta",
+                  "nosotros": "faltamos",
+                  "vosotros": "faltáis",
+                  "ellos": "faltan"
+                }
+              },
+              {
+                "infinitivo": "sobrar",
+                "traduccion": "быть лишним",
+                "formas": {
+                  "yo": "sobro",
+                  "tu": "sobras",
+                  "el": "sobra",
+                  "nosotros": "sobramos",
+                  "vosotros": "sobráis",
+                  "ellos": "sobran"
+                }
+              },
+              {
+                "infinitivo": "sentar",
+                "traduccion": "подходить (о еде)",
+                "formas": {
+                  "yo": "siento",
+                  "tu": "sientas",
+                  "el": "sienta",
+                  "nosotros": "sentamos",
+                  "vosotros": "sentáis",
+                  "ellos": "sientan"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   }

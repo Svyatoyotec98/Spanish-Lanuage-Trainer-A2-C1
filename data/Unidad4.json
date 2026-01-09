@@ -2343,6 +2343,380 @@
           "hint": "Ubicación: posesivo (mi)"
         }
       ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Artículos: un/una vs el/la",
+      "hint": "un / una / el / la",
+      "rule": {
+        "title": "Артикли: UN/UNA vs EL/LA",
+        "explanation": "Неопределённые артикли UN/UNA используются, когда говорим о чём-то впервые или неконкретном. Определённые артикли EL/LA используются, когда объект уже известен или конкретен. Выбор артикля зависит от рода существительного.",
+        "sections": [
+          {
+            "subtitle": "UN / UNA — неопределённый артикль",
+            "points": [
+              "Мужской род: <b>Un</b> piso, <b>un</b> salón, <b>un</b> dormitorio",
+              "Женский род: <b>Una</b> casa, <b>una</b> cocina, <b>una</b> habitación",
+              "Впервые упоминаем: Busco <b>un</b> piso — Ищу квартиру (какую-то)",
+              "Неконкретный: Necesito <b>una</b> mesa — Мне нужен стол (какой-нибудь)"
+            ]
+          },
+          {
+            "subtitle": "EL / LA — определённый артикль",
+            "points": [
+              "Мужской род: <b>El</b> piso, <b>el</b> salón, <b>el</b> dormitorio",
+              "Женский род: <b>La</b> casa, <b>la</b> cocina, <b>la</b> habitación",
+              "Уже известно: <b>El</b> piso es grande — Квартира (эта, о которой говорили) большая",
+              "Конкретный: <b>La</b> mesa del salón — Стол в гостиной (конкретный)"
+            ]
+          },
+          {
+            "subtitle": "Род существительных — подсказки",
+            "points": [
+              "Мужской (-o): el/un piso, sofá, baño, dormitorio, salón",
+              "Женский (-a): la/una casa, cocina, mesa, cama, lámpara",
+              "Исключения: el/un día, el/un sofá, la/una mano",
+              "-ión → женский: la/una habitación, televisión, decoración"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Busco un piso en el centro.", "ru": "Ищу квартиру в центре."},
+          {"es": "El piso tiene tres habitaciones.", "ru": "В квартире три комнаты."},
+          {"es": "Hay una lámpara en la mesa.", "ru": "На столе есть лампа."},
+          {"es": "La lámpara es muy moderna.", "ru": "Лампа очень современная."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Busco ___ piso en el centro.", "answer": "un"},
+        {"sentence": "___ piso tiene tres habitaciones.", "answer": "El"},
+        {"sentence": "Hay ___ lámpara en la mesa.", "answer": "una"},
+        {"sentence": "___ lámpara es muy moderna.", "answer": "La"},
+        {"sentence": "Necesito ___ mesa para el salón.", "answer": "una"},
+        {"sentence": "___ mesa del comedor es de cristal.", "answer": "La"},
+        {"sentence": "Quiero comprar ___ sofá nuevo.", "answer": "un"},
+        {"sentence": "___ sofá está delante de la televisión.", "answer": "El"},
+        {"sentence": "Hay ___ terraza muy grande.", "answer": "una"},
+        {"sentence": "___ terraza da al jardín.", "answer": "La"},
+        {"sentence": "El piso tiene ___ cocina americana.", "answer": "una"},
+        {"sentence": "___ cocina está totalmente equipada.", "answer": "La"},
+        {"sentence": "Necesitamos ___ armario más grande.", "answer": "un"},
+        {"sentence": "___ armario del dormitorio es de madera.", "answer": "El"},
+        {"sentence": "Hay ___ balcón en cada habitación.", "answer": "un"},
+        {"sentence": "___ balcón del salón tiene vistas al mar.", "answer": "El"},
+        {"sentence": "Busco ___ casa con jardín.", "answer": "una"},
+        {"sentence": "___ casa de mis padres es muy grande.", "answer": "La"},
+        {"sentence": "El baño tiene ___ bañera muy grande.", "answer": "una"},
+        {"sentence": "___ bañera es de hidromasaje.", "answer": "La"},
+        {"sentence": "Quiero poner ___ cuadro en la pared.", "answer": "un"},
+        {"sentence": "___ cuadro del salón es un original.", "answer": "El"},
+        {"sentence": "Hay ___ espejo en el baño.", "answer": "un"},
+        {"sentence": "___ espejo está encima del lavabo.", "answer": "El"},
+        {"sentence": "Necesito ___ silla para el escritorio.", "answer": "una"},
+        {"sentence": "___ silla del despacho es muy cómoda.", "answer": "La"},
+        {"sentence": "El dormitorio tiene ___ cama doble.", "answer": "una"},
+        {"sentence": "___ cama está al lado de la ventana.", "answer": "La"},
+        {"sentence": "Voy a comprar ___ nevera nueva.", "answer": "una"},
+        {"sentence": "___ nevera actual es muy pequeña.", "answer": "La"},
+        {"sentence": "Hay ___ garaje en el sótano.", "answer": "un"},
+        {"sentence": "___ garaje tiene dos plazas.", "answer": "El"},
+        {"sentence": "Quiero alquilar ___ estudio céntrico.", "answer": "un"},
+        {"sentence": "___ estudio que vi ayer me gusta mucho.", "answer": "El"},
+        {"sentence": "El edificio tiene ___ piscina.", "answer": "una"},
+        {"sentence": "___ piscina está en la azotea.", "answer": "La"},
+        {"sentence": "Busco ___ habitación luminosa.", "answer": "una"},
+        {"sentence": "___ habitación principal da al sur.", "answer": "La"},
+        {"sentence": "Hay ___ jardín detrás de la casa.", "answer": "un"},
+        {"sentence": "___ jardín tiene muchas flores.", "answer": "El"},
+        {"sentence": "Necesito ___ escritorio para trabajar.", "answer": "un"},
+        {"sentence": "___ escritorio está en el despacho.", "answer": "El"},
+        {"sentence": "El salón tiene ___ alfombra persa.", "answer": "una"},
+        {"sentence": "___ alfombra es muy antigua.", "answer": "La"},
+        {"sentence": "Quiero instalar ___ aire acondicionado.", "answer": "un"},
+        {"sentence": "___ aire acondicionado no funciona bien.", "answer": "El"},
+        {"sentence": "Hay ___ chimenea en el salón.", "answer": "una"},
+        {"sentence": "___ chimenea es de mármol.", "answer": "La"},
+        {"sentence": "El piso tiene ___ trastero incluido.", "answer": "un"},
+        {"sentence": "___ trastero está en el sótano.", "answer": "El"},
+        {"sentence": "Busco ___ ático con terraza.", "answer": "un"},
+        {"sentence": "___ ático del quinto piso está en venta.", "answer": "El"},
+        {"sentence": "Hay ___ lavadora en el baño.", "answer": "una"},
+        {"sentence": "___ lavadora es nueva.", "answer": "La"},
+        {"sentence": "Necesito ___ mesilla de noche.", "answer": "una"},
+        {"sentence": "___ mesilla está al lado de la cama.", "answer": "La"},
+        {"sentence": "Quiero comprar ___ horno nuevo.", "answer": "un"},
+        {"sentence": "___ horno actual es de gas.", "answer": "El"},
+        {"sentence": "El salón tiene ___ televisión muy grande.", "answer": "una"},
+        {"sentence": "___ televisión está en la pared.", "answer": "La"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Busco ___ piso en el centro.",
+          "answer": "un",
+          "hint": "Primera mención, no específico (masc.)"
+        },
+        {
+          "sentence": "___ piso tiene tres habitaciones.",
+          "answer": "El",
+          "hint": "Ya conocemos el piso (masc.)"
+        },
+        {
+          "sentence": "Hay ___ lámpara en la mesa.",
+          "answer": "una",
+          "hint": "Primera mención (fem.)"
+        },
+        {
+          "sentence": "___ lámpara es muy moderna.",
+          "answer": "La",
+          "hint": "La lámpara específica (fem.)"
+        },
+        {
+          "sentence": "Quiero comprar ___ sofá nuevo.",
+          "answer": "un",
+          "hint": "No específico, cualquier sofá (masc.)"
+        },
+        {
+          "sentence": "___ sofá está delante de la televisión.",
+          "answer": "El",
+          "hint": "El sofá concreto de esta casa (masc.)"
+        },
+        {
+          "sentence": "Busco ___ casa con jardín.",
+          "answer": "una",
+          "hint": "Cualquier casa con jardín (fem.)"
+        },
+        {
+          "sentence": "___ casa de mis padres es muy grande.",
+          "answer": "La",
+          "hint": "Casa específica, conocida (fem.)"
+        },
+        {
+          "sentence": "Necesito ___ mesa para el salón.",
+          "answer": "una",
+          "hint": "Cualquier mesa (fem.)"
+        },
+        {
+          "sentence": "___ mesa del comedor es de cristal.",
+          "answer": "La",
+          "hint": "Mesa específica del comedor (fem.)"
+        },
+        {
+          "sentence": "El dormitorio tiene ___ cama doble.",
+          "answer": "una",
+          "hint": "Hay una cama (fem.)"
+        },
+        {
+          "sentence": "___ cama está al lado de la ventana.",
+          "answer": "La",
+          "hint": "La cama específica (fem.)"
+        },
+        {
+          "sentence": "Hay ___ garaje en el sótano.",
+          "answer": "un",
+          "hint": "Existe un garaje (masc.)"
+        },
+        {
+          "sentence": "___ garaje tiene dos plazas.",
+          "answer": "El",
+          "hint": "El garaje específico (masc.)"
+        },
+        {
+          "sentence": "Quiero alquilar ___ estudio céntrico.",
+          "answer": "un",
+          "hint": "Cualquier estudio céntrico (masc.)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Vocabulario de vivienda: colocaciones",
+      "hint": "de nueva construcción / totalmente equipada / bien comunicado / con vistas / para entrar a vivir / de dos plazas",
+      "rule": {
+        "title": "Коллокации для описания жилья",
+        "explanation": "В объявлениях о недвижимости используются устойчивые выражения (коллокации). Эти фразы помогают описать характеристики жилья кратко и точно.",
+        "sections": [
+          {
+            "subtitle": "Тип и состояние здания",
+            "points": [
+              "<b>De nueva construcción</b> — новостройка: Chalé de nueva construcción",
+              "<b>Edificio antiguo</b> — старое здание: Piso en edificio antiguo",
+              "<b>Recién reformado</b> — недавно отремонтированный",
+              "<b>Para entrar a vivir</b> — готов к заселению (въехать и жить)"
+            ]
+          },
+          {
+            "subtitle": "Оснащение и удобства",
+            "points": [
+              "<b>Totalmente equipada</b> — полностью оборудованная (о кухне)",
+              "<b>Cocina americana</b> — кухня-студия (открытая кухня)",
+              "<b>Con ascensor</b> — с лифтом",
+              "<b>Con calefacción</b> — с отоплением"
+            ]
+          },
+          {
+            "subtitle": "Расположение и виды",
+            "points": [
+              "<b>Bien comunicado</b> — с хорошим транспортным сообщением",
+              "<b>Con vistas</b> — с видом: Balcón con vistas al mar",
+              "<b>Vistas fantásticas</b> — фантастические виды",
+              "<b>A 5 minutos de</b> — в 5 минутах от..."
+            ]
+          },
+          {
+            "subtitle": "Гараж и дополнительные помещения",
+            "points": [
+              "<b>Garaje de dos plazas</b> — гараж на два места",
+              "<b>Con trastero</b> — с кладовой",
+              "<b>Plaza de garaje incluida</b> — парковочное место включено"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Piso de nueva construcción, listo para entrar a vivir.", "ru": "Квартира в новостройке, готова к заселению."},
+          {"es": "Cocina totalmente equipada con electrodomésticos nuevos.", "ru": "Полностью оборудованная кухня с новой бытовой техникой."},
+          {"es": "Zona bien comunicada, a 5 minutos del metro.", "ru": "Район с хорошим транспортным сообщением, в 5 минутах от метро."},
+          {"es": "Ático con vistas fantásticas al mar.", "ru": "Пентхаус с фантастическим видом на море."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Chalé ___ construcción con jardín.", "answer": "de nueva"},
+        {"sentence": "Piso listo ___ entrar a vivir.", "answer": "para"},
+        {"sentence": "Cocina totalmente ___ con electrodomésticos.", "answer": "equipada"},
+        {"sentence": "Zona bien ___, cerca del metro.", "answer": "comunicada"},
+        {"sentence": "Terraza con ___ al mar.", "answer": "vistas"},
+        {"sentence": "Garaje ___ dos plazas incluido.", "answer": "de"},
+        {"sentence": "Edificio ___ con mucho encanto.", "answer": "antiguo"},
+        {"sentence": "Piso recién ___, como nuevo.", "answer": "reformado"},
+        {"sentence": "Apartamento ___ 5 minutos de la playa.", "answer": "a"},
+        {"sentence": "Balcón ___ vistas fantásticas.", "answer": "con"},
+        {"sentence": "Cocina ___ con salón.", "answer": "americana"},
+        {"sentence": "Vivienda con ___ incluido.", "answer": "trastero"},
+        {"sentence": "Piso ___ ascensor y portero.", "answer": "con"},
+        {"sentence": "Casa de nueva ___ en las afueras.", "answer": "construcción"},
+        {"sentence": "Apartamento listo para ___ a vivir.", "answer": "entrar"},
+        {"sentence": "Cocina ___ equipada con horno y nevera.", "answer": "totalmente"},
+        {"sentence": "Barrio bien ___: metro y autobús.", "answer": "comunicado"},
+        {"sentence": "Ático con vistas ___ a la montaña.", "answer": "fantásticas"},
+        {"sentence": "Garaje de ___ plazas en el sótano.", "answer": "dos"},
+        {"sentence": "Edificio antiguo ___ reformado.", "answer": "pero"},
+        {"sentence": "A ___ minutos del centro comercial.", "answer": "5"},
+        {"sentence": "Piso con ___ central incluida.", "answer": "calefacción"},
+        {"sentence": "Plaza de ___ incluida en el precio.", "answer": "garaje"},
+        {"sentence": "Vivienda totalmente ___ y amueblada.", "answer": "equipada"},
+        {"sentence": "Chalé con ___ privada y jardín.", "answer": "piscina"},
+        {"sentence": "Zona ___ comunicada con transporte público.", "answer": "bien"},
+        {"sentence": "Terraza ___ vistas al parque.", "answer": "con"},
+        {"sentence": "Edificio de ___ construcción, año 2023.", "answer": "nueva"},
+        {"sentence": "Piso ___ para entrar a vivir.", "answer": "listo"},
+        {"sentence": "Cocina americana ___ equipada.", "answer": "totalmente"},
+        {"sentence": "A 10 ___ del aeropuerto.", "answer": "minutos"},
+        {"sentence": "Vistas fantásticas ___ mar y montaña.", "answer": "a"},
+        {"sentence": "Garaje ___ una plaza incluido.", "answer": "de"},
+        {"sentence": "Casa recién reformada, como ___.", "answer": "nueva"},
+        {"sentence": "Barrio tranquilo y ___ comunicado.", "answer": "bien"},
+        {"sentence": "Balcón con ___ a la calle principal.", "answer": "vistas"},
+        {"sentence": "Edificio ___ pero bien conservado.", "answer": "antiguo"},
+        {"sentence": "Piso de nueva construcción ___ ascensor.", "answer": "con"},
+        {"sentence": "Listo ___ entrar, sin reformas.", "answer": "para"},
+        {"sentence": "Cocina totalmente equipada ___ electrodomésticos.", "answer": "con"},
+        {"sentence": "___ comunicado: bus, metro y tren.", "answer": "Bien"},
+        {"sentence": "Con vistas ___ al jardín interior.", "answer": "fantásticas"},
+        {"sentence": "Garaje de dos ___ en el sótano.", "answer": "plazas"},
+        {"sentence": "Edificio ___ del siglo XIX.", "answer": "antiguo"},
+        {"sentence": "Piso recién ___ con materiales de calidad.", "answer": "reformado"},
+        {"sentence": "___ 3 minutos de la estación.", "answer": "A"},
+        {"sentence": "Terraza con ___ panorámicas.", "answer": "vistas"},
+        {"sentence": "Cocina ___ comunicada con el salón.", "answer": "americana"},
+        {"sentence": "Trastero ___ en el precio.", "answer": "incluido"},
+        {"sentence": "Piso con calefacción ___.", "answer": "central"},
+        {"sentence": "De nueva ___: acabados modernos.", "answer": "construcción"},
+        {"sentence": "Para entrar ___ vivir inmediatamente.", "answer": "a"},
+        {"sentence": "Totalmente ___ con aire acondicionado.", "answer": "equipada"},
+        {"sentence": "Bien ___ con el centro.", "answer": "comunicado"},
+        {"sentence": "Vistas ___ desde todas las habitaciones.", "answer": "fantásticas"},
+        {"sentence": "De ___ plazas para dos coches.", "answer": "dos"},
+        {"sentence": "Edificio ___ con ascensor nuevo.", "answer": "antiguo"},
+        {"sentence": "Recién ___ este año.", "answer": "reformado"},
+        {"sentence": "A solo 2 minutos ___ la playa.", "answer": "de"},
+        {"sentence": "Con ___ al mar y a la ciudad.", "answer": "vistas"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Chalé ___ construcción con jardín.",
+          "answer": "de nueva",
+          "hint": "Tipo de edificio: nuevo"
+        },
+        {
+          "sentence": "Piso listo ___ entrar a vivir.",
+          "answer": "para",
+          "hint": "Preparado para... (preposición)"
+        },
+        {
+          "sentence": "Cocina totalmente ___ con electrodomésticos.",
+          "answer": "equipada",
+          "hint": "Tiene todo el equipamiento"
+        },
+        {
+          "sentence": "Zona bien ___, cerca del metro.",
+          "answer": "comunicada",
+          "hint": "Buen transporte público"
+        },
+        {
+          "sentence": "Terraza con ___ al mar.",
+          "answer": "vistas",
+          "hint": "Se puede ver el mar"
+        },
+        {
+          "sentence": "Garaje ___ dos plazas incluido.",
+          "answer": "de",
+          "hint": "Cantidad de plazas (preposición)"
+        },
+        {
+          "sentence": "Edificio ___ con mucho encanto.",
+          "answer": "antiguo",
+          "hint": "Viejo, histórico"
+        },
+        {
+          "sentence": "Piso recién ___, como nuevo.",
+          "answer": "reformado",
+          "hint": "Renovado recientemente"
+        },
+        {
+          "sentence": "Apartamento ___ 5 minutos de la playa.",
+          "answer": "a",
+          "hint": "Distancia (preposición)"
+        },
+        {
+          "sentence": "Balcón ___ vistas fantásticas.",
+          "answer": "con",
+          "hint": "Tiene vistas (preposición)"
+        },
+        {
+          "sentence": "Cocina ___ con salón.",
+          "answer": "americana",
+          "hint": "Tipo de cocina abierta"
+        },
+        {
+          "sentence": "Vivienda con ___ incluido.",
+          "answer": "trastero",
+          "hint": "Espacio de almacenamiento"
+        },
+        {
+          "sentence": "De nueva ___ en las afueras.",
+          "answer": "construcción",
+          "hint": "Edificio nuevo"
+        },
+        {
+          "sentence": "Cocina ___ equipada con horno.",
+          "answer": "totalmente",
+          "hint": "Completamente (adverbio)"
+        },
+        {
+          "sentence": "Barrio bien ___: metro y autobús.",
+          "answer": "comunicado",
+          "hint": "Buen acceso de transporte"
+        }
+      ]
     }
   ],
   "verbos": {

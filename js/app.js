@@ -814,7 +814,6 @@ function showProfileSelect() {
 
         let currentUnidad = null;
         let currentCategory = null;
-        let currentLevel = null;
         let currentCount = null;
         let currentQuestions = [];
         let currentQuestionIndex = 0;

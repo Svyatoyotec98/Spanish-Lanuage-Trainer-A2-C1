@@ -16,5 +16,562 @@
       {"spanish": "usar", "ru": "использовать"}
     ],
     "gramatica": []
-  }
+  },
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Gerundio regular: -ando / -iendo",
+      "hint": "-ando / -iendo",
+      "rule": {
+        "title": "Герундий: образование регулярных форм",
+        "explanation": "Герундий (gerundio) — это неизменяемая форма глагола, которая описывает действие в процессе. В испанском языке герундий образуется по простым правилам в зависимости от окончания инфинитива. Используется с глаголом ESTAR для описания действия, происходящего прямо сейчас.",
+        "sections": [
+          {
+            "subtitle": "Глаголы на -AR → -ANDO",
+            "points": [
+              "hablar → habl<b>ando</b> — разговаривая",
+              "trabajar → trabaj<b>ando</b> — работая",
+              "estudiar → estudi<b>ando</b> — изучая",
+              "cocinar → cocin<b>ando</b> — готовя"
+            ]
+          },
+          {
+            "subtitle": "Глаголы на -ER / -IR → -IENDO",
+            "points": [
+              "comer → com<b>iendo</b> — кушая",
+              "beber → beb<b>iendo</b> — пия",
+              "vivir → viv<b>iendo</b> — живя",
+              "escribir → escrib<b>iendo</b> — пиша"
+            ]
+          },
+          {
+            "subtitle": "Использование: ESTAR + gerundio",
+            "points": [
+              "Estoy <b>hablando</b> por teléfono — Я разговариваю по телефону (сейчас)",
+              "¿Qué estás <b>haciendo</b>? — Что ты делаешь? (в данный момент)",
+              "Están <b>comiendo</b> en el restaurante — Они едят в ресторане (сейчас)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Estoy estudiando español.", "ru": "Я изучаю испанский (сейчас)."},
+          {"es": "Mi madre está cocinando la cena.", "ru": "Моя мама готовит ужин."},
+          {"es": "Los niños están jugando en el parque.", "ru": "Дети играют в парке."},
+          {"es": "¿Estás escuchando música?", "ru": "Ты слушаешь музыку?"}
+        ]
+      },
+      "questions": [
+        {"sentence": "hablar → habl___", "answer": "ando"},
+        {"sentence": "trabajar → trabaj___", "answer": "ando"},
+        {"sentence": "estudiar → estudi___", "answer": "ando"},
+        {"sentence": "cocinar → cocin___", "answer": "ando"},
+        {"sentence": "caminar → camin___", "answer": "ando"},
+        {"sentence": "cantar → cant___", "answer": "ando"},
+        {"sentence": "bailar → bail___", "answer": "ando"},
+        {"sentence": "escuchar → escuch___", "answer": "ando"},
+        {"sentence": "mirar → mir___", "answer": "ando"},
+        {"sentence": "esperar → esper___", "answer": "ando"},
+        {"sentence": "llamar → llam___", "answer": "ando"},
+        {"sentence": "comprar → compr___", "answer": "ando"},
+        {"sentence": "buscar → busc___", "answer": "ando"},
+        {"sentence": "pensar → pens___", "answer": "ando"},
+        {"sentence": "descansar → descans___", "answer": "ando"},
+        {"sentence": "viajar → viaj___", "answer": "ando"},
+        {"sentence": "nadar → nad___", "answer": "ando"},
+        {"sentence": "lavar → lav___", "answer": "ando"},
+        {"sentence": "preguntar → pregunt___", "answer": "ando"},
+        {"sentence": "contestar → contest___", "answer": "ando"},
+        {"sentence": "tocar → toc___", "answer": "ando"},
+        {"sentence": "preparar → prepar___", "answer": "ando"},
+        {"sentence": "cenar → cen___", "answer": "ando"},
+        {"sentence": "desayunar → desayun___", "answer": "ando"},
+        {"sentence": "almorzar → almorz___", "answer": "ando"},
+        {"sentence": "pasear → pase___", "answer": "ando"},
+        {"sentence": "limpiar → limpi___", "answer": "ando"},
+        {"sentence": "planchar → planch___", "answer": "ando"},
+        {"sentence": "jugar → jug___", "answer": "ando"},
+        {"sentence": "llegar → lleg___", "answer": "ando"},
+        {"sentence": "comer → com___", "answer": "iendo"},
+        {"sentence": "beber → beb___", "answer": "iendo"},
+        {"sentence": "correr → corr___", "answer": "iendo"},
+        {"sentence": "aprender → aprend___", "answer": "iendo"},
+        {"sentence": "comprender → comprend___", "answer": "iendo"},
+        {"sentence": "responder → respond___", "answer": "iendo"},
+        {"sentence": "vender → vend___", "answer": "iendo"},
+        {"sentence": "meter → met___", "answer": "iendo"},
+        {"sentence": "barrer → barr___", "answer": "iendo"},
+        {"sentence": "coser → cos___", "answer": "iendo"},
+        {"sentence": "tejer → tej___", "answer": "iendo"},
+        {"sentence": "romper → romp___", "answer": "iendo"},
+        {"sentence": "toser → tos___", "answer": "iendo"},
+        {"sentence": "prometer → promet___", "answer": "iendo"},
+        {"sentence": "deber → deb___", "answer": "iendo"},
+        {"sentence": "vivir → viv___", "answer": "iendo"},
+        {"sentence": "escribir → escrib___", "answer": "iendo"},
+        {"sentence": "subir → sub___", "answer": "iendo"},
+        {"sentence": "abrir → abr___", "answer": "iendo"},
+        {"sentence": "recibir → recib___", "answer": "iendo"},
+        {"sentence": "decidir → decid___", "answer": "iendo"},
+        {"sentence": "discutir → discut___", "answer": "iendo"},
+        {"sentence": "compartir → compart___", "answer": "iendo"},
+        {"sentence": "asistir → asist___", "answer": "iendo"},
+        {"sentence": "existir → exist___", "answer": "iendo"},
+        {"sentence": "insistir → insist___", "answer": "iendo"},
+        {"sentence": "permitir → permit___", "answer": "iendo"},
+        {"sentence": "sufrir → sufr___", "answer": "iendo"},
+        {"sentence": "aplaudir → aplaud___", "answer": "iendo"},
+        {"sentence": "cumplir → cumpl___", "answer": "iendo"}
+      ],
+      "microTests": [
+        {
+          "sentence": "hablar → habl___",
+          "answer": "ando",
+          "hint": "Глагол на -AR: отбрось -ar, добавь..."
+        },
+        {
+          "sentence": "cantar → cant___",
+          "answer": "ando",
+          "hint": "Глагол на -AR: какое окончание?"
+        },
+        {
+          "sentence": "bailar → bail___",
+          "answer": "ando",
+          "hint": "Танцевать — глагол на -AR"
+        },
+        {
+          "sentence": "estudiar → estudi___",
+          "answer": "ando",
+          "hint": "Estudiar оканчивается на -AR"
+        },
+        {
+          "sentence": "trabajar → trabaj___",
+          "answer": "ando",
+          "hint": "Работать: -AR → ?"
+        },
+        {
+          "sentence": "comer → com___",
+          "answer": "iendo",
+          "hint": "Глагол на -ER: отбрось -er, добавь..."
+        },
+        {
+          "sentence": "beber → beb___",
+          "answer": "iendo",
+          "hint": "Глагол на -ER: какое окончание?"
+        },
+        {
+          "sentence": "correr → corr___",
+          "answer": "iendo",
+          "hint": "Бегать — глагол на -ER"
+        },
+        {
+          "sentence": "aprender → aprend___",
+          "answer": "iendo",
+          "hint": "Aprender оканчивается на -ER"
+        },
+        {
+          "sentence": "vivir → viv___",
+          "answer": "iendo",
+          "hint": "Глагол на -IR: отбрось -ir, добавь..."
+        },
+        {
+          "sentence": "escribir → escrib___",
+          "answer": "iendo",
+          "hint": "Глагол на -IR: какое окончание?"
+        },
+        {
+          "sentence": "abrir → abr___",
+          "answer": "iendo",
+          "hint": "Открывать — глагол на -IR"
+        },
+        {
+          "sentence": "subir → sub___",
+          "answer": "iendo",
+          "hint": "Subir оканчивается на -IR"
+        },
+        {
+          "sentence": "recibir → recib___",
+          "answer": "iendo",
+          "hint": "Получать: -IR → ?"
+        },
+        {
+          "sentence": "decidir → decid___",
+          "answer": "iendo",
+          "hint": "Решать — глагол на -IR"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Gerundio irregular",
+      "hint": "yendo / iendo / iendo (e→i) / iendo (o→u)",
+      "rule": {
+        "title": "Неправильные формы герундия",
+        "explanation": "Некоторые глаголы имеют неправильные формы герундия. Основные изменения: глаголы с гласной между двумя согласными меняют -iendo на -yendo; глаголы с изменением корневой гласной (e→i или o→u) сохраняют это изменение в герундии.",
+        "sections": [
+          {
+            "subtitle": "-IENDO → -YENDO (гласная + er/ir)",
+            "points": [
+              "leer → le<b>yendo</b> (не 'leiendo') — читая",
+              "oír → o<b>yendo</b> — слыша",
+              "caer → ca<b>yendo</b> — падая",
+              "creer → cre<b>yendo</b> — веря",
+              "construir → constru<b>yendo</b> — строя"
+            ]
+          },
+          {
+            "subtitle": "Изменение E → I в корне",
+            "points": [
+              "decir → d<b>i</b>ciendo — говоря",
+              "pedir → p<b>i</b>diendo — прося",
+              "seguir → s<b>i</b>guiendo — следуя",
+              "vestir → v<b>i</b>stiendo — одевая",
+              "sentir → s<b>i</b>ntiendo — чувствуя",
+              "repetir → rep<b>i</b>tiendo — повторяя"
+            ]
+          },
+          {
+            "subtitle": "Изменение O → U в корне",
+            "points": [
+              "dormir → d<b>u</b>rmiendo — спя",
+              "morir → m<b>u</b>riendo — умирая",
+              "poder → p<b>u</b>diendo — моги"
+            ]
+          },
+          {
+            "subtitle": "Особые формы",
+            "points": [
+              "ir → <b>yendo</b> — идя (полностью неправильная форма)",
+              "venir → <b>viniendo</b> — приходя"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Estoy leyendo un libro muy interesante.", "ru": "Я читаю очень интересную книгу."},
+          {"es": "Los niños están durmiendo.", "ru": "Дети спят."},
+          {"es": "¿Qué estás diciendo?", "ru": "Что ты говоришь?"},
+          {"es": "Están construyendo un edificio nuevo.", "ru": "Они строят новое здание."}
+        ]
+      },
+      "questions": [
+        {"sentence": "leer → ___", "answer": "leyendo"},
+        {"sentence": "oír → ___", "answer": "oyendo"},
+        {"sentence": "caer → ___", "answer": "cayendo"},
+        {"sentence": "creer → ___", "answer": "creyendo"},
+        {"sentence": "construir → ___", "answer": "construyendo"},
+        {"sentence": "destruir → ___", "answer": "destruyendo"},
+        {"sentence": "huir → ___", "answer": "huyendo"},
+        {"sentence": "incluir → ___", "answer": "incluyendo"},
+        {"sentence": "contribuir → ___", "answer": "contribuyendo"},
+        {"sentence": "distribuir → ___", "answer": "distribuyendo"},
+        {"sentence": "traer → ___", "answer": "trayendo"},
+        {"sentence": "ir → ___", "answer": "yendo"},
+        {"sentence": "decir → ___", "answer": "diciendo"},
+        {"sentence": "pedir → ___", "answer": "pidiendo"},
+        {"sentence": "seguir → ___", "answer": "siguiendo"},
+        {"sentence": "vestir → ___", "answer": "vistiendo"},
+        {"sentence": "sentir → ___", "answer": "sintiendo"},
+        {"sentence": "repetir → ___", "answer": "repitiendo"},
+        {"sentence": "servir → ___", "answer": "sirviendo"},
+        {"sentence": "mentir → ___", "answer": "mintiendo"},
+        {"sentence": "preferir → ___", "answer": "prefiriendo"},
+        {"sentence": "conseguir → ___", "answer": "consiguiendo"},
+        {"sentence": "perseguir → ___", "answer": "persiguiendo"},
+        {"sentence": "medir → ___", "answer": "midiendo"},
+        {"sentence": "reír → ___", "answer": "riendo"},
+        {"sentence": "sonreír → ___", "answer": "sonriendo"},
+        {"sentence": "freír → ___", "answer": "friendo"},
+        {"sentence": "corregir → ___", "answer": "corrigiendo"},
+        {"sentence": "elegir → ___", "answer": "eligiendo"},
+        {"sentence": "competir → ___", "answer": "compitiendo"},
+        {"sentence": "dormir → ___", "answer": "durmiendo"},
+        {"sentence": "morir → ___", "answer": "muriendo"},
+        {"sentence": "poder → ___", "answer": "pudiendo"},
+        {"sentence": "venir → ___", "answer": "viniendo"},
+        {"sentence": "Estoy ___ un libro. (leer)", "answer": "leyendo"},
+        {"sentence": "Los niños están ___. (dormir)", "answer": "durmiendo"},
+        {"sentence": "¿Qué estás ___? (decir)", "answer": "diciendo"},
+        {"sentence": "Están ___ música. (oír)", "answer": "oyendo"},
+        {"sentence": "El bebé está ___. (dormir)", "answer": "durmiendo"},
+        {"sentence": "María está ___ la verdad. (decir)", "answer": "diciendo"},
+        {"sentence": "Estamos ___ al centro. (ir)", "answer": "yendo"},
+        {"sentence": "Los obreros están ___ una casa. (construir)", "answer": "construyendo"},
+        {"sentence": "El gato está ___ del árbol. (caer)", "answer": "cayendo"},
+        {"sentence": "Estoy ___ una novela. (leer)", "answer": "leyendo"},
+        {"sentence": "¿Estás ___ lo que digo? (oír)", "answer": "oyendo"},
+        {"sentence": "El niño está ___ un favor. (pedir)", "answer": "pidiendo"},
+        {"sentence": "Ella está ___ de rojo. (vestir)", "answer": "vistiendo"},
+        {"sentence": "Estoy ___ mucho frío. (sentir)", "answer": "sintiendo"},
+        {"sentence": "El profesor está ___ la lección. (repetir)", "answer": "repitiendo"},
+        {"sentence": "El camarero está ___ la comida. (servir)", "answer": "sirviendo"},
+        {"sentence": "Creo que está ___. (mentir)", "answer": "mintiendo"},
+        {"sentence": "Están ___ las instrucciones. (seguir)", "answer": "siguiendo"},
+        {"sentence": "Los atletas están ___. (competir)", "answer": "compitiendo"},
+        {"sentence": "El paciente está ___. (morir)", "answer": "muriendo"},
+        {"sentence": "¿Quién está ___? (venir)", "answer": "viniendo"},
+        {"sentence": "Los estudiantes están ___ el examen. (corregir)", "answer": "corrigiendo"},
+        {"sentence": "Estamos ___ un representante. (elegir)", "answer": "eligiendo"},
+        {"sentence": "Ella está ___ huevos. (freír)", "answer": "friendo"},
+        {"sentence": "El bebé está ___. (sonreír)", "answer": "sonriendo"},
+        {"sentence": "¿Por qué estás ___? (reír)", "answer": "riendo"}
+      ],
+      "microTests": [
+        {
+          "sentence": "leer → ___",
+          "answer": "leyendo",
+          "hint": "Гласная + -er: -iendo → -yendo"
+        },
+        {
+          "sentence": "oír → ___",
+          "answer": "oyendo",
+          "hint": "Гласная + -ir: нужна Y"
+        },
+        {
+          "sentence": "caer → ___",
+          "answer": "cayendo",
+          "hint": "Падать: гласная перед -er"
+        },
+        {
+          "sentence": "construir → ___",
+          "answer": "construyendo",
+          "hint": "Глаголы на -uir → -uyendo"
+        },
+        {
+          "sentence": "ir → ___",
+          "answer": "yendo",
+          "hint": "Особая форма: ir → ?"
+        },
+        {
+          "sentence": "decir → ___",
+          "answer": "diciendo",
+          "hint": "E → I в корне: dec- → dic-"
+        },
+        {
+          "sentence": "pedir → ___",
+          "answer": "pidiendo",
+          "hint": "E → I: ped- → pid-"
+        },
+        {
+          "sentence": "seguir → ___",
+          "answer": "siguiendo",
+          "hint": "E → I: segu- → sigu-"
+        },
+        {
+          "sentence": "sentir → ___",
+          "answer": "sintiendo",
+          "hint": "E → I: sent- → sint-"
+        },
+        {
+          "sentence": "vestir → ___",
+          "answer": "vistiendo",
+          "hint": "E → I: vest- → vist-"
+        },
+        {
+          "sentence": "dormir → ___",
+          "answer": "durmiendo",
+          "hint": "O → U: dorm- → durm-"
+        },
+        {
+          "sentence": "morir → ___",
+          "answer": "muriendo",
+          "hint": "O → U: mor- → mur-"
+        },
+        {
+          "sentence": "venir → ___",
+          "answer": "viniendo",
+          "hint": "Особый глагол: venir → ?"
+        },
+        {
+          "sentence": "creer → ___",
+          "answer": "creyendo",
+          "hint": "Гласная + -er: нужна Y"
+        },
+        {
+          "sentence": "repetir → ___",
+          "answer": "repitiendo",
+          "hint": "E → I: repet- → repit-"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Presente vs Estar + gerundio",
+      "hint": "presente / estar + gerundio",
+      "rule": {
+        "title": "Presente simple vs ESTAR + gerundio",
+        "explanation": "Presente simple описывает привычные, регулярные действия или общие истины. ESTAR + gerundio описывает действие, которое происходит именно сейчас, в момент речи, или временную ситуацию. Выбор зависит от того, говорим ли мы о привычке или о действии в данный момент.",
+        "sections": [
+          {
+            "subtitle": "PRESENTE SIMPLE — привычки и факты",
+            "points": [
+              "Привычные действия: <b>Trabajo</b> en una oficina — Я работаю в офисе (обычно)",
+              "Расписание: El tren <b>sale</b> a las 8 — Поезд отправляется в 8",
+              "Общие истины: El agua <b>hierve</b> a 100 grados — Вода кипит при 100 градусах",
+              "Маркеры: siempre, normalmente, cada día, todos los días"
+            ]
+          },
+          {
+            "subtitle": "ESTAR + GERUNDIO — сейчас, в данный момент",
+            "points": [
+              "Действие сейчас: <b>Estoy trabajando</b> — Я работаю (прямо сейчас)",
+              "Временная ситуация: <b>Estoy viviendo</b> con mis padres — Я живу с родителями (временно)",
+              "Изменение: Los precios <b>están subiendo</b> — Цены растут (в последнее время)",
+              "Маркеры: ahora, ahora mismo, en este momento, estos días, últimamente"
+            ]
+          },
+          {
+            "subtitle": "Сравнение",
+            "points": [
+              "<b>Leo</b> mucho (привычка) vs <b>Estoy leyendo</b> un libro (сейчас)",
+              "<b>Trabajo</b> en banco (профессия) vs <b>Estoy trabajando</b> en un proyecto (сейчас)",
+              "Normalmente <b>como</b> en casa vs Hoy <b>estoy comiendo</b> en restaurante"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Normalmente voy al trabajo en metro, pero estos días estoy yendo en autobús.", "ru": "Обычно я езжу на работу на метро, но в эти дни езжу на автобусе."},
+          {"es": "Mi padre cocina muy bien. Ahora mismo está cocinando una paella.", "ru": "Мой отец очень хорошо готовит. Прямо сейчас он готовит паэлью."},
+          {"es": "¿Qué haces? — Trabajo en un banco. / ¿Qué estás haciendo? — Estoy leyendo.", "ru": "Чем занимаешься? — Работаю в банке. / Что делаешь (сейчас)? — Читаю."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Normalmente (yo, ir) ___ al trabajo en metro.", "answer": "voy"},
+        {"sentence": "Ahora mismo (yo, ir) ___ en autobús.", "answer": "estoy yendo"},
+        {"sentence": "¿Mi padre? Ahora mismo (cocinar) ___ una paella.", "answer": "está cocinando"},
+        {"sentence": "Mi padre (cocinar) ___ muy bien.", "answer": "cocina"},
+        {"sentence": "(Yo, esperar) ___ a José. Tiene que llegar en cualquier momento.", "answer": "Estoy esperando"},
+        {"sentence": "Siempre (yo, esperar) ___ el autobús aquí.", "answer": "espero"},
+        {"sentence": "Este fin de semana tenemos que descansar, (nosotros, trabajar) ___ mucho últimamente.", "answer": "estamos trabajando"},
+        {"sentence": "(Nosotros, trabajar) ___ en una empresa internacional.", "answer": "Trabajamos"},
+        {"sentence": "¿Sandra? Ahora no puede ponerse, (ella, ducharse) ___.", "answer": "se está duchando"},
+        {"sentence": "Sandra (ducharse) ___ todas las mañanas.", "answer": "se ducha"},
+        {"sentence": "Sara (cantar) ___ en un grupo de folk.", "answer": "canta"},
+        {"sentence": "¿Oyes? Sara (cantar) ___ en su habitación.", "answer": "está cantando"},
+        {"sentence": "¿Pero quién llama a estas horas? ¡(Nosotros, dormir) ___!", "answer": "Estamos durmiendo"},
+        {"sentence": "Normalmente (nosotros, dormir) ___ ocho horas.", "answer": "dormimos"},
+        {"sentence": "Perdona que te moleste. ¿(Tú, dormir) ___?", "answer": "Estás durmiendo"},
+        {"sentence": "¿Cuántas horas (tú, dormir) ___ cada noche?", "answer": "duermes"},
+        {"sentence": "Verónica (vestirse) ___ siempre muy elegante.", "answer": "se viste"},
+        {"sentence": "Espera un momento, Verónica (vestirse) ___.", "answer": "se está vistiendo"},
+        {"sentence": "¿Qué (tú, leer) ___ últimamente?", "answer": "estás leyendo"},
+        {"sentence": "(Yo, leer) ___ el periódico todas las mañanas.", "answer": "Leo"},
+        {"sentence": "¿Qué (ellos, construir) ___ delante de tu casa?", "answer": "están construyendo"},
+        {"sentence": "En esta ciudad (construir) ___ muchos edificios nuevos.", "answer": "construyen"},
+        {"sentence": "Mi hermano (trabajar) ___ de camarero, pero en realidad es actor.", "answer": "trabaja"},
+        {"sentence": "Mi hermano (trabajar) ___ mucho esta semana.", "answer": "está trabajando"},
+        {"sentence": "Los niños (jugar) ___ en el parque todos los días.", "answer": "juegan"},
+        {"sentence": "Mira, los niños (jugar) ___ en el jardín.", "answer": "están jugando"},
+        {"sentence": "María (estudiar) ___ medicina en la universidad.", "answer": "estudia"},
+        {"sentence": "No molestes a María, (estudiar) ___ para el examen.", "answer": "está estudiando"},
+        {"sentence": "En España la gente (cenar) ___ tarde.", "answer": "cena"},
+        {"sentence": "No puedo hablar ahora, (cenar) ___.", "answer": "estoy cenando"},
+        {"sentence": "(Llover) ___ mucho en esta región.", "answer": "Llueve"},
+        {"sentence": "No salgas ahora, (llover) ___.", "answer": "está lloviendo"},
+        {"sentence": "El sol (salir) ___ por el este.", "answer": "sale"},
+        {"sentence": "Mira qué bonito, el sol (salir) ___.", "answer": "está saliendo"},
+        {"sentence": "Mi madre (hablar) ___ tres idiomas.", "answer": "habla"},
+        {"sentence": "No puedo pasar a mi madre, (hablar) ___ por teléfono.", "answer": "está hablando"},
+        {"sentence": "¿A qué hora (empezar) ___ las clases?", "answer": "empiezan"},
+        {"sentence": "Silencio, la película (empezar) ___.", "answer": "está empezando"},
+        {"sentence": "Los precios (subir) ___ cada año.", "answer": "suben"},
+        {"sentence": "Los precios (subir) ___ mucho últimamente.", "answer": "están subiendo"},
+        {"sentence": "Este restaurante (servir) ___ comida italiana.", "answer": "sirve"},
+        {"sentence": "Espera, el camarero (servir) ___ nuestra mesa.", "answer": "está sirviendo"},
+        {"sentence": "Mi abuelo (vivir) ___ en el campo.", "answer": "vive"},
+        {"sentence": "Ahora (vivir) ___ con mis padres porque busco piso.", "answer": "estoy viviendo"},
+        {"sentence": "¿Qué (hacer) ___ tu hermano? — Es ingeniero.", "answer": "hace"},
+        {"sentence": "¿Qué (hacer) ___ tu hermano? — (Hacer) ___ los deberes.", "answer": "está haciendo"},
+        {"sentence": "El avión (salir) ___ a las 10 de la mañana.", "answer": "sale"},
+        {"sentence": "Rápido, el avión (salir) ___.", "answer": "está saliendo"},
+        {"sentence": "(Yo, aprender) ___ español desde hace dos años.", "answer": "Estoy aprendiendo"},
+        {"sentence": "En mi academia (enseñar) ___ cinco idiomas.", "answer": "enseñan"},
+        {"sentence": "El profesor (explicar) ___ la gramática ahora.", "answer": "está explicando"},
+        {"sentence": "Este profesor (explicar) ___ muy bien.", "answer": "explica"},
+        {"sentence": "¿Por qué (tú, correr) ___? ¿Qué pasa?", "answer": "estás corriendo"},
+        {"sentence": "(Yo, correr) ___ cinco kilómetros cada día.", "answer": "Corro"},
+        {"sentence": "¿Dónde (trabajar) ___ tu padre?", "answer": "trabaja"},
+        {"sentence": "Mi padre no puede hablar, (trabajar) ___.", "answer": "está trabajando"},
+        {"sentence": "Los españoles (comer) ___ mucho pescado.", "answer": "comen"},
+        {"sentence": "¿Qué (comer) ___? Huele muy bien.", "answer": "estás comiendo"},
+        {"sentence": "Esta empresa (producir) ___ coches eléctricos.", "answer": "produce"},
+        {"sentence": "La fábrica (producir) ___ más coches este mes.", "answer": "está produciendo"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Normalmente (yo, ir) ___ al trabajo en metro.",
+          "answer": "voy",
+          "hint": "Привычное действие → presente simple"
+        },
+        {
+          "sentence": "Ahora mismo (yo, ir) ___ en autobús.",
+          "answer": "estoy yendo",
+          "hint": "Ahora mismo → estar + gerundio"
+        },
+        {
+          "sentence": "Mi padre (cocinar) ___ muy bien.",
+          "answer": "cocina",
+          "hint": "Общая характеристика → presente"
+        },
+        {
+          "sentence": "¿Mi padre? Ahora mismo (cocinar) ___ una paella.",
+          "answer": "está cocinando",
+          "hint": "Ahora mismo → действие сейчас"
+        },
+        {
+          "sentence": "Siempre (yo, esperar) ___ el autobús aquí.",
+          "answer": "espero",
+          "hint": "Siempre → привычка"
+        },
+        {
+          "sentence": "(Yo, esperar) ___ a José ahora.",
+          "answer": "Estoy esperando",
+          "hint": "Ahora → в данный момент"
+        },
+        {
+          "sentence": "(Nosotros, trabajar) ___ en una empresa internacional.",
+          "answer": "Trabajamos",
+          "hint": "Факт, место работы → presente"
+        },
+        {
+          "sentence": "(Nosotros, trabajar) ___ mucho últimamente.",
+          "answer": "estamos trabajando",
+          "hint": "Últimamente → временная ситуация"
+        },
+        {
+          "sentence": "Sara (cantar) ___ en un grupo de folk.",
+          "answer": "canta",
+          "hint": "Профессия/хобби → presente"
+        },
+        {
+          "sentence": "¿Oyes? Sara (cantar) ___ ahora.",
+          "answer": "está cantando",
+          "hint": "Слышишь сейчас → estar + gerundio"
+        },
+        {
+          "sentence": "Normalmente (dormir) ___ ocho horas.",
+          "answer": "dormimos",
+          "hint": "Normalmente → привычка"
+        },
+        {
+          "sentence": "¡(Nosotros, dormir) ___! ¿Quién llama?",
+          "answer": "Estamos durmiendo",
+          "hint": "Прямо сейчас спим → gerundio"
+        },
+        {
+          "sentence": "(Llover) ___ mucho en esta región.",
+          "answer": "Llueve",
+          "hint": "Общая характеристика климата"
+        },
+        {
+          "sentence": "No salgas, (llover) ___.",
+          "answer": "está lloviendo",
+          "hint": "Сейчас идёт дождь → gerundio"
+        },
+        {
+          "sentence": "¿Qué (tú, leer) ___ últimamente?",
+          "answer": "estás leyendo",
+          "hint": "Últimamente → текущий период"
+        }
+      ]
+    }
+  ]
 }

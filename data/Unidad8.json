@@ -1,20 +1,1043 @@
 {
   "id": "unidad_8",
   "title": "Unidad 8",
-  "categories": {
-    "sustantivos": [
-      {"spanish": "el ejemplo", "ru": "пример"},
-      {"spanish": "la palabra", "ru": "слово"},
-      {"spanish": "el texto", "ru": "текст"}
+  "groups": {
+    "PARTES_DEL_CUERPO": [
+      {
+        "spanish": "la cabeza",
+        "ru": "голова",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele mucho la ___ después del trabajo.",
+          "Llevo todo el día con dolor de ___.",
+          "La ___ me da vueltas cuando me levanto rápido.",
+          "Tengo que proteger la ___ del sol con un sombrero."
+        ],
+        "hardSentencesRu": [
+          "У меня сильно болит голова после работы.",
+          "У меня весь день болит голова.",
+          "Голова кружится, когда я быстро встаю.",
+          "Мне нужно защитить голову от солнца шляпой."
+        ]
+      },
+      {
+        "spanish": "el pelo",
+        "ru": "волосы",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Se me cae mucho el ___ últimamente.",
+          "Para tener un ___ sano hay que comer frutas.",
+          "Debes proteger el ___ del sol en verano.",
+          "Me lavo el ___ todos los días."
+        ],
+        "hardSentencesRu": [
+          "У меня в последнее время сильно выпадают волосы.",
+          "Чтобы волосы были здоровыми, нужно есть фрукты.",
+          "Летом нужно защищать волосы от солнца.",
+          "Я мою голову каждый день."
+        ]
+      },
+      {
+        "spanish": "el ojo",
+        "ru": "глаз",
+        "type": "sustantivo",
+        "icon": "eye",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo el ___ irritado por la alergia.",
+          "Ponte gafas de sol para proteger el ___.",
+          "El ___ izquierdo me duele mucho.",
+          "Si tienes el ___ rojo, ve al médico."
+        ],
+        "hardSentencesRu": [
+          "У меня раздражён глаз из-за аллергии.",
+          "Надень солнечные очки, чтобы защитить глаза.",
+          "Левый глаз сильно болит.",
+          "Если у тебя красный глаз, сходи к врачу."
+        ]
+      },
+      {
+        "spanish": "la nariz",
+        "ru": "нос",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo la ___ tapada por el resfriado.",
+          "Me sangra la ___ cuando hace mucho calor.",
+          "Ponte protector solar en la ___.",
+          "La ___ me pica por la alergia."
+        ],
+        "hardSentencesRu": [
+          "У меня заложен нос из-за простуды.",
+          "У меня идёт кровь из носа, когда очень жарко.",
+          "Нанеси солнцезащитный крем на нос.",
+          "Нос чешется из-за аллергии."
+        ]
+      },
+      {
+        "spanish": "la boca",
+        "ru": "рот",
+        "type": "sustantivo",
+        "icon": "chat-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele la ___ después de ir al dentista.",
+          "Tienes que abrir la ___ para que te examine.",
+          "Tengo la ___ seca por el medicamento.",
+          "La ___ me huele mal por la mañana."
+        ],
+        "hardSentencesRu": [
+          "У меня болит рот после визита к стоматологу.",
+          "Тебе нужно открыть рот, чтобы я тебя осмотрел.",
+          "У меня сухость во рту из-за лекарства.",
+          "По утрам изо рта неприятно пахнет."
+        ]
+      },
+      {
+        "spanish": "el cuello",
+        "ru": "шея",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele el ___ de dormir mal.",
+          "Tengo el ___ rígido por el estrés.",
+          "Ponte una bufanda para proteger el ___.",
+          "El ___ me duele cuando miro el móvil mucho tiempo."
+        ],
+        "hardSentencesRu": [
+          "У меня болит шея из-за плохого сна.",
+          "У меня напряжённая шея из-за стресса.",
+          "Надень шарф, чтобы защитить шею.",
+          "Шея болит, когда долго смотрю в телефон."
+        ]
+      },
+      {
+        "spanish": "el hombro",
+        "ru": "плечо",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele el ___ después de nadar.",
+          "Tengo una lesión en el ___ derecho.",
+          "El ___ me molesta cuando levanto peso.",
+          "Para fortalecer el ___ puedes hacer natación."
+        ],
+        "hardSentencesRu": [
+          "У меня болит плечо после плавания.",
+          "У меня травма правого плеча.",
+          "Плечо беспокоит, когда поднимаю тяжести.",
+          "Чтобы укрепить плечи, можно заниматься плаванием."
+        ]
+      },
+      {
+        "spanish": "el brazo",
+        "ru": "рука (от плеча до кисти)",
+        "type": "sustantivo",
+        "icon": "hand-fist",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele el ___ de tanto escribir.",
+          "Me he roto el ___ jugando al fútbol.",
+          "Para fortalecer el ___ haz flexiones.",
+          "Tengo el ___ hinchado por la picadura."
+        ],
+        "hardSentencesRu": [
+          "У меня болит рука от долгого письма.",
+          "Я сломал руку, играя в футбол.",
+          "Чтобы укрепить руки, делай отжимания.",
+          "У меня опухла рука от укуса."
+        ]
+      },
+      {
+        "spanish": "la mano",
+        "ru": "кисть руки",
+        "type": "sustantivo",
+        "icon": "hand",
+        "useIcon": true,
+        "hardSentences": [
+          "En invierno debes proteger la ___ del frío.",
+          "Me duele la ___ de escribir tanto.",
+          "Lávate bien la ___ antes de comer.",
+          "Tengo la ___ seca por el frío."
+        ],
+        "hardSentencesRu": [
+          "Зимой нужно защищать руки от холода.",
+          "У меня болит рука от долгого письма.",
+          "Хорошо вымой руки перед едой.",
+          "У меня сухие руки из-за холода."
+        ]
+      },
+      {
+        "spanish": "la espalda",
+        "ru": "спина",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele la ___ de estar sentado todo el día.",
+          "Para fortalecer la ___ puedes hacer natación.",
+          "Debes cuidar la postura de la ___.",
+          "Tengo dolor de ___ por levantar peso."
+        ],
+        "hardSentencesRu": [
+          "У меня болит спина от сидения весь день.",
+          "Чтобы укрепить спину, можно плавать.",
+          "Нужно следить за осанкой.",
+          "У меня болит спина от поднятия тяжестей."
+        ]
+      },
+      {
+        "spanish": "el pecho",
+        "ru": "грудь",
+        "type": "sustantivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele el ___ cuando respiro profundo.",
+          "Siento presión en el ___ por el estrés.",
+          "El ___ me duele después de correr.",
+          "Tengo dolor en el ___ desde ayer."
+        ],
+        "hardSentencesRu": [
+          "У меня болит грудь, когда глубоко дышу.",
+          "Я чувствую давление в груди из-за стресса.",
+          "Грудь болит после бега.",
+          "У меня болит грудь со вчерашнего дня."
+        ]
+      },
+      {
+        "spanish": "la pierna",
+        "ru": "нога (от бедра до стопы)",
+        "type": "sustantivo",
+        "icon": "person",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele la ___ después de correr.",
+          "Tengo la ___ hinchada por la lesión.",
+          "Para fortalecer la ___ camina cada día.",
+          "La ___ me duele por el ejercicio."
+        ],
+        "hardSentencesRu": [
+          "У меня болит нога после бега.",
+          "У меня опухла нога из-за травмы.",
+          "Чтобы укрепить ноги, ходи каждый день.",
+          "Нога болит от упражнений."
+        ]
+      },
+      {
+        "spanish": "la rodilla",
+        "ru": "колено",
+        "type": "sustantivo",
+        "icon": "person",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele la ___ cuando subo escaleras.",
+          "Tengo una lesión en la ___ izquierda.",
+          "La ___ me molesta después de correr.",
+          "Dobla la ___ al agacharte."
+        ],
+        "hardSentencesRu": [
+          "У меня болит колено, когда поднимаюсь по лестнице.",
+          "У меня травма левого колена.",
+          "Колено беспокоит после бега.",
+          "Сгибай колени, когда приседаешь."
+        ]
+      },
+      {
+        "spanish": "el pie",
+        "ru": "ступня",
+        "type": "sustantivo",
+        "icon": "sneaker",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele el ___ de caminar todo el día.",
+          "Lava e hidrata el ___ a diario.",
+          "Tengo el ___ hinchado por el calor.",
+          "El ___ me duele por los zapatos nuevos."
+        ],
+        "hardSentencesRu": [
+          "У меня болит ступня от ходьбы весь день.",
+          "Мой и увлажняй ноги каждый день.",
+          "У меня опухла нога от жары.",
+          "Нога болит из-за новой обуви."
+        ]
+      },
+      {
+        "spanish": "la cara",
+        "ru": "лицо",
+        "type": "sustantivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Ponte crema hidratante en la ___ cada día.",
+          "Tengo la ___ irritada por el sol.",
+          "Debes desmaquillarte la ___ antes de dormir.",
+          "La ___ me pica por la alergia."
+        ],
+        "hardSentencesRu": [
+          "Наноси увлажняющий крем на лицо каждый день.",
+          "У меня раздражение на лице от солнца.",
+          "Нужно снимать макияж перед сном.",
+          "Лицо чешется из-за аллергии."
+        ]
+      },
+      {
+        "spanish": "el labio",
+        "ru": "губа",
+        "type": "sustantivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo el ___ seco por el frío.",
+          "Debes hidratar el ___ regularmente.",
+          "Me he cortado el ___ comiendo.",
+          "El ___ me duele por el herpes."
+        ],
+        "hardSentencesRu": [
+          "У меня сухие губы из-за холода.",
+          "Нужно регулярно увлажнять губы.",
+          "Я порезал губу во время еды.",
+          "Губа болит из-за герпеса."
+        ]
+      }
     ],
-    "adjetivos": [
-      {"spanish": "nuevo", "ru": "новый"},
-      {"spanish": "viejo", "ru": "старый"}
+    "SALUD_SINTOMAS": [
+      {
+        "spanish": "la tos",
+        "ru": "кашель",
+        "type": "sustantivo",
+        "icon": "virus",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo mucha ___ desde hace una semana.",
+          "La ___ no me deja dormir por la noche.",
+          "La miel es buena para la ___.",
+          "La ___ me molesta mucho en el trabajo."
+        ],
+        "hardSentencesRu": [
+          "У меня сильный кашель уже неделю.",
+          "Кашель не даёт мне спать по ночам.",
+          "Мёд хорошо помогает от кашля.",
+          "Кашель очень мешает мне на работе."
+        ]
+      },
+      {
+        "spanish": "la fiebre",
+        "ru": "температура, жар",
+        "type": "sustantivo",
+        "icon": "thermometer",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ de 38 grados.",
+          "La ___ me ha subido esta noche.",
+          "Con ___ es mejor quedarse en casa.",
+          "La ___ es un síntoma de infección."
+        ],
+        "hardSentencesRu": [
+          "У меня температура 38 градусов.",
+          "Температура поднялась этой ночью.",
+          "С температурой лучше оставаться дома.",
+          "Жар — это симптом инфекции."
+        ]
+      },
+      {
+        "spanish": "la gripe",
+        "ru": "грипп",
+        "type": "sustantivo",
+        "icon": "virus",
+        "useIcon": true,
+        "hardSentences": [
+          "He cogido la ___ este invierno.",
+          "La ___ me tiene en cama desde el lunes.",
+          "La vacuna de la ___ es muy importante.",
+          "Con la ___ hay que descansar mucho."
+        ],
+        "hardSentencesRu": [
+          "Я заболел гриппом этой зимой.",
+          "Грипп уложил меня в постель с понедельника.",
+          "Вакцина от гриппа очень важна.",
+          "При гриппе нужно много отдыхать."
+        ]
+      },
+      {
+        "spanish": "el resfriado",
+        "ru": "простуда",
+        "type": "sustantivo",
+        "icon": "thermometer",
+        "useIcon": true,
+        "hardSentences": [
+          "He cogido un ___ por el aire acondicionado.",
+          "El ___ me tiene con la nariz tapada.",
+          "Para curar el ___ bebe mucha agua.",
+          "El ___ dura normalmente una semana."
+        ],
+        "hardSentencesRu": [
+          "Я простудился из-за кондиционера.",
+          "Из-за простуды у меня заложен нос.",
+          "Чтобы вылечить простуду, пей много воды.",
+          "Простуда обычно длится неделю."
+        ]
+      },
+      {
+        "spanish": "el dolor",
+        "ru": "боль",
+        "type": "sustantivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo un ___ de cabeza muy fuerte.",
+          "El ___ de espalda no me deja trabajar.",
+          "Este medicamento calma el ___.",
+          "El ___ de muelas es insoportable."
+        ],
+        "hardSentencesRu": [
+          "У меня очень сильная головная боль.",
+          "Боль в спине не даёт мне работать.",
+          "Это лекарство снимает боль.",
+          "Зубная боль невыносима."
+        ]
+      },
+      {
+        "spanish": "la migraña",
+        "ru": "мигрень",
+        "type": "sustantivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "Sufro de ___ desde hace años.",
+          "La ___ me obliga a estar en la oscuridad.",
+          "Cuando tengo ___ no puedo trabajar.",
+          "El aceite de tomillo combate la ___."
+        ],
+        "hardSentencesRu": [
+          "Я страдаю от мигрени уже много лет.",
+          "Мигрень заставляет меня находиться в темноте.",
+          "Когда у меня мигрень, я не могу работать.",
+          "Масло тимьяна помогает от мигрени."
+        ]
+      },
+      {
+        "spanish": "la alergia",
+        "ru": "аллергия",
+        "type": "sustantivo",
+        "icon": "flower",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ al polen en primavera.",
+          "La ___ me produce estornudos y picor.",
+          "Mi ___ es muy fuerte este año.",
+          "Tomo medicamentos para la ___."
+        ],
+        "hardSentencesRu": [
+          "У меня аллергия на пыльцу весной.",
+          "Аллергия вызывает у меня чихание и зуд.",
+          "В этом году у меня очень сильная аллергия.",
+          "Я принимаю лекарства от аллергии."
+        ]
+      },
+      {
+        "spanish": "el insomnio",
+        "ru": "бессонница",
+        "type": "sustantivo",
+        "icon": "moon",
+        "useIcon": true,
+        "hardSentences": [
+          "Sufro de ___ desde hace meses.",
+          "El ___ me tiene agotado.",
+          "Para combatir el ___ evita el café.",
+          "El ___ es un problema muy común."
+        ],
+        "hardSentencesRu": [
+          "Я страдаю от бессонницы уже несколько месяцев.",
+          "Бессонница меня истощает.",
+          "Чтобы бороться с бессонницей, избегай кофе.",
+          "Бессонница — очень распространённая проблема."
+        ]
+      },
+      {
+        "spanish": "la anemia",
+        "ru": "анемия",
+        "type": "sustantivo",
+        "icon": "drop",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ y siempre estoy cansada.",
+          "La ___ se trata con hierro.",
+          "La miel de tomillo es buena para la ___.",
+          "La ___ me provoca mareos frecuentes."
+        ],
+        "hardSentencesRu": [
+          "У меня анемия, и я всегда уставшая.",
+          "Анемию лечат железом.",
+          "Тимьяновый мёд полезен при анемии.",
+          "Анемия вызывает у меня частые головокружения."
+        ]
+      },
+      {
+        "spanish": "el mareo",
+        "ru": "головокружение",
+        "type": "sustantivo",
+        "icon": "spiral",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ cuando me levanto rápido.",
+          "El ___ puede ser síntoma de anemia.",
+          "El ___ me impide conducir.",
+          "Siento ___ en el transporte público."
+        ],
+        "hardSentencesRu": [
+          "У меня кружится голова, когда быстро встаю.",
+          "Головокружение может быть симптомом анемии.",
+          "Головокружение мешает мне водить машину.",
+          "Меня укачивает в общественном транспорте."
+        ]
+      },
+      {
+        "spanish": "las náuseas",
+        "ru": "тошнота",
+        "type": "sustantivo",
+        "icon": "warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ por la mañana.",
+          "Las ___ me impiden comer.",
+          "Siento ___ después de tomar el medicamento.",
+          "Las ___ son un síntoma común del embarazo."
+        ],
+        "hardSentencesRu": [
+          "Меня тошнит по утрам.",
+          "Тошнота мешает мне есть.",
+          "Меня тошнит после приёма лекарства.",
+          "Тошнота — распространённый симптом беременности."
+        ]
+      },
+      {
+        "spanish": "la herida",
+        "ru": "рана",
+        "type": "sustantivo",
+        "icon": "bandaids",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo una ___ en el brazo.",
+          "Hay que limpiar la ___ con agua.",
+          "La ___ se está curando bien.",
+          "El tónico de tomillo cura la ___."
+        ],
+        "hardSentencesRu": [
+          "У меня рана на руке.",
+          "Нужно промыть рану водой.",
+          "Рана хорошо заживает.",
+          "Тоник из тимьяна лечит раны."
+        ]
+      }
     ],
-    "verbos": [
-      {"spanish": "crear", "ru": "создавать"},
-      {"spanish": "usar", "ru": "использовать"}
+    "ESTADOS_DE_ANIMO": [
+      {
+        "spanish": "cansado",
+        "ru": "уставший (м)",
+        "type": "adjetivo",
+        "icon": "battery-low",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ después del trabajo.",
+          "Me siento ___ todo el tiempo.",
+          "Estoy ___ de no dormir bien.",
+          "El médico dice que estoy ___ por la anemia."
+        ],
+        "hardSentencesRu": [
+          "Я очень устал после работы.",
+          "Я чувствую себя уставшим всё время.",
+          "Я устал от плохого сна.",
+          "Врач говорит, что я устал из-за анемии."
+        ]
+      },
+      {
+        "spanish": "estresado",
+        "ru": "в стрессе (м)",
+        "type": "adjetivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ por el trabajo.",
+          "Cuando estoy ___ me duele la cabeza.",
+          "Me siento ___ con los exámenes.",
+          "El médico dice que estoy demasiado ___."
+        ],
+        "hardSentencesRu": [
+          "Я очень напряжён из-за работы.",
+          "Когда я в стрессе, у меня болит голова.",
+          "Я чувствую стресс из-за экзаменов.",
+          "Врач говорит, что я слишком напряжён."
+        ]
+      },
+      {
+        "spanish": "nervioso",
+        "ru": "нервный (м)",
+        "type": "adjetivo",
+        "icon": "warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ por la entrevista.",
+          "Cuando estoy ___ me tiemblan las manos.",
+          "Me siento ___ antes de los exámenes.",
+          "Estoy ___ porque tengo que hablar en público."
+        ],
+        "hardSentencesRu": [
+          "Я очень нервничаю из-за собеседования.",
+          "Когда я нервничаю, у меня дрожат руки.",
+          "Я нервничаю перед экзаменами.",
+          "Я нервничаю, потому что мне нужно выступать публично."
+        ]
+      },
+      {
+        "spanish": "enfadado",
+        "ru": "рассерженный (м)",
+        "type": "adjetivo",
+        "icon": "smiley-angry",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ con mi hermano.",
+          "Cuando estoy ___ necesito estar solo.",
+          "Me siento ___ por la situación.",
+          "Estoy muy ___ porque llegaste tarde."
+        ],
+        "hardSentencesRu": [
+          "Я злюсь на брата.",
+          "Когда я злюсь, мне нужно побыть одному.",
+          "Я злюсь из-за ситуации.",
+          "Я очень злюсь, потому что ты опоздал."
+        ]
+      },
+      {
+        "spanish": "triste",
+        "ru": "грустный",
+        "type": "adjetivo",
+        "icon": "smiley-sad",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ porque mi amigo se ha ido.",
+          "Me siento ___ sin motivo aparente.",
+          "Cuando estoy ___ prefiero escuchar música.",
+          "Últimamente estoy muy ___."
+        ],
+        "hardSentencesRu": [
+          "Мне грустно, потому что мой друг уехал.",
+          "Мне грустно без видимой причины.",
+          "Когда мне грустно, я предпочитаю слушать музыку.",
+          "В последнее время мне очень грустно."
+        ]
+      },
+      {
+        "spanish": "contento",
+        "ru": "довольный (м)",
+        "type": "adjetivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ con los resultados.",
+          "Me siento ___ de ver a mi familia.",
+          "Estoy ___ porque he aprobado el examen.",
+          "Cuando estoy ___ sonrío mucho."
+        ],
+        "hardSentencesRu": [
+          "Я очень доволен результатами.",
+          "Я рад видеть свою семью.",
+          "Я доволен, потому что сдал экзамен.",
+          "Когда я доволен, я много улыбаюсь."
+        ]
+      },
+      {
+        "spanish": "preocupado",
+        "ru": "обеспокоенный (м)",
+        "type": "adjetivo",
+        "icon": "warning-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ por mi salud.",
+          "Me siento ___ por los resultados del examen.",
+          "Estoy ___ porque mi hijo no ha llegado.",
+          "Cuando estoy ___ no puedo dormir."
+        ],
+        "hardSentencesRu": [
+          "Я беспокоюсь о своём здоровье.",
+          "Я волнуюсь из-за результатов экзамена.",
+          "Я беспокоюсь, потому что мой сын не пришёл.",
+          "Когда я волнуюсь, я не могу спать."
+        ]
+      },
+      {
+        "spanish": "aburrido",
+        "ru": "скучающий (м)",
+        "type": "adjetivo",
+        "icon": "smiley-meh",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ en casa sin nada que hacer.",
+          "Me siento ___ en esta reunión.",
+          "Estoy ___ de hacer siempre lo mismo.",
+          "Cuando estoy ___ me pongo a leer."
+        ],
+        "hardSentencesRu": [
+          "Мне скучно дома без дела.",
+          "Мне скучно на этой встрече.",
+          "Мне надоело делать одно и то же.",
+          "Когда мне скучно, я начинаю читать."
+        ]
+      },
+      {
+        "spanish": "asustado",
+        "ru": "испуганный (м)",
+        "type": "adjetivo",
+        "icon": "smiley-nervous",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ por el ruido de la tormenta.",
+          "Me siento ___ cuando voy al dentista.",
+          "Estoy ___ porque he oído un ruido extraño.",
+          "Cuando estoy ___ me tiembla la voz."
+        ],
+        "hardSentencesRu": [
+          "Я напуган шумом грозы.",
+          "Мне страшно, когда я иду к стоматологу.",
+          "Я испугался, потому что услышал странный шум.",
+          "Когда я напуган, у меня дрожит голос."
+        ]
+      },
+      {
+        "spanish": "sorprendido",
+        "ru": "удивлённый (м)",
+        "type": "adjetivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ por la noticia.",
+          "Me siento ___ de verte aquí.",
+          "Estoy ___ porque no esperaba este regalo.",
+          "Cuando estoy ___ abro mucho los ojos."
+        ],
+        "hardSentencesRu": [
+          "Я удивлён этой новостью.",
+          "Я удивлён, что вижу тебя здесь.",
+          "Я удивлён, потому что не ожидал этого подарка.",
+          "Когда я удивлён, я широко открываю глаза."
+        ]
+      }
     ],
-    "gramatica": []
-  }
+    "BENEFICIOS_SALUD": [
+      {
+        "spanish": "proteger",
+        "ru": "защищать",
+        "type": "verbo",
+        "icon": "shield",
+        "useIcon": true,
+        "hardSentences": [
+          "Debes ___ la piel del sol.",
+          "Es importante ___ los ojos con gafas.",
+          "Hay que ___ el pelo en verano.",
+          "Necesito ___ mis manos del frío."
+        ],
+        "hardSentencesRu": [
+          "Нужно защищать кожу от солнца.",
+          "Важно защищать глаза очками.",
+          "Нужно защищать волосы летом.",
+          "Мне нужно защитить руки от холода."
+        ]
+      },
+      {
+        "spanish": "hidratar",
+        "ru": "увлажнять",
+        "type": "verbo",
+        "icon": "drop",
+        "useIcon": true,
+        "hardSentences": [
+          "Debes ___ la piel todos los días.",
+          "Es importante ___ los labios en invierno.",
+          "Hay que ___ las manos después de lavarlas.",
+          "Necesito ___ mi cara por la mañana."
+        ],
+        "hardSentencesRu": [
+          "Нужно увлажнять кожу каждый день.",
+          "Важно увлажнять губы зимой.",
+          "Нужно увлажнять руки после мытья.",
+          "Мне нужно увлажнить лицо утром."
+        ]
+      },
+      {
+        "spanish": "prevenir",
+        "ru": "предотвращать",
+        "type": "verbo",
+        "icon": "shield-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Para ___ resfriados hay que lavarse las manos.",
+          "El ejercicio ayuda a ___ enfermedades.",
+          "Es importante ___ la caída del pelo.",
+          "Puedes ___ el dolor de espalda con yoga."
+        ],
+        "hardSentencesRu": [
+          "Чтобы предотвратить простуду, нужно мыть руки.",
+          "Упражнения помогают предотвратить болезни.",
+          "Важно предотвращать выпадение волос.",
+          "Можно предотвратить боль в спине с помощью йоги."
+        ]
+      },
+      {
+        "spanish": "fortalecer",
+        "ru": "укреплять",
+        "type": "verbo",
+        "icon": "barbell",
+        "useIcon": true,
+        "hardSentences": [
+          "La natación ayuda a ___ la espalda.",
+          "Debes ___ los músculos con ejercicio.",
+          "Para ___ los brazos haz flexiones.",
+          "El yoga sirve para ___ el cuerpo."
+        ],
+        "hardSentencesRu": [
+          "Плавание помогает укрепить спину.",
+          "Нужно укреплять мышцы упражнениями.",
+          "Чтобы укрепить руки, делай отжимания.",
+          "Йога служит для укрепления тела."
+        ]
+      },
+      {
+        "spanish": "calmar",
+        "ru": "успокаивать",
+        "type": "verbo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Este medicamento sirve para ___ el dolor.",
+          "La manzanilla ayuda a ___ los nervios.",
+          "Necesito algo para ___ el picor.",
+          "El masaje sirve para ___ la tensión."
+        ],
+        "hardSentencesRu": [
+          "Это лекарство служит для снятия боли.",
+          "Ромашка помогает успокоить нервы.",
+          "Мне нужно что-то, чтобы снять зуд.",
+          "Массаж служит для снятия напряжения."
+        ]
+      },
+      {
+        "spanish": "combatir",
+        "ru": "бороться с",
+        "type": "verbo",
+        "icon": "sword",
+        "useIcon": true,
+        "hardSentences": [
+          "El aceite de tomillo sirve para ___ la migraña.",
+          "El deporte ayuda a ___ el estrés.",
+          "Esta crema sirve para ___ el acné.",
+          "Hay que ___ la infección con antibióticos."
+        ],
+        "hardSentencesRu": [
+          "Масло тимьяна помогает бороться с мигренью.",
+          "Спорт помогает бороться со стрессом.",
+          "Этот крем помогает бороться с акне.",
+          "Нужно бороться с инфекцией антибиотиками."
+        ]
+      },
+      {
+        "spanish": "curar",
+        "ru": "лечить",
+        "type": "verbo",
+        "icon": "first-aid",
+        "useIcon": true,
+        "hardSentences": [
+          "Este remedio sirve para ___ la tos.",
+          "La miel ayuda a ___ el dolor de garganta.",
+          "El tónico de tomillo sirve para ___ heridas.",
+          "Necesito algo para ___ el resfriado."
+        ],
+        "hardSentencesRu": [
+          "Это средство помогает лечить кашель.",
+          "Мёд помогает лечить боль в горле.",
+          "Тоник из тимьяна помогает лечить раны.",
+          "Мне нужно что-то, чтобы вылечить простуду."
+        ]
+      },
+      {
+        "spanish": "tratar",
+        "ru": "лечить, обрабатывать",
+        "type": "verbo",
+        "icon": "first-aid-kit",
+        "useIcon": true,
+        "hardSentences": [
+          "Este producto sirve para ___ el acné.",
+          "Es importante ___ la herida rápidamente.",
+          "La crema ayuda a ___ la piel irritada.",
+          "Hay varias formas de ___ la afonía."
+        ],
+        "hardSentencesRu": [
+          "Этот продукт помогает лечить акне.",
+          "Важно быстро обработать рану.",
+          "Крем помогает лечить раздражённую кожу.",
+          "Есть несколько способов лечить потерю голоса."
+        ]
+      }
+    ],
+    "REMEDIOS_NATURALES": [
+      {
+        "spanish": "el tomillo",
+        "ru": "тимьян",
+        "type": "sustantivo",
+        "icon": "leaf",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es una hierba aromática mediterránea.",
+          "La miel de ___ es buena para la anemia.",
+          "El aceite de ___ combate las migrañas.",
+          "El ___ se usa desde la antigüedad."
+        ],
+        "hardSentencesRu": [
+          "Тимьян — это ароматная средиземноморская трава.",
+          "Тимьяновый мёд полезен при анемии.",
+          "Масло тимьяна помогает от мигрени.",
+          "Тимьян используется с древних времён."
+        ]
+      },
+      {
+        "spanish": "la infusión",
+        "ru": "настой, травяной чай",
+        "type": "sustantivo",
+        "icon": "coffee",
+        "useIcon": true,
+        "hardSentences": [
+          "Una ___ de tomillo facilita la digestión.",
+          "La ___ de manzanilla calma los nervios.",
+          "Tomo una ___ antes de dormir.",
+          "La ___ de anís cura la tos."
+        ],
+        "hardSentencesRu": [
+          "Настой тимьяна улучшает пищеварение.",
+          "Ромашковый настой успокаивает нервы.",
+          "Я пью травяной чай перед сном.",
+          "Анисовый настой лечит кашель."
+        ]
+      },
+      {
+        "spanish": "la miel",
+        "ru": "мёд",
+        "type": "sustantivo",
+        "icon": "jar",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es un remedio natural para la tos.",
+          "La ___ de tomillo es rica en hierro.",
+          "Tomo ___ con limón para el resfriado.",
+          "La ___ ayuda a curar el dolor de garganta."
+        ],
+        "hardSentencesRu": [
+          "Мёд — это натуральное средство от кашля.",
+          "Тимьяновый мёд богат железом.",
+          "Я принимаю мёд с лимоном от простуды.",
+          "Мёд помогает лечить боль в горле."
+        ]
+      },
+      {
+        "spanish": "el aceite",
+        "ru": "масло",
+        "type": "sustantivo",
+        "icon": "drop",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de tomillo combate los dolores de cabeza.",
+          "Uso ___ de oliva para cocinar.",
+          "El ___ esencial es muy concentrado.",
+          "El ___ de rosa mosqueta hidrata la piel."
+        ],
+        "hardSentencesRu": [
+          "Масло тимьяна помогает от головной боли.",
+          "Я использую оливковое масло для готовки.",
+          "Эфирное масло очень концентрированное.",
+          "Масло шиповника увлажняет кожу."
+        ]
+      },
+      {
+        "spanish": "el champú",
+        "ru": "шампунь",
+        "type": "sustantivo",
+        "icon": "drop",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de tomillo previene la caída del pelo.",
+          "Uso un ___ natural sin químicos.",
+          "Este ___ es bueno contra la caspa.",
+          "El ___ con aloe vera hidrata el pelo."
+        ],
+        "hardSentencesRu": [
+          "Шампунь с тимьяном предотвращает выпадение волос.",
+          "Я использую натуральный шампунь без химии.",
+          "Этот шампунь хорошо помогает от перхоти.",
+          "Шампунь с алоэ вера увлажняет волосы."
+        ]
+      },
+      {
+        "spanish": "la crema",
+        "ru": "крем",
+        "type": "sustantivo",
+        "icon": "jar",
+        "useIcon": true,
+        "hardSentences": [
+          "Ponte ___ hidratante todos los días.",
+          "Uso una ___ protectora en verano.",
+          "La ___ de aloe vera calma la piel.",
+          "Esta ___ trata las irritaciones."
+        ],
+        "hardSentencesRu": [
+          "Наноси увлажняющий крем каждый день.",
+          "Я использую защитный крем летом.",
+          "Крем с алоэ вера успокаивает кожу.",
+          "Этот крем лечит раздражения."
+        ]
+      },
+      {
+        "spanish": "el remedio",
+        "ru": "средство, лекарство",
+        "type": "sustantivo",
+        "icon": "first-aid",
+        "useIcon": true,
+        "hardSentences": [
+          "La miel es un ___ natural para la tos.",
+          "¿Conoces algún ___ para el dolor de cabeza?",
+          "Este ___ casero es muy eficaz.",
+          "El mejor ___ para el estrés es descansar."
+        ],
+        "hardSentencesRu": [
+          "Мёд — это натуральное средство от кашля.",
+          "Ты знаешь какое-нибудь средство от головной боли?",
+          "Это домашнее средство очень эффективное.",
+          "Лучшее средство от стресса — это отдых."
+        ]
+      },
+      {
+        "spanish": "el aloe vera",
+        "ru": "алоэ вера",
+        "type": "sustantivo",
+        "icon": "leaf",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es muy bueno para la piel.",
+          "La crema de ___ hidrata las manos.",
+          "El ___ calma las quemaduras solares.",
+          "Tengo una planta de ___ en casa."
+        ],
+        "hardSentencesRu": [
+          "Алоэ вера очень полезно для кожи.",
+          "Крем с алоэ вера увлажняет руки.",
+          "Алоэ вера успокаивает солнечные ожоги.",
+          "У меня дома есть растение алоэ вера."
+        ]
+      }
+    ]
+  },
+  "ejercicios": []
 }

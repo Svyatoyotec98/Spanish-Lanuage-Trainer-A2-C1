@@ -1,20 +1,1048 @@
 {
   "id": "unidad_9",
-  "title": "Unidad 9",
-  "categories": {
-    "sustantivos": [
-      {"spanish": "el ejemplo", "ru": "пример"},
-      {"spanish": "la palabra", "ru": "слово"},
-      {"spanish": "el texto", "ru": "текст"}
+  "title": "Unidad 9: Antes y ahora",
+  "groups": {
+    "EPOCAS_HISTORICAS": [
+      {
+        "spanish": "el siglo",
+        "ru": "век",
+        "type": "sustantivo",
+        "icon": "calendar",
+        "useIcon": true,
+        "hardSentences": [
+          "En el ___ XX hubo dos guerras mundiales.",
+          "Vivimos en el ___ XXI.",
+          "El ___ pasado fue muy importante para la tecnología.",
+          "A principios del ___ XIX no había electricidad."
+        ],
+        "hardSentencesRu": [
+          "В XX веке было две мировые войны.",
+          "Мы живём в XXI веке.",
+          "Прошлый век был очень важен для технологий.",
+          "В начале XIX века не было электричества."
+        ]
+      },
+      {
+        "spanish": "la década",
+        "ru": "десятилетие",
+        "type": "sustantivo",
+        "icon": "calendar-blank",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ de los 80 fue muy importante para la música.",
+          "En la ___ de los 60 hubo muchos cambios sociales.",
+          "Esta ___ ha sido difícil para todos.",
+          "La moda cambia cada ___."
+        ],
+        "hardSentencesRu": [
+          "80-е годы были очень важны для музыки.",
+          "В 60-е годы произошло много социальных изменений.",
+          "Это десятилетие было трудным для всех.",
+          "Мода меняется каждое десятилетие."
+        ]
+      },
+      {
+        "spanish": "la época",
+        "ru": "эпоха",
+        "type": "sustantivo",
+        "icon": "clock-countdown",
+        "useIcon": true,
+        "hardSentences": [
+          "En aquella ___ no había internet.",
+          "La ___ medieval duró varios siglos.",
+          "Vivimos en una ___ de grandes cambios.",
+          "En la ___ de Franco no había libertad."
+        ],
+        "hardSentencesRu": [
+          "В ту эпоху не было интернета.",
+          "Средневековая эпоха длилась несколько веков.",
+          "Мы живём в эпоху больших перемен.",
+          "В эпоху Франко не было свободы."
+        ]
+      },
+      {
+        "spanish": "el pasado",
+        "ru": "прошлое",
+        "type": "sustantivo",
+        "icon": "rewind",
+        "useIcon": true,
+        "hardSentences": [
+          "En el ___ la vida era muy diferente.",
+          "No podemos cambiar el ___.",
+          "El ___ nos ayuda a entender el presente.",
+          "Hay que aprender del ___."
+        ],
+        "hardSentencesRu": [
+          "В прошлом жизнь была совсем другой.",
+          "Мы не можем изменить прошлое.",
+          "Прошлое помогает нам понять настоящее.",
+          "Нужно учиться на прошлом."
+        ]
+      },
+      {
+        "spanish": "el presente",
+        "ru": "настоящее",
+        "type": "sustantivo",
+        "icon": "play",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay que vivir el ___.",
+          "El ___ es resultado del pasado.",
+          "En el ___ todo es más rápido.",
+          "El ___ es lo único que tenemos."
+        ],
+        "hardSentencesRu": [
+          "Нужно жить настоящим.",
+          "Настоящее — это результат прошлого.",
+          "В настоящем всё быстрее.",
+          "Настоящее — это единственное, что у нас есть."
+        ]
+      },
+      {
+        "spanish": "el futuro",
+        "ru": "будущее",
+        "type": "sustantivo",
+        "icon": "fast-forward",
+        "useIcon": true,
+        "hardSentences": [
+          "Nadie sabe qué pasará en el ___.",
+          "El ___ depende de nuestras decisiones.",
+          "En el ___ habrá coches voladores.",
+          "Tenemos que pensar en el ___."
+        ],
+        "hardSentencesRu": [
+          "Никто не знает, что будет в будущем.",
+          "Будущее зависит от наших решений.",
+          "В будущем будут летающие машины.",
+          "Мы должны думать о будущем."
+        ]
+      },
+      {
+        "spanish": "antiguo",
+        "ru": "древний/старинный (м)",
+        "type": "adjetivo",
+        "icon": "ruins",
+        "useIcon": true,
+        "hardSentences": [
+          "Este edificio es muy ___.",
+          "Me gustan los muebles ___s.",
+          "En el Egipto ___ construyeron las pirámides.",
+          "Es un libro muy ___, del siglo XV."
+        ],
+        "hardSentencesRu": [
+          "Это здание очень старинное.",
+          "Мне нравится старинная мебель.",
+          "В Древнем Египте построили пирамиды.",
+          "Это очень старинная книга, XV века."
+        ]
+      },
+      {
+        "spanish": "moderno",
+        "ru": "современный (м)",
+        "type": "adjetivo",
+        "icon": "buildings",
+        "useIcon": true,
+        "hardSentences": [
+          "Este diseño es muy ___.",
+          "Vivimos en un mundo ___.",
+          "El arte ___ es difícil de entender.",
+          "Prefiero los edificios ___s."
+        ],
+        "hardSentencesRu": [
+          "Этот дизайн очень современный.",
+          "Мы живём в современном мире.",
+          "Современное искусство сложно понять.",
+          "Я предпочитаю современные здания."
+        ]
+      }
     ],
-    "adjetivos": [
-      {"spanish": "nuevo", "ru": "новый"},
-      {"spanish": "viejo", "ru": "старый"}
+    "ETAPAS_DE_LA_VIDA": [
+      {
+        "spanish": "la infancia",
+        "ru": "детство",
+        "type": "sustantivo",
+        "icon": "baby",
+        "useIcon": true,
+        "hardSentences": [
+          "Tuve una ___ muy feliz.",
+          "En mi ___ vivía en un pueblo pequeño.",
+          "La ___ es la mejor época de la vida.",
+          "Recuerdo mi ___ con mucho cariño."
+        ],
+        "hardSentencesRu": [
+          "У меня было очень счастливое детство.",
+          "В детстве я жил в маленькой деревне.",
+          "Детство — лучшая пора жизни.",
+          "Я вспоминаю своё детство с большой любовью."
+        ]
+      },
+      {
+        "spanish": "la adolescencia",
+        "ru": "подростковый возраст",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es una etapa difícil.",
+          "En mi ___ escuchaba mucho rock.",
+          "Durante la ___ todo parece más intenso.",
+          "La ___ es época de muchos cambios."
+        ],
+        "hardSentencesRu": [
+          "Подростковый возраст — сложный период.",
+          "В подростковом возрасте я много слушал рок.",
+          "В подростковом возрасте всё кажется более интенсивным.",
+          "Подростковый возраст — время многих перемен."
+        ]
+      },
+      {
+        "spanish": "la juventud",
+        "ru": "молодость",
+        "type": "sustantivo",
+        "icon": "person-simple-run",
+        "useIcon": true,
+        "hardSentences": [
+          "En mi ___ viajé por todo el mundo.",
+          "La ___ pasa muy rápido.",
+          "En la ___ tenemos más energía.",
+          "Disfruta de tu ___ mientras puedas."
+        ],
+        "hardSentencesRu": [
+          "В молодости я путешествовал по всему миру.",
+          "Молодость проходит очень быстро.",
+          "В молодости у нас больше энергии.",
+          "Наслаждайся молодостью, пока можешь."
+        ]
+      },
+      {
+        "spanish": "la madurez",
+        "ru": "зрелость",
+        "type": "sustantivo",
+        "icon": "user-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "En la ___ somos más responsables.",
+          "La ___ trae experiencia y sabiduría.",
+          "Alcanzó la ___ profesional a los 40.",
+          "Con la ___ aprendemos a valorar las cosas."
+        ],
+        "hardSentencesRu": [
+          "В зрелости мы более ответственны.",
+          "Зрелость приносит опыт и мудрость.",
+          "Он достиг профессиональной зрелости в 40 лет.",
+          "Со зрелостью мы учимся ценить вещи."
+        ]
+      },
+      {
+        "spanish": "la vejez",
+        "ru": "старость",
+        "type": "sustantivo",
+        "icon": "person-simple-walk",
+        "useIcon": true,
+        "hardSentences": [
+          "En la ___ hay que cuidar la salud.",
+          "La ___ puede ser una etapa muy feliz.",
+          "Llegó a la ___ con buena salud.",
+          "En la ___ tenemos más tiempo libre."
+        ],
+        "hardSentencesRu": [
+          "В старости нужно заботиться о здоровье.",
+          "Старость может быть очень счастливым периодом.",
+          "Он дожил до старости в добром здравии.",
+          "В старости у нас больше свободного времени."
+        ]
+      },
+      {
+        "spanish": "el niño",
+        "ru": "ребёнок",
+        "type": "sustantivo",
+        "icon": "baby",
+        "useIcon": true,
+        "hardSentences": [
+          "De ___ jugaba mucho en la calle.",
+          "Este ___ es muy inteligente.",
+          "Cuando era ___, no había ordenadores.",
+          "El ___ aprende muy rápido."
+        ],
+        "hardSentencesRu": [
+          "В детстве я много играл на улице.",
+          "Этот ребёнок очень умный.",
+          "Когда я был ребёнком, не было компьютеров.",
+          "Ребёнок учится очень быстро."
+        ]
+      },
+      {
+        "spanish": "el joven",
+        "ru": "молодой человек",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Los ___es de hoy tienen más oportunidades.",
+          "Cuando era ___, vivía con mis padres.",
+          "Este ___ tiene mucho talento.",
+          "De ___ trabajaba en un bar."
+        ],
+        "hardSentencesRu": [
+          "У современной молодёжи больше возможностей.",
+          "Когда я был молодым, я жил с родителями.",
+          "Этот молодой человек очень талантлив.",
+          "В молодости я работал в баре."
+        ]
+      },
+      {
+        "spanish": "el adulto",
+        "ru": "взрослый",
+        "type": "sustantivo",
+        "icon": "user-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Esta película es solo para ___s.",
+          "Un ___ debe ser responsable.",
+          "Como ___, tengo que pagar impuestos.",
+          "Los ___s a veces olvidan cómo jugar."
+        ],
+        "hardSentencesRu": [
+          "Этот фильм только для взрослых.",
+          "Взрослый должен быть ответственным.",
+          "Как взрослый, я должен платить налоги.",
+          "Взрослые иногда забывают, как играть."
+        ]
+      },
+      {
+        "spanish": "la persona mayor",
+        "ru": "пожилой человек",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay que respetar a las ___s ___es.",
+          "Mi abuelo es una ___ ___ muy activa.",
+          "Las ___s ___es tienen mucha experiencia.",
+          "Ayudé a una ___ ___ a cruzar la calle."
+        ],
+        "hardSentencesRu": [
+          "Нужно уважать пожилых людей.",
+          "Мой дедушка — очень активный пожилой человек.",
+          "У пожилых людей много опыта.",
+          "Я помог пожилому человеку перейти улицу."
+        ]
+      }
     ],
-    "verbos": [
-      {"spanish": "crear", "ru": "создавать"},
-      {"spanish": "usar", "ru": "использовать"}
+    "INVENTOS_Y_DESCUBRIMIENTOS": [
+      {
+        "spanish": "el invento",
+        "ru": "изобретение",
+        "type": "sustantivo",
+        "icon": "lightbulb",
+        "useIcon": true,
+        "hardSentences": [
+          "La rueda fue un ___ revolucionario.",
+          "Este ___ cambió la historia.",
+          "El teléfono fue un gran ___.",
+          "Cada ___ mejora nuestra vida."
+        ],
+        "hardSentencesRu": [
+          "Колесо было революционным изобретением.",
+          "Это изобретение изменило историю.",
+          "Телефон был великим изобретением.",
+          "Каждое изобретение улучшает нашу жизнь."
+        ]
+      },
+      {
+        "spanish": "el descubrimiento",
+        "ru": "открытие",
+        "type": "sustantivo",
+        "icon": "magnifying-glass",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de la penicilina salvó millones de vidas.",
+          "Fue un ___ científico muy importante.",
+          "El ___ de América cambió el mundo.",
+          "Este ___ revolucionó la medicina."
+        ],
+        "hardSentencesRu": [
+          "Открытие пенициллина спасло миллионы жизней.",
+          "Это было очень важное научное открытие.",
+          "Открытие Америки изменило мир.",
+          "Это открытие произвело революцию в медицине."
+        ]
+      },
+      {
+        "spanish": "la rueda",
+        "ru": "колесо",
+        "type": "sustantivo",
+        "icon": "circle",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ se inventó hace miles de años.",
+          "Sin la ___ no existirían los coches.",
+          "La ___ fue uno de los inventos más importantes.",
+          "Antes de la ___ todo se transportaba a mano."
+        ],
+        "hardSentencesRu": [
+          "Колесо изобрели тысячи лет назад.",
+          "Без колеса не было бы автомобилей.",
+          "Колесо было одним из важнейших изобретений.",
+          "До изобретения колеса всё переносили вручную."
+        ]
+      },
+      {
+        "spanish": "la imprenta",
+        "ru": "книгопечатание/типография",
+        "type": "sustantivo",
+        "icon": "printer",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ permitió difundir el conocimiento.",
+          "Gutenberg inventó la ___ en el siglo XV.",
+          "Antes de la ___, los libros se copiaban a mano.",
+          "La ___ cambió la historia de la humanidad."
+        ],
+        "hardSentencesRu": [
+          "Книгопечатание позволило распространять знания.",
+          "Гутенберг изобрёл книгопечатание в XV веке.",
+          "До изобретения книгопечатания книги копировали вручную.",
+          "Книгопечатание изменило историю человечества."
+        ]
+      },
+      {
+        "spanish": "la electricidad",
+        "ru": "электричество",
+        "type": "sustantivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "Sin ___ no podríamos vivir como ahora.",
+          "La ___ llegó a los pueblos hace poco tiempo.",
+          "Antes de la ___ se usaban velas.",
+          "La ___ transformó la vida cotidiana."
+        ],
+        "hardSentencesRu": [
+          "Без электричества мы не смогли бы жить как сейчас.",
+          "Электричество пришло в деревни совсем недавно.",
+          "До появления электричества пользовались свечами.",
+          "Электричество изменило повседневную жизнь."
+        ]
+      },
+      {
+        "spanish": "la vacuna",
+        "ru": "вакцина",
+        "type": "sustantivo",
+        "icon": "syringe",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ contra la viruela salvó millones de vidas.",
+          "Las ___s son muy importantes para la salud.",
+          "Gracias a las ___s, muchas enfermedades han desaparecido.",
+          "Hay que ponerse la ___ cada año."
+        ],
+        "hardSentencesRu": [
+          "Вакцина от оспы спасла миллионы жизней.",
+          "Вакцины очень важны для здоровья.",
+          "Благодаря вакцинам многие болезни исчезли.",
+          "Нужно делать прививку каждый год."
+        ]
+      },
+      {
+        "spanish": "el teléfono",
+        "ru": "телефон",
+        "type": "sustantivo",
+        "icon": "phone",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ cambió la forma de comunicarnos.",
+          "Antes el ___ solo servía para llamar.",
+          "Mi abuela no tenía ___ en casa.",
+          "El ___ móvil ha revolucionado nuestra vida."
+        ],
+        "hardSentencesRu": [
+          "Телефон изменил способ нашего общения.",
+          "Раньше телефон использовали только для звонков.",
+          "У моей бабушки не было телефона дома.",
+          "Мобильный телефон произвёл революцию в нашей жизни."
+        ]
+      },
+      {
+        "spanish": "el ordenador",
+        "ru": "компьютер",
+        "type": "sustantivo",
+        "icon": "desktop",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ ha cambiado nuestra forma de trabajar.",
+          "Antes los ___es eran enormes.",
+          "Sin el ___ no existiría internet.",
+          "Trabajo ocho horas al día con el ___."
+        ],
+        "hardSentencesRu": [
+          "Компьютер изменил наш способ работы.",
+          "Раньше компьютеры были огромными.",
+          "Без компьютера не было бы интернета.",
+          "Я работаю восемь часов в день за компьютером."
+        ]
+      },
+      {
+        "spanish": "internet",
+        "ru": "интернет",
+        "type": "sustantivo",
+        "icon": "globe",
+        "useIcon": true,
+        "hardSentences": [
+          "___ ha conectado a todo el mundo.",
+          "Antes de ___ era difícil buscar información.",
+          "Gracias a ___ podemos trabajar desde casa.",
+          "___ ha cambiado la forma de comprar."
+        ],
+        "hardSentencesRu": [
+          "Интернет связал весь мир.",
+          "До интернета было сложно искать информацию.",
+          "Благодаря интернету мы можем работать из дома.",
+          "Интернет изменил способ покупок."
+        ]
+      }
     ],
-    "gramatica": []
-  }
+    "SOCIEDAD_Y_CAMBIOS": [
+      {
+        "spanish": "la democracia",
+        "ru": "демократия",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "En España la ___ llegó en 1978.",
+          "La ___ permite elegir a nuestros representantes.",
+          "Antes de la ___ no había libertad.",
+          "La ___ es un sistema político moderno."
+        ],
+        "hardSentencesRu": [
+          "В Испании демократия наступила в 1978 году.",
+          "Демократия позволяет выбирать наших представителей.",
+          "До демократии не было свободы.",
+          "Демократия — это современная политическая система."
+        ]
+      },
+      {
+        "spanish": "la dictadura",
+        "ru": "диктатура",
+        "type": "sustantivo",
+        "icon": "shield-warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Durante la ___ no había libertad de expresión.",
+          "La ___ de Franco duró casi 40 años.",
+          "En una ___ no se puede votar libremente.",
+          "La ___ terminó con la muerte del dictador."
+        ],
+        "hardSentencesRu": [
+          "Во время диктатуры не было свободы слова.",
+          "Диктатура Франко длилась почти 40 лет.",
+          "При диктатуре нельзя свободно голосовать.",
+          "Диктатура закончилась со смертью диктатора."
+        ]
+      },
+      {
+        "spanish": "la libertad",
+        "ru": "свобода",
+        "type": "sustantivo",
+        "icon": "bird",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ de expresión es un derecho fundamental.",
+          "Antes no había ___ para viajar.",
+          "La ___ es muy importante para las personas.",
+          "Lucharon por la ___ de su país."
+        ],
+        "hardSentencesRu": [
+          "Свобода слова — это основное право.",
+          "Раньше не было свободы для путешествий.",
+          "Свобода очень важна для людей.",
+          "Они боролись за свободу своей страны."
+        ]
+      },
+      {
+        "spanish": "el derecho",
+        "ru": "право",
+        "type": "sustantivo",
+        "icon": "scales",
+        "useIcon": true,
+        "hardSentences": [
+          "Todos tenemos ___ a la educación.",
+          "El ___ al voto es muy importante.",
+          "Antes las mujeres no tenían ___ a votar.",
+          "Es un ___ fundamental de todos los ciudadanos."
+        ],
+        "hardSentencesRu": [
+          "Все мы имеем право на образование.",
+          "Право голоса очень важно.",
+          "Раньше женщины не имели права голосовать.",
+          "Это основное право всех граждан."
+        ]
+      },
+      {
+        "spanish": "la igualdad",
+        "ru": "равенство",
+        "type": "sustantivo",
+        "icon": "equals",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ entre hombres y mujeres es fundamental.",
+          "Antes no había ___ de oportunidades.",
+          "Luchamos por la ___ de todos.",
+          "La ___ salarial todavía no existe."
+        ],
+        "hardSentencesRu": [
+          "Равенство между мужчинами и женщинами — это фундаментально.",
+          "Раньше не было равенства возможностей.",
+          "Мы боремся за равенство для всех.",
+          "Равенство зарплат до сих пор не существует."
+        ]
+      },
+      {
+        "spanish": "el cambio",
+        "ru": "изменение/перемена",
+        "type": "sustantivo",
+        "icon": "arrows-clockwise",
+        "useIcon": true,
+        "hardSentences": [
+          "Ha habido muchos ___s en los últimos años.",
+          "El ___ climático es un problema global.",
+          "Los ___s sociales han sido muy importantes.",
+          "No me gusta el ___, prefiero la rutina."
+        ],
+        "hardSentencesRu": [
+          "За последние годы произошло много изменений.",
+          "Изменение климата — глобальная проблема.",
+          "Социальные изменения были очень важны.",
+          "Мне не нравятся перемены, я предпочитаю рутину."
+        ]
+      },
+      {
+        "spanish": "la ley",
+        "ru": "закон",
+        "type": "sustantivo",
+        "icon": "gavel",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ del divorcio se aprobó en 1981.",
+          "Hay que respetar las ___es.",
+          "Esta ___ protege a los trabajadores.",
+          "Antes la ___ no permitía el divorcio."
+        ],
+        "hardSentencesRu": [
+          "Закон о разводе был принят в 1981 году.",
+          "Нужно соблюдать законы.",
+          "Этот закон защищает работников.",
+          "Раньше закон не разрешал развод."
+        ]
+      },
+      {
+        "spanish": "el progreso",
+        "ru": "прогресс",
+        "type": "sustantivo",
+        "icon": "trend-up",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tecnológico ha sido enorme.",
+          "El ___ no siempre es positivo.",
+          "Gracias al ___ vivimos mejor.",
+          "El ___ social es muy importante."
+        ],
+        "hardSentencesRu": [
+          "Технологический прогресс был огромным.",
+          "Прогресс не всегда положителен.",
+          "Благодаря прогрессу мы живём лучше.",
+          "Социальный прогресс очень важен."
+        ]
+      }
+    ],
+    "MARCADORES_TEMPORALES": [
+      {
+        "spanish": "antes",
+        "ru": "раньше",
+        "type": "adverbio",
+        "icon": "arrow-left",
+        "useIcon": true,
+        "hardSentences": [
+          "___ la vida era más tranquila.",
+          "___ no había teléfonos móviles.",
+          "___ la gente viajaba menos.",
+          "___ de internet, buscábamos información en libros."
+        ],
+        "hardSentencesRu": [
+          "Раньше жизнь была спокойнее.",
+          "Раньше не было мобильных телефонов.",
+          "Раньше люди меньше путешествовали.",
+          "До интернета мы искали информацию в книгах."
+        ]
+      },
+      {
+        "spanish": "ahora",
+        "ru": "сейчас",
+        "type": "adverbio",
+        "icon": "arrow-right",
+        "useIcon": true,
+        "hardSentences": [
+          "___ todo es más rápido.",
+          "___ podemos comunicarnos con todo el mundo.",
+          "___ la tecnología está en todas partes.",
+          "___ mismo voy a llamarte."
+        ],
+        "hardSentencesRu": [
+          "Сейчас всё быстрее.",
+          "Сейчас мы можем общаться со всем миром.",
+          "Сейчас технологии повсюду.",
+          "Сейчас же я тебе позвоню."
+        ]
+      },
+      {
+        "spanish": "actualmente",
+        "ru": "в настоящее время",
+        "type": "adverbio",
+        "icon": "clock",
+        "useIcon": true,
+        "hardSentences": [
+          "___ vivo en Madrid.",
+          "___ trabajo desde casa.",
+          "___ hay más oportunidades que antes.",
+          "___ la esperanza de vida es mayor."
+        ],
+        "hardSentencesRu": [
+          "В настоящее время я живу в Мадриде.",
+          "В настоящее время я работаю из дома.",
+          "В настоящее время возможностей больше, чем раньше.",
+          "В настоящее время продолжительность жизни выше."
+        ]
+      },
+      {
+        "spanish": "entonces",
+        "ru": "тогда",
+        "type": "adverbio",
+        "icon": "clock-afternoon",
+        "useIcon": true,
+        "hardSentences": [
+          "___ no existía la televisión.",
+          "___ la vida era muy diferente.",
+          "En aquella época, ___, todo era más barato.",
+          "___ vivíamos en un pueblo pequeño."
+        ],
+        "hardSentencesRu": [
+          "Тогда не существовало телевидения.",
+          "Тогда жизнь была совсем другой.",
+          "В ту эпоху тогда всё было дешевле.",
+          "Тогда мы жили в маленькой деревне."
+        ]
+      },
+      {
+        "spanish": "todavía",
+        "ru": "всё ещё",
+        "type": "adverbio",
+        "icon": "hourglass",
+        "useIcon": true,
+        "hardSentences": [
+          "___ vivo en la misma casa.",
+          "___ no he terminado el trabajo.",
+          "___ recuerdo mi infancia.",
+          "___ existen problemas de desigualdad."
+        ],
+        "hardSentencesRu": [
+          "Я всё ещё живу в том же доме.",
+          "Я всё ещё не закончил работу.",
+          "Я всё ещё помню своё детство.",
+          "Всё ещё существуют проблемы неравенства."
+        ]
+      },
+      {
+        "spanish": "ya no",
+        "ru": "уже не",
+        "type": "adverbio",
+        "icon": "x",
+        "useIcon": true,
+        "hardSentences": [
+          "___ vivo con mis padres.",
+          "___ uso el teléfono fijo.",
+          "___ existe esa tienda.",
+          "___ tengo tanto tiempo libre."
+        ],
+        "hardSentencesRu": [
+          "Я уже не живу с родителями.",
+          "Я уже не пользуюсь стационарным телефоном.",
+          "Этого магазина уже не существует.",
+          "У меня уже нет столько свободного времени."
+        ]
+      }
+    ],
+    "VERBOS_DE_CAMBIO": [
+      {
+        "spanish": "cambiar",
+        "ru": "меняться/изменять",
+        "type": "verbo",
+        "icon": "arrows-clockwise",
+        "useIcon": true,
+        "hardSentences": [
+          "La tecnología ha hecho ___ nuestras vidas.",
+          "Me gustaría ___ de trabajo.",
+          "Las cosas han ___ado mucho.",
+          "Quiero ___ mi forma de vida."
+        ],
+        "hardSentencesRu": [
+          "Технологии изменили нашу жизнь.",
+          "Я хотел бы сменить работу.",
+          "Многое изменилось.",
+          "Я хочу изменить свой образ жизни."
+        ]
+      },
+      {
+        "spanish": "existir",
+        "ru": "существовать",
+        "type": "verbo",
+        "icon": "check",
+        "useIcon": true,
+        "hardSentences": [
+          "Antes no ___ía internet.",
+          "¿Crees que ___en los extraterrestres?",
+          "Esta tradición ___e desde hace siglos.",
+          "Ya no ___e esa costumbre."
+        ],
+        "hardSentencesRu": [
+          "Раньше не существовало интернета.",
+          "Ты веришь, что существуют инопланетяне?",
+          "Эта традиция существует веками.",
+          "Этого обычая уже не существует."
+        ]
+      },
+      {
+        "spanish": "desaparecer",
+        "ru": "исчезать",
+        "type": "verbo",
+        "icon": "eye-slash",
+        "useIcon": true,
+        "hardSentences": [
+          "Muchas tradiciones han ___ido.",
+          "Algunas especies están ___iendo.",
+          "Los pueblos pequeños están ___iendo.",
+          "La costumbre de escribir cartas ha ___ido."
+        ],
+        "hardSentencesRu": [
+          "Многие традиции исчезли.",
+          "Некоторые виды исчезают.",
+          "Маленькие деревни исчезают.",
+          "Обычай писать письма исчез."
+        ]
+      },
+      {
+        "spanish": "aparecer",
+        "ru": "появляться",
+        "type": "verbo",
+        "icon": "eye",
+        "useIcon": true,
+        "hardSentences": [
+          "Internet ___ió a finales del siglo XX.",
+          "Han ___ido nuevas formas de comunicación.",
+          "El problema ___ió de repente.",
+          "Cada día ___en nuevas aplicaciones."
+        ],
+        "hardSentencesRu": [
+          "Интернет появился в конце XX века.",
+          "Появились новые формы коммуникации.",
+          "Проблема появилась внезапно.",
+          "Каждый день появляются новые приложения."
+        ]
+      },
+      {
+        "spanish": "mejorar",
+        "ru": "улучшать(ся)",
+        "type": "verbo",
+        "icon": "trend-up",
+        "useIcon": true,
+        "hardSentences": [
+          "La medicina ha ___ado mucho.",
+          "Quiero ___ mi español.",
+          "La situación ha ___ado.",
+          "La calidad de vida ha ___ado."
+        ],
+        "hardSentencesRu": [
+          "Медицина значительно улучшилась.",
+          "Я хочу улучшить свой испанский.",
+          "Ситуация улучшилась.",
+          "Качество жизни улучшилось."
+        ]
+      },
+      {
+        "spanish": "empeorar",
+        "ru": "ухудшать(ся)",
+        "type": "verbo",
+        "icon": "trend-down",
+        "useIcon": true,
+        "hardSentences": [
+          "El clima ha ___ado en los últimos años.",
+          "Su salud ha ___ado.",
+          "La situación económica ha ___ado.",
+          "No quiero que las cosas ___en."
+        ],
+        "hardSentencesRu": [
+          "Климат ухудшился за последние годы.",
+          "Его здоровье ухудшилось.",
+          "Экономическая ситуация ухудшилась.",
+          "Я не хочу, чтобы дела ухудшились."
+        ]
+      },
+      {
+        "spanish": "recordar",
+        "ru": "помнить/вспоминать",
+        "type": "verbo",
+        "icon": "brain",
+        "useIcon": true,
+        "hardSentences": [
+          "¿___s cómo era la vida antes?",
+          "No ___o su nombre.",
+          "Siempre ___aré mi infancia.",
+          "___o cuando no había internet."
+        ],
+        "hardSentencesRu": [
+          "Ты помнишь, какой была жизнь раньше?",
+          "Я не помню его имя.",
+          "Я всегда буду помнить своё детство.",
+          "Я помню, когда не было интернета."
+        ]
+      },
+      {
+        "spanish": "comparar",
+        "ru": "сравнивать",
+        "type": "verbo",
+        "icon": "arrows-left-right",
+        "useIcon": true,
+        "hardSentences": [
+          "Es interesante ___ el pasado con el presente.",
+          "No debes ___ tu vida con la de otros.",
+          "Si ___amos, antes todo era más lento.",
+          "Me gusta ___ precios antes de comprar."
+        ],
+        "hardSentencesRu": [
+          "Интересно сравнивать прошлое с настоящим.",
+          "Не стоит сравнивать свою жизнь с чужой.",
+          "Если сравнивать, раньше всё было медленнее.",
+          "Мне нравится сравнивать цены перед покупкой."
+        ]
+      }
+    ],
+    "VIDA_COTIDIANA_PASADO": [
+      {
+        "spanish": "la costumbre",
+        "ru": "обычай/привычка",
+        "type": "sustantivo",
+        "icon": "repeat",
+        "useIcon": true,
+        "hardSentences": [
+          "Antes había la ___ de cenar en familia.",
+          "Es una ___ muy antigua.",
+          "Esa ___ ya no existe.",
+          "Tengo la ___ de leer antes de dormir."
+        ],
+        "hardSentencesRu": [
+          "Раньше был обычай ужинать всей семьёй.",
+          "Это очень древний обычай.",
+          "Этого обычая уже не существует.",
+          "У меня привычка читать перед сном."
+        ]
+      },
+      {
+        "spanish": "la tradición",
+        "ru": "традиция",
+        "type": "sustantivo",
+        "icon": "scroll",
+        "useIcon": true,
+        "hardSentences": [
+          "Esta ___ tiene cientos de años.",
+          "Es una ___ de mi familia.",
+          "Muchas ___es se están perdiendo.",
+          "La ___ de las doce uvas es muy española."
+        ],
+        "hardSentencesRu": [
+          "Этой традиции сотни лет.",
+          "Это традиция моей семьи.",
+          "Многие традиции теряются.",
+          "Традиция двенадцати виноградин очень испанская."
+        ]
+      },
+      {
+        "spanish": "la máquina de escribir",
+        "ru": "печатная машинка",
+        "type": "sustantivo",
+        "icon": "keyboard",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo usaba una ___.",
+          "Antes de los ordenadores, se usaba la ___.",
+          "La ___ fue un invento revolucionario.",
+          "Ya nadie usa ___s."
+        ],
+        "hardSentencesRu": [
+          "Мой дедушка пользовался печатной машинкой.",
+          "До компьютеров пользовались печатной машинкой.",
+          "Печатная машинка была революционным изобретением.",
+          "Уже никто не пользуется печатными машинками."
+        ]
+      },
+      {
+        "spanish": "la carta",
+        "ru": "письмо",
+        "type": "sustantivo",
+        "icon": "envelope",
+        "useIcon": true,
+        "hardSentences": [
+          "Antes la gente escribía ___s.",
+          "Recibí una ___ de mi amigo.",
+          "Ya nadie envía ___s, solo emails.",
+          "Mi abuela guardaba todas sus ___s."
+        ],
+        "hardSentencesRu": [
+          "Раньше люди писали письма.",
+          "Я получил письмо от друга.",
+          "Уже никто не отправляет письма, только имейлы.",
+          "Моя бабушка хранила все свои письма."
+        ]
+      },
+      {
+        "spanish": "el disco",
+        "ru": "пластинка/диск",
+        "type": "sustantivo",
+        "icon": "vinyl-record",
+        "useIcon": true,
+        "hardSentences": [
+          "Antes escuchábamos música en ___s de vinilo.",
+          "Mi padre tiene una colección de ___s.",
+          "Los ___s compactos ya casi no se usan.",
+          "Compré un ___ de mi grupo favorito."
+        ],
+        "hardSentencesRu": [
+          "Раньше мы слушали музыку на виниловых пластинках.",
+          "У моего отца коллекция пластинок.",
+          "Компакт-диски уже почти не используются.",
+          "Я купил диск моей любимой группы."
+        ]
+      },
+      {
+        "spanish": "el cassette",
+        "ru": "кассета",
+        "type": "sustantivo",
+        "icon": "cassette-tape",
+        "useIcon": true,
+        "hardSentences": [
+          "En los 80 escuchábamos música en ___s.",
+          "Todavía tengo ___s de mi juventud.",
+          "El ___ fue sustituido por el CD.",
+          "Grababa canciones de la radio en ___s."
+        ],
+        "hardSentencesRu": [
+          "В 80-е мы слушали музыку на кассетах.",
+          "У меня всё ещё есть кассеты моей молодости.",
+          "Кассету заменил CD.",
+          "Я записывал песни с радио на кассеты."
+        ]
+      }
+    ]
+  },
+  "ejercicios": [],
+  "verbos": {}
 }

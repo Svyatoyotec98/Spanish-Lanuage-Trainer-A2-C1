@@ -1463,7 +1463,373 @@
       }
     ]
   },
-  "ejercicios": [],
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Verbos de las comidas del día",
+      "hint": "desayuno / como / meriendo / ceno",
+      "rule": {
+        "title": "Verbos de las COMIDAS DEL DÍA",
+        "explanation": "En español hay verbos específicos para cada comida del día. Estos verbos describen la acción de comer en diferentes momentos: por la mañana, al mediodía, por la tarde y por la noche.",
+        "sections": [
+          {
+            "subtitle": "DESAYUNAR — завтракать (por la mañana)",
+            "points": [
+              "Por la mañana: <b>Desayuno</b> a las ocho — Я завтракаю в восемь",
+              "Antes de trabajar: <b>Desayuno</b> café con tostadas — Я завтракаю кофе с тостами",
+              "Comida ligera matutina: Siempre <b>desayuno</b> en casa — Я всегда завтракаю дома"
+            ]
+          },
+          {
+            "subtitle": "COMER / ALMORZAR — обедать (al mediodía)",
+            "points": [
+              "Al mediodía: <b>Como</b> a las dos — Я обедаю в два часа",
+              "Comida principal del día: <b>Como</b> en el trabajo — Я обедаю на работе",
+              "Entre las 13:00-15:00: Hoy <b>como</b> con mis amigos — Сегодня обедаю с друзьями"
+            ]
+          },
+          {
+            "subtitle": "MERENDAR — полдничать (por la tarde)",
+            "points": [
+              "Por la tarde (17:00-19:00): <b>Meriendo</b> galletas — Я ем на полдник печенье",
+              "Comida ligera: Los niños <b>meriendan</b> después del colegio — Дети полдничают после школы",
+              "Entre comida y cena: <b>Meriendo</b> fruta o un bocadillo — На полдник я ем фрукты или бутерброд"
+            ]
+          },
+          {
+            "subtitle": "CENAR — ужинать (por la noche)",
+            "points": [
+              "Por la noche: <b>Ceno</b> a las nueve — Я ужинаю в девять",
+              "Última comida del día: <b>Ceno</b> ligero — Я ужинаю легко",
+              "Antes de dormir: Siempre <b>ceno</b> en familia — Я всегда ужинаю с семьёй"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Por la mañana desayuno café con tostadas.", "ru": "Утром я завтракаю кофе с тостами."},
+          {"es": "A mediodía como en el trabajo.", "ru": "В полдень я обедаю на работе."},
+          {"es": "Por la tarde meriendo fruta.", "ru": "Вечером я ем фрукты на полдник."},
+          {"es": "Por la noche ceno con mi familia.", "ru": "Вечером я ужинаю с семьёй."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Por la mañana siempre ___ en casa.", "answer": "desayuno"},
+        {"sentence": "A mediodía ___ en el restaurante cerca del trabajo.", "answer": "como"},
+        {"sentence": "Por la tarde los niños ___ galletas.", "answer": "meriendan"},
+        {"sentence": "Por la noche ___ con mi familia.", "answer": "ceno"},
+        {"sentence": "Normalmente ___ café con leche por la mañana.", "answer": "desayuno"},
+        {"sentence": "¿A qué hora ___ tú al mediodía?", "answer": "comes"},
+        {"sentence": "Mi hijo ___ fruta después del colegio.", "answer": "merienda"},
+        {"sentence": "Nosotros ___ muy tarde, a las diez.", "answer": "cenamos"},
+        {"sentence": "¿Qué ___ por la mañana normalmente?", "answer": "desayunas"},
+        {"sentence": "En España se ___ entre las dos y las tres.", "answer": "come"},
+        {"sentence": "Los españoles ___ chocolate con churros.", "answer": "meriendan"},
+        {"sentence": "Mi marido y yo ___ juntos todas las noches.", "answer": "cenamos"},
+        {"sentence": "No me gusta ___ muy temprano por la mañana.", "answer": "desayunar"},
+        {"sentence": "Hoy voy a ___ con mis compañeros de trabajo.", "answer": "comer"},
+        {"sentence": "¿Quieres ___ algo? Tengo galletas.", "answer": "merendar"},
+        {"sentence": "Prefiero ___ ligero por la noche.", "answer": "cenar"},
+        {"sentence": "Nunca ___ antes de las siete de la mañana.", "answer": "desayuno"},
+        {"sentence": "¿Dónde ___ tú normalmente al mediodía?", "answer": "comes"},
+        {"sentence": "En mi país no se ___ por la tarde.", "answer": "merienda"},
+        {"sentence": "¿A qué hora ___ en tu país?", "answer": "cenan"},
+        {"sentence": "Solo ___ un café y una tostada.", "answer": "desayuno"},
+        {"sentence": "Hoy no tengo tiempo para ___ al mediodía.", "answer": "comer"},
+        {"sentence": "Los niños ___ a las cinco de la tarde.", "answer": "meriendan"},
+        {"sentence": "En España se ___ muy tarde, a las nueve o diez.", "answer": "cena"},
+        {"sentence": "Me encanta ___ tranquilamente los domingos.", "answer": "desayunar"},
+        {"sentence": "Vamos a ___ a un restaurante nuevo.", "answer": "comer"},
+        {"sentence": "¿Sueles ___ algo por la tarde?", "answer": "merendar"},
+        {"sentence": "Esta noche ___ fuera, en un restaurante italiano.", "answer": "cenamos"},
+        {"sentence": "Siempre ___ tostadas con mantequilla.", "answer": "desayuno"},
+        {"sentence": "¿Qué ___ hoy? ¿Carne o pescado?", "answer": "comemos"},
+        {"sentence": "A mi hija le gusta ___ bocadillos.", "answer": "merendar"},
+        {"sentence": "No ___ mucho por la noche porque engorda.", "answer": "ceno"},
+        {"sentence": "¿Ya has ___? — No, todavía no.", "answer": "desayunado"},
+        {"sentence": "Normalmente ___ en la cafetería de la oficina.", "answer": "como"},
+        {"sentence": "¿Los niños ya han ___?", "answer": "merendado"},
+        {"sentence": "¿Habéis ___ ya?", "answer": "cenado"},
+        {"sentence": "Mi madre siempre ___ muy temprano.", "answer": "desayuna"},
+        {"sentence": "¿Qué ___ tus padres normalmente?", "answer": "comen"},
+        {"sentence": "En verano los niños ___ helados.", "answer": "meriendan"},
+        {"sentence": "Mi abuelo ___ a las ocho de la noche.", "answer": "cena"},
+        {"sentence": "¿Puedo ___ contigo mañana?", "answer": "desayunar"},
+        {"sentence": "Voy a ___ una ensalada hoy.", "answer": "comer"},
+        {"sentence": "¿Quieren ustedes ___ algo?", "answer": "merendar"},
+        {"sentence": "¿Vas a ___ en casa o fuera?", "answer": "cenar"},
+        {"sentence": "No puedo ___ sin tomar café.", "answer": "desayunar"},
+        {"sentence": "¿Cuántas veces ___ al día?", "answer": "comes"},
+        {"sentence": "Es bueno ___ algo ligero por la tarde.", "answer": "merendar"},
+        {"sentence": "¿Te apetece ___ conmigo esta noche?", "answer": "cenar"},
+        {"sentence": "El hotel ofrece ___ incluido en el precio.", "answer": "desayuno"},
+        {"sentence": "La ___ es a las dos de la tarde.", "answer": "comida"},
+        {"sentence": "La ___ de los niños es a las cinco.", "answer": "merienda"},
+        {"sentence": "La ___ es a las nueve de la noche.", "answer": "cena"},
+        {"sentence": "Tomo el ___ a las ocho.", "answer": "desayuno"},
+        {"sentence": "¿A qué hora es la ___?", "answer": "comida"},
+        {"sentence": "Para la ___ quiero galletas.", "answer": "merienda"},
+        {"sentence": "¿Qué hay para la ___?", "answer": "cena"},
+        {"sentence": "El ___ es la comida más importante del día.", "answer": "desayuno"},
+        {"sentence": "Después de la ___ tengo que trabajar.", "answer": "comida"},
+        {"sentence": "La ___ es típica en España.", "answer": "merienda"},
+        {"sentence": "La ___ de Navidad es muy especial.", "answer": "cena"}
+      ],
+      "microTests": [
+        {"sentence": "Por la mañana siempre ___ café.", "answer": "desayuno", "hint": "¿Qué haces por la mañana? (8:00)"},
+        {"sentence": "A mediodía ___ en el restaurante.", "answer": "como", "hint": "¿Qué haces al mediodía? (14:00)"},
+        {"sentence": "Por la tarde los niños ___ galletas.", "answer": "meriendan", "hint": "¿Qué hacen por la tarde? (17:00)"},
+        {"sentence": "Por la noche ___ con mi familia.", "answer": "ceno", "hint": "¿Qué haces por la noche? (21:00)"},
+        {"sentence": "Normalmente ___ tostadas con mantequilla.", "answer": "desayuno", "hint": "Primera comida del día"},
+        {"sentence": "Hoy voy a ___ paella.", "answer": "comer", "hint": "Comida principal del día"},
+        {"sentence": "¿Quieres ___ algo? Tengo fruta.", "answer": "merendar", "hint": "Entre comida y cena"},
+        {"sentence": "Esta noche ___ pizza.", "answer": "cenamos", "hint": "Última comida del día"},
+        {"sentence": "El ___ es a las ocho de la mañana.", "answer": "desayuno", "hint": "Sustantivo: comida matutina"},
+        {"sentence": "La ___ en España es muy tarde.", "answer": "cena", "hint": "Sustantivo: comida nocturna"},
+        {"sentence": "Para la ___ quiero un bocadillo.", "answer": "merienda", "hint": "Sustantivo: comida de la tarde"},
+        {"sentence": "¿A qué hora es la ___?", "answer": "comida", "hint": "Sustantivo: comida del mediodía"}
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Impersonal con SE para recetas",
+      "hint": "se corta / se fríe / se mezcla / se echa / se bate",
+      "rule": {
+        "title": "SE IMPERSONAL para recetas",
+        "explanation": "En español, las recetas usan la construcción impersonal con SE para dar instrucciones generales. Esta forma no especifica quién hace la acción, es como decir 'uno hace' o usar la voz pasiva.",
+        "sections": [
+          {
+            "subtitle": "Estructura: SE + verbo en 3ª persona",
+            "points": [
+              "Singular si el objeto es singular: <b>Se corta</b> la cebolla — Режут лук",
+              "Plural si el objeto es plural: <b>Se cortan</b> las patatas — Режут картофель",
+              "El verbo concuerda con el objeto, no con la persona"
+            ]
+          },
+          {
+            "subtitle": "Verbos comunes en recetas",
+            "points": [
+              "<b>Se corta(n)</b> — режут: Se cortan las verduras",
+              "<b>Se fríe(n)</b> — жарят: Se fríen las patatas",
+              "<b>Se mezcla(n)</b> — смешивают: Se mezclan los ingredientes",
+              "<b>Se echa(n)</b> — добавляют: Se echa sal al gusto",
+              "<b>Se bate(n)</b> — взбивают: Se baten los huevos"
+            ]
+          },
+          {
+            "subtitle": "Otros verbos de cocina con SE",
+            "points": [
+              "<b>Se pela(n)</b> — чистят: Se pelan las patatas",
+              "<b>Se cuece(n)</b> — варят: Se cuece la pasta",
+              "<b>Se asa(n)</b> — запекают: Se asa el pollo",
+              "<b>Se calienta</b> — нагревают: Se calienta el aceite"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Primero se cortan las patatas y las cebollas.", "ru": "Сначала режут картофель и лук."},
+          {"es": "Se fríen en una sartén con aceite.", "ru": "Их жарят на сковороде с маслом."},
+          {"es": "Se baten los huevos y se mezclan con las patatas.", "ru": "Яйца взбивают и смешивают с картофелем."},
+          {"es": "Se echa la mezcla en la sartén.", "ru": "Смесь выливают на сковороду."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Primero ___ las patatas en trozos pequeños.", "answer": "se cortan"},
+        {"sentence": "___ la cebolla muy fina.", "answer": "Se corta"},
+        {"sentence": "Las patatas ___ en aceite caliente.", "answer": "se fríen"},
+        {"sentence": "El huevo ___ a fuego medio.", "answer": "se fríe"},
+        {"sentence": "___ todos los ingredientes en un bol.", "answer": "Se mezclan"},
+        {"sentence": "La harina ___ con los huevos.", "answer": "se mezcla"},
+        {"sentence": "___ sal y pimienta al gusto.", "answer": "Se echa"},
+        {"sentence": "Los huevos ___ bien antes de añadirlos.", "answer": "se baten"},
+        {"sentence": "___ las verduras antes de cocinarlas.", "answer": "Se pelan"},
+        {"sentence": "La pasta ___ durante 10 minutos.", "answer": "se cuece"},
+        {"sentence": "El pollo ___ en el horno a 180 grados.", "answer": "se asa"},
+        {"sentence": "___ el aceite en la sartén.", "answer": "Se calienta"},
+        {"sentence": "Las zanahorias ___ en rodajas.", "answer": "se cortan"},
+        {"sentence": "___ el ajo en láminas finas.", "answer": "Se corta"},
+        {"sentence": "Los champiñones ___ con mantequilla.", "answer": "se fríen"},
+        {"sentence": "El pescado ___ a la plancha.", "answer": "se fríe"},
+        {"sentence": "___ la salsa con la pasta.", "answer": "Se mezcla"},
+        {"sentence": "Los ingredientes ___ bien.", "answer": "se mezclan"},
+        {"sentence": "___ un poco de agua si está muy espeso.", "answer": "Se echa"},
+        {"sentence": "Las claras ___ a punto de nieve.", "answer": "se baten"},
+        {"sentence": "___ las manzanas para hacer tarta.", "answer": "Se pelan"},
+        {"sentence": "Las verduras ___ al vapor.", "answer": "se cuecen"},
+        {"sentence": "La carne ___ a la parrilla.", "answer": "se asa"},
+        {"sentence": "___ el horno a 200 grados.", "answer": "Se calienta"},
+        {"sentence": "Primero ___ las cebollas muy pequeñas.", "answer": "se cortan"},
+        {"sentence": "___ el tomate en cubos.", "answer": "Se corta"},
+        {"sentence": "Las gambas ___ con ajo.", "answer": "se fríen"},
+        {"sentence": "El bacon ___ hasta que esté crujiente.", "answer": "se fríe"},
+        {"sentence": "___ el arroz con las verduras.", "answer": "Se mezcla"},
+        {"sentence": "Los colores ___ para obtener nuevos tonos.", "answer": "se mezclan"},
+        {"sentence": "___ el vino a la salsa.", "answer": "Se echa"},
+        {"sentence": "Los huevos ___ con un tenedor.", "answer": "se baten"},
+        {"sentence": "___ las naranjas para hacer zumo.", "answer": "Se pelan"},
+        {"sentence": "Los huevos ___ durante 10 minutos.", "answer": "se cuecen"},
+        {"sentence": "Las verduras ___ en el horno.", "answer": "se asan"},
+        {"sentence": "___ la leche antes de añadir el cacao.", "answer": "Se calienta"},
+        {"sentence": "___ el pimiento en tiras.", "answer": "Se corta"},
+        {"sentence": "Las berenjenas ___ en rodajas.", "answer": "se cortan"},
+        {"sentence": "El filete ___ en la sartén.", "answer": "se fríe"},
+        {"sentence": "Las croquetas ___ en aceite abundante.", "answer": "se fríen"},
+        {"sentence": "___ bien la masa.", "answer": "Se mezcla"},
+        {"sentence": "Todos los ingredientes ___ en la batidora.", "answer": "se mezclan"},
+        {"sentence": "___ aceite de oliva.", "answer": "Se echa"},
+        {"sentence": "La nata ___ hasta que esté espesa.", "answer": "se bate"},
+        {"sentence": "___ los plátanos para el batido.", "answer": "Se pelan"},
+        {"sentence": "La carne ___ durante una hora.", "answer": "se cuece"},
+        {"sentence": "Las patatas ___ con romero.", "answer": "se asan"},
+        {"sentence": "___ la sartén antes de echar los huevos.", "answer": "Se calienta"},
+        {"sentence": "___ el pepino en rodajas finas.", "answer": "Se corta"},
+        {"sentence": "Los tomates ___ en cuartos.", "answer": "se cortan"},
+        {"sentence": "El chorizo ___ con la cebolla.", "answer": "se fríe"},
+        {"sentence": "Los calamares ___ en aceite muy caliente.", "answer": "se fríen"},
+        {"sentence": "___ la mayonesa con el atún.", "answer": "Se mezcla"},
+        {"sentence": "Las especias ___ con la carne.", "answer": "se mezclan"},
+        {"sentence": "___ azúcar al café.", "answer": "Se echa"},
+        {"sentence": "Los ingredientes ___ hasta obtener una crema.", "answer": "se baten"},
+        {"sentence": "___ las patatas antes de freírlas.", "answer": "Se pelan"},
+        {"sentence": "Las legumbres ___ durante varias horas.", "answer": "se cuecen"},
+        {"sentence": "Los pimientos ___ en el horno.", "answer": "se asan"},
+        {"sentence": "___ la comida en el microondas.", "answer": "Se calienta"}
+      ],
+      "microTests": [
+        {"sentence": "Primero ___ las patatas en trozos.", "answer": "se cortan", "hint": "Verbo CORTAR + objeto plural"},
+        {"sentence": "___ la cebolla muy fina.", "answer": "Se corta", "hint": "Verbo CORTAR + objeto singular"},
+        {"sentence": "Las patatas ___ en aceite.", "answer": "se fríen", "hint": "Verbo FREÍR + objeto plural"},
+        {"sentence": "El huevo ___ a fuego medio.", "answer": "se fríe", "hint": "Verbo FREÍR + objeto singular"},
+        {"sentence": "___ todos los ingredientes.", "answer": "Se mezclan", "hint": "Verbo MEZCLAR + objeto plural"},
+        {"sentence": "___ sal al gusto.", "answer": "Se echa", "hint": "Verbo ECHAR (añadir)"},
+        {"sentence": "Los huevos ___ bien.", "answer": "se baten", "hint": "Verbo BATIR + objeto plural"},
+        {"sentence": "___ las verduras antes de cocinar.", "answer": "Se pelan", "hint": "Verbo PELAR + objeto plural"},
+        {"sentence": "La pasta ___ 10 minutos.", "answer": "se cuece", "hint": "Verbo COCER + objeto singular"},
+        {"sentence": "El pollo ___ en el horno.", "answer": "se asa", "hint": "Verbo ASAR + objeto singular"},
+        {"sentence": "___ el aceite en la sartén.", "answer": "Se calienta", "hint": "Verbo CALENTAR + objeto singular"},
+        {"sentence": "Las verduras ___ al vapor.", "answer": "se cuecen", "hint": "Verbo COCER + objeto plural"}
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Pronombres de objeto directo",
+      "hint": "lo / la / los / las",
+      "rule": {
+        "title": "Pronombres de OBJETO DIRECTO: lo, la, los, las",
+        "explanation": "Los pronombres de objeto directo reemplazan al sustantivo que recibe la acción del verbo directamente. Concuerdan en género y número con el sustantivo que sustituyen.",
+        "sections": [
+          {
+            "subtitle": "Formas según género y número",
+            "points": [
+              "<b>LO</b> — masculino singular: el café → <b>lo</b> preparo",
+              "<b>LA</b> — femenino singular: la sopa → <b>la</b> preparo",
+              "<b>LOS</b> — masculino plural: los huevos → <b>los</b> preparo",
+              "<b>LAS</b> — femenino plural: las patatas → <b>las</b> preparo"
+            ]
+          },
+          {
+            "subtitle": "Posición del pronombre",
+            "points": [
+              "ANTES del verbo conjugado: <b>Lo</b> compro en el supermercado",
+              "DESPUÉS del infinitivo (unido): Voy a comprar<b>lo</b>",
+              "DESPUÉS del gerundio (unido): Estoy preparándo<b>la</b>",
+              "DESPUÉS del imperativo afirmativo: ¡Cómpra<b>lo</b>!"
+            ]
+          },
+          {
+            "subtitle": "Ejemplos con alimentos",
+            "points": [
+              "El pan → <b>Lo</b> compro fresco cada día",
+              "La leche → <b>La</b> guardo en la nevera",
+              "Los tomates → <b>Los</b> lavo antes de comer",
+              "Las fresas → <b>Las</b> pongo en el frigorífico"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "El café, lo preparo con leche.", "ru": "Кофе я готовлю с молоком."},
+          {"es": "La sopa, la cocino con verduras.", "ru": "Суп я готовлю с овощами."},
+          {"es": "Los huevos, los compro frescos.", "ru": "Яйца я покупаю свежие."},
+          {"es": "Las patatas, las pelo antes de freír.", "ru": "Картофель я чищу перед жаркой."}
+        ]
+      },
+      "questions": [
+        {"sentence": "El café, ___ preparo con leche.", "answer": "lo"},
+        {"sentence": "La sopa, ___ cocino con verduras frescas.", "answer": "la"},
+        {"sentence": "Los huevos, ___ compro en el mercado.", "answer": "los"},
+        {"sentence": "Las patatas, ___ pelo antes de freír.", "answer": "las"},
+        {"sentence": "El pan, ___ compro cada mañana.", "answer": "lo"},
+        {"sentence": "La leche, ___ guardo en la nevera.", "answer": "la"},
+        {"sentence": "Los tomates, ___ lavo bien antes de comer.", "answer": "los"},
+        {"sentence": "Las fresas, ___ pongo en el frigorífico.", "answer": "las"},
+        {"sentence": "El arroz, ___ cocino con caldo de pollo.", "answer": "lo"},
+        {"sentence": "La carne, ___ compro en la carnicería.", "answer": "la"},
+        {"sentence": "Los champiñones, ___ preparo con ajo.", "answer": "los"},
+        {"sentence": "Las verduras, ___ lavo muy bien.", "answer": "las"},
+        {"sentence": "El pescado, ___ compro fresco.", "answer": "lo"},
+        {"sentence": "La ensalada, ___ aliño con aceite y vinagre.", "answer": "la"},
+        {"sentence": "Los plátanos, ___ como maduros.", "answer": "los"},
+        {"sentence": "Las naranjas, ___ exprimo para hacer zumo.", "answer": "las"},
+        {"sentence": "El queso, ___ guardo en la nevera.", "answer": "lo"},
+        {"sentence": "La mantequilla, ___ uso para cocinar.", "answer": "la"},
+        {"sentence": "Los limones, ___ uso para hacer limonada.", "answer": "los"},
+        {"sentence": "Las cerezas, ___ compro en verano.", "answer": "las"},
+        {"sentence": "El vino, ___ abro media hora antes.", "answer": "lo"},
+        {"sentence": "La paella, ___ cocino los domingos.", "answer": "la"},
+        {"sentence": "Los calamares, ___ fríen en aceite muy caliente.", "answer": "los"},
+        {"sentence": "Las aceitunas, ___ sirvo como aperitivo.", "answer": "las"},
+        {"sentence": "El jamón, ___ corto muy fino.", "answer": "lo"},
+        {"sentence": "La tortilla, ___ hago con patatas y cebolla.", "answer": "la"},
+        {"sentence": "Los espárragos, ___ cocino al vapor.", "answer": "los"},
+        {"sentence": "Las gambas, ___ pelo antes de comer.", "answer": "las"},
+        {"sentence": "El chocolate, ___ guardo en un lugar fresco.", "answer": "lo"},
+        {"sentence": "La nata, ___ monto para el postre.", "answer": "la"},
+        {"sentence": "Los mejillones, ___ cocino con vino blanco.", "answer": "los"},
+        {"sentence": "Las almendras, ___ tuesto en el horno.", "answer": "las"},
+        {"sentence": "El yogur, ___ tomo por la mañana.", "answer": "lo"},
+        {"sentence": "La mermelada, ___ unto en el pan.", "answer": "la"},
+        {"sentence": "Los guisantes, ___ añado a la ensalada.", "answer": "los"},
+        {"sentence": "Las lentejas, ___ cocino con verduras.", "answer": "las"},
+        {"sentence": "El azúcar, ___ echo en el café.", "answer": "lo"},
+        {"sentence": "La sal, ___ añado al final.", "answer": "la"},
+        {"sentence": "Los garbanzos, ___ pongo en remojo.", "answer": "los"},
+        {"sentence": "Las judías, ___ cocino con jamón.", "answer": "las"},
+        {"sentence": "El pollo, ___ aso en el horno.", "answer": "lo"},
+        {"sentence": "La ternera, ___ compro en la carnicería.", "answer": "la"},
+        {"sentence": "Los filetes, ___ hago a la plancha.", "answer": "los"},
+        {"sentence": "Las chuletas, ___ cocino con patatas.", "answer": "las"},
+        {"sentence": "El atún, ___ como en lata o fresco.", "answer": "lo"},
+        {"sentence": "La merluza, ___ cocino al horno.", "answer": "la"},
+        {"sentence": "Los boquerones, ___ fríen en aceite.", "answer": "los"},
+        {"sentence": "Las sardinas, ___ hago a la plancha.", "answer": "las"},
+        {"sentence": "El helado, ___ guardo en el congelador.", "answer": "lo"},
+        {"sentence": "La tarta, ___ preparo para los cumpleaños.", "answer": "la"},
+        {"sentence": "Los pasteles, ___ compro en la pastelería.", "answer": "los"},
+        {"sentence": "Las galletas, ___ guardo en una caja.", "answer": "las"},
+        {"sentence": "El bizcocho, ___ hago con chocolate.", "answer": "lo"},
+        {"sentence": "La fruta, ___ lavo antes de comer.", "answer": "la"},
+        {"sentence": "Los bocadillos, ___ preparo para el viaje.", "answer": "los"},
+        {"sentence": "Las tapas, ___ sirvo antes de cenar.", "answer": "las"},
+        {"sentence": "El gazpacho, ___ preparo en verano.", "answer": "lo"},
+        {"sentence": "La sangría, ___ hago con frutas.", "answer": "la"},
+        {"sentence": "Los churros, ___ mojo en chocolate.", "answer": "los"},
+        {"sentence": "Las croquetas, ___ fríen en aceite abundante.", "answer": "las"}
+      ],
+      "microTests": [
+        {"sentence": "El café, ___ preparo con leche.", "answer": "lo", "hint": "Masculino singular (el café)"},
+        {"sentence": "La sopa, ___ cocino con verduras.", "answer": "la", "hint": "Femenino singular (la sopa)"},
+        {"sentence": "Los huevos, ___ compro frescos.", "answer": "los", "hint": "Masculino plural (los huevos)"},
+        {"sentence": "Las patatas, ___ pelo antes de freír.", "answer": "las", "hint": "Femenino plural (las patatas)"},
+        {"sentence": "El pan, ___ compro cada día.", "answer": "lo", "hint": "Masculino singular (el pan)"},
+        {"sentence": "La leche, ___ guardo en la nevera.", "answer": "la", "hint": "Femenino singular (la leche)"},
+        {"sentence": "Los tomates, ___ lavo bien.", "answer": "los", "hint": "Masculino plural (los tomates)"},
+        {"sentence": "Las fresas, ___ guardo en la nevera.", "answer": "las", "hint": "Femenino plural (las fresas)"},
+        {"sentence": "El arroz, ___ cocino con pollo.", "answer": "lo", "hint": "Masculino singular (el arroz)"},
+        {"sentence": "La carne, ___ compro fresca.", "answer": "la", "hint": "Femenino singular (la carne)"},
+        {"sentence": "Los plátanos, ___ como maduros.", "answer": "los", "hint": "Masculino plural (los plátanos)"},
+        {"sentence": "Las naranjas, ___ exprimo para zumo.", "answer": "las", "hint": "Femenino plural (las naranjas)"}
+      ]
+    }
+  ],
   "verbos": {
     "tiempos": [
       {

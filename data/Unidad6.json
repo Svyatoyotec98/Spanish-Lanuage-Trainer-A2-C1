@@ -1249,7 +1249,152 @@
             }
           }
         ],
-        "irregulares": [],
+        "irregulares": [
+          {
+            "infinitivo": "hacer",
+            "traduccion": "делать",
+            "formas": {
+              "yo": "he hecho",
+              "tu": "has hecho",
+              "el": "ha hecho",
+              "nosotros": "hemos hecho",
+              "vosotros": "habéis hecho",
+              "ellos": "han hecho"
+            }
+          },
+          {
+            "infinitivo": "ver",
+            "traduccion": "видеть",
+            "formas": {
+              "yo": "he visto",
+              "tu": "has visto",
+              "el": "ha visto",
+              "nosotros": "hemos visto",
+              "vosotros": "habéis visto",
+              "ellos": "han visto"
+            }
+          },
+          {
+            "infinitivo": "escribir",
+            "traduccion": "писать",
+            "formas": {
+              "yo": "he escrito",
+              "tu": "has escrito",
+              "el": "ha escrito",
+              "nosotros": "hemos escrito",
+              "vosotros": "habéis escrito",
+              "ellos": "han escrito"
+            }
+          },
+          {
+            "infinitivo": "abrir",
+            "traduccion": "открывать",
+            "formas": {
+              "yo": "he abierto",
+              "tu": "has abierto",
+              "el": "ha abierto",
+              "nosotros": "hemos abierto",
+              "vosotros": "habéis abierto",
+              "ellos": "han abierto"
+            }
+          },
+          {
+            "infinitivo": "volver",
+            "traduccion": "возвращаться",
+            "formas": {
+              "yo": "he vuelto",
+              "tu": "has vuelto",
+              "el": "ha vuelto",
+              "nosotros": "hemos vuelto",
+              "vosotros": "habéis vuelto",
+              "ellos": "han vuelto"
+            }
+          },
+          {
+            "infinitivo": "poner",
+            "traduccion": "класть, ставить",
+            "formas": {
+              "yo": "he puesto",
+              "tu": "has puesto",
+              "el": "ha puesto",
+              "nosotros": "hemos puesto",
+              "vosotros": "habéis puesto",
+              "ellos": "han puesto"
+            }
+          },
+          {
+            "infinitivo": "decir",
+            "traduccion": "говорить, сказать",
+            "formas": {
+              "yo": "he dicho",
+              "tu": "has dicho",
+              "el": "ha dicho",
+              "nosotros": "hemos dicho",
+              "vosotros": "habéis dicho",
+              "ellos": "han dicho"
+            }
+          },
+          {
+            "infinitivo": "romper",
+            "traduccion": "ломать",
+            "formas": {
+              "yo": "he roto",
+              "tu": "has roto",
+              "el": "ha roto",
+              "nosotros": "hemos roto",
+              "vosotros": "habéis roto",
+              "ellos": "han roto"
+            }
+          },
+          {
+            "infinitivo": "morir",
+            "traduccion": "умирать",
+            "formas": {
+              "yo": "he muerto",
+              "tu": "has muerto",
+              "el": "ha muerto",
+              "nosotros": "hemos muerto",
+              "vosotros": "habéis muerto",
+              "ellos": "han muerto"
+            }
+          },
+          {
+            "infinitivo": "descubrir",
+            "traduccion": "открывать, обнаруживать",
+            "formas": {
+              "yo": "he descubierto",
+              "tu": "has descubierto",
+              "el": "ha descubierto",
+              "nosotros": "hemos descubierto",
+              "vosotros": "habéis descubierto",
+              "ellos": "han descubierto"
+            }
+          },
+          {
+            "infinitivo": "devolver",
+            "traduccion": "возвращать",
+            "formas": {
+              "yo": "he devuelto",
+              "tu": "has devuelto",
+              "el": "ha devuelto",
+              "nosotros": "hemos devuelto",
+              "vosotros": "habéis devuelto",
+              "ellos": "han devuelto"
+            }
+          },
+          {
+            "infinitivo": "resolver",
+            "traduccion": "решать",
+            "formas": {
+              "yo": "he resuelto",
+              "tu": "has resuelto",
+              "el": "ha resuelto",
+              "nosotros": "hemos resuelto",
+              "vosotros": "habéis resuelto",
+              "ellos": "han resuelto"
+            }
+          }
+        ],
         "otras": []
       }
     ]

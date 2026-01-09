@@ -1229,7 +1229,86 @@
             }
           }
         ],
-        "otras": []
+        "otras": [
+          {
+            "id": "reflexivos",
+            "nombre": "Verbos reflexivos",
+            "verbos": [
+              {
+                "infinitivo": "parecerse",
+                "traduccion": "быть похожим на",
+                "formas": {
+                  "yo": "me parezco",
+                  "tu": "te pareces",
+                  "el": "se parece",
+                  "nosotros": "nos parecemos",
+                  "vosotros": "os parecéis",
+                  "ellos": "se parecen"
+                }
+              },
+              {
+                "infinitivo": "vestirse",
+                "traduccion": "одеваться",
+                "formas": {
+                  "yo": "me visto",
+                  "tu": "te vistes",
+                  "el": "se viste",
+                  "nosotros": "nos vestimos",
+                  "vosotros": "os vestís",
+                  "ellos": "se visten"
+                }
+              },
+              {
+                "infinitivo": "llevarse",
+                "traduccion": "ладить, уносить",
+                "formas": {
+                  "yo": "me llevo",
+                  "tu": "te llevas",
+                  "el": "se lleva",
+                  "nosotros": "nos llevamos",
+                  "vosotros": "os lleváis",
+                  "ellos": "se llevan"
+                }
+              },
+              {
+                "infinitivo": "ponerse",
+                "traduccion": "надевать, становиться",
+                "formas": {
+                  "yo": "me pongo",
+                  "tu": "te pones",
+                  "el": "se pone",
+                  "nosotros": "nos ponemos",
+                  "vosotros": "os ponéis",
+                  "ellos": "se ponen"
+                }
+              },
+              {
+                "infinitivo": "quedarse",
+                "traduccion": "оставаться",
+                "formas": {
+                  "yo": "me quedo",
+                  "tu": "te quedas",
+                  "el": "se queda",
+                  "nosotros": "nos quedamos",
+                  "vosotros": "os quedáis",
+                  "ellos": "se quedan"
+                }
+              },
+              {
+                "infinitivo": "sentirse",
+                "traduccion": "чувствовать себя",
+                "formas": {
+                  "yo": "me siento",
+                  "tu": "te sientes",
+                  "el": "se siente",
+                  "nosotros": "nos sentimos",
+                  "vosotros": "os sentís",
+                  "ellos": "se sienten"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   }

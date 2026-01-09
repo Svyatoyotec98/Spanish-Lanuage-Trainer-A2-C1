@@ -1272,6 +1272,72 @@
         {"sentence": "¿A quién ___ (parecerse) tu hijo?", "answer": "se parece"},
         {"sentence": "Me ___ (parecer) que tienes razón.", "answer": "parece"}
       ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Demostrativos: este, ese, aquel",
+      "hint": "este = aquí (cerca) | ese = ahí (medio) | aquel = allí (lejos)",
+      "rule": {
+        "title": "DEMOSTRATIVOS",
+        "explanation": "Los demostrativos indican la distancia entre el hablante y lo que señala:",
+        "sections": [
+          {
+            "subtitle": "ESTE/ESTA/ESTOS/ESTAS - cerca del hablante (aquí)",
+            "points": [
+              "<b>Este</b> chico (este hombre aquí)",
+              "<b>Esta</b> chica (esta mujer aquí)",
+              "<b>Estos</b> libros (estos libros aquí)",
+              "<b>Estas</b> gafas (estas gafas aquí)"
+            ]
+          },
+          {
+            "subtitle": "ESE/ESA/ESOS/ESAS - distancia media (ahí)",
+            "points": [
+              "<b>Ese</b> chico (ese hombre ahí)",
+              "<b>Esa</b> chica (esa mujer ahí)",
+              "<b>Esos</b> libros (esos libros ahí)",
+              "<b>Esas</b> gafas (esas gafas ahí)"
+            ]
+          },
+          {
+            "subtitle": "AQUEL/AQUELLA/AQUELLOS/AQUELLAS - lejos (allí)",
+            "points": [
+              "<b>Aquel</b> chico (aquel hombre allí)",
+              "<b>Aquella</b> chica (aquella mujer allí)",
+              "<b>Aquellos</b> libros (aquellos libros allí)",
+              "<b>Aquellas</b> gafas (aquellas gafas allí)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Este es mi hermano.", "ru": "Это мой брат (рядом)."},
+          {"es": "¿Quién es ese chico?", "ru": "Кто тот парень (недалеко)?"},
+          {"es": "Aquel edificio es muy alto.", "ru": "То здание (далеко) очень высокое."},
+          {"es": "¿Ves aquellas montañas?", "ru": "Видишь те горы (далеко)?"}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ (este) vestido que llevas es precioso.", "answer": "Este"},
+        {"sentence": "¿Quién es ___ (ese) chico de ahí?", "answer": "ese"},
+        {"sentence": "___ (aquel) edificio de allí es el museo.", "answer": "Aquel"},
+        {"sentence": "Me gustan ___ (este) zapatos.", "answer": "estos"},
+        {"sentence": "¿Ves ___ (aquel) montañas?", "answer": "aquellas"},
+        {"sentence": "___ (ese) señora de ahí es mi profesora.", "answer": "Esa"},
+        {"sentence": "___ (este) es mi amigo Juan.", "answer": "Este"},
+        {"sentence": "¿Quiénes son ___ (aquel) chicos de allí?", "answer": "aquellos"},
+        {"sentence": "Dame ___ (ese) libro que tienes ahí.", "answer": "ese"},
+        {"sentence": "___ (este) camisetas son muy baratas.", "answer": "Estas"},
+        {"sentence": "Mira ___ (aquel) nubes. Va a llover.", "answer": "aquellas"},
+        {"sentence": "___ (ese) ideas me parecen buenas.", "answer": "Esas"},
+        {"sentence": "¿Es ___ (este) tu coche?", "answer": "este"},
+        {"sentence": "___ (aquel) señor mayor es mi abuelo.", "answer": "Aquel"},
+        {"sentence": "¿Quién es ___ (ese) mujer?", "answer": "esa"},
+        {"sentence": "___ (este) niños son mis sobrinos.", "answer": "Estos"},
+        {"sentence": "¿Ves ___ (aquel) casa blanca? Allí vivo yo.", "answer": "aquella"},
+        {"sentence": "¿De quién son ___ (ese) gafas de ahí?", "answer": "esas"},
+        {"sentence": "___ (este) foto es de mi boda.", "answer": "Esta"},
+        {"sentence": "___ (aquel) tiempos eran mejores.", "answer": "Aquellos"}
+      ]
     }
   ],
   "verbos": {

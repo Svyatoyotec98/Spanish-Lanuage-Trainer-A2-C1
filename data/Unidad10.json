@@ -1294,5 +1294,373 @@
       }
     ]
   },
-  "ejercicios": []
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Pretérito Indefinido: verbos con raíz irregular",
+      "hint": "tuve / estuve / hice / pude / puse / supe / quise / vine / dije / traje",
+      "rule": {
+        "title": "Pretérito Indefinido: verbos con RAÍZ IRREGULAR",
+        "explanation": "Некоторые глаголы в Pretérito Indefinido имеют нерегулярную основу. Важно: у всех этих глаголов одинаковые окончания, и ударение падает на основу (не на окончание) в 1-м и 3-м лице единственного числа.",
+        "sections": [
+          {
+            "subtitle": "Глаголы с основой на -UV-",
+            "points": [
+              "<b>estar</b> → estuv-: <i>estuve, estuviste, estuvo, estuvimos, estuvisteis, estuvieron</i>",
+              "<b>tener</b> → tuv-: <i>tuve, tuviste, tuvo, tuvimos, tuvisteis, tuvieron</i>",
+              "<b>andar</b> → anduv-: <i>anduve, anduviste, anduvo...</i>"
+            ]
+          },
+          {
+            "subtitle": "Глаголы с основой на -U-",
+            "points": [
+              "<b>poder</b> → pud-: <i>pude, pudiste, pudo, pudimos, pudisteis, pudieron</i>",
+              "<b>poner</b> → pus-: <i>puse, pusiste, puso, pusimos, pusisteis, pusieron</i>",
+              "<b>saber</b> → sup-: <i>supe, supiste, supo, supimos, supisteis, supieron</i>"
+            ]
+          },
+          {
+            "subtitle": "Глаголы с основой на -I-",
+            "points": [
+              "<b>querer</b> → quis-: <i>quise, quisiste, quiso, quisimos, quisisteis, quisieron</i>",
+              "<b>venir</b> → vin-: <i>vine, viniste, vino, vinimos, vinisteis, vinieron</i>",
+              "<b>hacer</b> → hic-/hiz-: <i>hice, hiciste, hizo, hicimos, hicisteis, hicieron</i>"
+            ]
+          },
+          {
+            "subtitle": "Глаголы с основой на -J-",
+            "points": [
+              "<b>decir</b> → dij-: <i>dije, dijiste, dijo, dijimos, dijisteis, dijeron</i>",
+              "<b>traer</b> → traj-: <i>traje, trajiste, trajo, trajimos, trajisteis, trajeron</i>",
+              "<b>conducir</b> → conduj-: <i>conduje, condujiste, condujo...</i> (без i в 3 л. мн.ч.)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Ayer estuve en casa de mis padres.", "ru": "Вчера я был у родителей дома."},
+          {"es": "No pude dormir porque hacía mucho calor.", "ru": "Я не смог заснуть, потому что было очень жарко."},
+          {"es": "¿Qué hiciste el fin de semana?", "ru": "Что ты делал на выходных?"},
+          {"es": "Le dije la verdad a mi madre.", "ru": "Я сказал маме правду."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Ayer ___ en casa todo el día. (estar, yo)", "answer": "estuve"},
+        {"sentence": "¿Dónde ___ las llaves? (poner, tú)", "answer": "pusiste"},
+        {"sentence": "No ___ terminar el trabajo a tiempo. (poder, yo)", "answer": "pude"},
+        {"sentence": "María ___ la verdad sobre el accidente. (saber, ella)", "answer": "supo"},
+        {"sentence": "¿Qué le ___ a tu jefe? (decir, tú)", "answer": "dijiste"},
+        {"sentence": "Los niños ___ mucha hambre después del partido. (tener, ellos)", "answer": "tuvieron"},
+        {"sentence": "Mi hermano ___ a visitarme la semana pasada. (venir, él)", "answer": "vino"},
+        {"sentence": "___ que irme temprano de la fiesta. (tener, yo)", "answer": "Tuve"},
+        {"sentence": "¿___ hablar con el director? (poder, vosotros)", "answer": "Pudisteis"},
+        {"sentence": "Ella ___ un pastel delicioso para la fiesta. (hacer, ella)", "answer": "hizo"},
+        {"sentence": "Nosotros ___ en el hotel tres noches. (estar, nosotros)", "answer": "estuvimos"},
+        {"sentence": "¿Por qué no me ___ nada? (decir, tú)", "answer": "dijiste"},
+        {"sentence": "Ellos ___ los regalos de Navidad. (traer, ellos)", "answer": "trajeron"},
+        {"sentence": "No ___ encontrar la dirección. (poder, nosotros)", "answer": "pudimos"},
+        {"sentence": "___ que esperar dos horas en el aeropuerto. (tener, nosotros)", "answer": "Tuvimos"},
+        {"sentence": "Mi madre ___ una tarta para mi cumpleaños. (hacer, ella)", "answer": "hizo"},
+        {"sentence": "¿Cuándo ___ la noticia? (saber, vosotros)", "answer": "supisteis"},
+        {"sentence": "Yo no ___ ir a la reunión. (querer, yo)", "answer": "quise"},
+        {"sentence": "¿De dónde ___ tan tarde? (venir, tú)", "answer": "viniste"},
+        {"sentence": "El profesor ___ los exámenes en la mesa. (poner, él)", "answer": "puso"},
+        {"sentence": "Ayer ___ mucho frío en la montaña. (hacer, impersonal)", "answer": "hizo"},
+        {"sentence": "¿___ toda la verdad? (decir, ellos)", "answer": "Dijeron"},
+        {"sentence": "No ___ dónde estaba el restaurante. (saber, yo)", "answer": "supe"},
+        {"sentence": "Mis padres ___ de vacaciones a Italia. (estar, ellos)", "answer": "estuvieron"},
+        {"sentence": "¿Quién ___ esta carta? (traer, él)", "answer": "trajo"},
+        {"sentence": "Nosotros ___ mucha suerte en el examen. (tener, nosotros)", "answer": "tuvimos"},
+        {"sentence": "Ella ___ quedarse más tiempo. (querer, ella)", "answer": "quiso"},
+        {"sentence": "Los invitados ___ a las ocho en punto. (venir, ellos)", "answer": "vinieron"},
+        {"sentence": "¿___ terminar el proyecto? (poder, tú)", "answer": "Pudiste"},
+        {"sentence": "Yo ___ todo lo posible para ayudarle. (hacer, yo)", "answer": "hice"},
+        {"sentence": "¿Dónde ___ mis gafas? (poner, yo)", "answer": "puse"},
+        {"sentence": "El médico le ___ que tenía que descansar. (decir, él)", "answer": "dijo"},
+        {"sentence": "Nosotros no ___ nada del problema. (saber, nosotros)", "answer": "supimos"},
+        {"sentence": "___ muy nerviosos antes del examen. (estar, nosotros)", "answer": "Estuvimos"},
+        {"sentence": "¿___ comprar las entradas? (poder, vosotros)", "answer": "Pudisteis"},
+        {"sentence": "Ella ___ un gran esfuerzo. (hacer, ella)", "answer": "hizo"},
+        {"sentence": "Los abuelos ___ muchos regalos. (traer, ellos)", "answer": "trajeron"},
+        {"sentence": "Mi hermana ___ que estudiar toda la noche. (tener, ella)", "answer": "tuvo"},
+        {"sentence": "¿Por qué no ___ a la fiesta? (venir, tú)", "answer": "viniste"},
+        {"sentence": "Yo ___ el libro en la estantería. (poner, yo)", "answer": "puse"},
+        {"sentence": "¿Qué ___ el profesor sobre el examen? (decir, él)", "answer": "dijo"},
+        {"sentence": "Nosotros ___ muy contentos con los resultados. (estar, nosotros)", "answer": "estuvimos"},
+        {"sentence": "Ella no ___ ir al concierto. (poder, ella)", "answer": "pudo"},
+        {"sentence": "¿___ lo que pasó ayer? (saber, tú)", "answer": "Supiste"},
+        {"sentence": "Los niños ___ muchas preguntas. (hacer, ellos)", "answer": "hicieron"},
+        {"sentence": "Mi amigo ___ un mensaje muy largo. (traer, él)", "answer": "trajo"},
+        {"sentence": "Yo ___ mucha paciencia con él. (tener, yo)", "answer": "tuve"},
+        {"sentence": "¿De dónde ___ esas flores? (traer, tú)", "answer": "trajiste"},
+        {"sentence": "Nosotros ___ venir en taxi. (tener, nosotros)", "answer": "tuvimos"},
+        {"sentence": "Ella ___ ayudarme con la mudanza. (querer, ella)", "answer": "quiso"},
+        {"sentence": "Los estudiantes ___ a clase muy temprano. (venir, ellos)", "answer": "vinieron"},
+        {"sentence": "¿___ encontrar tu pasaporte? (poder, tú)", "answer": "Pudiste"},
+        {"sentence": "Yo ___ una promesa importante. (hacer, yo)", "answer": "hice"},
+        {"sentence": "¿Dónde ___ el coche? (poner, vosotros)", "answer": "pusisteis"},
+        {"sentence": "Ella me ___ que vendría a las cinco. (decir, ella)", "answer": "dijo"},
+        {"sentence": "Nosotros no ___ nada de su enfermedad. (saber, nosotros)", "answer": "supimos"},
+        {"sentence": "Mis amigos ___ de viaje todo el verano. (estar, ellos)", "answer": "estuvieron"},
+        {"sentence": "Yo no ___ hacer nada para evitarlo. (poder, yo)", "answer": "pude"},
+        {"sentence": "Ellos ___ aceptar las condiciones. (tener, ellos)", "answer": "tuvieron"},
+        {"sentence": "¿Quién ___ esa historia tan rara? (decir, él)", "answer": "dijo"}
+      ],
+      "microTests": [
+        {"sentence": "Ayer ___ en casa de María. (estar, yo)", "answer": "estuve", "hint": "Глагол ESTAR с основой estuv-"},
+        {"sentence": "No ___ encontrar las llaves. (poder, yo)", "answer": "pude", "hint": "Глагол PODER с основой pud-"},
+        {"sentence": "¿Qué ___ ayer? (hacer, tú)", "answer": "hiciste", "hint": "Глагол HACER с основой hic-"},
+        {"sentence": "Le ___ la verdad. (decir, yo)", "answer": "dije", "hint": "Глагол DECIR с основой dij-"},
+        {"sentence": "Ella ___ mucha suerte. (tener, ella)", "answer": "tuvo", "hint": "Глагол TENER с основой tuv-"},
+        {"sentence": "¿___ los libros? (traer, tú)", "answer": "Trajiste", "hint": "Глагол TRAER с основой traj-"},
+        {"sentence": "No ___ nada del problema. (saber, yo)", "answer": "supe", "hint": "Глагол SABER с основой sup-"},
+        {"sentence": "Ella ___ a verme ayer. (venir, ella)", "answer": "vino", "hint": "Глагол VENIR с основой vin-"},
+        {"sentence": "Yo ___ ir pero no pude. (querer, yo)", "answer": "quise", "hint": "Глагол QUERER с основой quis-"},
+        {"sentence": "¿Dónde ___ las gafas? (poner, tú)", "answer": "pusiste", "hint": "Глагол PONER с основой pus-"},
+        {"sentence": "___ que esperar mucho tiempo. (tener, nosotros)", "answer": "Tuvimos", "hint": "Глагол TENER с основой tuv-, мы"},
+        {"sentence": "Los niños ___ muchas preguntas. (hacer, ellos)", "answer": "hicieron", "hint": "Глагол HACER с основой hic-, они"},
+        {"sentence": "¿___ la noticia? (saber, vosotros)", "answer": "Supisteis", "hint": "Глагол SABER с основой sup-, вы"},
+        {"sentence": "Ellos ___ a las ocho. (venir, ellos)", "answer": "vinieron", "hint": "Глагол VENIR с основой vin-, они"},
+        {"sentence": "___ muy cansados después del viaje. (estar, nosotros)", "answer": "Estuvimos", "hint": "Глагол ESTAR с основой estuv-, мы"}
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Pretérito Indefinido: cambio vocálico E > I",
+      "hint": "pedí / pidió / pidieron / sentí / sintió / sintieron / vestí / vistió / vistieron",
+      "rule": {
+        "title": "Pretérito Indefinido: cambio vocálico E > I",
+        "explanation": "Глаголы третьего спряжения (-ir), которые имеют изменение гласной в настоящем времени (e > ie или e > i), сохраняют это изменение в Pretérito Indefinido, но только в 3-м лице единственного и множественного числа (él/ella, ellos/ellas).",
+        "sections": [
+          {
+            "subtitle": "Глаголы с изменением E > I",
+            "points": [
+              "<b>pedir</b>: pedí, pediste, <b>pidió</b>, pedimos, pedisteis, <b>pidieron</b>",
+              "<b>sentir</b>: sentí, sentiste, <b>sintió</b>, sentimos, sentisteis, <b>sintieron</b>",
+              "<b>vestirse</b>: me vestí, te vestiste, <b>se vistió</b>, nos vestimos, os vestisteis, <b>se vistieron</b>"
+            ]
+          },
+          {
+            "subtitle": "Другие глаголы этого типа",
+            "points": [
+              "<b>repetir</b>: repetí, repetiste, <b>repitió</b>, repetimos, repetisteis, <b>repitieron</b>",
+              "<b>preferir</b>: preferí, preferiste, <b>prefirió</b>, preferimos, preferisteis, <b>prefirieron</b>",
+              "<b>seguir</b>: seguí, seguiste, <b>siguió</b>, seguimos, seguisteis, <b>siguieron</b>",
+              "<b>mentir</b>: mentí, mentiste, <b>mintió</b>, mentimos, mentisteis, <b>mintieron</b>"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "El camarero pidió la cuenta.", "ru": "Официант попросил счёт."},
+          {"es": "Ella sintió mucho miedo durante la tormenta.", "ru": "Она испытала сильный страх во время грозы."},
+          {"es": "Los niños se vistieron rápidamente.", "ru": "Дети быстро оделись."},
+          {"es": "El profesor repitió la explicación tres veces.", "ru": "Учитель повторил объяснение три раза."}
+        ]
+      },
+      "questions": [
+        {"sentence": "El cliente ___ un café con leche. (pedir, él)", "answer": "pidió"},
+        {"sentence": "Ella ___ mucha tristeza cuando se fue. (sentir, ella)", "answer": "sintió"},
+        {"sentence": "Los niños se ___ solos. (vestirse, ellos)", "answer": "vistieron"},
+        {"sentence": "Yo ___ perdón por mi error. (pedir, yo)", "answer": "pedí"},
+        {"sentence": "Nosotros ___ lo mismo que ellos. (sentir, nosotros)", "answer": "sentimos"},
+        {"sentence": "¿Te ___ para la fiesta? (vestirse, tú)", "answer": "vestiste"},
+        {"sentence": "Los estudiantes ___ silencio durante el examen. (pedir, ellos)", "answer": "pidieron"},
+        {"sentence": "Él ___ mucho frío en la montaña. (sentir, él)", "answer": "sintió"},
+        {"sentence": "La actriz se ___ de rojo para la gala. (vestirse, ella)", "answer": "vistió"},
+        {"sentence": "Yo ___ la pregunta porque no la entendí. (repetir, yo)", "answer": "repetí"},
+        {"sentence": "El profesor ___ el ejercicio varias veces. (repetir, él)", "answer": "repitió"},
+        {"sentence": "Nosotros ___ quedarnos en casa. (preferir, nosotros)", "answer": "preferimos"},
+        {"sentence": "Ella ___ ir al cine en vez del teatro. (preferir, ella)", "answer": "prefirió"},
+        {"sentence": "Los turistas ___ las instrucciones del guía. (seguir, ellos)", "answer": "siguieron"},
+        {"sentence": "Yo ___ los consejos de mi madre. (seguir, yo)", "answer": "seguí"},
+        {"sentence": "Él me ___ sobre su edad. (mentir, él)", "answer": "mintió"},
+        {"sentence": "Los niños ___ a sus padres. (mentir, ellos)", "answer": "mintieron"},
+        {"sentence": "Ella ___ un aumento de sueldo. (pedir, ella)", "answer": "pidió"},
+        {"sentence": "Nosotros ___ mucha alegría cuando ganamos. (sentir, nosotros)", "answer": "sentimos"},
+        {"sentence": "¿Cómo se ___ el novio para la boda? (vestirse, él)", "answer": "vistió"},
+        {"sentence": "Yo ___ ayuda a mis compañeros. (pedir, yo)", "answer": "pedí"},
+        {"sentence": "Ellos ___ un gran alivio después del examen. (sentir, ellos)", "answer": "sintieron"},
+        {"sentence": "Ella se ___ muy elegante ayer. (vestirse, ella)", "answer": "vistió"},
+        {"sentence": "El niño ___ la misma canción diez veces. (repetir, él)", "answer": "repitió"},
+        {"sentence": "Nosotros ___ comer en casa. (preferir, nosotros)", "answer": "preferimos"},
+        {"sentence": "Los alumnos ___ las reglas del juego. (seguir, ellos)", "answer": "siguieron"},
+        {"sentence": "Él nunca me ___ la verdad. (decir, él)", "answer": "dijo"},
+        {"sentence": "Yo ___ mucha emoción al verle. (sentir, yo)", "answer": "sentí"},
+        {"sentence": "¿Qué ___ tus amigos de beber? (pedir, ellos)", "answer": "pidieron"},
+        {"sentence": "Ella ___ la receta paso a paso. (seguir, ella)", "answer": "siguió"},
+        {"sentence": "Me ___ muy rápido para no llegar tarde. (vestirse, yo)", "answer": "vestí"},
+        {"sentence": "El jefe ___ puntualidad a todos. (pedir, él)", "answer": "pidió"},
+        {"sentence": "Nosotros ___ un gran orgullo por su éxito. (sentir, nosotros)", "answer": "sentimos"},
+        {"sentence": "Los actores se ___ para la obra. (vestirse, ellos)", "answer": "vistieron"},
+        {"sentence": "Yo ___ la información en voz alta. (repetir, yo)", "answer": "repetí"},
+        {"sentence": "Ella ___ no ir a la reunión. (preferir, ella)", "answer": "prefirió"},
+        {"sentence": "Los niños ___ jugando hasta tarde. (seguir, ellos)", "answer": "siguieron"},
+        {"sentence": "Él me ___ para no preocuparme. (mentir, él)", "answer": "mintió"},
+        {"sentence": "Yo ___ disculpas por llegar tarde. (pedir, yo)", "answer": "pedí"},
+        {"sentence": "Ella ___ mucha vergüenza en ese momento. (sentir, ella)", "answer": "sintió"},
+        {"sentence": "¿Te ___ con ropa formal? (vestirse, tú)", "answer": "vestiste"},
+        {"sentence": "El camarero ___ la orden dos veces. (repetir, él)", "answer": "repitió"},
+        {"sentence": "Nosotros ___ el camino más corto. (seguir, nosotros)", "answer": "seguimos"},
+        {"sentence": "Ella ___ viajar en tren. (preferir, ella)", "answer": "prefirió"},
+        {"sentence": "Los testigos ___ ante el juez. (mentir, ellos)", "answer": "mintieron"},
+        {"sentence": "Yo ___ la dirección al taxista. (pedir, yo)", "answer": "pedí"},
+        {"sentence": "Él ___ mucho dolor después del accidente. (sentir, él)", "answer": "sintió"},
+        {"sentence": "Los invitados se ___ de gala. (vestirse, ellos)", "answer": "vistieron"},
+        {"sentence": "Yo ___ el número de teléfono varias veces. (repetir, yo)", "answer": "repetí"},
+        {"sentence": "Ella ___ quedarse en casa. (preferir, ella)", "answer": "prefirió"},
+        {"sentence": "Los perros ___ a su dueño por todo el parque. (seguir, ellos)", "answer": "siguieron"},
+        {"sentence": "Él ___ sobre su trabajo. (mentir, él)", "answer": "mintió"},
+        {"sentence": "Yo ___ permiso para salir. (pedir, yo)", "answer": "pedí"},
+        {"sentence": "Ellos ___ una gran satisfacción. (sentir, ellos)", "answer": "sintieron"},
+        {"sentence": "Ella se ___ de negro para el funeral. (vestirse, ella)", "answer": "vistió"},
+        {"sentence": "El eco ___ sus palabras. (repetir, él)", "answer": "repitió"},
+        {"sentence": "Nosotros ___ el plan original. (seguir, nosotros)", "answer": "seguimos"},
+        {"sentence": "Ella ___ la opción más económica. (preferir, ella)", "answer": "prefirió"},
+        {"sentence": "Yo ___ una pizza para cenar. (pedir, yo)", "answer": "pedí"},
+        {"sentence": "Él ___ nostalgia al volver a su pueblo. (sentir, él)", "answer": "sintió"}
+      ],
+      "microTests": [
+        {"sentence": "El cliente ___ la cuenta. (pedir, él)", "answer": "pidió", "hint": "E>I solo en 3ª persona: él pid..."},
+        {"sentence": "Ella ___ mucho miedo. (sentir, ella)", "answer": "sintió", "hint": "E>I en 3ª persona: ella sint..."},
+        {"sentence": "Los niños se ___ solos. (vestirse, ellos)", "answer": "vistieron", "hint": "E>I en 3ª persona plural: ellos se vist..."},
+        {"sentence": "Yo ___ ayuda. (pedir, yo)", "answer": "pedí", "hint": "1ª persona sin cambio: yo ped..."},
+        {"sentence": "Nosotros ___ alegría. (sentir, nosotros)", "answer": "sentimos", "hint": "1ª persona plural sin cambio: nosotros sent..."},
+        {"sentence": "Él ___ la lección. (repetir, él)", "answer": "repitió", "hint": "E>I en 3ª persona: él repit..."},
+        {"sentence": "Ellos ___ las instrucciones. (seguir, ellos)", "answer": "siguieron", "hint": "E>I en 3ª persona plural: ellos sigu..."},
+        {"sentence": "Ella ___ quedarse. (preferir, ella)", "answer": "prefirió", "hint": "E>I en 3ª persona: ella prefir..."},
+        {"sentence": "Él me ___. (mentir, él)", "answer": "mintió", "hint": "E>I en 3ª persona: él mint..."},
+        {"sentence": "Yo ___ la verdad. (sentir, yo)", "answer": "sentí", "hint": "1ª persona sin cambio: yo sent..."},
+        {"sentence": "Los invitados se ___ de gala. (vestirse, ellos)", "answer": "vistieron", "hint": "E>I en 3ª persona plural"},
+        {"sentence": "Me ___ rápido. (vestirse, yo)", "answer": "vestí", "hint": "1ª persona sin cambio: me vest..."},
+        {"sentence": "Él ___ el mismo error. (repetir, él)", "answer": "repitió", "hint": "E>I en 3ª persona: él repit..."},
+        {"sentence": "Ellos ___ mucha emoción. (sentir, ellos)", "answer": "sintieron", "hint": "E>I en 3ª persona plural: ellos sint..."},
+        {"sentence": "Yo ___ un café. (pedir, yo)", "answer": "pedí", "hint": "1ª persona sin cambio: yo ped..."}
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Pretérito Indefinido: cambio vocálico O > U",
+      "hint": "dormí / durmió / durmieron / morí / murió / murieron",
+      "rule": {
+        "title": "Pretérito Indefinido: cambio vocálico O > U",
+        "explanation": "Глаголы DORMIR и MORIR (и их производные) имеют изменение гласной O > U в 3-м лице единственного и множественного числа в Pretérito Indefinido.",
+        "sections": [
+          {
+            "subtitle": "Спряжение DORMIR",
+            "points": [
+              "(yo) <b>dormí</b> — я спал",
+              "(tú) <b>dormiste</b> — ты спал",
+              "(él/ella) <b>durmió</b> — он/она спал(а)",
+              "(nosotros) <b>dormimos</b> — мы спали",
+              "(vosotros) <b>dormisteis</b> — вы спали",
+              "(ellos) <b>durmieron</b> — они спали"
+            ]
+          },
+          {
+            "subtitle": "Спряжение MORIR",
+            "points": [
+              "(yo) <b>morí</b> — я умер",
+              "(tú) <b>moriste</b> — ты умер",
+              "(él/ella) <b>murió</b> — он/она умер(ла)",
+              "(nosotros) <b>morimos</b> — мы умерли",
+              "(vosotros) <b>moristeis</b> — вы умерли",
+              "(ellos) <b>murieron</b> — они умерли"
+            ]
+          },
+          {
+            "subtitle": "Важно запомнить",
+            "points": [
+              "Изменение O > U происходит ТОЛЬКО в 3-м лице (él/ella, ellos/ellas)",
+              "В остальных лицах гласная O сохраняется: dormí, dormiste, dormimos, dormisteis",
+              "Производные глаголы: <b>dormirse</b> (засыпать), <b>morirse</b> (умирать) — спрягаются так же"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "El bebé durmió toda la noche.", "ru": "Малыш спал всю ночь."},
+          {"es": "Mis abuelos murieron hace muchos años.", "ru": "Мои дедушка и бабушка умерли много лет назад."},
+          {"es": "Dormí muy mal anoche.", "ru": "Я очень плохо спал прошлой ночью."},
+          {"es": "El perro se murió de viejo.", "ru": "Собака умерла от старости."}
+        ]
+      },
+      "questions": [
+        {"sentence": "El bebé ___ diez horas seguidas. (dormir, él)", "answer": "durmió"},
+        {"sentence": "Mi abuelo ___ el año pasado. (morir, él)", "answer": "murió"},
+        {"sentence": "Yo ___ muy bien anoche. (dormir, yo)", "answer": "dormí"},
+        {"sentence": "Las plantas ___ por falta de agua. (morir, ellas)", "answer": "murieron"},
+        {"sentence": "¿Cuántas horas ___ ayer? (dormir, tú)", "answer": "dormiste"},
+        {"sentence": "El gato ___ de viejo. (morir, él)", "answer": "murió"},
+        {"sentence": "Nosotros ___ en un hotel muy cómodo. (dormir, nosotros)", "answer": "dormimos"},
+        {"sentence": "Muchos soldados ___ en la guerra. (morir, ellos)", "answer": "murieron"},
+        {"sentence": "Ella ___ hasta las once de la mañana. (dormir, ella)", "answer": "durmió"},
+        {"sentence": "El famoso escritor ___ en 2016. (morir, él)", "answer": "murió"},
+        {"sentence": "Los niños se ___ enseguida. (dormirse, ellos)", "answer": "durmieron"},
+        {"sentence": "El paciente ___ durante la operación. (morir, él)", "answer": "murió"},
+        {"sentence": "Yo no ___ nada en el avión. (dormir, yo)", "answer": "dormí"},
+        {"sentence": "Miles de personas ___ en el terremoto. (morir, ellas)", "answer": "murieron"},
+        {"sentence": "¿___ bien en la cama nueva? (dormir, vosotros)", "answer": "Dormisteis"},
+        {"sentence": "El actor ___ a los 90 años. (morir, él)", "answer": "murió"},
+        {"sentence": "Nosotros no ___ bien por el ruido. (dormir, nosotros)", "answer": "dormimos"},
+        {"sentence": "Muchos animales ___ en el incendio. (morir, ellos)", "answer": "murieron"},
+        {"sentence": "El perro ___ en su cama toda la tarde. (dormir, él)", "answer": "durmió"},
+        {"sentence": "Mi bisabuela ___ a los 102 años. (morir, ella)", "answer": "murió"},
+        {"sentence": "Yo ___ muy poco esta semana. (dormir, yo)", "answer": "dormí"},
+        {"sentence": "Los peces ___ porque el agua estaba sucia. (morir, ellos)", "answer": "murieron"},
+        {"sentence": "¿A qué hora te ___? (dormirse, tú)", "answer": "dormiste"},
+        {"sentence": "El cantante ___ de forma inesperada. (morir, él)", "answer": "murió"},
+        {"sentence": "Los invitados ___ en la habitación de invitados. (dormir, ellos)", "answer": "durmieron"},
+        {"sentence": "El héroe ___ salvando a otros. (morir, él)", "answer": "murió"},
+        {"sentence": "Yo ___ en el sofá viendo la tele. (dormirse, yo)", "answer": "dormí"},
+        {"sentence": "Las flores ___ por el frío. (morir, ellas)", "answer": "murieron"},
+        {"sentence": "Ella se ___ durante la película. (dormirse, ella)", "answer": "durmió"},
+        {"sentence": "El pintor famoso ___ en París. (morir, él)", "answer": "murió"},
+        {"sentence": "Nosotros ___ hasta muy tarde el domingo. (dormir, nosotros)", "answer": "dormimos"},
+        {"sentence": "Varios pasajeros ___ en el accidente. (morir, ellos)", "answer": "murieron"},
+        {"sentence": "¿___ bien en el camping? (dormir, tú)", "answer": "Dormiste"},
+        {"sentence": "El rey ___ sin herederos. (morir, él)", "answer": "murió"},
+        {"sentence": "Los niños ___ después de jugar mucho. (dormir, ellos)", "answer": "durmieron"},
+        {"sentence": "Mi mascota ___ hace dos meses. (morir, ella)", "answer": "murió"},
+        {"sentence": "Yo ___ fatal con el calor. (dormir, yo)", "answer": "dormí"},
+        {"sentence": "Las abejas ___ por los pesticidas. (morir, ellas)", "answer": "murieron"},
+        {"sentence": "Él se ___ en el metro. (dormirse, él)", "answer": "durmió"},
+        {"sentence": "El científico ___ antes de terminar su investigación. (morir, él)", "answer": "murió"},
+        {"sentence": "Nosotros ___ en la playa bajo las estrellas. (dormir, nosotros)", "answer": "dormimos"},
+        {"sentence": "Muchas especies ___ por el cambio climático. (morir, ellas)", "answer": "murieron"},
+        {"sentence": "¿Cuántas horas ___ los niños? (dormir, ellos)", "answer": "durmieron"},
+        {"sentence": "El dictador ___ en el exilio. (morir, él)", "answer": "murió"},
+        {"sentence": "Yo ___ muy mal en el hospital. (dormir, yo)", "answer": "dormí"},
+        {"sentence": "Los árboles ___ por la sequía. (morir, ellos)", "answer": "murieron"},
+        {"sentence": "Ella ___ doce horas seguidas. (dormir, ella)", "answer": "durmió"},
+        {"sentence": "El compositor ___ muy joven. (morir, él)", "answer": "murió"},
+        {"sentence": "Nosotros nos ___ viendo una serie. (dormirse, nosotros)", "answer": "dormimos"},
+        {"sentence": "Los dinosaurios ___ hace millones de años. (morir, ellos)", "answer": "murieron"},
+        {"sentence": "¿___ bien anoche? (dormir, vosotros)", "answer": "Dormisteis"},
+        {"sentence": "El presidente ___ en el cargo. (morir, él)", "answer": "murió"},
+        {"sentence": "Los gatos ___ todo el día. (dormir, ellos)", "answer": "durmieron"},
+        {"sentence": "El artista ___ olvidado. (morir, él)", "answer": "murió"},
+        {"sentence": "Yo no ___ nada antes del examen. (dormir, yo)", "answer": "dormí"},
+        {"sentence": "Varios exploradores ___ en la expedición. (morir, ellos)", "answer": "murieron"},
+        {"sentence": "El niño ___ abrazado a su peluche. (dormir, él)", "answer": "durmió"},
+        {"sentence": "Mi tatarabuelo ___ en la guerra. (morir, él)", "answer": "murió"},
+        {"sentence": "Nosotros ___ en tiendas de campaña. (dormir, nosotros)", "answer": "dormimos"},
+        {"sentence": "Cientos de personas ___ en el tsunami. (morir, ellas)", "answer": "murieron"}
+      ],
+      "microTests": [
+        {"sentence": "El bebé ___ toda la noche. (dormir, él)", "answer": "durmió", "hint": "O>U в 3-м лице: él durm..."},
+        {"sentence": "Mi abuelo ___ el año pasado. (morir, él)", "answer": "murió", "hint": "O>U в 3-м лице: él mur..."},
+        {"sentence": "Yo ___ muy bien anoche. (dormir, yo)", "answer": "dormí", "hint": "1-е лицо без изменения: yo dorm..."},
+        {"sentence": "Las plantas ___ por falta de agua. (morir, ellas)", "answer": "murieron", "hint": "O>U в 3-м лице мн.ч.: ellas mur..."},
+        {"sentence": "Nosotros ___ en un hotel. (dormir, nosotros)", "answer": "dormimos", "hint": "1-е лицо мн.ч. без изменения: nosotros dorm..."},
+        {"sentence": "El gato ___ de viejo. (morir, él)", "answer": "murió", "hint": "O>U в 3-м лице: él mur..."},
+        {"sentence": "Los niños ___ enseguida. (dormirse, ellos)", "answer": "durmieron", "hint": "O>U в 3-м лице мн.ч.: ellos se durm..."},
+        {"sentence": "Muchos soldados ___ en la guerra. (morir, ellos)", "answer": "murieron", "hint": "O>U в 3-м лице мн.ч.: ellos mur..."},
+        {"sentence": "¿Cuántas horas ___? (dormir, tú)", "answer": "dormiste", "hint": "2-е лицо без изменения: tú dorm..."},
+        {"sentence": "El escritor ___ en 2016. (morir, él)", "answer": "murió", "hint": "O>U в 3-м лице: él mur..."},
+        {"sentence": "Ella ___ hasta las once. (dormir, ella)", "answer": "durmió", "hint": "O>U в 3-м лице: ella durm..."},
+        {"sentence": "Los peces ___ por el agua sucia. (morir, ellos)", "answer": "murieron", "hint": "O>U в 3-м лице мн.ч.: ellos mur..."},
+        {"sentence": "Yo no ___ nada en el avión. (dormir, yo)", "answer": "dormí", "hint": "1-е лицо без изменения: yo dorm..."},
+        {"sentence": "El héroe ___ salvando a otros. (morir, él)", "answer": "murió", "hint": "O>U в 3-м лице: él mur..."},
+        {"sentence": "Nosotros ___ hasta tarde. (dormir, nosotros)", "answer": "dormimos", "hint": "1-е лицо мн.ч. без изменения"}
+      ]
+    }
+  ]
 }

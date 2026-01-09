@@ -925,6 +925,374 @@
       }
     ]
   },
-  "verbos": [],
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "preterito_indefinido",
+        "nombre": "Pretérito Indefinido",
+        "requiredEjercicio": "ej1",
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "yo": "hablé",
+              "tu": "hablaste",
+              "el": "habló",
+              "nosotros": "hablamos",
+              "vosotros": "hablasteis",
+              "ellos": "hablaron"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "yo": "comí",
+              "tu": "comiste",
+              "el": "comió",
+              "nosotros": "comimos",
+              "vosotros": "comisteis",
+              "ellos": "comieron"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "viví",
+              "tu": "viviste",
+              "el": "vivió",
+              "nosotros": "vivimos",
+              "vosotros": "vivisteis",
+              "ellos": "vivieron"
+            }
+          },
+          {
+            "infinitivo": "trabajar",
+            "traduccion": "работать",
+            "formas": {
+              "yo": "trabajé",
+              "tu": "trabajaste",
+              "el": "trabajó",
+              "nosotros": "trabajamos",
+              "vosotros": "trabajasteis",
+              "ellos": "trabajaron"
+            }
+          },
+          {
+            "infinitivo": "llegar",
+            "traduccion": "приходить, прибывать",
+            "formas": {
+              "yo": "llegué",
+              "tu": "llegaste",
+              "el": "llegó",
+              "nosotros": "llegamos",
+              "vosotros": "llegasteis",
+              "ellos": "llegaron"
+            }
+          },
+          {
+            "infinitivo": "empezar",
+            "traduccion": "начинать",
+            "formas": {
+              "yo": "empecé",
+              "tu": "empezaste",
+              "el": "empezó",
+              "nosotros": "empezamos",
+              "vosotros": "empezasteis",
+              "ellos": "empezaron"
+            }
+          },
+          {
+            "infinitivo": "salir",
+            "traduccion": "выходить",
+            "formas": {
+              "yo": "salí",
+              "tu": "saliste",
+              "el": "salió",
+              "nosotros": "salimos",
+              "vosotros": "salisteis",
+              "ellos": "salieron"
+            }
+          },
+          {
+            "infinitivo": "decidir",
+            "traduccion": "решать",
+            "formas": {
+              "yo": "decidí",
+              "tu": "decidiste",
+              "el": "decidió",
+              "nosotros": "decidimos",
+              "vosotros": "decidisteis",
+              "ellos": "decidieron"
+            }
+          }
+        ],
+        "irregulares": [
+          {
+            "infinitivo": "ser / ir",
+            "traduccion": "быть / идти",
+            "nota": "Ser e ir tienen la misma conjugación en indefinido",
+            "formas": {
+              "yo": "fui",
+              "tu": "fuiste",
+              "el": "fue",
+              "nosotros": "fuimos",
+              "vosotros": "fuisteis",
+              "ellos": "fueron"
+            }
+          },
+          {
+            "infinitivo": "estar",
+            "traduccion": "быть, находиться",
+            "nota": "Raíz irregular: estuv-",
+            "formas": {
+              "yo": "estuve",
+              "tu": "estuviste",
+              "el": "estuvo",
+              "nosotros": "estuvimos",
+              "vosotros": "estuvisteis",
+              "ellos": "estuvieron"
+            }
+          },
+          {
+            "infinitivo": "tener",
+            "traduccion": "иметь",
+            "nota": "Raíz irregular: tuv-",
+            "formas": {
+              "yo": "tuve",
+              "tu": "tuviste",
+              "el": "tuvo",
+              "nosotros": "tuvimos",
+              "vosotros": "tuvisteis",
+              "ellos": "tuvieron"
+            }
+          },
+          {
+            "infinitivo": "hacer",
+            "traduccion": "делать",
+            "nota": "Raíz irregular: hic-/hiz-",
+            "formas": {
+              "yo": "hice",
+              "tu": "hiciste",
+              "el": "hizo",
+              "nosotros": "hicimos",
+              "vosotros": "hicisteis",
+              "ellos": "hicieron"
+            }
+          },
+          {
+            "infinitivo": "poder",
+            "traduccion": "мочь",
+            "nota": "Raíz irregular: pud-",
+            "formas": {
+              "yo": "pude",
+              "tu": "pudiste",
+              "el": "pudo",
+              "nosotros": "pudimos",
+              "vosotros": "pudisteis",
+              "ellos": "pudieron"
+            }
+          },
+          {
+            "infinitivo": "poner",
+            "traduccion": "класть, ставить",
+            "nota": "Raíz irregular: pus-",
+            "formas": {
+              "yo": "puse",
+              "tu": "pusiste",
+              "el": "puso",
+              "nosotros": "pusimos",
+              "vosotros": "pusisteis",
+              "ellos": "pusieron"
+            }
+          },
+          {
+            "infinitivo": "saber",
+            "traduccion": "знать",
+            "nota": "Raíz irregular: sup-",
+            "formas": {
+              "yo": "supe",
+              "tu": "supiste",
+              "el": "supo",
+              "nosotros": "supimos",
+              "vosotros": "supisteis",
+              "ellos": "supieron"
+            }
+          },
+          {
+            "infinitivo": "querer",
+            "traduccion": "хотеть",
+            "nota": "Raíz irregular: quis-",
+            "formas": {
+              "yo": "quise",
+              "tu": "quisiste",
+              "el": "quiso",
+              "nosotros": "quisimos",
+              "vosotros": "quisisteis",
+              "ellos": "quisieron"
+            }
+          },
+          {
+            "infinitivo": "venir",
+            "traduccion": "приходить",
+            "nota": "Raíz irregular: vin-",
+            "formas": {
+              "yo": "vine",
+              "tu": "viniste",
+              "el": "vino",
+              "nosotros": "vinimos",
+              "vosotros": "vinisteis",
+              "ellos": "vinieron"
+            }
+          },
+          {
+            "infinitivo": "decir",
+            "traduccion": "говорить, сказать",
+            "nota": "Raíz irregular: dij-",
+            "formas": {
+              "yo": "dije",
+              "tu": "dijiste",
+              "el": "dijo",
+              "nosotros": "dijimos",
+              "vosotros": "dijisteis",
+              "ellos": "dijeron"
+            }
+          },
+          {
+            "infinitivo": "traer",
+            "traduccion": "приносить",
+            "nota": "Raíz irregular: traj-",
+            "formas": {
+              "yo": "traje",
+              "tu": "trajiste",
+              "el": "trajo",
+              "nosotros": "trajimos",
+              "vosotros": "trajisteis",
+              "ellos": "trajeron"
+            }
+          },
+          {
+            "infinitivo": "pedir",
+            "traduccion": "просить",
+            "nota": "Cambio vocálico E>I en 3ª persona",
+            "formas": {
+              "yo": "pedí",
+              "tu": "pediste",
+              "el": "pidió",
+              "nosotros": "pedimos",
+              "vosotros": "pedisteis",
+              "ellos": "pidieron"
+            }
+          },
+          {
+            "infinitivo": "sentir",
+            "traduccion": "чувствовать",
+            "nota": "Cambio vocálico E>I en 3ª persona",
+            "formas": {
+              "yo": "sentí",
+              "tu": "sentiste",
+              "el": "sintió",
+              "nosotros": "sentimos",
+              "vosotros": "sentisteis",
+              "ellos": "sintieron"
+            }
+          },
+          {
+            "infinitivo": "dormir",
+            "traduccion": "спать",
+            "nota": "Cambio vocálico O>U en 3ª persona",
+            "formas": {
+              "yo": "dormí",
+              "tu": "dormiste",
+              "el": "durmió",
+              "nosotros": "dormimos",
+              "vosotros": "dormisteis",
+              "ellos": "durmieron"
+            }
+          },
+          {
+            "infinitivo": "morir",
+            "traduccion": "умирать",
+            "nota": "Cambio vocálico O>U en 3ª persona",
+            "formas": {
+              "yo": "morí",
+              "tu": "moriste",
+              "el": "murió",
+              "nosotros": "morimos",
+              "vosotros": "moristeis",
+              "ellos": "murieron"
+            }
+          },
+          {
+            "infinitivo": "leer",
+            "traduccion": "читать",
+            "nota": "Cambio ortográfico: i>y en 3ª persona",
+            "formas": {
+              "yo": "leí",
+              "tu": "leíste",
+              "el": "leyó",
+              "nosotros": "leímos",
+              "vosotros": "leísteis",
+              "ellos": "leyeron"
+            }
+          },
+          {
+            "infinitivo": "caer",
+            "traduccion": "падать",
+            "nota": "Cambio ortográfico: i>y en 3ª persona",
+            "formas": {
+              "yo": "caí",
+              "tu": "caíste",
+              "el": "cayó",
+              "nosotros": "caímos",
+              "vosotros": "caísteis",
+              "ellos": "cayeron"
+            }
+          },
+          {
+            "infinitivo": "oír",
+            "traduccion": "слышать",
+            "nota": "Cambio ortográfico: i>y en 3ª persona",
+            "formas": {
+              "yo": "oí",
+              "tu": "oíste",
+              "el": "oyó",
+              "nosotros": "oímos",
+              "vosotros": "oísteis",
+              "ellos": "oyeron"
+            }
+          },
+          {
+            "infinitivo": "dar",
+            "traduccion": "давать",
+            "nota": "Irregular especial",
+            "formas": {
+              "yo": "di",
+              "tu": "diste",
+              "el": "dio",
+              "nosotros": "dimos",
+              "vosotros": "disteis",
+              "ellos": "dieron"
+            }
+          },
+          {
+            "infinitivo": "ver",
+            "traduccion": "видеть",
+            "nota": "Sin acentos en indefinido",
+            "formas": {
+              "yo": "vi",
+              "tu": "viste",
+              "el": "vio",
+              "nosotros": "vimos",
+              "vosotros": "visteis",
+              "ellos": "vieron"
+            }
+          }
+        ]
+      }
+    ]
+  },
   "ejercicios": []
 }

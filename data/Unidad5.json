@@ -1132,6 +1132,188 @@
           "hint": "Chicle no se devuelve → dar"
         }
       ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Tener vs Tener que",
+      "hint": "tener / tener que",
+      "rule": {
+        "title": "TENER vs TENER QUE: иметь vs должен",
+        "explanation": "TENER означает 'иметь' — владение чем-то или наличие чего-то. TENER QUE + infinitivo означает 'должен' — обязанность или необходимость сделать что-то. Это разные конструкции с разным значением.",
+        "sections": [
+          {
+            "subtitle": "TENER — иметь, владеть",
+            "points": [
+              "Владение: <b>Tengo</b> un coche — У меня есть машина",
+              "Наличие события: <b>Tengo</b> una reunión — У меня встреча",
+              "Состояние: <b>Tengo</b> hambre/sed/frío — Я голоден/хочу пить/мне холодно",
+              "Возраст: <b>Tengo</b> 25 años — Мне 25 лет"
+            ]
+          },
+          {
+            "subtitle": "TENER QUE + infinitivo — должен",
+            "points": [
+              "Обязанность: <b>Tengo que</b> trabajar — Я должен работать",
+              "Необходимость: <b>Tengo que</b> ir al médico — Мне нужно пойти к врачу",
+              "Вынужденность: <b>Tengo que</b> salir ya — Мне нужно уже уходить",
+              "После TENER QUE всегда идёт инфинитив глагола"
+            ]
+          },
+          {
+            "subtitle": "Сравнение в контексте",
+            "points": [
+              "<b>Tengo</b> una cena (у меня есть ужин/мероприятие) vs <b>Tengo que</b> cenar (я должен поужинать)",
+              "<b>Tengo</b> trabajo (у меня есть работа) vs <b>Tengo que</b> trabajar (я должен работать)",
+              "<b>Tengo</b> tiempo (у меня есть время) vs <b>Tengo que</b> irme (я должен уйти)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "No puedo ir a cenar, es que tengo una cena en casa de mis padres.", "ru": "Не могу пойти ужинать, дело в том, что у меня ужин дома у родителей."},
+          {"es": "No puedo ir a cenar, es que tengo que estudiar.", "ru": "Не могу пойти ужинать, дело в том, что я должен учиться."},
+          {"es": "Tengo una reunión a las seis.", "ru": "У меня встреча в шесть."},
+          {"es": "Tengo que ir a visitar a mis padres.", "ru": "Мне нужно навестить родителей."}
+        ]
+      },
+      "questions": [
+        {"sentence": "No puedo, es que ___ una cena en casa de mis padres.", "answer": "tengo"},
+        {"sentence": "No puedo, es que ___ estudiar para el examen.", "answer": "tengo que"},
+        {"sentence": "Esta tarde a las seis ___ una reunión.", "answer": "tengo"},
+        {"sentence": "El sábado ___ ir a visitar a mis padres.", "answer": "tengo que"},
+        {"sentence": "Perdona, es que ___ pedirte un favor.", "answer": "tengo que"},
+        {"sentence": "___ un hermano y dos hermanas.", "answer": "Tengo"},
+        {"sentence": "___ terminar este proyecto hoy.", "answer": "Tengo que"},
+        {"sentence": "Lo siento, ___ una cita con el dentista.", "answer": "tengo"},
+        {"sentence": "Mañana ___ levantarme temprano.", "answer": "tengo que"},
+        {"sentence": "___ mucho trabajo esta semana.", "answer": "Tengo"},
+        {"sentence": "___ llamar a mi madre, hace días que no hablo con ella.", "answer": "Tengo que"},
+        {"sentence": "No ___ tiempo para ir al gimnasio.", "answer": "tengo"},
+        {"sentence": "___ hacer la compra, no hay nada en la nevera.", "answer": "Tengo que"},
+        {"sentence": "___ dos perros y un gato.", "answer": "Tengo"},
+        {"sentence": "Esta noche ___ una fiesta de cumpleaños.", "answer": "tengo"},
+        {"sentence": "___ preparar la presentación para mañana.", "answer": "Tengo que"},
+        {"sentence": "No puedo quedarme, ___ irme ya.", "answer": "tengo que"},
+        {"sentence": "___ un problema con el ordenador.", "answer": "Tengo"},
+        {"sentence": "___ devolver estos libros a la biblioteca.", "answer": "Tengo que"},
+        {"sentence": "___ una pregunta para ti.", "answer": "Tengo"},
+        {"sentence": "Los domingos ___ comer en casa de mis abuelos.", "answer": "tengo que"},
+        {"sentence": "___ muchos amigos en esta ciudad.", "answer": "Tengo"},
+        {"sentence": "___ recoger a los niños del colegio.", "answer": "Tengo que"},
+        {"sentence": "___ una casa muy grande.", "answer": "Tengo"},
+        {"sentence": "___ pagar las facturas antes del viernes.", "answer": "Tengo que"},
+        {"sentence": "Hoy no ___ clase de español.", "answer": "tengo"},
+        {"sentence": "___ comprar un regalo para mi madre.", "answer": "Tengo que"},
+        {"sentence": "___ dolor de cabeza.", "answer": "Tengo"},
+        {"sentence": "___ hablar con mi jefe sobre el proyecto.", "answer": "Tengo que"},
+        {"sentence": "___ tres exámenes la próxima semana.", "answer": "Tengo"},
+        {"sentence": "___ reservar mesa en el restaurante.", "answer": "Tengo que"},
+        {"sentence": "No ___ dinero en efectivo.", "answer": "tengo"},
+        {"sentence": "___ enviar este correo urgente.", "answer": "Tengo que"},
+        {"sentence": "___ una idea genial.", "answer": "Tengo"},
+        {"sentence": "___ limpiar la casa, vienen invitados.", "answer": "Tengo que"},
+        {"sentence": "___ mucha hambre.", "answer": "Tengo"},
+        {"sentence": "___ acabar de leer este libro.", "answer": "Tengo que"},
+        {"sentence": "___ buenas noticias para ti.", "answer": "Tengo"},
+        {"sentence": "___ ir al banco a sacar dinero.", "answer": "Tengo que"},
+        {"sentence": "___ un vuelo a las 7 de la mañana.", "answer": "Tengo"},
+        {"sentence": "___ madrugar mañana.", "answer": "Tengo que"},
+        {"sentence": "No ___ ganas de salir hoy.", "answer": "tengo"},
+        {"sentence": "___ entregar el informe antes del lunes.", "answer": "Tengo que"},
+        {"sentence": "___ una entrevista de trabajo mañana.", "answer": "Tengo"},
+        {"sentence": "___ practicar más mi español.", "answer": "Tengo que"},
+        {"sentence": "___ miedo a volar.", "answer": "Tengo"},
+        {"sentence": "___ aprender a conducir.", "answer": "Tengo que"},
+        {"sentence": "___ un nuevo teléfono.", "answer": "Tengo"},
+        {"sentence": "___ cambiar las ruedas del coche.", "answer": "Tengo que"},
+        {"sentence": "___ mucha suerte en la vida.", "answer": "Tengo"},
+        {"sentence": "___ contestar todos estos correos.", "answer": "Tengo que"},
+        {"sentence": "___ una sorpresa para ti.", "answer": "Tengo"},
+        {"sentence": "___ ir a la farmacia.", "answer": "Tengo que"},
+        {"sentence": "___ un secreto.", "answer": "Tengo"},
+        {"sentence": "___ decirte algo importante.", "answer": "Tengo que"},
+        {"sentence": "___ razón, lo siento.", "answer": "Tienes"},
+        {"sentence": "___ pensarlo bien antes de decidir.", "answer": "Tengo que"},
+        {"sentence": "___ prisa, llego tarde.", "answer": "Tengo"},
+        {"sentence": "___ correr para no perder el tren.", "answer": "Tengo que"},
+        {"sentence": "___ frío, ¿puedes cerrar la ventana?", "answer": "Tengo"}
+      ],
+      "microTests": [
+        {
+          "sentence": "No puedo, es que ___ una cena en casa.",
+          "answer": "tengo",
+          "hint": "Tener un evento → tengo (sin 'que')"
+        },
+        {
+          "sentence": "No puedo, es que ___ estudiar.",
+          "answer": "tengo que",
+          "hint": "Obligación de hacer algo → tengo que + infinitivo"
+        },
+        {
+          "sentence": "___ una reunión a las seis.",
+          "answer": "Tengo",
+          "hint": "Tener = poseer/tener evento"
+        },
+        {
+          "sentence": "___ ir a visitar a mis padres.",
+          "answer": "Tengo que",
+          "hint": "Obligación → tengo que + infinitivo"
+        },
+        {
+          "sentence": "___ un hermano y dos hermanas.",
+          "answer": "Tengo",
+          "hint": "Posesión de familia → tengo"
+        },
+        {
+          "sentence": "___ terminar este proyecto hoy.",
+          "answer": "Tengo que",
+          "hint": "Necesidad de hacer → tengo que"
+        },
+        {
+          "sentence": "___ mucho trabajo esta semana.",
+          "answer": "Tengo",
+          "hint": "Tener trabajo (sustantivo)"
+        },
+        {
+          "sentence": "___ trabajar mucho esta semana.",
+          "answer": "Tengo que",
+          "hint": "Deber trabajar → tengo que + infinitivo"
+        },
+        {
+          "sentence": "___ dolor de cabeza.",
+          "answer": "Tengo",
+          "hint": "Estado físico → tengo"
+        },
+        {
+          "sentence": "___ tomar una aspirina.",
+          "answer": "Tengo que",
+          "hint": "Necesidad de acción → tengo que"
+        },
+        {
+          "sentence": "No ___ tiempo libre.",
+          "answer": "tengo",
+          "hint": "Posesión de tiempo → tengo"
+        },
+        {
+          "sentence": "___ irme ya, es tarde.",
+          "answer": "Tengo que",
+          "hint": "Obligación de irse → tengo que"
+        },
+        {
+          "sentence": "___ hambre.",
+          "answer": "Tengo",
+          "hint": "Estado → tengo hambre"
+        },
+        {
+          "sentence": "___ comer algo.",
+          "answer": "Tengo que",
+          "hint": "Necesidad de acción → tengo que"
+        },
+        {
+          "sentence": "___ una pregunta para ti.",
+          "answer": "Tengo",
+          "hint": "Posesión de algo → tengo"
+        }
+      ]
     }
   ]
 }

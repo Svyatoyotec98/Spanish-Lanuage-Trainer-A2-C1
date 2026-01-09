@@ -158,7 +158,15 @@
                 // Динамическая генерация unlocks (все кроме первой unidad заблокированы)
                 unlocks: Object.fromEntries(
                     UNIDADES.slice(1).map(u => [u, false])
-                )
+                ),
+                // Разблокировка уровней (A2 всегда разблокирован, остальные - по прогрессу)
+                levelUnlocks: {
+                    'A2': true,
+                    'B1': false,
+                    'B2.1': false,
+                    'B2.2': false,
+                    'C1': false
+                }
             };
 
             state.profiles[profileId] = newProfile;
@@ -176,6 +184,16 @@
                 profile.unlocks = Object.fromEntries(
                     UNIDADES.slice(1).map(u => [u, false])
                 );
+            }
+            // Добавляем levelUnlocks для существующих профилей
+            if (!profile.levelUnlocks) {
+                profile.levelUnlocks = {
+                    'A2': true,
+                    'B1': false,
+                    'B2.1': false,
+                    'B2.2': false,
+                    'C1': false
+                };
             }
 
             // Проверка и создание структуры для всех 10 unidades
@@ -709,20 +727,55 @@ function showProfileSelect() {
             const profile = getActiveProfile();
             if (!profile) return;
 
-            // Update A2 progress (calculated from all unidades)
-            const a2Progress = calculateOverallLevelProgress('A2');
-            const a2ProgressBar = document.getElementById('level-A2-progress');
-            const a2ProgressText = document.getElementById('level-A2-progress-text');
+            ensureProgressSkeleton(profile);
 
-            if (a2ProgressBar) {
-                a2ProgressBar.style.width = a2Progress + '%';
-            }
-            if (a2ProgressText) {
-                a2ProgressText.textContent = a2Progress + '% завершено';
-            }
+            // Check and update level unlocks based on progress
+            checkAndUpdateLevelUnlocks();
 
-            // Future: Update other levels when they become available
-            // For now, B1, B2.1, B2.2, C1 show "Скоро будет доступно"
+            const levelOrder = ['A2', 'B1', 'B2.1', 'B2.2', 'C1'];
+
+            levelOrder.forEach((level, index) => {
+                const levelConfig = LEVELS[level];
+                const isAvailable = levelConfig && levelConfig.available;
+                const isUnlocked = profile.levelUnlocks[level];
+                const progress = calculateOverallLevelProgress(level);
+
+                // Get DOM elements
+                const levelCssClass = level.replace('.', '-').toLowerCase();
+                const card = document.querySelector(`.level-card.level-${levelCssClass}`);
+                const progressBar = document.getElementById(`level-${level}-progress`);
+                const progressText = document.getElementById(`level-${level}-progress-text`);
+                const statusEl = document.getElementById(`level-${level}-status`);
+
+                if (!card) return;
+
+                // Update progress bar
+                if (progressBar) {
+                    progressBar.style.width = progress + '%';
+                }
+
+                // Update status and text based on availability and unlock status
+                if (!isAvailable) {
+                    // Level content not yet created
+                    card.classList.add('level-coming-soon');
+                    card.classList.remove('level-locked');
+                    if (statusEl) statusEl.textContent = 'Скоро';
+                    if (progressText) progressText.textContent = 'Скоро будет доступно';
+                } else if (!isUnlocked) {
+                    // Level is locked (need 80% of previous)
+                    card.classList.add('level-locked');
+                    card.classList.remove('level-coming-soon');
+                    const prevLevel = index > 0 ? levelOrder[index - 1] : null;
+                    const prevProgress = prevLevel ? calculateOverallLevelProgress(prevLevel) : 0;
+                    if (statusEl) statusEl.textContent = '🔒';
+                    if (progressText) progressText.textContent = `Заблокировано (${prevLevel}: ${prevProgress}%/80%)`;
+                } else {
+                    // Level is unlocked and available
+                    card.classList.remove('level-coming-soon', 'level-locked');
+                    if (statusEl) statusEl.textContent = '🔓';
+                    if (progressText) progressText.textContent = progress + '% завершено';
+                }
+            });
         }
 
         function calculateOverallLevelProgress(level) {
@@ -757,6 +810,19 @@ function showProfileSelect() {
                 return;
             }
 
+            // Check if level is unlocked
+            const profile = getActiveProfile();
+            if (profile) {
+                ensureProgressSkeleton(profile);
+                if (!profile.levelUnlocks[level]) {
+                    const levelOrder = ['A2', 'B1', 'B2.1', 'B2.2', 'C1'];
+                    const levelIndex = levelOrder.indexOf(level);
+                    const prevLevel = levelIndex > 0 ? levelOrder[levelIndex - 1] : null;
+                    alert(`Уровень ${level} заблокирован!\nЗавершите уровень ${prevLevel} на 80% для разблокировки.`);
+                    return;
+                }
+            }
+
             currentLevel = level;
 
             // Save selected level to navigation state
@@ -765,6 +831,93 @@ function showProfileSelect() {
             localStorage.setItem('navigation_state', JSON.stringify(navState));
 
             showMainMenu();
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // LEVEL UNLOCK FUNCTIONS
+        // ═══════════════════════════════════════════════════════════════
+
+        const LEVEL_ORDER = ['A2', 'B1', 'B2.1', 'B2.2', 'C1'];
+
+        // Разблокировать все уровни (QA функция)
+        function unlockAllLevels() {
+            const profile = getActiveProfile();
+            if (!profile) return;
+
+            ensureProgressSkeleton(profile);
+            LEVEL_ORDER.forEach(level => {
+                profile.levelUnlocks[level] = true;
+            });
+
+            saveActiveProfile(profile);
+            updateLevelSelectUI();
+
+            const output = document.getElementById('qaOutput');
+            if (output) {
+                output.innerHTML = '✅ Все уровни разблокированы!<br>' +
+                    LEVEL_ORDER.map(l => `${l}: 🔓`).join('<br>');
+            }
+        }
+
+        // Заблокировать уровни по прогрессу (QA функция)
+        function lockAllLevels() {
+            const profile = getActiveProfile();
+            if (!profile) return;
+
+            ensureProgressSkeleton(profile);
+
+            // A2 всегда разблокирован
+            profile.levelUnlocks['A2'] = true;
+
+            // Остальные уровни блокируем и проверяем по прогрессу
+            for (let i = 1; i < LEVEL_ORDER.length; i++) {
+                const currentLevelName = LEVEL_ORDER[i];
+                const prevLevelName = LEVEL_ORDER[i - 1];
+                const prevProgress = calculateOverallLevelProgress(prevLevelName);
+
+                profile.levelUnlocks[currentLevelName] = prevProgress >= 80;
+            }
+
+            saveActiveProfile(profile);
+            updateLevelSelectUI();
+
+            const output = document.getElementById('qaOutput');
+            if (output) {
+                output.innerHTML = '🔒 Уровни заблокированы по прогрессу:<br>' +
+                    LEVEL_ORDER.map(l => {
+                        const unlocked = profile.levelUnlocks[l];
+                        const progress = calculateOverallLevelProgress(l);
+                        return `${l}: ${unlocked ? '🔓' : '🔒'} (${progress}%)`;
+                    }).join('<br>');
+            }
+        }
+
+        // Проверить и обновить разблокировку уровней на основе прогресса
+        function checkAndUpdateLevelUnlocks() {
+            const profile = getActiveProfile();
+            if (!profile) return;
+
+            ensureProgressSkeleton(profile);
+            let updated = false;
+
+            for (let i = 1; i < LEVEL_ORDER.length; i++) {
+                const currentLevelName = LEVEL_ORDER[i];
+                const prevLevelName = LEVEL_ORDER[i - 1];
+                const prevProgress = calculateOverallLevelProgress(prevLevelName);
+
+                // Разблокируем только если ещё не разблокирован и прогресс >= 80%
+                if (!profile.levelUnlocks[currentLevelName] && prevProgress >= 80) {
+                    profile.levelUnlocks[currentLevelName] = true;
+                    updated = true;
+                    console.log(`🔓 Уровень ${currentLevelName} разблокирован! (${prevLevelName}: ${prevProgress}%)`);
+                }
+            }
+
+            if (updated) {
+                saveActiveProfile(profile);
+            }
+
+            return updated;
         }
 
         function updateUnidadUI() {

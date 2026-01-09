@@ -234,7 +234,10 @@
                 </div>
             </div>
 
-            <button class="btn btn-back" onclick="switchProfile()">Сменить профиль</button>
+            <div class="level-select-buttons">
+                <button class="btn btn-back" onclick="switchProfile()">Сменить профиль</button>
+                <button class="btn btn-qa" onclick="showQADeveloperMode()">🧪 QA</button>
+            </div>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
@@ -380,7 +383,6 @@
 
             <div style="margin-top: 40px;">
                 <button class="btn btn-secondary" onclick="showVerbMenu()">🔄 Практика спряжения глаголов</button>
-                <button class="btn btn-warning" onclick="showQADeveloperMode()">🧪 Режим разработчика QA</button>
             </div>
 
             <div class="footer">
@@ -1471,19 +1473,30 @@
              QA DEVELOPER MODE
              ═══════════════════════════════════════════════════════════════ -->
         <div id="qaScreen" class="hidden">
-            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
             <h1>🧪 Режим разработчика QA</h1>
             <p class="subtitle">Инструменты для тестирования и отладки</p>
 
             <div style="margin: 30px 0;">
+                <h3 style="color: #2c3e50; margin-bottom: 15px;">🌍 Уровни</h3>
+                <button class="btn btn-primary" onclick="unlockAllLevels()">🔓 Разблокировать все уровни</button>
+                <button class="btn btn-secondary" onclick="lockAllLevels()">🔒 Заблокировать уровни (по прогрессу)</button>
+
+                <h3 style="color: #2c3e50; margin: 25px 0 15px 0;">📚 Unidades</h3>
                 <button class="btn btn-primary" onclick="unlockAllUnidades()">🔓 Разблокировать все Unidades</button>
                 <button class="btn btn-warning" onclick="resetProgress()">🔄 Сбросить весь прогресс</button>
                 <button class="btn btn-secondary" onclick="fillProgress()">📊 Заполнить прогресс до 100%</button>
+
+                <h3 style="color: #2c3e50; margin: 25px 0 15px 0;">🎓 Экзамены и тесты</h3>
                 <button class="btn btn-primary" id="devExamToggleBtn" onclick="toggleDevExamUnlock()">🎓 Разблокировать экзамен</button>
                 <button class="btn btn-success" onclick="unlockAllPalabrasTests()">🟢 Разблокировать все тесты Palabras</button>
+
+                <h3 style="color: #2c3e50; margin: 25px 0 15px 0;">🔧 Отладка</h3>
                 <button class="btn btn-success" onclick="runQATestsV3()">✅ Запустить QA тесты</button>
                 <button class="btn btn-warning" onclick="viewLocalStorage()">💾 Посмотреть localStorage</button>
-                <button class="btn btn-back" onclick="showMainMenu()">← Назад в главное меню</button>
+
+                <div style="margin-top: 30px;">
+                    <button class="btn btn-back" onclick="showLevelSelect()">← Назад к уровням</button>
+                </div>
             </div>
 
             <div id="qaOutput" style="margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 10px; font-family: monospace; font-size: 0.9em; max-height: 400px; overflow-y: auto;">

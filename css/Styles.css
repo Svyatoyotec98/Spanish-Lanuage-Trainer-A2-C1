@@ -1792,6 +1792,50 @@
     box-shadow: none;
 }
 
+/* Locked level (need 80% of previous) */
+.level-card.level-locked {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background: rgba(150, 150, 150, 0.2) !important;
+    border-color: rgba(150, 150, 150, 0.4) !important;
+}
+
+.level-card.level-locked:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.level-card.level-locked .level-status {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.2);
+}
+
+/* Level select buttons container */
+.level-select-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* QA button style */
+.btn-qa {
+    background: rgba(241, 196, 15, 0.3);
+    color: #f39c12;
+    border: 1px solid rgba(241, 196, 15, 0.5);
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-qa:hover {
+    background: rgba(241, 196, 15, 0.5);
+    border-color: rgba(241, 196, 15, 0.7);
+}
+
 .level-header {
     display: flex;
     justify-content: space-between;

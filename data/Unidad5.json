@@ -1,20 +1,1838 @@
 {
   "id": "unidad_5",
-  "title": "Unidad 5",
-  "categories": {
-    "sustantivos": [
-      {"spanish": "el ejemplo", "ru": "пример"},
-      {"spanish": "la palabra", "ru": "слово"},
-      {"spanish": "el texto", "ru": "текст"}
+  "title": "Unidad 5: ¿Cómo va todo?",
+  "groups": {
+    "SALUDOS_Y_DESPEDIDAS": [
+      {
+        "spanish": "el saludo",
+        "ru": "приветствие",
+        "type": "sustantivo",
+        "icon": "hand-waving",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es muy importante en España.",
+          "Me gusta su ___ tan cariñoso.",
+          "Un ___ cordial abre muchas puertas.",
+          "El ___ de dos besos es típico aquí."
+        ],
+        "hardSentencesRu": [
+          "Приветствие очень важно в Испании.",
+          "Мне нравится его такое тёплое приветствие.",
+          "Сердечное приветствие открывает многие двери.",
+          "Приветствие двумя поцелуями типично здесь."
+        ]
+      },
+      {
+        "spanish": "la despedida",
+        "ru": "прощание",
+        "type": "sustantivo",
+        "icon": "hand-waving",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ fue muy emotiva.",
+          "No me gustan las ___ largas.",
+          "Después de la ___, me sentí triste.",
+          "La ___ en el aeropuerto fue difícil."
+        ],
+        "hardSentencesRu": [
+          "Прощание было очень эмоциональным.",
+          "Мне не нравятся долгие прощания.",
+          "После прощания я почувствовал грусть.",
+          "Прощание в аэропорту было тяжёлым."
+        ]
+      },
+      {
+        "spanish": "el abrazo",
+        "ru": "объятие",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Dame un ___, hace tiempo que no te veo.",
+          "El ___ de mi madre me reconforta.",
+          "Un ___ dice más que mil palabras.",
+          "Necesito un ___ ahora mismo."
+        ],
+        "hardSentencesRu": [
+          "Обними меня, давно тебя не видел.",
+          "Объятие мамы меня успокаивает.",
+          "Объятие говорит больше тысячи слов.",
+          "Мне нужно объятие прямо сейчас."
+        ]
+      },
+      {
+        "spanish": "el beso",
+        "ru": "поцелуй",
+        "type": "sustantivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "En España se dan dos ___ al saludar.",
+          "Dale un ___ de mi parte.",
+          "El ___ en la mejilla es normal aquí.",
+          "Un ___ de buenas noches para los niños."
+        ],
+        "hardSentencesRu": [
+          "В Испании при приветствии дают два поцелуя.",
+          "Передай ему поцелуй от меня.",
+          "Поцелуй в щёку здесь нормален.",
+          "Поцелуй на ночь для детей."
+        ]
+      },
+      {
+        "spanish": "el recuerdo",
+        "ru": "привет (передать); воспоминание",
+        "type": "sustantivo",
+        "icon": "chat-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Dale ___ a tu familia de mi parte.",
+          "Tengo un buen ___ de ese viaje.",
+          "Mis ___ a tu madre, por favor.",
+          "Es un ___ muy bonito de mi infancia."
+        ],
+        "hardSentencesRu": [
+          "Передай привет своей семье от меня.",
+          "У меня хорошее воспоминание о той поездке.",
+          "Передай привет твоей маме, пожалуйста.",
+          "Это очень красивое воспоминание из детства."
+        ]
+      },
+      {
+        "spanish": "saludar",
+        "ru": "здороваться",
+        "type": "verbo",
+        "icon": "hand-waving",
+        "useIcon": true,
+        "hardSentences": [
+          "Es importante ___ al entrar en una tienda.",
+          "No olvides ___ a los vecinos.",
+          "Me gusta ___ con dos besos.",
+          "Hay que ___ antes de empezar la reunión."
+        ],
+        "hardSentencesRu": [
+          "Важно здороваться при входе в магазин.",
+          "Не забудь поздороваться с соседями.",
+          "Мне нравится здороваться двумя поцелуями.",
+          "Нужно поздороваться перед началом встречи."
+        ]
+      },
+      {
+        "spanish": "despedirse",
+        "ru": "прощаться",
+        "type": "verbo",
+        "icon": "hand-waving",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo que ___, es muy tarde.",
+          "No me gusta ___ de mis amigos.",
+          "Es difícil ___ de la familia.",
+          "Prefiero ___ con un abrazo."
+        ],
+        "hardSentencesRu": [
+          "Мне нужно попрощаться, уже очень поздно.",
+          "Мне не нравится прощаться с друзьями.",
+          "Тяжело прощаться с семьёй.",
+          "Я предпочитаю прощаться с объятием."
+        ]
+      },
+      {
+        "spanish": "abrazar",
+        "ru": "обнимать",
+        "type": "verbo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Quiero ___ a mi madre.",
+          "Me encanta ___ a mis hijos.",
+          "Necesito ___ a alguien ahora.",
+          "Voy a ___ a mi amigo cuando lo vea."
+        ],
+        "hardSentencesRu": [
+          "Я хочу обнять маму.",
+          "Мне нравится обнимать своих детей.",
+          "Мне нужно кого-то обнять сейчас.",
+          "Я обниму друга, когда его увижу."
+        ]
+      },
+      {
+        "spanish": "besar",
+        "ru": "целовать",
+        "type": "verbo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "En España es normal ___ al saludar.",
+          "Voy a ___ a mi abuela.",
+          "Me gusta ___ a mis hijos antes de dormir.",
+          "Prefiero ___ en la mejilla."
+        ],
+        "hardSentencesRu": [
+          "В Испании нормально целовать при приветствии.",
+          "Я поцелую бабушку.",
+          "Мне нравится целовать детей перед сном.",
+          "Я предпочитаю целовать в щёку."
+        ]
+      }
     ],
-    "adjetivos": [
-      {"spanish": "nuevo", "ru": "новый"},
-      {"spanish": "viejo", "ru": "старый"}
+    "CORTESIA": [
+      {
+        "spanish": "el favor",
+        "ru": "услуга, одолжение",
+        "type": "sustantivo",
+        "icon": "handshake",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me puedes hacer un ___?",
+          "Te pido un ___ muy grande.",
+          "Gracias por el ___, te debo una.",
+          "Necesito pedirte un ___."
+        ],
+        "hardSentencesRu": [
+          "Можешь сделать мне одолжение?",
+          "Я прошу тебя об очень большой услуге.",
+          "Спасибо за одолжение, я тебе должен.",
+          "Мне нужно попросить тебя об услуге."
+        ]
+      },
+      {
+        "spanish": "el permiso",
+        "ru": "разрешение",
+        "type": "sustantivo",
+        "icon": "check-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me da ___ para salir?",
+          "Necesito tu ___ para usar el coche.",
+          "Con ___, voy a pasar.",
+          "Sin ___ no puedes entrar aquí."
+        ],
+        "hardSentencesRu": [
+          "Вы дадите мне разрешение выйти?",
+          "Мне нужно твоё разрешение использовать машину.",
+          "С разрешения, я пройду.",
+          "Без разрешения сюда нельзя входить."
+        ]
+      },
+      {
+        "spanish": "la disculpa",
+        "ru": "извинение",
+        "type": "sustantivo",
+        "icon": "chat-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Te debo una ___ por llegar tarde.",
+          "Acepto tu ___, no pasa nada.",
+          "Una ___ sincera es muy importante.",
+          "Pido ___ por el malentendido."
+        ],
+        "hardSentencesRu": [
+          "Я должен тебе извинение за опоздание.",
+          "Я принимаю твоё извинение, ничего страшного.",
+          "Искреннее извинение очень важно.",
+          "Прошу извинения за недоразумение."
+        ]
+      },
+      {
+        "spanish": "agradecer",
+        "ru": "благодарить",
+        "type": "verbo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Quiero ___ tu ayuda.",
+          "Tengo que ___ a mis padres.",
+          "Es importante ___ los favores.",
+          "Voy a ___ a todos por venir."
+        ],
+        "hardSentencesRu": [
+          "Я хочу поблагодарить за твою помощь.",
+          "Я должен поблагодарить родителей.",
+          "Важно благодарить за услуги.",
+          "Я поблагодарю всех за то, что пришли."
+        ]
+      },
+      {
+        "spanish": "disculparse",
+        "ru": "извиняться",
+        "type": "verbo",
+        "icon": "chat-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo que ___ por mi error.",
+          "Es difícil ___ a veces.",
+          "Prefiero ___ en persona.",
+          "Hay que ___ cuando nos equivocamos."
+        ],
+        "hardSentencesRu": [
+          "Мне нужно извиниться за свою ошибку.",
+          "Иногда трудно извиняться.",
+          "Я предпочитаю извиняться лично.",
+          "Нужно извиняться, когда мы ошибаемся."
+        ]
+      },
+      {
+        "spanish": "perdonar",
+        "ru": "прощать",
+        "type": "verbo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Puedes ___ mi error?",
+          "Es difícil ___ a veces.",
+          "Quiero ___ y olvidar.",
+          "Hay que saber ___ a los demás."
+        ],
+        "hardSentencesRu": [
+          "Ты можешь простить мою ошибку?",
+          "Иногда трудно прощать.",
+          "Я хочу простить и забыть.",
+          "Нужно уметь прощать других."
+        ]
+      },
+      {
+        "spanish": "molestar",
+        "ru": "беспокоить, мешать",
+        "type": "verbo",
+        "icon": "warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Perdona por ___, pero necesito ayuda.",
+          "No quiero ___ a nadie.",
+          "¿Te importa si te voy a ___?",
+          "Siento ___, pero tengo una pregunta."
+        ],
+        "hardSentencesRu": [
+          "Извини за беспокойство, но мне нужна помощь.",
+          "Я не хочу никого беспокоить.",
+          "Ты не против, если я тебя побеспокою?",
+          "Извини за беспокойство, но у меня вопрос."
+        ]
+      },
+      {
+        "spanish": "amable",
+        "ru": "любезный (м)",
+        "type": "adjetivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "El camarero fue muy ___ con nosotros.",
+          "Es muy ___ de tu parte ayudarme.",
+          "Qué ___ eres, gracias.",
+          "Siempre es ___ con todo el mundo."
+        ],
+        "hardSentencesRu": [
+          "Официант был очень любезен с нами.",
+          "Очень любезно с твоей стороны помочь мне.",
+          "Какой ты любезный, спасибо.",
+          "Он всегда любезен со всеми."
+        ]
+      },
+      {
+        "spanish": "educado",
+        "ru": "воспитанный (м)",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Es un chico muy ___.",
+          "Siempre es ___ con los mayores.",
+          "Qué ___ es tu hijo.",
+          "Es importante ser ___ en público."
+        ],
+        "hardSentencesRu": [
+          "Это очень воспитанный парень.",
+          "Он всегда воспитан со старшими.",
+          "Какой воспитанный у тебя сын.",
+          "Важно быть воспитанным на публике."
+        ]
+      },
+      {
+        "spanish": "grosero",
+        "ru": "грубый (м)",
+        "type": "adjetivo",
+        "icon": "smiley-angry",
+        "useIcon": true,
+        "hardSentences": [
+          "No seas ___, di por favor.",
+          "Fue muy ___ conmigo.",
+          "Es ___ no saludar al entrar.",
+          "Qué ___ es ese dependiente."
+        ],
+        "hardSentencesRu": [
+          "Не будь грубым, скажи пожалуйста.",
+          "Он был очень груб со мной.",
+          "Грубо не здороваться при входе.",
+          "Какой грубый этот продавец."
+        ]
+      }
     ],
-    "verbos": [
-      {"spanish": "crear", "ru": "создавать"},
-      {"spanish": "usar", "ru": "использовать"}
+    "VERBOS_PETICIONES": [
+      {
+        "spanish": "pedir",
+        "ru": "просить",
+        "type": "verbo",
+        "icon": "chat-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Voy a ___ un café con leche.",
+          "Necesito ___ un favor.",
+          "¿Puedo ___ la cuenta?",
+          "Tengo que ___ permiso para salir."
+        ],
+        "hardSentencesRu": [
+          "Я закажу кофе с молоком.",
+          "Мне нужно попросить об услуге.",
+          "Могу я попросить счёт?",
+          "Мне нужно попросить разрешения выйти."
+        ]
+      },
+      {
+        "spanish": "dar",
+        "ru": "давать",
+        "type": "verbo",
+        "icon": "hand-pointing",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me puedes ___ un vaso de agua?",
+          "Voy a ___ las gracias a todos.",
+          "Quiero ___ un abrazo a mi madre.",
+          "Hay que ___ la mano al saludar."
+        ],
+        "hardSentencesRu": [
+          "Можешь дать мне стакан воды?",
+          "Я поблагодарю всех.",
+          "Я хочу обнять маму.",
+          "Нужно пожать руку при приветствии."
+        ]
+      },
+      {
+        "spanish": "pasar",
+        "ru": "передавать",
+        "type": "verbo",
+        "icon": "arrows-left-right",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me pasas la sal, por favor?",
+          "¿Puedes ___ el pan?",
+          "Voy a ___ el mensaje a Juan.",
+          "¿Me puedes ___ el mando?"
+        ],
+        "hardSentencesRu": [
+          "Передашь мне соль, пожалуйста?",
+          "Можешь передать хлеб?",
+          "Я передам сообщение Хуану.",
+          "Можешь передать мне пульт?"
+        ]
+      },
+      {
+        "spanish": "prestar",
+        "ru": "одалживать",
+        "type": "verbo",
+        "icon": "arrows-left-right",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me puedes ___ tu bolígrafo?",
+          "Voy a ___ el coche a mi hermano.",
+          "¿Me podrías ___ 20 euros?",
+          "No me gusta ___ mis libros."
+        ],
+        "hardSentencesRu": [
+          "Можешь одолжить мне ручку?",
+          "Я одолжу машину брату.",
+          "Не мог бы ты одолжить мне 20 евро?",
+          "Мне не нравится одалживать свои книги."
+        ]
+      },
+      {
+        "spanish": "dejar",
+        "ru": "давать (на время), позволять",
+        "type": "verbo",
+        "icon": "hand-pointing",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me dejas tu coche este fin de semana?",
+          "No me ___ usar su ordenador.",
+          "¿Me puedes ___ ver tu libro?",
+          "Mis padres no me ___ salir tarde."
+        ],
+        "hardSentencesRu": [
+          "Дашь мне машину на эти выходные?",
+          "Он не даёт мне пользоваться его компьютером.",
+          "Можешь дать мне посмотреть книгу?",
+          "Родители не разрешают мне поздно выходить."
+        ]
+      },
+      {
+        "spanish": "poner",
+        "ru": "ставить, наливать (в баре)",
+        "type": "verbo",
+        "icon": "coffee",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me pone un café, por favor?",
+          "¿Puede ___ la cuenta?",
+          "¿Me pone otra cerveza?",
+          "Voy a ___ la mesa para cenar."
+        ],
+        "hardSentencesRu": [
+          "Мне кофе, пожалуйста.",
+          "Можете принести счёт?",
+          "Мне ещё одно пиво?",
+          "Я накрою стол к ужину."
+        ]
+      },
+      {
+        "spanish": "traer",
+        "ru": "приносить",
+        "type": "verbo",
+        "icon": "package",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me puede ___ la cuenta?",
+          "Voy a ___ un regalo para ti.",
+          "¿Puedes ___ más pan?",
+          "El camarero va a ___ las bebidas."
+        ],
+        "hardSentencesRu": [
+          "Вы можете принести счёт?",
+          "Я принесу тебе подарок.",
+          "Можешь принести ещё хлеба?",
+          "Официант принесёт напитки."
+        ]
+      },
+      {
+        "spanish": "ayudar",
+        "ru": "помогать",
+        "type": "verbo",
+        "icon": "handshake",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Me puedes ___ con esto?",
+          "Quiero ___ a mi vecino.",
+          "Necesito ___ a mi madre en casa.",
+          "Voy a ___ a preparar la cena."
+        ],
+        "hardSentencesRu": [
+          "Ты можешь помочь мне с этим?",
+          "Я хочу помочь соседу.",
+          "Мне нужно помочь маме дома.",
+          "Я помогу приготовить ужин."
+        ]
+      },
+      {
+        "spanish": "importar",
+        "ru": "быть важным, иметь значение",
+        "type": "verbo",
+        "icon": "warning",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Te importa si abro la ventana?",
+          "No me ___ esperar un poco.",
+          "¿Le importa si me siento aquí?",
+          "Me ___ mucho tu opinión."
+        ],
+        "hardSentencesRu": [
+          "Ты не против, если открою окно?",
+          "Мне не трудно немного подождать.",
+          "Вы не против, если я сяду здесь?",
+          "Мне очень важно твоё мнение."
+        ]
+      }
     ],
-    "gramatica": []
-  }
+    "CONTACTO_SOCIAL": [
+      {
+        "spanish": "la presentación",
+        "ru": "представление, знакомство",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ fue muy formal.",
+          "Hice una ___ de mi proyecto.",
+          "La ___ de los invitados duró mucho.",
+          "Es importante hacer una buena ___."
+        ],
+        "hardSentencesRu": [
+          "Представление было очень формальным.",
+          "Я сделал презентацию своего проекта.",
+          "Представление гостей длилось долго.",
+          "Важно произвести хорошее впечатление."
+        ]
+      },
+      {
+        "spanish": "el conocido",
+        "ru": "знакомый",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Es un ___ del trabajo.",
+          "Me encontré con un ___ en la calle.",
+          "No es amigo, solo un ___.",
+          "Tengo muchos ___ en esta ciudad."
+        ],
+        "hardSentencesRu": [
+          "Это знакомый с работы.",
+          "Я встретил знакомого на улице.",
+          "Он не друг, просто знакомый.",
+          "У меня много знакомых в этом городе."
+        ]
+      },
+      {
+        "spanish": "el desconocido",
+        "ru": "незнакомец",
+        "type": "sustantivo",
+        "icon": "user-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Un ___ me pidió la hora.",
+          "No hables con ___.",
+          "Era un ___ completo para mí.",
+          "El ___ resultó ser muy simpático."
+        ],
+        "hardSentencesRu": [
+          "Незнакомец спросил у меня время.",
+          "Не разговаривай с незнакомцами.",
+          "Он был для меня полным незнакомцем.",
+          "Незнакомец оказался очень приятным."
+        ]
+      },
+      {
+        "spanish": "el vecino",
+        "ru": "сосед",
+        "type": "sustantivo",
+        "icon": "house",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ es muy simpático.",
+          "El ___ de arriba hace mucho ruido.",
+          "Saludé a mi ___ esta mañana.",
+          "Tengo un ___ muy amable."
+        ],
+        "hardSentencesRu": [
+          "Мой сосед очень приятный.",
+          "Сосед сверху очень шумит.",
+          "Я поздоровался с соседом сегодня утром.",
+          "У меня очень любезный сосед."
+        ]
+      },
+      {
+        "spanish": "presentar",
+        "ru": "представлять (кого-то)",
+        "type": "verbo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Te voy a ___ a mi hermano.",
+          "Quiero ___ a mis padres.",
+          "Déjame ___ a mi compañero.",
+          "Me gustaría ___ a mi novia."
+        ],
+        "hardSentencesRu": [
+          "Я представлю тебе моего брата.",
+          "Я хочу представить моих родителей.",
+          "Позволь представить моего коллегу.",
+          "Я хотел бы представить мою девушку."
+        ]
+      },
+      {
+        "spanish": "conocer",
+        "ru": "знакомиться, знать",
+        "type": "verbo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Encantado de ___ te.",
+          "Me gustaría ___ a tu familia.",
+          "Quiero ___ gente nueva.",
+          "Es un placer ___ le."
+        ],
+        "hardSentencesRu": [
+          "Приятно познакомиться.",
+          "Я хотел бы познакомиться с твоей семьёй.",
+          "Я хочу познакомиться с новыми людьми.",
+          "Приятно с Вами познакомиться."
+        ]
+      },
+      {
+        "spanish": "tutear",
+        "ru": "обращаться на «ты»",
+        "type": "verbo",
+        "icon": "chat-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Puedo ___? Es más fácil.",
+          "En España es normal ___ a casi todos.",
+          "Prefiero ___ a mis compañeros.",
+          "¿Te importa si te ___?"
+        ],
+        "hardSentencesRu": [
+          "Можно на «ты»? Так проще.",
+          "В Испании нормально обращаться на «ты» почти ко всем.",
+          "Я предпочитаю обращаться к коллегам на «ты».",
+          "Ты не против, если я буду на «ты»?"
+        ]
+      },
+      {
+        "spanish": "quedar",
+        "ru": "договариваться о встрече",
+        "type": "verbo",
+        "icon": "calendar",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Quedamos el sábado para tomar algo?",
+          "Vamos a ___ a las ocho.",
+          "¿A qué hora quedamos?",
+          "Prefiero ___ por la tarde."
+        ],
+        "hardSentencesRu": [
+          "Встретимся в субботу выпить чего-нибудь?",
+          "Давай встретимся в восемь.",
+          "Во сколько встречаемся?",
+          "Я предпочитаю встречаться днём."
+        ]
+      },
+      {
+        "spanish": "cercano",
+        "ru": "близкий (м)",
+        "type": "adjetivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Es un amigo muy ___.",
+          "Tengo una relación ___ con mi hermano.",
+          "No es un conocido ___, solo del trabajo.",
+          "Mi familia más ___ vive aquí."
+        ],
+        "hardSentencesRu": [
+          "Это очень близкий друг.",
+          "У меня близкие отношения с братом.",
+          "Это не близкий знакомый, просто с работы.",
+          "Моя ближайшая семья живёт здесь."
+        ]
+      },
+      {
+        "spanish": "formal",
+        "ru": "формальный (м)",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "La reunión fue muy ___.",
+          "Usa un tono más ___ con el jefe.",
+          "El saludo ___ es con la mano.",
+          "Es una situación ___, hay que usar usted."
+        ],
+        "hardSentencesRu": [
+          "Встреча была очень формальной.",
+          "Используй более формальный тон с начальником.",
+          "Формальное приветствие — рукопожатие.",
+          "Это формальная ситуация, нужно использовать «Вы»."
+        ]
+      }
+    ],
+    "EXPRESIONES_UTILES": [
+      {
+        "spanish": "la excusa",
+        "ru": "отговорка, оправдание",
+        "type": "sustantivo",
+        "icon": "chat-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Siempre tiene una ___ para todo.",
+          "No busques ___, di la verdad.",
+          "Es una ___ muy mala.",
+          "Necesito una buena ___ para no ir."
+        ],
+        "hardSentencesRu": [
+          "У него всегда есть отговорка на всё.",
+          "Не ищи оправданий, скажи правду.",
+          "Это очень плохая отговорка.",
+          "Мне нужна хорошая отговорка, чтобы не идти."
+        ]
+      },
+      {
+        "spanish": "la prisa",
+        "ru": "спешка",
+        "type": "sustantivo",
+        "icon": "clock",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo mucha ___, llego tarde.",
+          "No hay ___, tómate tu tiempo.",
+          "Con tanta ___ me olvidé las llaves.",
+          "¿Por qué tienes tanta ___?"
+        ],
+        "hardSentencesRu": [
+          "Я очень спешу, опаздываю.",
+          "Не спеши, не торопись.",
+          "С такой спешкой я забыл ключи.",
+          "Почему ты так спешишь?"
+        ]
+      },
+      {
+        "spanish": "la reunión",
+        "ru": "встреча, собрание",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo una ___ a las tres.",
+          "La ___ duró dos horas.",
+          "No puedo, es que tengo una ___.",
+          "La ___ fue muy productiva."
+        ],
+        "hardSentencesRu": [
+          "У меня встреча в три.",
+          "Собрание длилось два часа.",
+          "Не могу, дело в том, что у меня встреча.",
+          "Встреча была очень продуктивной."
+        ]
+      },
+      {
+        "spanish": "la cita",
+        "ru": "встреча, свидание",
+        "type": "sustantivo",
+        "icon": "calendar",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo una ___ con el médico.",
+          "Es mi primera ___ con ella.",
+          "No puedo, tengo una ___ importante.",
+          "Llegué tarde a la ___."
+        ],
+        "hardSentencesRu": [
+          "У меня приём у врача.",
+          "Это моё первое свидание с ней.",
+          "Не могу, у меня важная встреча.",
+          "Я опоздал на встречу."
+        ]
+      },
+      {
+        "spanish": "justificarse",
+        "ru": "оправдываться",
+        "type": "verbo",
+        "icon": "chat-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "No tienes que ___, lo entiendo.",
+          "Siempre intenta ___ por todo.",
+          "Es difícil ___ cuando llegas tarde.",
+          "No me gusta ___ ante nadie."
+        ],
+        "hardSentencesRu": [
+          "Тебе не нужно оправдываться, я понимаю.",
+          "Он всегда пытается оправдаться за всё.",
+          "Трудно оправдываться, когда опаздываешь.",
+          "Мне не нравится оправдываться ни перед кем."
+        ]
+      },
+      {
+        "spanish": "ocupado",
+        "ru": "занятой (м)",
+        "type": "adjetivo",
+        "icon": "clock",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ esta semana.",
+          "Lo siento, estoy ___ ahora.",
+          "Siempre está ___ con el trabajo.",
+          "¿Estás ___ o puedes hablar?"
+        ],
+        "hardSentencesRu": [
+          "Я очень занят на этой неделе.",
+          "Извини, я сейчас занят.",
+          "Он всегда занят работой.",
+          "Ты занят или можешь поговорить?"
+        ]
+      },
+      {
+        "spanish": "disponible",
+        "ru": "свободный, доступный (м)",
+        "type": "adjetivo",
+        "icon": "check-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Estás ___ el sábado?",
+          "No hay mesas ___ ahora.",
+          "El jefe no está ___ hoy.",
+          "Estaré ___ a partir de las cinco."
+        ],
+        "hardSentencesRu": [
+          "Ты свободен в субботу?",
+          "Сейчас нет свободных столиков.",
+          "Начальник сегодня недоступен.",
+          "Я буду свободен с пяти."
+        ]
+      }
+    ]
+  },
+  "verbos": {
+    "tiempos": ["Gerundio"],
+    "regulares": [
+      {
+        "infinitivo": "hablar",
+        "ru": "говорить",
+        "gerundio": "hablando"
+      },
+      {
+        "infinitivo": "trabajar",
+        "ru": "работать",
+        "gerundio": "trabajando"
+      },
+      {
+        "infinitivo": "estudiar",
+        "ru": "учиться",
+        "gerundio": "estudiando"
+      },
+      {
+        "infinitivo": "comer",
+        "ru": "есть",
+        "gerundio": "comiendo"
+      },
+      {
+        "infinitivo": "beber",
+        "ru": "пить",
+        "gerundio": "bebiendo"
+      },
+      {
+        "infinitivo": "vivir",
+        "ru": "жить",
+        "gerundio": "viviendo"
+      },
+      {
+        "infinitivo": "escribir",
+        "ru": "писать",
+        "gerundio": "escribiendo"
+      },
+      {
+        "infinitivo": "abrir",
+        "ru": "открывать",
+        "gerundio": "abriendo"
+      }
+    ],
+    "irregulares": [
+      {
+        "infinitivo": "leer",
+        "ru": "читать",
+        "gerundio": "leyendo",
+        "nota": "гласная + er → yendo"
+      },
+      {
+        "infinitivo": "oír",
+        "ru": "слышать",
+        "gerundio": "oyendo",
+        "nota": "гласная + ir → yendo"
+      },
+      {
+        "infinitivo": "ir",
+        "ru": "идти",
+        "gerundio": "yendo",
+        "nota": "особая форма"
+      },
+      {
+        "infinitivo": "decir",
+        "ru": "говорить",
+        "gerundio": "diciendo",
+        "nota": "e → i в корне"
+      },
+      {
+        "infinitivo": "pedir",
+        "ru": "просить",
+        "gerundio": "pidiendo",
+        "nota": "e → i в корне"
+      },
+      {
+        "infinitivo": "seguir",
+        "ru": "следовать",
+        "gerundio": "siguiendo",
+        "nota": "e → i в корне"
+      },
+      {
+        "infinitivo": "vestir",
+        "ru": "одевать",
+        "gerundio": "vistiendo",
+        "nota": "e → i в корне"
+      },
+      {
+        "infinitivo": "sentir",
+        "ru": "чувствовать",
+        "gerundio": "sintiendo",
+        "nota": "e → i в корне"
+      },
+      {
+        "infinitivo": "dormir",
+        "ru": "спать",
+        "gerundio": "durmiendo",
+        "nota": "o → u в корне"
+      },
+      {
+        "infinitivo": "morir",
+        "ru": "умирать",
+        "gerundio": "muriendo",
+        "nota": "o → u в корне"
+      },
+      {
+        "infinitivo": "venir",
+        "ru": "приходить",
+        "gerundio": "viniendo",
+        "nota": "особый глагол"
+      },
+      {
+        "infinitivo": "construir",
+        "ru": "строить",
+        "gerundio": "construyendo",
+        "nota": "-uir → -uyendo"
+      }
+    ]
+  },
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Gerundio regular: -ando / -iendo",
+      "hint": "-ando / -iendo",
+      "rule": {
+        "title": "Герундий: образование регулярных форм",
+        "explanation": "Герундий (gerundio) — это неизменяемая форма глагола, которая описывает действие в процессе. В испанском языке герундий образуется по простым правилам в зависимости от окончания инфинитива. Используется с глаголом ESTAR для описания действия, происходящего прямо сейчас.",
+        "sections": [
+          {
+            "subtitle": "Глаголы на -AR → -ANDO",
+            "points": [
+              "hablar → habl<b>ando</b> — разговаривая",
+              "trabajar → trabaj<b>ando</b> — работая",
+              "estudiar → estudi<b>ando</b> — изучая",
+              "cocinar → cocin<b>ando</b> — готовя"
+            ]
+          },
+          {
+            "subtitle": "Глаголы на -ER / -IR → -IENDO",
+            "points": [
+              "comer → com<b>iendo</b> — кушая",
+              "beber → beb<b>iendo</b> — пия",
+              "vivir → viv<b>iendo</b> — живя",
+              "escribir → escrib<b>iendo</b> — пиша"
+            ]
+          },
+          {
+            "subtitle": "Использование: ESTAR + gerundio",
+            "points": [
+              "Estoy <b>hablando</b> por teléfono — Я разговариваю по телефону (сейчас)",
+              "¿Qué estás <b>haciendo</b>? — Что ты делаешь? (в данный момент)",
+              "Están <b>comiendo</b> en el restaurante — Они едят в ресторане (сейчас)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Estoy estudiando español.", "ru": "Я изучаю испанский (сейчас)."},
+          {"es": "Mi madre está cocinando la cena.", "ru": "Моя мама готовит ужин."},
+          {"es": "Los niños están jugando en el parque.", "ru": "Дети играют в парке."},
+          {"es": "¿Estás escuchando música?", "ru": "Ты слушаешь музыку?"}
+        ]
+      },
+      "questions": [
+        {"sentence": "hablar → habl___", "answer": "ando"},
+        {"sentence": "trabajar → trabaj___", "answer": "ando"},
+        {"sentence": "estudiar → estudi___", "answer": "ando"},
+        {"sentence": "cocinar → cocin___", "answer": "ando"},
+        {"sentence": "caminar → camin___", "answer": "ando"},
+        {"sentence": "cantar → cant___", "answer": "ando"},
+        {"sentence": "bailar → bail___", "answer": "ando"},
+        {"sentence": "escuchar → escuch___", "answer": "ando"},
+        {"sentence": "mirar → mir___", "answer": "ando"},
+        {"sentence": "esperar → esper___", "answer": "ando"},
+        {"sentence": "llamar → llam___", "answer": "ando"},
+        {"sentence": "comprar → compr___", "answer": "ando"},
+        {"sentence": "buscar → busc___", "answer": "ando"},
+        {"sentence": "pensar → pens___", "answer": "ando"},
+        {"sentence": "descansar → descans___", "answer": "ando"},
+        {"sentence": "viajar → viaj___", "answer": "ando"},
+        {"sentence": "nadar → nad___", "answer": "ando"},
+        {"sentence": "lavar → lav___", "answer": "ando"},
+        {"sentence": "preguntar → pregunt___", "answer": "ando"},
+        {"sentence": "contestar → contest___", "answer": "ando"},
+        {"sentence": "tocar → toc___", "answer": "ando"},
+        {"sentence": "preparar → prepar___", "answer": "ando"},
+        {"sentence": "cenar → cen___", "answer": "ando"},
+        {"sentence": "desayunar → desayun___", "answer": "ando"},
+        {"sentence": "almorzar → almorz___", "answer": "ando"},
+        {"sentence": "pasear → pase___", "answer": "ando"},
+        {"sentence": "limpiar → limpi___", "answer": "ando"},
+        {"sentence": "planchar → planch___", "answer": "ando"},
+        {"sentence": "jugar → jug___", "answer": "ando"},
+        {"sentence": "llegar → lleg___", "answer": "ando"},
+        {"sentence": "comer → com___", "answer": "iendo"},
+        {"sentence": "beber → beb___", "answer": "iendo"},
+        {"sentence": "correr → corr___", "answer": "iendo"},
+        {"sentence": "aprender → aprend___", "answer": "iendo"},
+        {"sentence": "comprender → comprend___", "answer": "iendo"},
+        {"sentence": "responder → respond___", "answer": "iendo"},
+        {"sentence": "vender → vend___", "answer": "iendo"},
+        {"sentence": "meter → met___", "answer": "iendo"},
+        {"sentence": "barrer → barr___", "answer": "iendo"},
+        {"sentence": "coser → cos___", "answer": "iendo"},
+        {"sentence": "tejer → tej___", "answer": "iendo"},
+        {"sentence": "romper → romp___", "answer": "iendo"},
+        {"sentence": "toser → tos___", "answer": "iendo"},
+        {"sentence": "prometer → promet___", "answer": "iendo"},
+        {"sentence": "deber → deb___", "answer": "iendo"},
+        {"sentence": "vivir → viv___", "answer": "iendo"},
+        {"sentence": "escribir → escrib___", "answer": "iendo"},
+        {"sentence": "subir → sub___", "answer": "iendo"},
+        {"sentence": "abrir → abr___", "answer": "iendo"},
+        {"sentence": "recibir → recib___", "answer": "iendo"},
+        {"sentence": "decidir → decid___", "answer": "iendo"},
+        {"sentence": "discutir → discut___", "answer": "iendo"},
+        {"sentence": "compartir → compart___", "answer": "iendo"},
+        {"sentence": "asistir → asist___", "answer": "iendo"},
+        {"sentence": "existir → exist___", "answer": "iendo"},
+        {"sentence": "insistir → insist___", "answer": "iendo"},
+        {"sentence": "permitir → permit___", "answer": "iendo"},
+        {"sentence": "sufrir → sufr___", "answer": "iendo"},
+        {"sentence": "aplaudir → aplaud___", "answer": "iendo"},
+        {"sentence": "cumplir → cumpl___", "answer": "iendo"}
+      ],
+      "microTests": [
+        {"sentence": "hablar → habl___", "answer": "ando", "hint": "Глагол на -AR: отбрось -ar, добавь..."},
+        {"sentence": "cantar → cant___", "answer": "ando", "hint": "Глагол на -AR: какое окончание?"},
+        {"sentence": "bailar → bail___", "answer": "ando", "hint": "Танцевать — глагол на -AR"},
+        {"sentence": "estudiar → estudi___", "answer": "ando", "hint": "Estudiar оканчивается на -AR"},
+        {"sentence": "trabajar → trabaj___", "answer": "ando", "hint": "Работать: -AR → ?"},
+        {"sentence": "comer → com___", "answer": "iendo", "hint": "Глагол на -ER: отбрось -er, добавь..."},
+        {"sentence": "beber → beb___", "answer": "iendo", "hint": "Глагол на -ER: какое окончание?"},
+        {"sentence": "correr → corr___", "answer": "iendo", "hint": "Бегать — глагол на -ER"},
+        {"sentence": "aprender → aprend___", "answer": "iendo", "hint": "Aprender оканчивается на -ER"},
+        {"sentence": "vivir → viv___", "answer": "iendo", "hint": "Глагол на -IR: отбрось -ir, добавь..."},
+        {"sentence": "escribir → escrib___", "answer": "iendo", "hint": "Глагол на -IR: какое окончание?"},
+        {"sentence": "abrir → abr___", "answer": "iendo", "hint": "Открывать — глагол на -IR"},
+        {"sentence": "subir → sub___", "answer": "iendo", "hint": "Subir оканчивается на -IR"},
+        {"sentence": "recibir → recib___", "answer": "iendo", "hint": "Получать: -IR → ?"},
+        {"sentence": "decidir → decid___", "answer": "iendo", "hint": "Решать — глагол на -IR"}
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Gerundio irregular",
+      "hint": "yendo / iendo (e→i) / iendo (o→u)",
+      "rule": {
+        "title": "Неправильные формы герундия",
+        "explanation": "Некоторые глаголы имеют неправильные формы герундия. Основные изменения: глаголы с гласной между двумя согласными меняют -iendo на -yendo; глаголы с изменением корневой гласной (e→i или o→u) сохраняют это изменение в герундии.",
+        "sections": [
+          {
+            "subtitle": "-IENDO → -YENDO (гласная + er/ir)",
+            "points": [
+              "leer → le<b>yendo</b> (не 'leiendo') — читая",
+              "oír → o<b>yendo</b> — слыша",
+              "caer → ca<b>yendo</b> — падая",
+              "creer → cre<b>yendo</b> — веря",
+              "construir → constru<b>yendo</b> — строя"
+            ]
+          },
+          {
+            "subtitle": "Изменение E → I в корне",
+            "points": [
+              "decir → d<b>i</b>ciendo — говоря",
+              "pedir → p<b>i</b>diendo — прося",
+              "seguir → s<b>i</b>guiendo — следуя",
+              "vestir → v<b>i</b>stiendo — одевая",
+              "sentir → s<b>i</b>ntiendo — чувствуя",
+              "repetir → rep<b>i</b>tiendo — повторяя"
+            ]
+          },
+          {
+            "subtitle": "Изменение O → U в корне",
+            "points": [
+              "dormir → d<b>u</b>rmiendo — спя",
+              "morir → m<b>u</b>riendo — умирая",
+              "poder → p<b>u</b>diendo — моги"
+            ]
+          },
+          {
+            "subtitle": "Особые формы",
+            "points": [
+              "ir → <b>yendo</b> — идя (полностью неправильная форма)",
+              "venir → <b>viniendo</b> — приходя"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Estoy leyendo un libro muy interesante.", "ru": "Я читаю очень интересную книгу."},
+          {"es": "Los niños están durmiendo.", "ru": "Дети спят."},
+          {"es": "¿Qué estás diciendo?", "ru": "Что ты говоришь?"},
+          {"es": "Están construyendo un edificio nuevo.", "ru": "Они строят новое здание."}
+        ]
+      },
+      "questions": [
+        {"sentence": "leer → ___", "answer": "leyendo"},
+        {"sentence": "oír → ___", "answer": "oyendo"},
+        {"sentence": "caer → ___", "answer": "cayendo"},
+        {"sentence": "creer → ___", "answer": "creyendo"},
+        {"sentence": "construir → ___", "answer": "construyendo"},
+        {"sentence": "destruir → ___", "answer": "destruyendo"},
+        {"sentence": "huir → ___", "answer": "huyendo"},
+        {"sentence": "incluir → ___", "answer": "incluyendo"},
+        {"sentence": "contribuir → ___", "answer": "contribuyendo"},
+        {"sentence": "distribuir → ___", "answer": "distribuyendo"},
+        {"sentence": "traer → ___", "answer": "trayendo"},
+        {"sentence": "ir → ___", "answer": "yendo"},
+        {"sentence": "decir → ___", "answer": "diciendo"},
+        {"sentence": "pedir → ___", "answer": "pidiendo"},
+        {"sentence": "seguir → ___", "answer": "siguiendo"},
+        {"sentence": "vestir → ___", "answer": "vistiendo"},
+        {"sentence": "sentir → ___", "answer": "sintiendo"},
+        {"sentence": "repetir → ___", "answer": "repitiendo"},
+        {"sentence": "servir → ___", "answer": "sirviendo"},
+        {"sentence": "mentir → ___", "answer": "mintiendo"},
+        {"sentence": "preferir → ___", "answer": "prefiriendo"},
+        {"sentence": "conseguir → ___", "answer": "consiguiendo"},
+        {"sentence": "perseguir → ___", "answer": "persiguiendo"},
+        {"sentence": "medir → ___", "answer": "midiendo"},
+        {"sentence": "reír → ___", "answer": "riendo"},
+        {"sentence": "sonreír → ___", "answer": "sonriendo"},
+        {"sentence": "freír → ___", "answer": "friendo"},
+        {"sentence": "corregir → ___", "answer": "corrigiendo"},
+        {"sentence": "elegir → ___", "answer": "eligiendo"},
+        {"sentence": "competir → ___", "answer": "compitiendo"},
+        {"sentence": "dormir → ___", "answer": "durmiendo"},
+        {"sentence": "morir → ___", "answer": "muriendo"},
+        {"sentence": "poder → ___", "answer": "pudiendo"},
+        {"sentence": "venir → ___", "answer": "viniendo"},
+        {"sentence": "Estoy ___ un libro. (leer)", "answer": "leyendo"},
+        {"sentence": "Los niños están ___. (dormir)", "answer": "durmiendo"},
+        {"sentence": "¿Qué estás ___? (decir)", "answer": "diciendo"},
+        {"sentence": "Están ___ música. (oír)", "answer": "oyendo"},
+        {"sentence": "El bebé está ___. (dormir)", "answer": "durmiendo"},
+        {"sentence": "María está ___ la verdad. (decir)", "answer": "diciendo"},
+        {"sentence": "Estamos ___ al centro. (ir)", "answer": "yendo"},
+        {"sentence": "Los obreros están ___ una casa. (construir)", "answer": "construyendo"},
+        {"sentence": "El gato está ___ del árbol. (caer)", "answer": "cayendo"},
+        {"sentence": "Estoy ___ una novela. (leer)", "answer": "leyendo"},
+        {"sentence": "¿Estás ___ lo que digo? (oír)", "answer": "oyendo"},
+        {"sentence": "El niño está ___ un favor. (pedir)", "answer": "pidiendo"},
+        {"sentence": "Ella está ___ de rojo. (vestir)", "answer": "vistiendo"},
+        {"sentence": "Estoy ___ mucho frío. (sentir)", "answer": "sintiendo"},
+        {"sentence": "El profesor está ___ la lección. (repetir)", "answer": "repitiendo"},
+        {"sentence": "El camarero está ___ la comida. (servir)", "answer": "sirviendo"},
+        {"sentence": "Creo que está ___. (mentir)", "answer": "mintiendo"},
+        {"sentence": "Están ___ las instrucciones. (seguir)", "answer": "siguiendo"},
+        {"sentence": "Los atletas están ___. (competir)", "answer": "compitiendo"},
+        {"sentence": "El paciente está ___. (morir)", "answer": "muriendo"},
+        {"sentence": "¿Quién está ___? (venir)", "answer": "viniendo"},
+        {"sentence": "Los estudiantes están ___ el examen. (corregir)", "answer": "corrigiendo"},
+        {"sentence": "Estamos ___ un representante. (elegir)", "answer": "eligiendo"},
+        {"sentence": "Ella está ___ huevos. (freír)", "answer": "friendo"},
+        {"sentence": "El bebé está ___. (sonreír)", "answer": "sonriendo"},
+        {"sentence": "¿Por qué estás ___? (reír)", "answer": "riendo"}
+      ],
+      "microTests": [
+        {"sentence": "leer → ___", "answer": "leyendo", "hint": "Гласная + -er: -iendo → -yendo"},
+        {"sentence": "oír → ___", "answer": "oyendo", "hint": "Гласная + -ir: нужна Y"},
+        {"sentence": "caer → ___", "answer": "cayendo", "hint": "Падать: гласная перед -er"},
+        {"sentence": "construir → ___", "answer": "construyendo", "hint": "Глаголы на -uir → -uyendo"},
+        {"sentence": "ir → ___", "answer": "yendo", "hint": "Особая форма: ir → ?"},
+        {"sentence": "decir → ___", "answer": "diciendo", "hint": "E → I в корне: dec- → dic-"},
+        {"sentence": "pedir → ___", "answer": "pidiendo", "hint": "E → I: ped- → pid-"},
+        {"sentence": "seguir → ___", "answer": "siguiendo", "hint": "E → I: segu- → sigu-"},
+        {"sentence": "sentir → ___", "answer": "sintiendo", "hint": "E → I: sent- → sint-"},
+        {"sentence": "vestir → ___", "answer": "vistiendo", "hint": "E → I: vest- → vist-"},
+        {"sentence": "dormir → ___", "answer": "durmiendo", "hint": "O → U: dorm- → durm-"},
+        {"sentence": "morir → ___", "answer": "muriendo", "hint": "O → U: mor- → mur-"},
+        {"sentence": "venir → ___", "answer": "viniendo", "hint": "Особый глагол: venir → ?"},
+        {"sentence": "creer → ___", "answer": "creyendo", "hint": "Гласная + -er: нужна Y"},
+        {"sentence": "repetir → ___", "answer": "repitiendo", "hint": "E → I: repet- → repit-"}
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Presente vs Estar + gerundio",
+      "hint": "presente / estar + gerundio",
+      "rule": {
+        "title": "Presente simple vs ESTAR + gerundio",
+        "explanation": "Presente simple описывает привычные, регулярные действия или общие истины. ESTAR + gerundio описывает действие, которое происходит именно сейчас, в момент речи, или временную ситуацию.",
+        "sections": [
+          {
+            "subtitle": "PRESENTE SIMPLE — привычки и факты",
+            "points": [
+              "Привычные действия: <b>Trabajo</b> en una oficina — Я работаю в офисе (обычно)",
+              "Расписание: El tren <b>sale</b> a las 8 — Поезд отправляется в 8",
+              "Общие истины: El agua <b>hierve</b> a 100 grados — Вода кипит при 100 градусах",
+              "Маркеры: siempre, normalmente, cada día, todos los días"
+            ]
+          },
+          {
+            "subtitle": "ESTAR + GERUNDIO — сейчас, в данный момент",
+            "points": [
+              "Действие сейчас: <b>Estoy trabajando</b> — Я работаю (прямо сейчас)",
+              "Временная ситуация: <b>Estoy viviendo</b> con mis padres — Я живу с родителями (временно)",
+              "Изменение: Los precios <b>están subiendo</b> — Цены растут (в последнее время)",
+              "Маркеры: ahora, ahora mismo, en este momento, estos días, últimamente"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Normalmente voy al trabajo en metro, pero estos días estoy yendo en autobús.", "ru": "Обычно я езжу на работу на метро, но в эти дни езжу на автобусе."},
+          {"es": "Mi padre cocina muy bien. Ahora mismo está cocinando una paella.", "ru": "Мой отец очень хорошо готовит. Прямо сейчас он готовит паэлью."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Normalmente (yo, ir) ___ al trabajo en metro.", "answer": "voy"},
+        {"sentence": "Ahora mismo (yo, ir) ___ en autobús.", "answer": "estoy yendo"},
+        {"sentence": "¿Mi padre? Ahora mismo (cocinar) ___ una paella.", "answer": "está cocinando"},
+        {"sentence": "Mi padre (cocinar) ___ muy bien.", "answer": "cocina"},
+        {"sentence": "(Yo, esperar) ___ a José. Tiene que llegar en cualquier momento.", "answer": "Estoy esperando"},
+        {"sentence": "Siempre (yo, esperar) ___ el autobús aquí.", "answer": "espero"},
+        {"sentence": "Este fin de semana tenemos que descansar, (nosotros, trabajar) ___ mucho últimamente.", "answer": "estamos trabajando"},
+        {"sentence": "(Nosotros, trabajar) ___ en una empresa internacional.", "answer": "Trabajamos"},
+        {"sentence": "¿Sandra? Ahora no puede ponerse, (ella, ducharse) ___.", "answer": "se está duchando"},
+        {"sentence": "Sandra (ducharse) ___ todas las mañanas.", "answer": "se ducha"},
+        {"sentence": "Sara (cantar) ___ en un grupo de folk.", "answer": "canta"},
+        {"sentence": "¿Oyes? Sara (cantar) ___ en su habitación.", "answer": "está cantando"},
+        {"sentence": "¿Pero quién llama a estas horas? ¡(Nosotros, dormir) ___!", "answer": "Estamos durmiendo"},
+        {"sentence": "Normalmente (nosotros, dormir) ___ ocho horas.", "answer": "dormimos"},
+        {"sentence": "Perdona que te moleste. ¿(Tú, dormir) ___?", "answer": "Estás durmiendo"},
+        {"sentence": "¿Cuántas horas (tú, dormir) ___ cada noche?", "answer": "duermes"},
+        {"sentence": "Verónica (vestirse) ___ siempre muy elegante.", "answer": "se viste"},
+        {"sentence": "Espera un momento, Verónica (vestirse) ___.", "answer": "se está vistiendo"},
+        {"sentence": "¿Qué (tú, leer) ___ últimamente?", "answer": "estás leyendo"},
+        {"sentence": "(Yo, leer) ___ el periódico todas las mañanas.", "answer": "Leo"},
+        {"sentence": "¿Qué (ellos, construir) ___ delante de tu casa?", "answer": "están construyendo"},
+        {"sentence": "En esta ciudad (construir) ___ muchos edificios nuevos.", "answer": "construyen"},
+        {"sentence": "Mi hermano (trabajar) ___ de camarero, pero en realidad es actor.", "answer": "trabaja"},
+        {"sentence": "Mi hermano (trabajar) ___ mucho esta semana.", "answer": "está trabajando"},
+        {"sentence": "Los niños (jugar) ___ en el parque todos los días.", "answer": "juegan"},
+        {"sentence": "Mira, los niños (jugar) ___ en el jardín.", "answer": "están jugando"},
+        {"sentence": "María (estudiar) ___ medicina en la universidad.", "answer": "estudia"},
+        {"sentence": "No molestes a María, (estudiar) ___ para el examen.", "answer": "está estudiando"},
+        {"sentence": "En España la gente (cenar) ___ tarde.", "answer": "cena"},
+        {"sentence": "No puedo hablar ahora, (cenar) ___.", "answer": "estoy cenando"},
+        {"sentence": "(Llover) ___ mucho en esta región.", "answer": "Llueve"},
+        {"sentence": "No salgas ahora, (llover) ___.", "answer": "está lloviendo"},
+        {"sentence": "El sol (salir) ___ por el este.", "answer": "sale"},
+        {"sentence": "Mira qué bonito, el sol (salir) ___.", "answer": "está saliendo"},
+        {"sentence": "Mi madre (hablar) ___ tres idiomas.", "answer": "habla"},
+        {"sentence": "No puedo pasar a mi madre, (hablar) ___ por teléfono.", "answer": "está hablando"},
+        {"sentence": "¿A qué hora (empezar) ___ las clases?", "answer": "empiezan"},
+        {"sentence": "Silencio, la película (empezar) ___.", "answer": "está empezando"},
+        {"sentence": "Los precios (subir) ___ cada año.", "answer": "suben"},
+        {"sentence": "Los precios (subir) ___ mucho últimamente.", "answer": "están subiendo"},
+        {"sentence": "Este restaurante (servir) ___ comida italiana.", "answer": "sirve"},
+        {"sentence": "Espera, el camarero (servir) ___ nuestra mesa.", "answer": "está sirviendo"},
+        {"sentence": "Mi abuelo (vivir) ___ en el campo.", "answer": "vive"},
+        {"sentence": "Ahora (vivir) ___ con mis padres porque busco piso.", "answer": "estoy viviendo"},
+        {"sentence": "¿Qué (hacer) ___ tu hermano? — Es ingeniero.", "answer": "hace"},
+        {"sentence": "¿Qué (hacer) ___ tu hermano? — (Hacer) ___ los deberes.", "answer": "está haciendo"},
+        {"sentence": "El avión (salir) ___ a las 10 de la mañana.", "answer": "sale"},
+        {"sentence": "Rápido, el avión (salir) ___.", "answer": "está saliendo"},
+        {"sentence": "(Yo, aprender) ___ español desde hace dos años.", "answer": "Estoy aprendiendo"},
+        {"sentence": "En mi academia (enseñar) ___ cinco idiomas.", "answer": "enseñan"},
+        {"sentence": "El profesor (explicar) ___ la gramática ahora.", "answer": "está explicando"},
+        {"sentence": "Este profesor (explicar) ___ muy bien.", "answer": "explica"},
+        {"sentence": "¿Por qué (tú, correr) ___? ¿Qué pasa?", "answer": "estás corriendo"},
+        {"sentence": "(Yo, correr) ___ cinco kilómetros cada día.", "answer": "Corro"},
+        {"sentence": "¿Dónde (trabajar) ___ tu padre?", "answer": "trabaja"},
+        {"sentence": "Mi padre no puede hablar, (trabajar) ___.", "answer": "está trabajando"},
+        {"sentence": "Los españoles (comer) ___ mucho pescado.", "answer": "comen"},
+        {"sentence": "¿Qué (comer) ___? Huele muy bien.", "answer": "estás comiendo"},
+        {"sentence": "Esta empresa (producir) ___ coches eléctricos.", "answer": "produce"},
+        {"sentence": "La fábrica (producir) ___ más coches este mes.", "answer": "está produciendo"}
+      ],
+      "microTests": [
+        {"sentence": "Normalmente (yo, ir) ___ al trabajo en metro.", "answer": "voy", "hint": "Привычное действие → presente simple"},
+        {"sentence": "Ahora mismo (yo, ir) ___ en autobús.", "answer": "estoy yendo", "hint": "Ahora mismo → estar + gerundio"},
+        {"sentence": "Mi padre (cocinar) ___ muy bien.", "answer": "cocina", "hint": "Общая характеристика → presente"},
+        {"sentence": "¿Mi padre? Ahora mismo (cocinar) ___ una paella.", "answer": "está cocinando", "hint": "Ahora mismo → действие сейчас"},
+        {"sentence": "Siempre (yo, esperar) ___ el autobús aquí.", "answer": "espero", "hint": "Siempre → привычка"},
+        {"sentence": "(Yo, esperar) ___ a José ahora.", "answer": "Estoy esperando", "hint": "Ahora → в данный момент"},
+        {"sentence": "(Nosotros, trabajar) ___ en una empresa internacional.", "answer": "Trabajamos", "hint": "Факт, место работы → presente"},
+        {"sentence": "(Nosotros, trabajar) ___ mucho últimamente.", "answer": "estamos trabajando", "hint": "Últimamente → временная ситуация"},
+        {"sentence": "Sara (cantar) ___ en un grupo de folk.", "answer": "canta", "hint": "Профессия/хобби → presente"},
+        {"sentence": "¿Oyes? Sara (cantar) ___ ahora.", "answer": "está cantando", "hint": "Слышишь сейчас → estar + gerundio"},
+        {"sentence": "Normalmente (dormir) ___ ocho horas.", "answer": "dormimos", "hint": "Normalmente → привычка"},
+        {"sentence": "¡(Nosotros, dormir) ___! ¿Quién llama?", "answer": "Estamos durmiendo", "hint": "Прямо сейчас спим → gerundio"},
+        {"sentence": "(Llover) ___ mucho en esta región.", "answer": "Llueve", "hint": "Общая характеристика климата"},
+        {"sentence": "No salgas, (llover) ___.", "answer": "está lloviendo", "hint": "Сейчас идёт дождь → gerundio"},
+        {"sentence": "¿Qué (tú, leer) ___ últimamente?", "answer": "estás leyendo", "hint": "Últimamente → текущий период"}
+      ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Conjugación: tú vs usted",
+      "hint": "tú / usted",
+      "rule": {
+        "title": "Обращение на TÚ и USTED",
+        "explanation": "В испанском языке есть два способа обращения: TÚ (неформальное, на «ты») и USTED (формальное, на «Вы»). Выбор формы зависит от степени знакомства, возраста собеседника и ситуации.",
+        "sections": [
+          {
+            "subtitle": "TÚ — неформальное обращение",
+            "points": [
+              "С друзьями: ¿<b>Tienes</b> tiempo? — У тебя есть время?",
+              "С ровесниками: ¿De dónde <b>eres</b>? — Откуда ты?",
+              "С детьми: ¿Cómo te <b>llamas</b>? — Как тебя зовут?",
+              "В семье: ¿<b>Quieres</b> café? — Хочешь кофе?"
+            ]
+          },
+          {
+            "subtitle": "USTED — формальное обращение",
+            "points": [
+              "С незнакомыми взрослыми: ¿<b>Tiene</b> hora? — У Вас есть время?",
+              "С пожилыми людьми: ¿Cómo <b>está</b> usted? — Как Вы поживаете?",
+              "В официальных ситуациях: ¿<b>Desea</b> algo más? — Желаете что-нибудь ещё?",
+              "С начальством: ¿<b>Puede</b> ayudarme? — Вы можете мне помочь?"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¿Tú hablas español? / ¿Usted habla español?", "ru": "Ты говоришь по-испански? / Вы говорите по-испански?"},
+          {"es": "¿Cómo estás? / ¿Cómo está usted?", "ru": "Как дела? (неформ.) / Как Ваши дела? (форм.)"}
+        ]
+      },
+      "questions": [
+        {"sentence": "(A un amigo) ¿___ tiempo libre? (tener)", "answer": "Tienes"},
+        {"sentence": "(A un desconocido mayor) ¿___ hora? (tener)", "answer": "Tiene"},
+        {"sentence": "(A tu hermano) ¿De dónde ___? (ser)", "answer": "eres"},
+        {"sentence": "(A un cliente) ¿De dónde ___ usted? (ser)", "answer": "es"},
+        {"sentence": "(A un compañero de clase) ¿Cómo ___? (estar)", "answer": "estás"},
+        {"sentence": "(A su jefe) ¿Cómo ___ usted? (estar)", "answer": "está"},
+        {"sentence": "(A tu madre) ¿___ café? (querer)", "answer": "Quieres"},
+        {"sentence": "(A un cliente) ¿___ algo más? (desear)", "answer": "Desea"},
+        {"sentence": "(A un amigo) ¿___ ayudarme? (poder)", "answer": "Puedes"},
+        {"sentence": "(A un profesor) ¿___ repetir, por favor? (poder)", "answer": "Puede"},
+        {"sentence": "(A tu vecino joven) ¿Dónde ___? (vivir)", "answer": "vives"},
+        {"sentence": "(A una señora mayor) ¿Dónde ___ usted? (vivir)", "answer": "vive"},
+        {"sentence": "(A un niño) ¿Cómo te ___? (llamar)", "answer": "llamas"},
+        {"sentence": "(A un señor) ¿Cómo se ___ usted? (llamar)", "answer": "llama"},
+        {"sentence": "(A tu primo) ¿A qué hora ___? (salir)", "answer": "sales"},
+        {"sentence": "(A un paciente) ¿A qué hora ___ del trabajo? (salir)", "answer": "sale"},
+        {"sentence": "(A un compañero) ¿___ español? (hablar)", "answer": "Hablas"},
+        {"sentence": "(En una tienda) ¿___ inglés? (hablar)", "answer": "Habla"},
+        {"sentence": "(A tu amiga) ¿Qué ___? (hacer)", "answer": "haces"},
+        {"sentence": "(A un director) ¿Qué ___ usted aquí? (hacer)", "answer": "hace"},
+        {"sentence": "(A tu hermana) ¿___ el periódico? (leer)", "answer": "Lees"},
+        {"sentence": "(A un señor en el metro) ¿___ este periódico? (leer)", "answer": "Lee"},
+        {"sentence": "(A un amigo) ¿___ a la fiesta? (ir)", "answer": "Vas"},
+        {"sentence": "(A su médico) ¿___ a estar de vacaciones? (ir)", "answer": "Va"},
+        {"sentence": "(A tu compañero) ¿___ algo? (necesitar)", "answer": "Necesitas"},
+        {"sentence": "(A un cliente) ¿___ ayuda? (necesitar)", "answer": "Necesita"},
+        {"sentence": "(A tu padre) ¿___ cansado? (estar)", "answer": "Estás"},
+        {"sentence": "(A un paciente) ¿___ usted mejor? (estar)", "answer": "Está"},
+        {"sentence": "(A un amigo) ¿___ mi dirección? (saber)", "answer": "Sabes"},
+        {"sentence": "(A un taxista) ¿___ dónde está la estación? (saber)", "answer": "Sabe"},
+        {"sentence": "(A tu novio/a) ¿Me ___? (querer)", "answer": "quieres"},
+        {"sentence": "(A un camarero) ¿Me ___ la cuenta? (traer)", "answer": "trae"},
+        {"sentence": "(A tu hermano) ¿___ hambre? (tener)", "answer": "Tienes"},
+        {"sentence": "(A un invitado) ¿___ sed? (tener)", "answer": "Tiene"},
+        {"sentence": "(A un colega) ¿___ al cine conmigo? (venir)", "answer": "Vienes"},
+        {"sentence": "(A un cliente) ¿___ mañana? (venir)", "answer": "Viene"},
+        {"sentence": "(A tu primo) ¿Qué ___ de esto? (pensar)", "answer": "piensas"},
+        {"sentence": "(A un experto) ¿Qué ___ usted de esto? (pensar)", "answer": "piensa"},
+        {"sentence": "(A tu amiga) ¿___ este vestido? (preferir)", "answer": "Prefieres"},
+        {"sentence": "(A una clienta) ¿___ pagar en efectivo? (preferir)", "answer": "Prefiere"},
+        {"sentence": "(A tu compañero) ¿___ la ventana? (cerrar)", "answer": "Cierras"},
+        {"sentence": "(A un pasajero) ¿___ la ventana, por favor? (cerrar)", "answer": "Cierra"},
+        {"sentence": "(A tu hermano) ¿___ temprano mañana? (empezar)", "answer": "Empiezas"},
+        {"sentence": "(A su empleado) ¿A qué hora ___ a trabajar? (empezar)", "answer": "empieza"},
+        {"sentence": "(A un amigo) ¿___ bien? (dormir)", "answer": "Duermes"},
+        {"sentence": "(A un paciente) ¿___ usted bien por las noches? (dormir)", "answer": "Duerme"},
+        {"sentence": "(A tu madre) ¿___ la cena? (servir)", "answer": "Sirves"},
+        {"sentence": "(A un camarero) ¿___ vino de la casa? (servir)", "answer": "Sirve"},
+        {"sentence": "(A tu amigo) ¿___ la verdad? (decir)", "answer": "Dices"},
+        {"sentence": "(Al testigo) ¿___ toda la verdad? (decir)", "answer": "Dice"},
+        {"sentence": "(A tu vecino) ¿___ música? (oír)", "answer": "Oyes"},
+        {"sentence": "(A un señor) ¿___ usted bien? (oír)", "answer": "Oye"},
+        {"sentence": "(A tu compañero) ¿___ este plato? (conocer)", "answer": "Conoces"},
+        {"sentence": "(A un turista) ¿___ Madrid? (conocer)", "answer": "Conoce"},
+        {"sentence": "(A tu amigo) ¿Me ___ un favor? (hacer)", "answer": "haces"},
+        {"sentence": "(A su jefe) ¿Me ___ un favor? (hacer)", "answer": "hace"},
+        {"sentence": "(A tu prima) ¿___ estudiar conmigo? (querer)", "answer": "Quieres"},
+        {"sentence": "(A un colega formal) ¿___ acompañarme? (querer)", "answer": "Quiere"},
+        {"sentence": "(A tu hermano) ¿___ a la playa? (ir)", "answer": "Vas"},
+        {"sentence": "(A un cliente) ¿___ al centro? (ir)", "answer": "Va"}
+      ],
+      "microTests": [
+        {"sentence": "(A un amigo) ¿___ tiempo libre? (tener)", "answer": "Tienes", "hint": "Amigo = tú → tienes"},
+        {"sentence": "(A un desconocido mayor) ¿___ hora? (tener)", "answer": "Tiene", "hint": "Desconocido mayor = usted → tiene"},
+        {"sentence": "(A tu hermano) ¿De dónde ___? (ser)", "answer": "eres", "hint": "Hermano = tú → eres"},
+        {"sentence": "(A un cliente) ¿De dónde ___ usted? (ser)", "answer": "es", "hint": "Cliente = usted → es"},
+        {"sentence": "(A un compañero de clase) ¿Cómo ___? (estar)", "answer": "estás", "hint": "Compañero = tú → estás"},
+        {"sentence": "(A su jefe) ¿Cómo ___ usted? (estar)", "answer": "está", "hint": "Jefe = usted → está"},
+        {"sentence": "(A un amigo) ¿___ ayudarme? (poder)", "answer": "Puedes", "hint": "Amigo = tú → puedes"},
+        {"sentence": "(A un profesor) ¿___ repetir? (poder)", "answer": "Puede", "hint": "Profesor = usted → puede"},
+        {"sentence": "(A tu madre) ¿___ café? (querer)", "answer": "Quieres", "hint": "Madre (familia) = tú → quieres"},
+        {"sentence": "(A un camarero) ¿___ algo más? (desear)", "answer": "Desea", "hint": "Camarero a cliente = usted → desea"},
+        {"sentence": "(A un niño) ¿Cómo te ___? (llamar)", "answer": "llamas", "hint": "Niño = tú → llamas"},
+        {"sentence": "(A un señor) ¿Cómo se ___ usted? (llamar)", "answer": "llama", "hint": "Señor = usted → llama"},
+        {"sentence": "(A tu amiga) ¿Qué ___? (hacer)", "answer": "haces", "hint": "Amiga = tú → haces"},
+        {"sentence": "(A un director) ¿Qué ___ usted? (hacer)", "answer": "hace", "hint": "Director = usted → hace"},
+        {"sentence": "(A un amigo) ¿___ a la fiesta? (ir)", "answer": "Vas", "hint": "Amigo = tú → vas"}
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Peticiones: estructuras",
+      "hint": "¿puedo...? / ¿te importa si...? / ¿me dejas...? / ¿me pone...?",
+      "rule": {
+        "title": "Структуры для просьб и разрешений",
+        "explanation": "В испанском языке существует несколько способов попросить разрешение или что-то у другого человека. Выбор структуры зависит от ситуации и степени вежливости.",
+        "sections": [
+          {
+            "subtitle": "¿PUEDO + infinitivo? — Можно мне...?",
+            "points": [
+              "Просьба разрешения: ¿<b>Puedo</b> pasar? — Можно войти?",
+              "¿<b>Puedo</b> usar tu teléfono? — Можно воспользоваться твоим телефоном?",
+              "¿<b>Puedo</b> sentarme aquí? — Можно здесь сесть?"
+            ]
+          },
+          {
+            "subtitle": "¿TE/LE IMPORTA SI + presente? — Ты не против, если...?",
+            "points": [
+              "Вежливая просьба: ¿<b>Te importa si</b> abro la ventana? — Ты не против, если я открою окно?",
+              "Формально: ¿<b>Le importa si</b> fumo? — Вы не против, если я закурю?",
+              "¿<b>Te importa si</b> pongo música? — Ты не против, если я включу музыку?"
+            ]
+          },
+          {
+            "subtitle": "¿ME DEJAS + sustantivo/infinitivo? — Дашь мне...? / Позволишь...?",
+            "points": [
+              "Просьба одолжить: ¿<b>Me dejas</b> tu bolígrafo? — Дашь мне свою ручку?",
+              "¿<b>Me dejas</b> pasar? — Позволишь пройти?",
+              "¿<b>Me dejas</b> ver? — Дашь посмотреть?"
+            ]
+          },
+          {
+            "subtitle": "¿ME PONE...? — В баре/ресторане",
+            "points": [
+              "Заказ: ¿<b>Me pone</b> un café? — Мне кофе, пожалуйста",
+              "¿<b>Me pone</b> una cerveza? — Мне пиво, пожалуйста",
+              "¿<b>Me pone</b> la cuenta? — Счёт, пожалуйста"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¿Puedo usar tu ordenador un momento?", "ru": "Можно воспользоваться твоим компьютером?"},
+          {"es": "¿Te importa si bajo la música?", "ru": "Ты не против, если я сделаю музыку потише?"},
+          {"es": "¿Me dejas los apuntes de ayer?", "ru": "Дашь мне вчерашние конспекты?"},
+          {"es": "¿Me pone un cortado, por favor?", "ru": "Мне кортадо, пожалуйста."}
+        ]
+      },
+      "questions": [
+        {"sentence": "En un bar: ¿___ un café con leche, por favor?", "answer": "Me pone"},
+        {"sentence": "A un amigo: ¿___ abro la ventana? Hace calor.", "answer": "Te importa si"},
+        {"sentence": "En clase: ¿___ los apuntes de ayer?", "answer": "Me dejas"},
+        {"sentence": "En la oficina: ¿___ usar este ordenador?", "answer": "Puedo"},
+        {"sentence": "A un compañero: ¿___ tu diccionario un momento?", "answer": "Me dejas"},
+        {"sentence": "En un restaurante: ¿___ la cuenta, por favor?", "answer": "Me pone"},
+        {"sentence": "En casa de un amigo: ¿___ pongo algo de música?", "answer": "Te importa si"},
+        {"sentence": "En el autobús: ¿___ sentarme aquí?", "answer": "Puedo"},
+        {"sentence": "A tu hermano: ¿___ tu moto un momento?", "answer": "Me dejas"},
+        {"sentence": "En una cafetería: ¿___ un vaso de agua?", "answer": "Me pone"},
+        {"sentence": "A un colega: ¿___ cierro la puerta?", "answer": "Te importa si"},
+        {"sentence": "En una tienda: ¿___ ver ese vestido?", "answer": "Puedo"},
+        {"sentence": "A tu amiga: ¿___ tu cargador?", "answer": "Me dejas"},
+        {"sentence": "En un bar: ¿___ otra cerveza?", "answer": "Me pone"},
+        {"sentence": "En la oficina: ¿___ apago el aire acondicionado?", "answer": "Te importa si"},
+        {"sentence": "A un desconocido: ¿___ pasar, por favor?", "answer": "Puedo"},
+        {"sentence": "A un compañero: ¿___ tu calculadora?", "answer": "Me dejas"},
+        {"sentence": "En un restaurante: ¿___ más pan, por favor?", "answer": "Me pone"},
+        {"sentence": "A tu compañero de piso: ¿___ me ducho primero?", "answer": "Te importa si"},
+        {"sentence": "En una biblioteca: ¿___ usar este enchufe?", "answer": "Puedo"},
+        {"sentence": "A tu primo: ¿___ tu bicicleta para mañana?", "answer": "Me dejas"},
+        {"sentence": "En una terraza: ¿___ una limonada?", "answer": "Me pone"},
+        {"sentence": "En el trabajo: ¿___ cambio el canal?", "answer": "Te importa si"},
+        {"sentence": "En una reunión: ¿___ hacer una pregunta?", "answer": "Puedo"},
+        {"sentence": "A tu hermana: ¿___ tus zapatos para la fiesta?", "answer": "Me dejas"},
+        {"sentence": "En un bar: ¿___ unas aceitunas?", "answer": "Me pone"},
+        {"sentence": "A un amigo: ¿___ enciendo la luz?", "answer": "Te importa si"},
+        {"sentence": "En el cine: ¿___ sentarme a tu lado?", "answer": "Puedo"},
+        {"sentence": "A tu compañero: ¿___ tu paraguas?", "answer": "Me dejas"},
+        {"sentence": "En una cafetería: ¿___ un té verde?", "answer": "Me pone"},
+        {"sentence": "En casa: ¿___ subo la calefacción?", "answer": "Te importa si"},
+        {"sentence": "En el avión: ¿___ pasar al baño?", "answer": "Puedo"},
+        {"sentence": "A tu amigo: ¿___ tu chaqueta? Tengo frío.", "answer": "Me dejas"},
+        {"sentence": "En un pub: ¿___ una copa de vino?", "answer": "Me pone"},
+        {"sentence": "A tu compañero: ¿___ bajo el volumen?", "answer": "Te importa si"},
+        {"sentence": "En una tienda: ¿___ probármelo?", "answer": "Puedo"},
+        {"sentence": "A tu hermano: ¿___ tus auriculares?", "answer": "Me dejas"},
+        {"sentence": "En un restaurante: ¿___ otra botella de agua?", "answer": "Me pone"},
+        {"sentence": "En la oficina: ¿___ abro las persianas?", "answer": "Te importa si"},
+        {"sentence": "A un profesor: ¿___ salir un momento?", "answer": "Puedo"},
+        {"sentence": "A tu amiga: ¿___ tu libro de español?", "answer": "Me dejas"},
+        {"sentence": "En un bar: ¿___ un pincho de tortilla?", "answer": "Me pone"},
+        {"sentence": "A tu compañero de cuarto: ¿___ invito a unos amigos?", "answer": "Te importa si"},
+        {"sentence": "En el médico: ¿___ pedir cita para mañana?", "answer": "Puedo"},
+        {"sentence": "A tu vecino: ¿___ tu escalera?", "answer": "Me dejas"},
+        {"sentence": "En una heladería: ¿___ un helado de chocolate?", "answer": "Me pone"},
+        {"sentence": "En clase: ¿___ me siento aquí?", "answer": "Te importa si"},
+        {"sentence": "En un hotel: ¿___ ver la habitación?", "answer": "Puedo"},
+        {"sentence": "A tu compañero: ¿___ tu goma de borrar?", "answer": "Me dejas"},
+        {"sentence": "En un chiringuito: ¿___ unas patatas bravas?", "answer": "Me pone"},
+        {"sentence": "A un amigo: ¿___ uso tu wifi?", "answer": "Te importa si"},
+        {"sentence": "En recepción: ¿___ hablar con el director?", "answer": "Puedo"},
+        {"sentence": "A tu prima: ¿___ tu vestido rojo?", "answer": "Me dejas"},
+        {"sentence": "En una pastelería: ¿___ dos cruasanes?", "answer": "Me pone"},
+        {"sentence": "En el coche: ¿___ pongo la radio?", "answer": "Te importa si"},
+        {"sentence": "En un museo: ¿___ hacer fotos?", "answer": "Puedo"},
+        {"sentence": "A tu hermano: ¿___ tu cámara?", "answer": "Me dejas"},
+        {"sentence": "En un bar de tapas: ¿___ jamón ibérico?", "answer": "Me pone"},
+        {"sentence": "En la sala de espera: ¿___ leo en voz alta?", "answer": "Te importa si"},
+        {"sentence": "En la piscina: ¿___ dejar mis cosas aquí?", "answer": "Puedo"}
+      ],
+      "microTests": [
+        {"sentence": "En un bar: ¿___ un café, por favor?", "answer": "Me pone", "hint": "En un bar/restaurante → ¿Me pone...?"},
+        {"sentence": "A un amigo: ¿___ abro la ventana?", "answer": "Te importa si", "hint": "Pedir permiso educadamente → ¿Te importa si...?"},
+        {"sentence": "A tu hermano: ¿___ tu moto?", "answer": "Me dejas", "hint": "Pedir algo prestado → ¿Me dejas...?"},
+        {"sentence": "En una tienda: ¿___ ver ese vestido?", "answer": "Puedo", "hint": "Pedir permiso general → ¿Puedo...?"},
+        {"sentence": "En un restaurante: ¿___ la cuenta?", "answer": "Me pone", "hint": "Pedir algo al camarero → ¿Me pone...?"},
+        {"sentence": "A un compañero: ¿___ cierro la puerta?", "answer": "Te importa si", "hint": "Preguntar si molesta → ¿Te importa si...?"},
+        {"sentence": "A tu amiga: ¿___ tu cargador?", "answer": "Me dejas", "hint": "Pedir prestado → ¿Me dejas...?"},
+        {"sentence": "En el autobús: ¿___ sentarme aquí?", "answer": "Puedo", "hint": "Pedir permiso → ¿Puedo...?"},
+        {"sentence": "En un bar: ¿___ otra cerveza?", "answer": "Me pone", "hint": "Pedir en un bar → ¿Me pone...?"},
+        {"sentence": "A tu primo: ¿___ tu bicicleta?", "answer": "Me dejas", "hint": "Pedir prestado algo físico → ¿Me dejas...?"},
+        {"sentence": "En la oficina: ¿___ apago el aire?", "answer": "Te importa si", "hint": "Preguntar si molesta una acción → ¿Te importa si...?"},
+        {"sentence": "En una biblioteca: ¿___ usar este enchufe?", "answer": "Puedo", "hint": "Pedir permiso neutro → ¿Puedo...?"},
+        {"sentence": "En una terraza: ¿___ una limonada?", "answer": "Me pone", "hint": "Pedir bebida → ¿Me pone...?"},
+        {"sentence": "A tu hermana: ¿___ tus zapatos?", "answer": "Me dejas", "hint": "Pedir ropa prestada → ¿Me dejas...?"},
+        {"sentence": "A un amigo: ¿___ enciendo la luz?", "answer": "Te importa si", "hint": "Preguntar antes de hacer algo → ¿Te importa si...?"}
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Verbos para pedir: dar, pasar, prestar, poner",
+      "hint": "dar / pasar / prestar / poner",
+      "rule": {
+        "title": "Глаголы для просьб: DAR, PASAR, PRESTAR, PONER",
+        "explanation": "При просьбах используются разные глаголы в зависимости от того, что именно просят. DAR — дать безвозвратно. PASAR — передать (что-то рядом). PRESTAR — одолжить (с возвратом). PONER — положить/налить (в баре).",
+        "sections": [
+          {
+            "subtitle": "DAR — дать (без возврата)",
+            "points": [
+              "Дать что-то насовсем: ¿Me <b>das</b> un caramelo? — Дашь мне конфетку?",
+              "Дать информацию: ¿Me <b>da</b> su número? — Дадите свой номер?",
+              "Вещи, которые не возвращают: ¿Me <b>das</b> un poco de agua? — Дашь немного воды?"
+            ]
+          },
+          {
+            "subtitle": "PASAR — передать",
+            "points": [
+              "Передать что-то рядом: ¿Me <b>pasas</b> la sal? — Передашь соль?",
+              "На столе: ¿Me <b>pasas</b> el pan? — Передашь хлеб?",
+              "Что-то близкое: ¿Me <b>pasas</b> el mando? — Передашь пульт?"
+            ]
+          },
+          {
+            "subtitle": "PRESTAR — одолжить (с возвратом)",
+            "points": [
+              "Временно: ¿Me <b>prestas</b> tu bolígrafo? — Одолжишь ручку?",
+              "С возвратом: ¿Me <b>prestas</b> 10 euros? — Одолжишь 10 евро?",
+              "Вещи: ¿Me <b>prestas</b> tu coche? — Одолжишь машину?"
+            ]
+          },
+          {
+            "subtitle": "PONER — налить/положить (в баре)",
+            "points": [
+              "Заказ напитка: ¿Me <b>pone</b> un café? — Мне кофе (налейте)",
+              "Заказ еды: ¿Me <b>pone</b> una tapa? — Мне тапас (положите)",
+              "Счёт: ¿Me <b>pone</b> la cuenta? — Счёт, пожалуйста"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¿Me das un chicle?", "ru": "Дашь жвачку?"},
+          {"es": "¿Me pasas el agua, por favor?", "ru": "Передашь воду, пожалуйста?"},
+          {"es": "¿Me prestas tu diccionario?", "ru": "Одолжишь словарь?"},
+          {"es": "¿Me pone una caña?", "ru": "Мне маленькое пиво, пожалуйста."}
+        ]
+      },
+      "questions": [
+        {"sentence": "¿Me ___ un caramelo? (no lo devuelvo)", "answer": "das"},
+        {"sentence": "¿Me ___ la sal? (está en la mesa)", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu bolígrafo? (te lo devuelvo)", "answer": "prestas"},
+        {"sentence": "¿Me ___ un café? (en un bar)", "answer": "pone"},
+        {"sentence": "¿Me ___ un chicle? (no se devuelve)", "answer": "das"},
+        {"sentence": "¿Me ___ el pan, por favor? (en la mesa)", "answer": "pasas"},
+        {"sentence": "¿Me ___ 20 euros? (te los devuelvo mañana)", "answer": "prestas"},
+        {"sentence": "¿Me ___ una cerveza? (al camarero)", "answer": "pone"},
+        {"sentence": "¿Me ___ tu número de teléfono?", "answer": "das"},
+        {"sentence": "¿Me ___ el mando de la tele?", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu coche para el fin de semana?", "answer": "prestas"},
+        {"sentence": "¿Me ___ la cuenta, por favor?", "answer": "pone"},
+        {"sentence": "¿Me ___ un poco de agua?", "answer": "das"},
+        {"sentence": "¿Me ___ la mantequilla?", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu diccionario un momento?", "answer": "prestas"},
+        {"sentence": "¿Me ___ un cortado? (cafetería)", "answer": "pone"},
+        {"sentence": "¿Me ___ un pañuelo? (desechable)", "answer": "das"},
+        {"sentence": "¿Me ___ el azúcar? (en la mesa)", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu bicicleta? (la devuelvo)", "answer": "prestas"},
+        {"sentence": "¿Me ___ una tapa de jamón?", "answer": "pone"},
+        {"sentence": "¿Me ___ tu correo electrónico?", "answer": "das"},
+        {"sentence": "¿Me ___ el periódico? (está a tu lado)", "answer": "pasas"},
+        {"sentence": "¿Me ___ 50 euros hasta el viernes?", "answer": "prestas"},
+        {"sentence": "¿Me ___ dos cañas? (bar)", "answer": "pone"},
+        {"sentence": "¿Me ___ un poco de papel?", "answer": "das"},
+        {"sentence": "¿Me ___ el vinagre?", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu portátil para la presentación?", "answer": "prestas"},
+        {"sentence": "¿Me ___ una copa de vino?", "answer": "pone"},
+        {"sentence": "¿Me ___ tu opinión?", "answer": "das"},
+        {"sentence": "¿Me ___ las llaves? (están cerca de ti)", "answer": "pasas"},
+        {"sentence": "¿Me ___ tus apuntes? (te los devuelvo)", "answer": "prestas"},
+        {"sentence": "¿Me ___ un zumo de naranja?", "answer": "pone"},
+        {"sentence": "¿Me ___ fuego? (para encender)", "answer": "das"},
+        {"sentence": "¿Me ___ el aceite?", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu cargador? (luego te lo doy)", "answer": "prestas"},
+        {"sentence": "¿Me ___ un vaso de agua? (bar)", "answer": "pone"},
+        {"sentence": "¿Me ___ permiso para salir?", "answer": "das"},
+        {"sentence": "¿Me ___ el cuchillo?", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu libro? (lo necesito para estudiar)", "answer": "prestas"},
+        {"sentence": "¿Me ___ otro café? (segundo)", "answer": "pone"},
+        {"sentence": "¿Me ___ tu dirección?", "answer": "das"},
+        {"sentence": "¿Me ___ la servilleta?", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu paraguas? (está lloviendo)", "answer": "prestas"},
+        {"sentence": "¿Me ___ una ración de patatas bravas?", "answer": "pone"},
+        {"sentence": "¿Me ___ un consejo?", "answer": "das"},
+        {"sentence": "¿Me ___ el móvil? (para ver algo)", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu cámara para las vacaciones?", "answer": "prestas"},
+        {"sentence": "¿Me ___ un pincho de tortilla?", "answer": "pone"},
+        {"sentence": "¿Me ___ una oportunidad?", "answer": "das"},
+        {"sentence": "¿Me ___ el plato? (está lejos)", "answer": "pasas"},
+        {"sentence": "¿Me ___ dinero para el taxi?", "answer": "prestas"},
+        {"sentence": "¿Me ___ un té con limón?", "answer": "pone"},
+        {"sentence": "¿Me ___ la hora?", "answer": "das"},
+        {"sentence": "¿Me ___ la botella de agua?", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu tarjeta de crédito? (emergencia)", "answer": "prestas"},
+        {"sentence": "¿Me ___ una ensalada mixta?", "answer": "pone"},
+        {"sentence": "¿Me ___ un momento?", "answer": "das"},
+        {"sentence": "¿Me ___ la revista?", "answer": "pasas"},
+        {"sentence": "¿Me ___ tu traje para la boda?", "answer": "prestas"},
+        {"sentence": "¿Me ___ dos raciones de croquetas?", "answer": "pone"}
+      ],
+      "microTests": [
+        {"sentence": "¿Me ___ un caramelo?", "answer": "das", "hint": "Caramelo no se devuelve → dar"},
+        {"sentence": "¿Me ___ la sal? (está en la mesa)", "answer": "pasas", "hint": "Algo cerca, en la mesa → pasar"},
+        {"sentence": "¿Me ___ tu bolígrafo? (te lo devuelvo)", "answer": "prestas", "hint": "Con devolución → prestar"},
+        {"sentence": "¿Me ___ un café? (en un bar)", "answer": "pone", "hint": "En bar/restaurante → poner"},
+        {"sentence": "¿Me ___ 20 euros? (te los devuelvo)", "answer": "prestas", "hint": "Dinero con devolución → prestar"},
+        {"sentence": "¿Me ___ el pan?", "answer": "pasas", "hint": "Pasar algo de la mesa → pasar"},
+        {"sentence": "¿Me ___ una cerveza? (al camarero)", "answer": "pone", "hint": "Pedir al camarero → poner"},
+        {"sentence": "¿Me ___ tu número de teléfono?", "answer": "das", "hint": "Información, no se devuelve → dar"},
+        {"sentence": "¿Me ___ el mando de la tele?", "answer": "pasas", "hint": "Objeto cercano → pasar"},
+        {"sentence": "¿Me ___ tu coche para el fin de semana?", "answer": "prestas", "hint": "Uso temporal con devolución → prestar"},
+        {"sentence": "¿Me ___ la cuenta?", "answer": "pone", "hint": "En restaurante → poner"},
+        {"sentence": "¿Me ___ un poco de agua?", "answer": "das", "hint": "Agua no se devuelve → dar"},
+        {"sentence": "¿Me ___ tu diccionario un momento?", "answer": "prestas", "hint": "Objeto con devolución → prestar"},
+        {"sentence": "¿Me ___ la mantequilla?", "answer": "pasas", "hint": "En la mesa → pasar"},
+        {"sentence": "¿Me ___ un chicle?", "answer": "das", "hint": "Chicle no se devuelve → dar"}
+      ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Tener vs Tener que",
+      "hint": "tener / tener que",
+      "rule": {
+        "title": "TENER vs TENER QUE: иметь vs должен",
+        "explanation": "TENER означает 'иметь' — владение чем-то или наличие чего-то. TENER QUE + infinitivo означает 'должен' — обязанность или необходимость сделать что-то.",
+        "sections": [
+          {
+            "subtitle": "TENER — иметь, владеть",
+            "points": [
+              "Владение: <b>Tengo</b> un coche — У меня есть машина",
+              "Наличие события: <b>Tengo</b> una reunión — У меня встреча",
+              "Состояние: <b>Tengo</b> hambre/sed/frío — Я голоден/хочу пить/мне холодно",
+              "Возраст: <b>Tengo</b> 25 años — Мне 25 лет"
+            ]
+          },
+          {
+            "subtitle": "TENER QUE + infinitivo — должен",
+            "points": [
+              "Обязанность: <b>Tengo que</b> trabajar — Я должен работать",
+              "Необходимость: <b>Tengo que</b> ir al médico — Мне нужно пойти к врачу",
+              "Вынужденность: <b>Tengo que</b> salir ya — Мне нужно уже уходить",
+              "После TENER QUE всегда идёт инфинитив глагола"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "No puedo ir a cenar, es que tengo una cena en casa de mis padres.", "ru": "Не могу пойти ужинать, дело в том, что у меня ужин дома у родителей."},
+          {"es": "No puedo ir a cenar, es que tengo que estudiar.", "ru": "Не могу пойти ужинать, дело в том, что я должен учиться."}
+        ]
+      },
+      "questions": [
+        {"sentence": "No puedo, es que ___ una cena en casa de mis padres.", "answer": "tengo"},
+        {"sentence": "No puedo, es que ___ estudiar para el examen.", "answer": "tengo que"},
+        {"sentence": "Esta tarde a las seis ___ una reunión.", "answer": "tengo"},
+        {"sentence": "El sábado ___ ir a visitar a mis padres.", "answer": "tengo que"},
+        {"sentence": "Perdona, es que ___ pedirte un favor.", "answer": "tengo que"},
+        {"sentence": "___ un hermano y dos hermanas.", "answer": "Tengo"},
+        {"sentence": "___ terminar este proyecto hoy.", "answer": "Tengo que"},
+        {"sentence": "Lo siento, ___ una cita con el dentista.", "answer": "tengo"},
+        {"sentence": "Mañana ___ levantarme temprano.", "answer": "tengo que"},
+        {"sentence": "___ mucho trabajo esta semana.", "answer": "Tengo"},
+        {"sentence": "___ llamar a mi madre, hace días que no hablo con ella.", "answer": "Tengo que"},
+        {"sentence": "No ___ tiempo para ir al gimnasio.", "answer": "tengo"},
+        {"sentence": "___ hacer la compra, no hay nada en la nevera.", "answer": "Tengo que"},
+        {"sentence": "___ dos perros y un gato.", "answer": "Tengo"},
+        {"sentence": "Esta noche ___ una fiesta de cumpleaños.", "answer": "tengo"},
+        {"sentence": "___ preparar la presentación para mañana.", "answer": "Tengo que"},
+        {"sentence": "No puedo quedarme, ___ irme ya.", "answer": "tengo que"},
+        {"sentence": "___ un problema con el ordenador.", "answer": "Tengo"},
+        {"sentence": "___ devolver estos libros a la biblioteca.", "answer": "Tengo que"},
+        {"sentence": "___ una pregunta para ti.", "answer": "Tengo"},
+        {"sentence": "Los domingos ___ comer en casa de mis abuelos.", "answer": "tengo que"},
+        {"sentence": "___ muchos amigos en esta ciudad.", "answer": "Tengo"},
+        {"sentence": "___ recoger a los niños del colegio.", "answer": "Tengo que"},
+        {"sentence": "___ una casa muy grande.", "answer": "Tengo"},
+        {"sentence": "___ pagar las facturas antes del viernes.", "answer": "Tengo que"},
+        {"sentence": "Hoy no ___ clase de español.", "answer": "tengo"},
+        {"sentence": "___ comprar un regalo para mi madre.", "answer": "Tengo que"},
+        {"sentence": "___ dolor de cabeza.", "answer": "Tengo"},
+        {"sentence": "___ hablar con mi jefe sobre el proyecto.", "answer": "Tengo que"},
+        {"sentence": "___ tres exámenes la próxima semana.", "answer": "Tengo"},
+        {"sentence": "___ reservar mesa en el restaurante.", "answer": "Tengo que"},
+        {"sentence": "No ___ dinero en efectivo.", "answer": "tengo"},
+        {"sentence": "___ enviar este correo urgente.", "answer": "Tengo que"},
+        {"sentence": "___ una idea genial.", "answer": "Tengo"},
+        {"sentence": "___ limpiar la casa, vienen invitados.", "answer": "Tengo que"},
+        {"sentence": "___ mucha hambre.", "answer": "Tengo"},
+        {"sentence": "___ acabar de leer este libro.", "answer": "Tengo que"},
+        {"sentence": "___ buenas noticias para ti.", "answer": "Tengo"},
+        {"sentence": "___ ir al banco a sacar dinero.", "answer": "Tengo que"},
+        {"sentence": "___ un vuelo a las 7 de la mañana.", "answer": "Tengo"},
+        {"sentence": "___ madrugar mañana.", "answer": "Tengo que"},
+        {"sentence": "No ___ ganas de salir hoy.", "answer": "tengo"},
+        {"sentence": "___ entregar el informe antes del lunes.", "answer": "Tengo que"},
+        {"sentence": "___ una entrevista de trabajo mañana.", "answer": "Tengo"},
+        {"sentence": "___ practicar más mi español.", "answer": "Tengo que"},
+        {"sentence": "___ miedo a volar.", "answer": "Tengo"},
+        {"sentence": "___ aprender a conducir.", "answer": "Tengo que"},
+        {"sentence": "___ un nuevo teléfono.", "answer": "Tengo"},
+        {"sentence": "___ cambiar las ruedas del coche.", "answer": "Tengo que"},
+        {"sentence": "___ mucha suerte en la vida.", "answer": "Tengo"},
+        {"sentence": "___ contestar todos estos correos.", "answer": "Tengo que"},
+        {"sentence": "___ una sorpresa para ti.", "answer": "Tengo"},
+        {"sentence": "___ ir a la farmacia.", "answer": "Tengo que"},
+        {"sentence": "___ un secreto.", "answer": "Tengo"},
+        {"sentence": "___ decirte algo importante.", "answer": "Tengo que"},
+        {"sentence": "___ razón, lo siento.", "answer": "Tienes"},
+        {"sentence": "___ pensarlo bien antes de decidir.", "answer": "Tengo que"},
+        {"sentence": "___ prisa, llego tarde.", "answer": "Tengo"},
+        {"sentence": "___ correr para no perder el tren.", "answer": "Tengo que"},
+        {"sentence": "___ frío, ¿puedes cerrar la ventana?", "answer": "Tengo"}
+      ],
+      "microTests": [
+        {"sentence": "No puedo, es que ___ una cena en casa.", "answer": "tengo", "hint": "Tener un evento → tengo (sin 'que')"},
+        {"sentence": "No puedo, es que ___ estudiar.", "answer": "tengo que", "hint": "Obligación de hacer algo → tengo que + infinitivo"},
+        {"sentence": "___ una reunión a las seis.", "answer": "Tengo", "hint": "Tener = poseer/tener evento"},
+        {"sentence": "___ ir a visitar a mis padres.", "answer": "Tengo que", "hint": "Obligación → tengo que + infinitivo"},
+        {"sentence": "___ un hermano y dos hermanas.", "answer": "Tengo", "hint": "Posesión de familia → tengo"},
+        {"sentence": "___ terminar este proyecto hoy.", "answer": "Tengo que", "hint": "Necesidad de hacer → tengo que"},
+        {"sentence": "___ mucho trabajo esta semana.", "answer": "Tengo", "hint": "Tener trabajo (sustantivo)"},
+        {"sentence": "___ trabajar mucho esta semana.", "answer": "Tengo que", "hint": "Deber trabajar → tengo que + infinitivo"},
+        {"sentence": "___ dolor de cabeza.", "answer": "Tengo", "hint": "Estado físico → tengo"},
+        {"sentence": "___ tomar una aspirina.", "answer": "Tengo que", "hint": "Necesidad de acción → tengo que"},
+        {"sentence": "No ___ tiempo libre.", "answer": "tengo", "hint": "Posesión de tiempo → tengo"},
+        {"sentence": "___ irme ya, es tarde.", "answer": "Tengo que", "hint": "Obligación de irse → tengo que"},
+        {"sentence": "___ hambre.", "answer": "Tengo", "hint": "Estado → tengo hambre"},
+        {"sentence": "___ comer algo.", "answer": "Tengo que", "hint": "Necesidad de acción → tengo que"},
+        {"sentence": "___ una pregunta para ti.", "answer": "Tengo", "hint": "Posesión de algo → tengo"}
+      ]
+    }
+  ]
 }

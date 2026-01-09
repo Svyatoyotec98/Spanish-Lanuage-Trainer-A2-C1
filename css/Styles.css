@@ -1656,3 +1656,240 @@
     transform: translateY(0);
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   MAIN MENU HEADER (Back to Levels + Reference)
+   ═══════════════════════════════════════════════════════════════ */
+
+.main-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.btn-back-level {
+    background: rgba(52, 152, 219, 0.2);
+    color: #2980b9;
+    border: 1px solid rgba(52, 152, 219, 0.4);
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-back-level:hover {
+    background: rgba(52, 152, 219, 0.3);
+    border-color: rgba(52, 152, 219, 0.6);
+    transform: translateX(-3px);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   LEVEL SELECTION SCREEN (A2, B1, B2.1, B2.2, C1)
+   ═══════════════════════════════════════════════════════════════ */
+
+.level-select-screen {
+    text-align: center;
+    padding: 20px;
+}
+
+.level-select-screen h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.levels-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.level-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.level-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Level-specific colors */
+.level-card.level-a2 {
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.25) 0%, rgba(39, 174, 96, 0.2) 100%);
+    border-color: rgba(46, 204, 113, 0.5);
+}
+
+.level-card.level-a2:hover {
+    background: linear-gradient(135deg, rgba(46, 204, 113, 0.35) 0%, rgba(39, 174, 96, 0.3) 100%);
+    border-color: rgba(46, 204, 113, 0.7);
+}
+
+.level-card.level-b1 {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.25) 0%, rgba(41, 128, 185, 0.2) 100%);
+    border-color: rgba(52, 152, 219, 0.5);
+}
+
+.level-card.level-b1:hover {
+    background: linear-gradient(135deg, rgba(52, 152, 219, 0.35) 0%, rgba(41, 128, 185, 0.3) 100%);
+    border-color: rgba(52, 152, 219, 0.7);
+}
+
+.level-card.level-b2-1 {
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.25) 0%, rgba(142, 68, 173, 0.2) 100%);
+    border-color: rgba(155, 89, 182, 0.5);
+}
+
+.level-card.level-b2-1:hover {
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.35) 0%, rgba(142, 68, 173, 0.3) 100%);
+    border-color: rgba(155, 89, 182, 0.7);
+}
+
+.level-card.level-b2-2 {
+    background: linear-gradient(135deg, rgba(230, 126, 34, 0.25) 0%, rgba(211, 84, 0, 0.2) 100%);
+    border-color: rgba(230, 126, 34, 0.5);
+}
+
+.level-card.level-b2-2:hover {
+    background: linear-gradient(135deg, rgba(230, 126, 34, 0.35) 0%, rgba(211, 84, 0, 0.3) 100%);
+    border-color: rgba(230, 126, 34, 0.7);
+}
+
+.level-card.level-c1 {
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.25) 0%, rgba(192, 57, 43, 0.2) 100%);
+    border-color: rgba(231, 76, 60, 0.5);
+}
+
+.level-card.level-c1:hover {
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.35) 0%, rgba(192, 57, 43, 0.3) 100%);
+    border-color: rgba(231, 76, 60, 0.7);
+}
+
+/* Coming soon state */
+.level-card.level-coming-soon {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.level-card.level-coming-soon:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.level-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.level-badge {
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    font-size: 1.4em;
+    font-weight: 800;
+    padding: 8px 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.level-a2 .level-badge { color: #27ae60; }
+.level-b1 .level-badge { color: #2980b9; }
+.level-b2-1 .level-badge { color: #8e44ad; }
+.level-b2-2 .level-badge { color: #d35400; }
+.level-c1 .level-badge { color: #c0392b; }
+
+.level-status {
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    color: #27ae60;
+}
+
+.level-coming-soon .level-status {
+    color: #7f8c8d;
+    background: rgba(200, 200, 200, 0.5);
+}
+
+.level-title {
+    font-size: 1.2em;
+    color: #2c3e50;
+    font-weight: 700;
+    margin: 8px 0 5px 0;
+}
+
+.level-description {
+    font-size: 0.95em;
+    color: #5d6d7e;
+    margin-bottom: 12px;
+}
+
+.level-progress-bar {
+    background: rgba(255, 255, 255, 0.4);
+    height: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+.level-progress-fill {
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.3s ease;
+}
+
+.level-a2 .level-progress-fill { background: linear-gradient(90deg, #2ecc71, #27ae60); }
+.level-b1 .level-progress-fill { background: linear-gradient(90deg, #3498db, #2980b9); }
+.level-b2-1 .level-progress-fill { background: linear-gradient(90deg, #9b59b6, #8e44ad); }
+.level-b2-2 .level-progress-fill { background: linear-gradient(90deg, #e67e22, #d35400); }
+.level-c1 .level-progress-fill { background: linear-gradient(90deg, #e74c3c, #c0392b); }
+
+.level-progress-text {
+    font-size: 0.85em;
+    color: #5d6d7e;
+    text-align: right;
+    margin: 0;
+}
+
+/* Mobile adaptations */
+@media (max-width: 480px) {
+    .level-select-screen h1 {
+        font-size: 2em;
+    }
+
+    .levels-container {
+        gap: 12px;
+    }
+
+    .level-card {
+        padding: 15px 20px;
+    }
+
+    .level-badge {
+        font-size: 1.2em;
+        padding: 6px 12px;
+    }
+
+    .level-title {
+        font-size: 1.1em;
+    }
+}
+

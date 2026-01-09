@@ -10,6 +10,45 @@
             'unidad_6', 'unidad_7', 'unidad_8', 'unidad_9', 'unidad_10'
         ];
 
+        // ═══════════════════════════════════════════════════════════════
+        // LEVEL CONFIGURATION (A2, B1, B2.1, B2.2, C1)
+        // ═══════════════════════════════════════════════════════════════
+        const LEVELS = {
+            'A2': {
+                name: 'A2 - Nivel Elemental',
+                unidades: UNIDADES,
+                available: true,
+                dataFolder: 'data'
+            },
+            'B1': {
+                name: 'B1 - Nivel Intermedio',
+                unidades: [],
+                available: false,
+                dataFolder: 'data/B1'
+            },
+            'B2.1': {
+                name: 'B2.1 - Nivel Intermedio Alto (Parte 1)',
+                unidades: [],
+                available: false,
+                dataFolder: 'data/B2_1'
+            },
+            'B2.2': {
+                name: 'B2.2 - Nivel Intermedio Alto (Parte 2)',
+                unidades: [],
+                available: false,
+                dataFolder: 'data/B2_2'
+            },
+            'C1': {
+                name: 'C1 - Nivel Avanzado',
+                unidades: [],
+                available: false,
+                dataFolder: 'data/C1'
+            }
+        };
+
+        // Current selected level
+        let currentLevel = 'A2';
+
         // ⚠️ DEPRECATED: Заменено динамическими группами из JSON
         // Lista de categorías de vocabulario (СТАРЫЙ КОД)
         // const CATEGORIES = ['sustantivos', 'adjetivos', 'verbos'];
@@ -352,7 +391,7 @@
         // ═══════════════════════════════════════════════════════════════
 
         function hideAll() {
-            ['startScreen', 'profileSelectScreen', 'profileCreateScreen',
+            ['startScreen', 'profileSelectScreen', 'profileCreateScreen', 'levelSelectScreen',
              'mainMenu', 'unidadMenu', 'palabrasMenu', 'groupPreviewMenu', 'categoryMenu', 'questionScreen',
              'resultsScreen', 'cardMatchingScreen', 'cardMatchingResultsScreen',
              'verbMenu', 'verbPracticeScreen', 'qaScreen',
@@ -473,8 +512,7 @@ function showProfileSelect() {
 
         function selectProfile(profileId) {
             setActiveProfile(profileId);
-            showMainMenu();
-            updateUnidadUI();
+            showLevelSelect();
         }
 
         function createProfileFromForm() {
@@ -503,8 +541,7 @@ function showProfileSelect() {
             }
 
             createProfile(nickname);
-            showMainMenu();
-            updateUnidadUI();
+            showLevelSelect();
         }
 
         function switchProfile() {
@@ -646,8 +683,88 @@ function showProfileSelect() {
             hideAll();
             showUserBadge();
             document.getElementById('mainMenu').classList.remove('hidden');
+
+            // Update title to show current level
+            const titleEl = document.getElementById('mainMenuTitle');
+            if (titleEl) {
+                titleEl.textContent = `Spanish Trainer ${currentLevel}`;
+            }
+
             updateUnidadUI();
 			saveNavigationState('mainMenu');
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // LEVEL SELECTION FUNCTIONS
+        // ═══════════════════════════════════════════════════════════════
+
+        function showLevelSelect() {
+            hideAll();
+            document.getElementById('levelSelectScreen').classList.remove('hidden');
+            updateLevelSelectUI();
+            saveNavigationState('levelSelectScreen');
+        }
+
+        function updateLevelSelectUI() {
+            const profile = getActiveProfile();
+            if (!profile) return;
+
+            // Update A2 progress (calculated from all unidades)
+            const a2Progress = calculateOverallLevelProgress('A2');
+            const a2ProgressBar = document.getElementById('level-A2-progress');
+            const a2ProgressText = document.getElementById('level-A2-progress-text');
+
+            if (a2ProgressBar) {
+                a2ProgressBar.style.width = a2Progress + '%';
+            }
+            if (a2ProgressText) {
+                a2ProgressText.textContent = a2Progress + '% завершено';
+            }
+
+            // Future: Update other levels when they become available
+            // For now, B1, B2.1, B2.2, C1 show "Скоро будет доступно"
+        }
+
+        function calculateOverallLevelProgress(level) {
+            const profile = getActiveProfile();
+            if (!profile) return 0;
+
+            const levelConfig = LEVELS[level];
+            if (!levelConfig || !levelConfig.available) return 0;
+
+            const unidades = levelConfig.unidades;
+            if (unidades.length === 0) return 0;
+
+            let totalProgress = 0;
+            unidades.forEach(unidad => {
+                totalProgress += calculateUnidadProgress(unidad);
+            });
+
+            return Math.round(totalProgress / unidades.length);
+        }
+
+        function selectLevel(level) {
+            const levelConfig = LEVELS[level];
+
+            if (!levelConfig) {
+                console.error('Unknown level:', level);
+                return;
+            }
+
+            if (!levelConfig.available) {
+                // Show message that level is coming soon
+                alert(`Уровень ${level} скоро будет доступен!\nМы работаем над добавлением нового контента.`);
+                return;
+            }
+
+            currentLevel = level;
+
+            // Save selected level to navigation state
+            const navState = JSON.parse(localStorage.getItem('navigation_state') || '{}');
+            navState.current_level = level;
+            localStorage.setItem('navigation_state', JSON.stringify(navState));
+
+            showMainMenu();
         }
 
         function updateUnidadUI() {
@@ -4845,6 +4962,10 @@ async function getNavigationState() {
                         showVerbosMenu(); // Fallback if no time saved
                     }
                 }
+                // Level selection screen
+                if (targetScreen === 'levelSelectScreen') {
+                    showLevelSelect();
+                }
             } else {
                 showProfileSelect();
             }
@@ -4908,7 +5029,7 @@ function showRegisterScreen() {
 function hideAllScreens() {
     const screens = [
         'startScreen', 'loginScreen', 'registerScreen',
-        'profileSelectScreen', 'profileCreateScreen',
+        'profileSelectScreen', 'profileCreateScreen', 'levelSelectScreen',
         'mainMenu', 'unidadMenu', 'palabrasMenu', 'groupPreviewMenu', 'categoryMenu',
         'questionScreen', 'resultsScreen', 'verbMenu',
         'verbPracticeScreen', 'qaScreen',

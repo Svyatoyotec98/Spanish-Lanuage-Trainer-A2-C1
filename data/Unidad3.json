@@ -1215,6 +1215,63 @@
         {"sentence": "Yo ___ (tener) los ojos de mi madre.", "answer": "tengo"},
         {"sentence": "Ella siempre ___ (llevar) ropa elegante.", "answer": "lleva"}
       ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Parecer vs Parecerse",
+      "hint": "parecer = казаться | parecerse a = быть похожим на",
+      "rule": {
+        "title": "PARECER vs PARECERSE",
+        "explanation": "Estos dos verbos son similares pero tienen significados diferentes:",
+        "sections": [
+          {
+            "subtitle": "PARECER - казаться, выглядеть",
+            "points": [
+              "<b>Parece</b> simpático - Он кажется милым",
+              "<b>Parece</b> cansado - Он выглядит уставшим",
+              "<b>Parece</b> que va a llover - Кажется, будет дождь",
+              "¿Qué te <b>parece</b>? - Что ты думаешь?"
+            ]
+          },
+          {
+            "subtitle": "PARECERSE A - быть похожим на",
+            "points": [
+              "Me <b>parezco</b> a mi padre - Я похож на отца",
+              "Se <b>parecen</b> mucho - Они очень похожи",
+              "¿A quién te <b>pareces</b>? - На кого ты похож?",
+              "No se <b>parecen</b> en nada - Они совсем не похожи"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Pareces muy contento hoy.", "ru": "Ты выглядишь очень довольным сегодня."},
+          {"es": "Me parezco mucho a mi madre.", "ru": "Я очень похожа на маму."},
+          {"es": "¿Qué te parece la película?", "ru": "Что ты думаешь о фильме?"},
+          {"es": "Los hermanos se parecen mucho.", "ru": "Братья очень похожи друг на друга."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Tú ___ (parecerse) mucho a tu padre.", "answer": "te pareces"},
+        {"sentence": "Ella ___ (parecer) muy simpática.", "answer": "parece"},
+        {"sentence": "Yo ___ (parecerse) a mi abuelo.", "answer": "me parezco"},
+        {"sentence": "¿___ (parecer) que va a llover?", "answer": "Parece"},
+        {"sentence": "Los gemelos ___ (parecerse) mucho.", "answer": "se parecen"},
+        {"sentence": "Él ___ (parecer) cansado hoy.", "answer": "parece"},
+        {"sentence": "¿A quién ___ (parecerse) tú?", "answer": "te pareces"},
+        {"sentence": "Me ___ (parecer) buena idea.", "answer": "parece"},
+        {"sentence": "Mi hermana y yo no ___ (parecerse) nada.", "answer": "nos parecemos"},
+        {"sentence": "¿Qué te ___ (parecer) mi nuevo piso?", "answer": "parece"},
+        {"sentence": "Dicen que yo ___ (parecerse) a mi madre.", "answer": "me parezco"},
+        {"sentence": "Él ___ (parecer) más joven de lo que es.", "answer": "parece"},
+        {"sentence": "¿Vosotros ___ (parecerse) a vuestros padres?", "answer": "os parecéis"},
+        {"sentence": "___ (parecer) que hace frío fuera.", "answer": "Parece"},
+        {"sentence": "Ana ___ (parecerse) a Julia Roberts.", "answer": "se parece"},
+        {"sentence": "Mis hijos ___ (parecerse) mucho entre sí.", "answer": "se parecen"},
+        {"sentence": "Tu idea me ___ (parecer) excelente.", "answer": "parece"},
+        {"sentence": "No ___ (parecer) su edad.", "answer": "parece"},
+        {"sentence": "¿A quién ___ (parecerse) tu hijo?", "answer": "se parece"},
+        {"sentence": "Me ___ (parecer) que tienes razón.", "answer": "parece"}
+      ]
     }
   ],
   "verbos": {

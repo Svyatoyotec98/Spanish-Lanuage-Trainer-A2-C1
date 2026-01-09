@@ -1745,6 +1745,240 @@
         {"sentence": "___ vivo en Madrid.", "answer": "Actualmente", "hint": "¿Dónde vives en el presente?"},
         {"sentence": "___ no había internet.", "answer": "Entonces", "hint": "¿Qué no había en el pasado?"}
       ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Imperfecto en contexto: describir el pasado",
+      "hint": "imperfecto de indicativo",
+      "rule": {
+        "title": "El IMPERFECTO para describir el pasado",
+        "explanation": "El pretérito imperfecto se usa para describir situaciones, estados, características y acciones habituales en el pasado. Es esencial para hablar de cómo era la vida en otras épocas, describir personas y lugares del pasado, y expresar costumbres antiguas.",
+        "sections": [
+          {
+            "subtitle": "Describir situaciones y estados",
+            "points": [
+              "Características físicas: Mi abuelo <b>era</b> alto y <b>tenía</b> el pelo blanco",
+              "Estados emocionales: <b>Estaba</b> muy feliz cuando <b>era</b> niño",
+              "Circunstancias: No <b>había</b> electricidad y todo <b>era</b> más difícil"
+            ]
+          },
+          {
+            "subtitle": "Describir acciones habituales",
+            "points": [
+              "Rutinas del pasado: Todos los días <b>iba</b> al colegio andando",
+              "Costumbres: En aquella época la gente <b>escribía</b> cartas",
+              "Repetición: Siempre <b>comíamos</b> juntos los domingos"
+            ]
+          },
+          {
+            "subtitle": "Contextos históricos",
+            "points": [
+              "Épocas pasadas: Los romanos <b>hablaban</b> latín",
+              "Inventos: Antes de la imprenta, los libros se <b>copiaban</b> a mano",
+              "Cambios sociales: Las mujeres no <b>podían</b> votar"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Los antiguos egipcios usaban una escritura llamada 'jeroglífica'.", "ru": "Древние египтяне использовали письменность под названием «иероглифика»."},
+          {"es": "Antes del descubrimiento de América, en Europa no había patatas.", "ru": "До открытия Америки в Европе не было картофеля."},
+          {"es": "En los años 50 la mayoría de los españoles no tenía coche.", "ru": "В 50-е годы у большинства испанцев не было машины."},
+          {"es": "A principios del siglo XX las mujeres no podían votar.", "ru": "В начале XX века женщины не могли голосовать."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Los antiguos egipcios ___ una escritura jeroglífica.", "answer": "usaban"},
+        {"sentence": "Los romanos ___ latín.", "answer": "hablaban"},
+        {"sentence": "Antes de América, en Europa no ___ patatas.", "answer": "había"},
+        {"sentence": "Los incas ___ en grandes ciudades.", "answer": "vivían"},
+        {"sentence": "A principios del siglo XIX el Imperio turco ___ enorme.", "answer": "era"},
+        {"sentence": "Las mujeres no ___ votar en casi ningún país.", "answer": "podían"},
+        {"sentence": "Durante el franquismo los partidos políticos ___ prohibidos.", "answer": "estaban"},
+        {"sentence": "Antes la gente ___ más hijos que ahora.", "answer": "tenía"},
+        {"sentence": "En los años 50 la mayoría no ___ coche.", "answer": "tenía"},
+        {"sentence": "En los años 70 Ibiza ___ una isla tranquila.", "answer": "era"},
+        {"sentence": "Los viajes entre Europa y América ___ semanas.", "answer": "duraban"},
+        {"sentence": "Antes de internet la gente ___ más cartas.", "answer": "escribía"},
+        {"sentence": "Antes del smartphone la gente no ___ tantas fotos.", "answer": "hacía"},
+        {"sentence": "Antes de la electricidad se ___ velas para iluminar.", "answer": "usaban"},
+        {"sentence": "Los griegos antiguos ___ en dioses.", "answer": "creían"},
+        {"sentence": "Antes de los aviones la gente ___ en barco.", "answer": "viajaba"},
+        {"sentence": "En la Edad Media la gente ___ muy poco.", "answer": "vivía"},
+        {"sentence": "Los aztecas ___ pirámides impresionantes.", "answer": "construían"},
+        {"sentence": "Antes de la imprenta los libros se ___ a mano.", "answer": "copiaban"},
+        {"sentence": "En el siglo XVIII no ___ vacunas.", "answer": "había"},
+        {"sentence": "Los vikingos ___ grandes navegantes.", "answer": "eran"},
+        {"sentence": "Antes de los ordenadores todo se ___ a mano.", "answer": "escribía"},
+        {"sentence": "En la antigüedad los esclavos no ___ derechos.", "answer": "tenían"},
+        {"sentence": "Los mayas ___ matemáticas avanzadas.", "answer": "conocían"},
+        {"sentence": "Antes del teléfono la gente ___ telegramas.", "answer": "enviaba"},
+        {"sentence": "En el siglo XIX los niños ___ en las fábricas.", "answer": "trabajaban"},
+        {"sentence": "Antes de los antibióticos muchas enfermedades ___ mortales.", "answer": "eran"},
+        {"sentence": "Los chinos antiguos ___ papel.", "answer": "fabricaban"},
+        {"sentence": "En la Edad Media la gente no ___ leer.", "answer": "sabía"},
+        {"sentence": "Los primeros ordenadores ___ enormes.", "answer": "eran"},
+        {"sentence": "Antes de la televisión la gente ___ a la radio.", "answer": "escuchaba"},
+        {"sentence": "Los caballeros medievales ___ armadura.", "answer": "llevaban"},
+        {"sentence": "En el siglo XV no ___ América en los mapas.", "answer": "existía"},
+        {"sentence": "Los antiguos ___ que la Tierra era plana.", "answer": "pensaban"},
+        {"sentence": "Antes de los supermercados la gente ___ en tiendas pequeñas.", "answer": "compraba"},
+        {"sentence": "Los reyes antiguos ___ mucho poder.", "answer": "tenían"},
+        {"sentence": "Antes del cine la gente ___ al teatro.", "answer": "iba"},
+        {"sentence": "En el pasado los viajes ___ peligrosos.", "answer": "eran"},
+        {"sentence": "Los samurais japoneses ___ espadas.", "answer": "usaban"},
+        {"sentence": "Antes de los coches la gente ___ a caballo.", "answer": "viajaba"},
+        {"sentence": "Los científicos antiguos no ___ microscopios.", "answer": "tenían"},
+        {"sentence": "En el siglo XIX las cartas ___ semanas en llegar.", "answer": "tardaban"},
+        {"sentence": "Los pueblos antiguos ___ dioses del sol.", "answer": "adoraban"},
+        {"sentence": "Antes de la lavadora la gente ___ la ropa a mano.", "answer": "lavaba"},
+        {"sentence": "Los gladiadores romanos ___ en el coliseo.", "answer": "luchaban"},
+        {"sentence": "En el pasado no ___ hospitales modernos.", "answer": "existían"},
+        {"sentence": "Los navegantes antiguos ___ las estrellas para orientarse.", "answer": "usaban"},
+        {"sentence": "Antes del frigorífico la comida se ___ rápidamente.", "answer": "estropeaba"},
+        {"sentence": "Los emperadores romanos ___ palacios enormes.", "answer": "tenían"},
+        {"sentence": "En la prehistoria la gente ___ en cuevas.", "answer": "vivía"},
+        {"sentence": "Los alquimistas ___ convertir metales en oro.", "answer": "querían"},
+        {"sentence": "Antes de los relojes la gente ___ la hora por el sol.", "answer": "sabía"},
+        {"sentence": "Los piratas ___ por los mares buscando tesoros.", "answer": "navegaban"},
+        {"sentence": "En el pasado no ___ tantos países como ahora.", "answer": "había"},
+        {"sentence": "Los faraones egipcios ___ pirámides como tumbas.", "answer": "construían"},
+        {"sentence": "Antes de la fotografía la gente ___ retratos pintados.", "answer": "tenía"},
+        {"sentence": "Los monjes medievales ___ libros a mano.", "answer": "copiaban"},
+        {"sentence": "En tiempos antiguos los mensajes ___ días en llegar.", "answer": "tardaban"},
+        {"sentence": "Los artesanos antiguos ___ todo a mano.", "answer": "fabricaban"},
+        {"sentence": "Antes de las vacunas muchos niños ___ jóvenes.", "answer": "morían"}
+      ],
+      "microTests": [
+        {"sentence": "Los romanos ___ latín.", "answer": "hablaban", "hint": "¿Qué idioma usaban los romanos? (hablar)"},
+        {"sentence": "Antes no ___ patatas en Europa.", "answer": "había", "hint": "¿Qué no existía antes? (haber)"},
+        {"sentence": "Las mujeres no ___ votar.", "answer": "podían", "hint": "¿Qué no les era permitido? (poder)"},
+        {"sentence": "La gente ___ más hijos antes.", "answer": "tenía", "hint": "¿Cuántos hijos tenían? (tener)"},
+        {"sentence": "En los años 70 Ibiza ___ tranquila.", "answer": "era", "hint": "¿Cómo era Ibiza? (ser)"},
+        {"sentence": "Los viajes ___ semanas.", "answer": "duraban", "hint": "¿Cuánto tiempo llevaban? (durar)"},
+        {"sentence": "La gente ___ más cartas.", "answer": "escribía", "hint": "¿Cómo se comunicaban? (escribir)"},
+        {"sentence": "Los griegos ___ en dioses.", "answer": "creían", "hint": "¿En qué creían? (creer)"},
+        {"sentence": "Los libros se ___ a mano.", "answer": "copiaban", "hint": "¿Cómo se hacían los libros? (copiar)"},
+        {"sentence": "Los vikingos ___ grandes navegantes.", "answer": "eran", "hint": "¿Cómo eran los vikingos? (ser)"},
+        {"sentence": "La gente ___ en tiendas pequeñas.", "answer": "compraba", "hint": "¿Dónde compraban? (comprar)"},
+        {"sentence": "Los antiguos ___ que la Tierra era plana.", "answer": "pensaban", "hint": "¿Qué creían los antiguos? (pensar)"}
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Describir personas y recuerdos del pasado",
+      "hint": "imperfecto descriptivo",
+      "rule": {
+        "title": "El IMPERFECTO para describir PERSONAS y RECUERDOS",
+        "explanation": "El pretérito imperfecto es perfecto para describir cómo eran las personas, lugares y cosas en el pasado. También se usa para hablar de recuerdos de la infancia, de la juventud y de épocas pasadas de nuestra vida.",
+        "sections": [
+          {
+            "subtitle": "Describir personas del pasado",
+            "points": [
+              "Aspecto físico: Mi abuelo <b>era</b> alto y <b>tenía</b> bigote",
+              "Carácter: Mi profesora <b>era</b> muy simpática y <b>nos contaba</b> historias",
+              "Profesión/ocupación: Mi padre <b>trabajaba</b> en una fábrica"
+            ]
+          },
+          {
+            "subtitle": "Describir lugares del pasado",
+            "points": [
+              "Mi pueblo <b>era</b> pequeño y <b>tenía</b> una plaza bonita",
+              "La casa de mis abuelos <b>estaba</b> en el campo",
+              "El barrio <b>era</b> tranquilo y todos se <b>conocían</b>"
+            ]
+          },
+          {
+            "subtitle": "Hablar de recuerdos",
+            "points": [
+              "Cuando era niño, <b>jugaba</b> en la calle con mis amigos",
+              "De pequeño <b>tenía</b> un perro que se <b>llamaba</b> Luna",
+              "En mi infancia <b>íbamos</b> a la playa todos los veranos"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Mi primera maestra se llamaba Ana y era muy cariñosa.", "ru": "Мою первую учительницу звали Ана, и она была очень ласковой."},
+          {"es": "De pequeño tenía un oso de peluche que llevaba a todas partes.", "ru": "В детстве у меня был плюшевый мишка, которого я брал с собой повсюду."},
+          {"es": "Mi mejor amigo de la infancia vivía en la casa de al lado.", "ru": "Мой лучший друг детства жил в соседнем доме."},
+          {"es": "El parque donde jugábamos tenía un tobogán muy grande.", "ru": "В парке, где мы играли, была очень большая горка."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Mi primera maestra se ___ Ana.", "answer": "llamaba"},
+        {"sentence": "Mi abuela ___ muy cariñosa.", "answer": "era"},
+        {"sentence": "De pequeño ___ un perro muy grande.", "answer": "tenía"},
+        {"sentence": "Mi padre ___ en una oficina.", "answer": "trabajaba"},
+        {"sentence": "El pueblo donde vivíamos ___ muy pequeño.", "answer": "era"},
+        {"sentence": "Mi mejor amigo de la infancia ___ Pedro.", "answer": "se llamaba"},
+        {"sentence": "La casa de mis abuelos ___ cerca del río.", "answer": "estaba"},
+        {"sentence": "Mi hermano mayor siempre me ___ historias.", "answer": "contaba"},
+        {"sentence": "Cuando era niño, ___ al parque todos los días.", "answer": "iba"},
+        {"sentence": "Mi madre ___ el pelo largo y rubio.", "answer": "tenía"},
+        {"sentence": "El colegio donde ___ era muy antiguo.", "answer": "estudiaba"},
+        {"sentence": "Mi abuelo ___ bigote y gafas.", "answer": "llevaba"},
+        {"sentence": "De pequeña me ___ coleccionar sellos.", "answer": "gustaba"},
+        {"sentence": "Mi vecino ___ muy simpático con todos.", "answer": "era"},
+        {"sentence": "La calle donde vivíamos no ___ mucho tráfico.", "answer": "tenía"},
+        {"sentence": "Mi tía siempre nos ___ dulces.", "answer": "traía"},
+        {"sentence": "El parque donde ___ tenía muchos árboles.", "answer": "jugábamos"},
+        {"sentence": "Mi profesor de matemáticas ___ muy exigente.", "answer": "era"},
+        {"sentence": "De niño ___ a nadar en el río.", "answer": "íbamos"},
+        {"sentence": "Mi abuela ___ muy bien la guitarra.", "answer": "tocaba"},
+        {"sentence": "La tienda de la esquina ___ de todo.", "answer": "vendía"},
+        {"sentence": "Mi padre ___ un coche rojo muy bonito.", "answer": "tenía"},
+        {"sentence": "Cuando ___ pequeño, me gustaba dibujar.", "answer": "era"},
+        {"sentence": "Mi hermana ___ a clases de ballet.", "answer": "iba"},
+        {"sentence": "El jardín de mi casa ___ muchas flores.", "answer": "tenía"},
+        {"sentence": "Mi madre nos ___ cuentos antes de dormir.", "answer": "leía"},
+        {"sentence": "El barrio donde vivíamos ___ muy seguro.", "answer": "era"},
+        {"sentence": "Mi abuelo ___ en una mina de carbón.", "answer": "trabajaba"},
+        {"sentence": "De niño ___ un montón de juguetes.", "answer": "tenía"},
+        {"sentence": "Mi profesora ___ muy paciente con nosotros.", "answer": "era"},
+        {"sentence": "La biblioteca del colegio ___ muchos libros.", "answer": "tenía"},
+        {"sentence": "Mi padre siempre ___ temprano a casa.", "answer": "llegaba"},
+        {"sentence": "Cuando era joven, ___ con ser astronauta.", "answer": "soñaba"},
+        {"sentence": "Mi vecina ___ unas galletas deliciosas.", "answer": "hacía"},
+        {"sentence": "El cine del pueblo ___ películas los sábados.", "answer": "ponía"},
+        {"sentence": "Mi hermano mayor ___ muy bien al fútbol.", "answer": "jugaba"},
+        {"sentence": "La casa donde nací ___ un jardín pequeño.", "answer": "tenía"},
+        {"sentence": "Mi abuela ___ los mejores pasteles del mundo.", "answer": "hacía"},
+        {"sentence": "De pequeño ___ miedo a los truenos.", "answer": "tenía"},
+        {"sentence": "Mi tío ___ historias de cuando era soldado.", "answer": "contaba"},
+        {"sentence": "El río donde ___ estaba muy limpio.", "answer": "nadábamos"},
+        {"sentence": "Mi madre ___ todos los días muy temprano.", "answer": "madrugaba"},
+        {"sentence": "La plaza del pueblo ___ una fuente antigua.", "answer": "tenía"},
+        {"sentence": "Mi padre nos ___ a pescar los domingos.", "answer": "llevaba"},
+        {"sentence": "Cuando era adolescente, ___ mucho rock.", "answer": "escuchaba"},
+        {"sentence": "Mi abuela ___ ojos azules muy bonitos.", "answer": "tenía"},
+        {"sentence": "El mercado del pueblo ___ muy animado.", "answer": "era"},
+        {"sentence": "De niño siempre ___ con mis primos.", "answer": "jugaba"},
+        {"sentence": "Mi hermana ___ el pelo muy largo.", "answer": "tenía"},
+        {"sentence": "La escuela donde ___ era pequeña pero bonita.", "answer": "iba"},
+        {"sentence": "Mi abuelo ___ una barba muy larga.", "answer": "tenía"},
+        {"sentence": "Cuando era joven, ___ muchos amigos.", "answer": "tenía"},
+        {"sentence": "Mi madre ___ muy bien la paella.", "answer": "cocinaba"},
+        {"sentence": "El parque de mi barrio ___ columpios.", "answer": "tenía"},
+        {"sentence": "Mi padre ___ al trabajo en bicicleta.", "answer": "iba"},
+        {"sentence": "De pequeño me ___ mucho los helados.", "answer": "gustaban"},
+        {"sentence": "La casa de mi infancia ___ muy acogedora.", "answer": "era"},
+        {"sentence": "Mi abuela nos ___ chocolate caliente.", "answer": "preparaba"},
+        {"sentence": "El profesor que más me ___ era el de historia.", "answer": "gustaba"},
+        {"sentence": "Cuando era niño, ___ mucho con mis hermanos.", "answer": "peleaba"}
+      ],
+      "microTests": [
+        {"sentence": "Mi primera maestra se ___ Ana.", "answer": "llamaba", "hint": "¿Cómo se llamaba? (llamarse)"},
+        {"sentence": "Mi abuela ___ muy cariñosa.", "answer": "era", "hint": "¿Cómo era su carácter? (ser)"},
+        {"sentence": "De pequeño ___ un perro.", "answer": "tenía", "hint": "¿Qué mascota tenía? (tener)"},
+        {"sentence": "Mi padre ___ en una oficina.", "answer": "trabajaba", "hint": "¿Dónde trabajaba? (trabajar)"},
+        {"sentence": "El pueblo ___ muy pequeño.", "answer": "era", "hint": "¿Cómo era el pueblo? (ser)"},
+        {"sentence": "La casa ___ cerca del río.", "answer": "estaba", "hint": "¿Dónde estaba situada? (estar)"},
+        {"sentence": "Mi hermano me ___ historias.", "answer": "contaba", "hint": "¿Qué hacía tu hermano? (contar)"},
+        {"sentence": "Cuando era niño, ___ al parque.", "answer": "iba", "hint": "¿Adónde iba? (ir)"},
+        {"sentence": "Mi madre ___ el pelo largo.", "answer": "tenía", "hint": "¿Cómo era su pelo? (tener)"},
+        {"sentence": "Mi abuelo ___ bigote.", "answer": "llevaba", "hint": "¿Qué llevaba en la cara? (llevar)"},
+        {"sentence": "El parque ___ muchos árboles.", "answer": "tenía", "hint": "¿Qué había en el parque? (tener)"},
+        {"sentence": "Mi abuela ___ muy bien.", "answer": "cocinaba", "hint": "¿Qué hacía tu abuela? (cocinar)"}
+      ]
     }
   ],
   "verbos": {

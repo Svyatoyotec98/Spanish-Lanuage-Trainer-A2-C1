@@ -2035,6 +2035,267 @@
         {"sentence": "___ vi a tu hermano en el centro.", "answer": "El otro día", "hint": "На днях"},
         {"sentence": "___ conseguimos llegar a tiempo.", "answer": "Al final", "hint": "В конце концов (итог)"}
       ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Expresar emociones y reacciones",
+      "hint": "pasé (mucho) miedo / me asusté / me emocioné / me enfadé / me puse nervioso/a / me alegré / me sorprendí",
+      "rule": {
+        "title": "ВЫРАЖЕНИЯ ЭМОЦИЙ И РЕАКЦИЙ в прошлом",
+        "explanation": "В испанском языке для выражения эмоций и реакций в прошлом используются разные конструкции: pasar + sustantivo, ponerse + adjetivo, глаголы эмоций в pretérito indefinido.",
+        "sections": [
+          {
+            "subtitle": "Pasar + sustantivo (пережить что-то)",
+            "points": [
+              "<b>Pasé (mucho) miedo</b> — я очень испугался/мне было страшно",
+              "<b>Pasé vergüenza</b> — мне было стыдно",
+              "<b>Pasé hambre</b> — я голодал",
+              "<b>Pasé frío/calor</b> — я мёрз/мне было жарко",
+              "<b>Lo pasé muy bien/mal</b> — я отлично/плохо провёл время"
+            ]
+          },
+          {
+            "subtitle": "Ponerse + adjetivo (стать, сделаться)",
+            "points": [
+              "<b>Me puse nervioso/a</b> — я занервничал/а",
+              "<b>Me puse contento/a</b> — я обрадовался/лась",
+              "<b>Me puse triste</b> — я расстроился/лась",
+              "<b>Me puse enfermo/a</b> — я заболел/а",
+              "<b>Me puse rojo/a</b> — я покраснел/а"
+            ]
+          },
+          {
+            "subtitle": "Глаголы эмоций в indefinido",
+            "points": [
+              "<b>Me asusté</b> — я испугался",
+              "<b>Me emocioné</b> — я растрогался",
+              "<b>Me enfadé</b> — я разозлился",
+              "<b>Me alegré</b> — я обрадовался",
+              "<b>Me sorprendí</b> — я удивился",
+              "<b>Me preocupé</b> — я забеспокоился"
+            ]
+          }
+        ],
+        "examples": [
+          "Cuando vi la araña, pasé mucho miedo.",
+          "En la boda de mi hermana me emocioné muchísimo.",
+          "Me puse muy nervioso antes del examen.",
+          "Cuando me dieron la noticia, me alegré mucho.",
+          "Lo pasé genial en la fiesta de cumpleaños."
+        ]
+      },
+      "questions": [
+        {"sentence": "Cuando vi la película de terror, ___ mucho miedo.", "answer": "pasé"},
+        {"sentence": "En la boda de mi hermana ___ muchísimo.", "answer": "me emocioné"},
+        {"sentence": "___ muy nervioso antes del examen.", "answer": "Me puse"},
+        {"sentence": "Cuando me lo dijeron, ___ mucho.", "answer": "me enfadé"},
+        {"sentence": "Al ver a mi abuela después de años, ___.", "answer": "me emocioné"},
+        {"sentence": "En la montaña rusa ___ mucho miedo.", "answer": "pasé"},
+        {"sentence": "Cuando oí el ruido extraño, ___.", "answer": "me asusté"},
+        {"sentence": "___ muy contenta con la noticia.", "answer": "Me puse"},
+        {"sentence": "Al escuchar su historia triste, ___.", "answer": "me emocioné"},
+        {"sentence": "Cuando me gritó sin razón, ___.", "answer": "me enfadé"},
+        {"sentence": "En aquel momento ___ mucha vergüenza.", "answer": "pasé"},
+        {"sentence": "___ mucho cuando perdí el avión.", "answer": "Me asusté"},
+        {"sentence": "Al saber la verdad, ___ muy triste.", "answer": "me puse"},
+        {"sentence": "Cuando me dieron el regalo, ___ mucho.", "answer": "me alegré"},
+        {"sentence": "___ muy nervioso en la entrevista de trabajo.", "answer": "Me puse"},
+        {"sentence": "Durante el terremoto ___ muchísimo miedo.", "answer": "pasé"},
+        {"sentence": "Cuando vi a mi ex, ___ rojo.", "answer": "me puse"},
+        {"sentence": "Al escuchar la canción de mi infancia, ___.", "answer": "me emocioné"},
+        {"sentence": "___ mucho cuando llegaste tarde.", "answer": "Me enfadé"},
+        {"sentence": "En el hospital ___ mucha preocupación.", "answer": "pasé"},
+        {"sentence": "Cuando recibí las flores, ___ muy contenta.", "answer": "me puse"},
+        {"sentence": "___ mucho al ver la araña.", "answer": "Me asusté"},
+        {"sentence": "Al leer su carta, ___ mucho.", "answer": "me emocioné"},
+        {"sentence": "Cuando suspendí el examen, ___ muy triste.", "answer": "me puse"},
+        {"sentence": "___ mucha vergüenza cuando me caí.", "answer": "Pasé"},
+        {"sentence": "Cuando me mintió, ___ muchísimo.", "answer": "me enfadé"},
+        {"sentence": "En la primera cita ___ muy nervioso.", "answer": "me puse"},
+        {"sentence": "Al ver el accidente, ___ mucho miedo.", "answer": "pasé"},
+        {"sentence": "___ mucho cuando me llamaron para la entrevista.", "answer": "Me alegré"},
+        {"sentence": "Durante el vuelo turbulento ___.", "answer": "me asusté"},
+        {"sentence": "Cuando vi que ganamos, ___ contentísimo.", "answer": "me puse"},
+        {"sentence": "En el funeral de mi abuelo ___ muchísimo.", "answer": "me emocioné"},
+        {"sentence": "___ mucho frío en la montaña.", "answer": "Pasé"},
+        {"sentence": "Cuando me olvidé de su cumpleaños, ___.", "answer": "me sentí mal"},
+        {"sentence": "Al ver a mis padres después de un año, ___.", "answer": "me emocioné"},
+        {"sentence": "___ muy enfadado cuando lo supe.", "answer": "Me puse"},
+        {"sentence": "En la cola del supermercado ___ mucho hambre.", "answer": "pasé"},
+        {"sentence": "Cuando me tocó hablar en público, ___ muy nervioso.", "answer": "me puse"},
+        {"sentence": "___ mucho al escuchar esa noticia.", "answer": "Me sorprendí"},
+        {"sentence": "Durante la tormenta ___ mucho miedo.", "answer": "pasé"},
+        {"sentence": "Cuando me dijeron que estaba embarazada, ___ mucho.", "answer": "me alegré"},
+        {"sentence": "___ muy triste cuando se fue.", "answer": "Me puse"},
+        {"sentence": "En el dentista ___ mucho miedo.", "answer": "pasé"},
+        {"sentence": "Cuando vi su mensaje, ___.", "answer": "me preocupé"},
+        {"sentence": "___ muchísimo en su boda.", "answer": "Me emocioné"},
+        {"sentence": "Al ver el precio, ___ muy enfadado.", "answer": "me puse"},
+        {"sentence": "Cuando me dejó plantada, ___ mucho.", "answer": "me enfadé"},
+        {"sentence": "___ mucha pena cuando murió mi mascota.", "answer": "Pasé"},
+        {"sentence": "Al cruzar el puente colgante, ___ mucho miedo.", "answer": "pasé"},
+        {"sentence": "Cuando me regalaron el coche, ___ contentísimo.", "answer": "me puse"},
+        {"sentence": "___ mucho cuando se apagaron las luces.", "answer": "Me asusté"},
+        {"sentence": "En la despedida del trabajo ___.", "answer": "me emocioné"},
+        {"sentence": "___ muy nervioso esperando los resultados.", "answer": "Me puse"},
+        {"sentence": "Cuando no me invitaron a la fiesta, ___ triste.", "answer": "me puse"},
+        {"sentence": "___ mucha vergüenza delante de todos.", "answer": "Pasé"},
+        {"sentence": "Al escuchar su voz después de años, ___.", "answer": "me emocioné"},
+        {"sentence": "Cuando perdimos el partido, ___ muy triste.", "answer": "me puse"},
+        {"sentence": "___ mucho miedo durante la operación.", "answer": "Pasé"},
+        {"sentence": "Cuando me dijeron la verdad, ___ mucho.", "answer": "me sorprendí"},
+        {"sentence": "___ muy contento al verte.", "answer": "Me puse"}
+      ],
+      "microTests": [
+        {"sentence": "Cuando vi la película de terror, ___ mucho miedo.", "answer": "pasé", "hint": "Pasar + sustantivo (miedo)"},
+        {"sentence": "En la boda de mi hermana ___ muchísimo.", "answer": "me emocioné", "hint": "Глагол эмоции emocionarse"},
+        {"sentence": "___ muy nervioso antes del examen.", "answer": "Me puse", "hint": "Ponerse + adjetivo (nervioso)"},
+        {"sentence": "Cuando me gritó, ___ mucho.", "answer": "me enfadé", "hint": "Глагол эмоции enfadarse"},
+        {"sentence": "___ mucha vergüenza cuando me caí.", "answer": "Pasé", "hint": "Pasar + sustantivo (vergüenza)"},
+        {"sentence": "Cuando oí el ruido, ___.", "answer": "me asusté", "hint": "Глагол эмоции asustarse"},
+        {"sentence": "___ muy contenta con la noticia.", "answer": "Me puse", "hint": "Ponerse + adjetivo (contenta)"},
+        {"sentence": "Cuando recibí las flores, ___ mucho.", "answer": "me alegré", "hint": "Глагол эмоции alegrarse"},
+        {"sentence": "Durante el terremoto ___ muchísimo miedo.", "answer": "pasé", "hint": "Pasar + sustantivo (miedo)"},
+        {"sentence": "___ muy triste cuando se fue.", "answer": "Me puse", "hint": "Ponerse + adjetivo (triste)"},
+        {"sentence": "Cuando vi que ganamos, ___ contentísimo.", "answer": "me puse", "hint": "Ponerse + adjetivo"},
+        {"sentence": "Al ver el accidente, ___.", "answer": "me asusté", "hint": "Глагол эмоции asustarse"},
+        {"sentence": "___ mucho al escuchar la noticia.", "answer": "Me sorprendí", "hint": "Глагол эмоции sorprenderse"},
+        {"sentence": "En el dentista ___ mucho miedo.", "answer": "pasé", "hint": "Pasar + sustantivo (miedo)"},
+        {"sentence": "___ muy nervioso esperando.", "answer": "Me puse", "hint": "Ponerse + adjetivo (nervioso)"}
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Cambios ortográficos en Pretérito Indefinido",
+      "hint": "llegar → llegué / sacar → saqué / empezar → empecé",
+      "rule": {
+        "title": "ОРФОГРАФИЧЕСКИЕ ИЗМЕНЕНИЯ в Pretérito Indefinido (1-е лицо ед.ч.)",
+        "explanation": "В первом лице единственного числа (yo) претерито индефинидо некоторые глаголы меняют написание корня, чтобы сохранить произношение.",
+        "sections": [
+          {
+            "subtitle": "G → GU (перед E)",
+            "points": [
+              "Глаголы на <b>-gar</b> меняют g → gu в форме yo",
+              "<b>llegar</b> → yo llegué (но: él llegó)",
+              "<b>pagar</b> → yo pagué",
+              "<b>jugar</b> → yo jugué",
+              "<b>apagar</b> → yo apagué",
+              "<b>entregar</b> → yo entregué",
+              "<b>cargar</b> → yo cargué"
+            ]
+          },
+          {
+            "subtitle": "C → QU (перед E)",
+            "points": [
+              "Глаголы на <b>-car</b> меняют c → qu в форме yo",
+              "<b>sacar</b> → yo saqué (но: él sacó)",
+              "<b>buscar</b> → yo busqué",
+              "<b>tocar</b> → yo toqué",
+              "<b>explicar</b> → yo expliqué",
+              "<b>practicar</b> → yo practiqué",
+              "<b>aparcar</b> → yo aparqué"
+            ]
+          },
+          {
+            "subtitle": "Z → C (перед E)",
+            "points": [
+              "Глаголы на <b>-zar</b> меняют z → c в форме yo",
+              "<b>empezar</b> → yo empecé (но: él empezó)",
+              "<b>comenzar</b> → yo comencé",
+              "<b>cruzar</b> → yo crucé",
+              "<b>almorzar</b> → yo almorcé",
+              "<b>organizar</b> → yo organicé",
+              "<b>utilizar</b> → yo utilicé"
+            ]
+          }
+        ],
+        "examples": [
+          "Ayer llegué tarde al trabajo.",
+          "Busqué las llaves por toda la casa.",
+          "Empecé a estudiar español hace un año.",
+          "Pagué la cuenta con tarjeta.",
+          "Toqué la guitarra en la fiesta."
+        ]
+      },
+      "questions": [
+        {"sentence": "Ayer ___ tarde al trabajo. (llegar, yo)", "answer": "llegué"},
+        {"sentence": "___ las llaves por toda la casa. (buscar, yo)", "answer": "Busqué"},
+        {"sentence": "___ a estudiar español hace un año. (empezar, yo)", "answer": "Empecé"},
+        {"sentence": "___ la cuenta con tarjeta. (pagar, yo)", "answer": "Pagué"},
+        {"sentence": "___ la guitarra en la fiesta. (tocar, yo)", "answer": "Toqué"},
+        {"sentence": "No ___ a tiempo a la reunión. (llegar, yo)", "answer": "llegué"},
+        {"sentence": "___ el coche en la puerta. (aparcar, yo)", "answer": "Aparqué"},
+        {"sentence": "___ la luz antes de salir. (apagar, yo)", "answer": "Apagué"},
+        {"sentence": "___ español durante tres horas. (practicar, yo)", "answer": "Practiqué"},
+        {"sentence": "___ a trabajar a las nueve. (comenzar, yo)", "answer": "Comencé"},
+        {"sentence": "___ la calle corriendo. (cruzar, yo)", "answer": "Crucé"},
+        {"sentence": "___ al fútbol con mis amigos. (jugar, yo)", "answer": "Jugué"},
+        {"sentence": "___ mi número de teléfono. (sacar, yo)", "answer": "Saqué"},
+        {"sentence": "Le ___ la situación varias veces. (explicar, yo)", "answer": "expliqué"},
+        {"sentence": "___ todos los documentos. (entregar, yo)", "answer": "Entregué"},
+        {"sentence": "Ayer ___ a las ocho de la mañana. (llegar, yo)", "answer": "llegué"},
+        {"sentence": "___ las maletas del coche. (sacar, yo)", "answer": "Saqué"},
+        {"sentence": "___ a hacer deporte este mes. (empezar, yo)", "answer": "Empecé"},
+        {"sentence": "___ mucho en el restaurante. (pagar, yo)", "answer": "Pagué"},
+        {"sentence": "___ el piano en el concierto. (tocar, yo)", "answer": "Toqué"},
+        {"sentence": "No ___ encontrar mi cartera. (conseguir, yo)", "answer": "conseguí"},
+        {"sentence": "___ cerca del parque. (aparcar, yo)", "answer": "Aparqué"},
+        {"sentence": "___ el ordenador antes de irme. (apagar, yo)", "answer": "Apagué"},
+        {"sentence": "___ tenis el fin de semana pasado. (practicar, yo)", "answer": "Practiqué"},
+        {"sentence": "___ mis estudios en 2010. (comenzar, yo)", "answer": "Comencé"},
+        {"sentence": "___ el puente a pie. (cruzar, yo)", "answer": "Crucé"},
+        {"sentence": "___ al baloncesto en el instituto. (jugar, yo)", "answer": "Jugué"},
+        {"sentence": "___ fotos del paisaje. (sacar, yo)", "answer": "Saqué"},
+        {"sentence": "Le ___ cómo llegar a mi casa. (explicar, yo)", "answer": "expliqué"},
+        {"sentence": "___ el informe a mi jefe. (entregar, yo)", "answer": "Entregué"},
+        {"sentence": "___ a casa después de medianoche. (llegar, yo)", "answer": "Llegué"},
+        {"sentence": "___ trabajo por internet. (buscar, yo)", "answer": "Busqué"},
+        {"sentence": "___ un curso de inglés. (empezar, yo)", "answer": "Empecé"},
+        {"sentence": "___ con cheque. (pagar, yo)", "answer": "Pagué"},
+        {"sentence": "___ la puerta para entrar. (tocar, yo)", "answer": "Toqué"},
+        {"sentence": "___ temprano a la estación. (llegar, yo)", "answer": "Llegué"},
+        {"sentence": "___ mal el coche. (aparcar, yo)", "answer": "Aparqué"},
+        {"sentence": "___ todas las luces de la casa. (apagar, yo)", "answer": "Apagué"},
+        {"sentence": "___ la receta antes de cocinar. (buscar, yo)", "answer": "Busqué"},
+        {"sentence": "___ a correr por el parque. (empezar, yo)", "answer": "Empecé"},
+        {"sentence": "___ la frontera en coche. (cruzar, yo)", "answer": "Crucé"},
+        {"sentence": "___ a las cartas con mi abuelo. (jugar, yo)", "answer": "Jugué"},
+        {"sentence": "___ dinero del cajero. (sacar, yo)", "answer": "Saqué"},
+        {"sentence": "___ la fiesta de cumpleaños. (organizar, yo)", "answer": "Organicé"},
+        {"sentence": "___ las tareas ayer por la noche. (entregar, yo)", "answer": "Entregué"},
+        {"sentence": "___ primero que los demás. (llegar, yo)", "answer": "Llegué"},
+        {"sentence": "___ información en internet. (buscar, yo)", "answer": "Busqué"},
+        {"sentence": "___ a estudiar a las siete. (empezar, yo)", "answer": "Empecé"},
+        {"sentence": "___ la entrada del cine. (pagar, yo)", "answer": "Pagué"},
+        {"sentence": "___ el timbre varias veces. (tocar, yo)", "answer": "Toqué"},
+        {"sentence": "___ a España el año pasado. (llegar, yo)", "answer": "Llegué"},
+        {"sentence": "___ el coche en el garaje. (aparcar, yo)", "answer": "Aparqué"},
+        {"sentence": "___ la televisión a las once. (apagar, yo)", "answer": "Apagué"},
+        {"sentence": "___ yoga durante un año. (practicar, yo)", "answer": "Practiqué"},
+        {"sentence": "___ la dieta el lunes. (comenzar, yo)", "answer": "Comencé"},
+        {"sentence": "___ la avenida principal. (cruzar, yo)", "answer": "Crucé"},
+        {"sentence": "___ videojuegos toda la noche. (jugar, yo)", "answer": "Jugué"},
+        {"sentence": "___ el pasaporte del bolso. (sacar, yo)", "answer": "Saqué"},
+        {"sentence": "Le ___ la gramática con paciencia. (explicar, yo)", "answer": "expliqué"},
+        {"sentence": "___ mi viaje con mucho tiempo. (organizar, yo)", "answer": "Organicé"}
+      ],
+      "microTests": [
+        {"sentence": "Ayer ___ tarde al trabajo. (llegar, yo)", "answer": "llegué", "hint": "G → GU перед E: llegar → llegué"},
+        {"sentence": "___ las llaves por toda la casa. (buscar, yo)", "answer": "Busqué", "hint": "C → QU перед E: buscar → busqué"},
+        {"sentence": "___ a estudiar español. (empezar, yo)", "answer": "Empecé", "hint": "Z → C перед E: empezar → empecé"},
+        {"sentence": "___ la cuenta. (pagar, yo)", "answer": "Pagué", "hint": "G → GU перед E: pagar → pagué"},
+        {"sentence": "___ la guitarra. (tocar, yo)", "answer": "Toqué", "hint": "C → QU перед E: tocar → toqué"},
+        {"sentence": "___ el coche. (aparcar, yo)", "answer": "Aparqué", "hint": "C → QU перед E: aparcar → aparqué"},
+        {"sentence": "___ la calle corriendo. (cruzar, yo)", "answer": "Crucé", "hint": "Z → C перед E: cruzar → crucé"},
+        {"sentence": "___ al fútbol. (jugar, yo)", "answer": "Jugué", "hint": "G → GU перед E: jugar → jugué"},
+        {"sentence": "___ fotos. (sacar, yo)", "answer": "Saqué", "hint": "C → QU перед E: sacar → saqué"},
+        {"sentence": "___ la luz. (apagar, yo)", "answer": "Apagué", "hint": "G → GU перед E: apagar → apagué"},
+        {"sentence": "___ a trabajar a las nueve. (comenzar, yo)", "answer": "Comencé", "hint": "Z → C перед E: comenzar → comencé"},
+        {"sentence": "___ español. (practicar, yo)", "answer": "Practiqué", "hint": "C → QU перед E: practicar → practiqué"},
+        {"sentence": "Le ___ la situación. (explicar, yo)", "answer": "expliqué", "hint": "C → QU перед E: explicar → expliqué"},
+        {"sentence": "___ los documentos. (entregar, yo)", "answer": "Entregué", "hint": "G → GU перед E: entregar → entregué"},
+        {"sentence": "___ la fiesta. (organizar, yo)", "answer": "Organicé", "hint": "Z → C перед E: organizar → organicé"}
+      ]
     }
   ]
 }

@@ -617,6 +617,28 @@ function showProfileSelect() {
             renderProfileList();
         }
 
+        // Извлекает тему из заголовка "Unidad X: Тема"
+        function extractThemeFromTitle(title) {
+            if (!title) return '';
+            const colonIndex = title.indexOf(':');
+            if (colonIndex === -1) return '';
+            return title.substring(colonIndex + 1).trim();
+        }
+
+        // Обновляет темы всех юнитов в главном меню
+        function updateMainMenuThemes() {
+            UNIDADES.forEach((unidad) => {
+                const unidadNumber = unidad.split('_')[1];
+                const themeElement = document.getElementById(`unidad-${unidadNumber}-theme`);
+                const unidadData = vocabularyData[unidad];
+
+                if (themeElement && unidadData && unidadData.title) {
+                    const theme = extractThemeFromTitle(unidadData.title);
+                    themeElement.textContent = theme;
+                }
+            });
+        }
+
         function showMainMenu() {
             hideAll();
             showUserBadge();
@@ -762,6 +784,16 @@ function showProfileSelect() {
             // Динамическая генерация заголовка
             const unidadNumber = unidad.split('_')[1];
             document.getElementById('unidadTitle').textContent = `Unidad ${unidadNumber}`;
+
+            // Отображение темы юнита
+            const unidadData = vocabularyData[unidad];
+            const themeElement = document.getElementById('unidadTheme');
+            if (themeElement && unidadData && unidadData.title) {
+                const theme = extractThemeFromTitle(unidadData.title);
+                themeElement.textContent = theme;
+            } else if (themeElement) {
+                themeElement.textContent = '';
+            }
 
             // Обновление прогресса
             updateUnidadProgressBars();
@@ -4715,6 +4747,9 @@ async function getNavigationState() {
     for (let i = 1; i <= 10; i++) {
         await loadUnidadFromJson(`Unidad${i}.json`);
     }
+
+    // Обновляем темы юнитов в главном меню после загрузки данных
+    updateMainMenuThemes();
 
     const state = loadAppState();
     const token = getToken();

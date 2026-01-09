@@ -1,20 +1,1100 @@
 {
   "id": "unidad_6",
-  "title": "Unidad 6",
-  "categories": {
-    "sustantivos": [
-      {"spanish": "el ejemplo", "ru": "пример"},
-      {"spanish": "la palabra", "ru": "слово"},
-      {"spanish": "el texto", "ru": "текст"}
+  "title": "Unidad 6: Guía del ocio",
+  "groups": {
+    "ACTIVIDADES_CULTURALES": [
+      {
+        "spanish": "el cine",
+        "ru": "кино, кинотеатр",
+        "type": "sustantivo",
+        "icon": "film-slate",
+        "useIcon": true,
+        "hardSentences": [
+          "Vamos al ___ esta noche a ver una película.",
+          "El ___ del centro tiene pantallas muy grandes.",
+          "Me encanta ir al ___ los fines de semana.",
+          "El ___ está cerrado los lunes."
+        ],
+        "hardSentencesRu": [
+          "Пойдём в кино сегодня вечером посмотреть фильм.",
+          "В кинотеатре в центре очень большие экраны.",
+          "Мне нравится ходить в кино по выходным.",
+          "Кинотеатр закрыт по понедельникам."
+        ]
+      },
+      {
+        "spanish": "el teatro",
+        "ru": "театр",
+        "type": "sustantivo",
+        "icon": "mask-happy",
+        "useIcon": true,
+        "hardSentences": [
+          "Ayer fuimos al ___ a ver una obra de Shakespeare.",
+          "El ___ municipal es muy antiguo.",
+          "Me gusta mucho el ___, prefiero las obras en vivo.",
+          "El ___ estaba lleno de gente."
+        ],
+        "hardSentencesRu": [
+          "Вчера мы ходили в театр смотреть пьесу Шекспира.",
+          "Муниципальный театр очень старый.",
+          "Мне очень нравится театр, я предпочитаю живые постановки.",
+          "Театр был полон людей."
+        ]
+      },
+      {
+        "spanish": "el museo",
+        "ru": "музей",
+        "type": "sustantivo",
+        "icon": "bank",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ del Prado tiene obras de Velázquez.",
+          "Visitamos el ___ de arte moderno ayer.",
+          "El ___ abre a las diez de la mañana.",
+          "Hay un ___ nuevo cerca de mi casa."
+        ],
+        "hardSentencesRu": [
+          "В музее Прадо есть работы Веласкеса.",
+          "Вчера мы посетили музей современного искусства.",
+          "Музей открывается в десять утра.",
+          "Рядом с моим домом есть новый музей."
+        ]
+      },
+      {
+        "spanish": "el concierto",
+        "ru": "концерт",
+        "type": "sustantivo",
+        "icon": "microphone-stage",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de rock fue increíble.",
+          "Tengo entradas para el ___ del sábado.",
+          "El ___ empezó a las nueve de la noche.",
+          "Fue el mejor ___ de mi vida."
+        ],
+        "hardSentencesRu": [
+          "Рок-концерт был невероятным.",
+          "У меня есть билеты на концерт в субботу.",
+          "Концерт начался в девять вечера.",
+          "Это был лучший концерт в моей жизни."
+        ]
+      },
+      {
+        "spanish": "la película",
+        "ru": "фильм",
+        "type": "sustantivo",
+        "icon": "film-strip",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Has visto la última ___ de Marvel?",
+          "La ___ que vimos ayer fue muy emocionante.",
+          "Esta ___ ganó un Óscar.",
+          "Prefiero ver la ___ en versión original."
+        ],
+        "hardSentencesRu": [
+          "Ты видел последний фильм Marvel?",
+          "Фильм, который мы смотрели вчера, был очень захватывающим.",
+          "Этот фильм получил Оскар.",
+          "Я предпочитаю смотреть фильм в оригинальной версии."
+        ]
+      },
+      {
+        "spanish": "la serie",
+        "ru": "сериал",
+        "type": "sustantivo",
+        "icon": "monitor-play",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Qué ___ estás viendo ahora?",
+          "Esta ___ tiene diez temporadas.",
+          "La ___ española es muy popular.",
+          "Terminé de ver la ___ anoche."
+        ],
+        "hardSentencesRu": [
+          "Какой сериал ты сейчас смотришь?",
+          "В этом сериале десять сезонов.",
+          "Испанский сериал очень популярен.",
+          "Я закончил смотреть сериал прошлой ночью."
+        ]
+      },
+      {
+        "spanish": "la música",
+        "ru": "музыка",
+        "type": "sustantivo",
+        "icon": "music-notes",
+        "useIcon": true,
+        "hardSentences": [
+          "Me encanta escuchar ___ clásica.",
+          "La ___ de esta película es muy bonita.",
+          "¿Qué tipo de ___ te gusta?",
+          "Pongo ___ cuando trabajo."
+        ],
+        "hardSentencesRu": [
+          "Мне нравится слушать классическую музыку.",
+          "Музыка в этом фильме очень красивая.",
+          "Какая музыка тебе нравится?",
+          "Я включаю музыку, когда работаю."
+        ]
+      },
+      {
+        "spanish": "el libro",
+        "ru": "книга",
+        "type": "sustantivo",
+        "icon": "book",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy leyendo un ___ muy interesante.",
+          "Este ___ tiene más de 500 páginas.",
+          "¿Me puedes recomendar un ___ bueno?",
+          "El ___ es mejor que la película."
+        ],
+        "hardSentencesRu": [
+          "Я читаю очень интересную книгу.",
+          "В этой книге больше 500 страниц.",
+          "Можешь порекомендовать мне хорошую книгу?",
+          "Книга лучше, чем фильм."
+        ]
+      },
+      {
+        "spanish": "leer",
+        "ru": "читать",
+        "type": "verbo",
+        "icon": "book-open",
+        "useIcon": true,
+        "hardSentences": [
+          "Me gusta ___ antes de dormir.",
+          "Prefiero ___ libros en papel.",
+          "Necesito ___ más en español.",
+          "¿Te gusta ___ novelas?"
+        ],
+        "hardSentencesRu": [
+          "Мне нравится читать перед сном.",
+          "Я предпочитаю читать бумажные книги.",
+          "Мне нужно больше читать на испанском.",
+          "Тебе нравится читать романы?"
+        ]
+      },
+      {
+        "spanish": "pintar",
+        "ru": "рисовать красками",
+        "type": "verbo",
+        "icon": "paint-brush",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi hermana sabe ___ muy bien.",
+          "Quiero aprender a ___ al óleo.",
+          "Me relaja mucho ___.",
+          "Voy a ___ un cuadro para tu cumpleaños."
+        ],
+        "hardSentencesRu": [
+          "Моя сестра умеет очень хорошо рисовать.",
+          "Я хочу научиться рисовать маслом.",
+          "Рисование меня очень расслабляет.",
+          "Я нарисую картину на твой день рождения."
+        ]
+      },
+      {
+        "spanish": "escuchar",
+        "ru": "слушать",
+        "type": "verbo",
+        "icon": "headphones",
+        "useIcon": true,
+        "hardSentences": [
+          "Me encanta ___ música mientras cocino.",
+          "Prefiero ___ podcasts en español.",
+          "¿Quieres ___ este nuevo álbum?",
+          "Necesito ___ con más atención."
+        ],
+        "hardSentencesRu": [
+          "Мне нравится слушать музыку, пока готовлю.",
+          "Я предпочитаю слушать подкасты на испанском.",
+          "Хочешь послушать этот новый альбом?",
+          "Мне нужно слушать внимательнее."
+        ]
+      },
+      {
+        "spanish": "tocar",
+        "ru": "играть (на инструменте)",
+        "type": "verbo",
+        "icon": "guitar",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Sabes ___ algún instrumento?",
+          "Me gustaría ___ el piano.",
+          "Mi hijo está aprendiendo a ___ la guitarra.",
+          "Ella sabe ___ el violín muy bien."
+        ],
+        "hardSentencesRu": [
+          "Ты умеешь играть на каком-нибудь инструменте?",
+          "Я хотел бы играть на пианино.",
+          "Мой сын учится играть на гитаре.",
+          "Она очень хорошо играет на скрипке."
+        ]
+      }
     ],
-    "adjetivos": [
-      {"spanish": "nuevo", "ru": "новый"},
-      {"spanish": "viejo", "ru": "старый"}
+    "ACTIVIDADES_DEPORTIVAS": [
+      {
+        "spanish": "el gimnasio",
+        "ru": "спортзал",
+        "type": "sustantivo",
+        "icon": "barbell",
+        "useIcon": true,
+        "hardSentences": [
+          "Voy al ___ tres veces por semana.",
+          "El ___ está cerca de mi oficina.",
+          "Me he apuntado a un ___ nuevo.",
+          "El ___ cierra a las diez."
+        ],
+        "hardSentencesRu": [
+          "Я хожу в спортзал три раза в неделю.",
+          "Спортзал находится рядом с моим офисом.",
+          "Я записался в новый спортзал.",
+          "Спортзал закрывается в десять."
+        ]
+      },
+      {
+        "spanish": "la natación",
+        "ru": "плавание",
+        "type": "sustantivo",
+        "icon": "person-simple-swim",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es mi deporte favorito.",
+          "Practico ___ desde pequeño.",
+          "La ___ es muy buena para la espalda.",
+          "Tengo clase de ___ los martes."
+        ],
+        "hardSentencesRu": [
+          "Плавание — мой любимый вид спорта.",
+          "Я занимаюсь плаванием с детства.",
+          "Плавание очень полезно для спины.",
+          "У меня занятия по плаванию по вторникам."
+        ]
+      },
+      {
+        "spanish": "el yoga",
+        "ru": "йога",
+        "type": "sustantivo",
+        "icon": "person-simple-tai-chi",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ me ayuda a relajarme.",
+          "Hago ___ todas las mañanas.",
+          "El ___ es bueno para el cuerpo y la mente.",
+          "Empecé a practicar ___ hace un año."
+        ],
+        "hardSentencesRu": [
+          "Йога помогает мне расслабиться.",
+          "Я занимаюсь йогой каждое утро.",
+          "Йога полезна для тела и ума.",
+          "Я начал заниматься йогой год назад."
+        ]
+      },
+      {
+        "spanish": "el senderismo",
+        "ru": "пеший туризм",
+        "type": "sustantivo",
+        "icon": "person-simple-hike",
+        "useIcon": true,
+        "hardSentences": [
+          "Me encanta hacer ___ en la montaña.",
+          "El ___ es una actividad muy saludable.",
+          "Hicimos ___ por el Camino de Santiago.",
+          "El ___ me permite disfrutar de la naturaleza."
+        ],
+        "hardSentencesRu": [
+          "Мне нравится ходить в походы в горы.",
+          "Пеший туризм — очень полезное занятие.",
+          "Мы ходили в поход по Пути Святого Иакова.",
+          "Пеший туризм позволяет мне наслаждаться природой."
+        ]
+      },
+      {
+        "spanish": "el fútbol",
+        "ru": "футбол",
+        "type": "sustantivo",
+        "icon": "soccer-ball",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es el deporte más popular en España.",
+          "Mi hijo juega al ___ los sábados.",
+          "Vimos el partido de ___ en el bar.",
+          "El ___ es mi pasión desde niño."
+        ],
+        "hardSentencesRu": [
+          "Футбол — самый популярный вид спорта в Испании.",
+          "Мой сын играет в футбол по субботам.",
+          "Мы смотрели футбольный матч в баре.",
+          "Футбол — моя страсть с детства."
+        ]
+      },
+      {
+        "spanish": "el baloncesto",
+        "ru": "баскетбол",
+        "type": "sustantivo",
+        "icon": "basketball",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es muy popular en Estados Unidos.",
+          "Juego al ___ con mis amigos.",
+          "El partido de ___ fue muy emocionante.",
+          "Me gusta ver ___ en la televisión."
+        ],
+        "hardSentencesRu": [
+          "Баскетбол очень популярен в США.",
+          "Я играю в баскетбол с друзьями.",
+          "Баскетбольный матч был очень захватывающим.",
+          "Мне нравится смотреть баскетбол по телевизору."
+        ]
+      },
+      {
+        "spanish": "el partido",
+        "ru": "матч, игра",
+        "type": "sustantivo",
+        "icon": "trophy",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Viste el ___ de ayer?",
+          "El ___ empieza a las ocho.",
+          "Fue un ___ muy intenso.",
+          "Perdimos el ___ por dos goles."
+        ],
+        "hardSentencesRu": [
+          "Ты видел вчерашний матч?",
+          "Матч начинается в восемь.",
+          "Это была очень напряжённая игра.",
+          "Мы проиграли матч с разницей в два гола."
+        ]
+      },
+      {
+        "spanish": "la carrera",
+        "ru": "забег, гонка",
+        "type": "sustantivo",
+        "icon": "person-simple-run",
+        "useIcon": true,
+        "hardSentences": [
+          "Voy a participar en una ___ solidaria.",
+          "La ___ empieza en el centro de la ciudad.",
+          "Es mi primera ___ de 10 kilómetros.",
+          "La ___ fue muy dura pero emocionante."
+        ],
+        "hardSentencesRu": [
+          "Я собираюсь участвовать в благотворительном забеге.",
+          "Забег начинается в центре города.",
+          "Это мой первый забег на 10 километров.",
+          "Забег был очень тяжёлым, но захватывающим."
+        ]
+      },
+      {
+        "spanish": "correr",
+        "ru": "бегать",
+        "type": "verbo",
+        "icon": "person-simple-run",
+        "useIcon": true,
+        "hardSentences": [
+          "Me gusta ___ por las mañanas.",
+          "Voy a salir a ___ al parque.",
+          "Necesito ___ más para estar en forma.",
+          "Prefiero ___ al aire libre."
+        ],
+        "hardSentencesRu": [
+          "Мне нравится бегать по утрам.",
+          "Я собираюсь побегать в парке.",
+          "Мне нужно больше бегать, чтобы быть в форме.",
+          "Я предпочитаю бегать на свежем воздухе."
+        ]
+      },
+      {
+        "spanish": "nadar",
+        "ru": "плавать",
+        "type": "verbo",
+        "icon": "person-simple-swim",
+        "useIcon": true,
+        "hardSentences": [
+          "Aprendí a ___ cuando tenía cinco años.",
+          "Me encanta ___ en el mar.",
+          "Voy a ___ a la piscina mañana.",
+          "Prefiero ___ en agua caliente."
+        ],
+        "hardSentencesRu": [
+          "Я научился плавать, когда мне было пять лет.",
+          "Мне нравится плавать в море.",
+          "Завтра я пойду плавать в бассейн.",
+          "Я предпочитаю плавать в тёплой воде."
+        ]
+      },
+      {
+        "spanish": "montar",
+        "ru": "ездить верхом",
+        "type": "verbo",
+        "icon": "horse",
+        "useIcon": true,
+        "hardSentences": [
+          "Quiero aprender a ___ a caballo.",
+          "Mi hija sabe ___ en bicicleta.",
+          "Me gustaría ___ a caballo en la playa.",
+          "Aprendió a ___ el año pasado."
+        ],
+        "hardSentencesRu": [
+          "Я хочу научиться ездить верхом.",
+          "Моя дочь умеет кататься на велосипеде.",
+          "Я хотел бы покататься на лошади на пляже.",
+          "Он научился ездить верхом в прошлом году."
+        ]
+      },
+      {
+        "spanish": "jugar",
+        "ru": "играть",
+        "type": "verbo",
+        "icon": "game-controller",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Quieres ___ al fútbol con nosotros?",
+          "Me gusta ___ a las cartas.",
+          "Vamos a ___ al baloncesto esta tarde.",
+          "No sé ___ al tenis."
+        ],
+        "hardSentencesRu": [
+          "Хочешь поиграть с нами в футбол?",
+          "Мне нравится играть в карты.",
+          "Давай поиграем в баскетбол сегодня вечером.",
+          "Я не умею играть в теннис."
+        ]
+      }
     ],
-    "verbos": [
-      {"spanish": "crear", "ru": "создавать"},
-      {"spanish": "usar", "ru": "использовать"}
+    "ACTIVIDADES_SOCIALES": [
+      {
+        "spanish": "el restaurante",
+        "ru": "ресторан",
+        "type": "sustantivo",
+        "icon": "fork-knife",
+        "useIcon": true,
+        "hardSentences": [
+          "Vamos a cenar a un ___ italiano.",
+          "El ___ de la esquina es muy bueno.",
+          "Quiero reservar una mesa en el ___.",
+          "El ___ estaba lleno anoche."
+        ],
+        "hardSentencesRu": [
+          "Пойдём поужинаем в итальянский ресторан.",
+          "Ресторан на углу очень хороший.",
+          "Я хочу забронировать столик в ресторане.",
+          "Вчера вечером ресторан был полон."
+        ]
+      },
+      {
+        "spanish": "el bar",
+        "ru": "бар",
+        "type": "sustantivo",
+        "icon": "beer-bottle",
+        "useIcon": true,
+        "hardSentences": [
+          "Quedamos en el ___ de siempre.",
+          "El ___ tiene una terraza muy bonita.",
+          "Tomamos unas tapas en el ___.",
+          "El ___ cierra a las dos de la mañana."
+        ],
+        "hardSentencesRu": [
+          "Встретимся в нашем обычном баре.",
+          "У бара очень красивая терраса.",
+          "Мы перекусили тапас в баре.",
+          "Бар закрывается в два часа ночи."
+        ]
+      },
+      {
+        "spanish": "la cafetería",
+        "ru": "кафетерий, кофейня",
+        "type": "sustantivo",
+        "icon": "coffee",
+        "useIcon": true,
+        "hardSentences": [
+          "Vamos a tomar un café a la ___.",
+          "La ___ tiene pasteles deliciosos.",
+          "Quedé con María en la ___.",
+          "La ___ del centro es mi favorita."
+        ],
+        "hardSentencesRu": [
+          "Пойдём выпьем кофе в кафетерии.",
+          "В кофейне есть вкусные пирожные.",
+          "Я договорился встретиться с Марией в кафе.",
+          "Кофейня в центре — моя любимая."
+        ]
+      },
+      {
+        "spanish": "el café",
+        "ru": "кофе",
+        "type": "sustantivo",
+        "icon": "coffee",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Quieres tomar un ___?",
+          "El ___ de aquí es muy bueno.",
+          "Tomo ___ todas las mañanas.",
+          "Prefiero el ___ con leche."
+        ],
+        "hardSentencesRu": [
+          "Хочешь выпить кофе?",
+          "Здесь очень хороший кофе.",
+          "Я пью кофе каждое утро.",
+          "Я предпочитаю кофе с молоком."
+        ]
+      },
+      {
+        "spanish": "la cerveza",
+        "ru": "пиво",
+        "type": "sustantivo",
+        "icon": "beer-stein",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Te apetece una ___?",
+          "Esta ___ es artesanal.",
+          "Tomamos una ___ después del trabajo.",
+          "La ___ está muy fría, perfecta."
+        ],
+        "hardSentencesRu": [
+          "Хочешь пива?",
+          "Это крафтовое пиво.",
+          "Мы выпили пива после работы.",
+          "Пиво очень холодное, отлично."
+        ]
+      },
+      {
+        "spanish": "la fiesta",
+        "ru": "вечеринка, праздник",
+        "type": "sustantivo",
+        "icon": "confetti",
+        "useIcon": true,
+        "hardSentences": [
+          "Vamos a hacer una ___ de cumpleaños.",
+          "La ___ fue increíble.",
+          "¿Vienes a la ___ del sábado?",
+          "La ___ terminó muy tarde."
+        ],
+        "hardSentencesRu": [
+          "Мы устроим вечеринку на день рождения.",
+          "Вечеринка была потрясающей.",
+          "Ты придёшь на вечеринку в субботу?",
+          "Вечеринка закончилась очень поздно."
+        ]
+      },
+      {
+        "spanish": "bailar",
+        "ru": "танцевать",
+        "type": "verbo",
+        "icon": "person-arms-spread",
+        "useIcon": true,
+        "hardSentences": [
+          "Me encanta ___ salsa.",
+          "¿Quieres ___ conmigo?",
+          "No sé ___ muy bien.",
+          "Vamos a salir a ___ esta noche."
+        ],
+        "hardSentencesRu": [
+          "Мне нравится танцевать сальсу.",
+          "Хочешь потанцевать со мной?",
+          "Я не очень хорошо умею танцевать.",
+          "Пойдём потанцуем сегодня вечером."
+        ]
+      },
+      {
+        "spanish": "cenar",
+        "ru": "ужинать",
+        "type": "verbo",
+        "icon": "fork-knife",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Quieres ___ con nosotros?",
+          "Vamos a ___ fuera esta noche.",
+          "Prefiero ___ temprano.",
+          "Solemos ___ a las nueve."
+        ],
+        "hardSentencesRu": [
+          "Хочешь поужинать с нами?",
+          "Сегодня вечером мы пойдём ужинать вне дома.",
+          "Я предпочитаю ужинать рано.",
+          "Обычно мы ужинаем в девять."
+        ]
+      },
+      {
+        "spanish": "quedar",
+        "ru": "договориться о встрече",
+        "type": "verbo",
+        "icon": "calendar-check",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Quedamos mañana para tomar algo?",
+          "He quedado con Ana a las cinco.",
+          "¿Dónde quieres ___?",
+          "Voy a ___ con mis amigos el viernes."
+        ],
+        "hardSentencesRu": [
+          "Встретимся завтра выпить что-нибудь?",
+          "Я договорился встретиться с Аной в пять.",
+          "Где ты хочешь встретиться?",
+          "Я собираюсь встретиться с друзьями в пятницу."
+        ]
+      },
+      {
+        "spanish": "salir",
+        "ru": "выходить, гулять",
+        "type": "verbo",
+        "icon": "door-open",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Quieres ___ esta noche?",
+          "Me gusta ___ con mis amigos.",
+          "Vamos a ___ a cenar.",
+          "Prefiero ___ los viernes."
+        ],
+        "hardSentencesRu": [
+          "Хочешь пойти куда-нибудь сегодня вечером?",
+          "Мне нравится гулять с друзьями.",
+          "Пойдём поужинаем.",
+          "Я предпочитаю выходить по пятницам."
+        ]
+      }
     ],
-    "gramatica": []
-  }
+    "VALORAR_EXPERIENCIAS": [
+      {
+        "spanish": "bonito",
+        "ru": "красивый (м)",
+        "type": "adjetivo",
+        "icon": "star",
+        "useIcon": true,
+        "hardSentences": [
+          "El museo me pareció muy ___.",
+          "¡Qué lugar tan ___!",
+          "El concierto fue muy ___.",
+          "Es un pueblo muy ___."
+        ],
+        "hardSentencesRu": [
+          "Музей показался мне очень красивым.",
+          "Какое красивое место!",
+          "Концерт был очень красивым.",
+          "Это очень красивый городок."
+        ]
+      },
+      {
+        "spanish": "interesante",
+        "ru": "интересный",
+        "type": "adjetivo",
+        "icon": "lightbulb",
+        "useIcon": true,
+        "hardSentences": [
+          "La película me pareció muy ___.",
+          "El libro es bastante ___.",
+          "Fue una exposición muy ___.",
+          "¡Qué documental tan ___!"
+        ],
+        "hardSentencesRu": [
+          "Фильм показался мне очень интересным.",
+          "Книга довольно интересная.",
+          "Это была очень интересная выставка.",
+          "Какой интересный документальный фильм!"
+        ]
+      },
+      {
+        "spanish": "increíble",
+        "ru": "невероятный",
+        "type": "adjetivo",
+        "icon": "sparkle",
+        "useIcon": true,
+        "hardSentences": [
+          "El concierto fue ___.",
+          "¡Qué experiencia tan ___!",
+          "La vista desde aquí es ___.",
+          "Fue un viaje ___."
+        ],
+        "hardSentencesRu": [
+          "Концерт был невероятным.",
+          "Какой невероятный опыт!",
+          "Вид отсюда невероятный.",
+          "Это было невероятное путешествие."
+        ]
+      },
+      {
+        "spanish": "espectacular",
+        "ru": "впечатляющий",
+        "type": "adjetivo",
+        "icon": "fireworks",
+        "useIcon": true,
+        "hardSentences": [
+          "El partido fue ___.",
+          "La decoración del restaurante es ___.",
+          "¡Qué puesta de sol tan ___!",
+          "El final de la película fue ___."
+        ],
+        "hardSentencesRu": [
+          "Матч был впечатляющим.",
+          "Оформление ресторана впечатляющее.",
+          "Какой впечатляющий закат!",
+          "Конец фильма был впечатляющим."
+        ]
+      },
+      {
+        "spanish": "aburrido",
+        "ru": "скучный (м)",
+        "type": "adjetivo",
+        "icon": "smiley-meh",
+        "useIcon": true,
+        "hardSentences": [
+          "El museo me pareció un poco ___.",
+          "La película fue muy ___.",
+          "El partido estuvo bastante ___.",
+          "No fue ___, pero tampoco emocionante."
+        ],
+        "hardSentencesRu": [
+          "Музей показался мне немного скучным.",
+          "Фильм был очень скучным.",
+          "Матч был довольно скучным.",
+          "Это было не скучно, но и не захватывающе."
+        ]
+      },
+      {
+        "spanish": "divertido",
+        "ru": "весёлый, забавный (м)",
+        "type": "adjetivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "La fiesta fue muy ___.",
+          "Es un juego muy ___.",
+          "El espectáculo me pareció muy ___.",
+          "¡Qué programa tan ___!"
+        ],
+        "hardSentencesRu": [
+          "Вечеринка была очень весёлой.",
+          "Это очень весёлая игра.",
+          "Шоу показалось мне очень забавным.",
+          "Какая смешная программа!"
+        ]
+      },
+      {
+        "spanish": "horrible",
+        "ru": "ужасный",
+        "type": "adjetivo",
+        "icon": "smiley-sad",
+        "useIcon": true,
+        "hardSentences": [
+          "La comida estaba ___.",
+          "Fue una experiencia ___.",
+          "El servicio fue ___.",
+          "La película me pareció ___."
+        ],
+        "hardSentencesRu": [
+          "Еда была ужасной.",
+          "Это был ужасный опыт.",
+          "Обслуживание было ужасным.",
+          "Фильм показался мне ужасным."
+        ]
+      },
+      {
+        "spanish": "genial",
+        "ru": "гениальный, отличный",
+        "type": "adjetivo",
+        "icon": "thumbs-up",
+        "useIcon": true,
+        "hardSentences": [
+          "¡La fiesta fue ___!",
+          "El concierto estuvo ___.",
+          "¡Qué idea tan ___!",
+          "Lo pasamos ___."
+        ],
+        "hardSentencesRu": [
+          "Вечеринка была отличной!",
+          "Концерт был гениальным.",
+          "Какая гениальная идея!",
+          "Мы отлично провели время."
+        ]
+      },
+      {
+        "spanish": "fatal",
+        "ru": "ужасно, очень плохо",
+        "type": "adjetivo",
+        "icon": "thumbs-down",
+        "useIcon": true,
+        "hardSentences": [
+          "Lo pasé ___ en esa fiesta.",
+          "El restaurante estuvo ___.",
+          "Me sentí ___ después de la cena.",
+          "El viaje fue ___."
+        ],
+        "hardSentencesRu": [
+          "Я ужасно провёл время на той вечеринке.",
+          "Ресторан был ужасным.",
+          "Я чувствовал себя ужасно после ужина.",
+          "Поездка была ужасной."
+        ]
+      },
+      {
+        "spanish": "parecer",
+        "ru": "казаться",
+        "type": "verbo",
+        "icon": "eye",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Qué te pareció la película?",
+          "Me pareció muy interesante.",
+          "La obra nos pareció aburrida.",
+          "¿Cómo te pareció el restaurante?"
+        ],
+        "hardSentencesRu": [
+          "Как тебе показался фильм?",
+          "Мне показалось, что это очень интересно.",
+          "Пьеса показалась нам скучной.",
+          "Как тебе показался ресторан?"
+        ]
+      },
+      {
+        "spanish": "encantar",
+        "ru": "очень нравиться",
+        "type": "verbo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Me encantó el concierto.",
+          "Nos encanta ir al cine.",
+          "¿Te ha encantado la película?",
+          "A mis padres les encanta viajar."
+        ],
+        "hardSentencesRu": [
+          "Мне очень понравился концерт.",
+          "Нам очень нравится ходить в кино.",
+          "Тебе очень понравился фильм?",
+          "Мои родители обожают путешествовать."
+        ]
+      }
+    ],
+    "DESCRIBIR_LUGARES": [
+      {
+        "spanish": "el ambiente",
+        "ru": "атмосфера, обстановка",
+        "type": "sustantivo",
+        "icon": "lamp",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ del bar es muy agradable.",
+          "Me gusta el ___ de este café.",
+          "El ___ era muy relajado.",
+          "El ___ del restaurante es acogedor."
+        ],
+        "hardSentencesRu": [
+          "Атмосфера в баре очень приятная.",
+          "Мне нравится атмосфера этого кафе.",
+          "Обстановка была очень расслабленной.",
+          "Атмосфера ресторана уютная."
+        ]
+      },
+      {
+        "spanish": "la decoración",
+        "ru": "декор, оформление",
+        "type": "sustantivo",
+        "icon": "paint-roller",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ del restaurante es muy moderna.",
+          "Me encanta la ___ de esta tienda.",
+          "La ___ es sencilla pero bonita.",
+          "La ___ del hotel es muy elegante."
+        ],
+        "hardSentencesRu": [
+          "Оформление ресторана очень современное.",
+          "Мне нравится декор этого магазина.",
+          "Оформление простое, но красивое.",
+          "Декор отеля очень элегантный."
+        ]
+      },
+      {
+        "spanish": "el servicio",
+        "ru": "обслуживание",
+        "type": "sustantivo",
+        "icon": "bell-simple",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ del restaurante fue excelente.",
+          "El ___ fue un poco lento.",
+          "Me quejé del ___ al encargado.",
+          "El ___ es muy profesional."
+        ],
+        "hardSentencesRu": [
+          "Обслуживание в ресторане было отличным.",
+          "Обслуживание было немного медленным.",
+          "Я пожаловался на обслуживание менеджеру.",
+          "Обслуживание очень профессиональное."
+        ]
+      },
+      {
+        "spanish": "el precio",
+        "ru": "цена",
+        "type": "sustantivo",
+        "icon": "currency-dollar",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de la entrada es muy alto.",
+          "Los ___s son bastante económicos.",
+          "El ___ me pareció justo.",
+          "¿Cuál es el ___ del menú?"
+        ],
+        "hardSentencesRu": [
+          "Цена билета очень высокая.",
+          "Цены довольно экономичные.",
+          "Цена показалась мне справедливой.",
+          "Какова цена меню?"
+        ]
+      },
+      {
+        "spanish": "agradable",
+        "ru": "приятный",
+        "type": "adjetivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "El ambiente es muy ___.",
+          "La temperatura es muy ___.",
+          "Pasamos una tarde muy ___.",
+          "El camarero fue muy ___."
+        ],
+        "hardSentencesRu": [
+          "Атмосфера очень приятная.",
+          "Температура очень приятная.",
+          "Мы провели очень приятный вечер.",
+          "Официант был очень приятным."
+        ]
+      },
+      {
+        "spanish": "acogedor",
+        "ru": "уютный (м)",
+        "type": "adjetivo",
+        "icon": "house",
+        "useIcon": true,
+        "hardSentences": [
+          "El café es muy ___.",
+          "Es un lugar pequeño pero muy ___.",
+          "El hotel tiene un ambiente muy ___.",
+          "La decoración hace el espacio más ___."
+        ],
+        "hardSentencesRu": [
+          "Кафе очень уютное.",
+          "Это маленькое, но очень уютное место.",
+          "В отеле очень уютная атмосфера.",
+          "Декор делает пространство более уютным."
+        ]
+      },
+      {
+        "spanish": "moderno",
+        "ru": "современный (м)",
+        "type": "adjetivo",
+        "icon": "buildings",
+        "useIcon": true,
+        "hardSentences": [
+          "El restaurante tiene un diseño muy ___.",
+          "Es un edificio muy ___.",
+          "La decoración es muy ___.",
+          "Prefiero un estilo más ___."
+        ],
+        "hardSentencesRu": [
+          "У ресторана очень современный дизайн.",
+          "Это очень современное здание.",
+          "Оформление очень современное.",
+          "Я предпочитаю более современный стиль."
+        ]
+      },
+      {
+        "spanish": "caro",
+        "ru": "дорогой (м)",
+        "type": "adjetivo",
+        "icon": "currency-dollar",
+        "useIcon": true,
+        "hardSentences": [
+          "El restaurante es bastante ___.",
+          "No me pareció muy ___.",
+          "Es un poco ___ pero vale la pena.",
+          "Los platos son deliciosos pero ___s."
+        ],
+        "hardSentencesRu": [
+          "Ресторан довольно дорогой.",
+          "Мне не показалось очень дорогим.",
+          "Это немного дорого, но того стоит.",
+          "Блюда вкусные, но дорогие."
+        ]
+      },
+      {
+        "spanish": "económico",
+        "ru": "экономичный, недорогой (м)",
+        "type": "adjetivo",
+        "icon": "piggy-bank",
+        "useIcon": true,
+        "hardSentences": [
+          "Es un restaurante muy ___.",
+          "Buscamos un hotel más ___.",
+          "El menú del día es muy ___.",
+          "Los precios son bastante ___s."
+        ],
+        "hardSentencesRu": [
+          "Это очень недорогой ресторан.",
+          "Мы ищем более экономичный отель.",
+          "Комплексный обед очень дешёвый.",
+          "Цены довольно экономичные."
+        ]
+      },
+      {
+        "spanish": "rápido",
+        "ru": "быстрый (м)",
+        "type": "adjetivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "El servicio fue muy ___.",
+          "La comida llegó muy ___.",
+          "Necesito algo ___.",
+          "El camarero fue muy ___."
+        ],
+        "hardSentencesRu": [
+          "Обслуживание было очень быстрым.",
+          "Еда пришла очень быстро.",
+          "Мне нужно что-то быстрое.",
+          "Официант был очень быстрым."
+        ]
+      },
+      {
+        "spanish": "lento",
+        "ru": "медленный (м)",
+        "type": "adjetivo",
+        "icon": "snail",
+        "useIcon": true,
+        "hardSentences": [
+          "El servicio fue un poco ___.",
+          "La comida tardó, fue muy ___.",
+          "El camarero era bastante ___.",
+          "Todo fue demasiado ___."
+        ],
+        "hardSentencesRu": [
+          "Обслуживание было немного медленным.",
+          "Еда задержалась, было очень медленно.",
+          "Официант был довольно медленным.",
+          "Всё было слишком медленно."
+        ]
+      },
+      {
+        "spanish": "amable",
+        "ru": "любезный, приветливый",
+        "type": "adjetivo",
+        "icon": "hand-waving",
+        "useIcon": true,
+        "hardSentences": [
+          "El personal fue muy ___.",
+          "El camarero era muy ___.",
+          "Fue muy ___ con nosotros.",
+          "La recepcionista fue muy ___."
+        ],
+        "hardSentencesRu": [
+          "Персонал был очень приветливым.",
+          "Официант был очень любезным.",
+          "Он был очень любезен с нами.",
+          "Администратор была очень приветливой."
+        ]
+      }
+    ]
+  },
+  "ejercicios": []
 }

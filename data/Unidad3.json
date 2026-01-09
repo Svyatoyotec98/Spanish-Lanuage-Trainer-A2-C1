@@ -1155,6 +1155,78 @@
               "vosotros": "ofrecéis",
               "ellos": "ofrecen"
             }
+          },
+          {
+            "infinitivo": "medir",
+            "traduccion": "измерять, иметь рост",
+            "formas": {
+              "yo": "mido",
+              "tu": "mides",
+              "el": "mide",
+              "nosotros": "medimos",
+              "vosotros": "medís",
+              "ellos": "miden"
+            }
+          },
+          {
+            "infinitivo": "pedir",
+            "traduccion": "просить",
+            "formas": {
+              "yo": "pido",
+              "tu": "pides",
+              "el": "pide",
+              "nosotros": "pedimos",
+              "vosotros": "pedís",
+              "ellos": "piden"
+            }
+          },
+          {
+            "infinitivo": "servir",
+            "traduccion": "служить, подавать",
+            "formas": {
+              "yo": "sirvo",
+              "tu": "sirves",
+              "el": "sirve",
+              "nosotros": "servimos",
+              "vosotros": "servís",
+              "ellos": "sirven"
+            }
+          },
+          {
+            "infinitivo": "repetir",
+            "traduccion": "повторять",
+            "formas": {
+              "yo": "repito",
+              "tu": "repites",
+              "el": "repite",
+              "nosotros": "repetimos",
+              "vosotros": "repetís",
+              "ellos": "repiten"
+            }
+          },
+          {
+            "infinitivo": "seguir",
+            "traduccion": "следовать, продолжать",
+            "formas": {
+              "yo": "sigo",
+              "tu": "sigues",
+              "el": "sigue",
+              "nosotros": "seguimos",
+              "vosotros": "seguís",
+              "ellos": "siguen"
+            }
+          },
+          {
+            "infinitivo": "vestir",
+            "traduccion": "одевать (кого-то)",
+            "formas": {
+              "yo": "visto",
+              "tu": "vistes",
+              "el": "viste",
+              "nosotros": "vestimos",
+              "vosotros": "vestís",
+              "ellos": "visten"
+            }
           }
         ],
         "otras": []

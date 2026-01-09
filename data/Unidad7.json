@@ -1465,6 +1465,136 @@
   },
   "ejercicios": [],
   "verbos": {
-    "tiempos": []
+    "tiempos": [
+      {
+        "id": "presente",
+        "nombre": "Presente de indicativo",
+        "requiredEjercicio": "ejercicio_1",
+        "regulares": [
+          {
+            "infinitivo": "cocinar",
+            "traduccion": "готовить",
+            "formas": {
+              "yo": "cocino",
+              "tu": "cocinas",
+              "el": "cocina",
+              "nosotros": "cocinamos",
+              "vosotros": "cocináis",
+              "ellos": "cocinan"
+            }
+          },
+          {
+            "infinitivo": "cortar",
+            "traduccion": "резать",
+            "formas": {
+              "yo": "corto",
+              "tu": "cortas",
+              "el": "corta",
+              "nosotros": "cortamos",
+              "vosotros": "cortáis",
+              "ellos": "cortan"
+            }
+          },
+          {
+            "infinitivo": "mezclar",
+            "traduccion": "смешивать",
+            "formas": {
+              "yo": "mezclo",
+              "tu": "mezclas",
+              "el": "mezcla",
+              "nosotros": "mezclamos",
+              "vosotros": "mezcláis",
+              "ellos": "mezclan"
+            }
+          },
+          {
+            "infinitivo": "lavar",
+            "traduccion": "мыть",
+            "formas": {
+              "yo": "lavo",
+              "tu": "lavas",
+              "el": "lava",
+              "nosotros": "lavamos",
+              "vosotros": "laváis",
+              "ellos": "lavan"
+            }
+          },
+          {
+            "infinitivo": "pelar",
+            "traduccion": "чистить (очищать)",
+            "formas": {
+              "yo": "pelo",
+              "tu": "pelas",
+              "el": "pela",
+              "nosotros": "pelamos",
+              "vosotros": "peláis",
+              "ellos": "pelan"
+            }
+          },
+          {
+            "infinitivo": "calentar",
+            "traduccion": "нагревать",
+            "formas": {
+              "yo": "caliento",
+              "tu": "calientas",
+              "el": "calienta",
+              "nosotros": "calentamos",
+              "vosotros": "calentáis",
+              "ellos": "calientan"
+            }
+          },
+          {
+            "infinitivo": "cenar",
+            "traduccion": "ужинать",
+            "formas": {
+              "yo": "ceno",
+              "tu": "cenas",
+              "el": "cena",
+              "nosotros": "cenamos",
+              "vosotros": "cenáis",
+              "ellos": "cenan"
+            }
+          },
+          {
+            "infinitivo": "desayunar",
+            "traduccion": "завтракать",
+            "formas": {
+              "yo": "desayuno",
+              "tu": "desayunas",
+              "el": "desayuna",
+              "nosotros": "desayunamos",
+              "vosotros": "desayunáis",
+              "ellos": "desayunan"
+            }
+          },
+          {
+            "infinitivo": "comprar",
+            "traduccion": "покупать",
+            "formas": {
+              "yo": "compro",
+              "tu": "compras",
+              "el": "compra",
+              "nosotros": "compramos",
+              "vosotros": "compráis",
+              "ellos": "compran"
+            }
+          },
+          {
+            "infinitivo": "preparar",
+            "traduccion": "готовить/приготавливать",
+            "formas": {
+              "yo": "preparo",
+              "tu": "preparas",
+              "el": "prepara",
+              "nosotros": "preparamos",
+              "vosotros": "preparáis",
+              "ellos": "preparan"
+            }
+          }
+        ],
+        "irregulares": [],
+        "otras": []
+      }
+    ]
   }
 }

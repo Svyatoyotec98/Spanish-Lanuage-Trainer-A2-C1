@@ -1096,7 +1096,359 @@
       }
     ]
   },
-  "ejercicios": [],
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Participios irregulares",
+      "hint": "hecho / visto / escrito / abierto / puesto / dicho / vuelto / roto / muerto / descubierto",
+      "rule": {
+        "title": "Причастия неправильных глаголов в PRETÉRITO PERFECTO",
+        "explanation": "В Pretérito Perfecto используется вспомогательный глагол HABER + причастие. Большинство причастий образуются по правилу (-ar → -ado, -er/-ir → -ido), но есть важные исключения с неправильными причастиями.",
+        "sections": [
+          {
+            "subtitle": "Неправильные причастия на -TO",
+            "points": [
+              "hacer → <b>hecho</b> (делать → сделанный)",
+              "ver → <b>visto</b> (видеть → увиденный)",
+              "escribir → <b>escrito</b> (писать → написанный)",
+              "abrir → <b>abierto</b> (открывать → открытый)",
+              "volver → <b>vuelto</b> (возвращаться → вернувшийся)",
+              "poner → <b>puesto</b> (класть → положенный)",
+              "romper → <b>roto</b> (ломать → сломанный)",
+              "morir → <b>muerto</b> (умирать → умерший)",
+              "descubrir → <b>descubierto</b> (открывать → открытый)"
+            ]
+          },
+          {
+            "subtitle": "Неправильное причастие на -CHO",
+            "points": [
+              "decir → <b>dicho</b> (говорить → сказанный)"
+            ]
+          },
+          {
+            "subtitle": "Производные глаголы",
+            "points": [
+              "devolver → <b>devuelto</b> (возвращать)",
+              "resolver → <b>resuelto</b> (решать)",
+              "suponer → <b>supuesto</b> (предполагать)",
+              "proponer → <b>propuesto</b> (предлагать)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¿Has visto la última película de Almodóvar?", "ru": "Ты видел последний фильм Альмодовара?"},
+          {"es": "He escrito un correo a mi jefe.", "ru": "Я написал письмо своему начальнику."},
+          {"es": "¿Qué has hecho hoy?", "ru": "Что ты сегодня делал?"},
+          {"es": "Han abierto un restaurante nuevo.", "ru": "Они открыли новый ресторан."}
+        ]
+      },
+      "questions": [
+        {"sentence": "¿Qué has ___ hoy? (hacer)", "answer": "hecho"},
+        {"sentence": "He ___ una película muy buena. (ver)", "answer": "visto"},
+        {"sentence": "¿Has ___ el correo? (escribir)", "answer": "escrito"},
+        {"sentence": "Han ___ la tienda nueva. (abrir)", "answer": "abierto"},
+        {"sentence": "Ya he ___ a casa. (volver)", "answer": "vuelto"},
+        {"sentence": "¿Dónde has ___ las llaves? (poner)", "answer": "puesto"},
+        {"sentence": "Se ha ___ el vaso. (romper)", "answer": "roto"},
+        {"sentence": "¿Qué te ha ___ el médico? (decir)", "answer": "dicho"},
+        {"sentence": "Hemos ___ un lugar increíble. (descubrir)", "answer": "descubierto"},
+        {"sentence": "El autor ha ___ en 2020. (morir)", "answer": "muerto"},
+        {"sentence": "¿Has ___ la ventana? (abrir)", "answer": "abierto"},
+        {"sentence": "Nunca he ___ ese museo. (ver)", "answer": "visto"},
+        {"sentence": "¿Qué has ___ para cenar? (hacer)", "answer": "hecho"},
+        {"sentence": "He ___ tres libros este mes. (escribir)", "answer": "escrito"},
+        {"sentence": "¿Ya has ___ del trabajo? (volver)", "answer": "vuelto"},
+        {"sentence": "¿Dónde has ___ mi móvil? (poner)", "answer": "puesto"},
+        {"sentence": "Se ha ___ la televisión. (romper)", "answer": "roto"},
+        {"sentence": "No me ha ___ nada. (decir)", "answer": "dicho"},
+        {"sentence": "Han ___ una nueva especie. (descubrir)", "answer": "descubierto"},
+        {"sentence": "El pájaro ha ___. (morir)", "answer": "muerto"},
+        {"sentence": "¿Has ___ los ejercicios? (hacer)", "answer": "hecho"},
+        {"sentence": "Hemos ___ un documental interesante. (ver)", "answer": "visto"},
+        {"sentence": "¿Le has ___ a tu madre? (escribir)", "answer": "escrito"},
+        {"sentence": "No han ___ la puerta. (abrir)", "answer": "abierto"},
+        {"sentence": "¿Cuándo has ___ de vacaciones? (volver)", "answer": "vuelto"},
+        {"sentence": "He ___ la mesa. (poner)", "answer": "puesto"},
+        {"sentence": "El niño ha ___ el juguete. (romper)", "answer": "roto"},
+        {"sentence": "¿Qué ha ___ el profesor? (decir)", "answer": "dicho"},
+        {"sentence": "Los científicos han ___ algo importante. (descubrir)", "answer": "descubierto"},
+        {"sentence": "Mi abuelo ha ___ este año. (morir)", "answer": "muerto"},
+        {"sentence": "¿Qué habéis ___ este fin de semana? (hacer)", "answer": "hecho"},
+        {"sentence": "¿Has ___ las noticias? (ver)", "answer": "visto"},
+        {"sentence": "He ___ un poema para ti. (escribir)", "answer": "escrito"},
+        {"sentence": "¿Han ___ ya el museo? (abrir)", "answer": "abierto"},
+        {"sentence": "Todavía no he ___ a llamar. (volver)", "answer": "vuelto"},
+        {"sentence": "¿Has ___ el libro en su sitio? (poner)", "answer": "puesto"},
+        {"sentence": "Se han ___ las gafas. (romper)", "answer": "roto"},
+        {"sentence": "¿Te ha ___ la verdad? (decir)", "answer": "dicho"},
+        {"sentence": "Hemos ___ un tesoro. (descubrir)", "answer": "descubierto"},
+        {"sentence": "La planta ha ___. (morir)", "answer": "muerto"},
+        {"sentence": "No he ___ nada malo. (hacer)", "answer": "hecho"},
+        {"sentence": "¿Habéis ___ la serie nueva? (ver)", "answer": "visto"},
+        {"sentence": "¿Quién ha ___ este artículo? (escribir)", "answer": "escrito"},
+        {"sentence": "Han ___ una nueva sucursal. (abrir)", "answer": "abierto"},
+        {"sentence": "¿Ya has ___ a Madrid? (volver)", "answer": "vuelto"},
+        {"sentence": "He ___ la ropa en el armario. (poner)", "answer": "puesto"},
+        {"sentence": "El viento ha ___ la rama. (romper)", "answer": "roto"},
+        {"sentence": "Me han ___ que es muy bueno. (decir)", "answer": "dicho"},
+        {"sentence": "¿Qué han ___ los arqueólogos? (descubrir)", "answer": "descubierto"},
+        {"sentence": "El pez ha ___. (morir)", "answer": "muerto"},
+        {"sentence": "¿Has ___ la cama? (hacer)", "answer": "hecho"},
+        {"sentence": "Nunca hemos ___ esa película. (ver)", "answer": "visto"},
+        {"sentence": "¿Has ___ la carta? (escribir)", "answer": "escrito"},
+        {"sentence": "Ya he ___ todas las ventanas. (abrir)", "answer": "abierto"},
+        {"sentence": "Hemos ___ tarde a casa. (volver)", "answer": "vuelto"},
+        {"sentence": "¿Dónde has ___ las fotos? (poner)", "answer": "puesto"},
+        {"sentence": "Se ha ___ el espejo. (romper)", "answer": "roto"},
+        {"sentence": "¿Qué os han ___ en la reunión? (decir)", "answer": "dicho"},
+        {"sentence": "Han ___ la cura para la enfermedad. (descubrir)", "answer": "descubierto"},
+        {"sentence": "El perro ha ___ de viejo. (morir)", "answer": "muerto"}
+      ],
+      "microTests": [
+        {"sentence": "¿Qué has ___ hoy? (hacer)", "answer": "hecho", "hint": "Forma irregular de 'hacer'"},
+        {"sentence": "He ___ una serie muy buena. (ver)", "answer": "visto", "hint": "Forma irregular de 'ver'"},
+        {"sentence": "¿Has ___ el email? (escribir)", "answer": "escrito", "hint": "Forma irregular de 'escribir'"},
+        {"sentence": "Han ___ un café nuevo. (abrir)", "answer": "abierto", "hint": "Forma irregular de 'abrir'"},
+        {"sentence": "Ya he ___ del viaje. (volver)", "answer": "vuelto", "hint": "Forma irregular de 'volver'"},
+        {"sentence": "¿Dónde has ___ el móvil? (poner)", "answer": "puesto", "hint": "Forma irregular de 'poner'"},
+        {"sentence": "Se ha ___ el plato. (romper)", "answer": "roto", "hint": "Forma irregular de 'romper'"},
+        {"sentence": "¿Qué te ha ___ María? (decir)", "answer": "dicho", "hint": "Forma irregular de 'decir'"},
+        {"sentence": "Hemos ___ un lugar secreto. (descubrir)", "answer": "descubierto", "hint": "Forma irregular de 'descubrir'"},
+        {"sentence": "La flor ha ___. (morir)", "answer": "muerto", "hint": "Forma irregular de 'morir'"}
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Pretérito Perfecto: formas de HABER",
+      "hint": "he / has / ha / hemos / habéis / han",
+      "rule": {
+        "title": "Формы глагола HABER в Pretérito Perfecto",
+        "explanation": "Pretérito Perfecto образуется с помощью вспомогательного глагола HABER в настоящем времени + причастие. Причастие не изменяется, а лицо определяется формой HABER.",
+        "sections": [
+          {
+            "subtitle": "Спряжение HABER",
+            "points": [
+              "yo <b>he</b> + participio",
+              "tú <b>has</b> + participio",
+              "él/ella/usted <b>ha</b> + participio",
+              "nosotros/as <b>hemos</b> + participio",
+              "vosotros/as <b>habéis</b> + participio",
+              "ellos/ellas/ustedes <b>han</b> + participio"
+            ]
+          },
+          {
+            "subtitle": "Важные правила",
+            "points": [
+              "Причастие НЕ изменяется по роду и числу: Ella <b>ha comido</b>, Ellos <b>han comido</b>",
+              "Между HABER и причастием ничего не ставится: ¿<b>Has</b> ya <b>comido</b>? — НЕПРАВИЛЬНО",
+              "Правильно: ¿Ya <b>has comido</b>?"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Yo he comido paella.", "ru": "Я ел паэлью."},
+          {"es": "¿Tú has estado en España?", "ru": "Ты был в Испании?"},
+          {"es": "Ella ha terminado el trabajo.", "ru": "Она закончила работу."},
+          {"es": "Nosotros hemos visto la película.", "ru": "Мы посмотрели фильм."},
+          {"es": "¿Vosotros habéis cenado?", "ru": "Вы поужинали?"},
+          {"es": "Ellos han llegado tarde.", "ru": "Они пришли поздно."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Yo ___ comido en ese restaurante.", "answer": "he"},
+        {"sentence": "¿Tú ___ visto la película?", "answer": "has"},
+        {"sentence": "Ella ___ terminado el proyecto.", "answer": "ha"},
+        {"sentence": "Nosotros ___ visitado el museo.", "answer": "hemos"},
+        {"sentence": "¿Vosotros ___ estado en Barcelona?", "answer": "habéis"},
+        {"sentence": "Ellos ___ llegado temprano.", "answer": "han"},
+        {"sentence": "Yo ___ escrito un email.", "answer": "he"},
+        {"sentence": "¿___ probado la paella? (tú)", "answer": "Has"},
+        {"sentence": "Mi hermano ___ comprado un coche.", "answer": "ha"},
+        {"sentence": "Nosotras ___ hablado con el jefe.", "answer": "hemos"},
+        {"sentence": "¿___ cenado ya? (vosotros)", "answer": "Habéis"},
+        {"sentence": "Los niños ___ jugado en el parque.", "answer": "han"},
+        {"sentence": "Yo nunca ___ viajado a México.", "answer": "he"},
+        {"sentence": "¿___ leído este libro? (tú)", "answer": "Has"},
+        {"sentence": "María ___ preparado la cena.", "answer": "ha"},
+        {"sentence": "Nosotros ___ aprendido mucho.", "answer": "hemos"},
+        {"sentence": "¿Vosotras ___ hecho los deberes?", "answer": "habéis"},
+        {"sentence": "Mis padres ___ vendido la casa.", "answer": "han"},
+        {"sentence": "Yo ___ trabajado todo el día.", "answer": "he"},
+        {"sentence": "¿___ llamado a tu madre? (tú)", "answer": "Has"},
+        {"sentence": "El profesor ___ explicado la lección.", "answer": "ha"},
+        {"sentence": "Nosotros ___ decidido ir al cine.", "answer": "hemos"},
+        {"sentence": "¿___ terminado el examen? (vosotros)", "answer": "Habéis"},
+        {"sentence": "Los estudiantes ___ estudiado mucho.", "answer": "han"},
+        {"sentence": "Yo ___ dormido muy bien.", "answer": "he"},
+        {"sentence": "¿___ recibido mi mensaje? (tú)", "answer": "Has"},
+        {"sentence": "El médico ___ llegado.", "answer": "ha"},
+        {"sentence": "Nosotras ___ bailado toda la noche.", "answer": "hemos"},
+        {"sentence": "¿___ probado este plato? (vosotros)", "answer": "Habéis"},
+        {"sentence": "Las chicas ___ salido de fiesta.", "answer": "han"},
+        {"sentence": "Yo ___ perdido las llaves.", "answer": "he"},
+        {"sentence": "¿___ hecho ejercicio hoy? (tú)", "answer": "Has"},
+        {"sentence": "Mi madre ___ cocinado una tarta.", "answer": "ha"},
+        {"sentence": "Nosotros ___ reservado una mesa.", "answer": "hemos"},
+        {"sentence": "¿___ comprado los billetes? (vosotros)", "answer": "Habéis"},
+        {"sentence": "Los vecinos ___ organizado una fiesta.", "answer": "han"},
+        {"sentence": "Yo ___ encontrado un trabajo.", "answer": "he"},
+        {"sentence": "¿___ visitado Granada? (tú)", "answer": "Has"},
+        {"sentence": "El director ___ cancelado la reunión.", "answer": "ha"},
+        {"sentence": "Nosotras ___ quedado a las seis.", "answer": "hemos"},
+        {"sentence": "¿___ visto las noticias? (vosotros)", "answer": "Habéis"},
+        {"sentence": "Mis amigos ___ venido a verme.", "answer": "han"},
+        {"sentence": "Yo ___ empezado un curso nuevo.", "answer": "he"},
+        {"sentence": "¿___ entendido la explicación? (tú)", "answer": "Has"},
+        {"sentence": "La empresa ___ cerrado.", "answer": "ha"},
+        {"sentence": "Nosotros ___ conocido a mucha gente.", "answer": "hemos"},
+        {"sentence": "¿___ escuchado esta canción? (vosotros)", "answer": "Habéis"},
+        {"sentence": "Los turistas ___ fotografiado el monumento.", "answer": "han"},
+        {"sentence": "Yo ___ olvidado su nombre.", "answer": "he"},
+        {"sentence": "¿___ pagado la cuenta? (tú)", "answer": "Has"},
+        {"sentence": "El tren ___ salido.", "answer": "ha"},
+        {"sentence": "Nosotras ___ cambiado de opinión.", "answer": "hemos"},
+        {"sentence": "¿___ abierto los regalos? (vosotros)", "answer": "Habéis"},
+        {"sentence": "Los políticos ___ prometido cambios.", "answer": "han"},
+        {"sentence": "Yo ___ buscado por todas partes.", "answer": "he"},
+        {"sentence": "¿___ pensado en mi propuesta? (tú)", "answer": "Has"},
+        {"sentence": "El bebé ___ dormido toda la noche.", "answer": "ha"},
+        {"sentence": "Nosotros ___ disfrutado mucho.", "answer": "hemos"},
+        {"sentence": "¿___ pedido la comida? (vosotros)", "answer": "Habéis"},
+        {"sentence": "Las tiendas ___ abierto a las diez.", "answer": "han"}
+      ],
+      "microTests": [
+        {"sentence": "Yo ___ comido bien hoy.", "answer": "he", "hint": "Primera persona singular (yo)"},
+        {"sentence": "¿___ visto a María? (tú)", "answer": "Has", "hint": "Segunda persona singular (tú)"},
+        {"sentence": "Pedro ___ llegado tarde.", "answer": "ha", "hint": "Tercera persona singular (él)"},
+        {"sentence": "Nosotros ___ terminado.", "answer": "hemos", "hint": "Primera persona plural (nosotros)"},
+        {"sentence": "¿___ cenado ya? (vosotros)", "answer": "Habéis", "hint": "Segunda persona plural (vosotros)"},
+        {"sentence": "Ellos ___ salido.", "answer": "han", "hint": "Tercera persona plural (ellos)"},
+        {"sentence": "Mi hermana ___ llamado.", "answer": "ha", "hint": "Tercera persona singular (ella)"},
+        {"sentence": "Yo nunca ___ estado allí.", "answer": "he", "hint": "Primera persona singular (yo)"},
+        {"sentence": "¿___ probado esto? (tú)", "answer": "Has", "hint": "Segunda persona singular (tú)"},
+        {"sentence": "Los niños ___ jugado.", "answer": "han", "hint": "Tercera persona plural (ellos)"},
+        {"sentence": "Nosotras ___ hablado.", "answer": "hemos", "hint": "Primera persona plural (nosotras)"},
+        {"sentence": "¿___ leído el libro? (vosotras)", "answer": "Habéis", "hint": "Segunda persona plural (vosotras)"}
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Ya / Todavía no",
+      "hint": "ya / todavía no",
+      "rule": {
+        "title": "YA и TODAVÍA NO в Pretérito Perfecto",
+        "explanation": "YA (уже) указывает на завершённое действие. TODAVÍA NO (ещё не) указывает на действие, которое ожидается, но пока не произошло. Оба используются с Pretérito Perfecto.",
+        "sections": [
+          {
+            "subtitle": "YA — уже (действие завершено)",
+            "points": [
+              "<b>Ya</b> he terminado el trabajo — Я уже закончил работу",
+              "¿<b>Ya</b> has comido? — Ты уже поел?",
+              "<b>Ya</b> hemos llegado — Мы уже приехали"
+            ]
+          },
+          {
+            "subtitle": "TODAVÍA NO — ещё не (действие не завершено)",
+            "points": [
+              "<b>Todavía no</b> he terminado — Я ещё не закончил",
+              "¿<b>Todavía no</b> has llamado? — Ты ещё не позвонил?",
+              "<b>Todavía no</b> hemos decidido — Мы ещё не решили"
+            ]
+          },
+          {
+            "subtitle": "Позиция в предложении",
+            "points": [
+              "YA обычно ставится перед глаголом HABER: <b>Ya</b> he comido",
+              "TODAVÍA NO ставится перед HABER: <b>Todavía no</b> he comido",
+              "В вопросах YA ставится в начале: ¿<b>Ya</b> has terminado?"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¿Ya has desayunado?", "ru": "Ты уже позавтракал?"},
+          {"es": "Todavía no he visto esa película.", "ru": "Я ещё не видел этот фильм."},
+          {"es": "Ya hemos reservado el hotel.", "ru": "Мы уже забронировали отель."},
+          {"es": "¿Todavía no han llegado?", "ru": "Они ещё не приехали?"}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ he terminado los deberes.", "answer": "Ya"},
+        {"sentence": "___ he visto esa película.", "answer": "Todavía no"},
+        {"sentence": "¿___ has desayunado?", "answer": "Ya"},
+        {"sentence": "___ hemos decidido qué hacer.", "answer": "Todavía no"},
+        {"sentence": "___ han llegado los invitados.", "answer": "Ya"},
+        {"sentence": "___ he llamado al médico.", "answer": "Todavía no"},
+        {"sentence": "¿___ habéis comprado los billetes?", "answer": "Ya"},
+        {"sentence": "___ ha empezado la película.", "answer": "Ya"},
+        {"sentence": "___ he leído ese libro.", "answer": "Todavía no"},
+        {"sentence": "¿___ has hecho la cama?", "answer": "Ya"},
+        {"sentence": "___ hemos comido.", "answer": "Ya"},
+        {"sentence": "___ han abierto la tienda.", "answer": "Todavía no"},
+        {"sentence": "¿___ ha venido el profesor?", "answer": "Ya"},
+        {"sentence": "___ he escrito el informe.", "answer": "Todavía no"},
+        {"sentence": "___ hemos reservado mesa.", "answer": "Ya"},
+        {"sentence": "___ has duchado, ¿verdad?", "answer": "Ya"},
+        {"sentence": "___ he encontrado trabajo.", "answer": "Todavía no"},
+        {"sentence": "¿___ habéis cenado?", "answer": "Ya"},
+        {"sentence": "___ han terminado las obras.", "answer": "Todavía no"},
+        {"sentence": "___ he pagado la factura.", "answer": "Ya"},
+        {"sentence": "___ hemos visto el museo.", "answer": "Todavía no"},
+        {"sentence": "¿___ has llamado a tu madre?", "answer": "Ya"},
+        {"sentence": "___ ha salido el sol.", "answer": "Ya"},
+        {"sentence": "___ he aprendido a conducir.", "answer": "Todavía no"},
+        {"sentence": "___ hemos preparado la cena.", "answer": "Ya"},
+        {"sentence": "___ han contestado el email.", "answer": "Todavía no"},
+        {"sentence": "¿___ has recogido tu habitación?", "answer": "Ya"},
+        {"sentence": "___ he ido al gimnasio hoy.", "answer": "Todavía no"},
+        {"sentence": "___ hemos acabado el proyecto.", "answer": "Ya"},
+        {"sentence": "___ ha llegado el paquete.", "answer": "Todavía no"},
+        {"sentence": "¿___ habéis probado la paella?", "answer": "Ya"},
+        {"sentence": "___ he decidido qué estudiar.", "answer": "Todavía no"},
+        {"sentence": "___ han anunciado los resultados.", "answer": "Ya"},
+        {"sentence": "___ he visitado ese país.", "answer": "Todavía no"},
+        {"sentence": "¿___ has terminado el examen?", "answer": "Ya"},
+        {"sentence": "___ hemos conocido al nuevo jefe.", "answer": "Todavía no"},
+        {"sentence": "___ ha empezado el concierto.", "answer": "Ya"},
+        {"sentence": "___ he comprado los regalos.", "answer": "Todavía no"},
+        {"sentence": "¿___ habéis visto las fotos?", "answer": "Ya"},
+        {"sentence": "___ han publicado la noticia.", "answer": "Ya"},
+        {"sentence": "___ he hablado con él.", "answer": "Todavía no"},
+        {"sentence": "___ hemos elegido el restaurante.", "answer": "Ya"},
+        {"sentence": "___ ha cerrado la oficina.", "answer": "Todavía no"},
+        {"sentence": "¿___ has enviado el mensaje?", "answer": "Ya"},
+        {"sentence": "___ he empezado el libro.", "answer": "Todavía no"},
+        {"sentence": "___ hemos pedido la comida.", "answer": "Ya"},
+        {"sentence": "___ han solucionado el problema.", "answer": "Todavía no"},
+        {"sentence": "¿___ ha llegado el taxi?", "answer": "Ya"},
+        {"sentence": "___ he visto a mis padres este mes.", "answer": "Todavía no"},
+        {"sentence": "___ hemos firmado el contrato.", "answer": "Ya"},
+        {"sentence": "___ han devuelto el dinero.", "answer": "Todavía no"},
+        {"sentence": "¿___ habéis hecho los deberes?", "answer": "Ya"},
+        {"sentence": "___ he ido al dentista.", "answer": "Todavía no"},
+        {"sentence": "___ ha salido el avión.", "answer": "Ya"},
+        {"sentence": "___ hemos recibido respuesta.", "answer": "Todavía no"},
+        {"sentence": "¿___ has leído mi correo?", "answer": "Ya"},
+        {"sentence": "___ he acabado de comer.", "answer": "Ya"},
+        {"sentence": "___ han abierto el museo.", "answer": "Todavía no"},
+        {"sentence": "___ hemos empezado la reunión.", "answer": "Ya"},
+        {"sentence": "___ he encontrado mis llaves.", "answer": "Todavía no"}
+      ],
+      "microTests": [
+        {"sentence": "___ he terminado el trabajo.", "answer": "Ya", "hint": "Действие завершено (уже)"},
+        {"sentence": "___ he visto esa serie.", "answer": "Todavía no", "hint": "Действие не завершено (ещё не)"},
+        {"sentence": "¿___ has desayunado?", "answer": "Ya", "hint": "Вопрос о завершённом действии"},
+        {"sentence": "___ hemos decidido.", "answer": "Todavía no", "hint": "Действие не завершено"},
+        {"sentence": "___ han llegado.", "answer": "Ya", "hint": "Действие завершено (уже)"},
+        {"sentence": "___ he llamado al doctor.", "answer": "Todavía no", "hint": "Действие не завершено"},
+        {"sentence": "¿___ habéis comido?", "answer": "Ya", "hint": "Вопрос о завершённом действии"},
+        {"sentence": "___ ha empezado la clase.", "answer": "Ya", "hint": "Действие завершено"},
+        {"sentence": "___ he leído el libro.", "answer": "Todavía no", "hint": "Действие не завершено"},
+        {"sentence": "¿___ has hecho la tarea?", "answer": "Ya", "hint": "Вопрос о завершённом действии"},
+        {"sentence": "___ hemos cenado.", "answer": "Ya", "hint": "Действие завершено"},
+        {"sentence": "___ han abierto.", "answer": "Todavía no", "hint": "Действие не завершено"}
+      ]
+    }
+  ],
   "verbos": {
     "tiempos": [
       {

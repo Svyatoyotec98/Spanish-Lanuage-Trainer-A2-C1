@@ -1044,5 +1044,137 @@
     ]
   },
   "ejercicios": [],
-  "verbos": {}
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "preterito_imperfecto",
+        "nombre": "Pretérito imperfecto",
+        "requiredEjercicio": "ejercicio_1",
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "yo": "hablaba",
+              "tu": "hablabas",
+              "el": "hablaba",
+              "nosotros": "hablábamos",
+              "vosotros": "hablabais",
+              "ellos": "hablaban"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "vivía",
+              "tu": "vivías",
+              "el": "vivía",
+              "nosotros": "vivíamos",
+              "vosotros": "vivíais",
+              "ellos": "vivían"
+            }
+          },
+          {
+            "infinitivo": "cambiar",
+            "traduccion": "менять(ся)",
+            "formas": {
+              "yo": "cambiaba",
+              "tu": "cambiabas",
+              "el": "cambiaba",
+              "nosotros": "cambiábamos",
+              "vosotros": "cambiabais",
+              "ellos": "cambiaban"
+            }
+          },
+          {
+            "infinitivo": "existir",
+            "traduccion": "существовать",
+            "formas": {
+              "yo": "existía",
+              "tu": "existías",
+              "el": "existía",
+              "nosotros": "existíamos",
+              "vosotros": "existíais",
+              "ellos": "existían"
+            }
+          },
+          {
+            "infinitivo": "trabajar",
+            "traduccion": "работать",
+            "formas": {
+              "yo": "trabajaba",
+              "tu": "trabajabas",
+              "el": "trabajaba",
+              "nosotros": "trabajábamos",
+              "vosotros": "trabajabais",
+              "ellos": "trabajaban"
+            }
+          },
+          {
+            "infinitivo": "estudiar",
+            "traduccion": "учиться",
+            "formas": {
+              "yo": "estudiaba",
+              "tu": "estudiabas",
+              "el": "estudiaba",
+              "nosotros": "estudiábamos",
+              "vosotros": "estudiabais",
+              "ellos": "estudiaban"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "yo": "comía",
+              "tu": "comías",
+              "el": "comía",
+              "nosotros": "comíamos",
+              "vosotros": "comíais",
+              "ellos": "comían"
+            }
+          },
+          {
+            "infinitivo": "tener",
+            "traduccion": "иметь",
+            "formas": {
+              "yo": "tenía",
+              "tu": "tenías",
+              "el": "tenía",
+              "nosotros": "teníamos",
+              "vosotros": "teníais",
+              "ellos": "tenían"
+            }
+          },
+          {
+            "infinitivo": "jugar",
+            "traduccion": "играть",
+            "formas": {
+              "yo": "jugaba",
+              "tu": "jugabas",
+              "el": "jugaba",
+              "nosotros": "jugábamos",
+              "vosotros": "jugabais",
+              "ellos": "jugaban"
+            }
+          },
+          {
+            "infinitivo": "usar",
+            "traduccion": "использовать",
+            "formas": {
+              "yo": "usaba",
+              "tu": "usabas",
+              "el": "usaba",
+              "nosotros": "usábamos",
+              "vosotros": "usabais",
+              "ellos": "usaban"
+            }
+          }
+        ],
+        "irregulares": [],
+        "otras": []
+      }
+    ]
+  }
 }

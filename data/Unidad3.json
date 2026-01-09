@@ -1460,7 +1460,152 @@
         "id": "presente",
         "nombre": "Presente de indicativo",
         "requiredEjercicio": "ejercicio_1",
-        "regulares": [],
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "yo": "hablo",
+              "tu": "hablas",
+              "el": "habla",
+              "nosotros": "hablamos",
+              "vosotros": "habláis",
+              "ellos": "hablan"
+            }
+          },
+          {
+            "infinitivo": "trabajar",
+            "traduccion": "работать",
+            "formas": {
+              "yo": "trabajo",
+              "tu": "trabajas",
+              "el": "trabaja",
+              "nosotros": "trabajamos",
+              "vosotros": "trabajáis",
+              "ellos": "trabajan"
+            }
+          },
+          {
+            "infinitivo": "estudiar",
+            "traduccion": "учиться",
+            "formas": {
+              "yo": "estudio",
+              "tu": "estudias",
+              "el": "estudia",
+              "nosotros": "estudiamos",
+              "vosotros": "estudiáis",
+              "ellos": "estudian"
+            }
+          },
+          {
+            "infinitivo": "bailar",
+            "traduccion": "танцевать",
+            "formas": {
+              "yo": "bailo",
+              "tu": "bailas",
+              "el": "baila",
+              "nosotros": "bailamos",
+              "vosotros": "bailáis",
+              "ellos": "bailan"
+            }
+          },
+          {
+            "infinitivo": "cantar",
+            "traduccion": "петь",
+            "formas": {
+              "yo": "canto",
+              "tu": "cantas",
+              "el": "canta",
+              "nosotros": "cantamos",
+              "vosotros": "cantáis",
+              "ellos": "cantan"
+            }
+          },
+          {
+            "infinitivo": "viajar",
+            "traduccion": "путешествовать",
+            "formas": {
+              "yo": "viajo",
+              "tu": "viajas",
+              "el": "viaja",
+              "nosotros": "viajamos",
+              "vosotros": "viajáis",
+              "ellos": "viajan"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "yo": "como",
+              "tu": "comes",
+              "el": "come",
+              "nosotros": "comemos",
+              "vosotros": "coméis",
+              "ellos": "comen"
+            }
+          },
+          {
+            "infinitivo": "beber",
+            "traduccion": "пить",
+            "formas": {
+              "yo": "bebo",
+              "tu": "bebes",
+              "el": "bebe",
+              "nosotros": "bebemos",
+              "vosotros": "bebéis",
+              "ellos": "beben"
+            }
+          },
+          {
+            "infinitivo": "leer",
+            "traduccion": "читать",
+            "formas": {
+              "yo": "leo",
+              "tu": "lees",
+              "el": "lee",
+              "nosotros": "leemos",
+              "vosotros": "leéis",
+              "ellos": "leen"
+            }
+          },
+          {
+            "infinitivo": "correr",
+            "traduccion": "бегать",
+            "formas": {
+              "yo": "corro",
+              "tu": "corres",
+              "el": "corre",
+              "nosotros": "corremos",
+              "vosotros": "corréis",
+              "ellos": "corren"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "vivo",
+              "tu": "vives",
+              "el": "vive",
+              "nosotros": "vivimos",
+              "vosotros": "vivís",
+              "ellos": "viven"
+            }
+          },
+          {
+            "infinitivo": "escribir",
+            "traduccion": "писать",
+            "formas": {
+              "yo": "escribo",
+              "tu": "escribes",
+              "el": "escribe",
+              "nosotros": "escribimos",
+              "vosotros": "escribís",
+              "ellos": "escriben"
+            }
+          }
+        ],
         "irregulares": [
           {
             "infinitivo": "conocer",

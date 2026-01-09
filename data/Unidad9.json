@@ -1172,8 +1172,196 @@
             }
           }
         ],
-        "irregulares": [],
-        "otras": []
+        "irregulares": [
+          {
+            "infinitivo": "ser",
+            "traduccion": "быть",
+            "formas": {
+              "yo": "era",
+              "tu": "eras",
+              "el": "era",
+              "nosotros": "éramos",
+              "vosotros": "erais",
+              "ellos": "eran"
+            }
+          },
+          {
+            "infinitivo": "ir",
+            "traduccion": "идти/ходить",
+            "formas": {
+              "yo": "iba",
+              "tu": "ibas",
+              "el": "iba",
+              "nosotros": "íbamos",
+              "vosotros": "ibais",
+              "ellos": "iban"
+            }
+          },
+          {
+            "infinitivo": "ver",
+            "traduccion": "видеть",
+            "formas": {
+              "yo": "veía",
+              "tu": "veías",
+              "el": "veía",
+              "nosotros": "veíamos",
+              "vosotros": "veíais",
+              "ellos": "veían"
+            }
+          },
+          {
+            "infinitivo": "haber",
+            "traduccion": "иметься/быть (безл.)",
+            "formas": {
+              "yo": "había",
+              "tu": "habías",
+              "el": "había",
+              "nosotros": "habíamos",
+              "vosotros": "habíais",
+              "ellos": "habían"
+            }
+          },
+          {
+            "infinitivo": "poder",
+            "traduccion": "мочь",
+            "formas": {
+              "yo": "podía",
+              "tu": "podías",
+              "el": "podía",
+              "nosotros": "podíamos",
+              "vosotros": "podíais",
+              "ellos": "podían"
+            }
+          },
+          {
+            "infinitivo": "querer",
+            "traduccion": "хотеть",
+            "formas": {
+              "yo": "quería",
+              "tu": "querías",
+              "el": "quería",
+              "nosotros": "queríamos",
+              "vosotros": "queríais",
+              "ellos": "querían"
+            }
+          },
+          {
+            "infinitivo": "saber",
+            "traduccion": "знать",
+            "formas": {
+              "yo": "sabía",
+              "tu": "sabías",
+              "el": "sabía",
+              "nosotros": "sabíamos",
+              "vosotros": "sabíais",
+              "ellos": "sabían"
+            }
+          },
+          {
+            "infinitivo": "hacer",
+            "traduccion": "делать",
+            "formas": {
+              "yo": "hacía",
+              "tu": "hacías",
+              "el": "hacía",
+              "nosotros": "hacíamos",
+              "vosotros": "hacíais",
+              "ellos": "hacían"
+            }
+          },
+          {
+            "infinitivo": "decir",
+            "traduccion": "говорить/сказать",
+            "formas": {
+              "yo": "decía",
+              "tu": "decías",
+              "el": "decía",
+              "nosotros": "decíamos",
+              "vosotros": "decíais",
+              "ellos": "decían"
+            }
+          }
+        ],
+        "otras": [
+          {
+            "id": "reflexivos",
+            "nombre": "Verbos reflexivos",
+            "verbos": [
+              {
+                "infinitivo": "levantarse",
+                "traduccion": "вставать",
+                "formas": {
+                  "yo": "me levantaba",
+                  "tu": "te levantabas",
+                  "el": "se levantaba",
+                  "nosotros": "nos levantábamos",
+                  "vosotros": "os levantabais",
+                  "ellos": "se levantaban"
+                }
+              },
+              {
+                "infinitivo": "acostarse",
+                "traduccion": "ложиться спать",
+                "formas": {
+                  "yo": "me acostaba",
+                  "tu": "te acostabas",
+                  "el": "se acostaba",
+                  "nosotros": "nos acostábamos",
+                  "vosotros": "os acostabais",
+                  "ellos": "se acostaban"
+                }
+              },
+              {
+                "infinitivo": "vestirse",
+                "traduccion": "одеваться",
+                "formas": {
+                  "yo": "me vestía",
+                  "tu": "te vestías",
+                  "el": "se vestía",
+                  "nosotros": "nos vestíamos",
+                  "vosotros": "os vestíais",
+                  "ellos": "se vestían"
+                }
+              },
+              {
+                "infinitivo": "ducharse",
+                "traduccion": "принимать душ",
+                "formas": {
+                  "yo": "me duchaba",
+                  "tu": "te duchabas",
+                  "el": "se duchaba",
+                  "nosotros": "nos duchábamos",
+                  "vosotros": "os duchabais",
+                  "ellos": "se duchaban"
+                }
+              },
+              {
+                "infinitivo": "despertarse",
+                "traduccion": "просыпаться",
+                "formas": {
+                  "yo": "me despertaba",
+                  "tu": "te despertabas",
+                  "el": "se despertaba",
+                  "nosotros": "nos despertábamos",
+                  "vosotros": "os despertabais",
+                  "ellos": "se despertaban"
+                }
+              },
+              {
+                "infinitivo": "divertirse",
+                "traduccion": "развлекаться",
+                "formas": {
+                  "yo": "me divertía",
+                  "tu": "te divertías",
+                  "el": "se divertía",
+                  "nosotros": "nos divertíamos",
+                  "vosotros": "os divertíais",
+                  "ellos": "se divertían"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   }

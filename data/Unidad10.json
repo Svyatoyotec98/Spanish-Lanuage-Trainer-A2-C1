@@ -1661,6 +1661,380 @@
         {"sentence": "El héroe ___ salvando a otros. (morir, él)", "answer": "murió", "hint": "O>U в 3-м лице: él mur..."},
         {"sentence": "Nosotros ___ hasta tarde. (dormir, nosotros)", "answer": "dormimos", "hint": "1-е лицо мн.ч. без изменения"}
       ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Pretérito Indefinido vs Pretérito Imperfecto",
+      "hint": "indefinido / imperfecto",
+      "rule": {
+        "title": "Pretérito INDEFINIDO vs Pretérito IMPERFECTO",
+        "explanation": "В испанском языке для описания прошлого используются два времени: Pretérito Indefinido (для действий, продвигающих повествование) и Pretérito Imperfecto (для описания обстоятельств, фона событий).",
+        "sections": [
+          {
+            "subtitle": "INDEFINIDO — действия, события",
+            "points": [
+              "Завершённые действия в прошлом: <b>Ayer fui al cine</b> — Вчера я ходил в кино",
+              "Последовательность событий: <b>Llegué, abrí la puerta y entré</b> — Я пришёл, открыл дверь и вошёл",
+              "Продвигает повествование вперёд",
+              "Маркеры: ayer, anoche, la semana pasada, en 2020, de repente"
+            ]
+          },
+          {
+            "subtitle": "IMPERFECTO — описания, обстоятельства",
+            "points": [
+              "Описание обстановки: <b>Hacía sol y no había nadie</b> — Светило солнце, и никого не было",
+              "Привычные действия в прошлом: <b>Antes venía mucho</b> — Раньше я часто приходил",
+              "Возраст, внешность, состояние: <b>Tenía 20 años, era alto</b> — Ему было 20 лет, он был высоким",
+              "Фон для других событий: mientras, cuando + imperfecto"
+            ]
+          },
+          {
+            "subtitle": "Комбинация двух времён",
+            "points": [
+              "Imperfecto = фон, Indefinido = событие на этом фоне",
+              "<b>Estaba durmiendo cuando sonó</b> el teléfono — Я спал, когда зазвонил телефон",
+              "<b>Como hacía buen tiempo, decidí</b> salir — Так как была хорошая погода, я решил выйти"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "La última vez que vi a Carla tenía muy buen aspecto.", "ru": "В последний раз, когда я видел Карлу, она прекрасно выглядела."},
+          {"es": "Cuando la conocí, Paula llevaba el pelo teñido.", "ru": "Когда я с ней познакомился, у Паулы были крашеные волосы."},
+          {"es": "Antes venía mucho a este bar, pero luego me fui a vivir a otro barrio.", "ru": "Раньше я часто приходил в этот бар, но потом переехал в другой район."}
+        ]
+      },
+      "questions": [
+        {"sentence": "La última vez que vi a Carla ___ muy buen aspecto. (tener)", "answer": "tenía"},
+        {"sentence": "Cuando la conocí, Paula ___ el pelo teñido. (llevar)", "answer": "llevaba"},
+        {"sentence": "___ dos años en Londres; fueron los años más felices. (pasar, yo)", "answer": "Pasé"},
+        {"sentence": "El otro día vino Lara; quería café pero no ___. (tener, nosotros)", "answer": "teníamos"},
+        {"sentence": "Compré un vino y el día de mi cumpleaños lo ___. (abrir, yo)", "answer": "abrí"},
+        {"sentence": "Ana tenía una casa preciosa, pero ___ muy vieja. (ser)", "answer": "era"},
+        {"sentence": "La casa no ___ calefacción. (tener)", "answer": "tenía"},
+        {"sentence": "Antes ___ mucho a este bar. (venir, yo)", "answer": "venía"},
+        {"sentence": "Un día ___ un accidente y tuvo que dejar el fútbol. (tener, él)", "answer": "tuvo"},
+        {"sentence": "Miguel nunca salía, pero en enero ___ a una chica. (conocer, él)", "answer": "conoció"},
+        {"sentence": "A los 12 años descubrieron que Carla ___ miope. (ser)", "answer": "era"},
+        {"sentence": "Ayer ___ al médico porque me dolía la cabeza. (ir, yo)", "answer": "fui"},
+        {"sentence": "Cuando llegué a casa, mi madre ___ la cena. (preparar)", "answer": "preparaba"},
+        {"sentence": "De pequeño ___ mucho con mis primos. (jugar, yo)", "answer": "jugaba"},
+        {"sentence": "El otro día ___ a tu hermano en el centro. (ver, yo)", "answer": "vi"},
+        {"sentence": "No ___ dónde estaba la estación. (saber, yo)", "answer": "sabía"},
+        {"sentence": "Cuando ___ niño, vivía en un pueblo pequeño. (ser, yo)", "answer": "era"},
+        {"sentence": "Ayer ___ muy tarde a la reunión. (llegar, yo)", "answer": "llegué"},
+        {"sentence": "Mi abuelo siempre me ___ historias de su juventud. (contar)", "answer": "contaba"},
+        {"sentence": "La semana pasada ___ a un concierto increíble. (ir, nosotros)", "answer": "fuimos"},
+        {"sentence": "Cuando era joven, ___ mucho deporte. (hacer, yo)", "answer": "hacía"},
+        {"sentence": "De repente, ___ un ruido muy fuerte. (oír, yo)", "answer": "oí"},
+        {"sentence": "Mi madre ___ profesora de matemáticas. (ser)", "answer": "era"},
+        {"sentence": "Anoche no ___ bien porque hacía mucho calor. (dormir, yo)", "answer": "dormí"},
+        {"sentence": "Todos los veranos ___ a la playa con mi familia. (ir, nosotros)", "answer": "íbamos"},
+        {"sentence": "En 2010 ___ a trabajar en esta empresa. (empezar, yo)", "answer": "empecé"},
+        {"sentence": "Mi hermana ___ el pelo muy largo cuando era pequeña. (tener)", "answer": "tenía"},
+        {"sentence": "Ayer ___ con María y me contó todo. (hablar, yo)", "answer": "hablé"},
+        {"sentence": "Cuando ___ estudiante, vivía con mis padres. (ser, yo)", "answer": "era"},
+        {"sentence": "El año pasado ___ de vacaciones a Italia. (ir, nosotros)", "answer": "fuimos"},
+        {"sentence": "Siempre ___ a las ocho de la mañana. (levantarse, yo)", "answer": "me levantaba"},
+        {"sentence": "De repente, ___ a llover muy fuerte. (empezar)", "answer": "empezó"},
+        {"sentence": "Mi abuela ___ muy bien; hacía unos pasteles deliciosos. (cocinar)", "answer": "cocinaba"},
+        {"sentence": "Ayer ___ un accidente en la autopista. (haber)", "answer": "hubo"},
+        {"sentence": "Cuando ___ en Madrid, iba mucho al teatro. (vivir, yo)", "answer": "vivía"},
+        {"sentence": "La semana pasada ___ a mi antiguo profesor. (encontrar, yo)", "answer": "encontré"},
+        {"sentence": "De niño, ___ mucho miedo a la oscuridad. (tener, yo)", "answer": "tenía"},
+        {"sentence": "Ayer ___ una película muy interesante. (ver, nosotros)", "answer": "vimos"},
+        {"sentence": "Antes no ___ teléfonos móviles. (existir)", "answer": "existían"},
+        {"sentence": "El lunes pasado ___ al dentista. (ir, yo)", "answer": "fui"},
+        {"sentence": "Cuando era pequeño, ___ ser astronauta. (querer, yo)", "answer": "quería"},
+        {"sentence": "Ayer ___ mucho calor en la calle. (hacer)", "answer": "hizo"},
+        {"sentence": "Mi padre siempre ___ café por las mañanas. (tomar)", "answer": "tomaba"},
+        {"sentence": "El otro día ___ una carta de mi amigo. (recibir, yo)", "answer": "recibí"},
+        {"sentence": "Cuando ___ jóvenes, viajábamos mucho. (ser, nosotros)", "answer": "éramos"},
+        {"sentence": "Anoche ___ a casa muy tarde. (volver, yo)", "answer": "volví"},
+        {"sentence": "De pequeño, ___ todos los días al parque. (ir, yo)", "answer": "iba"},
+        {"sentence": "El mes pasado ___ de trabajo. (cambiar, yo)", "answer": "cambié"},
+        {"sentence": "Antes ___ en un apartamento muy pequeño. (vivir, nosotros)", "answer": "vivíamos"},
+        {"sentence": "Ayer ___ un regalo muy bonito para mi madre. (comprar, yo)", "answer": "compré"},
+        {"sentence": "Cuando ___ estudiante, no tenía mucho dinero. (ser, yo)", "answer": "era"},
+        {"sentence": "La semana pasada ___ a la inauguración del museo. (asistir, nosotros)", "answer": "asistimos"},
+        {"sentence": "Mi abuelo ___ una persona muy generosa. (ser)", "answer": "era"},
+        {"sentence": "Ayer por la noche ___ a cenar con unos amigos. (salir, yo)", "answer": "salí"},
+        {"sentence": "Todos los domingos ___ a misa con mi familia. (ir, nosotros)", "answer": "íbamos"},
+        {"sentence": "El año pasado ___ muy difícil para todos. (ser)", "answer": "fue"},
+        {"sentence": "Cuando era niño, ___ los dibujos animados. (encantar, a mí)", "answer": "me encantaban"},
+        {"sentence": "Ayer ___ una noticia muy sorprendente. (saber, yo)", "answer": "supe"},
+        {"sentence": "De joven, ___ mucho al gimnasio. (ir, yo)", "answer": "iba"},
+        {"sentence": "La noche del accidente ___ muy oscura. (estar)", "answer": "estaba"}
+      ],
+      "microTests": [
+        {"sentence": "La última vez que vi a Carla ___ muy buen aspecto. (tener)", "answer": "tenía", "hint": "Описание внешности = imperfecto"},
+        {"sentence": "___ dos años en Londres. (pasar, yo)", "answer": "Pasé", "hint": "Завершённое действие = indefinido"},
+        {"sentence": "Cuando la conocí, Paula ___ el pelo largo. (llevar)", "answer": "llevaba", "hint": "Описание внешности = imperfecto"},
+        {"sentence": "Antes ___ mucho a este bar. (venir, yo)", "answer": "venía", "hint": "Привычное действие = imperfecto"},
+        {"sentence": "Un día ___ un accidente. (tener, él)", "answer": "tuvo", "hint": "Событие = indefinido"},
+        {"sentence": "Cuando era niño, ___ ser astronauta. (querer, yo)", "answer": "quería", "hint": "Желание в прошлом = imperfecto"},
+        {"sentence": "Ayer ___ al médico. (ir, yo)", "answer": "fui", "hint": "Действие вчера = indefinido"},
+        {"sentence": "Mi abuelo siempre ___ historias. (contar)", "answer": "contaba", "hint": "Привычное действие = imperfecto"},
+        {"sentence": "De repente, ___ un ruido. (oír, yo)", "answer": "oí", "hint": "Внезапное действие = indefinido"},
+        {"sentence": "Cuando ___ estudiante, vivía con mis padres. (ser, yo)", "answer": "era", "hint": "Состояние в прошлом = imperfecto"},
+        {"sentence": "Ayer ___ una película. (ver, nosotros)", "answer": "vimos", "hint": "Завершённое действие = indefinido"},
+        {"sentence": "De pequeño, ___ mucho miedo. (tener, yo)", "answer": "tenía", "hint": "Состояние в детстве = imperfecto"},
+        {"sentence": "La semana pasada ___ a Italia. (ir, nosotros)", "answer": "fuimos", "hint": "Конкретное действие = indefinido"},
+        {"sentence": "Mi madre ___ profesora. (ser)", "answer": "era", "hint": "Профессия (постоянное) = imperfecto"},
+        {"sentence": "El otro día ___ a tu hermano. (ver, yo)", "answer": "vi", "hint": "Конкретное событие = indefinido"}
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Estar + gerundio en pasado",
+      "hint": "estaba / estuve",
+      "rule": {
+        "title": "ESTAR + GERUNDIO в прошедшем времени",
+        "explanation": "Конструкция estar + gerundio используется для представления действия в процессе. В прошедшем времени она может использоваться с Imperfecto (estaba) или с Indefinido (estuve), и выбор зависит от контекста.",
+        "sections": [
+          {
+            "subtitle": "ESTABA + gerundio — фон, процесс",
+            "points": [
+              "Описывает действие в процессе как фон для другого события",
+              "<b>Estaba durmiendo</b> cuando sonó el teléfono — Я спал, когда зазвонил телефон",
+              "<b>Estaba trabajando</b> y no oí tu llamada — Я работал и не слышал твой звонок",
+              "Часто используется с <i>cuando</i> для описания прерванного действия"
+            ]
+          },
+          {
+            "subtitle": "ESTUVE + gerundio — ограниченный период",
+            "points": [
+              "Описывает действие, которое длилось определённый период и завершилось",
+              "<b>Estuve estudiando</b> tres horas — Я занимался три часа",
+              "<b>Estuvimos bailando</b> hasta las 3 de la mañana — Мы танцевали до 3 утра",
+              "Часто указывается длительность: una hora, dos días, toda la noche"
+            ]
+          },
+          {
+            "subtitle": "Как выбрать?",
+            "points": [
+              "Действие как фон (прервано другим) → <b>estaba</b>: Estaba leyendo cuando llegaste",
+              "Действие с указанием длительности → <b>estuve</b>: Estuve leyendo dos horas",
+              "Действие в момент чего-то → <b>estaba</b>: En ese momento estaba durmiendo",
+              "Действие до определённого момента → <b>estuve</b>: Estuve trabajando hasta las 8"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Estaba hablando con Paco y, de repente, me dio un regalo.", "ru": "Я разговаривал с Пако, и вдруг он дал мне подарок."},
+          {"es": "Ayer estuve hablando con Paco. ¡Se casa el mes que viene!", "ru": "Вчера я разговаривал с Пако. Он женится в следующем месяце!"},
+          {"es": "Cuando me llamaste, estaba pensando en ti.", "ru": "Когда ты позвонил, я думал о тебе."},
+          {"es": "Estuve estudiando toda la noche para el examen.", "ru": "Я готовился к экзамену всю ночь."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Fui a visitar a Patricia, pero no pude verla porque ___ descansando. (ella)", "answer": "estaba"},
+        {"sentence": "___ tres días esquiando en los Alpes. (nosotros)", "answer": "Estuvimos"},
+        {"sentence": "___ viviendo unos meses en Alemania. (él)", "answer": "Estuvo"},
+        {"sentence": "Llegué tarde y mis amigos ya ___ tomando el café. (ellos)", "answer": "estaban"},
+        {"sentence": "No oí tu llamada porque ___ escuchando música. (yo)", "answer": "estaba"},
+        {"sentence": "Me lo pasé genial; ___ bailando todo el tiempo. (yo)", "answer": "estuve"},
+        {"sentence": "Cuando llegó la policía, ___ bailando con la música muy alta. (nosotros)", "answer": "estábamos"},
+        {"sentence": "___ bailando varias horas hasta que llegó la policía. (nosotros)", "answer": "Estuvimos"},
+        {"sentence": "___ tomando el sol en la playa cuando me llamaste. (yo)", "answer": "Estaba"},
+        {"sentence": "___ tomando el sol hasta las 15h y luego fui a casa. (yo)", "answer": "Estuve"},
+        {"sentence": "___ estudiando Medicina cuando conoció a Luis. (ella)", "answer": "Estaba"},
+        {"sentence": "___ estudiando Medicina hasta el año pasado. (él)", "answer": "Estuvo"},
+        {"sentence": "¿Qué ___ haciendo cuando te llamé? (tú)", "answer": "estabas"},
+        {"sentence": "___ trabajando toda la mañana sin descanso. (yo)", "answer": "Estuve"},
+        {"sentence": "Cuando entré, ellos ___ discutiendo. (ellos)", "answer": "estaban"},
+        {"sentence": "___ esperando el autobús durante una hora. (nosotros)", "answer": "Estuvimos"},
+        {"sentence": "En ese momento ___ durmiendo y no oí nada. (yo)", "answer": "estaba"},
+        {"sentence": "___ viendo la televisión toda la tarde. (ellos)", "answer": "Estuvieron"},
+        {"sentence": "Cuando llegué a casa, mi hijo ___ haciendo los deberes. (él)", "answer": "estaba"},
+        {"sentence": "___ hablando por teléfono dos horas. (ella)", "answer": "Estuvo"},
+        {"sentence": "No pude abrir la puerta porque ___ duchándome. (yo)", "answer": "estaba"},
+        {"sentence": "___ limpiando la casa todo el día. (nosotros)", "answer": "Estuvimos"},
+        {"sentence": "¿___ durmiendo cuando llamé? (tú)", "answer": "Estabas"},
+        {"sentence": "___ corriendo en el parque una hora. (yo)", "answer": "Estuve"},
+        {"sentence": "Los niños ___ jugando cuando empezó a llover. (ellos)", "answer": "estaban"},
+        {"sentence": "___ escribiendo el informe toda la noche. (yo)", "answer": "Estuve"},
+        {"sentence": "Cuando le vi, ___ llorando. (ella)", "answer": "estaba"},
+        {"sentence": "___ esperándote más de una hora. (yo)", "answer": "Estuve"},
+        {"sentence": "En la foto ___ sonriendo todos. (nosotros)", "answer": "estábamos"},
+        {"sentence": "___ practicando español durante meses. (él)", "answer": "Estuvo"},
+        {"sentence": "Cuando me desperté, ___ nevando. (impersonal)", "answer": "estaba"},
+        {"sentence": "___ nevando toda la noche. (impersonal)", "answer": "Estuvo"},
+        {"sentence": "No contesté porque ___ conduciendo. (yo)", "answer": "estaba"},
+        {"sentence": "___ conduciendo ocho horas hasta llegar. (nosotros)", "answer": "Estuvimos"},
+        {"sentence": "Mientras yo cocinaba, mi marido ___ leyendo. (él)", "answer": "estaba"},
+        {"sentence": "___ leyendo ese libro durante un mes. (yo)", "answer": "Estuve"},
+        {"sentence": "Cuando sonó el teléfono, ___ comiendo. (nosotros)", "answer": "estábamos"},
+        {"sentence": "___ comiendo y charlando tres horas. (nosotros)", "answer": "Estuvimos"},
+        {"sentence": "En ese momento ___ pensando en ti. (yo)", "answer": "estaba"},
+        {"sentence": "___ pensando en el problema todo el día. (yo)", "answer": "Estuve"},
+        {"sentence": "Cuando le vi por primera vez, ___ cantando en un bar. (ella)", "answer": "estaba"},
+        {"sentence": "___ cantando karaoke toda la noche. (nosotros)", "answer": "Estuvimos"},
+        {"sentence": "No pude salir porque ___ lloviendo. (impersonal)", "answer": "estaba"},
+        {"sentence": "___ lloviendo de las 12h a las 15h. (impersonal)", "answer": "Estuvo"},
+        {"sentence": "Cuando entré en la oficina, todos ___ trabajando. (ellos)", "answer": "estaban"},
+        {"sentence": "___ trabajando en ese proyecto durante seis meses. (nosotros)", "answer": "Estuvimos"},
+        {"sentence": "¿Qué ___ haciendo a las 10 de la noche? (vosotros)", "answer": "estabais"},
+        {"sentence": "___ preparando la fiesta todo el fin de semana. (nosotros)", "answer": "Estuvimos"},
+        {"sentence": "Cuando llegó, yo ___ arreglando el coche. (yo)", "answer": "estaba"},
+        {"sentence": "___ arreglando el coche toda la mañana. (yo)", "answer": "Estuve"},
+        {"sentence": "Los niños ___ durmiendo cuando llegamos. (ellos)", "answer": "estaban"},
+        {"sentence": "___ durmiendo doce horas seguidas. (yo)", "answer": "Estuve"},
+        {"sentence": "En el momento del accidente, ___ conduciendo mi padre. (él)", "answer": "estaba"},
+        {"sentence": "Mi padre ___ conduciendo cuatro horas sin parar. (él)", "answer": "estuvo"},
+        {"sentence": "Cuando me llamaste, ___ haciendo ejercicio. (yo)", "answer": "estaba"},
+        {"sentence": "___ haciendo ejercicio una hora en el gimnasio. (yo)", "answer": "Estuve"},
+        {"sentence": "¿___ esperando mucho tiempo? (tú)", "answer": "Estuviste"},
+        {"sentence": "Mientras ella hablaba, yo ___ escuchando atentamente. (yo)", "answer": "estaba"},
+        {"sentence": "___ escuchando música toda la tarde. (ella)", "answer": "Estuvo"},
+        {"sentence": "Cuando llegué, ___ empezando la película. (impersonal)", "answer": "estaba"}
+      ],
+      "microTests": [
+        {"sentence": "No pude verla porque ___ descansando. (ella)", "answer": "estaba", "hint": "Фон события = estaba + gerundio"},
+        {"sentence": "___ tres días esquiando. (nosotros)", "answer": "Estuvimos", "hint": "Ограниченный период (3 дня) = estuve + gerundio"},
+        {"sentence": "Cuando llegué, ellos ___ comiendo. (ellos)", "answer": "estaban", "hint": "Действие в момент прихода = estaban + gerundio"},
+        {"sentence": "___ bailando toda la noche. (yo)", "answer": "Estuve", "hint": "Длительность (всю ночь) = estuve + gerundio"},
+        {"sentence": "___ durmiendo cuando sonó el teléfono. (yo)", "answer": "Estaba", "hint": "Прерванное действие = estaba + gerundio"},
+        {"sentence": "___ trabajando ocho horas. (nosotros)", "answer": "Estuvimos", "hint": "Длительность (8 часов) = estuvimos + gerundio"},
+        {"sentence": "¿Qué ___ haciendo cuando te llamé? (tú)", "answer": "estabas", "hint": "В момент звонка = estabas + gerundio"},
+        {"sentence": "___ lloviendo de 12h a 15h. (impersonal)", "answer": "Estuvo", "hint": "Указан период = estuvo + gerundio"},
+        {"sentence": "Cuando entré, todos ___ trabajando. (ellos)", "answer": "estaban", "hint": "Фон = estaban + gerundio"},
+        {"sentence": "___ estudiando toda la noche. (yo)", "answer": "Estuve", "hint": "Длительность (вся ночь) = estuve + gerundio"},
+        {"sentence": "En ese momento ___ pensando en ti. (yo)", "answer": "estaba", "hint": "В тот момент = estaba + gerundio"},
+        {"sentence": "___ esperándote una hora. (yo)", "answer": "Estuve", "hint": "Длительность (час) = estuve + gerundio"},
+        {"sentence": "Mientras yo cocinaba, él ___ leyendo. (él)", "answer": "estaba", "hint": "Параллельное действие = estaba + gerundio"},
+        {"sentence": "___ viviendo en París dos años. (ella)", "answer": "Estuvo", "hint": "Ограниченный период (2 года) = estuvo + gerundio"},
+        {"sentence": "Cuando me desperté, ___ nevando. (impersonal)", "answer": "estaba", "hint": "Фон = estaba + gerundio"}
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Marcadores temporales para relatar",
+      "hint": "el otro día / entonces / de repente / luego / más tarde / después / resulta que / una vez / al final",
+      "rule": {
+        "title": "МАРКЕРЫ ВРЕМЕНИ для повествования",
+        "explanation": "Для связного рассказа о событиях в прошлом используются специальные маркеры времени, которые помогают структурировать повествование, показывать последовательность событий и выделять ключевые моменты.",
+        "sections": [
+          {
+            "subtitle": "Начало истории",
+            "points": [
+              "<b>El otro día</b> — на днях: El otro día me pasó una cosa increíble",
+              "<b>Una vez</b> — однажды: Una vez me perdí en el bosque",
+              "<b>Un día</b> — однажды: Un día decidí cambiar de trabajo",
+              "<b>Resulta que</b> — оказалось, что: Resulta que era el cumpleaños de mi amiga"
+            ]
+          },
+          {
+            "subtitle": "Последовательность событий",
+            "points": [
+              "<b>(Y) entonces</b> — и тогда: Entonces comprendí todo",
+              "<b>Luego</b> — потом: Primero comimos y luego fuimos al cine",
+              "<b>Más tarde</b> — позже: Más tarde llegaron los demás",
+              "<b>(Un poco/tiempo) después</b> — (немного/некоторое время) спустя: Poco después empezó a llover",
+              "<b>Al día siguiente</b> — на следующий день: Al día siguiente volví a intentarlo"
+            ]
+          },
+          {
+            "subtitle": "Внезапные события",
+            "points": [
+              "<b>De repente</b> — вдруг: De repente oí un ruido muy fuerte",
+              "<b>De pronto</b> — внезапно: De pronto se apagaron las luces",
+              "<b>En ese momento</b> — в тот момент: En ese momento no supe qué decir"
+            ]
+          },
+          {
+            "subtitle": "Завершение истории",
+            "points": [
+              "<b>Al final</b> — в конце концов: Al final todo salió bien",
+              "<b>Finalmente</b> — наконец: Finalmente conseguí el trabajo"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "El otro día me pasó una cosa increíble.", "ru": "На днях со мной случилась невероятная вещь."},
+          {"es": "Resulta que teníamos un coche alquilado y un día llegamos tarde.", "ru": "Оказалось, что у нас была арендованная машина, и однажды мы опоздали."},
+          {"es": "Al día siguiente teníamos que irnos y entonces nos dimos cuenta de que no teníamos batería.", "ru": "На следующий день нам нужно было уезжать, и тогда мы обнаружили, что у нас нет аккумулятора."},
+          {"es": "Al final conseguimos ponerlo en marcha.", "ru": "В конце концов нам удалось его завести."}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ me pasó una cosa horrible.", "answer": "El otro día"},
+        {"sentence": "___ era el cumpleaños de mi amiga Laura.", "answer": "Resulta que"},
+        {"sentence": "___, cuando todo el mundo estaba charlando, saqué la tarta.", "answer": "Más tarde"},
+        {"sentence": "___, la gente empezó a poner caras raras.", "answer": "De repente"},
+        {"sentence": "___ la probé y me di cuenta de que estaba salada.", "answer": "Entonces"},
+        {"sentence": "___ volví a hacer una tarta e invité a Laura.", "answer": "Al día siguiente"},
+        {"sentence": "___ hice un viaje con unas amigas a Portugal.", "answer": "Una vez"},
+        {"sentence": "___ teníamos un coche alquilado.", "answer": "Resulta que"},
+        {"sentence": "___ llegamos tarde a un camping.", "answer": "Un día"},
+        {"sentence": "___ teníamos que irnos.", "answer": "Al día siguiente"},
+        {"sentence": "___ nos dimos cuenta de que no teníamos batería.", "answer": "Entonces"},
+        {"sentence": "___ conseguimos ponerlo en marcha.", "answer": "Al final"},
+        {"sentence": "___ vi a tu hermano en el centro.", "answer": "El otro día"},
+        {"sentence": "___ decidí cambiar de trabajo.", "answer": "Un día"},
+        {"sentence": "___ oí un ruido muy fuerte.", "answer": "De repente"},
+        {"sentence": "Primero comimos y ___ fuimos al cine.", "answer": "luego"},
+        {"sentence": "___ llegaron los demás invitados.", "answer": "Más tarde"},
+        {"sentence": "Poco ___ empezó a llover.", "answer": "después"},
+        {"sentence": "___ comprendí todo lo que había pasado.", "answer": "Entonces"},
+        {"sentence": "___ se apagaron todas las luces.", "answer": "De repente"},
+        {"sentence": "___ todo salió bien.", "answer": "Al final"},
+        {"sentence": "___ conocí a un actor famoso.", "answer": "Una vez"},
+        {"sentence": "___ el tren no salía ese día.", "answer": "Resulta que"},
+        {"sentence": "___ descubrimos la verdad.", "answer": "Más tarde"},
+        {"sentence": "___ apareció un coche de la nada.", "answer": "De repente"},
+        {"sentence": "___ me di cuenta de mi error.", "answer": "Luego"},
+        {"sentence": "___ nos volvimos a ver.", "answer": "Después"},
+        {"sentence": "___ tuve un sueño muy extraño.", "answer": "Una vez"},
+        {"sentence": "___ todo había sido un malentendido.", "answer": "Resulta que"},
+        {"sentence": "___ fui a España de vacaciones.", "answer": "Una vez"},
+        {"sentence": "___ te cuento lo que pasó.", "answer": "Luego"},
+        {"sentence": "Unas horas ___ todo había cambiado.", "answer": "después"},
+        {"sentence": "___ empezó a correr sin decir nada.", "answer": "De repente"},
+        {"sentence": "___ hubo una fiesta increíble.", "answer": "Después"},
+        {"sentence": "___ no sabía qué hacer.", "answer": "Entonces"},
+        {"sentence": "___ encontré unas fotos antiguas.", "answer": "El otro día"},
+        {"sentence": "___ ya conocía a su familia.", "answer": "Resulta que"},
+        {"sentence": "___ fui al médico por primera vez.", "answer": "El otro día"},
+        {"sentence": "___ me llamó por teléfono.", "answer": "Más tarde"},
+        {"sentence": "___ sonó el timbre de la puerta.", "answer": "De repente"},
+        {"sentence": "___ llegué a casa y me acosté.", "answer": "Luego"},
+        {"sentence": "___ de la boda hubo una fiesta.", "answer": "Después"},
+        {"sentence": "___ todo terminó bien.", "answer": "Al final"},
+        {"sentence": "___ me perdí en el bosque.", "answer": "Una vez"},
+        {"sentence": "___ era mi vecino de toda la vida.", "answer": "Resulta que"},
+        {"sentence": "___ no pudimos encontrar el restaurante.", "answer": "Al final"},
+        {"sentence": "___ me pasó algo muy gracioso.", "answer": "El otro día"},
+        {"sentence": "___ se rompió el coche en medio de la carretera.", "answer": "De repente"},
+        {"sentence": "Estudié español y ___ viajé a México.", "answer": "luego"},
+        {"sentence": "___ de años nos volvimos a encontrar.", "answer": "Después"},
+        {"sentence": "___ fuimos a cenar a un restaurante.", "answer": "Más tarde"},
+        {"sentence": "___ llegó el taxi.", "answer": "Entonces"},
+        {"sentence": "___ vi que había olvidado las llaves.", "answer": "De repente"},
+        {"sentence": "___ conseguí hablar con ella.", "answer": "Al final"},
+        {"sentence": "___ me llamaste por teléfono.", "answer": "Entonces"},
+        {"sentence": "___ teníamos que cambiar de hotel.", "answer": "Resulta que"},
+        {"sentence": "___ conocí a mi mejor amigo.", "answer": "Una vez"},
+        {"sentence": "___ volvimos a casa muy cansados.", "answer": "Al final"},
+        {"sentence": "Salí de casa y ___ empezó a llover.", "answer": "luego"},
+        {"sentence": "___ no había nadie en la oficina.", "answer": "Resulta que"}
+      ],
+      "microTests": [
+        {"sentence": "___ me pasó una cosa horrible.", "answer": "El otro día", "hint": "На днях (начало истории)"},
+        {"sentence": "___ era el cumpleaños de mi amiga.", "answer": "Resulta que", "hint": "Оказалось, что... (объяснение)"},
+        {"sentence": "___, la gente empezó a poner caras raras.", "answer": "De repente", "hint": "Вдруг (внезапное событие)"},
+        {"sentence": "___ la probé y me di cuenta.", "answer": "Entonces", "hint": "Тогда (последовательность)"},
+        {"sentence": "___ volví a hacer una tarta.", "answer": "Al día siguiente", "hint": "На следующий день"},
+        {"sentence": "Primero comimos y ___ fuimos al cine.", "answer": "luego", "hint": "Потом (последовательность)"},
+        {"sentence": "___ llegaron los demás.", "answer": "Más tarde", "hint": "Позже"},
+        {"sentence": "Poco ___ empezó a llover.", "answer": "después", "hint": "Спустя немного"},
+        {"sentence": "___ conocí a un actor famoso.", "answer": "Una vez", "hint": "Однажды (начало истории)"},
+        {"sentence": "___ todo salió bien.", "answer": "Al final", "hint": "В конце концов (завершение)"},
+        {"sentence": "___ oí un ruido muy fuerte.", "answer": "De repente", "hint": "Вдруг (внезапно)"},
+        {"sentence": "___ teníamos un coche alquilado.", "answer": "Resulta que", "hint": "Оказалось, что..."},
+        {"sentence": "___ nos dimos cuenta del error.", "answer": "Entonces", "hint": "Тогда (осознание)"},
+        {"sentence": "___ vi a tu hermano en el centro.", "answer": "El otro día", "hint": "На днях"},
+        {"sentence": "___ conseguimos llegar a tiempo.", "answer": "Al final", "hint": "В конце концов (итог)"}
+      ]
     }
   ]
 }

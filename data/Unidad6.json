@@ -1811,6 +1811,250 @@
         {"sentence": "¡Qué casa ___ grande!", "answer": "más", "hint": "Qué + sust. + tan/más + adj."},
         {"sentence": "¡___ maravilla!", "answer": "Qué", "hint": "Qué + sustantivo"}
       ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Expresar planes: ir a, pensar, querer + infinitivo",
+      "hint": "voy a / pienso / quiero",
+      "rule": {
+        "title": "Выражение планов: IR A, PENSAR, QUERER + инфинитив",
+        "explanation": "В испанском языке для выражения планов на будущее используются три основные конструкции: IR A + infinitivo (собираться), PENSAR + infinitivo (думать/намереваться), QUERER + infinitivo (хотеть). Каждая имеет свой оттенок значения.",
+        "sections": [
+          {
+            "subtitle": "IR A + infinitivo (собираться, намереваться)",
+            "points": [
+              "<b>Voy a</b> viajar a España — Я собираюсь поехать в Испанию",
+              "<b>Vas a</b> estudiar medicina — Ты собираешься изучать медицину",
+              "<b>Vamos a</b> cenar fuera — Мы собираемся поужинать вне дома",
+              "Используется для конкретных планов в ближайшем будущем"
+            ]
+          },
+          {
+            "subtitle": "PENSAR + infinitivo (думать, намереваться)",
+            "points": [
+              "<b>Pienso</b> ver una película — Я думаю посмотреть фильм",
+              "<b>Piensas</b> cambiar de trabajo — Ты думаешь сменить работу",
+              "<b>Pensamos</b> quedarnos en casa — Мы думаем остаться дома",
+              "Используется для намерений, которые ещё не окончательны"
+            ]
+          },
+          {
+            "subtitle": "QUERER + infinitivo (хотеть)",
+            "points": [
+              "<b>Quiero</b> aprender español — Я хочу выучить испанский",
+              "<b>Quieres</b> ir al cine — Ты хочешь пойти в кино",
+              "<b>Queremos</b> conocer Barcelona — Мы хотим узнать Барселону",
+              "Выражает желание, которое может стать планом"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¿Qué vas a hacer este fin de semana?", "ru": "Что ты собираешься делать в эти выходные?"},
+          {"es": "Pienso ver una buena película.", "ru": "Я думаю посмотреть хороший фильм."},
+          {"es": "Quiero viajar a una isla caribeña.", "ru": "Я хочу поехать на карибский остров."},
+          {"es": "Vamos a tomar el sol todos los días.", "ru": "Мы собираемся загорать каждый день."}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ visitar el museo mañana. (yo, ir a)", "answer": "Voy a"},
+        {"sentence": "___ estudiar más español. (yo, pensar)", "answer": "Pienso"},
+        {"sentence": "___ ir al cine esta noche. (yo, querer)", "answer": "Quiero"},
+        {"sentence": "¿Qué ___ hacer este fin de semana? (tú, ir a)", "answer": "vas a"},
+        {"sentence": "___ cambiar de trabajo. (él, pensar)", "answer": "Piensa"},
+        {"sentence": "___ viajar a México. (ella, querer)", "answer": "Quiere"},
+        {"sentence": "___ cenar en un restaurante. (nosotros, ir a)", "answer": "Vamos a"},
+        {"sentence": "___ quedarnos en casa. (nosotros, pensar)", "answer": "Pensamos"},
+        {"sentence": "___ aprender a cocinar. (nosotros, querer)", "answer": "Queremos"},
+        {"sentence": "¿___ venir a la fiesta? (vosotros, ir a)", "answer": "Vais a"},
+        {"sentence": "___ buscar un nuevo piso. (ellos, pensar)", "answer": "Piensan"},
+        {"sentence": "___ conocer España. (ellos, querer)", "answer": "Quieren"},
+        {"sentence": "___ tomar el sol en la playa. (yo, ir a)", "answer": "Voy a"},
+        {"sentence": "___ hacer yoga todos los días. (yo, pensar)", "answer": "Pienso"},
+        {"sentence": "___ probar la comida local. (yo, querer)", "answer": "Quiero"},
+        {"sentence": "¿___ salir esta noche? (tú, querer)", "answer": "Quieres"},
+        {"sentence": "___ ver una película. (tú, ir a)", "answer": "Vas a"},
+        {"sentence": "¿Qué ___ hacer después del curso? (tú, pensar)", "answer": "piensas"},
+        {"sentence": "___ comprar un coche nuevo. (él, ir a)", "answer": "Va a"},
+        {"sentence": "___ montar en bicicleta. (ella, querer)", "answer": "Quiere"},
+        {"sentence": "___ empezar una dieta. (usted, pensar)", "answer": "Piensa"},
+        {"sentence": "___ reservar el hotel. (nosotros, ir a)", "answer": "Vamos a"},
+        {"sentence": "___ visitar a los abuelos. (nosotros, querer)", "answer": "Queremos"},
+        {"sentence": "___ hacer senderismo. (nosotros, pensar)", "answer": "Pensamos"},
+        {"sentence": "¿___ estudiar medicina? (vosotros, ir a)", "answer": "Vais a"},
+        {"sentence": "___ mudarse a otra ciudad. (ellos, pensar)", "answer": "Piensan"},
+        {"sentence": "___ aprender francés. (ustedes, querer)", "answer": "Quieren"},
+        {"sentence": "___ nadar en el mar. (yo, ir a)", "answer": "Voy a"},
+        {"sentence": "___ leer más libros este año. (yo, pensar)", "answer": "Pienso"},
+        {"sentence": "___ bailar salsa. (yo, querer)", "answer": "Quiero"},
+        {"sentence": "¿___ cocinar esta noche? (tú, ir a)", "answer": "Vas a"},
+        {"sentence": "___ descansar el fin de semana. (tú, pensar)", "answer": "Piensas"},
+        {"sentence": "¿___ venir con nosotros? (tú, querer)", "answer": "Quieres"},
+        {"sentence": "___ trabajar desde casa. (él, ir a)", "answer": "Va a"},
+        {"sentence": "___ ahorrar dinero. (ella, pensar)", "answer": "Piensa"},
+        {"sentence": "___ ver el partido. (él, querer)", "answer": "Quiere"},
+        {"sentence": "___ hacer un viaje largo. (nosotros, ir a)", "answer": "Vamos a"},
+        {"sentence": "___ celebrar mi cumpleaños. (nosotros, pensar)", "answer": "Pensamos"},
+        {"sentence": "___ comer paella. (nosotros, querer)", "answer": "Queremos"},
+        {"sentence": "¿___ hacer ejercicio? (vosotros, pensar)", "answer": "Pensáis"},
+        {"sentence": "___ terminar el proyecto. (ellos, ir a)", "answer": "Van a"},
+        {"sentence": "___ organizar una fiesta. (ellos, querer)", "answer": "Quieren"},
+        {"sentence": "___ levantarme temprano. (yo, ir a)", "answer": "Voy a"},
+        {"sentence": "___ correr una maratón. (yo, pensar)", "answer": "Pienso"},
+        {"sentence": "___ tocar la guitarra. (yo, querer)", "answer": "Quiero"},
+        {"sentence": "¿___ llamar a María? (tú, ir a)", "answer": "Vas a"},
+        {"sentence": "___ escribir un libro. (tú, pensar)", "answer": "Piensas"},
+        {"sentence": "¿___ ayudarme? (tú, querer)", "answer": "Quieres"},
+        {"sentence": "___ preparar la cena. (él, ir a)", "answer": "Va a"},
+        {"sentence": "___ quedarse en el hotel. (ella, pensar)", "answer": "Piensa"},
+        {"sentence": "___ probar el vino local. (él, querer)", "answer": "Quiere"},
+        {"sentence": "___ alquilar un coche. (nosotros, ir a)", "answer": "Vamos a"},
+        {"sentence": "___ visitar los museos. (nosotros, pensar)", "answer": "Pensamos"},
+        {"sentence": "___ conocer la cultura local. (nosotros, querer)", "answer": "Queremos"},
+        {"sentence": "¿___ viajar en tren? (vosotros, ir a)", "answer": "Vais a"},
+        {"sentence": "___ comprar recuerdos. (ellos, pensar)", "answer": "Piensan"},
+        {"sentence": "___ practicar español. (ustedes, querer)", "answer": "Quieren"},
+        {"sentence": "___ hacer fotos. (yo, ir a)", "answer": "Voy a"},
+        {"sentence": "___ relajarme en la piscina. (yo, pensar)", "answer": "Pienso"},
+        {"sentence": "___ disfrutar de las vacaciones. (yo, querer)", "answer": "Quiero"}
+      ],
+      "microTests": [
+        {"sentence": "___ visitar el museo mañana. (yo, ir a)", "answer": "Voy a", "hint": "IR A + infinitivo (yo)"},
+        {"sentence": "___ estudiar más español. (yo, pensar)", "answer": "Pienso", "hint": "PENSAR + infinitivo (yo)"},
+        {"sentence": "___ ir al cine. (yo, querer)", "answer": "Quiero", "hint": "QUERER + infinitivo (yo)"},
+        {"sentence": "¿Qué ___ hacer este fin de semana? (tú, ir a)", "answer": "vas a", "hint": "IR A + infinitivo (tú)"},
+        {"sentence": "___ cambiar de trabajo. (él, pensar)", "answer": "Piensa", "hint": "PENSAR + infinitivo (él)"},
+        {"sentence": "___ viajar a México. (ella, querer)", "answer": "Quiere", "hint": "QUERER + infinitivo (ella)"},
+        {"sentence": "___ cenar en un restaurante. (nosotros, ir a)", "answer": "Vamos a", "hint": "IR A + infinitivo (nosotros)"},
+        {"sentence": "___ quedarnos en casa. (nosotros, pensar)", "answer": "Pensamos", "hint": "PENSAR + infinitivo (nosotros)"},
+        {"sentence": "___ aprender a cocinar. (nosotros, querer)", "answer": "Queremos", "hint": "QUERER + infinitivo (nosotros)"},
+        {"sentence": "___ conocer España. (ellos, querer)", "answer": "Quieren", "hint": "QUERER + infinitivo (ellos)"},
+        {"sentence": "___ terminar el proyecto. (ellos, ir a)", "answer": "Van a", "hint": "IR A + infinitivo (ellos)"},
+        {"sentence": "___ buscar un nuevo piso. (ellos, pensar)", "answer": "Piensan", "hint": "PENSAR + infinitivo (ellos)"}
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Valoraciones: positivas y negativas",
+      "hint": "genial / buenísimo / increíble / un rollo / fatal / un horror",
+      "rule": {
+        "title": "Valoraciones: expresiones positivas y negativas",
+        "explanation": "En español usamos diferentes expresiones para valorar experiencias, lugares y cosas. Algunas expresiones son claramente positivas, otras negativas, y algunas pueden ser neutrales dependiendo del contexto.",
+        "sections": [
+          {
+            "subtitle": "Valoraciones positivas",
+            "points": [
+              "<b>genial</b> — отлично, гениально",
+              "<b>buenísimo/a</b> — отличный, превосходный",
+              "<b>increíble</b> — невероятный, потрясающий",
+              "<b>fantástico/a</b> — фантастический",
+              "<b>una maravilla</b> — чудо, восхитительно",
+              "<b>estupendo/a</b> — замечательный"
+            ]
+          },
+          {
+            "subtitle": "Valoraciones negativas",
+            "points": [
+              "<b>fatal</b> — ужасно, очень плохо",
+              "<b>un rollo</b> — тоска, скучища",
+              "<b>un horror</b> — кошмар, ужас",
+              "<b>un aburrimiento</b> — скука",
+              "<b>horrible</b> — ужасный",
+              "<b>malísimo/a</b> — очень плохой"
+            ]
+          },
+          {
+            "subtitle": "Construcciones típicas",
+            "points": [
+              "Lo pasé <b>genial</b> — Я отлично провёл время",
+              "Me pareció <b>buenísimo</b> — Мне показалось отличным",
+              "Fue <b>un rollo</b> — Это была тоска",
+              "Es <b>una maravilla</b> — Это чудо"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "El verano pasado lo pasé genial.", "ru": "Прошлым летом я отлично провёл время."},
+          {"es": "La película me pareció buenísima.", "ru": "Фильм показался мне отличным."},
+          {"es": "El restaurante fue un horror.", "ru": "Ресторан был кошмаром."},
+          {"es": "El concierto fue una maravilla.", "ru": "Концерт был восхитительным."}
+        ]
+      },
+      "questions": [
+        {"sentence": "El verano pasado lo pasé ___. (muy bien)", "answer": "genial"},
+        {"sentence": "La película me pareció ___. (muy buena)", "answer": "buenísima"},
+        {"sentence": "El restaurante fue ___. (muy malo)", "answer": "un horror"},
+        {"sentence": "El concierto fue ___. (maravilloso)", "answer": "una maravilla"},
+        {"sentence": "El partido estuvo ___. (muy aburrido)", "answer": "un rollo"},
+        {"sentence": "Lo pasé ___ en la fiesta. (muy mal)", "answer": "fatal"},
+        {"sentence": "El viaje fue ___. (fantástico)", "answer": "increíble"},
+        {"sentence": "La comida estaba ___. (excelente)", "answer": "buenísima"},
+        {"sentence": "El museo me pareció ___. (muy interesante)", "answer": "genial"},
+        {"sentence": "La obra de teatro fue ___. (aburrida)", "answer": "un rollo"},
+        {"sentence": "Las vacaciones fueron ___. (maravillosas)", "answer": "una maravilla"},
+        {"sentence": "El servicio del hotel fue ___. (horrible)", "answer": "un horror"},
+        {"sentence": "El libro es ___. (excelente)", "answer": "buenísimo"},
+        {"sentence": "Lo pasamos ___ en el parque. (muy bien)", "answer": "genial"},
+        {"sentence": "La exposición me pareció ___. (fantástica)", "answer": "increíble"},
+        {"sentence": "La conferencia fue ___. (muy aburrida)", "answer": "un aburrimiento"},
+        {"sentence": "El postre estaba ___. (delicioso)", "answer": "buenísimo"},
+        {"sentence": "El espectáculo fue ___. (impresionante)", "answer": "una maravilla"},
+        {"sentence": "La película fue ___. (terrible)", "answer": "un horror"},
+        {"sentence": "El ambiente del bar es ___. (muy bueno)", "answer": "genial"},
+        {"sentence": "La cena estuvo ___. (excelente)", "answer": "buenísima"},
+        {"sentence": "El tour fue ___. (muy aburrido)", "answer": "un rollo"},
+        {"sentence": "La playa es ___. (preciosa)", "answer": "una maravilla"},
+        {"sentence": "Lo pasé ___ en ese viaje. (muy mal)", "answer": "fatal"},
+        {"sentence": "El hotel me pareció ___. (estupendo)", "answer": "increíble"},
+        {"sentence": "La serie es ___. (muy buena)", "answer": "buenísima"},
+        {"sentence": "El concierto estuvo ___. (fantástico)", "answer": "genial"},
+        {"sentence": "La reunión fue ___. (muy aburrida)", "answer": "un rollo"},
+        {"sentence": "El paisaje es ___. (espectacular)", "answer": "una maravilla"},
+        {"sentence": "El tráfico fue ___. (terrible)", "answer": "un horror"},
+        {"sentence": "El café está ___. (muy bueno)", "answer": "buenísimo"},
+        {"sentence": "Las clases son ___. (muy interesantes)", "answer": "geniales"},
+        {"sentence": "El documental me pareció ___. (excelente)", "answer": "increíble"},
+        {"sentence": "La fiesta fue ___. (aburridísima)", "answer": "un rollo"},
+        {"sentence": "El atardecer fue ___. (precioso)", "answer": "una maravilla"},
+        {"sentence": "El examen fue ___. (muy difícil)", "answer": "un horror"},
+        {"sentence": "La paella estaba ___. (deliciosa)", "answer": "buenísima"},
+        {"sentence": "Lo pasamos ___ en la boda. (estupendamente)", "answer": "genial"},
+        {"sentence": "El musical fue ___. (impresionante)", "answer": "increíble"},
+        {"sentence": "El discurso fue ___. (larguísimo y aburrido)", "answer": "un rollo"},
+        {"sentence": "La vista es ___. (espectacular)", "answer": "una maravilla"},
+        {"sentence": "El vuelo fue ___. (muy malo)", "answer": "fatal"},
+        {"sentence": "El vino estaba ___. (excelente)", "answer": "buenísimo"},
+        {"sentence": "La experiencia fue ___. (fantástica)", "answer": "genial"},
+        {"sentence": "El partido me pareció ___. (muy emocionante)", "answer": "increíble"},
+        {"sentence": "La película fue ___. (aburridísima)", "answer": "un aburrimiento"},
+        {"sentence": "El jardín es ___. (precioso)", "answer": "una maravilla"},
+        {"sentence": "El viaje en autobús fue ___. (horrible)", "answer": "un horror"},
+        {"sentence": "La tarta estaba ___. (riquísima)", "answer": "buenísima"},
+        {"sentence": "Lo pasé ___ con mis amigos. (muy bien)", "answer": "genial"},
+        {"sentence": "El circo fue ___. (espectacular)", "answer": "increíble"},
+        {"sentence": "La espera fue ___. (interminable)", "answer": "un rollo"},
+        {"sentence": "El castillo es ___. (impresionante)", "answer": "una maravilla"},
+        {"sentence": "El tiempo fue ___. (muy malo)", "answer": "fatal"},
+        {"sentence": "El helado estaba ___. (delicioso)", "answer": "buenísimo"},
+        {"sentence": "La actuación fue ___. (brillante)", "answer": "genial"},
+        {"sentence": "El lugar me pareció ___. (mágico)", "answer": "increíble"},
+        {"sentence": "El documental fue ___. (muy largo y aburrido)", "answer": "un rollo"},
+        {"sentence": "La catedral es ___. (impresionante)", "answer": "una maravilla"},
+        {"sentence": "La situación fue ___. (terrible)", "answer": "un horror"}
+      ],
+      "microTests": [
+        {"sentence": "Lo pasé ___ en la fiesta. (muy bien)", "answer": "genial", "hint": "Expresión positiva para experiencia"},
+        {"sentence": "La película me pareció ___. (muy buena)", "answer": "buenísima", "hint": "Superlativo positivo"},
+        {"sentence": "El concierto fue ___. (espectacular)", "answer": "increíble", "hint": "Valoración muy positiva"},
+        {"sentence": "El restaurante fue ___. (muy malo)", "answer": "un horror", "hint": "Expresión negativa fuerte"},
+        {"sentence": "La reunión fue ___. (muy aburrida)", "answer": "un rollo", "hint": "Expresión negativa (aburrimiento)"},
+        {"sentence": "Lo pasé ___ en ese viaje. (muy mal)", "answer": "fatal", "hint": "Expresión negativa"},
+        {"sentence": "Las vacaciones fueron ___. (maravillosas)", "answer": "una maravilla", "hint": "Expresión muy positiva"},
+        {"sentence": "La comida estaba ___. (excelente)", "answer": "buenísima", "hint": "Superlativo positivo"},
+        {"sentence": "El espectáculo fue ___. (impresionante)", "answer": "una maravilla", "hint": "Valoración muy positiva"},
+        {"sentence": "La conferencia fue ___. (muy aburrida)", "answer": "un aburrimiento", "hint": "Expresión negativa (aburrimiento)"},
+        {"sentence": "El museo me pareció ___. (fantástico)", "answer": "genial", "hint": "Expresión positiva"},
+        {"sentence": "El servicio fue ___. (terrible)", "answer": "un horror", "hint": "Expresión negativa fuerte"}
+      ]
     }
   ],
   "verbos": {

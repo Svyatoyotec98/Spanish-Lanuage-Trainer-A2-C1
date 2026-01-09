@@ -1147,6 +1147,74 @@
         {"sentence": "Ella ___ (vestir) muy elegante.", "answer": "viste"},
         {"sentence": "Ellos ___ (vestir) de negro.", "answer": "visten"}
       ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Describir personas: ser, tener, llevar",
+      "hint": "ser = características permanentes | tener = posesión | llevar = ropa/accesorios",
+      "rule": {
+        "title": "DESCRIBIR PERSONAS",
+        "explanation": "Para describir a una persona usamos diferentes verbos según el tipo de característica:",
+        "sections": [
+          {
+            "subtitle": "SER - características permanentes",
+            "points": [
+              "Físicas: <b>Soy alto, bajo, gordo, delgado, guapo, feo</b>",
+              "De pelo: <b>Es rubio, moreno, pelirrojo, castaño, calvo</b>",
+              "Carácter: <b>Es simpático, alegre, tímido, inteligente</b>"
+            ]
+          },
+          {
+            "subtitle": "TENER - partes del cuerpo",
+            "points": [
+              "<b>Tiene</b> el pelo largo/corto/liso/rizado/ondulado",
+              "<b>Tiene</b> los ojos azules/verdes/marrones/negros",
+              "<b>Tiene</b> barba/bigote/pecas"
+            ]
+          },
+          {
+            "subtitle": "LLEVAR - ropa, accesorios, estilo",
+            "points": [
+              "<b>Lleva</b> gafas/barba/bigote",
+              "<b>Lleva</b> el pelo largo/corto/recogido",
+              "<b>Lleva</b> un vestido/una camiseta/pantalones"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "María es alta y delgada.", "ru": "Мария высокая и худая."},
+          {"es": "Tiene el pelo largo y rizado.", "ru": "У неё длинные и кудрявые волосы."},
+          {"es": "Lleva gafas desde pequeño.", "ru": "Он носит очки с детства."},
+          {"es": "Es rubio y tiene los ojos azules.", "ru": "Он блондин с голубыми глазами."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Mi padre ___ (ser) muy alto.", "answer": "es"},
+        {"sentence": "Ella ___ (ser) rubia y ___ (tener) los ojos verdes.", "answer": "es, tiene"},
+        {"sentence": "Mi hermano ___ (tener) el pelo muy corto.", "answer": "tiene"},
+        {"sentence": "Juan ___ (llevar) barba desde hace años.", "answer": "lleva"},
+        {"sentence": "Yo ___ (ser) moreno y ___ (tener) los ojos marrones.", "answer": "soy, tengo"},
+        {"sentence": "Mi abuela ___ (tener) el pelo blanco.", "answer": "tiene"},
+        {"sentence": "Ella siempre ___ (llevar) gafas de sol.", "answer": "lleva"},
+        {"sentence": "Mi madre ___ (ser) muy guapa.", "answer": "es"},
+        {"sentence": "Él ___ (tener) los ojos muy bonitos.", "answer": "tiene"},
+        {"sentence": "Ana ___ (llevar) el pelo recogido.", "answer": "lleva"},
+        {"sentence": "Nosotros ___ (ser) bastante altos.", "answer": "somos"},
+        {"sentence": "Mis hijos ___ (tener) el pelo rizado como yo.", "answer": "tienen"},
+        {"sentence": "¿Tú ___ (llevar) gafas?", "answer": "llevas"},
+        {"sentence": "Mi abuelo ___ (ser) calvo.", "answer": "es"},
+        {"sentence": "Ella ___ (tener) la piel muy clara.", "answer": "tiene"},
+        {"sentence": "Pedro ___ (llevar) bigote y barba.", "answer": "lleva"},
+        {"sentence": "Los gemelos ___ (ser) idénticos.", "answer": "son"},
+        {"sentence": "Mi prima ___ (tener) pecas en la cara.", "answer": "tiene"},
+        {"sentence": "Yo ___ (llevar) el pelo largo.", "answer": "llevo"},
+        {"sentence": "Él ___ (ser) muy atlético.", "answer": "es"},
+        {"sentence": "Ella ___ (tener) una sonrisa muy bonita.", "answer": "tiene"},
+        {"sentence": "Mi padre ___ (llevar) gafas para leer.", "answer": "lleva"},
+        {"sentence": "¿Cómo ___ (ser) tu novio? - ___ (ser) alto y moreno.", "answer": "es, Es"},
+        {"sentence": "Yo ___ (tener) los ojos de mi madre.", "answer": "tengo"},
+        {"sentence": "Ella siempre ___ (llevar) ropa elegante.", "answer": "lleva"}
+      ]
     }
   ],
   "verbos": {

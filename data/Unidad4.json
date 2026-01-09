@@ -1,20 +1,1219 @@
 {
   "id": "unidad_4",
-  "title": "Unidad 4",
-  "categories": {
-    "sustantivos": [
-      {"spanish": "el ejemplo", "ru": "пример"},
-      {"spanish": "la palabra", "ru": "слово"},
-      {"spanish": "el texto", "ru": "текст"}
+  "title": "Unidad 4: Hogar, dulce hogar",
+  "groups": {
+    "TIPOS_DE_VIVIENDA": [
+      {
+        "spanish": "el piso",
+        "ru": "квартира",
+        "type": "sustantivo",
+        "icon": "building",
+        "useIcon": true,
+        "hardSentences": [
+          "Vivo en un ___ en el centro.",
+          "El ___ tiene tres habitaciones.",
+          "Busco un ___ amueblado.",
+          "Mi ___ está en el quinto piso."
+        ],
+        "hardSentencesRu": [
+          "Я живу в квартире в центре.",
+          "В квартире три комнаты.",
+          "Ищу меблированную квартиру.",
+          "Моя квартира на пятом этаже."
+        ]
+      },
+      {
+        "spanish": "el apartamento",
+        "ru": "апартаменты",
+        "type": "sustantivo",
+        "icon": "building",
+        "useIcon": true,
+        "hardSentences": [
+          "Alquilamos un ___ en la playa.",
+          "El ___ es pequeño pero acogedor.",
+          "Tienen un ___ de vacaciones.",
+          "El ___ está cerca del mar."
+        ],
+        "hardSentencesRu": [
+          "Мы снимаем апартаменты на пляже.",
+          "Апартаменты маленькие, но уютные.",
+          "У них есть апартаменты для отпуска.",
+          "Апартаменты находятся рядом с морем."
+        ]
+      },
+      {
+        "spanish": "el estudio",
+        "ru": "студия",
+        "type": "sustantivo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "Vivo en un ___ de 40 metros.",
+          "El ___ tiene cocina americana.",
+          "Es un ___ muy luminoso.",
+          "Busco un ___ barato."
+        ],
+        "hardSentencesRu": [
+          "Я живу в студии 40 метров.",
+          "В студии американская кухня.",
+          "Это очень светлая студия.",
+          "Ищу дешёвую студию."
+        ]
+      },
+      {
+        "spanish": "el ático",
+        "ru": "пентхаус/мансарда",
+        "type": "sustantivo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene una terraza enorme.",
+          "Viven en un ___ con vistas.",
+          "El ___ es el más caro del edificio.",
+          "Sueño con tener un ___."
+        ],
+        "hardSentencesRu": [
+          "В пентхаусе огромная терраса.",
+          "Они живут в пентхаусе с видом.",
+          "Пентхаус самый дорогой в здании.",
+          "Мечтаю иметь пентхаус."
+        ]
+      },
+      {
+        "spanish": "la casa",
+        "ru": "дом",
+        "type": "sustantivo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ tiene jardín.",
+          "La ___ es muy grande.",
+          "Quiero comprar una ___.",
+          "La ___ está en las afueras."
+        ],
+        "hardSentencesRu": [
+          "В моём доме есть сад.",
+          "Дом очень большой.",
+          "Хочу купить дом.",
+          "Дом находится на окраине."
+        ]
+      },
+      {
+        "spanish": "la casa adosada",
+        "ru": "таунхаус",
+        "type": "sustantivo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "Viven en una ___ con garaje.",
+          "La ___ tiene dos plantas.",
+          "Alquilamos una ___ para el verano.",
+          "Las ___ son más baratas que los chalés."
+        ],
+        "hardSentencesRu": [
+          "Они живут в таунхаусе с гаражом.",
+          "В таунхаусе два этажа.",
+          "Мы снимаем таунхаус на лето.",
+          "Таунхаусы дешевле, чем коттеджи."
+        ]
+      },
+      {
+        "spanish": "el chalé",
+        "ru": "коттедж/вилла",
+        "type": "sustantivo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene piscina.",
+          "Quieren comprar un ___ en la costa.",
+          "El ___ es de nueva construcción.",
+          "Viven en un ___ con jardín."
+        ],
+        "hardSentencesRu": [
+          "В коттедже есть бассейн.",
+          "Они хотят купить коттедж на побережье.",
+          "Коттедж новой постройки.",
+          "Они живут в коттедже с садом."
+        ]
+      },
+      {
+        "spanish": "la habitación",
+        "ru": "комната/спальня",
+        "type": "sustantivo",
+        "icon": "bed",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ es pequeña.",
+          "El piso tiene tres ___.",
+          "La ___ da al jardín.",
+          "Duermo en la ___ de invitados."
+        ],
+        "hardSentencesRu": [
+          "Моя комната маленькая.",
+          "В квартире три комнаты.",
+          "Комната выходит в сад.",
+          "Я сплю в гостевой комнате."
+        ]
+      }
     ],
-    "adjetivos": [
-      {"spanish": "nuevo", "ru": "новый"},
-      {"spanish": "viejo", "ru": "старый"}
+    "PARTES_DE_LA_CASA": [
+      {
+        "spanish": "el salón",
+        "ru": "гостиная",
+        "type": "sustantivo",
+        "icon": "couch",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es muy amplio.",
+          "Vemos la tele en el ___.",
+          "El ___ tiene mucha luz.",
+          "Hay un sofá grande en el ___."
+        ],
+        "hardSentencesRu": [
+          "Гостиная очень просторная.",
+          "Мы смотрим телевизор в гостиной.",
+          "В гостиной много света.",
+          "В гостиной большой диван."
+        ]
+      },
+      {
+        "spanish": "la cocina",
+        "ru": "кухня",
+        "type": "sustantivo",
+        "icon": "utensils",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ está totalmente equipada.",
+          "Cocino en la ___ todos los días.",
+          "La ___ es pequeña pero funcional.",
+          "Hay una mesa en la ___."
+        ],
+        "hardSentencesRu": [
+          "Кухня полностью оборудована.",
+          "Я готовлю на кухне каждый день.",
+          "Кухня маленькая, но функциональная.",
+          "На кухне есть стол."
+        ]
+      },
+      {
+        "spanish": "el baño",
+        "ru": "ванная",
+        "type": "sustantivo",
+        "icon": "bath",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene ducha y bañera.",
+          "El piso tiene dos ___.",
+          "El ___ es muy moderno.",
+          "Hay un espejo grande en el ___."
+        ],
+        "hardSentencesRu": [
+          "В ванной есть душ и ванна.",
+          "В квартире две ванные.",
+          "Ванная очень современная.",
+          "В ванной большое зеркало."
+        ]
+      },
+      {
+        "spanish": "el dormitorio",
+        "ru": "спальня",
+        "type": "sustantivo",
+        "icon": "bed",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ principal tiene baño propio.",
+          "Hay dos ___ en el piso.",
+          "El ___ es muy tranquilo.",
+          "Duermo en el ___ de atrás."
+        ],
+        "hardSentencesRu": [
+          "В главной спальне своя ванная.",
+          "В квартире две спальни.",
+          "Спальня очень тихая.",
+          "Я сплю в задней спальне."
+        ]
+      },
+      {
+        "spanish": "el despacho",
+        "ru": "кабинет",
+        "type": "sustantivo",
+        "icon": "laptop",
+        "useIcon": true,
+        "hardSentences": [
+          "Trabajo desde casa en el ___.",
+          "El ___ tiene una mesa grande.",
+          "Necesito un ___ para estudiar.",
+          "El ___ está al lado del salón."
+        ],
+        "hardSentencesRu": [
+          "Я работаю из дома в кабинете.",
+          "В кабинете большой стол.",
+          "Мне нужен кабинет для учёбы.",
+          "Кабинет рядом с гостиной."
+        ]
+      },
+      {
+        "spanish": "la terraza",
+        "ru": "терраса",
+        "type": "sustantivo",
+        "icon": "sun",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ tiene vistas al mar.",
+          "Desayunamos en la ___.",
+          "La ___ es de 20 metros cuadrados.",
+          "Hay plantas en la ___."
+        ],
+        "hardSentencesRu": [
+          "С террасы вид на море.",
+          "Мы завтракаем на террасе.",
+          "Терраса 20 квадратных метров.",
+          "На террасе есть растения."
+        ]
+      },
+      {
+        "spanish": "el balcón",
+        "ru": "балкон",
+        "type": "sustantivo",
+        "icon": "sun",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ da a la calle.",
+          "Tenemos flores en el ___.",
+          "El ___ es pequeño.",
+          "Tomo el café en el ___."
+        ],
+        "hardSentencesRu": [
+          "Балкон выходит на улицу.",
+          "У нас цветы на балконе.",
+          "Балкон маленький.",
+          "Я пью кофе на балконе."
+        ]
+      },
+      {
+        "spanish": "el garaje",
+        "ru": "гараж",
+        "type": "sustantivo",
+        "icon": "car",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene dos plazas.",
+          "El coche está en el ___.",
+          "El piso incluye ___.",
+          "El ___ está en el sótano."
+        ],
+        "hardSentencesRu": [
+          "В гараже два места.",
+          "Машина в гараже.",
+          "Квартира включает гараж.",
+          "Гараж в подвале."
+        ]
+      },
+      {
+        "spanish": "el jardín",
+        "ru": "сад",
+        "type": "sustantivo",
+        "icon": "tree",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene muchas flores.",
+          "Los niños juegan en el ___.",
+          "El ___ es muy grande.",
+          "Hay una piscina en el ___."
+        ],
+        "hardSentencesRu": [
+          "В саду много цветов.",
+          "Дети играют в саду.",
+          "Сад очень большой.",
+          "В саду есть бассейн."
+        ]
+      },
+      {
+        "spanish": "la entrada",
+        "ru": "прихожая/вход",
+        "type": "sustantivo",
+        "icon": "door-open",
+        "useIcon": true,
+        "hardSentences": [
+          "Deja las llaves en la ___.",
+          "La ___ es amplia.",
+          "Hay un espejo en la ___.",
+          "El perchero está en la ___."
+        ],
+        "hardSentencesRu": [
+          "Оставь ключи в прихожей.",
+          "Прихожая просторная.",
+          "В прихожей есть зеркало.",
+          "Вешалка в прихожей."
+        ]
+      },
+      {
+        "spanish": "la planta baja",
+        "ru": "первый этаж",
+        "type": "sustantivo",
+        "icon": "building",
+        "useIcon": true,
+        "hardSentences": [
+          "La cocina está en la ___.",
+          "Vivimos en la ___.",
+          "En la ___ hay un garaje.",
+          "El salón está en la ___."
+        ],
+        "hardSentencesRu": [
+          "Кухня на первом этаже.",
+          "Мы живём на первом этаже.",
+          "На первом этаже гараж.",
+          "Гостиная на первом этаже."
+        ]
+      },
+      {
+        "spanish": "el suelo",
+        "ru": "пол",
+        "type": "sustantivo",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es de parqué.",
+          "Hay una alfombra en el ___.",
+          "El ___ está frío.",
+          "El libro está en el ___."
+        ],
+        "hardSentencesRu": [
+          "Пол паркетный.",
+          "На полу ковёр.",
+          "Пол холодный.",
+          "Книга на полу."
+        ]
+      },
+      {
+        "spanish": "la pared",
+        "ru": "стена",
+        "type": "sustantivo",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay un cuadro en la ___.",
+          "La ___ es blanca.",
+          "Quiero pintar la ___ de azul.",
+          "El espejo está en la ___."
+        ],
+        "hardSentencesRu": [
+          "На стене картина.",
+          "Стена белая.",
+          "Хочу покрасить стену в синий.",
+          "Зеркало на стене."
+        ]
+      }
     ],
-    "verbos": [
-      {"spanish": "crear", "ru": "создавать"},
-      {"spanish": "usar", "ru": "использовать"}
+    "MUEBLES_Y_OBJETOS": [
+      {
+        "spanish": "el sofá",
+        "ru": "диван",
+        "type": "sustantivo",
+        "icon": "couch",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es muy cómodo.",
+          "Hay un ___ de piel en el salón.",
+          "Me siento en el ___ a ver la tele.",
+          "El ___ es de tres plazas."
+        ],
+        "hardSentencesRu": [
+          "Диван очень удобный.",
+          "В гостиной кожаный диван.",
+          "Я сажусь на диван смотреть телевизор.",
+          "Диван трёхместный."
+        ]
+      },
+      {
+        "spanish": "el sillón",
+        "ru": "кресло",
+        "type": "sustantivo",
+        "icon": "chair",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo lee en el ___.",
+          "El ___ es de cuero.",
+          "Hay un ___ al lado de la ventana.",
+          "El ___ es muy cómodo."
+        ],
+        "hardSentencesRu": [
+          "Мой дедушка читает в кресле.",
+          "Кресло кожаное.",
+          "У окна стоит кресло.",
+          "Кресло очень удобное."
+        ]
+      },
+      {
+        "spanish": "la mesa",
+        "ru": "стол",
+        "type": "sustantivo",
+        "icon": "table",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ del comedor es grande.",
+          "Hay libros en la ___.",
+          "La ___ es de cristal.",
+          "Comemos en la ___."
+        ],
+        "hardSentencesRu": [
+          "Обеденный стол большой.",
+          "На столе книги.",
+          "Стол стеклянный.",
+          "Мы едим за столом."
+        ]
+      },
+      {
+        "spanish": "la silla",
+        "ru": "стул",
+        "type": "sustantivo",
+        "icon": "chair",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es de madera.",
+          "Hay cuatro ___ en la cocina.",
+          "Siéntate en esta ___.",
+          "La ___ es muy cómoda."
+        ],
+        "hardSentencesRu": [
+          "Стул деревянный.",
+          "На кухне четыре стула.",
+          "Садись на этот стул.",
+          "Стул очень удобный."
+        ]
+      },
+      {
+        "spanish": "la cama",
+        "ru": "кровать",
+        "type": "sustantivo",
+        "icon": "bed",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es muy grande.",
+          "Duermo en una ___ doble.",
+          "La ___ está en el dormitorio.",
+          "Quiero una ___ nueva."
+        ],
+        "hardSentencesRu": [
+          "Кровать очень большая.",
+          "Я сплю на двуспальной кровати.",
+          "Кровать в спальне.",
+          "Хочу новую кровать."
+        ]
+      },
+      {
+        "spanish": "el armario",
+        "ru": "шкаф",
+        "type": "sustantivo",
+        "icon": "archive",
+        "useIcon": true,
+        "hardSentences": [
+          "La ropa está en el ___.",
+          "El ___ es de madera.",
+          "Necesito un ___ más grande.",
+          "El ___ tiene espejo."
+        ],
+        "hardSentencesRu": [
+          "Одежда в шкафу.",
+          "Шкаф деревянный.",
+          "Мне нужен шкаф побольше.",
+          "В шкафу есть зеркало."
+        ]
+      },
+      {
+        "spanish": "la estantería",
+        "ru": "стеллаж/полка",
+        "type": "sustantivo",
+        "icon": "book",
+        "useIcon": true,
+        "hardSentences": [
+          "Los libros están en la ___.",
+          "La ___ es de metal.",
+          "Hay una ___ en el salón.",
+          "La ___ está llena."
+        ],
+        "hardSentencesRu": [
+          "Книги на полке.",
+          "Стеллаж металлический.",
+          "В гостиной есть стеллаж.",
+          "Стеллаж заполнен."
+        ]
+      },
+      {
+        "spanish": "la lámpara",
+        "ru": "лампа",
+        "type": "sustantivo",
+        "icon": "lightbulb",
+        "useIcon": true,
+        "hardSentences": [
+          "Enciende la ___, por favor.",
+          "La ___ es de pie.",
+          "Hay una ___ en la mesilla.",
+          "La ___ da poca luz."
+        ],
+        "hardSentencesRu": [
+          "Включи лампу, пожалуйста.",
+          "Лампа напольная.",
+          "На тумбочке лампа.",
+          "Лампа даёт мало света."
+        ]
+      },
+      {
+        "spanish": "la alfombra",
+        "ru": "ковёр",
+        "type": "sustantivo",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es muy suave.",
+          "Hay una ___ debajo de la mesa.",
+          "La ___ es de lana.",
+          "Quiero comprar una ___ nueva."
+        ],
+        "hardSentencesRu": [
+          "Ковёр очень мягкий.",
+          "Под столом ковёр.",
+          "Ковёр шерстяной.",
+          "Хочу купить новый ковёр."
+        ]
+      },
+      {
+        "spanish": "el espejo",
+        "ru": "зеркало",
+        "type": "sustantivo",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay un ___ en el baño.",
+          "Me miro en el ___.",
+          "El ___ es muy grande.",
+          "El ___ está en la entrada."
+        ],
+        "hardSentencesRu": [
+          "В ванной зеркало.",
+          "Я смотрюсь в зеркало.",
+          "Зеркало очень большое.",
+          "Зеркало в прихожей."
+        ]
+      },
+      {
+        "spanish": "la mesilla de noche",
+        "ru": "тумбочка",
+        "type": "sustantivo",
+        "icon": "table",
+        "useIcon": true,
+        "hardSentences": [
+          "El libro está en la ___.",
+          "Hay una lámpara en la ___.",
+          "La ___ es de madera.",
+          "Tengo dos ___ en mi dormitorio."
+        ],
+        "hardSentencesRu": [
+          "Книга на тумбочке.",
+          "На тумбочке лампа.",
+          "Тумбочка деревянная.",
+          "В моей спальне две тумбочки."
+        ]
+      },
+      {
+        "spanish": "el cojín",
+        "ru": "подушка (декоративная)",
+        "type": "sustantivo",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay varios ___ en el sofá.",
+          "El ___ es de tela.",
+          "Me gusta este ___ naranja.",
+          "Pon el ___ en el sillón."
+        ],
+        "hardSentencesRu": [
+          "На диване несколько подушек.",
+          "Подушка тканевая.",
+          "Мне нравится эта оранжевая подушка.",
+          "Положи подушку на кресло."
+        ]
+      },
+      {
+        "spanish": "el cuadro",
+        "ru": "картина",
+        "type": "sustantivo",
+        "icon": "image",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay un ___ en la pared.",
+          "El ___ es muy bonito.",
+          "Compré este ___ en el mercado.",
+          "El ___ es de un pintor famoso."
+        ],
+        "hardSentencesRu": [
+          "На стене картина.",
+          "Картина очень красивая.",
+          "Я купил эту картину на рынке.",
+          "Картина известного художника."
+        ]
+      },
+      {
+        "spanish": "la nevera",
+        "ru": "холодильник",
+        "type": "sustantivo",
+        "icon": "snowflake",
+        "useIcon": true,
+        "hardSentences": [
+          "La leche está en la ___.",
+          "La ___ está vacía.",
+          "Pon la comida en la ___.",
+          "Necesito una ___ nueva."
+        ],
+        "hardSentencesRu": [
+          "Молоко в холодильнике.",
+          "Холодильник пустой.",
+          "Положи еду в холодильник.",
+          "Мне нужен новый холодильник."
+        ]
+      },
+      {
+        "spanish": "la lavadora",
+        "ru": "стиральная машина",
+        "type": "sustantivo",
+        "icon": "cog",
+        "useIcon": true,
+        "hardSentences": [
+          "Pon la ropa en la ___.",
+          "La ___ está en el baño.",
+          "La ___ hace ruido.",
+          "Necesito usar la ___."
+        ],
+        "hardSentencesRu": [
+          "Положи одежду в стиральную машину.",
+          "Стиральная машина в ванной.",
+          "Стиральная машина шумит.",
+          "Мне нужно воспользоваться стиральной машиной."
+        ]
+      },
+      {
+        "spanish": "el horno",
+        "ru": "духовка",
+        "type": "sustantivo",
+        "icon": "fire",
+        "useIcon": true,
+        "hardSentences": [
+          "El pastel está en el ___.",
+          "Precalienta el ___ a 180 grados.",
+          "El ___ es nuevo.",
+          "Cocino en el ___ los domingos."
+        ],
+        "hardSentencesRu": [
+          "Торт в духовке.",
+          "Разогрей духовку до 180 градусов.",
+          "Духовка новая.",
+          "Я готовлю в духовке по воскресеньям."
+        ]
+      },
+      {
+        "spanish": "la ducha",
+        "ru": "душ",
+        "type": "sustantivo",
+        "icon": "shower",
+        "useIcon": true,
+        "hardSentences": [
+          "Me ducho en la ___ todas las mañanas.",
+          "La ___ tiene agua caliente.",
+          "La ___ es muy grande.",
+          "Prefiero la ___ a la bañera."
+        ],
+        "hardSentencesRu": [
+          "Я принимаю душ каждое утро.",
+          "В душе горячая вода.",
+          "Душ очень большой.",
+          "Я предпочитаю душ ванне."
+        ]
+      },
+      {
+        "spanish": "la bañera",
+        "ru": "ванна",
+        "type": "sustantivo",
+        "icon": "bath",
+        "useIcon": true,
+        "hardSentences": [
+          "Me relajo en la ___.",
+          "La ___ es muy grande.",
+          "El baño tiene ducha y ___.",
+          "Prefiero la ___ para relajarme."
+        ],
+        "hardSentencesRu": [
+          "Я расслабляюсь в ванне.",
+          "Ванна очень большая.",
+          "В ванной комнате душ и ванна.",
+          "Я предпочитаю ванну для расслабления."
+        ]
+      }
     ],
-    "gramatica": []
+    "DESCRIBIR_VIVIENDA": [
+      {
+        "spanish": "luminoso",
+        "ru": "светлый",
+        "type": "adjetivo",
+        "icon": "sun",
+        "useIcon": true,
+        "hardSentences": [
+          "El piso es muy ___.",
+          "Busco un apartamento ___.",
+          "La cocina es ___ y amplia.",
+          "El salón es bastante ___."
+        ],
+        "hardSentencesRu": [
+          "Квартира очень светлая.",
+          "Ищу светлую квартиру.",
+          "Кухня светлая и просторная.",
+          "Гостиная довольно светлая."
+        ]
+      },
+      {
+        "spanish": "oscuro",
+        "ru": "тёмный",
+        "type": "adjetivo",
+        "icon": "moon",
+        "useIcon": true,
+        "hardSentences": [
+          "El pasillo es muy ___.",
+          "La habitación es demasiado ___.",
+          "No me gustan los pisos ___.",
+          "El baño es un poco ___."
+        ],
+        "hardSentencesRu": [
+          "Коридор очень тёмный.",
+          "Комната слишком тёмная.",
+          "Мне не нравятся тёмные квартиры.",
+          "Ванная немного тёмная."
+        ]
+      },
+      {
+        "spanish": "acogedor",
+        "ru": "уютный",
+        "type": "adjetivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "El salón es muy ___.",
+          "Es un piso pequeño pero ___.",
+          "Quiero un ambiente ___.",
+          "La casa es muy ___."
+        ],
+        "hardSentencesRu": [
+          "Гостиная очень уютная.",
+          "Квартира маленькая, но уютная.",
+          "Хочу уютную атмосферу.",
+          "Дом очень уютный."
+        ]
+      },
+      {
+        "spanish": "amplio",
+        "ru": "просторный",
+        "type": "adjetivo",
+        "icon": "expand",
+        "useIcon": true,
+        "hardSentences": [
+          "El salón es muy ___.",
+          "Busco un piso ___.",
+          "La terraza es bastante ___.",
+          "Necesito un dormitorio más ___."
+        ],
+        "hardSentencesRu": [
+          "Гостиная очень просторная.",
+          "Ищу просторную квартиру.",
+          "Терраса довольно просторная.",
+          "Мне нужна более просторная спальня."
+        ]
+      },
+      {
+        "spanish": "ruidoso",
+        "ru": "шумный",
+        "type": "adjetivo",
+        "icon": "volume-up",
+        "useIcon": true,
+        "hardSentences": [
+          "La calle es muy ___.",
+          "El barrio es bastante ___.",
+          "No quiero un piso ___.",
+          "El vecino es muy ___."
+        ],
+        "hardSentencesRu": [
+          "Улица очень шумная.",
+          "Район довольно шумный.",
+          "Не хочу шумную квартиру.",
+          "Сосед очень шумный."
+        ]
+      },
+      {
+        "spanish": "tranquilo",
+        "ru": "тихий/спокойный",
+        "type": "adjetivo",
+        "icon": "leaf",
+        "useIcon": true,
+        "hardSentences": [
+          "El barrio es muy ___.",
+          "Busco un lugar ___.",
+          "La zona es bastante ___.",
+          "Quiero vivir en un sitio ___."
+        ],
+        "hardSentencesRu": [
+          "Район очень тихий.",
+          "Ищу тихое место.",
+          "Зона довольно спокойная.",
+          "Хочу жить в спокойном месте."
+        ]
+      },
+      {
+        "spanish": "amueblado",
+        "ru": "меблированный",
+        "type": "adjetivo",
+        "icon": "couch",
+        "useIcon": true,
+        "hardSentences": [
+          "El piso está ___.",
+          "Busco un estudio ___.",
+          "El apartamento no está ___.",
+          "Prefiero alquilar ___."
+        ],
+        "hardSentencesRu": [
+          "Квартира меблирована.",
+          "Ищу меблированную студию.",
+          "Апартаменты не меблированы.",
+          "Предпочитаю снимать меблированное жильё."
+        ]
+      },
+      {
+        "spanish": "cómodo",
+        "ru": "удобный",
+        "type": "adjetivo",
+        "icon": "check",
+        "useIcon": true,
+        "hardSentences": [
+          "El sofá es muy ___.",
+          "La casa es ___ y práctica.",
+          "Necesito un sillón más ___.",
+          "La cama es bastante ___."
+        ],
+        "hardSentencesRu": [
+          "Диван очень удобный.",
+          "Дом удобный и практичный.",
+          "Мне нужно более удобное кресло.",
+          "Кровать довольно удобная."
+        ]
+      },
+      {
+        "spanish": "moderno",
+        "ru": "современный",
+        "type": "adjetivo",
+        "icon": "bolt",
+        "useIcon": true,
+        "hardSentences": [
+          "El piso es muy ___.",
+          "Me gusta el estilo ___.",
+          "La cocina es ___.",
+          "Los muebles son ___."
+        ],
+        "hardSentencesRu": [
+          "Квартира очень современная.",
+          "Мне нравится современный стиль.",
+          "Кухня современная.",
+          "Мебель современная."
+        ]
+      },
+      {
+        "spanish": "antiguo",
+        "ru": "старинный/старый",
+        "type": "adjetivo",
+        "icon": "history",
+        "useIcon": true,
+        "hardSentences": [
+          "El edificio es muy ___.",
+          "Me gustan los muebles ___.",
+          "La casa es ___ pero con encanto.",
+          "El armario es ___."
+        ],
+        "hardSentencesRu": [
+          "Здание очень старое.",
+          "Мне нравится старинная мебель.",
+          "Дом старый, но с шармом.",
+          "Шкаф старинный."
+        ]
+      },
+      {
+        "spanish": "de madera",
+        "ru": "деревянный",
+        "type": "expresión",
+        "icon": "tree",
+        "useIcon": true,
+        "hardSentences": [
+          "La mesa es ___.",
+          "El suelo es ___.",
+          "Prefiero los muebles ___.",
+          "La estantería es ___."
+        ],
+        "hardSentencesRu": [
+          "Стол деревянный.",
+          "Пол деревянный.",
+          "Я предпочитаю деревянную мебель.",
+          "Стеллаж деревянный."
+        ]
+      },
+      {
+        "spanish": "de cristal",
+        "ru": "стеклянный",
+        "type": "expresión",
+        "icon": "glass-martini",
+        "useIcon": true,
+        "hardSentences": [
+          "La mesa es ___.",
+          "Hay una puerta ___.",
+          "Me gusta la lámpara ___.",
+          "El jarrón es ___."
+        ],
+        "hardSentencesRu": [
+          "Стол стеклянный.",
+          "Там стеклянная дверь.",
+          "Мне нравится стеклянная лампа.",
+          "Ваза стеклянная."
+        ]
+      },
+      {
+        "spanish": "de metal",
+        "ru": "металлический",
+        "type": "expresión",
+        "icon": "cog",
+        "useIcon": true,
+        "hardSentences": [
+          "La estantería es ___.",
+          "Las sillas son ___.",
+          "Me gusta el estilo ___.",
+          "La lámpara es ___."
+        ],
+        "hardSentencesRu": [
+          "Стеллаж металлический.",
+          "Стулья металлические.",
+          "Мне нравится металлический стиль.",
+          "Лампа металлическая."
+        ]
+      },
+      {
+        "spanish": "de piel",
+        "ru": "кожаный",
+        "type": "expresión",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "El sofá es ___.",
+          "Tengo un sillón ___.",
+          "Me gusta el sofá ___.",
+          "La cartera es ___."
+        ],
+        "hardSentencesRu": [
+          "Диван кожаный.",
+          "У меня кожаное кресло.",
+          "Мне нравится кожаный диван.",
+          "Сумка кожаная."
+        ]
+      }
+    ],
+    "UBICACION": [
+      {
+        "spanish": "en el centro",
+        "ru": "в центре",
+        "type": "expresión",
+        "icon": "dot-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "El piso está ___.",
+          "Vivo ___ de la ciudad.",
+          "___ hay muchas tiendas.",
+          "Trabajo ___ de Madrid."
+        ],
+        "hardSentencesRu": [
+          "Квартира в центре.",
+          "Я живу в центре города.",
+          "В центре много магазинов.",
+          "Я работаю в центре Мадрида."
+        ]
+      },
+      {
+        "spanish": "en las afueras",
+        "ru": "на окраине",
+        "type": "expresión",
+        "icon": "map-marker",
+        "useIcon": true,
+        "hardSentences": [
+          "La casa está ___.",
+          "Viven ___ de Barcelona.",
+          "___ es más tranquilo.",
+          "El chalé está ___."
+        ],
+        "hardSentencesRu": [
+          "Дом на окраине.",
+          "Они живут на окраине Барселоны.",
+          "На окраине спокойнее.",
+          "Коттедж на окраине."
+        ]
+      },
+      {
+        "spanish": "al lado de",
+        "ru": "рядом с",
+        "type": "expresión",
+        "icon": "arrows-alt-h",
+        "useIcon": true,
+        "hardSentences": [
+          "Vivo ___ un parque.",
+          "La mesa está ___ la ventana.",
+          "El sofá está ___ la lámpara.",
+          "Hay una silla ___ la cama."
+        ],
+        "hardSentencesRu": [
+          "Я живу рядом с парком.",
+          "Стол рядом с окном.",
+          "Диван рядом с лампой.",
+          "Рядом с кроватью стул."
+        ]
+      },
+      {
+        "spanish": "delante de",
+        "ru": "перед",
+        "type": "expresión",
+        "icon": "arrow-up",
+        "useIcon": true,
+        "hardSentences": [
+          "El sofá está ___ la televisión.",
+          "Hay un árbol ___ la casa.",
+          "El coche está ___ el garaje.",
+          "La mesa está ___ el sofá."
+        ],
+        "hardSentencesRu": [
+          "Диван перед телевизором.",
+          "Перед домом дерево.",
+          "Машина перед гаражом.",
+          "Стол перед диваном."
+        ]
+      },
+      {
+        "spanish": "detrás de",
+        "ru": "за/позади",
+        "type": "expresión",
+        "icon": "arrow-down",
+        "useIcon": true,
+        "hardSentences": [
+          "El jardín está ___ la casa.",
+          "El garaje está ___ el edificio.",
+          "Hay un parque ___ mi piso.",
+          "La estantería está ___ el sofá."
+        ],
+        "hardSentencesRu": [
+          "Сад за домом.",
+          "Гараж за зданием.",
+          "За моей квартирой парк.",
+          "Стеллаж за диваном."
+        ]
+      },
+      {
+        "spanish": "encima de",
+        "ru": "на/над",
+        "type": "expresión",
+        "icon": "arrow-up",
+        "useIcon": true,
+        "hardSentences": [
+          "El libro está ___ la mesa.",
+          "Hay un cuadro ___ el sofá.",
+          "La lámpara está ___ la mesilla.",
+          "Pon el cojín ___ la cama."
+        ],
+        "hardSentencesRu": [
+          "Книга на столе.",
+          "Над диваном картина.",
+          "Лампа на тумбочке.",
+          "Положи подушку на кровать."
+        ]
+      },
+      {
+        "spanish": "debajo de",
+        "ru": "под",
+        "type": "expresión",
+        "icon": "arrow-down",
+        "useIcon": true,
+        "hardSentences": [
+          "La alfombra está ___ la mesa.",
+          "El gato está ___ la cama.",
+          "Hay cajas ___ la escalera.",
+          "Los zapatos están ___ el armario."
+        ],
+        "hardSentencesRu": [
+          "Ковёр под столом.",
+          "Кот под кроватью.",
+          "Под лестницей коробки.",
+          "Обувь под шкафом."
+        ]
+      },
+      {
+        "spanish": "a la derecha de",
+        "ru": "справа от",
+        "type": "expresión",
+        "icon": "arrow-right",
+        "useIcon": true,
+        "hardSentences": [
+          "El baño está ___ la cocina.",
+          "La estantería está ___ la ventana.",
+          "___ la puerta hay un espejo.",
+          "El sillón está ___ el sofá."
+        ],
+        "hardSentencesRu": [
+          "Ванная справа от кухни.",
+          "Стеллаж справа от окна.",
+          "Справа от двери зеркало.",
+          "Кресло справа от дивана."
+        ]
+      },
+      {
+        "spanish": "a la izquierda de",
+        "ru": "слева от",
+        "type": "expresión",
+        "icon": "arrow-left",
+        "useIcon": true,
+        "hardSentences": [
+          "La cocina está ___ la entrada.",
+          "___ la televisión hay una planta.",
+          "El dormitorio está ___ el baño.",
+          "La lámpara está ___ la cama."
+        ],
+        "hardSentencesRu": [
+          "Кухня слева от входа.",
+          "Слева от телевизора растение.",
+          "Спальня слева от ванной.",
+          "Лампа слева от кровати."
+        ]
+      },
+      {
+        "spanish": "entre",
+        "ru": "между",
+        "type": "expresión",
+        "icon": "arrows-alt-h",
+        "useIcon": true,
+        "hardSentences": [
+          "La mesa está ___ el sofá y la ventana.",
+          "___ la cocina y el salón hay un pasillo.",
+          "El baño está ___ las dos habitaciones.",
+          "Hay una planta ___ los dos sillones."
+        ],
+        "hardSentencesRu": [
+          "Стол между диваном и окном.",
+          "Между кухней и гостиной коридор.",
+          "Ванная между двумя комнатами.",
+          "Между двумя креслами растение."
+        ]
+      }
+    ]
+  },
+  "ejercicios": [],
+  "verbos": {
+    "tiempoTitle": "Verbos de la unidad",
+    "requiredEjercicio": null,
+    "tiempos": []
   }
 }

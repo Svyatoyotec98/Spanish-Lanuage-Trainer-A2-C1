@@ -1076,5 +1076,89 @@
     ]
   },
   "ejercicios": [],
-  "verbos": {}
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "presente",
+        "nombre": "Presente de indicativo",
+        "requiredEjercicio": "ejercicio_1",
+        "regulares": [],
+        "irregulares": [
+          {
+            "infinitivo": "conocer",
+            "traduccion": "знать, познакомиться",
+            "formas": {
+              "yo": "conozco",
+              "tu": "conoces",
+              "el": "conoce",
+              "nosotros": "conocemos",
+              "vosotros": "conocéis",
+              "ellos": "conocen"
+            }
+          },
+          {
+            "infinitivo": "parecer",
+            "traduccion": "казаться, выглядеть",
+            "formas": {
+              "yo": "parezco",
+              "tu": "pareces",
+              "el": "parece",
+              "nosotros": "parecemos",
+              "vosotros": "parecéis",
+              "ellos": "parecen"
+            }
+          },
+          {
+            "infinitivo": "nacer",
+            "traduccion": "рождаться",
+            "formas": {
+              "yo": "nazco",
+              "tu": "naces",
+              "el": "nace",
+              "nosotros": "nacemos",
+              "vosotros": "nacéis",
+              "ellos": "nacen"
+            }
+          },
+          {
+            "infinitivo": "crecer",
+            "traduccion": "расти",
+            "formas": {
+              "yo": "crezco",
+              "tu": "creces",
+              "el": "crece",
+              "nosotros": "crecemos",
+              "vosotros": "crecéis",
+              "ellos": "crecen"
+            }
+          },
+          {
+            "infinitivo": "agradecer",
+            "traduccion": "благодарить",
+            "formas": {
+              "yo": "agradezco",
+              "tu": "agradeces",
+              "el": "agradece",
+              "nosotros": "agradecemos",
+              "vosotros": "agradecéis",
+              "ellos": "agradecen"
+            }
+          },
+          {
+            "infinitivo": "ofrecer",
+            "traduccion": "предлагать",
+            "formas": {
+              "yo": "ofrezco",
+              "tu": "ofreces",
+              "el": "ofrece",
+              "nosotros": "ofrecemos",
+              "vosotros": "ofrecéis",
+              "ellos": "ofrecen"
+            }
+          }
+        ],
+        "otras": []
+      }
+    ]
+  }
 }

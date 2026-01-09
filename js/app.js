@@ -625,16 +625,19 @@ function showProfileSelect() {
             return title.substring(colonIndex + 1).trim();
         }
 
-        // Обновляет темы всех юнитов в главном меню
+        // Обновляет темы всех юнитов в главном меню (в заголовке карточки)
         function updateMainMenuThemes() {
             UNIDADES.forEach((unidad) => {
                 const unidadNumber = unidad.split('_')[1];
-                const themeElement = document.getElementById(`unidad-${unidadNumber}-theme`);
                 const unidadData = vocabularyData[unidad];
+                const titleElement = document.querySelector(`#unidad-${unidadNumber}-btn .category-title`);
 
-                if (themeElement && unidadData && unidadData.title) {
+                if (titleElement && unidadData && unidadData.title) {
                     const theme = extractThemeFromTitle(unidadData.title);
-                    themeElement.textContent = theme;
+                    const emoji = titleElement.textContent.split(' ')[0]; // Сохраняем эмодзи
+                    if (theme) {
+                        titleElement.textContent = `${emoji} Unidad ${unidadNumber} - ${theme}`;
+                    }
                 }
             });
         }

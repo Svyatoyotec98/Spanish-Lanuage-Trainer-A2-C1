@@ -1793,6 +1793,261 @@
         {"sentence": "___ a la farmacia. (ir)", "answer": "Ve", "hint": "Ir → Ve"},
         {"sentence": "___ paciencia. (tener)", "answer": "Ten", "hint": "Tener → Ten"}
       ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Para + infinitivo: expresar finalidad",
+      "hint": "para cuidar / para proteger / para fortalecer / para prevenir / para mejorar / para combatir",
+      "rule": {
+        "title": "PARA + INFINITIVO: выражение цели",
+        "explanation": "Конструкция PARA + infinitivo используется для выражения цели или назначения действия. Отвечает на вопрос '¿Para qué?' (Для чего? Зачем?).",
+        "sections": [
+          {
+            "subtitle": "Структура: Para + infinitivo + ...",
+            "points": [
+              "<b>Para cuidar</b> los ojos... — Чтобы заботиться о глазах...",
+              "<b>Para proteger</b> la piel... — Чтобы защитить кожу...",
+              "<b>Para fortalecer</b> la espalda... — Чтобы укрепить спину...",
+              "<b>Para prevenir</b> enfermedades... — Чтобы предотвратить болезни...",
+              "<b>Para mejorar</b> la salud... — Чтобы улучшить здоровье..."
+            ]
+          },
+          {
+            "subtitle": "Использование в советах о здоровье",
+            "points": [
+              "<b>Para cuidar los ojos</b> tienes que ponerte gafas de sol",
+              "<b>Para proteger el pelo</b> del sol tienes que cubrirte la cabeza",
+              "<b>Para fortalecer la espalda</b> es bueno hacer natación",
+              "<b>Para prevenir resfriados</b> debes lavarte las manos",
+              "<b>Para tener un pelo sano</b> hay que comer frutas y verduras"
+            ]
+          },
+          {
+            "subtitle": "Otras estructuras con para",
+            "points": [
+              "Es bueno/malo <b>para</b> + parte del cuerpo: Nadar es bueno para la espalda",
+              "Va bien/mal <b>para</b> + problema: El yoga va bien para el estrés",
+              "Sirve <b>para</b> + función: Esta crema sirve para hidratar la piel"
+            ]
+          }
+        ],
+        "examples": [
+          "Para cuidar los pies debes utilizar un calzado cómodo.",
+          "Para proteger la piel del sol usa crema protectora.",
+          "El yoga es muy bueno para mejorar la flexibilidad.",
+          "Caminar va bien para fortalecer las piernas.",
+          "Para prevenir la gripe es importante vacunarse."
+        ]
+      },
+      "questions": [
+        {"sentence": "___ los ojos tienes que ponerte gafas de sol.", "answer": "Para cuidar"},
+        {"sentence": "___ el pelo del sol tienes que cubrirte la cabeza.", "answer": "Para proteger"},
+        {"sentence": "___ los pies debes utilizar un calzado cómodo.", "answer": "Para cuidar"},
+        {"sentence": "Caminar es muy bueno ___ las piernas.", "answer": "para fortalecer"},
+        {"sentence": "Hacer natación va bien ___ la espalda.", "answer": "para fortalecer"},
+        {"sentence": "___ la espalda lo mejor es dormir de lado.", "answer": "Para cuidar"},
+        {"sentence": "___ un pelo sano tienes que comer frutas y verduras.", "answer": "Para tener"},
+        {"sentence": "El yoga es excelente ___ el estrés.", "answer": "para combatir"},
+        {"sentence": "___ resfriados hay que lavarse las manos.", "answer": "Para prevenir"},
+        {"sentence": "___ la piel debes usar crema hidratante.", "answer": "Para cuidar"},
+        {"sentence": "La miel es buena ___ la tos.", "answer": "para calmar"},
+        {"sentence": "___ la circulación es bueno caminar.", "answer": "Para mejorar"},
+        {"sentence": "___ los músculos haz ejercicio regularmente.", "answer": "Para fortalecer"},
+        {"sentence": "Beber agua es esencial ___ la piel.", "answer": "para hidratar"},
+        {"sentence": "___ el insomnio evita el café por la noche.", "answer": "Para combatir"},
+        {"sentence": "Esta crema sirve ___ la cara.", "answer": "para hidratar"},
+        {"sentence": "___ la anemia come alimentos ricos en hierro.", "answer": "Para prevenir"},
+        {"sentence": "El té de manzanilla va bien ___ los nervios.", "answer": "para calmar"},
+        {"sentence": "___ las articulaciones haz ejercicios suaves.", "answer": "Para cuidar"},
+        {"sentence": "___ la postura es importante sentarse bien.", "answer": "Para mejorar"},
+        {"sentence": "Correr es bueno ___ las piernas.", "answer": "para fortalecer"},
+        {"sentence": "___ el dolor de cabeza descansa en un lugar oscuro.", "answer": "Para aliviar"},
+        {"sentence": "El tomillo sirve ___ las migrañas.", "answer": "para combatir"},
+        {"sentence": "___ la respiración practica ejercicios de yoga.", "answer": "Para mejorar"},
+        {"sentence": "Esta infusión es buena ___ la digestión.", "answer": "para mejorar"},
+        {"sentence": "___ la obesidad debes cuidar la alimentación.", "answer": "Para prevenir"},
+        {"sentence": "___ el equilibrio practica tai chi.", "answer": "Para mejorar"},
+        {"sentence": "Los estiramientos son buenos ___ la flexibilidad.", "answer": "para mejorar"},
+        {"sentence": "___ los brazos haz flexiones.", "answer": "Para fortalecer"},
+        {"sentence": "___ las arrugas usa crema antienvejecimiento.", "answer": "Para prevenir"},
+        {"sentence": "El aceite de oliva es bueno ___ el corazón.", "answer": "para cuidar"},
+        {"sentence": "___ la tos toma miel con limón.", "answer": "Para calmar"},
+        {"sentence": "Esta mascarilla sirve ___ la cara.", "answer": "para hidratar"},
+        {"sentence": "___ el acné lávate la cara dos veces al día.", "answer": "Para combatir"},
+        {"sentence": "Meditar va bien ___ el estrés.", "answer": "para reducir"},
+        {"sentence": "___ las defensas come vitamina C.", "answer": "Para fortalecer"},
+        {"sentence": "El aloe vera sirve ___ las quemaduras.", "answer": "para curar"},
+        {"sentence": "___ la fiebre toma paracetamol.", "answer": "Para bajar"},
+        {"sentence": "___ el colesterol evita las grasas saturadas.", "answer": "Para controlar"},
+        {"sentence": "El ejercicio es bueno ___ la circulación.", "answer": "para mejorar"},
+        {"sentence": "___ la alergia toma antihistamínicos.", "answer": "Para combatir"},
+        {"sentence": "___ los huesos consume calcio.", "answer": "Para fortalecer"},
+        {"sentence": "Esta pomada sirve ___ el dolor muscular.", "answer": "para aliviar"},
+        {"sentence": "___ las varices camina y evita estar de pie mucho tiempo.", "answer": "Para prevenir"},
+        {"sentence": "___ la memoria haz ejercicios mentales.", "answer": "Para mejorar"},
+        {"sentence": "El descanso es fundamental ___ bien.", "answer": "para recuperarse"},
+        {"sentence": "___ infecciones mantén buena higiene.", "answer": "Para prevenir"},
+        {"sentence": "___ la tensión muscular date un masaje.", "answer": "Para aliviar"},
+        {"sentence": "El zinc es bueno ___ el sistema inmune.", "answer": "para fortalecer"},
+        {"sentence": "___ el mareo evita movimientos bruscos.", "answer": "Para evitar"},
+        {"sentence": "___ la vista descansa los ojos cada hora.", "answer": "Para cuidar"},
+        {"sentence": "Dormir bien es esencial ___ la salud.", "answer": "para mantener"},
+        {"sentence": "___ las piernas levántalas por la noche.", "answer": "Para descansar"},
+        {"sentence": "___ la garganta haz gárgaras con agua y sal.", "answer": "Para cuidar"},
+        {"sentence": "Este jarabe sirve ___ la tos.", "answer": "para calmar"},
+        {"sentence": "___ el dolor de muelas ve al dentista.", "answer": "Para tratar"},
+        {"sentence": "___ los oídos no uses bastoncillos.", "answer": "Para cuidar"},
+        {"sentence": "La vitamina D es buena ___ los huesos.", "answer": "para fortalecer"},
+        {"sentence": "___ náuseas toma jengibre.", "answer": "Para evitar"},
+        {"sentence": "___ la salud mental haz actividades que te gusten.", "answer": "Para cuidar"}
+      ],
+      "microTests": [
+        {"sentence": "___ los ojos tienes que ponerte gafas.", "answer": "Para cuidar", "hint": "Цель: заботиться о глазах → Para cuidar"},
+        {"sentence": "___ el pelo del sol cúbrete la cabeza.", "answer": "Para proteger", "hint": "Цель: защитить волосы → Para proteger"},
+        {"sentence": "Nadar es bueno ___ la espalda.", "answer": "para fortalecer", "hint": "Цель: укрепить → para fortalecer"},
+        {"sentence": "___ resfriados lávate las manos.", "answer": "Para prevenir", "hint": "Цель: предотвратить → Para prevenir"},
+        {"sentence": "___ el estrés practica yoga.", "answer": "Para combatir", "hint": "Цель: бороться → Para combatir"},
+        {"sentence": "___ la circulación camina cada día.", "answer": "Para mejorar", "hint": "Цель: улучшить → Para mejorar"},
+        {"sentence": "Esta crema sirve ___ la piel.", "answer": "para hidratar", "hint": "Цель: увлажнить → para hidratar"},
+        {"sentence": "___ la tos toma miel.", "answer": "Para calmar", "hint": "Цель: успокоить → Para calmar"},
+        {"sentence": "___ los músculos haz ejercicio.", "answer": "Para fortalecer", "hint": "Цель: укрепить → Para fortalecer"},
+        {"sentence": "___ la postura siéntate bien.", "answer": "Para mejorar", "hint": "Цель: улучшить → Para mejorar"},
+        {"sentence": "___ las defensas come vitamina C.", "answer": "Para fortalecer", "hint": "Цель: укрепить → Para fortalecer"},
+        {"sentence": "___ el dolor descansa.", "answer": "Para aliviar", "hint": "Цель: облегчить → Para aliviar"},
+        {"sentence": "___ infecciones mantén buena higiene.", "answer": "Para prevenir", "hint": "Цель: предотвратить → Para prevenir"},
+        {"sentence": "___ la salud haz ejercicio.", "answer": "Para mantener", "hint": "Цель: поддерживать → Para mantener"},
+        {"sentence": "___ la piel usa crema protectora.", "answer": "Para cuidar", "hint": "Цель: заботиться → Para cuidar"}
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Verbos de beneficios para la salud",
+      "hint": "fortalecer / mejorar / prevenir / combatir / curar / calmar / proteger / hidratar / aliviar / tratar",
+      "rule": {
+        "title": "ГЛАГОЛЫ ПОЛЬЗЫ для здоровья",
+        "explanation": "Для описания пользы и эффекта натуральных средств и действий на здоровье используются специальные глаголы. Они часто сочетаются с конструкциями 'es bueno para', 'sirve para', 'va bien para'.",
+        "sections": [
+          {
+            "subtitle": "Глаголы укрепления и улучшения",
+            "points": [
+              "<b>Fortalecer</b> — укреплять: La natación fortalece la espalda",
+              "<b>Mejorar</b> — улучшать: El yoga mejora la flexibilidad",
+              "<b>Mantener</b> — поддерживать: El ejercicio mantiene la salud"
+            ]
+          },
+          {
+            "subtitle": "Глаголы защиты и предотвращения",
+            "points": [
+              "<b>Proteger</b> — защищать: La crema protege la piel del sol",
+              "<b>Prevenir</b> — предотвращать: La vacuna previene la gripe",
+              "<b>Evitar</b> — избегать/предотвращать: Evita el estrés"
+            ]
+          },
+          {
+            "subtitle": "Глаголы лечения и облегчения",
+            "points": [
+              "<b>Curar</b> — лечить: El antibiótico cura la infección",
+              "<b>Calmar</b> — успокаивать: La manzanilla calma los nervios",
+              "<b>Aliviar</b> — облегчать: Esta pomada alivia el dolor",
+              "<b>Tratar</b> — лечить/обрабатывать: Este medicamento trata el acné"
+            ]
+          },
+          {
+            "subtitle": "Глаголы ухода",
+            "points": [
+              "<b>Hidratar</b> — увлажнять: Esta crema hidrata la piel",
+              "<b>Combatir</b> — бороться: El aceite de tomillo combate las migrañas",
+              "<b>Corregir</b> — исправлять: Los ejercicios corrigen la postura"
+            ]
+          }
+        ],
+        "examples": [
+          "La natación fortalece la espalda y los brazos.",
+          "El yoga mejora la flexibilidad y reduce el estrés.",
+          "La miel calma la tos y el dolor de garganta.",
+          "Esta crema hidrata la piel seca.",
+          "El aceite de tomillo combate las migrañas."
+        ]
+      },
+      "questions": [
+        {"sentence": "La natación ___ la espalda y los brazos.", "answer": "fortalece"},
+        {"sentence": "El yoga ___ la flexibilidad.", "answer": "mejora"},
+        {"sentence": "La vacuna ___ la gripe.", "answer": "previene"},
+        {"sentence": "El aceite de tomillo ___ las migrañas.", "answer": "combate"},
+        {"sentence": "El antibiótico ___ la infección.", "answer": "cura"},
+        {"sentence": "La manzanilla ___ los nervios.", "answer": "calma"},
+        {"sentence": "La crema solar ___ la piel del sol.", "answer": "protege"},
+        {"sentence": "El aloe vera ___ la piel.", "answer": "hidrata"},
+        {"sentence": "Esta pomada ___ el dolor muscular.", "answer": "alivia"},
+        {"sentence": "Este medicamento ___ el acné.", "answer": "trata"},
+        {"sentence": "Caminar ___ las piernas.", "answer": "fortalece"},
+        {"sentence": "El descanso ___ la recuperación.", "answer": "mejora"},
+        {"sentence": "Lavarse las manos ___ infecciones.", "answer": "previene"},
+        {"sentence": "El deporte ___ el estrés.", "answer": "combate"},
+        {"sentence": "La miel ___ el dolor de garganta.", "answer": "calma"},
+        {"sentence": "El sombrero ___ la cabeza del sol.", "answer": "protege"},
+        {"sentence": "Beber agua ___ el cuerpo.", "answer": "hidrata"},
+        {"sentence": "El reposo ___ el cansancio.", "answer": "alivia"},
+        {"sentence": "Los ejercicios ___ la postura.", "answer": "corrigen"},
+        {"sentence": "El ejercicio ___ la salud.", "answer": "mantiene"},
+        {"sentence": "La vitamina C ___ el sistema inmune.", "answer": "fortalece"},
+        {"sentence": "La meditación ___ la concentración.", "answer": "mejora"},
+        {"sentence": "Una dieta sana ___ enfermedades.", "answer": "previene"},
+        {"sentence": "El jengibre ___ las náuseas.", "answer": "combate"},
+        {"sentence": "El jarabe ___ la tos.", "answer": "calma"},
+        {"sentence": "Las gafas ___ los ojos.", "answer": "protegen"},
+        {"sentence": "Esta mascarilla ___ la cara.", "answer": "hidrata"},
+        {"sentence": "El masaje ___ la tensión muscular.", "answer": "alivia"},
+        {"sentence": "Esta crema ___ las arrugas.", "answer": "trata"},
+        {"sentence": "El tai chi ___ el equilibrio.", "answer": "mejora"},
+        {"sentence": "El pilates ___ los músculos del core.", "answer": "fortalece"},
+        {"sentence": "El sueño ___ la memoria.", "answer": "mejora"},
+        {"sentence": "La higiene ___ infecciones.", "answer": "previene"},
+        {"sentence": "El té verde ___ el envejecimiento.", "answer": "combate"},
+        {"sentence": "La infusión ___ el estómago.", "answer": "calma"},
+        {"sentence": "El protector solar ___ de las quemaduras.", "answer": "protege"},
+        {"sentence": "El aceite de coco ___ el pelo.", "answer": "hidrata"},
+        {"sentence": "El hielo ___ la inflamación.", "answer": "alivia"},
+        {"sentence": "Los estiramientos ___ la flexibilidad.", "answer": "mejoran"},
+        {"sentence": "El zinc ___ las defensas.", "answer": "fortalece"},
+        {"sentence": "Correr ___ la resistencia.", "answer": "mejora"},
+        {"sentence": "La vacunación ___ enfermedades graves.", "answer": "previene"},
+        {"sentence": "La dieta mediterránea ___ el colesterol.", "answer": "combate"},
+        {"sentence": "La lavanda ___ la ansiedad.", "answer": "calma"},
+        {"sentence": "La bufanda ___ el cuello del frío.", "answer": "protege"},
+        {"sentence": "La crema nocturna ___ mientras duermes.", "answer": "hidrata"},
+        {"sentence": "El reposo ___ la recuperación.", "answer": "favorece"},
+        {"sentence": "La fisioterapia ___ las lesiones.", "answer": "trata"},
+        {"sentence": "La actividad física ___ los huesos.", "answer": "fortalece"},
+        {"sentence": "El omega-3 ___ la función cerebral.", "answer": "mejora"},
+        {"sentence": "El cepillado dental ___ las caries.", "answer": "previene"},
+        {"sentence": "El ajo ___ los virus.", "answer": "combate"},
+        {"sentence": "El silencio ___ los nervios.", "answer": "calma"},
+        {"sentence": "Los guantes ___ las manos del frío.", "answer": "protegen"},
+        {"sentence": "El sérum ___ la piel en profundidad.", "answer": "hidrata"},
+        {"sentence": "El ibuprofeno ___ el dolor.", "answer": "alivia"},
+        {"sentence": "Este champú ___ la caspa.", "answer": "trata"},
+        {"sentence": "Los abdominales ___ el core.", "answer": "fortalecen"},
+        {"sentence": "La respiración profunda ___ la relajación.", "answer": "mejora"},
+        {"sentence": "La dieta equilibrada ___ la obesidad.", "answer": "previene"}
+      ],
+      "microTests": [
+        {"sentence": "La natación ___ la espalda.", "answer": "fortalece", "hint": "Укреплять → fortalecer"},
+        {"sentence": "El yoga ___ la flexibilidad.", "answer": "mejora", "hint": "Улучшать → mejorar"},
+        {"sentence": "La vacuna ___ la gripe.", "answer": "previene", "hint": "Предотвращать → prevenir"},
+        {"sentence": "El aceite de tomillo ___ las migrañas.", "answer": "combate", "hint": "Бороться → combatir"},
+        {"sentence": "El antibiótico ___ la infección.", "answer": "cura", "hint": "Лечить → curar"},
+        {"sentence": "La manzanilla ___ los nervios.", "answer": "calma", "hint": "Успокаивать → calmar"},
+        {"sentence": "La crema solar ___ la piel.", "answer": "protege", "hint": "Защищать → proteger"},
+        {"sentence": "El aloe vera ___ la piel.", "answer": "hidrata", "hint": "Увлажнять → hidratar"},
+        {"sentence": "Esta pomada ___ el dolor.", "answer": "alivia", "hint": "Облегчать → aliviar"},
+        {"sentence": "Este medicamento ___ el acné.", "answer": "trata", "hint": "Лечить → tratar"},
+        {"sentence": "Los ejercicios ___ la postura.", "answer": "corrigen", "hint": "Исправлять → corregir"},
+        {"sentence": "El ejercicio ___ la salud.", "answer": "mantiene", "hint": "Поддерживать → mantener"},
+        {"sentence": "El jengibre ___ las náuseas.", "answer": "combate", "hint": "Бороться → combatir"},
+        {"sentence": "El hielo ___ la inflamación.", "answer": "alivia", "hint": "Облегчать → aliviar"},
+        {"sentence": "La vitamina C ___ el sistema inmune.", "answer": "fortalece", "hint": "Укреплять → fortalecer"}
+      ]
     }
   ]
 }

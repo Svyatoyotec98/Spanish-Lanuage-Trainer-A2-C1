@@ -22,8 +22,8 @@
             },
             'B1': {
                 name: 'B1 - Nivel Intermedio',
-                unidades: [],
-                available: false,
+                unidades: UNIDADES,
+                available: true,
                 dataFolder: 'data/B1'
             },
             'B2.1': {

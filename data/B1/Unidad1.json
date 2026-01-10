@@ -1721,6 +1721,563 @@
           "hint": "Necesario = valoración → SER"
         }
       ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Cuantificadores: concordancia",
+      "hint": "poco / poca / pocos / pocas / todo / toda / todos / todas / mucho / mucha / muchos / muchas",
+      "rule": {
+        "title": "Cuantificadores: concordancia en género y número",
+        "explanation": "Los cuantificadores como poco, todo, mucho, ninguno, alguno deben concordar en género y número con el sustantivo al que acompañan. Si el sustantivo es masculino singular, usamos la forma masculina singular del cuantificador; si es femenino plural, usamos la forma femenina plural, etc.",
+        "sections": [
+          {
+            "subtitle": "POCO/A/OS/AS — мало, немногие",
+            "points": [
+              "<b>Poco</b> tiempo — Мало времени (м.р. ед.ч.)",
+              "<b>Poca</b> gente — Мало людей (ж.р. ед.ч.)",
+              "<b>Pocos</b> amigos — Мало друзей (м.р. мн.ч.)",
+              "<b>Pocas</b> personas — Немногие люди (ж.р. мн.ч.)"
+            ]
+          },
+          {
+            "subtitle": "TODO/A/OS/AS — весь, вся, все",
+            "points": [
+              "<b>Todo</b> el día — Весь день (м.р. ед.ч.)",
+              "<b>Toda</b> la noche — Всю ночь (ж.р. ед.ч.)",
+              "<b>Todos</b> los días — Каждый день (м.р. мн.ч.)",
+              "<b>Todas</b> las semanas — Каждую неделю (ж.р. мн.ч.)"
+            ]
+          },
+          {
+            "subtitle": "MUCHO/A/OS/AS — много, многие",
+            "points": [
+              "<b>Mucho</b> trabajo — Много работы (м.р. ед.ч.)",
+              "<b>Mucha</b> suerte — Много удачи (ж.р. ед.ч.)",
+              "<b>Muchos</b> estudiantes — Много студентов (м.р. мн.ч.)",
+              "<b>Muchas</b> preguntas — Много вопросов (ж.р. мн.ч.)"
+            ]
+          },
+          {
+            "subtitle": "NINGUNO/A, ALGUNO/A/OS/AS — никакой, какой-то",
+            "points": [
+              "<b>Ningún</b> problema — Никаких проблем (м.р. ед.ч., апокопа)",
+              "<b>Ninguna</b> duda — Никаких сомнений (ж.р. ед.ч.)",
+              "<b>Algunos</b> días — Некоторые дни (м.р. мн.ч.)",
+              "<b>Algunas</b> veces — Иногда (ж.р. мн.ч.)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Hoy en día, poca gente se casa joven.", "ru": "В наши дни мало кто женится молодым."},
+          {"es": "Casi todos mis amigos viven en el centro.", "ru": "Почти все мои друзья живут в центре."},
+          {"es": "Muchas personas prefieren el teletrabajo.", "ru": "Многие люди предпочитают удалённую работу."},
+          {"es": "Ninguno de mis vecinos tiene coche.", "ru": "Ни у кого из моих соседей нет машины."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Hoy en día, poc___ gente se casa joven.", "answer": "a"},
+        {"sentence": "Casi tod___ mis amigos comparten piso.", "answer": "os"},
+        {"sentence": "Much___ personas prefieren el teletrabajo.", "answer": "as"},
+        {"sentence": "Tod___ la plantilla tiene vacaciones en agosto.", "answer": "a"},
+        {"sentence": "Poc___ estudiantes hablan tres idiomas.", "answer": "os"},
+        {"sentence": "Much___ trabajo me espera esta semana.", "answer": "o"},
+        {"sentence": "Tod___ mis compañeras practican deporte.", "answer": "as"},
+        {"sentence": "Ningun___ de mis vecinos tiene coche.", "answer": "o"},
+        {"sentence": "Algun___ de mis amigas quieren estudiar fuera.", "answer": "as"},
+        {"sentence": "Poc___ tiempo tenemos para terminar.", "answer": "o"},
+        {"sentence": "Much___ gente viene a este restaurante.", "answer": "a"},
+        {"sentence": "Tod___ el mundo conoce esta costumbre.", "answer": "o"},
+        {"sentence": "Poc___ veces voy al cine.", "answer": "as"},
+        {"sentence": "Much___ días trabajo desde casa.", "answer": "os"},
+        {"sentence": "Tod___ las normas son obligatorias.", "answer": "as"},
+        {"sentence": "Algun___ compañeros llegaron tarde.", "answer": "os"},
+        {"sentence": "Ningun___ persona puede entrar sin permiso.", "answer": "a"},
+        {"sentence": "Much___ suerte en tu examen.", "answer": "a"},
+        {"sentence": "Poc___ dinero gano en este trabajo.", "answer": "o"},
+        {"sentence": "Tod___ los días hago ejercicio.", "answer": "os"},
+        {"sentence": "Much___ estudiantes estudian español.", "answer": "os"},
+        {"sentence": "Poc___ empresas ofrecen teletrabajo.", "answer": "as"},
+        {"sentence": "Tod___ la familia viene a cenar.", "answer": "a"},
+        {"sentence": "Algun___ día iré a España.", "answer": "ún"},
+        {"sentence": "Ningun___ problema hay con el horario.", "answer": "ún"},
+        {"sentence": "Much___ calor hace en verano.", "answer": "o"},
+        {"sentence": "Poc___ agua queda en la botella.", "answer": "a"},
+        {"sentence": "Tod___ el equipo trabaja bien junto.", "answer": "o"},
+        {"sentence": "Much___ cosas han cambiado.", "answer": "as"},
+        {"sentence": "Poc___ países tienen esta costumbre.", "answer": "os"},
+        {"sentence": "Tod___ las mañanas desayuno café.", "answer": "as"},
+        {"sentence": "Algun___ vez has estado en México?", "answer": "a"},
+        {"sentence": "Ningun___ estudiante faltó a clase.", "answer": "ún"},
+        {"sentence": "Much___ ruido hay en la calle.", "answer": "o"},
+        {"sentence": "Poc___ experiencia tengo en esto.", "answer": "a"},
+        {"sentence": "Tod___ mis hermanos viven lejos.", "answer": "os"},
+        {"sentence": "Much___ veces me pregunto por qué.", "answer": "as"},
+        {"sentence": "Poc___ turistas vienen en invierno.", "answer": "os"},
+        {"sentence": "Tod___ la ciudad está de fiesta.", "answer": "a"},
+        {"sentence": "Algun___ ideas son muy buenas.", "answer": "as"},
+        {"sentence": "Ningun___ respuesta es correcta.", "answer": "a"},
+        {"sentence": "Much___ esfuerzo requiere este trabajo.", "answer": "o"},
+        {"sentence": "Poc___ información tenemos al respecto.", "answer": "a"},
+        {"sentence": "Tod___ el año trabajo sin parar.", "answer": "o"},
+        {"sentence": "Much___ problemas surgieron ayer.", "answer": "os"},
+        {"sentence": "Poc___ oportunidades hay en esta ciudad.", "answer": "as"},
+        {"sentence": "Tod___ las tardes estudio español.", "answer": "as"},
+        {"sentence": "Algun___ amigos vendrán a la fiesta.", "answer": "os"},
+        {"sentence": "Ningun___ excusa es válida.", "answer": "a"},
+        {"sentence": "Much___ paciencia necesito para esto.", "answer": "a"},
+        {"sentence": "Poc___ libros he leído este año.", "answer": "os"},
+        {"sentence": "Tod___ el personal está de vacaciones.", "answer": "o"},
+        {"sentence": "Much___ españoles cenan tarde.", "answer": "os"},
+        {"sentence": "Poc___ diferencia hay entre ellos.", "answer": "a"},
+        {"sentence": "Tod___ mis primos hablan inglés.", "answer": "os"},
+        {"sentence": "Algun___ cosa quieres beber?", "answer": "a"},
+        {"sentence": "Ningun___ documento falta.", "answer": "ún"},
+        {"sentence": "Much___ gracias por tu ayuda.", "answer": "as"},
+        {"sentence": "Poc___ sentido tiene esta norma.", "answer": "o"},
+        {"sentence": "Tod___ la noche estuve trabajando.", "answer": "a"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Poc___ gente viene aquí.",
+          "answer": "a",
+          "hint": "Gente (ж.р. ед.ч.) → poca"
+        },
+        {
+          "sentence": "Tod___ mis amigos trabajan.",
+          "answer": "os",
+          "hint": "Amigos (м.р. мн.ч.) → todos"
+        },
+        {
+          "sentence": "Much___ trabajo tengo.",
+          "answer": "o",
+          "hint": "Trabajo (м.р. ед.ч.) → mucho"
+        },
+        {
+          "sentence": "Tod___ la familia está aquí.",
+          "answer": "a",
+          "hint": "Familia (ж.р. ед.ч.) → toda"
+        },
+        {
+          "sentence": "Poc___ personas lo saben.",
+          "answer": "as",
+          "hint": "Personas (ж.р. мн.ч.) → pocas"
+        },
+        {
+          "sentence": "Much___ estudiantes estudian aquí.",
+          "answer": "os",
+          "hint": "Estudiantes (м.р. мн.ч.) → muchos"
+        },
+        {
+          "sentence": "Tod___ el día trabajo.",
+          "answer": "o",
+          "hint": "Día (м.р. ед.ч.) → todo"
+        },
+        {
+          "sentence": "Poc___ tiempo queda.",
+          "answer": "o",
+          "hint": "Tiempo (м.р. ед.ч.) → poco"
+        },
+        {
+          "sentence": "Much___ suerte tienes.",
+          "answer": "a",
+          "hint": "Suerte (ж.р. ед.ч.) → mucha"
+        },
+        {
+          "sentence": "Tod___ las noches ceno tarde.",
+          "answer": "as",
+          "hint": "Noches (ж.р. мн.ч.) → todas"
+        },
+        {
+          "sentence": "Ningun___ problema hay.",
+          "answer": "ún",
+          "hint": "Problema (м.р. ед.ч.) → ningún (апокопа)"
+        },
+        {
+          "sentence": "Algun___ días llueve.",
+          "answer": "os",
+          "hint": "Días (м.р. мн.ч.) → algunos"
+        },
+        {
+          "sentence": "Much___ cosas cambiaron.",
+          "answer": "as",
+          "hint": "Cosas (ж.р. мн.ч.) → muchas"
+        },
+        {
+          "sentence": "Poc___ países hablan español.",
+          "answer": "os",
+          "hint": "Países (м.р. мн.ч.) → pocos"
+        },
+        {
+          "sentence": "Ningun___ respuesta es correcta.",
+          "answer": "a",
+          "hint": "Respuesta (ж.р. ед.ч.) → ninguna"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Sustantivación: verbo → sustantivo",
+      "hint": "uso / venta / entrada / acceso / paso / visita / pago / consumo",
+      "rule": {
+        "title": "Sustantivación de verbos: transformar verbo en sustantivo",
+        "explanation": "En español, muchas prohibiciones y normas pueden expresarse de dos formas: con verbo en infinitivo o con el sustantivo correspondiente. Es importante conocer la transformación verbo → sustantivo para variar el estilo y comprender diferentes formas de expresión.",
+        "sections": [
+          {
+            "subtitle": "Verbos en -AR → sustantivos",
+            "points": [
+              "<b>usar</b> → el <b>uso</b> (использование)",
+              "<b>entrar</b> → la <b>entrada</b> (вход)",
+              "<b>pasar</b> → el <b>paso</b> (проход)",
+              "<b>fumar</b> → el <b>consumo</b> de tabaco (курение)"
+            ]
+          },
+          {
+            "subtitle": "Verbos en -ER/-IR → sustantivos",
+            "points": [
+              "<b>vender</b> → la <b>venta</b> (продажа)",
+              "<b>acceder</b> → el <b>acceso</b> (доступ)",
+              "<b>consumir</b> → el <b>consumo</b> (потребление)",
+              "<b>distribuir</b> → la <b>distribución</b> (распространение)"
+            ]
+          },
+          {
+            "subtitle": "Otros verbos comunes",
+            "points": [
+              "<b>visitar</b> → la <b>visita</b> (посещение)",
+              "<b>pagar</b> → el <b>pago</b> (оплата)",
+              "<b>grabar</b> → la <b>grabación</b> (запись)",
+              "<b>circular</b> → la <b>circulación</b> (движение)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Está prohibido usar el móvil. → Está prohibido el uso del móvil.", "ru": "Запрещено использовать телефон. → Использование телефона запрещено."},
+          {"es": "Está prohibido vender alcohol. → Está prohibida la venta de alcohol.", "ru": "Запрещено продавать алкоголь. → Продажа алкоголя запрещена."},
+          {"es": "No se permite entrar. → No se permite la entrada.", "ru": "Входить не разрешается. → Вход не разрешён."},
+          {"es": "Se prohíbe fumar. → Se prohíbe el consumo de tabaco.", "ru": "Курить запрещено. → Курение запрещено."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Está prohibido el ___ del teléfono móvil.", "answer": "uso"},
+        {"sentence": "No se permite la ___ a menores de 18 años.", "answer": "entrada"},
+        {"sentence": "Está prohibida la ___ de alcohol a menores.", "answer": "venta"},
+        {"sentence": "No está permitido el ___ sin autorización.", "answer": "acceso"},
+        {"sentence": "Se prohíbe el ___ de peatones por aquí.", "answer": "paso"},
+        {"sentence": "No se permiten las ___ después de las 20h.", "answer": "visitas"},
+        {"sentence": "Se permite el ___ en efectivo.", "answer": "pago"},
+        {"sentence": "Está prohibido el ___ de alcohol en la calle.", "answer": "consumo"},
+        {"sentence": "No se permite la ___ de video.", "answer": "grabación"},
+        {"sentence": "Está prohibida la ___ de bicicletas aquí.", "answer": "circulación"},
+        {"sentence": "Se prohíbe la ___ de propaganda.", "answer": "distribución"},
+        {"sentence": "No está permitido el ___ de gorro en la piscina.", "answer": "uso"},
+        {"sentence": "Está prohibida la ___ con alimentos.", "answer": "entrada"},
+        {"sentence": "No se permite la ___ ambulante.", "answer": "venta"},
+        {"sentence": "Se prohíbe el ___ al edificio sin mascarilla.", "answer": "acceso"},
+        {"sentence": "Está prohibido el ___ de vehículos pesados.", "answer": "paso"},
+        {"sentence": "Las ___ están permitidas de 10 a 14h.", "answer": "visitas"},
+        {"sentence": "Se aceptan ___ con tarjeta.", "answer": "pagos"},
+        {"sentence": "Está prohibido el ___ de drogas.", "answer": "consumo"},
+        {"sentence": "No se permite la ___ de audio.", "answer": "grabación"},
+        {"sentence": "La ___ está restringida en esta zona.", "answer": "circulación"},
+        {"sentence": "Está prohibida la ___ de material ilegal.", "answer": "distribución"},
+        {"sentence": "El ___ de casco es obligatorio.", "answer": "uso"},
+        {"sentence": "La ___ es gratuita los domingos.", "answer": "entrada"},
+        {"sentence": "La ___ de tabaco está prohibida aquí.", "answer": "venta"},
+        {"sentence": "El ___ está restringido al personal.", "answer": "acceso"},
+        {"sentence": "El ___ está cerrado por obras.", "answer": "paso"},
+        {"sentence": "Las ___ médicas son prioritarias.", "answer": "visitas"},
+        {"sentence": "El ___ debe realizarse antes de entrar.", "answer": "pago"},
+        {"sentence": "El ___ excesivo de alcohol es peligroso.", "answer": "consumo"},
+        {"sentence": "La ___ está prohibida sin permiso.", "answer": "grabación"},
+        {"sentence": "La ___ de motos está prohibida aquí.", "answer": "circulación"},
+        {"sentence": "La ___ de folletos está prohibida.", "answer": "distribución"},
+        {"sentence": "El ___ de diccionario está permitido.", "answer": "uso"},
+        {"sentence": "La ___ con mascotas no está permitida.", "answer": "entrada"},
+        {"sentence": "La ___ online está disponible.", "answer": "venta"},
+        {"sentence": "El ___ a la zona VIP es limitado.", "answer": "acceso"},
+        {"sentence": "El ___ de cebra está mal señalizado.", "answer": "paso"},
+        {"sentence": "Las ___ familiares son importantes.", "answer": "visitas"},
+        {"sentence": "Los ___ se realizan mensualmente.", "answer": "pagos"},
+        {"sentence": "El ___ de energía debe reducirse.", "answer": "consumo"},
+        {"sentence": "La ___ del concierto es profesional.", "answer": "grabación"},
+        {"sentence": "La ___ por el centro está limitada.", "answer": "circulación"},
+        {"sentence": "La ___ de vacunas es gratuita.", "answer": "distribución"},
+        {"sentence": "El ___ indebido será sancionado.", "answer": "uso"},
+        {"sentence": "La ___ principal está cerrada.", "answer": "entrada"},
+        {"sentence": "La ___ de entradas comienza mañana.", "answer": "venta"},
+        {"sentence": "El ___ a internet es gratuito.", "answer": "acceso"},
+        {"sentence": "El ___ subterráneo está inundado.", "answer": "paso"},
+        {"sentence": "Las ___ guiadas cuestan 10 euros.", "answer": "visitas"},
+        {"sentence": "El ___ anticipado tiene descuento.", "answer": "pago"},
+        {"sentence": "El ___ responsable es importante.", "answer": "consumo"},
+        {"sentence": "La ___ de la reunión está disponible.", "answer": "grabación"},
+        {"sentence": "La ___ de aire es necesaria.", "answer": "circulación"},
+        {"sentence": "La ___ de ayuda humanitaria continúa.", "answer": "distribución"},
+        {"sentence": "El ___ de la sala está regulado.", "answer": "uso"},
+        {"sentence": "La ___ lateral está abierta.", "answer": "entrada"},
+        {"sentence": "La ___ de productos locales aumenta.", "answer": "venta"},
+        {"sentence": "El ___ directo es más rápido.", "answer": "acceso"},
+        {"sentence": "El ___ fronterizo está controlado.", "answer": "paso"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Está prohibido el ___ del móvil.",
+          "answer": "uso",
+          "hint": "usar → uso"
+        },
+        {
+          "sentence": "No se permite la ___ a menores.",
+          "answer": "entrada",
+          "hint": "entrar → entrada"
+        },
+        {
+          "sentence": "Está prohibida la ___ de alcohol.",
+          "answer": "venta",
+          "hint": "vender → venta"
+        },
+        {
+          "sentence": "No está permitido el ___ sin permiso.",
+          "answer": "acceso",
+          "hint": "acceder → acceso"
+        },
+        {
+          "sentence": "Se prohíbe el ___ por aquí.",
+          "answer": "paso",
+          "hint": "pasar → paso"
+        },
+        {
+          "sentence": "Las ___ están prohibidas de noche.",
+          "answer": "visitas",
+          "hint": "visitar → visita(s)"
+        },
+        {
+          "sentence": "Se permite el ___ con tarjeta.",
+          "answer": "pago",
+          "hint": "pagar → pago"
+        },
+        {
+          "sentence": "Está prohibido el ___ de tabaco.",
+          "answer": "consumo",
+          "hint": "consumir → consumo"
+        },
+        {
+          "sentence": "No se permite la ___ de video.",
+          "answer": "grabación",
+          "hint": "grabar → grabación"
+        },
+        {
+          "sentence": "La ___ está prohibida aquí.",
+          "answer": "circulación",
+          "hint": "circular → circulación"
+        },
+        {
+          "sentence": "Está prohibida la ___ de folletos.",
+          "answer": "distribución",
+          "hint": "distribuir → distribución"
+        },
+        {
+          "sentence": "El ___ de casco es obligatorio.",
+          "answer": "uso",
+          "hint": "usar → uso"
+        },
+        {
+          "sentence": "La ___ es gratuita.",
+          "answer": "entrada",
+          "hint": "entrar → entrada"
+        },
+        {
+          "sentence": "La ___ online está disponible.",
+          "answer": "venta",
+          "hint": "vender → venta"
+        },
+        {
+          "sentence": "El ___ a internet es libre.",
+          "answer": "acceso",
+          "hint": "acceder → acceso"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Se prohíbe/n vs Está/n prohibido/a/os/as",
+      "hint": "se prohíbe / se prohíben / está prohibido / está prohibida / están prohibidos / están prohibidas",
+      "rule": {
+        "title": "SE PROHÍBE vs ESTÁ PROHIBIDO: dos formas de expresar prohibición",
+        "explanation": "En español hay dos construcciones principales para expresar prohibición. Con 'SE PROHÍBE' el verbo concuerda con el sustantivo. Con 'ESTÁ PROHIBIDO' el participio concuerda con el sustantivo. Ambas construcciones significan lo mismo pero tienen reglas de concordancia diferentes.",
+        "sections": [
+          {
+            "subtitle": "SE PROHÍBE/N + sustantivo/infinitivo",
+            "points": [
+              "Se <b>prohíbe</b> fumar — Курить запрещено (+ инфинитив → ед.ч.)",
+              "Se <b>prohíbe</b> la entrada — Вход запрещён (+ сущ. ед.ч.)",
+              "Se <b>prohíben</b> las visitas — Посещения запрещены (+ сущ. мн.ч.)",
+              "Se <b>prohíben</b> los móviles — Мобильные запрещены (+ сущ. мн.ч.)"
+            ]
+          },
+          {
+            "subtitle": "ESTÁ/N PROHIBIDO/A/OS/AS + sustantivo",
+            "points": [
+              "<b>Está prohibido</b> fumar — Курить запрещено (+ инфинитив → м.р. ед.ч.)",
+              "<b>Está prohibida</b> la entrada — Вход запрещён (ж.р. ед.ч.)",
+              "<b>Están prohibidas</b> las visitas — Посещения запрещены (ж.р. мн.ч.)",
+              "<b>Están prohibidos</b> los móviles — Мобильные запрещены (м.р. мн.ч.)"
+            ]
+          },
+          {
+            "subtitle": "Regla de concordancia",
+            "points": [
+              "SE PROHÍBE/N: el verbo concuerda en número con el sustantivo",
+              "ESTÁ/N PROHIBIDO/A/OS/AS: participio concuerda en género Y número",
+              "Con infinitivo: siempre singular (se prohíbe / está prohibido)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Se prohíbe fumar. = Está prohibido fumar.", "ru": "Курить запрещено."},
+          {"es": "Se prohíbe la entrada. = Está prohibida la entrada.", "ru": "Вход запрещён."},
+          {"es": "Se prohíben las fotos. = Están prohibidas las fotos.", "ru": "Фотографировать запрещено."},
+          {"es": "Se prohíben los móviles. = Están prohibidos los móviles.", "ru": "Мобильные телефоны запрещены."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Se ___ fumar en este edificio.", "answer": "prohíbe"},
+        {"sentence": "___ prohibido el acceso sin permiso.", "answer": "Está"},
+        {"sentence": "Se ___ las visitas después de las 20h.", "answer": "prohíben"},
+        {"sentence": "___ prohibidos los teléfonos móviles.", "answer": "Están"},
+        {"sentence": "Se ___ la entrada a menores.", "answer": "prohíbe"},
+        {"sentence": "___ prohibida la venta de alcohol.", "answer": "Está"},
+        {"sentence": "Se ___ los animales en el hotel.", "answer": "prohíben"},
+        {"sentence": "___ prohibidas las fotografías con flash.", "answer": "Están"},
+        {"sentence": "Se ___ aparcar en esta zona.", "answer": "prohíbe"},
+        {"sentence": "___ prohibido el uso de cámaras.", "answer": "Está"},
+        {"sentence": "Se ___ las bebidas alcohólicas.", "answer": "prohíben"},
+        {"sentence": "___ prohibidas las llamadas durante el examen.", "answer": "Están"},
+        {"sentence": "Se ___ la pesca en este río.", "answer": "prohíbe"},
+        {"sentence": "___ prohibida la caza en el parque.", "answer": "Está"},
+        {"sentence": "Se ___ los drones en el aeropuerto.", "answer": "prohíben"},
+        {"sentence": "___ prohibidos los objetos metálicos.", "answer": "Están"},
+        {"sentence": "Se ___ comer en la biblioteca.", "answer": "prohíbe"},
+        {"sentence": "___ prohibido el baño en esta playa.", "answer": "Está"},
+        {"sentence": "Se ___ las hogueras en el bosque.", "answer": "prohíben"},
+        {"sentence": "___ prohibidas las barbacoas aquí.", "answer": "Están"},
+        {"sentence": "Se ___ la circulación de bicicletas.", "answer": "prohíbe"},
+        {"sentence": "___ prohibida la acampada libre.", "answer": "Está"},
+        {"sentence": "Se ___ los patinetes en la acera.", "answer": "prohíben"},
+        {"sentence": "___ prohibidos los fuegos artificiales.", "answer": "Están"},
+        {"sentence": "Se ___ grabar video.", "answer": "prohíbe"},
+        {"sentence": "___ prohibido el consumo de drogas.", "answer": "Está"},
+        {"sentence": "Se ___ las pintadas en las paredes.", "answer": "prohíben"},
+        {"sentence": "___ prohibidas las armas de fuego.", "answer": "Están"},
+        {"sentence": "Se ___ la distribución de propaganda.", "answer": "prohíbe"},
+        {"sentence": "___ prohibida la entrada con comida.", "answer": "Está"},
+        {"sentence": "Se ___ los juegos de azar.", "answer": "prohíben"},
+        {"sentence": "___ prohibidos los auriculares en el examen.", "answer": "Están"},
+        {"sentence": "Se ___ hablar por teléfono.", "answer": "prohíbe"},
+        {"sentence": "___ prohibido el paso de peatones.", "answer": "Está"},
+        {"sentence": "Se ___ las reuniones de más de 10 personas.", "answer": "prohíben"},
+        {"sentence": "___ prohibidas las fiestas ruidosas.", "answer": "Están"},
+        {"sentence": "Se ___ la venta ambulante.", "answer": "prohíbe"},
+        {"sentence": "___ prohibida la publicidad de tabaco.", "answer": "Está"},
+        {"sentence": "Se ___ los envases de vidrio.", "answer": "prohíben"},
+        {"sentence": "___ prohibidos los líquidos de más de 100ml.", "answer": "Están"},
+        {"sentence": "Se ___ nadar en esta zona.", "answer": "prohíbe"},
+        {"sentence": "___ prohibido el ruido después de las 22h.", "answer": "Está"},
+        {"sentence": "Se ___ las copias sin autorización.", "answer": "prohíben"},
+        {"sentence": "___ prohibidas las modificaciones del contrato.", "answer": "Están"},
+        {"sentence": "Se ___ la navegación en esta zona.", "answer": "prohíbe"},
+        {"sentence": "___ prohibida la tala de árboles.", "answer": "Está"},
+        {"sentence": "Se ___ los altavoces en la playa.", "answer": "prohíben"},
+        {"sentence": "___ prohibidos los carteles publicitarios.", "answer": "Están"},
+        {"sentence": "Se ___ correr en los pasillos.", "answer": "prohíbe"},
+        {"sentence": "___ prohibido el estacionamiento en doble fila.", "answer": "Está"},
+        {"sentence": "Se ___ las actividades comerciales.", "answer": "prohíben"},
+        {"sentence": "___ prohibidas las sustancias peligrosas.", "answer": "Están"},
+        {"sentence": "Se ___ la entrada con mascotas.", "answer": "prohíbe"},
+        {"sentence": "___ prohibida la grabación de audio.", "answer": "Está"},
+        {"sentence": "Se ___ los cigarrillos electrónicos.", "answer": "prohíben"},
+        {"sentence": "___ prohibidos los aparatos electrónicos.", "answer": "Están"},
+        {"sentence": "Se ___ tocar las obras de arte.", "answer": "prohíbe"},
+        {"sentence": "___ prohibido el transporte de animales.", "answer": "Está"},
+        {"sentence": "Se ___ las motos en el paseo marítimo.", "answer": "prohíben"},
+        {"sentence": "___ prohibidas las visitas sin cita previa.", "answer": "Están"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Se ___ fumar aquí.",
+          "answer": "prohíbe",
+          "hint": "Infinitivo → se prohíbe (ед.ч.)"
+        },
+        {
+          "sentence": "___ prohibido el acceso.",
+          "answer": "Está",
+          "hint": "El acceso (м.р. ед.ч.) → está prohibido"
+        },
+        {
+          "sentence": "Se ___ las visitas.",
+          "answer": "prohíben",
+          "hint": "Las visitas (мн.ч.) → se prohíben"
+        },
+        {
+          "sentence": "___ prohibidos los móviles.",
+          "answer": "Están",
+          "hint": "Los móviles (м.р. мн.ч.) → están prohibidos"
+        },
+        {
+          "sentence": "Se ___ la entrada.",
+          "answer": "prohíbe",
+          "hint": "La entrada (ед.ч.) → se prohíbe"
+        },
+        {
+          "sentence": "___ prohibida la venta.",
+          "answer": "Está",
+          "hint": "La venta (ж.р. ед.ч.) → está prohibida"
+        },
+        {
+          "sentence": "Se ___ los animales.",
+          "answer": "prohíben",
+          "hint": "Los animales (мн.ч.) → se prohíben"
+        },
+        {
+          "sentence": "___ prohibidas las fotos.",
+          "answer": "Están",
+          "hint": "Las fotos (ж.р. мн.ч.) → están prohibidas"
+        },
+        {
+          "sentence": "Se ___ aparcar.",
+          "answer": "prohíbe",
+          "hint": "Infinitivo → se prohíbe (ед.ч.)"
+        },
+        {
+          "sentence": "___ prohibido el uso.",
+          "answer": "Está",
+          "hint": "El uso (м.р. ед.ч.) → está prohibido"
+        },
+        {
+          "sentence": "Se ___ las bebidas.",
+          "answer": "prohíben",
+          "hint": "Las bebidas (мн.ч.) → se prohíben"
+        },
+        {
+          "sentence": "___ prohibidas las llamadas.",
+          "answer": "Están",
+          "hint": "Las llamadas (ж.р. мн.ч.) → están prohibidas"
+        },
+        {
+          "sentence": "Se ___ la pesca.",
+          "answer": "prohíbe",
+          "hint": "La pesca (ед.ч.) → se prohíbe"
+        },
+        {
+          "sentence": "___ prohibida la caza.",
+          "answer": "Está",
+          "hint": "La caza (ж.р. ед.ч.) → está prohibida"
+        },
+        {
+          "sentence": "Se ___ los drones.",
+          "answer": "prohíben",
+          "hint": "Los drones (мн.ч.) → se prohíben"
+        }
+      ]
     }
   ]
 }

@@ -2278,6 +2278,369 @@
           "hint": "Los drones (мн.ч.) → se prohíben"
         }
       ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "El verbo DEJAR: diferentes significados",
+      "hint": "dejar (permitir) / dejar (abandonar) / dejar (prestar)",
+      "rule": {
+        "title": "El verbo DEJAR: три основных значения",
+        "explanation": "El verbo DEJAR es muy polisémico en español. Tiene tres significados principales que debes distinguir por el contexto: permitir (разрешать), abandonar/terminar (оставлять, бросать) y prestar (одалживать).",
+        "sections": [
+          {
+            "subtitle": "DEJAR = permitir (разрешать)",
+            "points": [
+              "Mis padres no me <b>dejan</b> salir tarde — Родители не разрешают мне выходить поздно",
+              "¿Me <b>dejas</b> usar tu ordenador? — Разрешишь мне воспользоваться твоим компьютером?",
+              "El profesor nos <b>deja</b> usar el diccionario — Учитель разрешает нам пользоваться словарём",
+              "Construcción: dejar + infinitivo / dejar + que + subjuntivo"
+            ]
+          },
+          {
+            "subtitle": "DEJAR = abandonar, terminar (оставлять, бросать)",
+            "points": [
+              "<b>Dejé</b> el trabajo el mes pasado — Я уволился с работы в прошлом месяце",
+              "Quiero <b>dejar</b> de fumar — Я хочу бросить курить",
+              "Mi compañero <b>dejó</b> la empresa — Мой коллега ушёл из компании",
+              "Construcción: dejar + sustantivo / dejar de + infinitivo"
+            ]
+          },
+          {
+            "subtitle": "DEJAR = prestar (одалживать, оставлять)",
+            "points": [
+              "¿Me <b>dejas</b> tu bolígrafo? — Одолжишь мне ручку?",
+              "<b>Dejé</b> las llaves en la mesa — Я оставил ключи на столе",
+              "Te <b>dejo</b> mi coche para el fin de semana — Одолжу тебе машину на выходные",
+              "Construcción: dejar + objeto (+ a alguien)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Mis padres no me dejaban salir de noche cuando era adolescente.", "ru": "Родители не разрешали мне выходить по ночам, когда я был подростком."},
+          {"es": "Dejó la universidad para trabajar.", "ru": "Он бросил университет, чтобы работать."},
+          {"es": "¿Me dejas tu paraguas? Está lloviendo.", "ru": "Одолжишь мне зонт? Идёт дождь."},
+          {"es": "Dejé de comer carne hace dos años.", "ru": "Я перестал есть мясо два года назад."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Mis padres no me ___ salir después de las 22h. (permitir)", "answer": "dejan"},
+        {"sentence": "Quiero ___ de fumar este año. (abandonar)", "answer": "dejar"},
+        {"sentence": "¿Me ___ tu cargador? Se me olvidó el mío. (prestar)", "answer": "dejas"},
+        {"sentence": "El jefe no nos ___ usar el móvil en el trabajo. (permitir)", "answer": "deja"},
+        {"sentence": "___ el trabajo porque no me gustaba. (abandonar)", "answer": "Dejé"},
+        {"sentence": "Te ___ mi bicicleta para el fin de semana. (prestar)", "answer": "dejo"},
+        {"sentence": "¿Tus padres te ___ llegar tarde? (permitir)", "answer": "dejan"},
+        {"sentence": "Mi hermana ___ de estudiar música. (abandonar)", "answer": "dejó"},
+        {"sentence": "___ las llaves en la recepción del hotel. (prestar/colocar)", "answer": "Dejé"},
+        {"sentence": "No me ___ entrar sin identificación. (permitir)", "answer": "dejan"},
+        {"sentence": "Voy a ___ de comer dulces. (abandonar)", "answer": "dejar"},
+        {"sentence": "¿Me ___ tu libro de español? (prestar)", "answer": "dejas"},
+        {"sentence": "En mi empresa no ___ trabajar desde casa. (permitir)", "answer": "dejan"},
+        {"sentence": "Juan ___ la empresa el mes pasado. (abandonar)", "answer": "dejó"},
+        {"sentence": "Te ___ mi ordenador, pero cuídalo. (prestar)", "answer": "dejo"},
+        {"sentence": "Mis profesores me ___ usar el diccionario en el examen. (permitir)", "answer": "dejan"},
+        {"sentence": "Quiero ___ de ver tanto la televisión. (abandonar)", "answer": "dejar"},
+        {"sentence": "___ el coche en el aparcamiento. (colocar)", "answer": "Dejé"},
+        {"sentence": "¿Por qué no te ___ ir a la fiesta? (permitir)", "answer": "dejan"},
+        {"sentence": "María ___ de trabajar para cuidar a sus hijos. (abandonar)", "answer": "dejó"},
+        {"sentence": "¿Me ___ tu paraguas? Está lloviendo. (prestar)", "answer": "dejas"},
+        {"sentence": "El hotel no ___ entrar con mascotas. (permitir)", "answer": "deja"},
+        {"sentence": "Pedro ___ los estudios a los 16 años. (abandonar)", "answer": "dejó"},
+        {"sentence": "Te ___ mis apuntes para el examen. (prestar)", "answer": "dejo"},
+        {"sentence": "No nos ___ hacer ruido después de las 22h. (permitir)", "answer": "dejan"},
+        {"sentence": "___ de hacer deporte por una lesión. (abandonar)", "answer": "Dejé"},
+        {"sentence": "___ la maleta en la consigna. (colocar)", "answer": "Dejé"},
+        {"sentence": "¿Me ___ pasar? Tengo prisa. (permitir)", "answer": "dejas"},
+        {"sentence": "Ana ___ su puesto de trabajo. (abandonar)", "answer": "dejó"},
+        {"sentence": "¿Me ___ tu calculadora para el examen? (prestar)", "answer": "dejas"},
+        {"sentence": "Mis padres me ___ ir de vacaciones solo. (permitir)", "answer": "dejan"},
+        {"sentence": "Quiero ___ de quejarme tanto. (abandonar)", "answer": "dejar"},
+        {"sentence": "___ un mensaje en el contestador. (colocar)", "answer": "Dejé"},
+        {"sentence": "El cine no ___ entrar con comida. (permitir)", "answer": "deja"},
+        {"sentence": "Luis ___ de estudiar inglés. (abandonar)", "answer": "dejó"},
+        {"sentence": "Te ___ mi coche, pero no bebas. (prestar)", "answer": "dejo"},
+        {"sentence": "¿Te ___ salir tus padres los fines de semana? (permitir)", "answer": "dejan"},
+        {"sentence": "Hace un año que ___ de beber alcohol. (abandonar)", "answer": "dejé"},
+        {"sentence": "___ la propina en la mesa. (colocar)", "answer": "Dejé"},
+        {"sentence": "No me ___ hablar en clase. (permitir)", "answer": "dejan"},
+        {"sentence": "Carlos ___ de jugar al fútbol profesional. (abandonar)", "answer": "dejó"},
+        {"sentence": "¿Me ___ tu diccionario un momento? (prestar)", "answer": "dejas"},
+        {"sentence": "¿Os ___ vuestros padres volver tarde? (permitir)", "answer": "dejan"},
+        {"sentence": "___ de llamar a las 23h porque era muy tarde. (abandonar)", "answer": "Dejé"},
+        {"sentence": "___ los documentos en tu mesa. (colocar)", "answer": "Dejé"},
+        {"sentence": "La universidad no ___ copiar en los exámenes. (permitir)", "answer": "deja"},
+        {"sentence": "Mi novia ___ de fumar hace tres meses. (abandonar)", "answer": "dejó"},
+        {"sentence": "Te ___ mi tarjeta de transporte. (prestar)", "answer": "dejo"},
+        {"sentence": "¿Por qué no te ___ tus padres tener un perro? (permitir)", "answer": "dejan"},
+        {"sentence": "El médico me dijo que ___ de comer sal. (abandonar)", "answer": "dejara"},
+        {"sentence": "___ el abrigo en el guardarropa. (colocar)", "answer": "Dejé"},
+        {"sentence": "El gimnasio no ___ entrar sin zapatillas deportivas. (permitir)", "answer": "deja"},
+        {"sentence": "Mi abuelo ___ de conducir a los 80 años. (abandonar)", "answer": "dejó"},
+        {"sentence": "¿Me ___ tus gafas de sol? (prestar)", "answer": "dejas"},
+        {"sentence": "No nos ___ comer en clase. (permitir)", "answer": "dejan"},
+        {"sentence": "Quiero ___ de llegar tarde al trabajo. (abandonar)", "answer": "dejar"},
+        {"sentence": "___ una nota en la puerta. (colocar)", "answer": "Dejé"},
+        {"sentence": "¿Te ___ tus padres salir entre semana? (permitir)", "answer": "dejan"},
+        {"sentence": "Ella ___ de trabajar cuando tuvo hijos. (abandonar)", "answer": "dejó"},
+        {"sentence": "Te ___ mis herramientas, pero devuélvemelas. (prestar)", "answer": "dejo"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Mis padres no me ___ salir tarde.",
+          "answer": "dejan",
+          "hint": "Dejar = permitir (разрешать)"
+        },
+        {
+          "sentence": "Quiero ___ de fumar.",
+          "answer": "dejar",
+          "hint": "Dejar de = abandonar (бросить)"
+        },
+        {
+          "sentence": "¿Me ___ tu cargador?",
+          "answer": "dejas",
+          "hint": "Dejar = prestar (одолжить)"
+        },
+        {
+          "sentence": "___ el trabajo el mes pasado.",
+          "answer": "Dejé",
+          "hint": "Dejar = abandonar (уволиться)"
+        },
+        {
+          "sentence": "Te ___ mi bicicleta.",
+          "answer": "dejo",
+          "hint": "Dejar = prestar (одолжить)"
+        },
+        {
+          "sentence": "El jefe no nos ___ usar el móvil.",
+          "answer": "deja",
+          "hint": "Dejar = permitir (разрешать)"
+        },
+        {
+          "sentence": "___ las llaves en la mesa.",
+          "answer": "Dejé",
+          "hint": "Dejar = colocar (оставить)"
+        },
+        {
+          "sentence": "María ___ de estudiar música.",
+          "answer": "dejó",
+          "hint": "Dejar de = abandonar (бросить)"
+        },
+        {
+          "sentence": "¿Me ___ tu libro?",
+          "answer": "dejas",
+          "hint": "Dejar = prestar (одолжить)"
+        },
+        {
+          "sentence": "No me ___ entrar sin carné.",
+          "answer": "dejan",
+          "hint": "Dejar = permitir (разрешать)"
+        },
+        {
+          "sentence": "___ de comer carne hace un año.",
+          "answer": "Dejé",
+          "hint": "Dejar de = abandonar (перестать)"
+        },
+        {
+          "sentence": "Te ___ mi coche para el viaje.",
+          "answer": "dejo",
+          "hint": "Dejar = prestar (одолжить)"
+        },
+        {
+          "sentence": "¿Te ___ tus padres llegar tarde?",
+          "answer": "dejan",
+          "hint": "Dejar = permitir (разрешать)"
+        },
+        {
+          "sentence": "___ el abrigo en el armario.",
+          "answer": "Dejé",
+          "hint": "Dejar = colocar (оставить)"
+        },
+        {
+          "sentence": "Juan ___ la empresa ayer.",
+          "answer": "dejó",
+          "hint": "Dejar = abandonar (уволиться)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Expresiones: lo que más/menos + verbo",
+      "hint": "lo que más / lo que menos / lo mejor / lo peor",
+      "rule": {
+        "title": "Expresiones con LO QUE MÁS/MENOS: что больше/меньше всего",
+        "explanation": "En español usamos construcciones con 'lo que más' y 'lo que menos' para expresar preferencias, gustos y opiniones sobre lo que nos agrada o desagrada más. También usamos 'lo mejor' y 'lo peor' para valoraciones.",
+        "sections": [
+          {
+            "subtitle": "LO QUE MÁS + verbo — что больше всего",
+            "points": [
+              "<b>Lo que más</b> me gusta de mi trabajo son las vacaciones — Что мне больше всего нравится в работе — это отпуск",
+              "<b>Lo que más</b> me molesta es el ruido — Что меня больше всего раздражает — это шум",
+              "<b>Lo que más</b> echo de menos es a mi familia — Больше всего мне не хватает семьи"
+            ]
+          },
+          {
+            "subtitle": "LO QUE MENOS + verbo — что меньше всего",
+            "points": [
+              "<b>Lo que menos</b> me gusta es madrugar — Что мне меньше всего нравится — это рано вставать",
+              "<b>Lo que menos</b> me importa es el dinero — Меньше всего меня волнуют деньги",
+              "<b>Lo que menos</b> entiendo es su actitud — Меньше всего я понимаю его отношение"
+            ]
+          },
+          {
+            "subtitle": "LO MEJOR / LO PEOR — лучшее / худшее",
+            "points": [
+              "<b>Lo mejor</b> de este trabajo es el horario — Лучшее в этой работе — это график",
+              "<b>Lo peor</b> es el sueldo — Худшее — это зарплата",
+              "<b>Lo mejor</b> de vivir aquí es el clima — Лучшее в жизни здесь — это климат"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Lo que más me gusta de España es la comida.", "ru": "Что мне больше всего нравится в Испании — это еда."},
+          {"es": "Lo que menos me gusta de mi trabajo es el horario.", "ru": "Что мне меньше всего нравится в работе — это график."},
+          {"es": "Lo mejor de mi ciudad es que es muy tranquila.", "ru": "Лучшее в моём городе — то, что он очень спокойный."},
+          {"es": "Lo peor de viajar en avión es la espera.", "ru": "Худшее в авиаперелётах — это ожидание."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Lo que ___ me gusta de mi trabajo son las vacaciones.", "answer": "más"},
+        {"sentence": "Lo que ___ me gusta es madrugar.", "answer": "menos"},
+        {"sentence": "Lo ___ de este restaurante es la comida.", "answer": "mejor"},
+        {"sentence": "Lo ___ de mi trabajo es el sueldo.", "answer": "peor"},
+        {"sentence": "Lo que ___ me molesta es el ruido.", "answer": "más"},
+        {"sentence": "Lo que ___ me importa es la fama.", "answer": "menos"},
+        {"sentence": "Lo ___ de vivir aquí es el clima.", "answer": "mejor"},
+        {"sentence": "Lo ___ de este hotel es la ubicación.", "answer": "peor"},
+        {"sentence": "Lo que ___ echo de menos es a mi familia.", "answer": "más"},
+        {"sentence": "Lo que ___ entiendo es su actitud.", "answer": "menos"},
+        {"sentence": "Lo ___ de mi ciudad es el transporte.", "answer": "mejor"},
+        {"sentence": "Lo ___ de viajar es hacer las maletas.", "answer": "peor"},
+        {"sentence": "Lo que ___ me gusta de España es la gente.", "answer": "más"},
+        {"sentence": "Lo que ___ me gusta es esperar.", "answer": "menos"},
+        {"sentence": "Lo ___ de ser profesor son las vacaciones.", "answer": "mejor"},
+        {"sentence": "Lo ___ de este barrio es el ruido.", "answer": "peor"},
+        {"sentence": "Lo que ___ me atrae de este trabajo es el horario.", "answer": "más"},
+        {"sentence": "Lo que ___ me preocupa es el futuro.", "answer": "menos"},
+        {"sentence": "Lo ___ de mi casa es la terraza.", "answer": "mejor"},
+        {"sentence": "Lo ___ de estudiar es memorizar.", "answer": "peor"},
+        {"sentence": "Lo que ___ me gusta de Madrid es la vida nocturna.", "answer": "más"},
+        {"sentence": "Lo que ___ me gusta es levantarme temprano.", "answer": "menos"},
+        {"sentence": "Lo ___ de este curso es el profesor.", "answer": "mejor"},
+        {"sentence": "Lo ___ de mi coche es el consumo.", "answer": "peor"},
+        {"sentence": "Lo que ___ valoro es la sinceridad.", "answer": "más"},
+        {"sentence": "Lo que ___ tolero es la mentira.", "answer": "menos"},
+        {"sentence": "Lo ___ de la universidad es conocer gente.", "answer": "mejor"},
+        {"sentence": "Lo ___ de los exámenes es la presión.", "answer": "peor"},
+        {"sentence": "Lo que ___ me fascina es viajar.", "answer": "más"},
+        {"sentence": "Lo que ___ me interesa es la política.", "answer": "menos"},
+        {"sentence": "Lo ___ de mi nuevo trabajo es el equipo.", "answer": "mejor"},
+        {"sentence": "Lo ___ de vivir solo es la soledad.", "answer": "peor"},
+        {"sentence": "Lo que ___ disfruto es leer.", "answer": "más"},
+        {"sentence": "Lo que ___ me apetece es estudiar.", "answer": "menos"},
+        {"sentence": "Lo ___ de Barcelona es la playa.", "answer": "mejor"},
+        {"sentence": "Lo ___ del invierno es el frío.", "answer": "peor"},
+        {"sentence": "Lo que ___ me relaja es la música.", "answer": "más"},
+        {"sentence": "Lo que ___ me divierte es la televisión.", "answer": "menos"},
+        {"sentence": "Lo ___ de trabajar aquí es el ambiente.", "answer": "mejor"},
+        {"sentence": "Lo ___ de este apartamento es el tamaño.", "answer": "peor"},
+        {"sentence": "Lo que ___ me sorprendió fue la amabilidad.", "answer": "más"},
+        {"sentence": "Lo que ___ esperaba era esa reacción.", "answer": "menos"},
+        {"sentence": "Lo ___ de la fiesta fue la música.", "answer": "mejor"},
+        {"sentence": "Lo ___ de la reunión fue la duración.", "answer": "peor"},
+        {"sentence": "Lo que ___ me cuesta es hablar en público.", "answer": "más"},
+        {"sentence": "Lo que ___ me cuesta es escribir.", "answer": "menos"},
+        {"sentence": "Lo ___ de mi vida es mi familia.", "answer": "mejor"},
+        {"sentence": "Lo ___ de la semana es el lunes.", "answer": "peor"},
+        {"sentence": "Lo que ___ me alegra es ver a mis amigos.", "answer": "más"},
+        {"sentence": "Lo que ___ me afecta es la crítica.", "answer": "menos"},
+        {"sentence": "Lo ___ de ser bilingüe es la flexibilidad.", "answer": "mejor"},
+        {"sentence": "Lo ___ de la pandemia fue el aislamiento.", "answer": "peor"},
+        {"sentence": "Lo que ___ me entusiasma es aprender.", "answer": "más"},
+        {"sentence": "Lo que ___ me motiva es el dinero.", "answer": "menos"},
+        {"sentence": "Lo ___ del verano es el calor.", "answer": "mejor"},
+        {"sentence": "Lo ___ de cocinar es fregar los platos.", "answer": "peor"},
+        {"sentence": "Lo que ___ aprecio es la honestidad.", "answer": "más"},
+        {"sentence": "Lo que ___ soporto es la hipocresía.", "answer": "menos"},
+        {"sentence": "Lo ___ de esta ciudad es la seguridad.", "answer": "mejor"},
+        {"sentence": "Lo ___ del trabajo es el estrés.", "answer": "peor"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Lo que ___ me gusta es el horario.",
+          "answer": "más",
+          "hint": "Что больше всего = lo que más"
+        },
+        {
+          "sentence": "Lo que ___ me gusta es madrugar.",
+          "answer": "menos",
+          "hint": "Что меньше всего = lo que menos"
+        },
+        {
+          "sentence": "Lo ___ de mi trabajo son las vacaciones.",
+          "answer": "mejor",
+          "hint": "Лучшее = lo mejor"
+        },
+        {
+          "sentence": "Lo ___ de este restaurante es el servicio.",
+          "answer": "peor",
+          "hint": "Худшее = lo peor"
+        },
+        {
+          "sentence": "Lo que ___ me molesta es el ruido.",
+          "answer": "más",
+          "hint": "Что больше всего = lo que más"
+        },
+        {
+          "sentence": "Lo que ___ me importa es el dinero.",
+          "answer": "menos",
+          "hint": "Что меньше всего = lo que menos"
+        },
+        {
+          "sentence": "Lo ___ de vivir aquí es el clima.",
+          "answer": "mejor",
+          "hint": "Лучшее = lo mejor"
+        },
+        {
+          "sentence": "Lo ___ de viajar es hacer maletas.",
+          "answer": "peor",
+          "hint": "Худшее = lo peor"
+        },
+        {
+          "sentence": "Lo que ___ echo de menos es mi familia.",
+          "answer": "más",
+          "hint": "Что больше всего = lo que más"
+        },
+        {
+          "sentence": "Lo que ___ entiendo es su actitud.",
+          "answer": "menos",
+          "hint": "Что меньше всего = lo que menos"
+        },
+        {
+          "sentence": "Lo ___ de la fiesta fue la música.",
+          "answer": "mejor",
+          "hint": "Лучшее = lo mejor"
+        },
+        {
+          "sentence": "Lo ___ del examen fue la presión.",
+          "answer": "peor",
+          "hint": "Худшее = lo peor"
+        },
+        {
+          "sentence": "Lo que ___ valoro es la sinceridad.",
+          "answer": "más",
+          "hint": "Что больше всего = lo que más"
+        },
+        {
+          "sentence": "Lo que ___ tolero es la mentira.",
+          "answer": "menos",
+          "hint": "Что меньше всего = lo que menos"
+        },
+        {
+          "sentence": "Lo ___ de Barcelona es la playa.",
+          "answer": "mejor",
+          "hint": "Лучшее = lo mejor"
+        }
+      ]
     }
   ]
 }

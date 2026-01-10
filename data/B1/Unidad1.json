@@ -2795,8 +2795,195 @@
             }
           }
         ],
-        "irregulares": [],
-        "otras": []
+        "irregulares": [
+          {
+            "infinitivo": "ser",
+            "traduccion": "быть (характеристика)",
+            "formas": {
+              "yo": "soy",
+              "tu": "eres",
+              "el": "es",
+              "nosotros": "somos",
+              "vosotros": "sois",
+              "ellos": "son"
+            }
+          },
+          {
+            "infinitivo": "estar",
+            "traduccion": "быть (состояние)",
+            "formas": {
+              "yo": "estoy",
+              "tu": "estás",
+              "el": "está",
+              "nosotros": "estamos",
+              "vosotros": "estáis",
+              "ellos": "están"
+            }
+          },
+          {
+            "infinitivo": "ir",
+            "traduccion": "идти, ехать",
+            "formas": {
+              "yo": "voy",
+              "tu": "vas",
+              "el": "va",
+              "nosotros": "vamos",
+              "vosotros": "vais",
+              "ellos": "van"
+            }
+          },
+          {
+            "infinitivo": "tener",
+            "traduccion": "иметь",
+            "formas": {
+              "yo": "tengo",
+              "tu": "tienes",
+              "el": "tiene",
+              "nosotros": "tenemos",
+              "vosotros": "tenéis",
+              "ellos": "tienen"
+            }
+          },
+          {
+            "infinitivo": "hacer",
+            "traduccion": "делать",
+            "formas": {
+              "yo": "hago",
+              "tu": "haces",
+              "el": "hace",
+              "nosotros": "hacemos",
+              "vosotros": "hacéis",
+              "ellos": "hacen"
+            }
+          },
+          {
+            "infinitivo": "poder",
+            "traduccion": "мочь",
+            "formas": {
+              "yo": "puedo",
+              "tu": "puedes",
+              "el": "puede",
+              "nosotros": "podemos",
+              "vosotros": "podéis",
+              "ellos": "pueden"
+            }
+          },
+          {
+            "infinitivo": "querer",
+            "traduccion": "хотеть",
+            "formas": {
+              "yo": "quiero",
+              "tu": "quieres",
+              "el": "quiere",
+              "nosotros": "queremos",
+              "vosotros": "queréis",
+              "ellos": "quieren"
+            }
+          },
+          {
+            "infinitivo": "saber",
+            "traduccion": "знать",
+            "formas": {
+              "yo": "sé",
+              "tu": "sabes",
+              "el": "sabe",
+              "nosotros": "sabemos",
+              "vosotros": "sabéis",
+              "ellos": "saben"
+            }
+          },
+          {
+            "infinitivo": "decir",
+            "traduccion": "говорить, сказать",
+            "formas": {
+              "yo": "digo",
+              "tu": "dices",
+              "el": "dice",
+              "nosotros": "decimos",
+              "vosotros": "decís",
+              "ellos": "dicen"
+            }
+          },
+          {
+            "infinitivo": "venir",
+            "traduccion": "приходить",
+            "formas": {
+              "yo": "vengo",
+              "tu": "vienes",
+              "el": "viene",
+              "nosotros": "venimos",
+              "vosotros": "venís",
+              "ellos": "vienen"
+            }
+          }
+        ],
+        "otras": [
+          {
+            "infinitivo": "levantarse",
+            "traduccion": "вставать",
+            "tipo": "reflexivo",
+            "formas": {
+              "yo": "me levanto",
+              "tu": "te levantas",
+              "el": "se levanta",
+              "nosotros": "nos levantamos",
+              "vosotros": "os levantáis",
+              "ellos": "se levantan"
+            }
+          },
+          {
+            "infinitivo": "acostarse",
+            "traduccion": "ложиться спать",
+            "tipo": "reflexivo",
+            "formas": {
+              "yo": "me acuesto",
+              "tu": "te acuestas",
+              "el": "se acuesta",
+              "nosotros": "nos acostamos",
+              "vosotros": "os acostáis",
+              "ellos": "se acuestan"
+            }
+          },
+          {
+            "infinitivo": "vestirse",
+            "traduccion": "одеваться",
+            "tipo": "reflexivo",
+            "formas": {
+              "yo": "me visto",
+              "tu": "te vistes",
+              "el": "se viste",
+              "nosotros": "nos vestimos",
+              "vosotros": "os vestís",
+              "ellos": "se visten"
+            }
+          },
+          {
+            "infinitivo": "sentirse",
+            "traduccion": "чувствовать себя",
+            "tipo": "reflexivo",
+            "formas": {
+              "yo": "me siento",
+              "tu": "te sientes",
+              "el": "se siente",
+              "nosotros": "nos sentimos",
+              "vosotros": "os sentís",
+              "ellos": "se sienten"
+            }
+          },
+          {
+            "infinitivo": "dedicarse",
+            "traduccion": "заниматься",
+            "tipo": "reflexivo",
+            "formas": {
+              "yo": "me dedico",
+              "tu": "te dedicas",
+              "el": "se dedica",
+              "nosotros": "nos dedicamos",
+              "vosotros": "os dedicáis",
+              "ellos": "se dedican"
+            }
+          }
+        ]
       }
     ]
   }

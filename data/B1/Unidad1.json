@@ -2642,5 +2642,162 @@
         }
       ]
     }
-  ]
+  ],
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "presente",
+        "nombre": "Presente de indicativo",
+        "requiredEjercicio": "ejercicio_1",
+        "regulares": [
+          {
+            "infinitivo": "trabajar",
+            "traduccion": "работать",
+            "formas": {
+              "yo": "trabajo",
+              "tu": "trabajas",
+              "el": "trabaja",
+              "nosotros": "trabajamos",
+              "vosotros": "trabajáis",
+              "ellos": "trabajan"
+            }
+          },
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "yo": "hablo",
+              "tu": "hablas",
+              "el": "habla",
+              "nosotros": "hablamos",
+              "vosotros": "habláis",
+              "ellos": "hablan"
+            }
+          },
+          {
+            "infinitivo": "llegar",
+            "traduccion": "прибывать",
+            "formas": {
+              "yo": "llego",
+              "tu": "llegas",
+              "el": "llega",
+              "nosotros": "llegamos",
+              "vosotros": "llegáis",
+              "ellos": "llegan"
+            }
+          },
+          {
+            "infinitivo": "invitar",
+            "traduccion": "приглашать",
+            "formas": {
+              "yo": "invito",
+              "tu": "invitas",
+              "el": "invita",
+              "nosotros": "invitamos",
+              "vosotros": "invitáis",
+              "ellos": "invitan"
+            }
+          },
+          {
+            "infinitivo": "aceptar",
+            "traduccion": "принимать",
+            "formas": {
+              "yo": "acepto",
+              "tu": "aceptas",
+              "el": "acepta",
+              "nosotros": "aceptamos",
+              "vosotros": "aceptáis",
+              "ellos": "aceptan"
+            }
+          },
+          {
+            "infinitivo": "rechazar",
+            "traduccion": "отклонять",
+            "formas": {
+              "yo": "rechazo",
+              "tu": "rechazas",
+              "el": "rechaza",
+              "nosotros": "rechazamos",
+              "vosotros": "rechazáis",
+              "ellos": "rechazan"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "yo": "como",
+              "tu": "comes",
+              "el": "come",
+              "nosotros": "comemos",
+              "vosotros": "coméis",
+              "ellos": "comen"
+            }
+          },
+          {
+            "infinitivo": "beber",
+            "traduccion": "пить",
+            "formas": {
+              "yo": "bebo",
+              "tu": "bebes",
+              "el": "bebe",
+              "nosotros": "bebemos",
+              "vosotros": "bebéis",
+              "ellos": "beben"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "vivo",
+              "tu": "vives",
+              "el": "vive",
+              "nosotros": "vivimos",
+              "vosotros": "vivís",
+              "ellos": "viven"
+            }
+          },
+          {
+            "infinitivo": "escribir",
+            "traduccion": "писать",
+            "formas": {
+              "yo": "escribo",
+              "tu": "escribes",
+              "el": "escribe",
+              "nosotros": "escribimos",
+              "vosotros": "escribís",
+              "ellos": "escriben"
+            }
+          },
+          {
+            "infinitivo": "permitir",
+            "traduccion": "разрешать",
+            "formas": {
+              "yo": "permito",
+              "tu": "permites",
+              "el": "permite",
+              "nosotros": "permitimos",
+              "vosotros": "permitís",
+              "ellos": "permiten"
+            }
+          },
+          {
+            "infinitivo": "prohibir",
+            "traduccion": "запрещать",
+            "formas": {
+              "yo": "prohíbo",
+              "tu": "prohíbes",
+              "el": "prohíbe",
+              "nosotros": "prohibimos",
+              "vosotros": "prohibís",
+              "ellos": "prohíben"
+            }
+          }
+        ],
+        "irregulares": [],
+        "otras": []
+      }
+    ]
+  }
 }

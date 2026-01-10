@@ -1,0 +1,2285 @@
+{
+  "id": "unidad_8",
+  "title": "Unidad 8: Estamos muy bien",
+  "groups": {
+    "PARTES_DEL_CUERPO": [
+      {
+        "spanish": "la cabeza",
+        "ru": "голова",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele mucho la ___ después del trabajo.",
+          "Llevo todo el día con dolor de ___.",
+          "La ___ me da vueltas cuando me levanto rápido.",
+          "Tengo que proteger la ___ del sol con un sombrero."
+        ],
+        "hardSentencesRu": [
+          "У меня сильно болит голова после работы.",
+          "У меня весь день болит голова.",
+          "Голова кружится, когда я быстро встаю.",
+          "Мне нужно защитить голову от солнца шляпой."
+        ]
+      },
+      {
+        "spanish": "el pelo",
+        "ru": "волосы",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Se me cae mucho el ___ últimamente.",
+          "Para tener un ___ sano hay que comer frutas.",
+          "Debes proteger el ___ del sol en verano.",
+          "Me lavo el ___ todos los días."
+        ],
+        "hardSentencesRu": [
+          "У меня в последнее время сильно выпадают волосы.",
+          "Чтобы волосы были здоровыми, нужно есть фрукты.",
+          "Летом нужно защищать волосы от солнца.",
+          "Я мою голову каждый день."
+        ]
+      },
+      {
+        "spanish": "el ojo",
+        "ru": "глаз",
+        "type": "sustantivo",
+        "icon": "eye",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo el ___ irritado por la alergia.",
+          "Ponte gafas de sol para proteger el ___.",
+          "El ___ izquierdo me duele mucho.",
+          "Si tienes el ___ rojo, ve al médico."
+        ],
+        "hardSentencesRu": [
+          "У меня раздражён глаз из-за аллергии.",
+          "Надень солнечные очки, чтобы защитить глаза.",
+          "Левый глаз сильно болит.",
+          "Если у тебя красный глаз, сходи к врачу."
+        ]
+      },
+      {
+        "spanish": "la nariz",
+        "ru": "нос",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo la ___ tapada por el resfriado.",
+          "Me sangra la ___ cuando hace mucho calor.",
+          "Ponte protector solar en la ___.",
+          "La ___ me pica por la alergia."
+        ],
+        "hardSentencesRu": [
+          "У меня заложен нос из-за простуды.",
+          "У меня идёт кровь из носа, когда очень жарко.",
+          "Нанеси солнцезащитный крем на нос.",
+          "Нос чешется из-за аллергии."
+        ]
+      },
+      {
+        "spanish": "la boca",
+        "ru": "рот",
+        "type": "sustantivo",
+        "icon": "chat-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele la ___ después de ir al dentista.",
+          "Tienes que abrir la ___ para que te examine.",
+          "Tengo la ___ seca por el medicamento.",
+          "La ___ me huele mal por la mañana."
+        ],
+        "hardSentencesRu": [
+          "У меня болит рот после визита к стоматологу.",
+          "Тебе нужно открыть рот, чтобы я тебя осмотрел.",
+          "У меня сухость во рту из-за лекарства.",
+          "По утрам изо рта неприятно пахнет."
+        ]
+      },
+      {
+        "spanish": "el cuello",
+        "ru": "шея",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele el ___ de dormir mal.",
+          "Tengo el ___ rígido por el estrés.",
+          "Ponte una bufanda para proteger el ___.",
+          "El ___ me duele cuando miro el móvil mucho tiempo."
+        ],
+        "hardSentencesRu": [
+          "У меня болит шея из-за плохого сна.",
+          "У меня напряжённая шея из-за стресса.",
+          "Надень шарф, чтобы защитить шею.",
+          "Шея болит, когда долго смотрю в телефон."
+        ]
+      },
+      {
+        "spanish": "el hombro",
+        "ru": "плечо",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele el ___ después de nadar.",
+          "Tengo una lesión en el ___ derecho.",
+          "El ___ me molesta cuando levanto peso.",
+          "Para fortalecer el ___ puedes hacer natación."
+        ],
+        "hardSentencesRu": [
+          "У меня болит плечо после плавания.",
+          "У меня травма правого плеча.",
+          "Плечо беспокоит, когда поднимаю тяжести.",
+          "Чтобы укрепить плечи, можно заниматься плаванием."
+        ]
+      },
+      {
+        "spanish": "el brazo",
+        "ru": "рука (от плеча до кисти)",
+        "type": "sustantivo",
+        "icon": "hand-fist",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele el ___ de tanto escribir.",
+          "Me he roto el ___ jugando al fútbol.",
+          "Para fortalecer el ___ haz flexiones.",
+          "Tengo el ___ hinchado por la picadura."
+        ],
+        "hardSentencesRu": [
+          "У меня болит рука от долгого письма.",
+          "Я сломал руку, играя в футбол.",
+          "Чтобы укрепить руки, делай отжимания.",
+          "У меня опухла рука от укуса."
+        ]
+      },
+      {
+        "spanish": "la mano",
+        "ru": "кисть руки",
+        "type": "sustantivo",
+        "icon": "hand",
+        "useIcon": true,
+        "hardSentences": [
+          "En invierno debes proteger la ___ del frío.",
+          "Me duele la ___ de escribir tanto.",
+          "Lávate bien la ___ antes de comer.",
+          "Tengo la ___ seca por el frío."
+        ],
+        "hardSentencesRu": [
+          "Зимой нужно защищать руки от холода.",
+          "У меня болит рука от долгого письма.",
+          "Хорошо вымой руки перед едой.",
+          "У меня сухие руки из-за холода."
+        ]
+      },
+      {
+        "spanish": "la espalda",
+        "ru": "спина",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele la ___ de estar sentado todo el día.",
+          "Para fortalecer la ___ puedes hacer natación.",
+          "Debes cuidar la postura de la ___.",
+          "Tengo dolor de ___ por levantar peso."
+        ],
+        "hardSentencesRu": [
+          "У меня болит спина от сидения весь день.",
+          "Чтобы укрепить спину, можно плавать.",
+          "Нужно следить за осанкой.",
+          "У меня болит спина от поднятия тяжестей."
+        ]
+      },
+      {
+        "spanish": "el pecho",
+        "ru": "грудь",
+        "type": "sustantivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele el ___ cuando respiro profundo.",
+          "Siento presión en el ___ por el estrés.",
+          "El ___ me duele después de correr.",
+          "Tengo dolor en el ___ desde ayer."
+        ],
+        "hardSentencesRu": [
+          "У меня болит грудь, когда глубоко дышу.",
+          "Я чувствую давление в груди из-за стресса.",
+          "Грудь болит после бега.",
+          "У меня болит грудь со вчерашнего дня."
+        ]
+      },
+      {
+        "spanish": "la pierna",
+        "ru": "нога (от бедра до стопы)",
+        "type": "sustantivo",
+        "icon": "person",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele la ___ después de correr.",
+          "Tengo la ___ hinchada por la lesión.",
+          "Para fortalecer la ___ camina cada día.",
+          "La ___ me duele por el ejercicio."
+        ],
+        "hardSentencesRu": [
+          "У меня болит нога после бега.",
+          "У меня опухла нога из-за травмы.",
+          "Чтобы укрепить ноги, ходи каждый день.",
+          "Нога болит от упражнений."
+        ]
+      },
+      {
+        "spanish": "la rodilla",
+        "ru": "колено",
+        "type": "sustantivo",
+        "icon": "person",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele la ___ cuando subo escaleras.",
+          "Tengo una lesión en la ___ izquierda.",
+          "La ___ me molesta después de correr.",
+          "Dobla la ___ al agacharte."
+        ],
+        "hardSentencesRu": [
+          "У меня болит колено, когда поднимаюсь по лестнице.",
+          "У меня травма левого колена.",
+          "Колено беспокоит после бега.",
+          "Сгибай колени, когда приседаешь."
+        ]
+      },
+      {
+        "spanish": "el pie",
+        "ru": "ступня",
+        "type": "sustantivo",
+        "icon": "sneaker",
+        "useIcon": true,
+        "hardSentences": [
+          "Me duele el ___ de caminar todo el día.",
+          "Lava e hidrata el ___ a diario.",
+          "Tengo el ___ hinchado por el calor.",
+          "El ___ me duele por los zapatos nuevos."
+        ],
+        "hardSentencesRu": [
+          "У меня болит ступня от ходьбы весь день.",
+          "Мой и увлажняй ноги каждый день.",
+          "У меня опухла нога от жары.",
+          "Нога болит из-за новой обуви."
+        ]
+      },
+      {
+        "spanish": "la cara",
+        "ru": "лицо",
+        "type": "sustantivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Ponte crema hidratante en la ___ cada día.",
+          "Tengo la ___ irritada por el sol.",
+          "Debes desmaquillarte la ___ antes de dormir.",
+          "La ___ me pica por la alergia."
+        ],
+        "hardSentencesRu": [
+          "Наноси увлажняющий крем на лицо каждый день.",
+          "У меня раздражение на лице от солнца.",
+          "Нужно снимать макияж перед сном.",
+          "Лицо чешется из-за аллергии."
+        ]
+      },
+      {
+        "spanish": "el labio",
+        "ru": "губа",
+        "type": "sustantivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo el ___ seco por el frío.",
+          "Debes hidratar el ___ regularmente.",
+          "Me he cortado el ___ comiendo.",
+          "El ___ me duele por el herpes."
+        ],
+        "hardSentencesRu": [
+          "У меня сухие губы из-за холода.",
+          "Нужно регулярно увлажнять губы.",
+          "Я порезал губу во время еды.",
+          "Губа болит из-за герпеса."
+        ]
+      }
+    ],
+    "SALUD_SINTOMAS": [
+      {
+        "spanish": "la tos",
+        "ru": "кашель",
+        "type": "sustantivo",
+        "icon": "virus",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo mucha ___ desde hace una semana.",
+          "La ___ no me deja dormir por la noche.",
+          "La miel es buena para la ___.",
+          "La ___ me molesta mucho en el trabajo."
+        ],
+        "hardSentencesRu": [
+          "У меня сильный кашель уже неделю.",
+          "Кашель не даёт мне спать по ночам.",
+          "Мёд хорошо помогает от кашля.",
+          "Кашель очень мешает мне на работе."
+        ]
+      },
+      {
+        "spanish": "la fiebre",
+        "ru": "температура, жар",
+        "type": "sustantivo",
+        "icon": "thermometer",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ de 38 grados.",
+          "La ___ me ha subido esta noche.",
+          "Con ___ es mejor quedarse en casa.",
+          "La ___ es un síntoma de infección."
+        ],
+        "hardSentencesRu": [
+          "У меня температура 38 градусов.",
+          "Температура поднялась этой ночью.",
+          "С температурой лучше оставаться дома.",
+          "Жар — это симптом инфекции."
+        ]
+      },
+      {
+        "spanish": "la gripe",
+        "ru": "грипп",
+        "type": "sustantivo",
+        "icon": "virus",
+        "useIcon": true,
+        "hardSentences": [
+          "He cogido la ___ este invierno.",
+          "La ___ me tiene en cama desde el lunes.",
+          "La vacuna de la ___ es muy importante.",
+          "Con la ___ hay que descansar mucho."
+        ],
+        "hardSentencesRu": [
+          "Я заболел гриппом этой зимой.",
+          "Грипп уложил меня в постель с понедельника.",
+          "Вакцина от гриппа очень важна.",
+          "При гриппе нужно много отдыхать."
+        ]
+      },
+      {
+        "spanish": "el resfriado",
+        "ru": "простуда",
+        "type": "sustantivo",
+        "icon": "thermometer",
+        "useIcon": true,
+        "hardSentences": [
+          "He cogido un ___ por el aire acondicionado.",
+          "El ___ me tiene con la nariz tapada.",
+          "Para curar el ___ bebe mucha agua.",
+          "El ___ dura normalmente una semana."
+        ],
+        "hardSentencesRu": [
+          "Я простудился из-за кондиционера.",
+          "Из-за простуды у меня заложен нос.",
+          "Чтобы вылечить простуду, пей много воды.",
+          "Простуда обычно длится неделю."
+        ]
+      },
+      {
+        "spanish": "el dolor",
+        "ru": "боль",
+        "type": "sustantivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo un ___ de cabeza muy fuerte.",
+          "El ___ de espalda no me deja trabajar.",
+          "Este medicamento calma el ___.",
+          "El ___ de muelas es insoportable."
+        ],
+        "hardSentencesRu": [
+          "У меня очень сильная головная боль.",
+          "Боль в спине не даёт мне работать.",
+          "Это лекарство снимает боль.",
+          "Зубная боль невыносима."
+        ]
+      },
+      {
+        "spanish": "la migraña",
+        "ru": "мигрень",
+        "type": "sustantivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "Sufro de ___ desde hace años.",
+          "La ___ me obliga a estar en la oscuridad.",
+          "Cuando tengo ___ no puedo trabajar.",
+          "El aceite de tomillo combate la ___."
+        ],
+        "hardSentencesRu": [
+          "Я страдаю от мигрени уже много лет.",
+          "Мигрень заставляет меня находиться в темноте.",
+          "Когда у меня мигрень, я не могу работать.",
+          "Масло тимьяна помогает от мигрени."
+        ]
+      },
+      {
+        "spanish": "la alergia",
+        "ru": "аллергия",
+        "type": "sustantivo",
+        "icon": "flower",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ al polen en primavera.",
+          "La ___ me produce estornudos y picor.",
+          "Mi ___ es muy fuerte este año.",
+          "Tomo medicamentos para la ___."
+        ],
+        "hardSentencesRu": [
+          "У меня аллергия на пыльцу весной.",
+          "Аллергия вызывает у меня чихание и зуд.",
+          "В этом году у меня очень сильная аллергия.",
+          "Я принимаю лекарства от аллергии."
+        ]
+      },
+      {
+        "spanish": "el insomnio",
+        "ru": "бессонница",
+        "type": "sustantivo",
+        "icon": "moon",
+        "useIcon": true,
+        "hardSentences": [
+          "Sufro de ___ desde hace meses.",
+          "El ___ me tiene agotado.",
+          "Para combatir el ___ evita el café.",
+          "El ___ es un problema muy común."
+        ],
+        "hardSentencesRu": [
+          "Я страдаю от бессонницы уже несколько месяцев.",
+          "Бессонница меня истощает.",
+          "Чтобы бороться с бессонницей, избегай кофе.",
+          "Бессонница — очень распространённая проблема."
+        ]
+      },
+      {
+        "spanish": "la anemia",
+        "ru": "анемия",
+        "type": "sustantivo",
+        "icon": "drop",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ y siempre estoy cansada.",
+          "La ___ se trata con hierro.",
+          "La miel de tomillo es buena para la ___.",
+          "La ___ me provoca mareos frecuentes."
+        ],
+        "hardSentencesRu": [
+          "У меня анемия, и я всегда уставшая.",
+          "Анемию лечат железом.",
+          "Тимьяновый мёд полезен при анемии.",
+          "Анемия вызывает у меня частые головокружения."
+        ]
+      },
+      {
+        "spanish": "el mareo",
+        "ru": "головокружение",
+        "type": "sustantivo",
+        "icon": "spiral",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ cuando me levanto rápido.",
+          "El ___ puede ser síntoma de anemia.",
+          "El ___ me impide conducir.",
+          "Siento ___ en el transporte público."
+        ],
+        "hardSentencesRu": [
+          "У меня кружится голова, когда быстро встаю.",
+          "Головокружение может быть симптомом анемии.",
+          "Головокружение мешает мне водить машину.",
+          "Меня укачивает в общественном транспорте."
+        ]
+      },
+      {
+        "spanish": "las náuseas",
+        "ru": "тошнота",
+        "type": "sustantivo",
+        "icon": "warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ por la mañana.",
+          "Las ___ me impiden comer.",
+          "Siento ___ después de tomar el medicamento.",
+          "Las ___ son un síntoma común del embarazo."
+        ],
+        "hardSentencesRu": [
+          "Меня тошнит по утрам.",
+          "Тошнота мешает мне есть.",
+          "Меня тошнит после приёма лекарства.",
+          "Тошнота — распространённый симптом беременности."
+        ]
+      },
+      {
+        "spanish": "la herida",
+        "ru": "рана",
+        "type": "sustantivo",
+        "icon": "bandaids",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo una ___ en el brazo.",
+          "Hay que limpiar la ___ con agua.",
+          "La ___ se está curando bien.",
+          "El tónico de tomillo cura la ___."
+        ],
+        "hardSentencesRu": [
+          "У меня рана на руке.",
+          "Нужно промыть рану водой.",
+          "Рана хорошо заживает.",
+          "Тоник из тимьяна лечит раны."
+        ]
+      }
+    ],
+    "ESTADOS_DE_ANIMO": [
+      {
+        "spanish": "cansado",
+        "ru": "уставший (м)",
+        "type": "adjetivo",
+        "icon": "battery-low",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ después del trabajo.",
+          "Me siento ___ todo el tiempo.",
+          "Estoy ___ de no dormir bien.",
+          "El médico dice que estoy ___ por la anemia."
+        ],
+        "hardSentencesRu": [
+          "Я очень устал после работы.",
+          "Я чувствую себя уставшим всё время.",
+          "Я устал от плохого сна.",
+          "Врач говорит, что я устал из-за анемии."
+        ]
+      },
+      {
+        "spanish": "estresado",
+        "ru": "в стрессе (м)",
+        "type": "adjetivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ por el trabajo.",
+          "Cuando estoy ___ me duele la cabeza.",
+          "Me siento ___ con los exámenes.",
+          "El médico dice que estoy demasiado ___."
+        ],
+        "hardSentencesRu": [
+          "Я очень напряжён из-за работы.",
+          "Когда я в стрессе, у меня болит голова.",
+          "Я чувствую стресс из-за экзаменов.",
+          "Врач говорит, что я слишком напряжён."
+        ]
+      },
+      {
+        "spanish": "nervioso",
+        "ru": "нервный (м)",
+        "type": "adjetivo",
+        "icon": "warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ por la entrevista.",
+          "Cuando estoy ___ me tiemblan las manos.",
+          "Me siento ___ antes de los exámenes.",
+          "Estoy ___ porque tengo que hablar en público."
+        ],
+        "hardSentencesRu": [
+          "Я очень нервничаю из-за собеседования.",
+          "Когда я нервничаю, у меня дрожат руки.",
+          "Я нервничаю перед экзаменами.",
+          "Я нервничаю, потому что мне нужно выступать публично."
+        ]
+      },
+      {
+        "spanish": "enfadado",
+        "ru": "рассерженный (м)",
+        "type": "adjetivo",
+        "icon": "smiley-angry",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ con mi hermano.",
+          "Cuando estoy ___ necesito estar solo.",
+          "Me siento ___ por la situación.",
+          "Estoy muy ___ porque llegaste tarde."
+        ],
+        "hardSentencesRu": [
+          "Я злюсь на брата.",
+          "Когда я злюсь, мне нужно побыть одному.",
+          "Я злюсь из-за ситуации.",
+          "Я очень злюсь, потому что ты опоздал."
+        ]
+      },
+      {
+        "spanish": "triste",
+        "ru": "грустный",
+        "type": "adjetivo",
+        "icon": "smiley-sad",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ porque mi amigo se ha ido.",
+          "Me siento ___ sin motivo aparente.",
+          "Cuando estoy ___ prefiero escuchar música.",
+          "Últimamente estoy muy ___."
+        ],
+        "hardSentencesRu": [
+          "Мне грустно, потому что мой друг уехал.",
+          "Мне грустно без видимой причины.",
+          "Когда мне грустно, я предпочитаю слушать музыку.",
+          "В последнее время мне очень грустно."
+        ]
+      },
+      {
+        "spanish": "contento",
+        "ru": "довольный (м)",
+        "type": "adjetivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy muy ___ con los resultados.",
+          "Me siento ___ de ver a mi familia.",
+          "Estoy ___ porque he aprobado el examen.",
+          "Cuando estoy ___ sonrío mucho."
+        ],
+        "hardSentencesRu": [
+          "Я очень доволен результатами.",
+          "Я рад видеть свою семью.",
+          "Я доволен, потому что сдал экзамен.",
+          "Когда я доволен, я много улыбаюсь."
+        ]
+      },
+      {
+        "spanish": "preocupado",
+        "ru": "обеспокоенный (м)",
+        "type": "adjetivo",
+        "icon": "warning-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ por mi salud.",
+          "Me siento ___ por los resultados del examen.",
+          "Estoy ___ porque mi hijo no ha llegado.",
+          "Cuando estoy ___ no puedo dormir."
+        ],
+        "hardSentencesRu": [
+          "Я беспокоюсь о своём здоровье.",
+          "Я волнуюсь из-за результатов экзамена.",
+          "Я беспокоюсь, потому что мой сын не пришёл.",
+          "Когда я волнуюсь, я не могу спать."
+        ]
+      },
+      {
+        "spanish": "aburrido",
+        "ru": "скучающий (м)",
+        "type": "adjetivo",
+        "icon": "smiley-meh",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ en casa sin nada que hacer.",
+          "Me siento ___ en esta reunión.",
+          "Estoy ___ de hacer siempre lo mismo.",
+          "Cuando estoy ___ me pongo a leer."
+        ],
+        "hardSentencesRu": [
+          "Мне скучно дома без дела.",
+          "Мне скучно на этой встрече.",
+          "Мне надоело делать одно и то же.",
+          "Когда мне скучно, я начинаю читать."
+        ]
+      },
+      {
+        "spanish": "asustado",
+        "ru": "испуганный (м)",
+        "type": "adjetivo",
+        "icon": "smiley-nervous",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ por el ruido de la tormenta.",
+          "Me siento ___ cuando voy al dentista.",
+          "Estoy ___ porque he oído un ruido extraño.",
+          "Cuando estoy ___ me tiembla la voz."
+        ],
+        "hardSentencesRu": [
+          "Я напуган шумом грозы.",
+          "Мне страшно, когда я иду к стоматологу.",
+          "Я испугался, потому что услышал странный шум.",
+          "Когда я напуган, у меня дрожит голос."
+        ]
+      },
+      {
+        "spanish": "sorprendido",
+        "ru": "удивлённый (м)",
+        "type": "adjetivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ por la noticia.",
+          "Me siento ___ de verte aquí.",
+          "Estoy ___ porque no esperaba este regalo.",
+          "Cuando estoy ___ abro mucho los ojos."
+        ],
+        "hardSentencesRu": [
+          "Я удивлён этой новостью.",
+          "Я удивлён, что вижу тебя здесь.",
+          "Я удивлён, потому что не ожидал этого подарка.",
+          "Когда я удивлён, я широко открываю глаза."
+        ]
+      }
+    ],
+    "BENEFICIOS_SALUD": [
+      {
+        "spanish": "proteger",
+        "ru": "защищать",
+        "type": "verbo",
+        "icon": "shield",
+        "useIcon": true,
+        "hardSentences": [
+          "Debes ___ la piel del sol.",
+          "Es importante ___ los ojos con gafas.",
+          "Hay que ___ el pelo en verano.",
+          "Necesito ___ mis manos del frío."
+        ],
+        "hardSentencesRu": [
+          "Нужно защищать кожу от солнца.",
+          "Важно защищать глаза очками.",
+          "Нужно защищать волосы летом.",
+          "Мне нужно защитить руки от холода."
+        ]
+      },
+      {
+        "spanish": "hidratar",
+        "ru": "увлажнять",
+        "type": "verbo",
+        "icon": "drop",
+        "useIcon": true,
+        "hardSentences": [
+          "Debes ___ la piel todos los días.",
+          "Es importante ___ los labios en invierno.",
+          "Hay que ___ las manos después de lavarlas.",
+          "Necesito ___ mi cara por la mañana."
+        ],
+        "hardSentencesRu": [
+          "Нужно увлажнять кожу каждый день.",
+          "Важно увлажнять губы зимой.",
+          "Нужно увлажнять руки после мытья.",
+          "Мне нужно увлажнить лицо утром."
+        ]
+      },
+      {
+        "spanish": "prevenir",
+        "ru": "предотвращать",
+        "type": "verbo",
+        "icon": "shield-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Para ___ resfriados hay que lavarse las manos.",
+          "El ejercicio ayuda a ___ enfermedades.",
+          "Es importante ___ la caída del pelo.",
+          "Puedes ___ el dolor de espalda con yoga."
+        ],
+        "hardSentencesRu": [
+          "Чтобы предотвратить простуду, нужно мыть руки.",
+          "Упражнения помогают предотвратить болезни.",
+          "Важно предотвращать выпадение волос.",
+          "Можно предотвратить боль в спине с помощью йоги."
+        ]
+      },
+      {
+        "spanish": "fortalecer",
+        "ru": "укреплять",
+        "type": "verbo",
+        "icon": "barbell",
+        "useIcon": true,
+        "hardSentences": [
+          "La natación ayuda a ___ la espalda.",
+          "Debes ___ los músculos con ejercicio.",
+          "Para ___ los brazos haz flexiones.",
+          "El yoga sirve para ___ el cuerpo."
+        ],
+        "hardSentencesRu": [
+          "Плавание помогает укрепить спину.",
+          "Нужно укреплять мышцы упражнениями.",
+          "Чтобы укрепить руки, делай отжимания.",
+          "Йога служит для укрепления тела."
+        ]
+      },
+      {
+        "spanish": "calmar",
+        "ru": "успокаивать",
+        "type": "verbo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Este medicamento sirve para ___ el dolor.",
+          "La manzanilla ayuda a ___ los nervios.",
+          "Necesito algo para ___ el picor.",
+          "El masaje sirve para ___ la tensión."
+        ],
+        "hardSentencesRu": [
+          "Это лекарство служит для снятия боли.",
+          "Ромашка помогает успокоить нервы.",
+          "Мне нужно что-то, чтобы снять зуд.",
+          "Массаж служит для снятия напряжения."
+        ]
+      },
+      {
+        "spanish": "combatir",
+        "ru": "бороться с",
+        "type": "verbo",
+        "icon": "sword",
+        "useIcon": true,
+        "hardSentences": [
+          "El aceite de tomillo sirve para ___ la migraña.",
+          "El deporte ayuda a ___ el estrés.",
+          "Esta crema sirve para ___ el acné.",
+          "Hay que ___ la infección con antibióticos."
+        ],
+        "hardSentencesRu": [
+          "Масло тимьяна помогает бороться с мигренью.",
+          "Спорт помогает бороться со стрессом.",
+          "Этот крем помогает бороться с акне.",
+          "Нужно бороться с инфекцией антибиотиками."
+        ]
+      },
+      {
+        "spanish": "curar",
+        "ru": "лечить",
+        "type": "verbo",
+        "icon": "first-aid",
+        "useIcon": true,
+        "hardSentences": [
+          "Este remedio sirve para ___ la tos.",
+          "La miel ayuda a ___ el dolor de garganta.",
+          "El tónico de tomillo sirve para ___ heridas.",
+          "Necesito algo para ___ el resfriado."
+        ],
+        "hardSentencesRu": [
+          "Это средство помогает лечить кашель.",
+          "Мёд помогает лечить боль в горле.",
+          "Тоник из тимьяна помогает лечить раны.",
+          "Мне нужно что-то, чтобы вылечить простуду."
+        ]
+      },
+      {
+        "spanish": "tratar",
+        "ru": "лечить, обрабатывать",
+        "type": "verbo",
+        "icon": "first-aid-kit",
+        "useIcon": true,
+        "hardSentences": [
+          "Este producto sirve para ___ el acné.",
+          "Es importante ___ la herida rápidamente.",
+          "La crema ayuda a ___ la piel irritada.",
+          "Hay varias formas de ___ la afonía."
+        ],
+        "hardSentencesRu": [
+          "Этот продукт помогает лечить акне.",
+          "Важно быстро обработать рану.",
+          "Крем помогает лечить раздражённую кожу.",
+          "Есть несколько способов лечить потерю голоса."
+        ]
+      }
+    ],
+    "REMEDIOS_NATURALES": [
+      {
+        "spanish": "el tomillo",
+        "ru": "тимьян",
+        "type": "sustantivo",
+        "icon": "leaf",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es una hierba aromática mediterránea.",
+          "La miel de ___ es buena para la anemia.",
+          "El aceite de ___ combate las migrañas.",
+          "El ___ se usa desde la antigüedad."
+        ],
+        "hardSentencesRu": [
+          "Тимьян — это ароматная средиземноморская трава.",
+          "Тимьяновый мёд полезен при анемии.",
+          "Масло тимьяна помогает от мигрени.",
+          "Тимьян используется с древних времён."
+        ]
+      },
+      {
+        "spanish": "la infusión",
+        "ru": "настой, травяной чай",
+        "type": "sustantivo",
+        "icon": "coffee",
+        "useIcon": true,
+        "hardSentences": [
+          "Una ___ de tomillo facilita la digestión.",
+          "La ___ de manzanilla calma los nervios.",
+          "Tomo una ___ antes de dormir.",
+          "La ___ de anís cura la tos."
+        ],
+        "hardSentencesRu": [
+          "Настой тимьяна улучшает пищеварение.",
+          "Ромашковый настой успокаивает нервы.",
+          "Я пью травяной чай перед сном.",
+          "Анисовый настой лечит кашель."
+        ]
+      },
+      {
+        "spanish": "la miel",
+        "ru": "мёд",
+        "type": "sustantivo",
+        "icon": "jar",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es un remedio natural para la tos.",
+          "La ___ de tomillo es rica en hierro.",
+          "Tomo ___ con limón para el resfriado.",
+          "La ___ ayuda a curar el dolor de garganta."
+        ],
+        "hardSentencesRu": [
+          "Мёд — это натуральное средство от кашля.",
+          "Тимьяновый мёд богат железом.",
+          "Я принимаю мёд с лимоном от простуды.",
+          "Мёд помогает лечить боль в горле."
+        ]
+      },
+      {
+        "spanish": "el aceite",
+        "ru": "масло",
+        "type": "sustantivo",
+        "icon": "drop",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de tomillo combate los dolores de cabeza.",
+          "Uso ___ de oliva para cocinar.",
+          "El ___ esencial es muy concentrado.",
+          "El ___ de rosa mosqueta hidrata la piel."
+        ],
+        "hardSentencesRu": [
+          "Масло тимьяна помогает от головной боли.",
+          "Я использую оливковое масло для готовки.",
+          "Эфирное масло очень концентрированное.",
+          "Масло шиповника увлажняет кожу."
+        ]
+      },
+      {
+        "spanish": "el champú",
+        "ru": "шампунь",
+        "type": "sustantivo",
+        "icon": "drop",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de tomillo previene la caída del pelo.",
+          "Uso un ___ natural sin químicos.",
+          "Este ___ es bueno contra la caspa.",
+          "El ___ con aloe vera hidrata el pelo."
+        ],
+        "hardSentencesRu": [
+          "Шампунь с тимьяном предотвращает выпадение волос.",
+          "Я использую натуральный шампунь без химии.",
+          "Этот шампунь хорошо помогает от перхоти.",
+          "Шампунь с алоэ вера увлажняет волосы."
+        ]
+      },
+      {
+        "spanish": "la crema",
+        "ru": "крем",
+        "type": "sustantivo",
+        "icon": "jar",
+        "useIcon": true,
+        "hardSentences": [
+          "Ponte ___ hidratante todos los días.",
+          "Uso una ___ protectora en verano.",
+          "La ___ de aloe vera calma la piel.",
+          "Esta ___ trata las irritaciones."
+        ],
+        "hardSentencesRu": [
+          "Наноси увлажняющий крем каждый день.",
+          "Я использую защитный крем летом.",
+          "Крем с алоэ вера успокаивает кожу.",
+          "Этот крем лечит раздражения."
+        ]
+      },
+      {
+        "spanish": "el remedio",
+        "ru": "средство, лекарство",
+        "type": "sustantivo",
+        "icon": "first-aid",
+        "useIcon": true,
+        "hardSentences": [
+          "La miel es un ___ natural para la tos.",
+          "¿Conoces algún ___ para el dolor de cabeza?",
+          "Este ___ casero es muy eficaz.",
+          "El mejor ___ para el estrés es descansar."
+        ],
+        "hardSentencesRu": [
+          "Мёд — это натуральное средство от кашля.",
+          "Ты знаешь какое-нибудь средство от головной боли?",
+          "Это домашнее средство очень эффективное.",
+          "Лучшее средство от стресса — это отдых."
+        ]
+      },
+      {
+        "spanish": "el aloe vera",
+        "ru": "алоэ вера",
+        "type": "sustantivo",
+        "icon": "leaf",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es muy bueno para la piel.",
+          "La crema de ___ hidrata las manos.",
+          "El ___ calma las quemaduras solares.",
+          "Tengo una planta de ___ en casa."
+        ],
+        "hardSentencesRu": [
+          "Алоэ вера очень полезно для кожи.",
+          "Крем с алоэ вера увлажняет руки.",
+          "Алоэ вера успокаивает солнечные ожоги.",
+          "У меня дома есть растение алоэ вера."
+        ]
+      }
+    ]
+  },
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "imperativo_afirmativo",
+        "nombre": "Imperativo Afirmativo",
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "tu": "habla",
+              "usted": "hable",
+              "nosotros": "hablemos",
+              "vosotros": "hablad",
+              "ustedes": "hablen"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "tu": "come",
+              "usted": "coma",
+              "nosotros": "comamos",
+              "vosotros": "comed",
+              "ustedes": "coman"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "tu": "vive",
+              "usted": "viva",
+              "nosotros": "vivamos",
+              "vosotros": "vivid",
+              "ustedes": "vivan"
+            }
+          },
+          {
+            "infinitivo": "descansar",
+            "traduccion": "отдыхать",
+            "formas": {
+              "tu": "descansa",
+              "usted": "descanse",
+              "nosotros": "descansemos",
+              "vosotros": "descansad",
+              "ustedes": "descansen"
+            }
+          },
+          {
+            "infinitivo": "caminar",
+            "traduccion": "ходить",
+            "formas": {
+              "tu": "camina",
+              "usted": "camine",
+              "nosotros": "caminemos",
+              "vosotros": "caminad",
+              "ustedes": "caminen"
+            }
+          },
+          {
+            "infinitivo": "beber",
+            "traduccion": "пить",
+            "formas": {
+              "tu": "bebe",
+              "usted": "beba",
+              "nosotros": "bebamos",
+              "vosotros": "bebed",
+              "ustedes": "beban"
+            }
+          },
+          {
+            "infinitivo": "correr",
+            "traduccion": "бегать",
+            "formas": {
+              "tu": "corre",
+              "usted": "corra",
+              "nosotros": "corramos",
+              "vosotros": "corred",
+              "ustedes": "corran"
+            }
+          },
+          {
+            "infinitivo": "escribir",
+            "traduccion": "писать",
+            "formas": {
+              "tu": "escribe",
+              "usted": "escriba",
+              "nosotros": "escribamos",
+              "vosotros": "escribid",
+              "ustedes": "escriban"
+            }
+          }
+        ],
+        "irregulares": [
+          {
+            "infinitivo": "hacer",
+            "traduccion": "делать",
+            "formas": {
+              "tu": "haz",
+              "usted": "haga",
+              "nosotros": "hagamos",
+              "vosotros": "haced",
+              "ustedes": "hagan"
+            }
+          },
+          {
+            "infinitivo": "poner",
+            "traduccion": "класть, ставить",
+            "formas": {
+              "tu": "pon",
+              "usted": "ponga",
+              "nosotros": "pongamos",
+              "vosotros": "poned",
+              "ustedes": "pongan"
+            }
+          },
+          {
+            "infinitivo": "venir",
+            "traduccion": "приходить",
+            "formas": {
+              "tu": "ven",
+              "usted": "venga",
+              "nosotros": "vengamos",
+              "vosotros": "venid",
+              "ustedes": "vengan"
+            }
+          },
+          {
+            "infinitivo": "decir",
+            "traduccion": "говорить, сказать",
+            "formas": {
+              "tu": "di",
+              "usted": "diga",
+              "nosotros": "digamos",
+              "vosotros": "decid",
+              "ustedes": "digan"
+            }
+          },
+          {
+            "infinitivo": "ser",
+            "traduccion": "быть",
+            "formas": {
+              "tu": "sé",
+              "usted": "sea",
+              "nosotros": "seamos",
+              "vosotros": "sed",
+              "ustedes": "sean"
+            }
+          },
+          {
+            "infinitivo": "ir",
+            "traduccion": "идти",
+            "formas": {
+              "tu": "ve",
+              "usted": "vaya",
+              "nosotros": "vayamos",
+              "vosotros": "id",
+              "ustedes": "vayan"
+            }
+          },
+          {
+            "infinitivo": "salir",
+            "traduccion": "выходить",
+            "formas": {
+              "tu": "sal",
+              "usted": "salga",
+              "nosotros": "salgamos",
+              "vosotros": "salid",
+              "ustedes": "salgan"
+            }
+          },
+          {
+            "infinitivo": "tener",
+            "traduccion": "иметь",
+            "formas": {
+              "tu": "ten",
+              "usted": "tenga",
+              "nosotros": "tengamos",
+              "vosotros": "tened",
+              "ustedes": "tengan"
+            }
+          },
+          {
+            "infinitivo": "dormir",
+            "traduccion": "спать",
+            "formas": {
+              "tu": "duerme",
+              "usted": "duerma",
+              "nosotros": "durmamos",
+              "vosotros": "dormid",
+              "ustedes": "duerman"
+            }
+          },
+          {
+            "infinitivo": "pensar",
+            "traduccion": "думать",
+            "formas": {
+              "tu": "piensa",
+              "usted": "piense",
+              "nosotros": "pensemos",
+              "vosotros": "pensad",
+              "ustedes": "piensen"
+            }
+          },
+          {
+            "infinitivo": "cerrar",
+            "traduccion": "закрывать",
+            "formas": {
+              "tu": "cierra",
+              "usted": "cierre",
+              "nosotros": "cerremos",
+              "vosotros": "cerrad",
+              "ustedes": "cierren"
+            }
+          },
+          {
+            "infinitivo": "seguir",
+            "traduccion": "следовать",
+            "formas": {
+              "tu": "sigue",
+              "usted": "siga",
+              "nosotros": "sigamos",
+              "vosotros": "seguid",
+              "ustedes": "sigan"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Verbo DOLER con pronombres",
+      "hint": "me duele / me duelen / te duele / te duelen / le duele / le duelen / nos duele / nos duelen / os duele / os duelen / les duele / les duelen",
+      "rule": {
+        "title": "Глагол DOLER (болеть) с местоимениями",
+        "explanation": "Глагол DOLER работает как GUSTAR: используется с косвенными местоимениями (me, te, le, nos, os, les) и согласуется с тем, что болит, а не с человеком. Если болит одна часть тела — DUELE, если несколько — DUELEN.",
+        "sections": [
+          {
+            "subtitle": "Структура: pronombre + duele/duelen + parte del cuerpo",
+            "points": [
+              "<b>Me duele</b> la cabeza — У меня болит голова",
+              "<b>Te duelen</b> los pies — У тебя болят ноги",
+              "<b>Le duele</b> el estómago — У него/неё болит живот",
+              "<b>Nos duelen</b> las piernas — У нас болят ноги",
+              "<b>Os duele</b> la espalda — У вас болит спина",
+              "<b>Les duelen</b> los ojos — У них болят глаза"
+            ]
+          },
+          {
+            "subtitle": "DUELE vs DUELEN",
+            "points": [
+              "<b>Duele</b> — с единственным числом: la cabeza, el brazo, la espalda",
+              "<b>Duelen</b> — с множественным числом: los pies, las manos, los ojos",
+              "Артикль обязателен: Me duele <b>la</b> cabeza (не 'mi cabeza')"
+            ]
+          },
+          {
+            "subtitle": "Вопросы о боли",
+            "points": [
+              "¿<b>Te duele</b> algo? — У тебя что-то болит?",
+              "¿<b>Qué te duele</b>? — Что у тебя болит?",
+              "¿<b>Te duele mucho</b>? — Сильно болит?"
+            ]
+          }
+        ],
+        "examples": [
+          "Me duele mucho la cabeza después del trabajo.",
+          "A Carlos le duelen los pies de caminar.",
+          "¿Te duele la espalda? Debes ir al médico.",
+          "Nos duelen las piernas después de correr.",
+          "A mi abuela le duelen las rodillas."
+        ]
+      },
+      "questions": [
+        {"sentence": "___ la cabeza desde ayer. (yo)", "answer": "Me duele"},
+        {"sentence": "___ los pies de caminar tanto. (yo)", "answer": "Me duelen"},
+        {"sentence": "___ el estómago después de comer. (tú)", "answer": "Te duele"},
+        {"sentence": "___ las muelas desde hace días. (él)", "answer": "Le duelen"},
+        {"sentence": "___ la espalda por el trabajo. (ella)", "answer": "Le duele"},
+        {"sentence": "___ los ojos de leer. (nosotros)", "answer": "Nos duelen"},
+        {"sentence": "___ la garganta cuando hablo. (yo)", "answer": "Me duele"},
+        {"sentence": "___ las piernas después de correr. (vosotros)", "answer": "Os duelen"},
+        {"sentence": "___ el brazo izquierdo. (usted)", "answer": "Le duele"},
+        {"sentence": "___ los oídos por el ruido. (ellos)", "answer": "Les duelen"},
+        {"sentence": "¿___ algo? (tú)", "answer": "Te duele"},
+        {"sentence": "___ mucho la rodilla. (yo)", "answer": "Me duele"},
+        {"sentence": "___ los hombros de nadar. (nosotros)", "answer": "Nos duelen"},
+        {"sentence": "___ la mano de escribir. (ella)", "answer": "Le duele"},
+        {"sentence": "___ las muñecas del ordenador. (yo)", "answer": "Me duelen"},
+        {"sentence": "___ el cuello de dormir mal. (tú)", "answer": "Te duele"},
+        {"sentence": "___ los tobillos después del partido. (él)", "answer": "Le duelen"},
+        {"sentence": "___ la cabeza a menudo. (ustedes)", "answer": "Les duele"},
+        {"sentence": "___ el pecho cuando respiro. (yo)", "answer": "Me duele"},
+        {"sentence": "___ las manos del frío. (nosotros)", "answer": "Nos duelen"},
+        {"sentence": "A mi madre ___ las caderas.", "answer": "le duelen"},
+        {"sentence": "A los niños ___ la barriga.", "answer": "les duele"},
+        {"sentence": "¿A ti ___ mucho la espalda?", "answer": "te duele"},
+        {"sentence": "A nosotros ___ los pies.", "answer": "nos duelen"},
+        {"sentence": "A mi abuelo ___ las rodillas.", "answer": "le duelen"},
+        {"sentence": "___ la cabeza por el estrés. (yo)", "answer": "Me duele"},
+        {"sentence": "___ los ojos de la alergia. (tú)", "answer": "Te duelen"},
+        {"sentence": "___ el estómago por los nervios. (ella)", "answer": "Le duele"},
+        {"sentence": "___ las piernas del ejercicio. (ellos)", "answer": "Les duelen"},
+        {"sentence": "___ la garganta por el frío. (nosotros)", "answer": "Nos duele"},
+        {"sentence": "¿___ los pies? (usted)", "answer": "Le duelen"},
+        {"sentence": "___ mucho la muela. (yo)", "answer": "Me duele"},
+        {"sentence": "___ los brazos de cargar peso. (tú)", "answer": "Te duelen"},
+        {"sentence": "___ la espalda baja. (él)", "answer": "Le duele"},
+        {"sentence": "___ las orejas del ruido. (nosotros)", "answer": "Nos duelen"},
+        {"sentence": "___ el hombro derecho. (yo)", "answer": "Me duele"},
+        {"sentence": "___ los dedos del frío. (vosotros)", "answer": "Os duelen"},
+        {"sentence": "___ la rodilla izquierda. (ella)", "answer": "Le duele"},
+        {"sentence": "___ los músculos. (ellos)", "answer": "Les duelen"},
+        {"sentence": "___ el cuello de la tensión. (yo)", "answer": "Me duele"},
+        {"sentence": "Cuando como mucho, ___ el estómago. (yo)", "answer": "me duele"},
+        {"sentence": "Si caminas sin descanso, ___ los pies. (tú)", "answer": "te duelen"},
+        {"sentence": "Después de nadar, ___ los hombros. (nosotros)", "answer": "nos duelen"},
+        {"sentence": "Por la mañana ___ la cabeza. (él)", "answer": "le duele"},
+        {"sentence": "Con este frío ___ las manos. (yo)", "answer": "me duelen"},
+        {"sentence": "¿Todavía ___ la espalda? (tú)", "answer": "te duele"},
+        {"sentence": "Siempre ___ las piernas después del gimnasio. (yo)", "answer": "me duelen"},
+        {"sentence": "A veces ___ la cabeza por el calor. (ella)", "answer": "le duele"},
+        {"sentence": "___ los ojos cuando leo mucho. (yo)", "answer": "Me duelen"},
+        {"sentence": "___ el tobillo desde el accidente. (él)", "answer": "Le duele"},
+        {"sentence": "¿___ mucho las muelas? (tú)", "answer": "Te duelen"},
+        {"sentence": "___ la garganta cuando canto. (yo)", "answer": "Me duele"},
+        {"sentence": "___ las articulaciones en invierno. (ellos)", "answer": "Les duelen"},
+        {"sentence": "___ el pecho después de correr. (nosotros)", "answer": "Nos duele"},
+        {"sentence": "___ la cabeza con el ruido. (vosotros)", "answer": "Os duele"},
+        {"sentence": "A María ___ los pies con los tacones.", "answer": "le duelen"},
+        {"sentence": "A mis padres ___ la espalda.", "answer": "les duele"},
+        {"sentence": "¿A ustedes ___ las piernas?", "answer": "les duelen"},
+        {"sentence": "___ mucho el oído izquierdo. (yo)", "answer": "Me duele"},
+        {"sentence": "¿Qué ___ ? — La espalda. (a ti)", "answer": "te duele"}
+      ],
+      "microTests": [
+        {"sentence": "___ la cabeza desde ayer. (yo)", "answer": "Me duele", "hint": "Голова — ед.ч., я → me"},
+        {"sentence": "___ los pies de caminar. (yo)", "answer": "Me duelen", "hint": "Ноги — мн.ч. → duelen"},
+        {"sentence": "___ el estómago. (tú)", "answer": "Te duele", "hint": "Живот — ед.ч., ты → te"},
+        {"sentence": "___ las muelas. (él)", "answer": "Le duelen", "hint": "Зубы — мн.ч., он → le"},
+        {"sentence": "___ la espalda. (ella)", "answer": "Le duele", "hint": "Спина — ед.ч., она → le"},
+        {"sentence": "___ los ojos. (nosotros)", "answer": "Nos duelen", "hint": "Глаза — мн.ч., мы → nos"},
+        {"sentence": "___ la garganta. (yo)", "answer": "Me duele", "hint": "Горло — ед.ч., я → me"},
+        {"sentence": "___ las piernas. (vosotros)", "answer": "Os duelen", "hint": "Ноги — мн.ч., вы → os"},
+        {"sentence": "___ el brazo. (usted)", "answer": "Le duele", "hint": "Рука — ед.ч., Вы → le"},
+        {"sentence": "___ los oídos. (ellos)", "answer": "Les duelen", "hint": "Уши — мн.ч., они → les"},
+        {"sentence": "A mi madre ___ las rodillas.", "answer": "le duelen", "hint": "Колени — мн.ч., ей → le"},
+        {"sentence": "A nosotros ___ la cabeza.", "answer": "nos duele", "hint": "Голова — ед.ч., нам → nos"},
+        {"sentence": "¿A ti ___ los pies?", "answer": "te duelen", "hint": "Ноги — мн.ч., тебе → te"},
+        {"sentence": "___ mucho la muela. (yo)", "answer": "Me duele", "hint": "Зуб — ед.ч., я → me"},
+        {"sentence": "___ los hombros. (ellos)", "answer": "Les duelen", "hint": "Плечи — мн.ч., им → les"}
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "ESTAR vs TENER con síntomas",
+      "hint": "estoy / estás / está / estamos / estáis / están / tengo / tienes / tiene / tenemos / tenéis / tienen",
+      "rule": {
+        "title": "ESTAR vs TENER для описания симптомов и состояний",
+        "explanation": "При описании симптомов и проблем со здоровьем используются разные конструкции: ESTAR + adjetivo (для состояний) и TENER + sustantivo (для симптомов как существительных).",
+        "sections": [
+          {
+            "subtitle": "ESTAR + adjetivo (состояние)",
+            "points": [
+              "<b>Estar resfriado/a</b> — быть простуженным",
+              "<b>Estar mareado/a</b> — чувствовать головокружение",
+              "<b>Estar cansado/a</b> — быть уставшим",
+              "<b>Estar enfermo/a</b> — быть больным",
+              "<b>Estar afónico/a</b> — потерять голос",
+              "<b>Estar estresado/a</b> — быть в стрессе"
+            ]
+          },
+          {
+            "subtitle": "TENER + sustantivo (симптом)",
+            "points": [
+              "<b>Tener fiebre</b> — иметь температуру",
+              "<b>Tener tos</b> — иметь кашель",
+              "<b>Tener gripe</b> — болеть гриппом",
+              "<b>Tener alergia</b> — иметь аллергию",
+              "<b>Tener náuseas</b> — иметь тошноту",
+              "<b>Tener dolor de cabeza</b> — иметь головную боль"
+            ]
+          },
+          {
+            "subtitle": "Особые случаи",
+            "points": [
+              "<b>Tener migraña</b> — страдать мигренью (существительное)",
+              "<b>Tener anemia</b> — иметь анемию (существительное)",
+              "<b>Tener acné</b> — иметь акне (существительное)",
+              "Запомни: прилагательные → ESTAR, существительные → TENER"
+            ]
+          }
+        ],
+        "examples": [
+          "Estoy resfriado, tengo tos y fiebre.",
+          "María está muy cansada y tiene dolor de cabeza.",
+          "¿Tienes fiebre? — No, pero estoy mareado.",
+          "Mi hijo tiene gripe y está muy enfermo.",
+          "Estoy afónica, no puedo hablar."
+        ]
+      },
+      "questions": [
+        {"sentence": "___ resfriado desde el lunes. (yo)", "answer": "Estoy"},
+        {"sentence": "___ mucha tos por la noche. (yo)", "answer": "Tengo"},
+        {"sentence": "___ fiebre de 38 grados. (él)", "answer": "Tiene"},
+        {"sentence": "___ muy cansada después del trabajo. (ella)", "answer": "Está"},
+        {"sentence": "___ gripe y no puedo ir a trabajar. (yo)", "answer": "Tengo"},
+        {"sentence": "___ mareado después del viaje. (tú)", "answer": "Estás"},
+        {"sentence": "___ dolor de cabeza desde ayer. (nosotros)", "answer": "Tenemos"},
+        {"sentence": "___ enfermo y no puede venir. (él)", "answer": "Está"},
+        {"sentence": "___ alergia al polen. (yo)", "answer": "Tengo"},
+        {"sentence": "___ afónica, no puedo hablar. (ella)", "answer": "Está"},
+        {"sentence": "___ náuseas por la mañana. (yo)", "answer": "Tengo"},
+        {"sentence": "___ muy estresado con el trabajo. (él)", "answer": "Está"},
+        {"sentence": "___ migraña y necesito descansar. (yo)", "answer": "Tengo"},
+        {"sentence": "___ resfriadas las dos. (ellas)", "answer": "Están"},
+        {"sentence": "___ anemia y siempre está cansada. (ella)", "answer": "Tiene"},
+        {"sentence": "¿___ fiebre? (tú)", "answer": "Tienes"},
+        {"sentence": "¿___ mejor hoy? (usted)", "answer": "Está"},
+        {"sentence": "___ acné desde la adolescencia. (yo)", "answer": "Tengo"},
+        {"sentence": "___ mareados después de la montaña rusa. (nosotros)", "answer": "Estamos"},
+        {"sentence": "___ dolor de estómago. (ella)", "answer": "Tiene"},
+        {"sentence": "No ___ bien, ___ tos. (yo)", "answer": "estoy"},
+        {"sentence": "Mi hermano ___ enfermo, ___ gripe. (él)", "answer": "está"},
+        {"sentence": "___ cansados del viaje. (nosotros)", "answer": "Estamos"},
+        {"sentence": "___ alergia a los gatos. (tú)", "answer": "Tienes"},
+        {"sentence": "___ afónico por gritar mucho. (yo)", "answer": "Estoy"},
+        {"sentence": "___ dolor de muelas terrible. (él)", "answer": "Tiene"},
+        {"sentence": "___ resfriado, ___ fiebre y tos. (yo)", "answer": "Estoy"},
+        {"sentence": "___ muy enfermos los niños. (ellos)", "answer": "Están"},
+        {"sentence": "___ insomnio desde hace meses. (yo)", "answer": "Tengo"},
+        {"sentence": "___ estresada por los exámenes. (ella)", "answer": "Está"},
+        {"sentence": "¿___ mareada? (tú)", "answer": "Estás"},
+        {"sentence": "___ dolor de espalda crónico. (él)", "answer": "Tiene"},
+        {"sentence": "___ mejor después de descansar. (yo)", "answer": "Estoy"},
+        {"sentence": "___ tos seca desde hace días. (ella)", "answer": "Tiene"},
+        {"sentence": "___ cansadísimo hoy. (yo)", "answer": "Estoy"},
+        {"sentence": "___ mucha fiebre el niño. (él)", "answer": "Tiene"},
+        {"sentence": "___ enferma, ___ gripe. (ella)", "answer": "Está"},
+        {"sentence": "___ resfriados todos en casa. (nosotros)", "answer": "Estamos"},
+        {"sentence": "___ dolor de garganta. (yo)", "answer": "Tengo"},
+        {"sentence": "___ muy mareada en el barco. (ella)", "answer": "Está"},
+        {"sentence": "No puedo comer, ___ náuseas. (yo)", "answer": "tengo"},
+        {"sentence": "Mi madre ___ cansada, ___ anemia. (ella)", "answer": "está"},
+        {"sentence": "___ afónicos de cantar. (nosotros)", "answer": "Estamos"},
+        {"sentence": "___ alergia primaveral. (él)", "answer": "Tiene"},
+        {"sentence": "___ enfermo con gripe. (yo)", "answer": "Estoy"},
+        {"sentence": "___ migraña muy fuerte. (ella)", "answer": "Tiene"},
+        {"sentence": "¿___ cansado? (tú)", "answer": "Estás"},
+        {"sentence": "___ fiebre alta. (ellos)", "answer": "Tienen"},
+        {"sentence": "___ estresados por el trabajo. (nosotros)", "answer": "Estamos"},
+        {"sentence": "___ tos y dolor de cabeza. (yo)", "answer": "Tengo"},
+        {"sentence": "Los niños ___ resfriados.", "answer": "están"},
+        {"sentence": "Mi abuela ___ dolor de rodillas.", "answer": "tiene"},
+        {"sentence": "¿Cómo ___? ¿___ mejor? (tú)", "answer": "estás"},
+        {"sentence": "___ muy enfermo, ___ mucha fiebre. (él)", "answer": "Está"},
+        {"sentence": "___ gripe y ___ muy cansado. (yo)", "answer": "Tengo"},
+        {"sentence": "___ mareados del viaje en coche. (ellos)", "answer": "Están"},
+        {"sentence": "___ acné y ___ preocupado. (yo)", "answer": "Tengo"},
+        {"sentence": "___ afónica, ___ dolor de garganta. (ella)", "answer": "Está"},
+        {"sentence": "___ dolor de oídos. (él)", "answer": "Tiene"},
+        {"sentence": "Hoy ___ mejor, ya no ___ fiebre. (yo)", "answer": "estoy"}
+      ],
+      "microTests": [
+        {"sentence": "___ resfriado. (yo)", "answer": "Estoy", "hint": "Resfriado = adjetivo → ESTAR"},
+        {"sentence": "___ fiebre. (yo)", "answer": "Tengo", "hint": "Fiebre = существительное → TENER"},
+        {"sentence": "___ muy cansada. (ella)", "answer": "Está", "hint": "Cansada = adjetivo → ESTAR"},
+        {"sentence": "___ gripe. (él)", "answer": "Tiene", "hint": "Gripe = существительное → TENER"},
+        {"sentence": "___ mareado. (tú)", "answer": "Estás", "hint": "Mareado = adjetivo → ESTAR"},
+        {"sentence": "___ tos. (yo)", "answer": "Tengo", "hint": "Tos = существительное → TENER"},
+        {"sentence": "___ enfermo. (él)", "answer": "Está", "hint": "Enfermo = adjetivo → ESTAR"},
+        {"sentence": "___ dolor de cabeza. (ella)", "answer": "Tiene", "hint": "Dolor = существительное → TENER"},
+        {"sentence": "___ afónica. (yo)", "answer": "Estoy", "hint": "Afónica = adjetivo → ESTAR"},
+        {"sentence": "___ alergia. (él)", "answer": "Tiene", "hint": "Alergia = существительное → TENER"},
+        {"sentence": "___ estresados. (nosotros)", "answer": "Estamos", "hint": "Estresados = adjetivo → ESTAR"},
+        {"sentence": "___ náuseas. (yo)", "answer": "Tengo", "hint": "Náuseas = существительное → TENER"},
+        {"sentence": "___ mejor hoy. (tú)", "answer": "Estás", "hint": "Mejor = adjetivo → ESTAR"},
+        {"sentence": "___ migraña. (ella)", "answer": "Tiene", "hint": "Migraña = существительное → TENER"},
+        {"sentence": "___ enfermos. (ellos)", "answer": "Están", "hint": "Enfermos = adjetivo → ESTAR"}
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "SER vs ESTAR con adjetivos",
+      "hint": "soy / eres / es / somos / sois / son / estoy / estás / está / estamos / estáis / están",
+      "rule": {
+        "title": "SER vs ESTAR с прилагательными",
+        "explanation": "SER описывает постоянные характеристики (какой человек по натуре), а ESTAR — временные состояния (как себя чувствует сейчас). Некоторые прилагательные меняют значение в зависимости от глагола.",
+        "sections": [
+          {
+            "subtitle": "SER — постоянные характеристики",
+            "points": [
+              "<b>Ser guapo/a</b> — быть красивым (внешность)",
+              "<b>Ser alto/a</b> — быть высоким (рост)",
+              "<b>Ser inteligente</b> — быть умным (характер)",
+              "<b>Ser arquitecto</b> — быть архитектором (профессия)",
+              "<b>Ser español</b> — быть испанцем (национальность)"
+            ]
+          },
+          {
+            "subtitle": "ESTAR — временные состояния",
+            "points": [
+              "<b>Estar cansado/a</b> — быть уставшим (сейчас)",
+              "<b>Estar nervioso/a</b> — нервничать (сейчас)",
+              "<b>Estar contento/a</b> — быть довольным (сейчас)",
+              "<b>Estar triste</b> — быть грустным (сейчас)",
+              "<b>Estar enfadado/a</b> — быть злым (сейчас)"
+            ]
+          },
+          {
+            "subtitle": "Прилагательные, меняющие значение",
+            "points": [
+              "<b>Ser bueno</b> — быть хорошим человеком / <b>Estar bueno</b> — быть вкусным",
+              "<b>Ser listo</b> — быть умным / <b>Estar listo</b> — быть готовым",
+              "<b>Ser malo</b> — быть плохим / <b>Estar malo</b> — болеть",
+              "<b>Ser abierto</b> — быть открытым (характер) / <b>Estar abierto</b> — быть открытым (дверь)"
+            ]
+          }
+        ],
+        "examples": [
+          "Mi hermana es muy guapa, pero hoy está muy cansada.",
+          "Juan es arquitecto y es muy trabajador.",
+          "Estoy nervioso porque tengo un examen.",
+          "La sopa está muy buena. Mi madre es buena cocinera.",
+          "¿Estás listo? — Sí, ya estoy preparado."
+        ]
+      },
+      "questions": [
+        {"sentence": "Alicia ___ una mujer extraordinaria.", "answer": "es"},
+        {"sentence": "No quiero salir, ___ cansado.", "answer": "estoy"},
+        {"sentence": "La ventana ___ abierta.", "answer": "está"},
+        {"sentence": "¿Dónde ___ el jersey amarillo?", "answer": "está"},
+        {"sentence": "Mi marido ___ alemán, de Dortmund.", "answer": "es"},
+        {"sentence": "¿Quién ___ esa chica que ___ sentada ahí?", "answer": "es"},
+        {"sentence": "La casa ___ muy desordenada.", "answer": "está"},
+        {"sentence": "Mis hijos ___ un desastre.", "answer": "son"},
+        {"sentence": "Mi jefa ___ una mujer muy dinámica.", "answer": "es"},
+        {"sentence": "Siempre ___ cansada porque trabaja mucho.", "answer": "está"},
+        {"sentence": "___ muy nervioso por la entrevista.", "answer": "Estoy"},
+        {"sentence": "María ___ profesora de español.", "answer": "es"},
+        {"sentence": "Hoy ___ muy contento porque he aprobado.", "answer": "estoy"},
+        {"sentence": "Esta película ___ muy buena.", "answer": "es"},
+        {"sentence": "La sopa ___ muy buena hoy.", "answer": "está"},
+        {"sentence": "Pedro ___ muy alto para su edad.", "answer": "es"},
+        {"sentence": "¿___ listo? Tenemos que irnos.", "answer": "Estás"},
+        {"sentence": "Mi hermano ___ muy listo, aprende rápido.", "answer": "es"},
+        {"sentence": "El restaurante ___ cerrado los lunes.", "answer": "está"},
+        {"sentence": "Juan ___ una persona muy abierta.", "answer": "es"},
+        {"sentence": "¿Cómo ___? — ___ bien, gracias.", "answer": "estás"},
+        {"sentence": "La fiesta ___ en casa de María.", "answer": "es"},
+        {"sentence": "¿Dónde ___ la fiesta?", "answer": "es"},
+        {"sentence": "Los niños ___ muy aburridos en casa.", "answer": "están"},
+        {"sentence": "Esta clase ___ muy aburrida.", "answer": "es"},
+        {"sentence": "___ muy enfadada contigo.", "answer": "Estoy"},
+        {"sentence": "Mi padre ___ una persona muy paciente.", "answer": "es"},
+        {"sentence": "Hoy ___ triste porque mi amigo se ha ido.", "answer": "estoy"},
+        {"sentence": "El café ___ frío, no me gusta.", "answer": "está"},
+        {"sentence": "En invierno ___ frío en esta ciudad.", "answer": "es"},
+        {"sentence": "Mi hermana ___ médica en un hospital.", "answer": "es"},
+        {"sentence": "___ preocupado por el examen.", "answer": "Estoy"},
+        {"sentence": "La comida ___ lista, podemos comer.", "answer": "está"},
+        {"sentence": "Este ejercicio ___ muy fácil.", "answer": "es"},
+        {"sentence": "¿___ enfermo? No tienes buena cara.", "answer": "Estás"},
+        {"sentence": "Mi abuela ___ muy mayor pero ___ muy activa.", "answer": "es"},
+        {"sentence": "La tienda ___ abierta hasta las 21h.", "answer": "está"},
+        {"sentence": "Carlos ___ muy guapo con ese traje.", "answer": "está"},
+        {"sentence": "Mi novio ___ muy guapo.", "answer": "es"},
+        {"sentence": "Hoy ___ de mal humor.", "answer": "estoy"},
+        {"sentence": "___ las tres de la tarde.", "answer": "Son"},
+        {"sentence": "El examen ___ el lunes.", "answer": "es"},
+        {"sentence": "___ muy sorprendido por la noticia.", "answer": "Estoy"},
+        {"sentence": "Esta casa ___ de mis padres.", "answer": "es"},
+        {"sentence": "El libro ___ encima de la mesa.", "answer": "está"},
+        {"sentence": "Mi madre ___ muy trabajadora.", "answer": "es"},
+        {"sentence": "___ muy emocionado por el viaje.", "answer": "Estoy"},
+        {"sentence": "¿De dónde ___? — ___ de México.", "answer": "eres"},
+        {"sentence": "La puerta ___ abierta, entra.", "answer": "está"},
+        {"sentence": "Mi vecino ___ muy simpático.", "answer": "es"},
+        {"sentence": "___ agotados después del partido.", "answer": "Estamos"},
+        {"sentence": "Tu hermana ___ muy elegante hoy.", "answer": "está"},
+        {"sentence": "Mi tío ___ ingeniero.", "answer": "es"},
+        {"sentence": "Los platos ___ sucios, hay que lavarlos.", "answer": "están"},
+        {"sentence": "___ muy asustado por el ruido.", "answer": "Estoy"},
+        {"sentence": "Esta ciudad ___ muy bonita.", "answer": "es"},
+        {"sentence": "El agua ___ muy fría.", "answer": "está"},
+        {"sentence": "Mis padres ___ muy orgullosos de mí.", "answer": "están"},
+        {"sentence": "Este vino ___ de La Rioja.", "answer": "es"},
+        {"sentence": "___ raro que no haya llamado.", "answer": "Es"}
+      ],
+      "microTests": [
+        {"sentence": "Alicia ___ una mujer extraordinaria.", "answer": "es", "hint": "Характеристика личности → SER"},
+        {"sentence": "No quiero salir, ___ cansado.", "answer": "estoy", "hint": "Временное состояние → ESTAR"},
+        {"sentence": "La ventana ___ abierta.", "answer": "está", "hint": "Состояние предмета → ESTAR"},
+        {"sentence": "Mi marido ___ alemán.", "answer": "es", "hint": "Национальность → SER"},
+        {"sentence": "___ muy nervioso por la entrevista.", "answer": "Estoy", "hint": "Временное состояние → ESTAR"},
+        {"sentence": "María ___ profesora.", "answer": "es", "hint": "Профессия → SER"},
+        {"sentence": "La sopa ___ muy buena hoy.", "answer": "está", "hint": "Вкус еды (сейчас) → ESTAR"},
+        {"sentence": "Pedro ___ muy alto.", "answer": "es", "hint": "Физическая характеристика → SER"},
+        {"sentence": "¿___ listo? Tenemos que irnos.", "answer": "Estás", "hint": "Готов (состояние) → ESTAR"},
+        {"sentence": "Mi hermano ___ muy listo.", "answer": "es", "hint": "Умный (характер) → SER"},
+        {"sentence": "El restaurante ___ cerrado.", "answer": "está", "hint": "Состояние (закрыт) → ESTAR"},
+        {"sentence": "___ las tres de la tarde.", "answer": "Son", "hint": "Время → SER"},
+        {"sentence": "El libro ___ encima de la mesa.", "answer": "está", "hint": "Местоположение → ESTAR"},
+        {"sentence": "Esta ciudad ___ muy bonita.", "answer": "es", "hint": "Характеристика места → SER"},
+        {"sentence": "Mis padres ___ muy orgullosos.", "answer": "están", "hint": "Эмоциональное состояние → ESTAR"}
+      ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Estructuras para dar consejos",
+      "hint": "Debes / Tienes que / Es bueno / No es bueno / Puedes / Lo mejor es",
+      "rule": {
+        "title": "СТРУКТУРЫ ДЛЯ СОВЕТОВ о здоровье",
+        "explanation": "В испанском языке есть несколько конструкций для выражения советов и рекомендаций. Все они используются с инфинитивом и отличаются степенью обязательности.",
+        "sections": [
+          {
+            "subtitle": "Сильная рекомендация (обязательство)",
+            "points": [
+              "<b>Debes</b> + infinitivo — Ты должен: Debes descansar más",
+              "<b>Tienes que</b> + infinitivo — Тебе нужно: Tienes que ir al médico",
+              "<b>Hay que</b> + infinitivo — Нужно (безлично): Hay que dormir 8 horas"
+            ]
+          },
+          {
+            "subtitle": "Мягкая рекомендация (совет)",
+            "points": [
+              "<b>Es bueno</b> + infinitivo — Хорошо/полезно: Es bueno hacer ejercicio",
+              "<b>No es bueno</b> + infinitivo — Не хорошо/вредно: No es bueno fumar",
+              "<b>Es importante</b> + infinitivo — Важно: Es importante beber agua"
+            ]
+          },
+          {
+            "subtitle": "Возможность и лучший вариант",
+            "points": [
+              "<b>Puedes</b> + infinitivo — Ты можешь: Puedes tomar una infusión",
+              "<b>Lo mejor es</b> + infinitivo — Лучше всего: Lo mejor es descansar",
+              "<b>Es mejor</b> + infinitivo — Лучше: Es mejor no salir con fiebre"
+            ]
+          }
+        ],
+        "examples": [
+          "Debes dormir más, estás muy cansado.",
+          "Tienes que ir al médico si te duele mucho.",
+          "Es bueno caminar 30 minutos al día.",
+          "No es bueno comer mucha grasa.",
+          "Lo mejor es quedarse en casa si tienes fiebre."
+        ]
+      },
+      "questions": [
+        {"sentence": "___ dormir al menos 8 horas.", "answer": "Debes"},
+        {"sentence": "___ ir al médico si tienes fiebre.", "answer": "Tienes que"},
+        {"sentence": "___ hacer ejercicio regularmente.", "answer": "Es bueno"},
+        {"sentence": "___ fumar, es muy malo para la salud.", "answer": "No es bueno"},
+        {"sentence": "___ tomar una infusión para relajarte.", "answer": "Puedes"},
+        {"sentence": "___ descansar si estás cansado.", "answer": "Lo mejor es"},
+        {"sentence": "___ comer frutas y verduras todos los días.", "answer": "Debes"},
+        {"sentence": "___ beber mucha agua.", "answer": "Tienes que"},
+        {"sentence": "___ caminar 30 minutos al día.", "answer": "Es bueno"},
+        {"sentence": "___ comer comida basura.", "answer": "No es bueno"},
+        {"sentence": "___ hacer yoga para reducir el estrés.", "answer": "Puedes"},
+        {"sentence": "___ consultar a un especialista.", "answer": "Lo mejor es"},
+        {"sentence": "___ proteger la piel del sol.", "answer": "Debes"},
+        {"sentence": "___ llevar gafas de sol en verano.", "answer": "Tienes que"},
+        {"sentence": "___ nadar para fortalecer la espalda.", "answer": "Es bueno"},
+        {"sentence": "___ acostarse muy tarde.", "answer": "No es bueno"},
+        {"sentence": "___ tomar miel para la tos.", "answer": "Puedes"},
+        {"sentence": "___ ir al dentista dos veces al año.", "answer": "Lo mejor es"},
+        {"sentence": "___ lavarte las manos antes de comer.", "answer": "Debes"},
+        {"sentence": "___ evitar el estrés.", "answer": "Tienes que"},
+        {"sentence": "___ meditar para relajarse.", "answer": "Es bueno"},
+        {"sentence": "___ beber alcohol en exceso.", "answer": "No es bueno"},
+        {"sentence": "___ usar crema hidratante.", "answer": "Puedes"},
+        {"sentence": "___ dormir de lado para la espalda.", "answer": "Lo mejor es"},
+        {"sentence": "___ calentar antes de hacer deporte.", "answer": "Debes"},
+        {"sentence": "___ cuidar tu alimentación.", "answer": "Tienes que"},
+        {"sentence": "___ desayunar bien por la mañana.", "answer": "Es bueno"},
+        {"sentence": "___ saltarse comidas.", "answer": "No es bueno"},
+        {"sentence": "___ probar remedios naturales.", "answer": "Puedes"},
+        {"sentence": "___ prevenir que curar.", "answer": "Lo mejor es"},
+        {"sentence": "___ estirar después del ejercicio.", "answer": "Debes"},
+        {"sentence": "___ descansar cuando estés enfermo.", "answer": "Tienes que"},
+        {"sentence": "___ reír, es muy saludable.", "answer": "Es bueno"},
+        {"sentence": "___ trabajar demasiado.", "answer": "No es bueno"},
+        {"sentence": "___ hacer natación para la espalda.", "answer": "Puedes"},
+        {"sentence": "___ consultar al médico.", "answer": "Lo mejor es"},
+        {"sentence": "___ hidratarte bien.", "answer": "Debes"},
+        {"sentence": "___ usar protector solar.", "answer": "Tienes que"},
+        {"sentence": "___ tomar vitaminas en invierno.", "answer": "Es bueno"},
+        {"sentence": "___ pasar mucho tiempo sentado.", "answer": "No es bueno"},
+        {"sentence": "___ hacer ejercicios de respiración.", "answer": "Puedes"},
+        {"sentence": "___ actuar rápido si hay síntomas.", "answer": "Lo mejor es"},
+        {"sentence": "___ mantener una dieta equilibrada.", "answer": "Debes"},
+        {"sentence": "___ reducir el consumo de azúcar.", "answer": "Tienes que"},
+        {"sentence": "___ dormir la siesta.", "answer": "Es bueno"},
+        {"sentence": "___ ignorar el dolor.", "answer": "No es bueno"},
+        {"sentence": "___ intentar técnicas de relajación.", "answer": "Puedes"},
+        {"sentence": "___ escuchar a tu cuerpo.", "answer": "Lo mejor es"},
+        {"sentence": "___ vacunarte contra la gripe.", "answer": "Debes"},
+        {"sentence": "___ abrigarte bien en invierno.", "answer": "Tienes que"},
+        {"sentence": "___ salir a pasear al aire libre.", "answer": "Es bueno"},
+        {"sentence": "___ automedicarse.", "answer": "No es bueno"},
+        {"sentence": "___ tomar té de manzanilla.", "answer": "Puedes"},
+        {"sentence": "___ mantener hábitos saludables.", "answer": "Lo mejor es"},
+        {"sentence": "___ cepillarte los dientes tres veces al día.", "answer": "Debes"},
+        {"sentence": "___ hacerte revisiones médicas anuales.", "answer": "Tienes que"},
+        {"sentence": "___ socializar con amigos.", "answer": "Es bueno"},
+        {"sentence": "___ abusar del café.", "answer": "No es bueno"},
+        {"sentence": "___ hacer pausas en el trabajo.", "answer": "Puedes"},
+        {"sentence": "___ empezar a cuidarte ahora.", "answer": "Lo mejor es"}
+      ],
+      "microTests": [
+        {"sentence": "___ dormir al menos 8 horas.", "answer": "Debes", "hint": "Обязательство → Debes + infinitivo"},
+        {"sentence": "___ ir al médico si tienes fiebre.", "answer": "Tienes que", "hint": "Необходимость → Tienes que + infinitivo"},
+        {"sentence": "___ hacer ejercicio regularmente.", "answer": "Es bueno", "hint": "Полезно → Es bueno + infinitivo"},
+        {"sentence": "___ fumar.", "answer": "No es bueno", "hint": "Вредно → No es bueno + infinitivo"},
+        {"sentence": "___ tomar una infusión para relajarte.", "answer": "Puedes", "hint": "Возможность → Puedes + infinitivo"},
+        {"sentence": "___ descansar si estás cansado.", "answer": "Lo mejor es", "hint": "Лучше всего → Lo mejor es + infinitivo"},
+        {"sentence": "___ comer frutas y verduras.", "answer": "Debes", "hint": "Обязательство → Debes + infinitivo"},
+        {"sentence": "___ beber mucha agua.", "answer": "Tienes que", "hint": "Необходимость → Tienes que + infinitivo"},
+        {"sentence": "___ caminar cada día.", "answer": "Es bueno", "hint": "Полезно → Es bueno + infinitivo"},
+        {"sentence": "___ comer comida basura.", "answer": "No es bueno", "hint": "Вредно → No es bueno + infinitivo"},
+        {"sentence": "___ hacer yoga.", "answer": "Puedes", "hint": "Возможность → Puedes + infinitivo"},
+        {"sentence": "___ consultar a un especialista.", "answer": "Lo mejor es", "hint": "Лучше всего → Lo mejor es + infinitivo"},
+        {"sentence": "___ proteger la piel del sol.", "answer": "Debes", "hint": "Обязательство → Debes + infinitivo"},
+        {"sentence": "___ acostarse muy tarde.", "answer": "No es bueno", "hint": "Вредно → No es bueno + infinitivo"},
+        {"sentence": "___ mantener hábitos saludables.", "answer": "Lo mejor es", "hint": "Лучше всего → Lo mejor es + infinitivo"}
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Imperativo afirmativo: formas regulares (tú)",
+      "hint": "compra / come / vive / habla / bebe / escribe / descansa / camina / corre / lee",
+      "rule": {
+        "title": "IMPERATIVO AFIRMATIVO: регулярные формы (tú)",
+        "explanation": "Повелительное наклонение (imperativo) используется для приказов, просьб и советов. Для формы TÚ регулярных глаголов убираем -s от формы presente: hablas → habla, comes → come, vives → vive.",
+        "sections": [
+          {
+            "subtitle": "Глаголы на -AR: hablas → habla",
+            "points": [
+              "<b>Hablar</b> → hablas → ¡<b>Habla</b>! — Говори!",
+              "<b>Caminar</b> → caminas → ¡<b>Camina</b>! — Иди!",
+              "<b>Descansar</b> → descansas → ¡<b>Descansa</b>! — Отдыхай!",
+              "<b>Comprar</b> → compras → ¡<b>Compra</b>! — Купи!",
+              "<b>Escuchar</b> → escuchas → ¡<b>Escucha</b>! — Слушай!"
+            ]
+          },
+          {
+            "subtitle": "Глаголы на -ER: comes → come",
+            "points": [
+              "<b>Comer</b> → comes → ¡<b>Come</b>! — Ешь!",
+              "<b>Beber</b> → bebes → ¡<b>Bebe</b>! — Пей!",
+              "<b>Leer</b> → lees → ¡<b>Lee</b>! — Читай!",
+              "<b>Correr</b> → corres → ¡<b>Corre</b>! — Беги!",
+              "<b>Proteger</b> → proteges → ¡<b>Protege</b>! — Защищай!"
+            ]
+          },
+          {
+            "subtitle": "Глаголы на -IR: vives → vive",
+            "points": [
+              "<b>Vivir</b> → vives → ¡<b>Vive</b>! — Живи!",
+              "<b>Escribir</b> → escribes → ¡<b>Escribe</b>! — Пиши!",
+              "<b>Abrir</b> → abres → ¡<b>Abre</b>! — Открой!",
+              "<b>Subir</b> → subes → ¡<b>Sube</b>! — Поднимайся!",
+              "<b>Decidir</b> → decides → ¡<b>Decide</b>! — Решай!"
+            ]
+          }
+        ],
+        "examples": [
+          "¡Habla más despacio, por favor!",
+          "Come más frutas y verduras.",
+          "Bebe mucha agua todos los días.",
+          "Descansa bien esta noche.",
+          "Escribe tu nombre aquí."
+        ]
+      },
+      "questions": [
+        {"sentence": "¡___ más despacio, no te entiendo! (hablar)", "answer": "Habla"},
+        {"sentence": "___ más frutas y verduras. (comer)", "answer": "Come"},
+        {"sentence": "___ agua antes del ejercicio. (beber)", "answer": "Bebe"},
+        {"sentence": "___ bien esta noche. (descansar)", "answer": "Descansa"},
+        {"sentence": "___ 30 minutos al día. (caminar)", "answer": "Camina"},
+        {"sentence": "___ tu nombre en el formulario. (escribir)", "answer": "Escribe"},
+        {"sentence": "___ la ventana, hace calor. (abrir)", "answer": "Abre"},
+        {"sentence": "___ este libro, es muy bueno. (leer)", "answer": "Lee"},
+        {"sentence": "___ zapatillas cómodas. (comprar)", "answer": "Compra"},
+        {"sentence": "___ a tu madre más a menudo. (llamar)", "answer": "Llama"},
+        {"sentence": "___ las instrucciones del médico. (escuchar)", "answer": "Escucha"},
+        {"sentence": "___ al parque, te sentará bien. (correr)", "answer": "Corre"},
+        {"sentence": "___ la piel del sol. (proteger)", "answer": "Protege"},
+        {"sentence": "___ la puerta al salir. (cerrar)", "answer": "Cierra"},
+        {"sentence": "___ la dieta de manera saludable. (llevar)", "answer": "Lleva"},
+        {"sentence": "___ con tus amigos este fin de semana. (salir)", "answer": "Sal"},
+        {"sentence": "___ el medicamento con agua. (tomar)", "answer": "Toma"},
+        {"sentence": "___ las escaleras, no uses el ascensor. (subir)", "answer": "Sube"},
+        {"sentence": "___ antes de actuar. (pensar)", "answer": "Piensa"},
+        {"sentence": "___ pronto, es tarde. (decidir)", "answer": "Decide"},
+        {"sentence": "___ español todos los días. (practicar)", "answer": "Practica"},
+        {"sentence": "___ la comida despacio. (masticar)", "answer": "Mastica"},
+        {"sentence": "___ los dientes después de comer. (cepillar)", "answer": "Cepilla"},
+        {"sentence": "___ bien antes de ir al gimnasio. (calentar)", "answer": "Calienta"},
+        {"sentence": "___ al menos 2 litros de agua. (beber)", "answer": "Bebe"},
+        {"sentence": "___ una dieta equilibrada. (seguir)", "answer": "Sigue"},
+        {"sentence": "___ después del ejercicio. (estirar)", "answer": "Estira"},
+        {"sentence": "___ en positivo. (pensar)", "answer": "Piensa"},
+        {"sentence": "___ lo que comes. (controlar)", "answer": "Controla"},
+        {"sentence": "___ menos sal en las comidas. (usar)", "answer": "Usa"},
+        {"sentence": "___ las etiquetas de los productos. (leer)", "answer": "Lee"},
+        {"sentence": "___ suficientes horas. (dormir)", "answer": "Duerme"},
+        {"sentence": "___ productos frescos. (comprar)", "answer": "Compra"},
+        {"sentence": "___ el estrés con ejercicio. (combatir)", "answer": "Combate"},
+        {"sentence": "___ tus objetivos de salud. (escribir)", "answer": "Escribe"},
+        {"sentence": "___ las calorías que consumes. (contar)", "answer": "Cuenta"},
+        {"sentence": "___ vitaminas si es necesario. (tomar)", "answer": "Toma"},
+        {"sentence": "___ el alcohol y el tabaco. (evitar)", "answer": "Evita"},
+        {"sentence": "___ un horario de comidas. (establecer)", "answer": "Establece"},
+        {"sentence": "___ música relajante. (escuchar)", "answer": "Escucha"},
+        {"sentence": "___ la tensión con yoga. (reducir)", "answer": "Reduce"},
+        {"sentence": "___ más verduras en tu dieta. (incluir)", "answer": "Incluye"},
+        {"sentence": "___ ejercicio regularmente. (hacer)", "answer": "Haz"},
+        {"sentence": "___ la receta del médico. (seguir)", "answer": "Sigue"},
+        {"sentence": "___ las manos antes de comer. (lavar)", "answer": "Lava"},
+        {"sentence": "___ los consejos del especialista. (seguir)", "answer": "Sigue"},
+        {"sentence": "___ proteína en cada comida. (consumir)", "answer": "Consume"},
+        {"sentence": "___ frutas de temporada. (elegir)", "answer": "Elige"},
+        {"sentence": "___ la basura en su lugar. (tirar)", "answer": "Tira"},
+        {"sentence": "___ tu peso regularmente. (controlar)", "answer": "Controla"},
+        {"sentence": "___ hidratado durante el día. (mantenerse)", "answer": "Mantente"},
+        {"sentence": "___ un paseo después de comer. (dar)", "answer": "Da"},
+        {"sentence": "___ paciencia con el proceso. (tener)", "answer": "Ten"},
+        {"sentence": "___ las grasas saturadas. (reducir)", "answer": "Reduce"},
+        {"sentence": "___ a la cama temprano. (ir)", "answer": "Ve"},
+        {"sentence": "___ bien los alimentos. (cocinar)", "answer": "Cocina"},
+        {"sentence": "___ atención a las señales de tu cuerpo. (prestar)", "answer": "Presta"},
+        {"sentence": "___ momentos para ti. (reservar)", "answer": "Reserva"},
+        {"sentence": "___ tus logros. (celebrar)", "answer": "Celebra"},
+        {"sentence": "___ constante en tus hábitos. (ser)", "answer": "Sé"}
+      ],
+      "microTests": [
+        {"sentence": "___ más despacio. (hablar)", "answer": "Habla", "hint": "-AR: hablas → habla"},
+        {"sentence": "___ más frutas. (comer)", "answer": "Come", "hint": "-ER: comes → come"},
+        {"sentence": "___ agua. (beber)", "answer": "Bebe", "hint": "-ER: bebes → bebe"},
+        {"sentence": "___ bien. (descansar)", "answer": "Descansa", "hint": "-AR: descansas → descansa"},
+        {"sentence": "___ 30 minutos. (caminar)", "answer": "Camina", "hint": "-AR: caminas → camina"},
+        {"sentence": "___ tu nombre. (escribir)", "answer": "Escribe", "hint": "-IR: escribes → escribe"},
+        {"sentence": "___ la ventana. (abrir)", "answer": "Abre", "hint": "-IR: abres → abre"},
+        {"sentence": "___ este libro. (leer)", "answer": "Lee", "hint": "-ER: lees → lee"},
+        {"sentence": "___ al parque. (correr)", "answer": "Corre", "hint": "-ER: corres → corre"},
+        {"sentence": "___ la piel. (proteger)", "answer": "Protege", "hint": "-ER: proteges → protege"},
+        {"sentence": "___ la puerta. (cerrar)", "answer": "Cierra", "hint": "-AR: cierras → cierra (e→ie)"},
+        {"sentence": "___ las escaleras. (subir)", "answer": "Sube", "hint": "-IR: subes → sube"},
+        {"sentence": "___ español. (practicar)", "answer": "Practica", "hint": "-AR: practicas → practica"},
+        {"sentence": "___ el medicamento. (tomar)", "answer": "Toma", "hint": "-AR: tomas → toma"},
+        {"sentence": "___ después del ejercicio. (estirar)", "answer": "Estira", "hint": "-AR: estiras → estira"}
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Imperativo afirmativo: formas irregulares (tú)",
+      "hint": "haz / pon / ven / di / sé / ve / sal / ten",
+      "rule": {
+        "title": "IMPERATIVO AFIRMATIVO: неправильные формы (tú)",
+        "explanation": "Некоторые глаголы имеют неправильные формы в imperativo для TÚ. Их нужно запомнить.",
+        "sections": [
+          {
+            "subtitle": "8 основных неправильных глаголов",
+            "points": [
+              "<b>Hacer</b> → ¡<b>Haz</b>! — Делай! (Haz ejercicio)",
+              "<b>Poner</b> → ¡<b>Pon</b>! — Положи! (Pon la mesa)",
+              "<b>Venir</b> → ¡<b>Ven</b>! — Приходи! (Ven aquí)",
+              "<b>Decir</b> → ¡<b>Di</b>! — Скажи! (Di la verdad)",
+              "<b>Ser</b> → ¡<b>Sé</b>! — Будь! (Sé bueno)",
+              "<b>Ir</b> → ¡<b>Ve</b>! — Иди! (Ve al médico)",
+              "<b>Salir</b> → ¡<b>Sal</b>! — Выходи! (Sal de casa)",
+              "<b>Tener</b> → ¡<b>Ten</b>! — Имей! (Ten cuidado)"
+            ]
+          },
+          {
+            "subtitle": "Использование в советах о здоровье",
+            "points": [
+              "<b>Haz</b> ejercicio todos los días — Делай упражнения каждый день",
+              "<b>Pon</b> crema protectora — Нанеси защитный крем",
+              "<b>Ve</b> al médico si te sientes mal — Сходи к врачу, если плохо себя чувствуешь",
+              "<b>Sal</b> a pasear al aire libre — Выходи гулять на свежий воздух",
+              "<b>Ten</b> cuidado con el sol — Будь осторожен с солнцем"
+            ]
+          },
+          {
+            "subtitle": "Запоминалка",
+            "points": [
+              "Haz, pon, ven, di, sé, ve, sal, ten — 8 форм-исключений",
+              "Все они односложные и короткие",
+              "Некоторые совпадают с другими формами: ve (ir) = ve (ver в presente)"
+            ]
+          }
+        ],
+        "examples": [
+          "¡Haz los deberes antes de salir!",
+          "Pon la mesa, vamos a cenar.",
+          "Ven a mi casa esta tarde.",
+          "Di la verdad, ¿qué ha pasado?",
+          "Sé paciente, todo saldrá bien."
+        ]
+      },
+      "questions": [
+        {"sentence": "¡___ ejercicio todos los días! (hacer)", "answer": "Haz"},
+        {"sentence": "___ crema protectora antes de salir. (poner)", "answer": "Pon"},
+        {"sentence": "___ a mi casa esta tarde. (venir)", "answer": "Ven"},
+        {"sentence": "___ la verdad, ¿qué te pasa? (decir)", "answer": "Di"},
+        {"sentence": "___ paciente, el médico vendrá pronto. (ser)", "answer": "Sé"},
+        {"sentence": "___ al médico si te duele mucho. (ir)", "answer": "Ve"},
+        {"sentence": "___ a pasear, te sentará bien. (salir)", "answer": "Sal"},
+        {"sentence": "___ cuidado con el sol. (tener)", "answer": "Ten"},
+        {"sentence": "___ estiramientos después de correr. (hacer)", "answer": "Haz"},
+        {"sentence": "___ hielo en la lesión. (poner)", "answer": "Pon"},
+        {"sentence": "___ conmigo al gimnasio. (venir)", "answer": "Ven"},
+        {"sentence": "___ cómo te sientes. (decir)", "answer": "Di"},
+        {"sentence": "___ positivo, todo irá bien. (ser)", "answer": "Sé"},
+        {"sentence": "___ a la farmacia a comprar el medicamento. (ir)", "answer": "Ve"},
+        {"sentence": "___ de casa un rato, necesitas aire fresco. (salir)", "answer": "Sal"},
+        {"sentence": "___ paciencia, la recuperación lleva tiempo. (tener)", "answer": "Ten"},
+        {"sentence": "___ una dieta equilibrada. (hacer)", "answer": "Haz"},
+        {"sentence": "___ la mesa, vamos a comer. (poner)", "answer": "Pon"},
+        {"sentence": "___ a verme cuando puedas. (venir)", "answer": "Ven"},
+        {"sentence": "___ qué te duele exactamente. (decir)", "answer": "Di"},
+        {"sentence": "___ fuerte, puedes superarlo. (ser)", "answer": "Sé"},
+        {"sentence": "___ al dentista, tienes que revisarte. (ir)", "answer": "Ve"},
+        {"sentence": "___ a correr por la mañana. (salir)", "answer": "Sal"},
+        {"sentence": "___ cuidado con las alergias en primavera. (tener)", "answer": "Ten"},
+        {"sentence": "___ yoga para relajarte. (hacer)", "answer": "Haz"},
+        {"sentence": "___ el termómetro en la boca. (poner)", "answer": "Pon"},
+        {"sentence": "___ a la consulta a las 10. (venir)", "answer": "Ven"},
+        {"sentence": "___ siempre la verdad al médico. (decir)", "answer": "Di"},
+        {"sentence": "___ responsable con tu salud. (ser)", "answer": "Sé"},
+        {"sentence": "___ a urgencias si es grave. (ir)", "answer": "Ve"},
+        {"sentence": "___ a caminar todos los días. (salir)", "answer": "Sal"},
+        {"sentence": "___ fe, te vas a curar. (tener)", "answer": "Ten"},
+        {"sentence": "___ deporte regularmente. (hacer)", "answer": "Haz"},
+        {"sentence": "___ atención a los síntomas. (poner)", "answer": "Pon"},
+        {"sentence": "___ a buscarme a las 5. (venir)", "answer": "Ven"},
+        {"sentence": "___ adiós a los malos hábitos. (decir)", "answer": "Di"},
+        {"sentence": "___ constante en el tratamiento. (ser)", "answer": "Sé"},
+        {"sentence": "___ despacio si te mareas. (ir)", "answer": "Ve"},
+        {"sentence": "___ temprano de trabajar hoy. (salir)", "answer": "Sal"},
+        {"sentence": "___ mucho cuidado con la fiebre alta. (tener)", "answer": "Ten"},
+        {"sentence": "___ caso al médico. (hacer)", "answer": "Haz"},
+        {"sentence": "___ la crema después del baño. (poner)", "answer": "Pon"},
+        {"sentence": "___ a cenar con nosotros. (venir)", "answer": "Ven"},
+        {"sentence": "___ que sí, acepta la ayuda. (decir)", "answer": "Di"},
+        {"sentence": "___ optimista, la recuperación va bien. (ser)", "answer": "Sé"},
+        {"sentence": "___ con cuidado, el suelo está mojado. (ir)", "answer": "Ve"},
+        {"sentence": "___ al jardín a tomar el sol. (salir)", "answer": "Sal"},
+        {"sentence": "___ confianza en los médicos. (tener)", "answer": "Ten"},
+        {"sentence": "___ lo que te digo y descansa. (hacer)", "answer": "Haz"},
+        {"sentence": "___ el despertador temprano. (poner)", "answer": "Pon"},
+        {"sentence": "___ cuando quieras, estoy en casa. (venir)", "answer": "Ven"},
+        {"sentence": "___ no al tabaco. (decir)", "answer": "Di"},
+        {"sentence": "___ valiente y afronta el problema. (ser)", "answer": "Sé"},
+        {"sentence": "___ a comprar fruta fresca. (ir)", "answer": "Ve"},
+        {"sentence": "___ a dar un paseo. (salir)", "answer": "Sal"},
+        {"sentence": "___ calma, no te pongas nervioso. (tener)", "answer": "Ten"},
+        {"sentence": "___ una pausa en el trabajo. (hacer)", "answer": "Haz"},
+        {"sentence": "___ música relajante. (poner)", "answer": "Pon"},
+        {"sentence": "___ a visitarme al hospital. (venir)", "answer": "Ven"},
+        {"sentence": "___ bueno y tómate la medicina. (ser)", "answer": "Sé"}
+      ],
+      "microTests": [
+        {"sentence": "___ ejercicio. (hacer)", "answer": "Haz", "hint": "Hacer → Haz (неправильный)"},
+        {"sentence": "___ crema protectora. (poner)", "answer": "Pon", "hint": "Poner → Pon (неправильный)"},
+        {"sentence": "___ a mi casa. (venir)", "answer": "Ven", "hint": "Venir → Ven (неправильный)"},
+        {"sentence": "___ la verdad. (decir)", "answer": "Di", "hint": "Decir → Di (неправильный)"},
+        {"sentence": "___ paciente. (ser)", "answer": "Sé", "hint": "Ser → Sé (неправильный)"},
+        {"sentence": "___ al médico. (ir)", "answer": "Ve", "hint": "Ir → Ve (неправильный)"},
+        {"sentence": "___ a pasear. (salir)", "answer": "Sal", "hint": "Salir → Sal (неправильный)"},
+        {"sentence": "___ cuidado. (tener)", "answer": "Ten", "hint": "Tener → Ten (неправильный)"},
+        {"sentence": "___ estiramientos. (hacer)", "answer": "Haz", "hint": "Hacer → Haz"},
+        {"sentence": "___ hielo. (poner)", "answer": "Pon", "hint": "Poner → Pon"},
+        {"sentence": "___ conmigo. (venir)", "answer": "Ven", "hint": "Venir → Ven"},
+        {"sentence": "___ cómo te sientes. (decir)", "answer": "Di", "hint": "Decir → Di"},
+        {"sentence": "___ fuerte. (ser)", "answer": "Sé", "hint": "Ser → Sé"},
+        {"sentence": "___ a la farmacia. (ir)", "answer": "Ve", "hint": "Ir → Ve"},
+        {"sentence": "___ paciencia. (tener)", "answer": "Ten", "hint": "Tener → Ten"}
+      ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Para + infinitivo: expresar finalidad",
+      "hint": "para cuidar / para proteger / para fortalecer / para prevenir / para mejorar / para combatir",
+      "rule": {
+        "title": "PARA + INFINITIVO: выражение цели",
+        "explanation": "Конструкция PARA + infinitivo используется для выражения цели или назначения действия. Отвечает на вопрос '¿Para qué?' (Для чего? Зачем?).",
+        "sections": [
+          {
+            "subtitle": "Структура: Para + infinitivo + ...",
+            "points": [
+              "<b>Para cuidar</b> los ojos... — Чтобы заботиться о глазах...",
+              "<b>Para proteger</b> la piel... — Чтобы защитить кожу...",
+              "<b>Para fortalecer</b> la espalda... — Чтобы укрепить спину...",
+              "<b>Para prevenir</b> enfermedades... — Чтобы предотвратить болезни...",
+              "<b>Para mejorar</b> la salud... — Чтобы улучшить здоровье..."
+            ]
+          },
+          {
+            "subtitle": "Использование в советах о здоровье",
+            "points": [
+              "<b>Para cuidar los ojos</b> tienes que ponerte gafas de sol",
+              "<b>Para proteger el pelo</b> del sol tienes que cubrirte la cabeza",
+              "<b>Para fortalecer la espalda</b> es bueno hacer natación",
+              "<b>Para prevenir resfriados</b> debes lavarte las manos",
+              "<b>Para tener un pelo sano</b> hay que comer frutas y verduras"
+            ]
+          },
+          {
+            "subtitle": "Otras estructuras con para",
+            "points": [
+              "Es bueno/malo <b>para</b> + parte del cuerpo: Nadar es bueno para la espalda",
+              "Va bien/mal <b>para</b> + problema: El yoga va bien para el estrés",
+              "Sirve <b>para</b> + función: Esta crema sirve para hidratar la piel"
+            ]
+          }
+        ],
+        "examples": [
+          "Para cuidar los pies debes utilizar un calzado cómodo.",
+          "Para proteger la piel del sol usa crema protectora.",
+          "El yoga es muy bueno para mejorar la flexibilidad.",
+          "Caminar va bien para fortalecer las piernas.",
+          "Para prevenir la gripe es importante vacunarse."
+        ]
+      },
+      "questions": [
+        {"sentence": "___ los ojos tienes que ponerte gafas de sol.", "answer": "Para cuidar"},
+        {"sentence": "___ el pelo del sol tienes que cubrirte la cabeza.", "answer": "Para proteger"},
+        {"sentence": "___ los pies debes utilizar un calzado cómodo.", "answer": "Para cuidar"},
+        {"sentence": "Caminar es muy bueno ___ las piernas.", "answer": "para fortalecer"},
+        {"sentence": "Hacer natación va bien ___ la espalda.", "answer": "para fortalecer"},
+        {"sentence": "___ la espalda lo mejor es dormir de lado.", "answer": "Para cuidar"},
+        {"sentence": "___ un pelo sano tienes que comer frutas y verduras.", "answer": "Para tener"},
+        {"sentence": "El yoga es excelente ___ el estrés.", "answer": "para combatir"},
+        {"sentence": "___ resfriados hay que lavarse las manos.", "answer": "Para prevenir"},
+        {"sentence": "___ la piel debes usar crema hidratante.", "answer": "Para cuidar"},
+        {"sentence": "La miel es buena ___ la tos.", "answer": "para calmar"},
+        {"sentence": "___ la circulación es bueno caminar.", "answer": "Para mejorar"},
+        {"sentence": "___ los músculos haz ejercicio regularmente.", "answer": "Para fortalecer"},
+        {"sentence": "Beber agua es esencial ___ la piel.", "answer": "para hidratar"},
+        {"sentence": "___ el insomnio evita el café por la noche.", "answer": "Para combatir"},
+        {"sentence": "Esta crema sirve ___ la cara.", "answer": "para hidratar"},
+        {"sentence": "___ la anemia come alimentos ricos en hierro.", "answer": "Para prevenir"},
+        {"sentence": "El té de manzanilla va bien ___ los nervios.", "answer": "para calmar"},
+        {"sentence": "___ las articulaciones haz ejercicios suaves.", "answer": "Para cuidar"},
+        {"sentence": "___ la postura es importante sentarse bien.", "answer": "Para mejorar"},
+        {"sentence": "Correr es bueno ___ las piernas.", "answer": "para fortalecer"},
+        {"sentence": "___ el dolor de cabeza descansa en un lugar oscuro.", "answer": "Para aliviar"},
+        {"sentence": "El tomillo sirve ___ las migrañas.", "answer": "para combatir"},
+        {"sentence": "___ la respiración practica ejercicios de yoga.", "answer": "Para mejorar"},
+        {"sentence": "Esta infusión es buena ___ la digestión.", "answer": "para mejorar"},
+        {"sentence": "___ la obesidad debes cuidar la alimentación.", "answer": "Para prevenir"},
+        {"sentence": "___ el equilibrio practica tai chi.", "answer": "Para mejorar"},
+        {"sentence": "Los estiramientos son buenos ___ la flexibilidad.", "answer": "para mejorar"},
+        {"sentence": "___ los brazos haz flexiones.", "answer": "Para fortalecer"},
+        {"sentence": "___ las arrugas usa crema antienvejecimiento.", "answer": "Para prevenir"},
+        {"sentence": "El aceite de oliva es bueno ___ el corazón.", "answer": "para cuidar"},
+        {"sentence": "___ la tos toma miel con limón.", "answer": "Para calmar"},
+        {"sentence": "Esta mascarilla sirve ___ la cara.", "answer": "para hidratar"},
+        {"sentence": "___ el acné lávate la cara dos veces al día.", "answer": "Para combatir"},
+        {"sentence": "Meditar va bien ___ el estrés.", "answer": "para reducir"},
+        {"sentence": "___ las defensas come vitamina C.", "answer": "Para fortalecer"},
+        {"sentence": "El aloe vera sirve ___ las quemaduras.", "answer": "para curar"},
+        {"sentence": "___ la fiebre toma paracetamol.", "answer": "Para bajar"},
+        {"sentence": "___ el colesterol evita las grasas saturadas.", "answer": "Para controlar"},
+        {"sentence": "El ejercicio es bueno ___ la circulación.", "answer": "para mejorar"},
+        {"sentence": "___ la alergia toma antihistamínicos.", "answer": "Para combatir"},
+        {"sentence": "___ los huesos consume calcio.", "answer": "Para fortalecer"},
+        {"sentence": "Esta pomada sirve ___ el dolor muscular.", "answer": "para aliviar"},
+        {"sentence": "___ las varices camina y evita estar de pie mucho tiempo.", "answer": "Para prevenir"},
+        {"sentence": "___ la memoria haz ejercicios mentales.", "answer": "Para mejorar"},
+        {"sentence": "El descanso es fundamental ___ bien.", "answer": "para recuperarse"},
+        {"sentence": "___ infecciones mantén buena higiene.", "answer": "Para prevenir"},
+        {"sentence": "___ la tensión muscular date un masaje.", "answer": "Para aliviar"},
+        {"sentence": "El zinc es bueno ___ el sistema inmune.", "answer": "para fortalecer"},
+        {"sentence": "___ el mareo evita movimientos bruscos.", "answer": "Para evitar"},
+        {"sentence": "___ la vista descansa los ojos cada hora.", "answer": "Para cuidar"},
+        {"sentence": "Dormir bien es esencial ___ la salud.", "answer": "para mantener"},
+        {"sentence": "___ las piernas levántalas por la noche.", "answer": "Para descansar"},
+        {"sentence": "___ la garganta haz gárgaras con agua y sal.", "answer": "Para cuidar"},
+        {"sentence": "Este jarabe sirve ___ la tos.", "answer": "para calmar"},
+        {"sentence": "___ el dolor de muelas ve al dentista.", "answer": "Para tratar"},
+        {"sentence": "___ los oídos no uses bastoncillos.", "answer": "Para cuidar"},
+        {"sentence": "La vitamina D es buena ___ los huesos.", "answer": "para fortalecer"},
+        {"sentence": "___ náuseas toma jengibre.", "answer": "Para evitar"},
+        {"sentence": "___ la salud mental haz actividades que te gusten.", "answer": "Para cuidar"}
+      ],
+      "microTests": [
+        {"sentence": "___ los ojos tienes que ponerte gafas.", "answer": "Para cuidar", "hint": "Цель: заботиться о глазах → Para cuidar"},
+        {"sentence": "___ el pelo del sol cúbrete la cabeza.", "answer": "Para proteger", "hint": "Цель: защитить волосы → Para proteger"},
+        {"sentence": "Nadar es bueno ___ la espalda.", "answer": "para fortalecer", "hint": "Цель: укрепить → para fortalecer"},
+        {"sentence": "___ resfriados lávate las manos.", "answer": "Para prevenir", "hint": "Цель: предотвратить → Para prevenir"},
+        {"sentence": "___ el estrés practica yoga.", "answer": "Para combatir", "hint": "Цель: бороться → Para combatir"},
+        {"sentence": "___ la circulación camina cada día.", "answer": "Para mejorar", "hint": "Цель: улучшить → Para mejorar"},
+        {"sentence": "Esta crema sirve ___ la piel.", "answer": "para hidratar", "hint": "Цель: увлажнить → para hidratar"},
+        {"sentence": "___ la tos toma miel.", "answer": "Para calmar", "hint": "Цель: успокоить → Para calmar"},
+        {"sentence": "___ los músculos haz ejercicio.", "answer": "Para fortalecer", "hint": "Цель: укрепить → Para fortalecer"},
+        {"sentence": "___ la postura siéntate bien.", "answer": "Para mejorar", "hint": "Цель: улучшить → Para mejorar"},
+        {"sentence": "___ las defensas come vitamina C.", "answer": "Para fortalecer", "hint": "Цель: укрепить → Para fortalecer"},
+        {"sentence": "___ el dolor descansa.", "answer": "Para aliviar", "hint": "Цель: облегчить → Para aliviar"},
+        {"sentence": "___ infecciones mantén buena higiene.", "answer": "Para prevenir", "hint": "Цель: предотвратить → Para prevenir"},
+        {"sentence": "___ la salud haz ejercicio.", "answer": "Para mantener", "hint": "Цель: поддерживать → Para mantener"},
+        {"sentence": "___ la piel usa crema protectora.", "answer": "Para cuidar", "hint": "Цель: заботиться → Para cuidar"}
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Verbos de beneficios para la salud",
+      "hint": "fortalecer / mejorar / prevenir / combatir / curar / calmar / proteger / hidratar / aliviar / tratar",
+      "rule": {
+        "title": "ГЛАГОЛЫ ПОЛЬЗЫ для здоровья",
+        "explanation": "Для описания пользы и эффекта натуральных средств и действий на здоровье используются специальные глаголы. Они часто сочетаются с конструкциями 'es bueno para', 'sirve para', 'va bien para'.",
+        "sections": [
+          {
+            "subtitle": "Глаголы укрепления и улучшения",
+            "points": [
+              "<b>Fortalecer</b> — укреплять: La natación fortalece la espalda",
+              "<b>Mejorar</b> — улучшать: El yoga mejora la flexibilidad",
+              "<b>Mantener</b> — поддерживать: El ejercicio mantiene la salud"
+            ]
+          },
+          {
+            "subtitle": "Глаголы защиты и предотвращения",
+            "points": [
+              "<b>Proteger</b> — защищать: La crema protege la piel del sol",
+              "<b>Prevenir</b> — предотвращать: La vacuna previene la gripe",
+              "<b>Evitar</b> — избегать/предотвращать: Evita el estrés"
+            ]
+          },
+          {
+            "subtitle": "Глаголы лечения и облегчения",
+            "points": [
+              "<b>Curar</b> — лечить: El antibiótico cura la infección",
+              "<b>Calmar</b> — успокаивать: La manzanilla calma los nervios",
+              "<b>Aliviar</b> — облегчать: Esta pomada alivia el dolor",
+              "<b>Tratar</b> — лечить/обрабатывать: Este medicamento trata el acné"
+            ]
+          },
+          {
+            "subtitle": "Глаголы ухода",
+            "points": [
+              "<b>Hidratar</b> — увлажнять: Esta crema hidrata la piel",
+              "<b>Combatir</b> — бороться: El aceite de tomillo combate las migrañas",
+              "<b>Corregir</b> — исправлять: Los ejercicios corrigen la postura"
+            ]
+          }
+        ],
+        "examples": [
+          "La natación fortalece la espalda y los brazos.",
+          "El yoga mejora la flexibilidad y reduce el estrés.",
+          "La miel calma la tos y el dolor de garganta.",
+          "Esta crema hidrata la piel seca.",
+          "El aceite de tomillo combate las migrañas."
+        ]
+      },
+      "questions": [
+        {"sentence": "La natación ___ la espalda y los brazos.", "answer": "fortalece"},
+        {"sentence": "El yoga ___ la flexibilidad.", "answer": "mejora"},
+        {"sentence": "La vacuna ___ la gripe.", "answer": "previene"},
+        {"sentence": "El aceite de tomillo ___ las migrañas.", "answer": "combate"},
+        {"sentence": "El antibiótico ___ la infección.", "answer": "cura"},
+        {"sentence": "La manzanilla ___ los nervios.", "answer": "calma"},
+        {"sentence": "La crema solar ___ la piel del sol.", "answer": "protege"},
+        {"sentence": "El aloe vera ___ la piel.", "answer": "hidrata"},
+        {"sentence": "Esta pomada ___ el dolor muscular.", "answer": "alivia"},
+        {"sentence": "Este medicamento ___ el acné.", "answer": "trata"},
+        {"sentence": "Caminar ___ las piernas.", "answer": "fortalece"},
+        {"sentence": "El descanso ___ la recuperación.", "answer": "mejora"},
+        {"sentence": "Lavarse las manos ___ infecciones.", "answer": "previene"},
+        {"sentence": "El deporte ___ el estrés.", "answer": "combate"},
+        {"sentence": "La miel ___ el dolor de garganta.", "answer": "calma"},
+        {"sentence": "El sombrero ___ la cabeza del sol.", "answer": "protege"},
+        {"sentence": "Beber agua ___ el cuerpo.", "answer": "hidrata"},
+        {"sentence": "El reposo ___ el cansancio.", "answer": "alivia"},
+        {"sentence": "Los ejercicios ___ la postura.", "answer": "corrigen"},
+        {"sentence": "El ejercicio ___ la salud.", "answer": "mantiene"},
+        {"sentence": "La vitamina C ___ el sistema inmune.", "answer": "fortalece"},
+        {"sentence": "La meditación ___ la concentración.", "answer": "mejora"},
+        {"sentence": "Una dieta sana ___ enfermedades.", "answer": "previene"},
+        {"sentence": "El jengibre ___ las náuseas.", "answer": "combate"},
+        {"sentence": "El jarabe ___ la tos.", "answer": "calma"},
+        {"sentence": "Las gafas ___ los ojos.", "answer": "protegen"},
+        {"sentence": "Esta mascarilla ___ la cara.", "answer": "hidrata"},
+        {"sentence": "El masaje ___ la tensión muscular.", "answer": "alivia"},
+        {"sentence": "Esta crema ___ las arrugas.", "answer": "trata"},
+        {"sentence": "El tai chi ___ el equilibrio.", "answer": "mejora"},
+        {"sentence": "El pilates ___ los músculos del core.", "answer": "fortalece"},
+        {"sentence": "El sueño ___ la memoria.", "answer": "mejora"},
+        {"sentence": "La higiene ___ infecciones.", "answer": "previene"},
+        {"sentence": "El té verde ___ el envejecimiento.", "answer": "combate"},
+        {"sentence": "La infusión ___ el estómago.", "answer": "calma"},
+        {"sentence": "El protector solar ___ de las quemaduras.", "answer": "protege"},
+        {"sentence": "El aceite de coco ___ el pelo.", "answer": "hidrata"},
+        {"sentence": "El hielo ___ la inflamación.", "answer": "alivia"},
+        {"sentence": "Los estiramientos ___ la flexibilidad.", "answer": "mejoran"},
+        {"sentence": "El zinc ___ las defensas.", "answer": "fortalece"},
+        {"sentence": "Correr ___ la resistencia.", "answer": "mejora"},
+        {"sentence": "La vacunación ___ enfermedades graves.", "answer": "previene"},
+        {"sentence": "La dieta mediterránea ___ el colesterol.", "answer": "combate"},
+        {"sentence": "La lavanda ___ la ansiedad.", "answer": "calma"},
+        {"sentence": "La bufanda ___ el cuello del frío.", "answer": "protege"},
+        {"sentence": "La crema nocturna ___ mientras duermes.", "answer": "hidrata"},
+        {"sentence": "El reposo ___ la recuperación.", "answer": "favorece"},
+        {"sentence": "La fisioterapia ___ las lesiones.", "answer": "trata"},
+        {"sentence": "La actividad física ___ los huesos.", "answer": "fortalece"},
+        {"sentence": "El omega-3 ___ la función cerebral.", "answer": "mejora"},
+        {"sentence": "El cepillado dental ___ las caries.", "answer": "previene"},
+        {"sentence": "El ajo ___ los virus.", "answer": "combate"},
+        {"sentence": "El silencio ___ los nervios.", "answer": "calma"},
+        {"sentence": "Los guantes ___ las manos del frío.", "answer": "protegen"},
+        {"sentence": "El sérum ___ la piel en profundidad.", "answer": "hidrata"},
+        {"sentence": "El ibuprofeno ___ el dolor.", "answer": "alivia"},
+        {"sentence": "Este champú ___ la caspa.", "answer": "trata"},
+        {"sentence": "Los abdominales ___ el core.", "answer": "fortalecen"},
+        {"sentence": "La respiración profunda ___ la relajación.", "answer": "mejora"},
+        {"sentence": "La dieta equilibrada ___ la obesidad.", "answer": "previene"}
+      ],
+      "microTests": [
+        {"sentence": "La natación ___ la espalda.", "answer": "fortalece", "hint": "Укреплять → fortalecer"},
+        {"sentence": "El yoga ___ la flexibilidad.", "answer": "mejora", "hint": "Улучшать → mejorar"},
+        {"sentence": "La vacuna ___ la gripe.", "answer": "previene", "hint": "Предотвращать → prevenir"},
+        {"sentence": "El aceite de tomillo ___ las migrañas.", "answer": "combate", "hint": "Бороться → combatir"},
+        {"sentence": "El antibiótico ___ la infección.", "answer": "cura", "hint": "Лечить → curar"},
+        {"sentence": "La manzanilla ___ los nervios.", "answer": "calma", "hint": "Успокаивать → calmar"},
+        {"sentence": "La crema solar ___ la piel.", "answer": "protege", "hint": "Защищать → proteger"},
+        {"sentence": "El aloe vera ___ la piel.", "answer": "hidrata", "hint": "Увлажнять → hidratar"},
+        {"sentence": "Esta pomada ___ el dolor.", "answer": "alivia", "hint": "Облегчать → aliviar"},
+        {"sentence": "Este medicamento ___ el acné.", "answer": "trata", "hint": "Лечить → tratar"},
+        {"sentence": "Los ejercicios ___ la postura.", "answer": "corrigen", "hint": "Исправлять → corregir"},
+        {"sentence": "El ejercicio ___ la salud.", "answer": "mantiene", "hint": "Поддерживать → mantener"},
+        {"sentence": "El jengibre ___ las náuseas.", "answer": "combate", "hint": "Бороться → combatir"},
+        {"sentence": "El hielo ___ la inflamación.", "answer": "alivia", "hint": "Облегчать → aliviar"},
+        {"sentence": "La vitamina C ___ el sistema inmune.", "answer": "fortalece", "hint": "Укреплять → fortalecer"}
+      ]
+    }
+  ]
+}

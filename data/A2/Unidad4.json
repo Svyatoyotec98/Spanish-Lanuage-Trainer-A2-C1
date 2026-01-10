@@ -1,0 +1,3133 @@
+{
+  "id": "unidad_4",
+  "title": "Unidad 4: Hogar, dulce hogar",
+  "groups": {
+    "TIPOS_DE_VIVIENDA": [
+      {
+        "spanish": "el piso",
+        "ru": "квартира",
+        "type": "sustantivo",
+        "icon": "building",
+        "useIcon": true,
+        "hardSentences": [
+          "Vivo en un ___ en el centro.",
+          "El ___ tiene tres habitaciones.",
+          "Busco un ___ amueblado.",
+          "Mi ___ está en el quinto piso."
+        ],
+        "hardSentencesRu": [
+          "Я живу в квартире в центре.",
+          "В квартире три комнаты.",
+          "Ищу меблированную квартиру.",
+          "Моя квартира на пятом этаже."
+        ]
+      },
+      {
+        "spanish": "el apartamento",
+        "ru": "апартаменты",
+        "type": "sustantivo",
+        "icon": "building",
+        "useIcon": true,
+        "hardSentences": [
+          "Alquilamos un ___ en la playa.",
+          "El ___ es pequeño pero acogedor.",
+          "Tienen un ___ de vacaciones.",
+          "El ___ está cerca del mar."
+        ],
+        "hardSentencesRu": [
+          "Мы снимаем апартаменты на пляже.",
+          "Апартаменты маленькие, но уютные.",
+          "У них есть апартаменты для отпуска.",
+          "Апартаменты находятся рядом с морем."
+        ]
+      },
+      {
+        "spanish": "el estudio",
+        "ru": "студия",
+        "type": "sustantivo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "Vivo en un ___ de 40 metros.",
+          "El ___ tiene cocina americana.",
+          "Es un ___ muy luminoso.",
+          "Busco un ___ barato."
+        ],
+        "hardSentencesRu": [
+          "Я живу в студии 40 метров.",
+          "В студии американская кухня.",
+          "Это очень светлая студия.",
+          "Ищу дешёвую студию."
+        ]
+      },
+      {
+        "spanish": "el ático",
+        "ru": "пентхаус/мансарда",
+        "type": "sustantivo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene una terraza enorme.",
+          "Viven en un ___ con vistas.",
+          "El ___ es el más caro del edificio.",
+          "Sueño con tener un ___."
+        ],
+        "hardSentencesRu": [
+          "В пентхаусе огромная терраса.",
+          "Они живут в пентхаусе с видом.",
+          "Пентхаус самый дорогой в здании.",
+          "Мечтаю иметь пентхаус."
+        ]
+      },
+      {
+        "spanish": "la casa",
+        "ru": "дом",
+        "type": "sustantivo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ tiene jardín.",
+          "La ___ es muy grande.",
+          "Quiero comprar una ___.",
+          "La ___ está en las afueras."
+        ],
+        "hardSentencesRu": [
+          "В моём доме есть сад.",
+          "Дом очень большой.",
+          "Хочу купить дом.",
+          "Дом находится на окраине."
+        ]
+      },
+      {
+        "spanish": "la casa adosada",
+        "ru": "таунхаус",
+        "type": "sustantivo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "Viven en una ___ con garaje.",
+          "La ___ tiene dos plantas.",
+          "Alquilamos una ___ para el verano.",
+          "Las ___ son más baratas que los chalés."
+        ],
+        "hardSentencesRu": [
+          "Они живут в таунхаусе с гаражом.",
+          "В таунхаусе два этажа.",
+          "Мы снимаем таунхаус на лето.",
+          "Таунхаусы дешевле, чем коттеджи."
+        ]
+      },
+      {
+        "spanish": "el chalé",
+        "ru": "коттедж/вилла",
+        "type": "sustantivo",
+        "icon": "home",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene piscina.",
+          "Quieren comprar un ___ en la costa.",
+          "El ___ es de nueva construcción.",
+          "Viven en un ___ con jardín."
+        ],
+        "hardSentencesRu": [
+          "В коттедже есть бассейн.",
+          "Они хотят купить коттедж на побережье.",
+          "Коттедж новой постройки.",
+          "Они живут в коттедже с садом."
+        ]
+      },
+      {
+        "spanish": "la habitación",
+        "ru": "комната/спальня",
+        "type": "sustantivo",
+        "icon": "bed",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ es pequeña.",
+          "El piso tiene tres ___.",
+          "La ___ da al jardín.",
+          "Duermo en la ___ de invitados."
+        ],
+        "hardSentencesRu": [
+          "Моя комната маленькая.",
+          "В квартире три комнаты.",
+          "Комната выходит в сад.",
+          "Я сплю в гостевой комнате."
+        ]
+      }
+    ],
+    "PARTES_DE_LA_CASA": [
+      {
+        "spanish": "el salón",
+        "ru": "гостиная",
+        "type": "sustantivo",
+        "icon": "couch",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es muy amplio.",
+          "Vemos la tele en el ___.",
+          "El ___ tiene mucha luz.",
+          "Hay un sofá grande en el ___."
+        ],
+        "hardSentencesRu": [
+          "Гостиная очень просторная.",
+          "Мы смотрим телевизор в гостиной.",
+          "В гостиной много света.",
+          "В гостиной большой диван."
+        ]
+      },
+      {
+        "spanish": "la cocina",
+        "ru": "кухня",
+        "type": "sustantivo",
+        "icon": "utensils",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ está totalmente equipada.",
+          "Cocino en la ___ todos los días.",
+          "La ___ es pequeña pero funcional.",
+          "Hay una mesa en la ___."
+        ],
+        "hardSentencesRu": [
+          "Кухня полностью оборудована.",
+          "Я готовлю на кухне каждый день.",
+          "Кухня маленькая, но функциональная.",
+          "На кухне есть стол."
+        ]
+      },
+      {
+        "spanish": "el baño",
+        "ru": "ванная",
+        "type": "sustantivo",
+        "icon": "bath",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene ducha y bañera.",
+          "El piso tiene dos ___.",
+          "El ___ es muy moderno.",
+          "Hay un espejo grande en el ___."
+        ],
+        "hardSentencesRu": [
+          "В ванной есть душ и ванна.",
+          "В квартире две ванные.",
+          "Ванная очень современная.",
+          "В ванной большое зеркало."
+        ]
+      },
+      {
+        "spanish": "el dormitorio",
+        "ru": "спальня",
+        "type": "sustantivo",
+        "icon": "bed",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ principal tiene baño propio.",
+          "Hay dos ___ en el piso.",
+          "El ___ es muy tranquilo.",
+          "Duermo en el ___ de atrás."
+        ],
+        "hardSentencesRu": [
+          "В главной спальне своя ванная.",
+          "В квартире две спальни.",
+          "Спальня очень тихая.",
+          "Я сплю в задней спальне."
+        ]
+      },
+      {
+        "spanish": "el despacho",
+        "ru": "кабинет",
+        "type": "sustantivo",
+        "icon": "laptop",
+        "useIcon": true,
+        "hardSentences": [
+          "Trabajo desde casa en el ___.",
+          "El ___ tiene una mesa grande.",
+          "Necesito un ___ para estudiar.",
+          "El ___ está al lado del salón."
+        ],
+        "hardSentencesRu": [
+          "Я работаю из дома в кабинете.",
+          "В кабинете большой стол.",
+          "Мне нужен кабинет для учёбы.",
+          "Кабинет рядом с гостиной."
+        ]
+      },
+      {
+        "spanish": "la terraza",
+        "ru": "терраса",
+        "type": "sustantivo",
+        "icon": "sun",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ tiene vistas al mar.",
+          "Desayunamos en la ___.",
+          "La ___ es de 20 metros cuadrados.",
+          "Hay plantas en la ___."
+        ],
+        "hardSentencesRu": [
+          "С террасы вид на море.",
+          "Мы завтракаем на террасе.",
+          "Терраса 20 квадратных метров.",
+          "На террасе есть растения."
+        ]
+      },
+      {
+        "spanish": "el balcón",
+        "ru": "балкон",
+        "type": "sustantivo",
+        "icon": "sun",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ da a la calle.",
+          "Tenemos flores en el ___.",
+          "El ___ es pequeño.",
+          "Tomo el café en el ___."
+        ],
+        "hardSentencesRu": [
+          "Балкон выходит на улицу.",
+          "У нас цветы на балконе.",
+          "Балкон маленький.",
+          "Я пью кофе на балконе."
+        ]
+      },
+      {
+        "spanish": "el garaje",
+        "ru": "гараж",
+        "type": "sustantivo",
+        "icon": "car",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene dos plazas.",
+          "El coche está en el ___.",
+          "El piso incluye ___.",
+          "El ___ está en el sótano."
+        ],
+        "hardSentencesRu": [
+          "В гараже два места.",
+          "Машина в гараже.",
+          "Квартира включает гараж.",
+          "Гараж в подвале."
+        ]
+      },
+      {
+        "spanish": "el jardín",
+        "ru": "сад",
+        "type": "sustantivo",
+        "icon": "tree",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene muchas flores.",
+          "Los niños juegan en el ___.",
+          "El ___ es muy grande.",
+          "Hay una piscina en el ___."
+        ],
+        "hardSentencesRu": [
+          "В саду много цветов.",
+          "Дети играют в саду.",
+          "Сад очень большой.",
+          "В саду есть бассейн."
+        ]
+      },
+      {
+        "spanish": "la entrada",
+        "ru": "прихожая/вход",
+        "type": "sustantivo",
+        "icon": "door-open",
+        "useIcon": true,
+        "hardSentences": [
+          "Deja las llaves en la ___.",
+          "La ___ es amplia.",
+          "Hay un espejo en la ___.",
+          "El perchero está en la ___."
+        ],
+        "hardSentencesRu": [
+          "Оставь ключи в прихожей.",
+          "Прихожая просторная.",
+          "В прихожей есть зеркало.",
+          "Вешалка в прихожей."
+        ]
+      },
+      {
+        "spanish": "la planta baja",
+        "ru": "первый этаж",
+        "type": "sustantivo",
+        "icon": "building",
+        "useIcon": true,
+        "hardSentences": [
+          "La cocina está en la ___.",
+          "Vivimos en la ___.",
+          "En la ___ hay un garaje.",
+          "El salón está en la ___."
+        ],
+        "hardSentencesRu": [
+          "Кухня на первом этаже.",
+          "Мы живём на первом этаже.",
+          "На первом этаже гараж.",
+          "Гостиная на первом этаже."
+        ]
+      },
+      {
+        "spanish": "el suelo",
+        "ru": "пол",
+        "type": "sustantivo",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es de parqué.",
+          "Hay una alfombra en el ___.",
+          "El ___ está frío.",
+          "El libro está en el ___."
+        ],
+        "hardSentencesRu": [
+          "Пол паркетный.",
+          "На полу ковёр.",
+          "Пол холодный.",
+          "Книга на полу."
+        ]
+      },
+      {
+        "spanish": "la pared",
+        "ru": "стена",
+        "type": "sustantivo",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay un cuadro en la ___.",
+          "La ___ es blanca.",
+          "Quiero pintar la ___ de azul.",
+          "El espejo está en la ___."
+        ],
+        "hardSentencesRu": [
+          "На стене картина.",
+          "Стена белая.",
+          "Хочу покрасить стену в синий.",
+          "Зеркало на стене."
+        ]
+      }
+    ],
+    "MUEBLES_Y_OBJETOS": [
+      {
+        "spanish": "el sofá",
+        "ru": "диван",
+        "type": "sustantivo",
+        "icon": "couch",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ es muy cómodo.",
+          "Hay un ___ de piel en el salón.",
+          "Me siento en el ___ a ver la tele.",
+          "El ___ es de tres plazas."
+        ],
+        "hardSentencesRu": [
+          "Диван очень удобный.",
+          "В гостиной кожаный диван.",
+          "Я сажусь на диван смотреть телевизор.",
+          "Диван трёхместный."
+        ]
+      },
+      {
+        "spanish": "el sillón",
+        "ru": "кресло",
+        "type": "sustantivo",
+        "icon": "chair",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo lee en el ___.",
+          "El ___ es de cuero.",
+          "Hay un ___ al lado de la ventana.",
+          "El ___ es muy cómodo."
+        ],
+        "hardSentencesRu": [
+          "Мой дедушка читает в кресле.",
+          "Кресло кожаное.",
+          "У окна стоит кресло.",
+          "Кресло очень удобное."
+        ]
+      },
+      {
+        "spanish": "la mesa",
+        "ru": "стол",
+        "type": "sustantivo",
+        "icon": "table",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ del comedor es grande.",
+          "Hay libros en la ___.",
+          "La ___ es de cristal.",
+          "Comemos en la ___."
+        ],
+        "hardSentencesRu": [
+          "Обеденный стол большой.",
+          "На столе книги.",
+          "Стол стеклянный.",
+          "Мы едим за столом."
+        ]
+      },
+      {
+        "spanish": "la silla",
+        "ru": "стул",
+        "type": "sustantivo",
+        "icon": "chair",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es de madera.",
+          "Hay cuatro ___ en la cocina.",
+          "Siéntate en esta ___.",
+          "La ___ es muy cómoda."
+        ],
+        "hardSentencesRu": [
+          "Стул деревянный.",
+          "На кухне четыре стула.",
+          "Садись на этот стул.",
+          "Стул очень удобный."
+        ]
+      },
+      {
+        "spanish": "la cama",
+        "ru": "кровать",
+        "type": "sustantivo",
+        "icon": "bed",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es muy grande.",
+          "Duermo en una ___ doble.",
+          "La ___ está en el dormitorio.",
+          "Quiero una ___ nueva."
+        ],
+        "hardSentencesRu": [
+          "Кровать очень большая.",
+          "Я сплю на двуспальной кровати.",
+          "Кровать в спальне.",
+          "Хочу новую кровать."
+        ]
+      },
+      {
+        "spanish": "el armario",
+        "ru": "шкаф",
+        "type": "sustantivo",
+        "icon": "archive",
+        "useIcon": true,
+        "hardSentences": [
+          "La ropa está en el ___.",
+          "El ___ es de madera.",
+          "Necesito un ___ más grande.",
+          "El ___ tiene espejo."
+        ],
+        "hardSentencesRu": [
+          "Одежда в шкафу.",
+          "Шкаф деревянный.",
+          "Мне нужен шкаф побольше.",
+          "В шкафу есть зеркало."
+        ]
+      },
+      {
+        "spanish": "la estantería",
+        "ru": "стеллаж/полка",
+        "type": "sustantivo",
+        "icon": "book",
+        "useIcon": true,
+        "hardSentences": [
+          "Los libros están en la ___.",
+          "La ___ es de metal.",
+          "Hay una ___ en el salón.",
+          "La ___ está llena."
+        ],
+        "hardSentencesRu": [
+          "Книги на полке.",
+          "Стеллаж металлический.",
+          "В гостиной есть стеллаж.",
+          "Стеллаж заполнен."
+        ]
+      },
+      {
+        "spanish": "la lámpara",
+        "ru": "лампа",
+        "type": "sustantivo",
+        "icon": "lightbulb",
+        "useIcon": true,
+        "hardSentences": [
+          "Enciende la ___, por favor.",
+          "La ___ es de pie.",
+          "Hay una ___ en la mesilla.",
+          "La ___ da poca luz."
+        ],
+        "hardSentencesRu": [
+          "Включи лампу, пожалуйста.",
+          "Лампа напольная.",
+          "На тумбочке лампа.",
+          "Лампа даёт мало света."
+        ]
+      },
+      {
+        "spanish": "la alfombra",
+        "ru": "ковёр",
+        "type": "sustantivo",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es muy suave.",
+          "Hay una ___ debajo de la mesa.",
+          "La ___ es de lana.",
+          "Quiero comprar una ___ nueva."
+        ],
+        "hardSentencesRu": [
+          "Ковёр очень мягкий.",
+          "Под столом ковёр.",
+          "Ковёр шерстяной.",
+          "Хочу купить новый ковёр."
+        ]
+      },
+      {
+        "spanish": "el espejo",
+        "ru": "зеркало",
+        "type": "sustantivo",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay un ___ en el baño.",
+          "Me miro en el ___.",
+          "El ___ es muy grande.",
+          "El ___ está en la entrada."
+        ],
+        "hardSentencesRu": [
+          "В ванной зеркало.",
+          "Я смотрюсь в зеркало.",
+          "Зеркало очень большое.",
+          "Зеркало в прихожей."
+        ]
+      },
+      {
+        "spanish": "la mesilla de noche",
+        "ru": "тумбочка",
+        "type": "sustantivo",
+        "icon": "table",
+        "useIcon": true,
+        "hardSentences": [
+          "El libro está en la ___.",
+          "Hay una lámpara en la ___.",
+          "La ___ es de madera.",
+          "Tengo dos ___ en mi dormitorio."
+        ],
+        "hardSentencesRu": [
+          "Книга на тумбочке.",
+          "На тумбочке лампа.",
+          "Тумбочка деревянная.",
+          "В моей спальне две тумбочки."
+        ]
+      },
+      {
+        "spanish": "el cojín",
+        "ru": "подушка (декоративная)",
+        "type": "sustantivo",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay varios ___ en el sofá.",
+          "El ___ es de tela.",
+          "Me gusta este ___ naranja.",
+          "Pon el ___ en el sillón."
+        ],
+        "hardSentencesRu": [
+          "На диване несколько подушек.",
+          "Подушка тканевая.",
+          "Мне нравится эта оранжевая подушка.",
+          "Положи подушку на кресло."
+        ]
+      },
+      {
+        "spanish": "el cuadro",
+        "ru": "картина",
+        "type": "sustantivo",
+        "icon": "image",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay un ___ en la pared.",
+          "El ___ es muy bonito.",
+          "Compré este ___ en el mercado.",
+          "El ___ es de un pintor famoso."
+        ],
+        "hardSentencesRu": [
+          "На стене картина.",
+          "Картина очень красивая.",
+          "Я купил эту картину на рынке.",
+          "Картина известного художника."
+        ]
+      },
+      {
+        "spanish": "la nevera",
+        "ru": "холодильник",
+        "type": "sustantivo",
+        "icon": "snowflake",
+        "useIcon": true,
+        "hardSentences": [
+          "La leche está en la ___.",
+          "La ___ está vacía.",
+          "Pon la comida en la ___.",
+          "Necesito una ___ nueva."
+        ],
+        "hardSentencesRu": [
+          "Молоко в холодильнике.",
+          "Холодильник пустой.",
+          "Положи еду в холодильник.",
+          "Мне нужен новый холодильник."
+        ]
+      },
+      {
+        "spanish": "la lavadora",
+        "ru": "стиральная машина",
+        "type": "sustantivo",
+        "icon": "cog",
+        "useIcon": true,
+        "hardSentences": [
+          "Pon la ropa en la ___.",
+          "La ___ está en el baño.",
+          "La ___ hace ruido.",
+          "Necesito usar la ___."
+        ],
+        "hardSentencesRu": [
+          "Положи одежду в стиральную машину.",
+          "Стиральная машина в ванной.",
+          "Стиральная машина шумит.",
+          "Мне нужно воспользоваться стиральной машиной."
+        ]
+      },
+      {
+        "spanish": "el horno",
+        "ru": "духовка",
+        "type": "sustantivo",
+        "icon": "fire",
+        "useIcon": true,
+        "hardSentences": [
+          "El pastel está en el ___.",
+          "Precalienta el ___ a 180 grados.",
+          "El ___ es nuevo.",
+          "Cocino en el ___ los domingos."
+        ],
+        "hardSentencesRu": [
+          "Торт в духовке.",
+          "Разогрей духовку до 180 градусов.",
+          "Духовка новая.",
+          "Я готовлю в духовке по воскресеньям."
+        ]
+      },
+      {
+        "spanish": "la ducha",
+        "ru": "душ",
+        "type": "sustantivo",
+        "icon": "shower",
+        "useIcon": true,
+        "hardSentences": [
+          "Me ducho en la ___ todas las mañanas.",
+          "La ___ tiene agua caliente.",
+          "La ___ es muy grande.",
+          "Prefiero la ___ a la bañera."
+        ],
+        "hardSentencesRu": [
+          "Я принимаю душ каждое утро.",
+          "В душе горячая вода.",
+          "Душ очень большой.",
+          "Я предпочитаю душ ванне."
+        ]
+      },
+      {
+        "spanish": "la bañera",
+        "ru": "ванна",
+        "type": "sustantivo",
+        "icon": "bath",
+        "useIcon": true,
+        "hardSentences": [
+          "Me relajo en la ___.",
+          "La ___ es muy grande.",
+          "El baño tiene ducha y ___.",
+          "Prefiero la ___ para relajarme."
+        ],
+        "hardSentencesRu": [
+          "Я расслабляюсь в ванне.",
+          "Ванна очень большая.",
+          "В ванной комнате душ и ванна.",
+          "Я предпочитаю ванну для расслабления."
+        ]
+      }
+    ],
+    "DESCRIBIR_VIVIENDA": [
+      {
+        "spanish": "luminoso",
+        "ru": "светлый",
+        "type": "adjetivo",
+        "icon": "sun",
+        "useIcon": true,
+        "hardSentences": [
+          "El piso es muy ___.",
+          "Busco un apartamento ___.",
+          "La cocina es ___ y amplia.",
+          "El salón es bastante ___."
+        ],
+        "hardSentencesRu": [
+          "Квартира очень светлая.",
+          "Ищу светлую квартиру.",
+          "Кухня светлая и просторная.",
+          "Гостиная довольно светлая."
+        ]
+      },
+      {
+        "spanish": "oscuro",
+        "ru": "тёмный",
+        "type": "adjetivo",
+        "icon": "moon",
+        "useIcon": true,
+        "hardSentences": [
+          "El pasillo es muy ___.",
+          "La habitación es demasiado ___.",
+          "No me gustan los pisos ___.",
+          "El baño es un poco ___."
+        ],
+        "hardSentencesRu": [
+          "Коридор очень тёмный.",
+          "Комната слишком тёмная.",
+          "Мне не нравятся тёмные квартиры.",
+          "Ванная немного тёмная."
+        ]
+      },
+      {
+        "spanish": "acogedor",
+        "ru": "уютный",
+        "type": "adjetivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "El salón es muy ___.",
+          "Es un piso pequeño pero ___.",
+          "Quiero un ambiente ___.",
+          "La casa es muy ___."
+        ],
+        "hardSentencesRu": [
+          "Гостиная очень уютная.",
+          "Квартира маленькая, но уютная.",
+          "Хочу уютную атмосферу.",
+          "Дом очень уютный."
+        ]
+      },
+      {
+        "spanish": "amplio",
+        "ru": "просторный",
+        "type": "adjetivo",
+        "icon": "expand",
+        "useIcon": true,
+        "hardSentences": [
+          "El salón es muy ___.",
+          "Busco un piso ___.",
+          "La terraza es bastante ___.",
+          "Necesito un dormitorio más ___."
+        ],
+        "hardSentencesRu": [
+          "Гостиная очень просторная.",
+          "Ищу просторную квартиру.",
+          "Терраса довольно просторная.",
+          "Мне нужна более просторная спальня."
+        ]
+      },
+      {
+        "spanish": "ruidoso",
+        "ru": "шумный",
+        "type": "adjetivo",
+        "icon": "volume-up",
+        "useIcon": true,
+        "hardSentences": [
+          "La calle es muy ___.",
+          "El barrio es bastante ___.",
+          "No quiero un piso ___.",
+          "El vecino es muy ___."
+        ],
+        "hardSentencesRu": [
+          "Улица очень шумная.",
+          "Район довольно шумный.",
+          "Не хочу шумную квартиру.",
+          "Сосед очень шумный."
+        ]
+      },
+      {
+        "spanish": "tranquilo",
+        "ru": "тихий/спокойный",
+        "type": "adjetivo",
+        "icon": "leaf",
+        "useIcon": true,
+        "hardSentences": [
+          "El barrio es muy ___.",
+          "Busco un lugar ___.",
+          "La zona es bastante ___.",
+          "Quiero vivir en un sitio ___."
+        ],
+        "hardSentencesRu": [
+          "Район очень тихий.",
+          "Ищу тихое место.",
+          "Зона довольно спокойная.",
+          "Хочу жить в спокойном месте."
+        ]
+      },
+      {
+        "spanish": "amueblado",
+        "ru": "меблированный",
+        "type": "adjetivo",
+        "icon": "couch",
+        "useIcon": true,
+        "hardSentences": [
+          "El piso está ___.",
+          "Busco un estudio ___.",
+          "El apartamento no está ___.",
+          "Prefiero alquilar ___."
+        ],
+        "hardSentencesRu": [
+          "Квартира меблирована.",
+          "Ищу меблированную студию.",
+          "Апартаменты не меблированы.",
+          "Предпочитаю снимать меблированное жильё."
+        ]
+      },
+      {
+        "spanish": "cómodo",
+        "ru": "удобный",
+        "type": "adjetivo",
+        "icon": "check",
+        "useIcon": true,
+        "hardSentences": [
+          "El sofá es muy ___.",
+          "La casa es ___ y práctica.",
+          "Necesito un sillón más ___.",
+          "La cama es bastante ___."
+        ],
+        "hardSentencesRu": [
+          "Диван очень удобный.",
+          "Дом удобный и практичный.",
+          "Мне нужно более удобное кресло.",
+          "Кровать довольно удобная."
+        ]
+      },
+      {
+        "spanish": "moderno",
+        "ru": "современный",
+        "type": "adjetivo",
+        "icon": "bolt",
+        "useIcon": true,
+        "hardSentences": [
+          "El piso es muy ___.",
+          "Me gusta el estilo ___.",
+          "La cocina es ___.",
+          "Los muebles son ___."
+        ],
+        "hardSentencesRu": [
+          "Квартира очень современная.",
+          "Мне нравится современный стиль.",
+          "Кухня современная.",
+          "Мебель современная."
+        ]
+      },
+      {
+        "spanish": "antiguo",
+        "ru": "старинный/старый",
+        "type": "adjetivo",
+        "icon": "history",
+        "useIcon": true,
+        "hardSentences": [
+          "El edificio es muy ___.",
+          "Me gustan los muebles ___.",
+          "La casa es ___ pero con encanto.",
+          "El armario es ___."
+        ],
+        "hardSentencesRu": [
+          "Здание очень старое.",
+          "Мне нравится старинная мебель.",
+          "Дом старый, но с шармом.",
+          "Шкаф старинный."
+        ]
+      },
+      {
+        "spanish": "de madera",
+        "ru": "деревянный",
+        "type": "expresión",
+        "icon": "tree",
+        "useIcon": true,
+        "hardSentences": [
+          "La mesa es ___.",
+          "El suelo es ___.",
+          "Prefiero los muebles ___.",
+          "La estantería es ___."
+        ],
+        "hardSentencesRu": [
+          "Стол деревянный.",
+          "Пол деревянный.",
+          "Я предпочитаю деревянную мебель.",
+          "Стеллаж деревянный."
+        ]
+      },
+      {
+        "spanish": "de cristal",
+        "ru": "стеклянный",
+        "type": "expresión",
+        "icon": "glass-martini",
+        "useIcon": true,
+        "hardSentences": [
+          "La mesa es ___.",
+          "Hay una puerta ___.",
+          "Me gusta la lámpara ___.",
+          "El jarrón es ___."
+        ],
+        "hardSentencesRu": [
+          "Стол стеклянный.",
+          "Там стеклянная дверь.",
+          "Мне нравится стеклянная лампа.",
+          "Ваза стеклянная."
+        ]
+      },
+      {
+        "spanish": "de metal",
+        "ru": "металлический",
+        "type": "expresión",
+        "icon": "cog",
+        "useIcon": true,
+        "hardSentences": [
+          "La estantería es ___.",
+          "Las sillas son ___.",
+          "Me gusta el estilo ___.",
+          "La lámpara es ___."
+        ],
+        "hardSentencesRu": [
+          "Стеллаж металлический.",
+          "Стулья металлические.",
+          "Мне нравится металлический стиль.",
+          "Лампа металлическая."
+        ]
+      },
+      {
+        "spanish": "de piel",
+        "ru": "кожаный",
+        "type": "expresión",
+        "icon": "square",
+        "useIcon": true,
+        "hardSentences": [
+          "El sofá es ___.",
+          "Tengo un sillón ___.",
+          "Me gusta el sofá ___.",
+          "La cartera es ___."
+        ],
+        "hardSentencesRu": [
+          "Диван кожаный.",
+          "У меня кожаное кресло.",
+          "Мне нравится кожаный диван.",
+          "Сумка кожаная."
+        ]
+      }
+    ],
+    "UBICACION": [
+      {
+        "spanish": "en el centro",
+        "ru": "в центре",
+        "type": "expresión",
+        "icon": "dot-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "El piso está ___.",
+          "Vivo ___ de la ciudad.",
+          "___ hay muchas tiendas.",
+          "Trabajo ___ de Madrid."
+        ],
+        "hardSentencesRu": [
+          "Квартира в центре.",
+          "Я живу в центре города.",
+          "В центре много магазинов.",
+          "Я работаю в центре Мадрида."
+        ]
+      },
+      {
+        "spanish": "en las afueras",
+        "ru": "на окраине",
+        "type": "expresión",
+        "icon": "map-marker",
+        "useIcon": true,
+        "hardSentences": [
+          "La casa está ___.",
+          "Viven ___ de Barcelona.",
+          "___ es más tranquilo.",
+          "El chalé está ___."
+        ],
+        "hardSentencesRu": [
+          "Дом на окраине.",
+          "Они живут на окраине Барселоны.",
+          "На окраине спокойнее.",
+          "Коттедж на окраине."
+        ]
+      },
+      {
+        "spanish": "al lado de",
+        "ru": "рядом с",
+        "type": "expresión",
+        "icon": "arrows-alt-h",
+        "useIcon": true,
+        "hardSentences": [
+          "Vivo ___ un parque.",
+          "La mesa está ___ la ventana.",
+          "El sofá está ___ la lámpara.",
+          "Hay una silla ___ la cama."
+        ],
+        "hardSentencesRu": [
+          "Я живу рядом с парком.",
+          "Стол рядом с окном.",
+          "Диван рядом с лампой.",
+          "Рядом с кроватью стул."
+        ]
+      },
+      {
+        "spanish": "delante de",
+        "ru": "перед",
+        "type": "expresión",
+        "icon": "arrow-up",
+        "useIcon": true,
+        "hardSentences": [
+          "El sofá está ___ la televisión.",
+          "Hay un árbol ___ la casa.",
+          "El coche está ___ el garaje.",
+          "La mesa está ___ el sofá."
+        ],
+        "hardSentencesRu": [
+          "Диван перед телевизором.",
+          "Перед домом дерево.",
+          "Машина перед гаражом.",
+          "Стол перед диваном."
+        ]
+      },
+      {
+        "spanish": "detrás de",
+        "ru": "за/позади",
+        "type": "expresión",
+        "icon": "arrow-down",
+        "useIcon": true,
+        "hardSentences": [
+          "El jardín está ___ la casa.",
+          "El garaje está ___ el edificio.",
+          "Hay un parque ___ mi piso.",
+          "La estantería está ___ el sofá."
+        ],
+        "hardSentencesRu": [
+          "Сад за домом.",
+          "Гараж за зданием.",
+          "За моей квартирой парк.",
+          "Стеллаж за диваном."
+        ]
+      },
+      {
+        "spanish": "encima de",
+        "ru": "на/над",
+        "type": "expresión",
+        "icon": "arrow-up",
+        "useIcon": true,
+        "hardSentences": [
+          "El libro está ___ la mesa.",
+          "Hay un cuadro ___ el sofá.",
+          "La lámpara está ___ la mesilla.",
+          "Pon el cojín ___ la cama."
+        ],
+        "hardSentencesRu": [
+          "Книга на столе.",
+          "Над диваном картина.",
+          "Лампа на тумбочке.",
+          "Положи подушку на кровать."
+        ]
+      },
+      {
+        "spanish": "debajo de",
+        "ru": "под",
+        "type": "expresión",
+        "icon": "arrow-down",
+        "useIcon": true,
+        "hardSentences": [
+          "La alfombra está ___ la mesa.",
+          "El gato está ___ la cama.",
+          "Hay cajas ___ la escalera.",
+          "Los zapatos están ___ el armario."
+        ],
+        "hardSentencesRu": [
+          "Ковёр под столом.",
+          "Кот под кроватью.",
+          "Под лестницей коробки.",
+          "Обувь под шкафом."
+        ]
+      },
+      {
+        "spanish": "a la derecha de",
+        "ru": "справа от",
+        "type": "expresión",
+        "icon": "arrow-right",
+        "useIcon": true,
+        "hardSentences": [
+          "El baño está ___ la cocina.",
+          "La estantería está ___ la ventana.",
+          "___ la puerta hay un espejo.",
+          "El sillón está ___ el sofá."
+        ],
+        "hardSentencesRu": [
+          "Ванная справа от кухни.",
+          "Стеллаж справа от окна.",
+          "Справа от двери зеркало.",
+          "Кресло справа от дивана."
+        ]
+      },
+      {
+        "spanish": "a la izquierda de",
+        "ru": "слева от",
+        "type": "expresión",
+        "icon": "arrow-left",
+        "useIcon": true,
+        "hardSentences": [
+          "La cocina está ___ la entrada.",
+          "___ la televisión hay una planta.",
+          "El dormitorio está ___ el baño.",
+          "La lámpara está ___ la cama."
+        ],
+        "hardSentencesRu": [
+          "Кухня слева от входа.",
+          "Слева от телевизора растение.",
+          "Спальня слева от ванной.",
+          "Лампа слева от кровати."
+        ]
+      },
+      {
+        "spanish": "entre",
+        "ru": "между",
+        "type": "expresión",
+        "icon": "arrows-alt-h",
+        "useIcon": true,
+        "hardSentences": [
+          "La mesa está ___ el sofá y la ventana.",
+          "___ la cocina y el salón hay un pasillo.",
+          "El baño está ___ las dos habitaciones.",
+          "Hay una planta ___ los dos sillones."
+        ],
+        "hardSentencesRu": [
+          "Стол между диваном и окном.",
+          "Между кухней и гостиной коридор.",
+          "Ванная между двумя комнатами.",
+          "Между двумя креслами растение."
+        ]
+      }
+    ]
+  },
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Describir viviendas: es, está, tiene, da",
+      "hint": "es / está / tiene / da",
+      "rule": {
+        "title": "Описание жилья: ES, ESTÁ, TIENE, DA",
+        "explanation": "При описании жилья используются четыре ключевых глагола. Каждый выполняет свою функцию: ES описывает характеристики, ESTÁ указывает на местоположение или состояние, TIENE говорит о наличии чего-то, DA показывает на что выходит окно или балкон.",
+        "sections": [
+          {
+            "subtitle": "ES — характеристики и свойства",
+            "points": [
+              "Размер: El piso <b>es</b> grande/pequeño — Квартира большая/маленькая",
+              "Качество: La casa <b>es</b> luminosa — Дом светлый",
+              "Тип: <b>Es</b> un ático — Это пентхаус",
+              "Цена: El alquiler <b>es</b> caro — Аренда дорогая"
+            ]
+          },
+          {
+            "subtitle": "ESTÁ — местоположение и состояние",
+            "points": [
+              "Где находится: El piso <b>está</b> en el centro — Квартира в центре",
+              "Состояние: <b>Está</b> amueblado — Меблирована",
+              "Готовность: <b>Está</b> listo para entrar — Готова к заселению",
+              "Временное: <b>Está</b> vacío — Пустует"
+            ]
+          },
+          {
+            "subtitle": "TIENE — наличие, что есть",
+            "points": [
+              "Комнаты: <b>Tiene</b> tres habitaciones — Есть три комнаты",
+              "Удобства: <b>Tiene</b> terraza y garaje — Есть терраса и гараж",
+              "Площадь: <b>Tiene</b> 80 metros cuadrados — 80 квадратных метров",
+              "Особенности: <b>Tiene</b> mucha luz — Много света"
+            ]
+          },
+          {
+            "subtitle": "DA (a/al/a la) — на что выходит",
+            "points": [
+              "На улицу: <b>Da a</b> una calle tranquila — Выходит на тихую улицу",
+              "На двор: <b>Da al</b> patio — Выходит во двор",
+              "На сад: <b>Da al</b> jardín — Выходит в сад",
+              "Без вида: No <b>da a</b> la calle — Не выходит на улицу"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Mi piso es pequeño pero está en el centro.", "ru": "Моя квартира маленькая, но находится в центре."},
+          {"es": "La casa tiene cuatro habitaciones y da al jardín.", "ru": "В доме четыре комнаты, и он выходит в сад."},
+          {"es": "El ático es muy luminoso porque tiene grandes ventanas.", "ru": "Пентхаус очень светлый, потому что в нём большие окна."},
+          {"es": "El estudio está amueblado y es muy acogedor.", "ru": "Студия меблирована и очень уютная."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Mi piso ___ muy luminoso.", "answer": "es"},
+        {"sentence": "La casa ___ en las afueras de la ciudad.", "answer": "está"},
+        {"sentence": "El apartamento ___ tres dormitorios.", "answer": "tiene"},
+        {"sentence": "El balcón ___ a la calle principal.", "answer": "da"},
+        {"sentence": "El salón ___ muy grande.", "answer": "es"},
+        {"sentence": "La cocina ___ totalmente equipada.", "answer": "está"},
+        {"sentence": "El piso ___ terraza y garaje.", "answer": "tiene"},
+        {"sentence": "La habitación ___ al jardín.", "answer": "da"},
+        {"sentence": "El edificio ___ antiguo pero bien conservado.", "answer": "es"},
+        {"sentence": "El estudio ___ en el centro.", "answer": "está"},
+        {"sentence": "La casa ___ piscina.", "answer": "tiene"},
+        {"sentence": "La ventana ___ a un parque.", "answer": "da"},
+        {"sentence": "El alquiler ___ bastante caro.", "answer": "es"},
+        {"sentence": "El piso ___ recién reformado.", "answer": "está"},
+        {"sentence": "El ático ___ unas vistas increíbles.", "answer": "tiene"},
+        {"sentence": "El dormitorio principal ___ al patio interior.", "answer": "da"},
+        {"sentence": "La vivienda ___ muy espaciosa.", "answer": "es"},
+        {"sentence": "El apartamento ___ amueblado.", "answer": "está"},
+        {"sentence": "La casa ___ cuatro baños.", "answer": "tiene"},
+        {"sentence": "El salón ___ a una calle muy tranquila.", "answer": "da"},
+        {"sentence": "El chalé ___ de nueva construcción.", "answer": "es"},
+        {"sentence": "La casa ___ en una zona residencial.", "answer": "está"},
+        {"sentence": "El piso ___ ascensor.", "answer": "tiene"},
+        {"sentence": "La terraza ___ al mar.", "answer": "da"},
+        {"sentence": "El barrio ___ muy seguro.", "answer": "es"},
+        {"sentence": "El estudio ___ listo para entrar a vivir.", "answer": "está"},
+        {"sentence": "El edificio ___ portero.", "answer": "tiene"},
+        {"sentence": "Ninguna ventana ___ a la calle.", "answer": "da"},
+        {"sentence": "La decoración ___ moderna.", "answer": "es"},
+        {"sentence": "El piso ___ en el quinto piso.", "answer": "está"},
+        {"sentence": "La vivienda ___ calefacción central.", "answer": "tiene"},
+        {"sentence": "El balcón ___ a una plaza.", "answer": "da"},
+        {"sentence": "El suelo ___ de parqué.", "answer": "es"},
+        {"sentence": "La casa ___ muy bien comunicada.", "answer": "está"},
+        {"sentence": "El apartamento ___ aire acondicionado.", "answer": "tiene"},
+        {"sentence": "La cocina ___ a un patio de luces.", "answer": "da"},
+        {"sentence": "El precio ___ negociable.", "answer": "es"},
+        {"sentence": "El piso ___ vacío desde hace meses.", "answer": "está"},
+        {"sentence": "La casa ___ un jardín de 200 metros.", "answer": "tiene"},
+        {"sentence": "El despacho ___ a la avenida principal.", "answer": "da"},
+        {"sentence": "La zona ___ muy tranquila.", "answer": "es"},
+        {"sentence": "El ático ___ cerca del metro.", "answer": "está"},
+        {"sentence": "El piso ___ dos plazas de garaje.", "answer": "tiene"},
+        {"sentence": "La habitación no ___ a ninguna calle.", "answer": "da"},
+        {"sentence": "El apartamento ___ perfecto para una pareja.", "answer": "es"},
+        {"sentence": "La vivienda ___ en perfectas condiciones.", "answer": "está"},
+        {"sentence": "El chalé ___ piscina y jardín.", "answer": "tiene"},
+        {"sentence": "El salón ___ a un parque muy bonito.", "answer": "da"},
+        {"sentence": "La casa ___ muy acogedora.", "answer": "es"},
+        {"sentence": "El piso ___ a cinco minutos del centro.", "answer": "está"},
+        {"sentence": "El estudio ___ cocina americana.", "answer": "tiene"},
+        {"sentence": "Todas las habitaciones ___ al sur.", "answer": "dan"},
+        {"sentence": "El edificio ___ de los años 80.", "answer": "es"},
+        {"sentence": "La casa ___ orientada al sur.", "answer": "está"},
+        {"sentence": "El apartamento ___ trastero incluido.", "answer": "tiene"},
+        {"sentence": "El dormitorio ___ a una calle con mucho tráfico.", "answer": "da"},
+        {"sentence": "La vivienda ___ ideal para familias.", "answer": "es"},
+        {"sentence": "El piso ___ recién pintado.", "answer": "está"},
+        {"sentence": "La casa ___ un sótano muy grande.", "answer": "tiene"},
+        {"sentence": "La ventana del baño ___ al patio.", "answer": "da"}
+      ],
+      "microTests": [
+        {
+          "sentence": "El piso ___ muy grande.",
+          "answer": "es",
+          "hint": "¿Qué tipo de característica describes? (tamaño)"
+        },
+        {
+          "sentence": "La casa ___ en el centro de la ciudad.",
+          "answer": "está",
+          "hint": "¿Dónde se encuentra? (ubicación)"
+        },
+        {
+          "sentence": "El apartamento ___ tres dormitorios.",
+          "answer": "tiene",
+          "hint": "¿Qué hay en el apartamento? (posesión)"
+        },
+        {
+          "sentence": "El balcón ___ a la calle.",
+          "answer": "da",
+          "hint": "¿A qué lugar mira el balcón? (orientación)"
+        },
+        {
+          "sentence": "El alquiler ___ muy caro.",
+          "answer": "es",
+          "hint": "¿Cómo es el precio? (característica)"
+        },
+        {
+          "sentence": "El piso ___ amueblado.",
+          "answer": "está",
+          "hint": "¿En qué estado se encuentra? (condición)"
+        },
+        {
+          "sentence": "La casa ___ piscina.",
+          "answer": "tiene",
+          "hint": "¿Qué incluye la casa? (posesión)"
+        },
+        {
+          "sentence": "La habitación ___ al jardín.",
+          "answer": "da",
+          "hint": "¿Hacia dónde mira la ventana? (orientación)"
+        },
+        {
+          "sentence": "El edificio ___ antiguo.",
+          "answer": "es",
+          "hint": "¿De qué época es? (característica)"
+        },
+        {
+          "sentence": "El estudio ___ cerca del metro.",
+          "answer": "está",
+          "hint": "¿A qué distancia está? (ubicación)"
+        },
+        {
+          "sentence": "El chalé ___ garaje para dos coches.",
+          "answer": "tiene",
+          "hint": "¿Qué instalaciones tiene? (posesión)"
+        },
+        {
+          "sentence": "La terraza ___ al mar.",
+          "answer": "da",
+          "hint": "¿Qué vistas tiene? (orientación)"
+        },
+        {
+          "sentence": "La cocina ___ totalmente equipada.",
+          "answer": "está",
+          "hint": "¿En qué condición está la cocina?"
+        },
+        {
+          "sentence": "El ático ___ muy luminoso.",
+          "answer": "es",
+          "hint": "¿Cómo describes la luz? (cualidad)"
+        },
+        {
+          "sentence": "La vivienda ___ ascensor.",
+          "answer": "tiene",
+          "hint": "¿Qué servicios incluye? (posesión)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Comparativos: más/menos/tan...que/como",
+      "hint": "más / menos / tan / que / como",
+      "rule": {
+        "title": "Сравнительные конструкции: MÁS, MENOS, TAN...QUE/COMO",
+        "explanation": "В испанском языке для сравнения используются три основные конструкции: MÁS...QUE (больше/более чем), MENOS...QUE (меньше/менее чем) и TAN...COMO (такой же как). Эти конструкции помогают сравнивать характеристики жилья, цены и условия.",
+        "sections": [
+          {
+            "subtitle": "MÁS + adjetivo + QUE — превосходство",
+            "points": [
+              "Размер: Este piso es <b>más</b> grande <b>que</b> el otro — Эта квартира больше той",
+              "Цена: El centro es <b>más</b> caro <b>que</b> las afueras — Центр дороже окраин",
+              "Качество: Mi casa es <b>más</b> luminosa <b>que</b> la tuya — Мой дом светлее твоего"
+            ]
+          },
+          {
+            "subtitle": "MENOS + adjetivo + QUE — недостаток",
+            "points": [
+              "Размер: El estudio es <b>menos</b> espacioso <b>que</b> el piso — Студия менее просторная, чем квартира",
+              "Шум: Las afueras son <b>menos</b> ruidosas <b>que</b> el centro — На окраинах менее шумно, чем в центре",
+              "Цена: Compartir piso es <b>menos</b> caro <b>que</b> vivir solo — Снимать вместе дешевле, чем жить одному"
+            ]
+          },
+          {
+            "subtitle": "TAN + adjetivo + COMO — равенство",
+            "points": [
+              "Равенство: Mi piso es <b>tan</b> grande <b>como</b> el tuyo — Моя квартира такая же большая, как твоя",
+              "Отрицание: No es <b>tan</b> caro <b>como</b> parece — Не так дорого, как кажется",
+              "Сравнение: El salón es <b>tan</b> luminoso <b>como</b> el dormitorio — Гостиная такая же светлая, как спальня"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Vivir en las afueras es más barato que vivir en el centro.", "ru": "Жить на окраине дешевле, чем в центре."},
+          {"es": "El ático de Julio es más grande que el piso de Pepe.", "ru": "Пентхаус Хулио больше квартиры Пепе."},
+          {"es": "Compartir piso no es tan caro como alquilar solo.", "ru": "Снимать квартиру вместе не так дорого, как одному."},
+          {"es": "Mi habitación es menos ruidosa que la tuya.", "ru": "Моя комната менее шумная, чем твоя."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Este piso es ___ grande que el otro.", "answer": "más"},
+        {"sentence": "El centro es más caro ___ las afueras.", "answer": "que"},
+        {"sentence": "Mi casa es ___ luminosa como la tuya.", "answer": "tan"},
+        {"sentence": "El estudio es ___ espacioso que el piso.", "answer": "menos"},
+        {"sentence": "Vivir solo es más caro ___ compartir piso.", "answer": "que"},
+        {"sentence": "Este barrio no es ___ ruidoso como el centro.", "answer": "tan"},
+        {"sentence": "El ático tiene ___ habitaciones que el chalé.", "answer": "más"},
+        {"sentence": "La terraza es tan grande ___ el salón.", "answer": "como"},
+        {"sentence": "El alquiler es ___ económico que comprar.", "answer": "menos"},
+        {"sentence": "Mi piso es más moderno ___ el de mis padres.", "answer": "que"},
+        {"sentence": "Esta zona es ___ tranquila como aquella.", "answer": "tan"},
+        {"sentence": "El garaje tiene ___ plazas que el otro.", "answer": "menos"},
+        {"sentence": "El precio es más alto ___ el año pasado.", "answer": "que"},
+        {"sentence": "La cocina no es ___ grande como el salón.", "answer": "tan"},
+        {"sentence": "Este edificio es ___ antiguo que aquel.", "answer": "más"},
+        {"sentence": "El piso de Juan es tan caro ___ el mío.", "answer": "como"},
+        {"sentence": "Las afueras son ___ caras que el centro.", "answer": "menos"},
+        {"sentence": "Mi habitación es más pequeña ___ la tuya.", "answer": "que"},
+        {"sentence": "El jardín es ___ bonito como el parque.", "answer": "tan"},
+        {"sentence": "El ascensor es ___ rápido que el de antes.", "answer": "más"},
+        {"sentence": "Esta casa tiene menos metros ___ la otra.", "answer": "que"},
+        {"sentence": "El barrio es ___ seguro como antes.", "answer": "tan"},
+        {"sentence": "El salón es ___ amplio que la cocina.", "answer": "más"},
+        {"sentence": "Vivir aquí no es tan caro ___ parece.", "answer": "como"},
+        {"sentence": "El patio es ___ grande que el jardín.", "answer": "menos"},
+        {"sentence": "Este piso es más céntrico ___ el anterior.", "answer": "que"},
+        {"sentence": "La casa es ___ acogedora como un hotel.", "answer": "tan"},
+        {"sentence": "El baño es ___ moderno que la cocina.", "answer": "más"},
+        {"sentence": "El estudio es menos luminoso ___ el ático.", "answer": "que"},
+        {"sentence": "Mi terraza es ___ grande como la tuya.", "answer": "tan"},
+        {"sentence": "Los vecinos son ___ ruidosos que antes.", "answer": "menos"},
+        {"sentence": "El chalé es más caro ___ el apartamento.", "answer": "que"},
+        {"sentence": "Esta calle es ___ tranquila como aquella.", "answer": "tan"},
+        {"sentence": "El edificio es ___ alto que el de enfrente.", "answer": "más"},
+        {"sentence": "La reforma fue menos costosa ___ pensábamos.", "answer": "que"},
+        {"sentence": "El piso es ___ cómodo como una casa.", "answer": "tan"},
+        {"sentence": "El garaje es ___ grande que necesitamos.", "answer": "más"},
+        {"sentence": "La zona no es tan segura ___ dicen.", "answer": "como"},
+        {"sentence": "El alquiler es ___ caro que el año pasado.", "answer": "menos"},
+        {"sentence": "Este piso tiene más luz ___ el anterior.", "answer": "que"},
+        {"sentence": "La cocina es ___ funcional como la otra.", "answer": "tan"},
+        {"sentence": "El dormitorio es ___ pequeño que el salón.", "answer": "más"},
+        {"sentence": "Vivir en el campo es menos estresante ___ la ciudad.", "answer": "que"},
+        {"sentence": "El edificio es ___ nuevo como parece.", "answer": "tan"},
+        {"sentence": "Esta casa es ___ bonita que la de mis vecinos.", "answer": "más"},
+        {"sentence": "El patio es tan acogedor ___ el jardín.", "answer": "como"},
+        {"sentence": "El precio es ___ negociable que antes.", "answer": "menos"},
+        {"sentence": "Mi piso es más silencioso ___ el tuyo.", "answer": "que"},
+        {"sentence": "La terraza no es ___ grande como esperaba.", "answer": "tan"},
+        {"sentence": "El barrio tiene ___ servicios que el centro.", "answer": "menos"},
+        {"sentence": "La casa es más vieja ___ el apartamento.", "answer": "que"},
+        {"sentence": "El estudio es ___ práctico como un piso.", "answer": "tan"},
+        {"sentence": "El ático es ___ caro que el resto.", "answer": "más"},
+        {"sentence": "Esta zona es menos turística ___ el centro.", "answer": "que"},
+        {"sentence": "Mi casa es ___ grande como la tuya.", "answer": "tan"},
+        {"sentence": "El salón tiene ___ ventanas que el dormitorio.", "answer": "más"},
+        {"sentence": "El piso no es tan viejo ___ parece.", "answer": "como"},
+        {"sentence": "La reforma fue ___ difícil que pensábamos.", "answer": "menos"},
+        {"sentence": "Este barrio es más residencial ___ comercial.", "answer": "que"},
+        {"sentence": "El jardín es ___ verde como en primavera.", "answer": "tan"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Este piso es ___ grande que el otro.",
+          "answer": "más",
+          "hint": "¿Cuál es más grande? (superioridad)"
+        },
+        {
+          "sentence": "El centro es más caro ___ las afueras.",
+          "answer": "que",
+          "hint": "Palabra que conecta la comparación"
+        },
+        {
+          "sentence": "Mi casa es ___ luminosa como la tuya.",
+          "answer": "tan",
+          "hint": "Son iguales en luz (igualdad)"
+        },
+        {
+          "sentence": "La terraza es tan grande ___ el salón.",
+          "answer": "como",
+          "hint": "Palabra para comparar igualdad"
+        },
+        {
+          "sentence": "El estudio es ___ espacioso que el piso.",
+          "answer": "menos",
+          "hint": "El estudio tiene menos espacio (inferioridad)"
+        },
+        {
+          "sentence": "Vivir solo es más caro ___ compartir.",
+          "answer": "que",
+          "hint": "Conecta los dos elementos comparados"
+        },
+        {
+          "sentence": "El barrio no es ___ ruidoso como el centro.",
+          "answer": "tan",
+          "hint": "Comparación de igualdad negada"
+        },
+        {
+          "sentence": "El alquiler es ___ económico que comprar.",
+          "answer": "menos",
+          "hint": "Alquilar cuesta menos (inferioridad)"
+        },
+        {
+          "sentence": "Mi piso es más moderno ___ el de mis padres.",
+          "answer": "que",
+          "hint": "Conecta la comparación de superioridad"
+        },
+        {
+          "sentence": "Esta zona es ___ tranquila como aquella.",
+          "answer": "tan",
+          "hint": "Las dos zonas son igual de tranquilas"
+        },
+        {
+          "sentence": "El chalé es ___ grande que el apartamento.",
+          "answer": "más",
+          "hint": "El chalé tiene más espacio (superioridad)"
+        },
+        {
+          "sentence": "El precio no es tan alto ___ parece.",
+          "answer": "como",
+          "hint": "Comparación de igualdad negada"
+        },
+        {
+          "sentence": "Las afueras son ___ caras que el centro.",
+          "answer": "menos",
+          "hint": "Las afueras cuestan menos"
+        },
+        {
+          "sentence": "El ático es ___ luminoso que el bajo.",
+          "answer": "más",
+          "hint": "El ático tiene más luz"
+        },
+        {
+          "sentence": "Mi habitación es tan cómoda ___ la tuya.",
+          "answer": "como",
+          "hint": "Las dos son igual de cómodas"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Posesivos tónicos: el mío, la tuya, el suyo...",
+      "hint": "el mío / la mía / el tuyo / la tuya / el suyo / la suya / el nuestro / la nuestra",
+      "rule": {
+        "title": "Притяжательные местоимения: EL MÍO, LA TUYA, EL SUYO...",
+        "explanation": "Притяжательные местоимения заменяют существительное, чтобы избежать повторения. Они согласуются в роде и числе с объектом владения, а не с владельцем. Используются с определённым артиклем.",
+        "sections": [
+          {
+            "subtitle": "EL MÍO / LA MÍA — мой/моя",
+            "points": [
+              "Мужской род: Tu piso es grande, <b>el mío</b> es pequeño — Твоя квартира большая, моя маленькая",
+              "Женский род: Tu casa es nueva, <b>la mía</b> es antigua — Твой дом новый, мой старый",
+              "Множественное: Tus muebles son modernos, <b>los míos</b> son clásicos — Твоя мебель современная, моя классическая"
+            ]
+          },
+          {
+            "subtitle": "EL TUYO / LA TUYA — твой/твоя",
+            "points": [
+              "Мужской род: Mi salón es oscuro, <b>el tuyo</b> es luminoso — Моя гостиная тёмная, твоя светлая",
+              "Женский род: Mi cocina es pequeña, <b>la tuya</b> es enorme — Моя кухня маленькая, твоя огромная",
+              "Множественное: Mis vecinos son ruidosos, <b>los tuyos</b> son tranquilos — Мои соседи шумные, твои тихие"
+            ]
+          },
+          {
+            "subtitle": "EL SUYO / LA SUYA — его/её/Ваш",
+            "points": [
+              "Его/её: Su balcón es grande, <b>el suyo</b> tiene vistas — Его балкон большой, у него есть вид",
+              "Ваш (usted): Mi piso está aquí, ¿dónde está <b>el suyo</b>? — Моя квартира здесь, а где Ваша?",
+              "Их: Su casa es vieja, <b>la suya</b> es nueva — Их дом старый, их (другой) новый"
+            ]
+          },
+          {
+            "subtitle": "EL NUESTRO / LA NUESTRA — наш/наша",
+            "points": [
+              "Мужской род: Vuestro piso es céntrico, <b>el nuestro</b> está en las afueras — Ваша квартира в центре, наша на окраине",
+              "Женский род: Vuestra terraza es pequeña, <b>la nuestra</b> es grande — Ваша терраса маленькая, наша большая"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Tu barrio es tranquilo, pero el mío es más céntrico.", "ru": "Твой район тихий, но мой более центральный."},
+          {"es": "Mi sofá es viejo, el tuyo es nuevo.", "ru": "Мой диван старый, твой новый."},
+          {"es": "Su casa tiene jardín, la nuestra tiene terraza.", "ru": "В их доме сад, в нашем — терраса."},
+          {"es": "¿Este armario es el tuyo o el mío?", "ru": "Этот шкаф твой или мой?"}
+        ]
+      },
+      "questions": [
+        {"sentence": "Tu piso es grande, ___ es pequeño.", "answer": "el mío"},
+        {"sentence": "Mi casa es antigua, ___ es moderna.", "answer": "la tuya"},
+        {"sentence": "Su balcón tiene vistas, ___ no tiene.", "answer": "el mío"},
+        {"sentence": "Nuestra cocina es pequeña, ___ es enorme.", "answer": "la suya"},
+        {"sentence": "Tu sofá es de piel, ___ es de tela.", "answer": "el mío"},
+        {"sentence": "Mi habitación es luminosa, ___ es oscura.", "answer": "la tuya"},
+        {"sentence": "Su terraza es grande, ___ es más pequeña.", "answer": "la nuestra"},
+        {"sentence": "Vuestro barrio es ruidoso, ___ es tranquilo.", "answer": "el nuestro"},
+        {"sentence": "Tu armario es de madera, ___ es de metal.", "answer": "el mío"},
+        {"sentence": "Mi salón es pequeño, pero ___ es enorme.", "answer": "el tuyo"},
+        {"sentence": "Su piso está en el centro, ___ está en las afueras.", "answer": "el nuestro"},
+        {"sentence": "Tu cama es doble, ___ es individual.", "answer": "la mía"},
+        {"sentence": "Mi jardín tiene flores, ___ tiene árboles.", "answer": "el tuyo"},
+        {"sentence": "Su casa tiene garaje, ___ no tiene.", "answer": "la mía"},
+        {"sentence": "Nuestro edificio es antiguo, ___ es nuevo.", "answer": "el suyo"},
+        {"sentence": "Tu lámpara es moderna, ___ es clásica.", "answer": "la mía"},
+        {"sentence": "Mi baño tiene bañera, ___ tiene ducha.", "answer": "el tuyo"},
+        {"sentence": "Su estudio es céntrico, ___ está lejos.", "answer": "el nuestro"},
+        {"sentence": "Tu mesa es de cristal, ___ es de madera.", "answer": "la mía"},
+        {"sentence": "Mi vecino es ruidoso, ___ es muy tranquilo.", "answer": "el tuyo"},
+        {"sentence": "Su ático tiene terraza, ___ tiene balcón.", "answer": "el mío"},
+        {"sentence": "Vuestra cocina está equipada, ___ no.", "answer": "la nuestra"},
+        {"sentence": "Tu espejo es grande, ___ es pequeño.", "answer": "el mío"},
+        {"sentence": "Mi alfombra es de lana, ___ es sintética.", "answer": "la tuya"},
+        {"sentence": "Su piso es amueblado, ___ está vacío.", "answer": "el nuestro"},
+        {"sentence": "Tu silla es cómoda, ___ es incómoda.", "answer": "la mía"},
+        {"sentence": "Mi despacho tiene ventana, ___ no tiene.", "answer": "el tuyo"},
+        {"sentence": "Su garaje es de dos plazas, ___ es de una.", "answer": "el mío"},
+        {"sentence": "Nuestra entrada es amplia, ___ es pequeña.", "answer": "la suya"},
+        {"sentence": "Tu dormitorio da al jardín, ___ da a la calle.", "answer": "el mío"},
+        {"sentence": "Mi nevera es nueva, ___ es vieja.", "answer": "la tuya"},
+        {"sentence": "Su lavadora funciona bien, ___ está rota.", "answer": "la mía"},
+        {"sentence": "Tu horno es eléctrico, ___ es de gas.", "answer": "el mío"},
+        {"sentence": "Mi ducha tiene agua caliente, ___ no.", "answer": "la tuya"},
+        {"sentence": "Su chalé tiene piscina, ___ no tiene.", "answer": "el nuestro"},
+        {"sentence": "Vuestro suelo es de parqué, ___ es de baldosa.", "answer": "el nuestro"},
+        {"sentence": "Tu pared es blanca, ___ es azul.", "answer": "la mía"},
+        {"sentence": "Mi cuadro es original, ___ es una copia.", "answer": "el tuyo"},
+        {"sentence": "Su estantería está llena, ___ está vacía.", "answer": "la mía"},
+        {"sentence": "Tu mesilla es de noche, ___ es auxiliar.", "answer": "la mía"},
+        {"sentence": "Mi cojín es de tela, ___ es de piel.", "answer": "el tuyo"},
+        {"sentence": "Su recibidor es grande, ___ es muy pequeño.", "answer": "el nuestro"},
+        {"sentence": "Tu planta baja tiene jardín, ___ no tiene.", "answer": "la mía"},
+        {"sentence": "Mi ascensor funciona, ___ está averiado.", "answer": "el tuyo"},
+        {"sentence": "Su portero es simpático, ___ es antipático.", "answer": "el nuestro"},
+        {"sentence": "Vuestras vistas son bonitas, ___ son mejores.", "answer": "las nuestras"},
+        {"sentence": "Tus vecinos son jóvenes, ___ son mayores.", "answer": "los míos"},
+        {"sentence": "Mis muebles son antiguos, ___ son modernos.", "answer": "los tuyos"},
+        {"sentence": "Sus habitaciones son grandes, ___ son pequeñas.", "answer": "las nuestras"},
+        {"sentence": "Tus plantas están vivas, ___ están secas.", "answer": "las mías"},
+        {"sentence": "Mis cortinas son largas, ___ son cortas.", "answer": "las tuyas"},
+        {"sentence": "Sus cuadros son originales, ___ son copias.", "answer": "los míos"},
+        {"sentence": "Vuestros muebles son caros, ___ son baratos.", "answer": "los nuestros"},
+        {"sentence": "Tus sillas son de madera, ___ son de plástico.", "answer": "las mías"},
+        {"sentence": "Mis lámparas son modernas, ___ son clásicas.", "answer": "las tuyas"},
+        {"sentence": "Sus ventanas dan al sur, ___ dan al norte.", "answer": "las nuestras"},
+        {"sentence": "Vuestras alfombras son persas, ___ son turcas.", "answer": "las nuestras"},
+        {"sentence": "Tus espejos son grandes, ___ son pequeños.", "answer": "los míos"},
+        {"sentence": "Mis cojines son de colores, ___ son blancos.", "answer": "los tuyos"},
+        {"sentence": "Sus balcones tienen flores, ___ no tienen.", "answer": "los nuestros"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Tu piso es grande, ___ es pequeño.",
+          "answer": "el mío",
+          "hint": "El piso de quién habla (yo, masculino)"
+        },
+        {
+          "sentence": "Mi casa es antigua, ___ es moderna.",
+          "answer": "la tuya",
+          "hint": "La casa de la persona con quien hablas (tú, femenino)"
+        },
+        {
+          "sentence": "Su terraza es grande, ___ es más pequeña.",
+          "answer": "la nuestra",
+          "hint": "La terraza de nosotros (femenino)"
+        },
+        {
+          "sentence": "Tu sofá es de piel, ___ es de tela.",
+          "answer": "el mío",
+          "hint": "El sofá del hablante (yo, masculino)"
+        },
+        {
+          "sentence": "Mi habitación es luminosa, ___ es oscura.",
+          "answer": "la tuya",
+          "hint": "La habitación de tú (femenino)"
+        },
+        {
+          "sentence": "Vuestro barrio es ruidoso, ___ es tranquilo.",
+          "answer": "el nuestro",
+          "hint": "El barrio de nosotros (masculino)"
+        },
+        {
+          "sentence": "Su piso está en el centro, ___ está lejos.",
+          "answer": "el nuestro",
+          "hint": "El piso de nosotros (masculino)"
+        },
+        {
+          "sentence": "Tu cama es doble, ___ es individual.",
+          "answer": "la mía",
+          "hint": "La cama del hablante (yo, femenino)"
+        },
+        {
+          "sentence": "Mi jardín tiene flores, ___ tiene árboles.",
+          "answer": "el tuyo",
+          "hint": "El jardín de tú (masculino)"
+        },
+        {
+          "sentence": "Nuestro edificio es antiguo, ___ es nuevo.",
+          "answer": "el suyo",
+          "hint": "El edificio de él/ella/ustedes (masculino)"
+        },
+        {
+          "sentence": "Tus vecinos son jóvenes, ___ son mayores.",
+          "answer": "los míos",
+          "hint": "Los vecinos del hablante (yo, masculino plural)"
+        },
+        {
+          "sentence": "Mis plantas están vivas, ___ están secas.",
+          "answer": "las tuyas",
+          "hint": "Las plantas de tú (femenino plural)"
+        },
+        {
+          "sentence": "Sus habitaciones son grandes, ___ son pequeñas.",
+          "answer": "las nuestras",
+          "hint": "Las habitaciones de nosotros (femenino plural)"
+        },
+        {
+          "sentence": "Tu lámpara es moderna, ___ es clásica.",
+          "answer": "la mía",
+          "hint": "La lámpara del hablante (femenino)"
+        },
+        {
+          "sentence": "Mi baño tiene bañera, ___ tiene ducha.",
+          "answer": "el tuyo",
+          "hint": "El baño de tú (masculino)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Verbos gustar, encantar, preferir",
+      "hint": "me / te / le / nos / os / les + gusta / gustan / encanta / encantan",
+      "rule": {
+        "title": "Глаголы GUSTAR, ENCANTAR, PREFERIR",
+        "explanation": "Глаголы gustar и encantar имеют особую структуру: местоимение + глагол в 3 лице. Глагол согласуется с тем, что нравится (не с тем, кому нравится). Preferir спрягается как обычный глагол, но часто используется в контексте жилья.",
+        "sections": [
+          {
+            "subtitle": "Местоимения с GUSTAR/ENCANTAR",
+            "points": [
+              "A mí <b>me</b> gusta/encanta — Мне нравится",
+              "A ti <b>te</b> gusta/encanta — Тебе нравится",
+              "A él/ella/usted <b>le</b> gusta/encanta — Ему/ей/Вам нравится",
+              "A nosotros <b>nos</b> gusta/encanta — Нам нравится",
+              "A vosotros <b>os</b> gusta/encanta — Вам нравится",
+              "A ellos/ustedes <b>les</b> gusta/encanta — Им/Вам нравится"
+            ]
+          },
+          {
+            "subtitle": "GUSTA vs GUSTAN",
+            "points": [
+              "Единственное число: Me <b>gusta</b> el piso — Мне нравится квартира",
+              "Множественное число: Me <b>gustan</b> los muebles — Мне нравится мебель",
+              "Инфинитив: Me <b>gusta</b> vivir aquí — Мне нравится жить здесь",
+              "То же для encantar: Me <b>encanta</b>/Me <b>encantan</b>"
+            ]
+          },
+          {
+            "subtitle": "PREFERIR — предпочитать",
+            "points": [
+              "Yo <b>prefiero</b> — Я предпочитаю",
+              "Tú <b>prefieres</b> — Ты предпочитаешь",
+              "Él/ella <b>prefiere</b> — Он/она предпочитает",
+              "Nosotros <b>preferimos</b> — Мы предпочитаем"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "¿Te gusta vivir solo?", "ru": "Тебе нравится жить одному?"},
+          {"es": "A mi mujer no le gusta cocinar, pero a mí me encanta.", "ru": "Моей жене не нравится готовить, но мне очень нравится."},
+          {"es": "A mis hijos les encantan los animales.", "ru": "Моим детям очень нравятся животные."},
+          {"es": "Prefiero vivir en el centro que en las afueras.", "ru": "Я предпочитаю жить в центре, а не на окраине."}
+        ]
+      },
+      "questions": [
+        {"sentence": "¿___ gusta vivir solo?", "answer": "Te"},
+        {"sentence": "A mí ___ encanta este piso.", "answer": "me"},
+        {"sentence": "A mis padres ___ gustan las casas grandes.", "answer": "les"},
+        {"sentence": "¿A vosotros ___ gusta vivir en un pueblo?", "answer": "os"},
+        {"sentence": "A mi hermana ___ encanta la decoración moderna.", "answer": "le"},
+        {"sentence": "A nosotros ___ gusta más el ático.", "answer": "nos"},
+        {"sentence": "¿A usted ___ gustan los pisos céntricos?", "answer": "le"},
+        {"sentence": "A mí no ___ gusta nada este barrio.", "answer": "me"},
+        {"sentence": "A los niños ___ encanta el jardín.", "answer": "les"},
+        {"sentence": "¿___ gusta cocinar en casa?", "answer": "Te"},
+        {"sentence": "A mi mujer no ___ gusta la cocina pequeña.", "answer": "le"},
+        {"sentence": "A todos ___ encanta la terraza.", "answer": "nos"},
+        {"sentence": "¿A ti ___ gustan los muebles antiguos?", "answer": "te"},
+        {"sentence": "A mis vecinos ___ gusta hacer ruido.", "answer": "les"},
+        {"sentence": "A mí ___ encantan las vistas al mar.", "answer": "me"},
+        {"sentence": "Me ___ el salón, es muy luminoso.", "answer": "gusta"},
+        {"sentence": "Me ___ los balcones con flores.", "answer": "gustan"},
+        {"sentence": "Le ___ vivir en el centro.", "answer": "gusta"},
+        {"sentence": "Nos ___ las casas con jardín.", "answer": "gustan"},
+        {"sentence": "Les ___ mucho su nueva casa.", "answer": "gusta"},
+        {"sentence": "Te ___ los pisos amueblados.", "answer": "gustan"},
+        {"sentence": "Me ___ cocinar en una cocina grande.", "answer": "gusta"},
+        {"sentence": "Les ___ los edificios antiguos.", "answer": "gustan"},
+        {"sentence": "Le ___ la tranquilidad del barrio.", "answer": "gusta"},
+        {"sentence": "Nos ___ las terrazas grandes.", "answer": "gustan"},
+        {"sentence": "Me ___ el ambiente de este piso.", "answer": "encanta"},
+        {"sentence": "Nos ___ las plantas en la terraza.", "answer": "encantan"},
+        {"sentence": "Le ___ decorar su casa.", "answer": "encanta"},
+        {"sentence": "Les ___ los muebles de madera.", "answer": "encantan"},
+        {"sentence": "Te ___ el diseño moderno.", "answer": "encanta"},
+        {"sentence": "Me ___ los sofás de piel.", "answer": "encantan"},
+        {"sentence": "Nos ___ vivir cerca del mar.", "answer": "encanta"},
+        {"sentence": "Les ___ las vistas desde el ático.", "answer": "encantan"},
+        {"sentence": "Le ___ los colores claros.", "answer": "encantan"},
+        {"sentence": "Te ___ la luz natural.", "answer": "encanta"},
+        {"sentence": "Yo ___ vivir en un piso céntrico.", "answer": "prefiero"},
+        {"sentence": "Mi mujer ___ cocinar ella misma.", "answer": "prefiere"},
+        {"sentence": "Nosotros ___ alquilar que comprar.", "answer": "preferimos"},
+        {"sentence": "¿Tú ___ el salón grande o pequeño?", "answer": "prefieres"},
+        {"sentence": "Ellos ___ vivir en las afueras.", "answer": "prefieren"},
+        {"sentence": "Yo ___ los muebles modernos.", "answer": "prefiero"},
+        {"sentence": "Mi padre ___ las casas con jardín.", "answer": "prefiere"},
+        {"sentence": "Nosotros ___ el piso amueblado.", "answer": "preferimos"},
+        {"sentence": "¿Vosotros ___ la ducha o la bañera?", "answer": "preferís"},
+        {"sentence": "Los estudiantes ___ compartir piso.", "answer": "prefieren"},
+        {"sentence": "A mí ___ gusta nada el ruido.", "answer": "no me"},
+        {"sentence": "A ella ___ le gustan los pisos oscuros.", "answer": "no"},
+        {"sentence": "A nosotros ___ nos gusta vivir lejos.", "answer": "no"},
+        {"sentence": "¿A ti ___ te gusta este barrio?", "answer": "no"},
+        {"sentence": "A ellos ___ les gusta la decoración.", "answer": "no"},
+        {"sentence": "A mi padre le ___ las plantas.", "answer": "encantan"},
+        {"sentence": "A mis hijos les ___ los animales.", "answer": "encantan"},
+        {"sentence": "A nosotros nos ___ nada los pisos pequeños.", "answer": "no gustan"},
+        {"sentence": "¿A ti te ___ vivir en un pueblo?", "answer": "gusta"},
+        {"sentence": "A mi madre le ___ mucho cocinar.", "answer": "gusta"},
+        {"sentence": "Pues a nosotros no nos ___ nada.", "answer": "gusta"},
+        {"sentence": "A todos nos ___ la nueva casa.", "answer": "encanta"},
+        {"sentence": "¿Os ___ vivir en un pueblo?", "answer": "gusta"},
+        {"sentence": "Sí, a todos nos ___.", "answer": "encanta"},
+        {"sentence": "Y a ti, ¿no te ___?", "answer": "gusta"}
+      ],
+      "microTests": [
+        {
+          "sentence": "A mí ___ encanta este piso.",
+          "answer": "me",
+          "hint": "Pronombre para 'yo' con gustar/encantar"
+        },
+        {
+          "sentence": "A mis padres ___ gustan las casas grandes.",
+          "answer": "les",
+          "hint": "Pronombre para 'ellos' con gustar"
+        },
+        {
+          "sentence": "Me ___ el salón, es muy luminoso.",
+          "answer": "gusta",
+          "hint": "El salón es singular"
+        },
+        {
+          "sentence": "Me ___ los balcones con flores.",
+          "answer": "gustan",
+          "hint": "Los balcones es plural"
+        },
+        {
+          "sentence": "Yo ___ vivir en un piso céntrico.",
+          "answer": "prefiero",
+          "hint": "Verbo preferir conjugado para yo"
+        },
+        {
+          "sentence": "A nosotros ___ gusta vivir aquí.",
+          "answer": "nos",
+          "hint": "Pronombre para 'nosotros'"
+        },
+        {
+          "sentence": "Nos ___ las terrazas grandes.",
+          "answer": "gustan",
+          "hint": "Las terrazas es plural"
+        },
+        {
+          "sentence": "Le ___ decorar su casa.",
+          "answer": "encanta",
+          "hint": "Decorar es infinitivo (singular)"
+        },
+        {
+          "sentence": "Mi mujer ___ cocinar ella misma.",
+          "answer": "prefiere",
+          "hint": "Preferir conjugado para ella"
+        },
+        {
+          "sentence": "¿A ti ___ gustan los muebles antiguos?",
+          "answer": "te",
+          "hint": "Pronombre para 'tú'"
+        },
+        {
+          "sentence": "A mi hermana ___ encanta la decoración.",
+          "answer": "le",
+          "hint": "Pronombre para ella"
+        },
+        {
+          "sentence": "A los niños ___ encanta el jardín.",
+          "answer": "les",
+          "hint": "Pronombre para ellos"
+        },
+        {
+          "sentence": "Nosotros ___ alquilar que comprar.",
+          "answer": "preferimos",
+          "hint": "Preferir conjugado para nosotros"
+        },
+        {
+          "sentence": "Les ___ los edificios antiguos.",
+          "answer": "gustan",
+          "hint": "Los edificios es plural"
+        },
+        {
+          "sentence": "Me ___ vivir cerca del mar.",
+          "answer": "encanta",
+          "hint": "Vivir es infinitivo (singular)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Preposiciones de lugar",
+      "hint": "en / encima de / debajo de / al lado de / delante de / detrás de / entre / sobre",
+      "rule": {
+        "title": "Предлоги места: EN, ENCIMA DE, DEBAJO DE...",
+        "explanation": "Предлоги места указывают расположение объектов в пространстве. Они необходимы для описания интерьера дома и расположения мебели.",
+        "sections": [
+          {
+            "subtitle": "EN — в, на (внутри)",
+            "points": [
+              "Внутри: Los libros están <b>en</b> la estantería — Книги на полке",
+              "В комнате: El sofá está <b>en</b> el salón — Диван в гостиной",
+              "В городе: Vivo <b>en</b> Madrid — Живу в Мадриде"
+            ]
+          },
+          {
+            "subtitle": "ENCIMA DE / SOBRE — на, над",
+            "points": [
+              "На поверхности: La lámpara está <b>encima de</b> la mesa — Лампа на столе",
+              "Над: El cuadro está <b>sobre</b> el sofá — Картина над диваном"
+            ]
+          },
+          {
+            "subtitle": "DEBAJO DE — под",
+            "points": [
+              "Под чем-то: La alfombra está <b>debajo de</b> la mesa — Ковёр под столом",
+              "El gato está <b>debajo de</b> la cama — Кот под кроватью"
+            ]
+          },
+          {
+            "subtitle": "AL LADO DE / JUNTO A — рядом с",
+            "points": [
+              "Рядом: La mesilla está <b>al lado de</b> la cama — Тумбочка рядом с кроватью",
+              "El sillón está <b>junto a</b> la ventana — Кресло у окна"
+            ]
+          },
+          {
+            "subtitle": "DELANTE DE / DETRÁS DE — перед / за",
+            "points": [
+              "Перед: El sofá está <b>delante de</b> la televisión — Диван перед телевизором",
+              "За: El jardín está <b>detrás de</b> la casa — Сад за домом"
+            ]
+          },
+          {
+            "subtitle": "ENTRE — между",
+            "points": [
+              "Между объектами: La mesa está <b>entre</b> el sofá y la ventana — Стол между диваном и окном",
+              "Между комнатами: El pasillo está <b>entre</b> la cocina y el salón — Коридор между кухней и гостиной"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "El frigorífico está en la cocina.", "ru": "Холодильник на кухне."},
+          {"es": "Hay un cuadro encima del sofá.", "ru": "Над диваном картина."},
+          {"es": "El gato duerme debajo de la cama.", "ru": "Кот спит под кроватью."},
+          {"es": "La lámpara está al lado de la cama.", "ru": "Лампа рядом с кроватью."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Los libros están ___ la estantería.", "answer": "en"},
+        {"sentence": "La lámpara está ___ la mesa.", "answer": "encima de"},
+        {"sentence": "La alfombra está ___ la mesa.", "answer": "debajo de"},
+        {"sentence": "El sillón está ___ la ventana.", "answer": "al lado de"},
+        {"sentence": "El sofá está ___ la televisión.", "answer": "delante de"},
+        {"sentence": "El jardín está ___ la casa.", "answer": "detrás de"},
+        {"sentence": "La mesa está ___ el sofá y la ventana.", "answer": "entre"},
+        {"sentence": "El frigorífico está ___ la cocina.", "answer": "en"},
+        {"sentence": "Hay un cuadro ___ el sofá.", "answer": "sobre"},
+        {"sentence": "El gato duerme ___ la cama.", "answer": "debajo de"},
+        {"sentence": "La mesilla está ___ la cama.", "answer": "al lado de"},
+        {"sentence": "Los cojines están ___ el sofá.", "answer": "en"},
+        {"sentence": "La televisión está ___ el mueble.", "answer": "encima de"},
+        {"sentence": "Las zapatillas están ___ la cama.", "answer": "debajo de"},
+        {"sentence": "El espejo está ___ el lavabo.", "answer": "encima de"},
+        {"sentence": "El coche está ___ el garaje.", "answer": "en"},
+        {"sentence": "La planta está ___ la puerta.", "answer": "al lado de"},
+        {"sentence": "El perchero está ___ la entrada.", "answer": "en"},
+        {"sentence": "La silla está ___ la mesa.", "answer": "delante de"},
+        {"sentence": "El baño está ___ el dormitorio.", "answer": "al lado de"},
+        {"sentence": "Las flores están ___ la mesa.", "answer": "encima de"},
+        {"sentence": "El garaje está ___ el edificio.", "answer": "detrás de"},
+        {"sentence": "La cocina está ___ el salón y el baño.", "answer": "entre"},
+        {"sentence": "Los platos están ___ el armario.", "answer": "en"},
+        {"sentence": "El reloj está ___ la pared.", "answer": "en"},
+        {"sentence": "La ropa está ___ el armario.", "answer": "en"},
+        {"sentence": "El ordenador está ___ la mesa.", "answer": "encima de"},
+        {"sentence": "Las cajas están ___ la escalera.", "answer": "debajo de"},
+        {"sentence": "El árbol está ___ la casa.", "answer": "delante de"},
+        {"sentence": "La estantería está ___ el escritorio.", "answer": "detrás de"},
+        {"sentence": "El pasillo está ___ la cocina y el salón.", "answer": "entre"},
+        {"sentence": "Los zapatos están ___ la entrada.", "answer": "en"},
+        {"sentence": "El jarrón está ___ la estantería.", "answer": "en"},
+        {"sentence": "La foto está ___ la chimenea.", "answer": "encima de"},
+        {"sentence": "El perro está ___ la mesa.", "answer": "debajo de"},
+        {"sentence": "El balcón está ___ el dormitorio.", "answer": "al lado de"},
+        {"sentence": "Las cortinas están ___ la ventana.", "answer": "en"},
+        {"sentence": "El escritorio está ___ la ventana.", "answer": "delante de"},
+        {"sentence": "El trastero está ___ el garaje.", "answer": "al lado de"},
+        {"sentence": "La terraza está ___ el salón.", "answer": "detrás de"},
+        {"sentence": "El lavabo está ___ la ducha y el inodoro.", "answer": "entre"},
+        {"sentence": "Los cuadros están ___ la pared.", "answer": "en"},
+        {"sentence": "La manta está ___ la cama.", "answer": "encima de"},
+        {"sentence": "El robot de cocina está ___ la encimera.", "answer": "sobre"},
+        {"sentence": "El felpudo está ___ la puerta.", "answer": "delante de"},
+        {"sentence": "El microondas está ___ el horno.", "answer": "encima de"},
+        {"sentence": "Las toallas están ___ el baño.", "answer": "en"},
+        {"sentence": "La bicicleta está ___ el coche.", "answer": "al lado de"},
+        {"sentence": "El jardín está ___ las dos casas.", "answer": "entre"},
+        {"sentence": "Las llaves están ___ la mesa.", "answer": "encima de"},
+        {"sentence": "El paragüero está ___ la puerta.", "answer": "al lado de"},
+        {"sentence": "Los juguetes están ___ la cama.", "answer": "debajo de"},
+        {"sentence": "El espejo está ___ la entrada.", "answer": "en"},
+        {"sentence": "El sofá está ___ la ventana.", "answer": "debajo de"},
+        {"sentence": "Los cuchillos están ___ el cajón.", "answer": "en"},
+        {"sentence": "El tendedero está ___ la terraza.", "answer": "en"},
+        {"sentence": "La mesa de comedor está ___ la cocina.", "answer": "al lado de"},
+        {"sentence": "El acuario está ___ el mueble.", "answer": "sobre"},
+        {"sentence": "La lavadora está ___ el baño.", "answer": "en"},
+        {"sentence": "El porche está ___ la casa.", "answer": "delante de"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Los libros están ___ la estantería.",
+          "answer": "en",
+          "hint": "¿Dónde se guardan los libros? (dentro de)"
+        },
+        {
+          "sentence": "La lámpara está ___ la mesa.",
+          "answer": "encima de",
+          "hint": "La lámpara está arriba, en la superficie"
+        },
+        {
+          "sentence": "La alfombra está ___ la mesa.",
+          "answer": "debajo de",
+          "hint": "La alfombra está abajo"
+        },
+        {
+          "sentence": "El sillón está ___ la ventana.",
+          "answer": "al lado de",
+          "hint": "El sillón está cerca, junto a"
+        },
+        {
+          "sentence": "El sofá está ___ la televisión.",
+          "answer": "delante de",
+          "hint": "Para ver la TV, el sofá está enfrente"
+        },
+        {
+          "sentence": "El jardín está ___ la casa.",
+          "answer": "detrás de",
+          "hint": "El jardín está en la parte trasera"
+        },
+        {
+          "sentence": "La mesa está ___ el sofá y la ventana.",
+          "answer": "entre",
+          "hint": "La mesa está en medio de dos cosas"
+        },
+        {
+          "sentence": "El frigorífico está ___ la cocina.",
+          "answer": "en",
+          "hint": "¿En qué habitación está?"
+        },
+        {
+          "sentence": "Hay un cuadro ___ el sofá.",
+          "answer": "sobre",
+          "hint": "El cuadro está arriba, en la pared"
+        },
+        {
+          "sentence": "El gato duerme ___ la cama.",
+          "answer": "debajo de",
+          "hint": "El gato está abajo, escondido"
+        },
+        {
+          "sentence": "La mesilla está ___ la cama.",
+          "answer": "al lado de",
+          "hint": "La mesilla de noche está cerca de la cama"
+        },
+        {
+          "sentence": "La cocina está ___ el salón y el baño.",
+          "answer": "entre",
+          "hint": "La cocina está en medio"
+        },
+        {
+          "sentence": "El espejo está ___ el lavabo.",
+          "answer": "encima de",
+          "hint": "El espejo está arriba del lavabo"
+        },
+        {
+          "sentence": "El garaje está ___ el edificio.",
+          "answer": "detrás de",
+          "hint": "El garaje está en la parte de atrás"
+        },
+        {
+          "sentence": "El árbol está ___ la casa.",
+          "answer": "delante de",
+          "hint": "El árbol está enfrente de la casa"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Hay vs Está/Están",
+      "hint": "hay / está / están",
+      "rule": {
+        "title": "HAY vs ESTÁ/ESTÁN: existencia vs ubicación",
+        "explanation": "HAY indica existencia de algo (hay algo en un lugar). ESTÁ/ESTÁN indica ubicación de algo específico o conocido (algo está en un lugar). La elección depende de si hablamos de existencia general o de ubicación específica.",
+        "sections": [
+          {
+            "subtitle": "HAY — existencia (algo existe)",
+            "points": [
+              "Algo indefinido: <b>Hay</b> un sofá en el salón — В гостиной есть диван",
+              "Cantidad: <b>Hay</b> tres habitaciones — Есть три комнаты",
+              "Pregunta: ¿<b>Hay</b> ascensor? — Есть лифт?",
+              "Negación: No <b>hay</b> garaje — Нет гаража"
+            ]
+          },
+          {
+            "subtitle": "ESTÁ — ubicación singular",
+            "points": [
+              "Algo definido: El sofá <b>está</b> en el salón — Диван в гостиной",
+              "Algo conocido: La cocina <b>está</b> a la derecha — Кухня справа",
+              "Con posesivo: Mi coche <b>está</b> en el garaje — Моя машина в гараже"
+            ]
+          },
+          {
+            "subtitle": "ESTÁN — ubicación plural",
+            "points": [
+              "Varios objetos: Los libros <b>están</b> en la estantería — Книги на полке",
+              "Varias habitaciones: Los baños <b>están</b> arriba — Ванные наверху",
+              "Con posesivo: Mis llaves <b>están</b> en la mesa — Мои ключи на столе"
+            ]
+          },
+          {
+            "subtitle": "Claves para elegir",
+            "points": [
+              "<b>Hay</b> + artículo indefinido (un/una/unos): Hay <b>un</b> espejo",
+              "<b>Está</b> + artículo definido (el/la/los): <b>El</b> espejo está...",
+              "<b>Hay</b> + número: Hay <b>dos</b> baños",
+              "<b>Están</b> + posesivo: <b>Mis</b> cosas están..."
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Hay un balcón en el dormitorio.", "ru": "В спальне есть балкон."},
+          {"es": "El balcón está al lado de la ventana.", "ru": "Балкон рядом с окном."},
+          {"es": "¿Hay ascensor en el edificio?", "ru": "В здании есть лифт?"},
+          {"es": "Los dormitorios están en la segunda planta.", "ru": "Спальни на втором этаже."}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ un sofá muy grande en el salón.", "answer": "Hay"},
+        {"sentence": "El sofá ___ delante de la televisión.", "answer": "está"},
+        {"sentence": "___ tres habitaciones en este piso.", "answer": "Hay"},
+        {"sentence": "Las habitaciones ___ en la segunda planta.", "answer": "están"},
+        {"sentence": "¿___ ascensor en el edificio?", "answer": "Hay"},
+        {"sentence": "El ascensor ___ al lado de la escalera.", "answer": "está"},
+        {"sentence": "___ una terraza muy bonita.", "answer": "Hay"},
+        {"sentence": "La terraza ___ detrás del salón.", "answer": "está"},
+        {"sentence": "___ muchos armarios en la cocina.", "answer": "Hay"},
+        {"sentence": "Los armarios ___ encima de la encimera.", "answer": "están"},
+        {"sentence": "En este barrio no ___ parques.", "answer": "hay"},
+        {"sentence": "El parque más cercano ___ a 10 minutos.", "answer": "está"},
+        {"sentence": "___ dos baños en la casa.", "answer": "Hay"},
+        {"sentence": "Los baños ___ uno arriba y otro abajo.", "answer": "están"},
+        {"sentence": "___ una lámpara en la mesilla.", "answer": "Hay"},
+        {"sentence": "La lámpara ___ encendida.", "answer": "está"},
+        {"sentence": "En la cocina ___ un frigorífico nuevo.", "answer": "hay"},
+        {"sentence": "El frigorífico ___ al lado del horno.", "answer": "está"},
+        {"sentence": "___ plantas en todas las habitaciones.", "answer": "Hay"},
+        {"sentence": "Las plantas ___ cerca de las ventanas.", "answer": "están"},
+        {"sentence": "¿___ garaje en este edificio?", "answer": "Hay"},
+        {"sentence": "El garaje ___ en el sótano.", "answer": "está"},
+        {"sentence": "___ un espejo grande en el baño.", "answer": "Hay"},
+        {"sentence": "El espejo ___ encima del lavabo.", "answer": "está"},
+        {"sentence": "En el salón ___ muchos cuadros.", "answer": "hay"},
+        {"sentence": "Los cuadros ___ en la pared principal.", "answer": "están"},
+        {"sentence": "¿___ supermercados cerca?", "answer": "Hay"},
+        {"sentence": "El supermercado más cercano ___ a 5 minutos.", "answer": "está"},
+        {"sentence": "___ una mesa grande en el comedor.", "answer": "Hay"},
+        {"sentence": "La mesa ___ en el centro de la habitación.", "answer": "está"},
+        {"sentence": "No ___ suficiente luz en este dormitorio.", "answer": "hay"},
+        {"sentence": "La ventana ___ muy pequeña.", "answer": "está"},
+        {"sentence": "___ varios restaurantes en esta calle.", "answer": "Hay"},
+        {"sentence": "Los restaurantes ___ todos muy cerca.", "answer": "están"},
+        {"sentence": "___ un balcón en cada habitación.", "answer": "Hay"},
+        {"sentence": "Mi balcón ___ orientado al sur.", "answer": "está"},
+        {"sentence": "En la entrada ___ un perchero.", "answer": "hay"},
+        {"sentence": "El perchero ___ a la derecha de la puerta.", "answer": "está"},
+        {"sentence": "___ mucho ruido en esta calle.", "answer": "Hay"},
+        {"sentence": "Mi casa ___ en una calle ruidosa.", "answer": "está"},
+        {"sentence": "___ una piscina en el edificio.", "answer": "Hay"},
+        {"sentence": "La piscina ___ en la azotea.", "answer": "está"},
+        {"sentence": "No ___ calefacción en este piso.", "answer": "hay"},
+        {"sentence": "El termostato ___ en el pasillo.", "answer": "está"},
+        {"sentence": "___ muchos vecinos en el edificio.", "answer": "Hay"},
+        {"sentence": "Mis vecinos ___ en el piso de arriba.", "answer": "están"},
+        {"sentence": "___ un trastero incluido en el precio.", "answer": "Hay"},
+        {"sentence": "El trastero ___ en el sótano.", "answer": "está"},
+        {"sentence": "___ varias tiendas en el barrio.", "answer": "Hay"},
+        {"sentence": "Las tiendas ___ todas muy cerca.", "answer": "están"},
+        {"sentence": "___ un jardín detrás de la casa.", "answer": "Hay"},
+        {"sentence": "El jardín ___ muy bien cuidado.", "answer": "está"},
+        {"sentence": "___ sitio para aparcar en la calle.", "answer": "Hay"},
+        {"sentence": "Mi coche ___ aparcado enfrente.", "answer": "está"},
+        {"sentence": "___ una cocina americana.", "answer": "Hay"},
+        {"sentence": "La cocina ___ comunicada con el salón.", "answer": "está"},
+        {"sentence": "___ buenas vistas desde el balcón.", "answer": "Hay"},
+        {"sentence": "Las mejores vistas ___ desde el ático.", "answer": "están"},
+        {"sentence": "___ un portero en el edificio.", "answer": "Hay"},
+        {"sentence": "El portero ___ en la planta baja.", "answer": "está"}
+      ],
+      "microTests": [
+        {
+          "sentence": "___ un sofá muy grande en el salón.",
+          "answer": "Hay",
+          "hint": "Existencia: un sofá (indefinido)"
+        },
+        {
+          "sentence": "El sofá ___ delante de la televisión.",
+          "answer": "está",
+          "hint": "Ubicación: el sofá (definido, singular)"
+        },
+        {
+          "sentence": "___ tres habitaciones en este piso.",
+          "answer": "Hay",
+          "hint": "Existencia: cantidad (tres)"
+        },
+        {
+          "sentence": "Las habitaciones ___ en la segunda planta.",
+          "answer": "están",
+          "hint": "Ubicación: las habitaciones (definido, plural)"
+        },
+        {
+          "sentence": "¿___ ascensor en el edificio?",
+          "answer": "Hay",
+          "hint": "Pregunta sobre existencia"
+        },
+        {
+          "sentence": "El ascensor ___ al lado de la escalera.",
+          "answer": "está",
+          "hint": "Ubicación: el ascensor (definido)"
+        },
+        {
+          "sentence": "En la cocina ___ un frigorífico nuevo.",
+          "answer": "hay",
+          "hint": "Existencia: un frigorífico (indefinido)"
+        },
+        {
+          "sentence": "El frigorífico ___ al lado del horno.",
+          "answer": "está",
+          "hint": "Ubicación: el frigorífico (definido)"
+        },
+        {
+          "sentence": "Los cuadros ___ en la pared principal.",
+          "answer": "están",
+          "hint": "Ubicación: los cuadros (plural)"
+        },
+        {
+          "sentence": "En el salón ___ muchos cuadros.",
+          "answer": "hay",
+          "hint": "Existencia: cantidad (muchos)"
+        },
+        {
+          "sentence": "___ una piscina en el edificio.",
+          "answer": "Hay",
+          "hint": "Existencia: una piscina (indefinido)"
+        },
+        {
+          "sentence": "La piscina ___ en la azotea.",
+          "answer": "está",
+          "hint": "Ubicación: la piscina (definido)"
+        },
+        {
+          "sentence": "Mis vecinos ___ en el piso de arriba.",
+          "answer": "están",
+          "hint": "Ubicación: posesivo (mis)"
+        },
+        {
+          "sentence": "No ___ calefacción en este piso.",
+          "answer": "hay",
+          "hint": "Existencia negada"
+        },
+        {
+          "sentence": "Mi coche ___ aparcado enfrente.",
+          "answer": "está",
+          "hint": "Ubicación: posesivo (mi)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Artículos: un/una vs el/la",
+      "hint": "un / una / el / la",
+      "rule": {
+        "title": "Артикли: UN/UNA vs EL/LA",
+        "explanation": "Неопределённые артикли UN/UNA используются, когда говорим о чём-то впервые или неконкретном. Определённые артикли EL/LA используются, когда объект уже известен или конкретен. Выбор артикля зависит от рода существительного.",
+        "sections": [
+          {
+            "subtitle": "UN / UNA — неопределённый артикль",
+            "points": [
+              "Мужской род: <b>Un</b> piso, <b>un</b> salón, <b>un</b> dormitorio",
+              "Женский род: <b>Una</b> casa, <b>una</b> cocina, <b>una</b> habitación",
+              "Впервые упоминаем: Busco <b>un</b> piso — Ищу квартиру (какую-то)",
+              "Неконкретный: Necesito <b>una</b> mesa — Мне нужен стол (какой-нибудь)"
+            ]
+          },
+          {
+            "subtitle": "EL / LA — определённый артикль",
+            "points": [
+              "Мужской род: <b>El</b> piso, <b>el</b> salón, <b>el</b> dormitorio",
+              "Женский род: <b>La</b> casa, <b>la</b> cocina, <b>la</b> habitación",
+              "Уже известно: <b>El</b> piso es grande — Квартира (эта, о которой говорили) большая",
+              "Конкретный: <b>La</b> mesa del salón — Стол в гостиной (конкретный)"
+            ]
+          },
+          {
+            "subtitle": "Род существительных — подсказки",
+            "points": [
+              "Мужской (-o): el/un piso, sofá, baño, dormitorio, salón",
+              "Женский (-a): la/una casa, cocina, mesa, cama, lámpara",
+              "Исключения: el/un día, el/un sofá, la/una mano",
+              "-ión → женский: la/una habitación, televisión, decoración"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Busco un piso en el centro.", "ru": "Ищу квартиру в центре."},
+          {"es": "El piso tiene tres habitaciones.", "ru": "В квартире три комнаты."},
+          {"es": "Hay una lámpara en la mesa.", "ru": "На столе есть лампа."},
+          {"es": "La lámpara es muy moderna.", "ru": "Лампа очень современная."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Busco ___ piso en el centro.", "answer": "un"},
+        {"sentence": "___ piso tiene tres habitaciones.", "answer": "El"},
+        {"sentence": "Hay ___ lámpara en la mesa.", "answer": "una"},
+        {"sentence": "___ lámpara es muy moderna.", "answer": "La"},
+        {"sentence": "Necesito ___ mesa para el salón.", "answer": "una"},
+        {"sentence": "___ mesa del comedor es de cristal.", "answer": "La"},
+        {"sentence": "Quiero comprar ___ sofá nuevo.", "answer": "un"},
+        {"sentence": "___ sofá está delante de la televisión.", "answer": "El"},
+        {"sentence": "Hay ___ terraza muy grande.", "answer": "una"},
+        {"sentence": "___ terraza da al jardín.", "answer": "La"},
+        {"sentence": "El piso tiene ___ cocina americana.", "answer": "una"},
+        {"sentence": "___ cocina está totalmente equipada.", "answer": "La"},
+        {"sentence": "Necesitamos ___ armario más grande.", "answer": "un"},
+        {"sentence": "___ armario del dormitorio es de madera.", "answer": "El"},
+        {"sentence": "Hay ___ balcón en cada habitación.", "answer": "un"},
+        {"sentence": "___ balcón del salón tiene vistas al mar.", "answer": "El"},
+        {"sentence": "Busco ___ casa con jardín.", "answer": "una"},
+        {"sentence": "___ casa de mis padres es muy grande.", "answer": "La"},
+        {"sentence": "El baño tiene ___ bañera muy grande.", "answer": "una"},
+        {"sentence": "___ bañera es de hidromasaje.", "answer": "La"},
+        {"sentence": "Quiero poner ___ cuadro en la pared.", "answer": "un"},
+        {"sentence": "___ cuadro del salón es un original.", "answer": "El"},
+        {"sentence": "Hay ___ espejo en el baño.", "answer": "un"},
+        {"sentence": "___ espejo está encima del lavabo.", "answer": "El"},
+        {"sentence": "Necesito ___ silla para el escritorio.", "answer": "una"},
+        {"sentence": "___ silla del despacho es muy cómoda.", "answer": "La"},
+        {"sentence": "El dormitorio tiene ___ cama doble.", "answer": "una"},
+        {"sentence": "___ cama está al lado de la ventana.", "answer": "La"},
+        {"sentence": "Voy a comprar ___ nevera nueva.", "answer": "una"},
+        {"sentence": "___ nevera actual es muy pequeña.", "answer": "La"},
+        {"sentence": "Hay ___ garaje en el sótano.", "answer": "un"},
+        {"sentence": "___ garaje tiene dos plazas.", "answer": "El"},
+        {"sentence": "Quiero alquilar ___ estudio céntrico.", "answer": "un"},
+        {"sentence": "___ estudio que vi ayer me gusta mucho.", "answer": "El"},
+        {"sentence": "El edificio tiene ___ piscina.", "answer": "una"},
+        {"sentence": "___ piscina está en la azotea.", "answer": "La"},
+        {"sentence": "Busco ___ habitación luminosa.", "answer": "una"},
+        {"sentence": "___ habitación principal da al sur.", "answer": "La"},
+        {"sentence": "Hay ___ jardín detrás de la casa.", "answer": "un"},
+        {"sentence": "___ jardín tiene muchas flores.", "answer": "El"},
+        {"sentence": "Necesito ___ escritorio para trabajar.", "answer": "un"},
+        {"sentence": "___ escritorio está en el despacho.", "answer": "El"},
+        {"sentence": "El salón tiene ___ alfombra persa.", "answer": "una"},
+        {"sentence": "___ alfombra es muy antigua.", "answer": "La"},
+        {"sentence": "Quiero instalar ___ aire acondicionado.", "answer": "un"},
+        {"sentence": "___ aire acondicionado no funciona bien.", "answer": "El"},
+        {"sentence": "Hay ___ chimenea en el salón.", "answer": "una"},
+        {"sentence": "___ chimenea es de mármol.", "answer": "La"},
+        {"sentence": "El piso tiene ___ trastero incluido.", "answer": "un"},
+        {"sentence": "___ trastero está en el sótano.", "answer": "El"},
+        {"sentence": "Busco ___ ático con terraza.", "answer": "un"},
+        {"sentence": "___ ático del quinto piso está en venta.", "answer": "El"},
+        {"sentence": "Hay ___ lavadora en el baño.", "answer": "una"},
+        {"sentence": "___ lavadora es nueva.", "answer": "La"},
+        {"sentence": "Necesito ___ mesilla de noche.", "answer": "una"},
+        {"sentence": "___ mesilla está al lado de la cama.", "answer": "La"},
+        {"sentence": "Quiero comprar ___ horno nuevo.", "answer": "un"},
+        {"sentence": "___ horno actual es de gas.", "answer": "El"},
+        {"sentence": "El salón tiene ___ televisión muy grande.", "answer": "una"},
+        {"sentence": "___ televisión está en la pared.", "answer": "La"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Busco ___ piso en el centro.",
+          "answer": "un",
+          "hint": "Primera mención, no específico (masc.)"
+        },
+        {
+          "sentence": "___ piso tiene tres habitaciones.",
+          "answer": "El",
+          "hint": "Ya conocemos el piso (masc.)"
+        },
+        {
+          "sentence": "Hay ___ lámpara en la mesa.",
+          "answer": "una",
+          "hint": "Primera mención (fem.)"
+        },
+        {
+          "sentence": "___ lámpara es muy moderna.",
+          "answer": "La",
+          "hint": "La lámpara específica (fem.)"
+        },
+        {
+          "sentence": "Quiero comprar ___ sofá nuevo.",
+          "answer": "un",
+          "hint": "No específico, cualquier sofá (masc.)"
+        },
+        {
+          "sentence": "___ sofá está delante de la televisión.",
+          "answer": "El",
+          "hint": "El sofá concreto de esta casa (masc.)"
+        },
+        {
+          "sentence": "Busco ___ casa con jardín.",
+          "answer": "una",
+          "hint": "Cualquier casa con jardín (fem.)"
+        },
+        {
+          "sentence": "___ casa de mis padres es muy grande.",
+          "answer": "La",
+          "hint": "Casa específica, conocida (fem.)"
+        },
+        {
+          "sentence": "Necesito ___ mesa para el salón.",
+          "answer": "una",
+          "hint": "Cualquier mesa (fem.)"
+        },
+        {
+          "sentence": "___ mesa del comedor es de cristal.",
+          "answer": "La",
+          "hint": "Mesa específica del comedor (fem.)"
+        },
+        {
+          "sentence": "El dormitorio tiene ___ cama doble.",
+          "answer": "una",
+          "hint": "Hay una cama (fem.)"
+        },
+        {
+          "sentence": "___ cama está al lado de la ventana.",
+          "answer": "La",
+          "hint": "La cama específica (fem.)"
+        },
+        {
+          "sentence": "Hay ___ garaje en el sótano.",
+          "answer": "un",
+          "hint": "Existe un garaje (masc.)"
+        },
+        {
+          "sentence": "___ garaje tiene dos plazas.",
+          "answer": "El",
+          "hint": "El garaje específico (masc.)"
+        },
+        {
+          "sentence": "Quiero alquilar ___ estudio céntrico.",
+          "answer": "un",
+          "hint": "Cualquier estudio céntrico (masc.)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Vocabulario de vivienda: colocaciones",
+      "hint": "de nueva construcción / totalmente equipada / bien comunicado / con vistas / para entrar a vivir / de dos plazas",
+      "rule": {
+        "title": "Коллокации для описания жилья",
+        "explanation": "В объявлениях о недвижимости используются устойчивые выражения (коллокации). Эти фразы помогают описать характеристики жилья кратко и точно.",
+        "sections": [
+          {
+            "subtitle": "Тип и состояние здания",
+            "points": [
+              "<b>De nueva construcción</b> — новостройка: Chalé de nueva construcción",
+              "<b>Edificio antiguo</b> — старое здание: Piso en edificio antiguo",
+              "<b>Recién reformado</b> — недавно отремонтированный",
+              "<b>Para entrar a vivir</b> — готов к заселению (въехать и жить)"
+            ]
+          },
+          {
+            "subtitle": "Оснащение и удобства",
+            "points": [
+              "<b>Totalmente equipada</b> — полностью оборудованная (о кухне)",
+              "<b>Cocina americana</b> — кухня-студия (открытая кухня)",
+              "<b>Con ascensor</b> — с лифтом",
+              "<b>Con calefacción</b> — с отоплением"
+            ]
+          },
+          {
+            "subtitle": "Расположение и виды",
+            "points": [
+              "<b>Bien comunicado</b> — с хорошим транспортным сообщением",
+              "<b>Con vistas</b> — с видом: Balcón con vistas al mar",
+              "<b>Vistas fantásticas</b> — фантастические виды",
+              "<b>A 5 minutos de</b> — в 5 минутах от..."
+            ]
+          },
+          {
+            "subtitle": "Гараж и дополнительные помещения",
+            "points": [
+              "<b>Garaje de dos plazas</b> — гараж на два места",
+              "<b>Con trastero</b> — с кладовой",
+              "<b>Plaza de garaje incluida</b> — парковочное место включено"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Piso de nueva construcción, listo para entrar a vivir.", "ru": "Квартира в новостройке, готова к заселению."},
+          {"es": "Cocina totalmente equipada con electrodomésticos nuevos.", "ru": "Полностью оборудованная кухня с новой бытовой техникой."},
+          {"es": "Zona bien comunicada, a 5 minutos del metro.", "ru": "Район с хорошим транспортным сообщением, в 5 минутах от метро."},
+          {"es": "Ático con vistas fantásticas al mar.", "ru": "Пентхаус с фантастическим видом на море."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Chalé ___ construcción con jardín.", "answer": "de nueva"},
+        {"sentence": "Piso listo ___ entrar a vivir.", "answer": "para"},
+        {"sentence": "Cocina totalmente ___ con electrodomésticos.", "answer": "equipada"},
+        {"sentence": "Zona bien ___, cerca del metro.", "answer": "comunicada"},
+        {"sentence": "Terraza con ___ al mar.", "answer": "vistas"},
+        {"sentence": "Garaje ___ dos plazas incluido.", "answer": "de"},
+        {"sentence": "Edificio ___ con mucho encanto.", "answer": "antiguo"},
+        {"sentence": "Piso recién ___, como nuevo.", "answer": "reformado"},
+        {"sentence": "Apartamento ___ 5 minutos de la playa.", "answer": "a"},
+        {"sentence": "Balcón ___ vistas fantásticas.", "answer": "con"},
+        {"sentence": "Cocina ___ con salón.", "answer": "americana"},
+        {"sentence": "Vivienda con ___ incluido.", "answer": "trastero"},
+        {"sentence": "Piso ___ ascensor y portero.", "answer": "con"},
+        {"sentence": "Casa de nueva ___ en las afueras.", "answer": "construcción"},
+        {"sentence": "Apartamento listo para ___ a vivir.", "answer": "entrar"},
+        {"sentence": "Cocina ___ equipada con horno y nevera.", "answer": "totalmente"},
+        {"sentence": "Barrio bien ___: metro y autobús.", "answer": "comunicado"},
+        {"sentence": "Ático con vistas ___ a la montaña.", "answer": "fantásticas"},
+        {"sentence": "Garaje de ___ plazas en el sótano.", "answer": "dos"},
+        {"sentence": "Edificio antiguo ___ reformado.", "answer": "pero"},
+        {"sentence": "A ___ minutos del centro comercial.", "answer": "5"},
+        {"sentence": "Piso con ___ central incluida.", "answer": "calefacción"},
+        {"sentence": "Plaza de ___ incluida en el precio.", "answer": "garaje"},
+        {"sentence": "Vivienda totalmente ___ y amueblada.", "answer": "equipada"},
+        {"sentence": "Chalé con ___ privada y jardín.", "answer": "piscina"},
+        {"sentence": "Zona ___ comunicada con transporte público.", "answer": "bien"},
+        {"sentence": "Terraza ___ vistas al parque.", "answer": "con"},
+        {"sentence": "Edificio de ___ construcción, año 2023.", "answer": "nueva"},
+        {"sentence": "Piso ___ para entrar a vivir.", "answer": "listo"},
+        {"sentence": "Cocina americana ___ equipada.", "answer": "totalmente"},
+        {"sentence": "A 10 ___ del aeropuerto.", "answer": "minutos"},
+        {"sentence": "Vistas fantásticas ___ mar y montaña.", "answer": "a"},
+        {"sentence": "Garaje ___ una plaza incluido.", "answer": "de"},
+        {"sentence": "Casa recién reformada, como ___.", "answer": "nueva"},
+        {"sentence": "Barrio tranquilo y ___ comunicado.", "answer": "bien"},
+        {"sentence": "Balcón con ___ a la calle principal.", "answer": "vistas"},
+        {"sentence": "Edificio ___ pero bien conservado.", "answer": "antiguo"},
+        {"sentence": "Piso de nueva construcción ___ ascensor.", "answer": "con"},
+        {"sentence": "Listo ___ entrar, sin reformas.", "answer": "para"},
+        {"sentence": "Cocina totalmente equipada ___ electrodomésticos.", "answer": "con"},
+        {"sentence": "___ comunicado: bus, metro y tren.", "answer": "Bien"},
+        {"sentence": "Con vistas ___ al jardín interior.", "answer": "fantásticas"},
+        {"sentence": "Garaje de dos ___ en el sótano.", "answer": "plazas"},
+        {"sentence": "Edificio ___ del siglo XIX.", "answer": "antiguo"},
+        {"sentence": "Piso recién ___ con materiales de calidad.", "answer": "reformado"},
+        {"sentence": "___ 3 minutos de la estación.", "answer": "A"},
+        {"sentence": "Terraza con ___ panorámicas.", "answer": "vistas"},
+        {"sentence": "Cocina ___ comunicada con el salón.", "answer": "americana"},
+        {"sentence": "Trastero ___ en el precio.", "answer": "incluido"},
+        {"sentence": "Piso con calefacción ___.", "answer": "central"},
+        {"sentence": "De nueva ___: acabados modernos.", "answer": "construcción"},
+        {"sentence": "Para entrar ___ vivir inmediatamente.", "answer": "a"},
+        {"sentence": "Totalmente ___ con aire acondicionado.", "answer": "equipada"},
+        {"sentence": "Bien ___ con el centro.", "answer": "comunicado"},
+        {"sentence": "Vistas ___ desde todas las habitaciones.", "answer": "fantásticas"},
+        {"sentence": "De ___ plazas para dos coches.", "answer": "dos"},
+        {"sentence": "Edificio ___ con ascensor nuevo.", "answer": "antiguo"},
+        {"sentence": "Recién ___ este año.", "answer": "reformado"},
+        {"sentence": "A solo 2 minutos ___ la playa.", "answer": "de"},
+        {"sentence": "Con ___ al mar y a la ciudad.", "answer": "vistas"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Chalé ___ construcción con jardín.",
+          "answer": "de nueva",
+          "hint": "Tipo de edificio: nuevo"
+        },
+        {
+          "sentence": "Piso listo ___ entrar a vivir.",
+          "answer": "para",
+          "hint": "Preparado para... (preposición)"
+        },
+        {
+          "sentence": "Cocina totalmente ___ con electrodomésticos.",
+          "answer": "equipada",
+          "hint": "Tiene todo el equipamiento"
+        },
+        {
+          "sentence": "Zona bien ___, cerca del metro.",
+          "answer": "comunicada",
+          "hint": "Buen transporte público"
+        },
+        {
+          "sentence": "Terraza con ___ al mar.",
+          "answer": "vistas",
+          "hint": "Se puede ver el mar"
+        },
+        {
+          "sentence": "Garaje ___ dos plazas incluido.",
+          "answer": "de",
+          "hint": "Cantidad de plazas (preposición)"
+        },
+        {
+          "sentence": "Edificio ___ con mucho encanto.",
+          "answer": "antiguo",
+          "hint": "Viejo, histórico"
+        },
+        {
+          "sentence": "Piso recién ___, como nuevo.",
+          "answer": "reformado",
+          "hint": "Renovado recientemente"
+        },
+        {
+          "sentence": "Apartamento ___ 5 minutos de la playa.",
+          "answer": "a",
+          "hint": "Distancia (preposición)"
+        },
+        {
+          "sentence": "Balcón ___ vistas fantásticas.",
+          "answer": "con",
+          "hint": "Tiene vistas (preposición)"
+        },
+        {
+          "sentence": "Cocina ___ con salón.",
+          "answer": "americana",
+          "hint": "Tipo de cocina abierta"
+        },
+        {
+          "sentence": "Vivienda con ___ incluido.",
+          "answer": "trastero",
+          "hint": "Espacio de almacenamiento"
+        },
+        {
+          "sentence": "De nueva ___ en las afueras.",
+          "answer": "construcción",
+          "hint": "Edificio nuevo"
+        },
+        {
+          "sentence": "Cocina ___ equipada con horno.",
+          "answer": "totalmente",
+          "hint": "Completamente (adverbio)"
+        },
+        {
+          "sentence": "Barrio bien ___: metro y autobús.",
+          "answer": "comunicado",
+          "hint": "Buen acceso de transporte"
+        }
+      ]
+    }
+  ],
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "presente",
+        "nombre": "Presente de indicativo",
+        "requiredEjercicio": "ejercicio_1",
+        "regulares": [
+          {
+            "infinitivo": "alquilar",
+            "traduccion": "снимать/сдавать в аренду",
+            "formas": {
+              "yo": "alquilo",
+              "tu": "alquilas",
+              "el": "alquila",
+              "nosotros": "alquilamos",
+              "vosotros": "alquiláis",
+              "ellos": "alquilan"
+            }
+          },
+          {
+            "infinitivo": "comprar",
+            "traduccion": "покупать",
+            "formas": {
+              "yo": "compro",
+              "tu": "compras",
+              "el": "compra",
+              "nosotros": "compramos",
+              "vosotros": "compráis",
+              "ellos": "compran"
+            }
+          },
+          {
+            "infinitivo": "vender",
+            "traduccion": "продавать",
+            "formas": {
+              "yo": "vendo",
+              "tu": "vendes",
+              "el": "vende",
+              "nosotros": "vendemos",
+              "vosotros": "vendéis",
+              "ellos": "venden"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "vivo",
+              "tu": "vives",
+              "el": "vive",
+              "nosotros": "vivimos",
+              "vosotros": "vivís",
+              "ellos": "viven"
+            }
+          },
+          {
+            "infinitivo": "buscar",
+            "traduccion": "искать",
+            "formas": {
+              "yo": "busco",
+              "tu": "buscas",
+              "el": "busca",
+              "nosotros": "buscamos",
+              "vosotros": "buscáis",
+              "ellos": "buscan"
+            }
+          },
+          {
+            "infinitivo": "necesitar",
+            "traduccion": "нуждаться",
+            "formas": {
+              "yo": "necesito",
+              "tu": "necesitas",
+              "el": "necesita",
+              "nosotros": "necesitamos",
+              "vosotros": "necesitáis",
+              "ellos": "necesitan"
+            }
+          },
+          {
+            "infinitivo": "compartir",
+            "traduccion": "делить/разделять",
+            "formas": {
+              "yo": "comparto",
+              "tu": "compartes",
+              "el": "comparte",
+              "nosotros": "compartimos",
+              "vosotros": "compartís",
+              "ellos": "comparten"
+            }
+          },
+          {
+            "infinitivo": "limpiar",
+            "traduccion": "убирать/чистить",
+            "formas": {
+              "yo": "limpio",
+              "tu": "limpias",
+              "el": "limpia",
+              "nosotros": "limpiamos",
+              "vosotros": "limpiáis",
+              "ellos": "limpian"
+            }
+          },
+          {
+            "infinitivo": "decorar",
+            "traduccion": "украшать",
+            "formas": {
+              "yo": "decoro",
+              "tu": "decoras",
+              "el": "decora",
+              "nosotros": "decoramos",
+              "vosotros": "decoráis",
+              "ellos": "decoran"
+            }
+          },
+          {
+            "infinitivo": "reformar",
+            "traduccion": "ремонтировать",
+            "formas": {
+              "yo": "reformo",
+              "tu": "reformas",
+              "el": "reforma",
+              "nosotros": "reformamos",
+              "vosotros": "reformáis",
+              "ellos": "reforman"
+            }
+          }
+        ],
+        "irregulares": [
+          {
+            "infinitivo": "ser",
+            "traduccion": "быть (характеристика)",
+            "formas": {
+              "yo": "soy",
+              "tu": "eres",
+              "el": "es",
+              "nosotros": "somos",
+              "vosotros": "sois",
+              "ellos": "son"
+            }
+          },
+          {
+            "infinitivo": "estar",
+            "traduccion": "быть (состояние/место)",
+            "formas": {
+              "yo": "estoy",
+              "tu": "estás",
+              "el": "está",
+              "nosotros": "estamos",
+              "vosotros": "estáis",
+              "ellos": "están"
+            }
+          },
+          {
+            "infinitivo": "tener",
+            "traduccion": "иметь",
+            "formas": {
+              "yo": "tengo",
+              "tu": "tienes",
+              "el": "tiene",
+              "nosotros": "tenemos",
+              "vosotros": "tenéis",
+              "ellos": "tienen"
+            }
+          },
+          {
+            "infinitivo": "ir",
+            "traduccion": "идти/ехать",
+            "formas": {
+              "yo": "voy",
+              "tu": "vas",
+              "el": "va",
+              "nosotros": "vamos",
+              "vosotros": "vais",
+              "ellos": "van"
+            }
+          },
+          {
+            "infinitivo": "poder",
+            "traduccion": "мочь",
+            "formas": {
+              "yo": "puedo",
+              "tu": "puedes",
+              "el": "puede",
+              "nosotros": "podemos",
+              "vosotros": "podéis",
+              "ellos": "pueden"
+            }
+          },
+          {
+            "infinitivo": "querer",
+            "traduccion": "хотеть",
+            "formas": {
+              "yo": "quiero",
+              "tu": "quieres",
+              "el": "quiere",
+              "nosotros": "queremos",
+              "vosotros": "queréis",
+              "ellos": "quieren"
+            }
+          },
+          {
+            "infinitivo": "preferir",
+            "traduccion": "предпочитать",
+            "formas": {
+              "yo": "prefiero",
+              "tu": "prefieres",
+              "el": "prefiere",
+              "nosotros": "preferimos",
+              "vosotros": "preferís",
+              "ellos": "prefieren"
+            }
+          },
+          {
+            "infinitivo": "dar",
+            "traduccion": "давать",
+            "formas": {
+              "yo": "doy",
+              "tu": "das",
+              "el": "da",
+              "nosotros": "damos",
+              "vosotros": "dais",
+              "ellos": "dan"
+            }
+          },
+          {
+            "infinitivo": "venir",
+            "traduccion": "приходить",
+            "formas": {
+              "yo": "vengo",
+              "tu": "vienes",
+              "el": "viene",
+              "nosotros": "venimos",
+              "vosotros": "venís",
+              "ellos": "vienen"
+            }
+          },
+          {
+            "infinitivo": "salir",
+            "traduccion": "выходить",
+            "formas": {
+              "yo": "salgo",
+              "tu": "sales",
+              "el": "sale",
+              "nosotros": "salimos",
+              "vosotros": "salís",
+              "ellos": "salen"
+            }
+          }
+        ],
+        "otras": [
+          {
+            "id": "reflexivos",
+            "nombre": "Verbos reflexivos",
+            "verbos": [
+              {
+                "infinitivo": "mudarse",
+                "traduccion": "переезжать",
+                "formas": {
+                  "yo": "me mudo",
+                  "tu": "te mudas",
+                  "el": "se muda",
+                  "nosotros": "nos mudamos",
+                  "vosotros": "os mudáis",
+                  "ellos": "se mudan"
+                }
+              },
+              {
+                "infinitivo": "instalarse",
+                "traduccion": "устраиваться/обосновываться",
+                "formas": {
+                  "yo": "me instalo",
+                  "tu": "te instalas",
+                  "el": "se instala",
+                  "nosotros": "nos instalamos",
+                  "vosotros": "os instaláis",
+                  "ellos": "se instalan"
+                }
+              },
+              {
+                "infinitivo": "ducharse",
+                "traduccion": "принимать душ",
+                "formas": {
+                  "yo": "me ducho",
+                  "tu": "te duchas",
+                  "el": "se ducha",
+                  "nosotros": "nos duchamos",
+                  "vosotros": "os ducháis",
+                  "ellos": "se duchan"
+                }
+              },
+              {
+                "infinitivo": "acostarse",
+                "traduccion": "ложиться спать",
+                "formas": {
+                  "yo": "me acuesto",
+                  "tu": "te acuestas",
+                  "el": "se acuesta",
+                  "nosotros": "nos acostamos",
+                  "vosotros": "os acostáis",
+                  "ellos": "se acuestan"
+                }
+              },
+              {
+                "infinitivo": "levantarse",
+                "traduccion": "вставать",
+                "formas": {
+                  "yo": "me levanto",
+                  "tu": "te levantas",
+                  "el": "se levanta",
+                  "nosotros": "nos levantamos",
+                  "vosotros": "os levantáis",
+                  "ellos": "se levantan"
+                }
+              },
+              {
+                "infinitivo": "sentarse",
+                "traduccion": "садиться",
+                "formas": {
+                  "yo": "me siento",
+                  "tu": "te sientas",
+                  "el": "se sienta",
+                  "nosotros": "nos sentamos",
+                  "vosotros": "os sentáis",
+                  "ellos": "se sientan"
+                }
+              }
+            ]
+          },
+          {
+            "id": "gustar_type",
+            "nombre": "Verbos tipo gustar",
+            "verbos": [
+              {
+                "infinitivo": "gustar",
+                "traduccion": "нравиться",
+                "formas": {
+                  "yo": "gusto",
+                  "tu": "gustas",
+                  "el": "gusta",
+                  "nosotros": "gustamos",
+                  "vosotros": "gustáis",
+                  "ellos": "gustan"
+                }
+              },
+              {
+                "infinitivo": "encantar",
+                "traduccion": "очень нравиться",
+                "formas": {
+                  "yo": "encanto",
+                  "tu": "encantas",
+                  "el": "encanta",
+                  "nosotros": "encantamos",
+                  "vosotros": "encantáis",
+                  "ellos": "encantan"
+                }
+              },
+              {
+                "infinitivo": "interesar",
+                "traduccion": "интересовать",
+                "formas": {
+                  "yo": "intereso",
+                  "tu": "interesas",
+                  "el": "interesa",
+                  "nosotros": "interesamos",
+                  "vosotros": "interesáis",
+                  "ellos": "interesan"
+                }
+              },
+              {
+                "infinitivo": "molestar",
+                "traduccion": "беспокоить",
+                "formas": {
+                  "yo": "molesto",
+                  "tu": "molestas",
+                  "el": "molesta",
+                  "nosotros": "molestamos",
+                  "vosotros": "molestáis",
+                  "ellos": "molestan"
+                }
+              },
+              {
+                "infinitivo": "importar",
+                "traduccion": "быть важным",
+                "formas": {
+                  "yo": "importo",
+                  "tu": "importas",
+                  "el": "importa",
+                  "nosotros": "importamos",
+                  "vosotros": "importáis",
+                  "ellos": "importan"
+                }
+              },
+              {
+                "infinitivo": "parecer",
+                "traduccion": "казаться",
+                "formas": {
+                  "yo": "parezco",
+                  "tu": "pareces",
+                  "el": "parece",
+                  "nosotros": "parecemos",
+                  "vosotros": "parecéis",
+                  "ellos": "parecen"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

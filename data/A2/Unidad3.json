@@ -1,0 +1,1838 @@
+{
+  "id": "unidad_3",
+  "title": "Unidad 3: Yo soy así",
+  "groups": {
+    "ASPECTO_FISICO": [
+      {
+        "spanish": "guapo",
+        "ru": "красивый",
+        "type": "adjetivo",
+        "icon": "smile",
+        "useIcon": true,
+        "hardSentences": [
+          "Es muy ___ y tiene muchos admiradores.",
+          "Mi hermano es bastante ___.",
+          "Dicen que soy ___, pero no lo creo.",
+          "El actor es ___ y talentoso."
+        ],
+        "hardSentencesRu": [
+          "Он очень красивый и у него много поклонников.",
+          "Мой брат довольно красивый.",
+          "Говорят, что я красивый, но я не верю.",
+          "Актёр красивый и талантливый."
+        ]
+      },
+      {
+        "spanish": "feo",
+        "ru": "некрасивый",
+        "type": "adjetivo",
+        "icon": "meh",
+        "useIcon": true,
+        "hardSentences": [
+          "No es ___, solo diferente.",
+          "El edificio es bastante ___.",
+          "Me siento ___ hoy.",
+          "El dibujo no es ___, es abstracto."
+        ],
+        "hardSentencesRu": [
+          "Он не некрасивый, просто другой.",
+          "Здание довольно некрасивое.",
+          "Я чувствую себя некрасивым сегодня.",
+          "Рисунок не некрасивый, он абстрактный."
+        ]
+      },
+      {
+        "spanish": "alto",
+        "ru": "высокий",
+        "type": "adjetivo",
+        "icon": "arrows-alt-v",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi padre es muy ___.",
+          "Busco un chico ___ y moreno.",
+          "Es ___ como un jugador de baloncesto.",
+          "No soy muy ___, mido 1,70."
+        ],
+        "hardSentencesRu": [
+          "Мой отец очень высокий.",
+          "Ищу высокого и темноволосого парня.",
+          "Он высокий как баскетболист.",
+          "Я не очень высокий, мой рост 1,70."
+        ]
+      },
+      {
+        "spanish": "bajo",
+        "ru": "низкий (о росте)",
+        "type": "adjetivo",
+        "icon": "arrows-alt-v",
+        "useIcon": true,
+        "hardSentences": [
+          "Es ___ pero muy atlético.",
+          "Mi abuela es ___.",
+          "No me importa si es ___ o alto.",
+          "Soy bastante ___, mido 1,55."
+        ],
+        "hardSentencesRu": [
+          "Он невысокий, но очень атлетичный.",
+          "Моя бабушка невысокая.",
+          "Мне всё равно, высокий он или низкий.",
+          "Я довольно невысокий, мой рост 1,55."
+        ]
+      },
+      {
+        "spanish": "gordo",
+        "ru": "толстый",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy un poco ___ últimamente.",
+          "Mi gato está muy ___.",
+          "No estás ___, estás normal.",
+          "De pequeño era más ___."
+        ],
+        "hardSentencesRu": [
+          "Я немного потолстел в последнее время.",
+          "Мой кот очень толстый.",
+          "Ты не толстый, ты нормальный.",
+          "В детстве я был толще."
+        ]
+      },
+      {
+        "spanish": "delgado",
+        "ru": "худой, стройный",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Es alta y ___.",
+          "Mi hermana es muy ___.",
+          "Quiero estar más ___.",
+          "Es ___ pero come mucho."
+        ],
+        "hardSentencesRu": [
+          "Она высокая и стройная.",
+          "Моя сестра очень худая.",
+          "Я хочу быть стройнее.",
+          "Он худой, но ест много."
+        ]
+      },
+      {
+        "spanish": "atlético",
+        "ru": "атлетичный",
+        "type": "adjetivo",
+        "icon": "running",
+        "useIcon": true,
+        "hardSentences": [
+          "Tiene un cuerpo muy ___.",
+          "Es ___ porque hace mucho deporte.",
+          "Busco a alguien ___.",
+          "Mi novio es bastante ___."
+        ],
+        "hardSentencesRu": [
+          "У него очень атлетичное тело.",
+          "Он атлетичный, потому что много занимается спортом.",
+          "Ищу кого-то атлетичного.",
+          "Мой парень довольно атлетичный."
+        ]
+      },
+      {
+        "spanish": "rubio",
+        "ru": "блондин, светловолосый",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Soy ___ y tengo los ojos azules.",
+          "Mi madre es ___.",
+          "Prefiero a los chicos ___.",
+          "De pequeño era más ___."
+        ],
+        "hardSentencesRu": [
+          "Я блондин и у меня голубые глаза.",
+          "Моя мама блондинка.",
+          "Я предпочитаю светловолосых парней.",
+          "В детстве я был более светловолосым."
+        ]
+      },
+      {
+        "spanish": "moreno",
+        "ru": "темноволосый, смуглый",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Soy ___ y llevo el pelo largo.",
+          "Mi padre es ___.",
+          "Me gustan los hombres ___.",
+          "En verano estoy más ___."
+        ],
+        "hardSentencesRu": [
+          "Я брюнет и ношу длинные волосы.",
+          "Мой отец брюнет.",
+          "Мне нравятся темноволосые мужчины.",
+          "Летом я более загорелый."
+        ]
+      },
+      {
+        "spanish": "pelirrojo",
+        "ru": "рыжий",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Soy ___ y tengo los ojos verdes.",
+          "Mi hermana es ___.",
+          "Los ___ tienen la piel muy clara.",
+          "Es ___ natural."
+        ],
+        "hardSentencesRu": [
+          "Я рыжий и у меня зелёные глаза.",
+          "Моя сестра рыжая.",
+          "У рыжих очень светлая кожа.",
+          "Он натуральный рыжий."
+        ]
+      },
+      {
+        "spanish": "castaño",
+        "ru": "каштановый (о волосах)",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Tiene el pelo ___.",
+          "Mis ojos son ___.",
+          "Es ___ con reflejos rubios.",
+          "El pelo ___ le queda bien."
+        ],
+        "hardSentencesRu": [
+          "У неё каштановые волосы.",
+          "Мои глаза карие.",
+          "У неё каштановые волосы со светлыми бликами.",
+          "Каштановые волосы ей идут."
+        ]
+      },
+      {
+        "spanish": "calvo",
+        "ru": "лысый",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi padre es ___.",
+          "Soy ___ y llevo barba.",
+          "Se quedó ___ muy joven.",
+          "Muchos hombres ___ son atractivos."
+        ],
+        "hardSentencesRu": [
+          "Мой отец лысый.",
+          "Я лысый и ношу бороду.",
+          "Он облысел очень молодым.",
+          "Многие лысые мужчины привлекательны."
+        ]
+      },
+      {
+        "spanish": "el pelo",
+        "ru": "волосы",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ largo y rizado.",
+          "Llevo ___ recogido.",
+          "Me corté ___ ayer.",
+          "Tiene ___ muy bonito."
+        ],
+        "hardSentencesRu": [
+          "У меня длинные и кудрявые волосы.",
+          "Я ношу волосы собранными.",
+          "Я подстригся вчера.",
+          "У неё очень красивые волосы."
+        ]
+      },
+      {
+        "spanish": "liso",
+        "ru": "прямой (о волосах)",
+        "type": "adjetivo",
+        "icon": "minus",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo el pelo ___.",
+          "Mi pelo es muy ___.",
+          "Prefiero el pelo ___.",
+          "Se alisa el pelo porque no es ___."
+        ],
+        "hardSentencesRu": [
+          "У меня прямые волосы.",
+          "Мои волосы очень прямые.",
+          "Я предпочитаю прямые волосы.",
+          "Она выпрямляет волосы, потому что они не прямые."
+        ]
+      },
+      {
+        "spanish": "rizado",
+        "ru": "кудрявый",
+        "type": "adjetivo",
+        "icon": "water",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo el pelo muy ___.",
+          "Mi madre tiene el pelo ___.",
+          "Me gusta el pelo ___.",
+          "Es difícil peinar el pelo ___."
+        ],
+        "hardSentencesRu": [
+          "У меня очень кудрявые волосы.",
+          "У моей мамы кудрявые волосы.",
+          "Мне нравятся кудрявые волосы.",
+          "Кудрявые волосы сложно расчёсывать."
+        ]
+      },
+      {
+        "spanish": "ondulado",
+        "ru": "волнистый",
+        "type": "adjetivo",
+        "icon": "water",
+        "useIcon": true,
+        "hardSentences": [
+          "Tiene el pelo ___.",
+          "Mi pelo es ___, ni liso ni rizado.",
+          "Me gusta el pelo ___.",
+          "El pelo ___ es fácil de peinar."
+        ],
+        "hardSentencesRu": [
+          "У неё волнистые волосы.",
+          "Мои волосы волнистые, ни прямые, ни кудрявые.",
+          "Мне нравятся волнистые волосы.",
+          "Волнистые волосы легко расчёсывать."
+        ]
+      },
+      {
+        "spanish": "los ojos",
+        "ru": "глаза",
+        "type": "sustantivo",
+        "icon": "eye",
+        "useIcon": true,
+        "hardSentences": [
+          "Tiene ___ azules muy bonitos.",
+          "Mis ___ son marrones.",
+          "Me gustan sus ___.",
+          "Tiene ___ grandes y expresivos."
+        ],
+        "hardSentencesRu": [
+          "У неё очень красивые голубые глаза.",
+          "Мои глаза карие.",
+          "Мне нравятся её глаза.",
+          "У него большие и выразительные глаза."
+        ]
+      },
+      {
+        "spanish": "la barba",
+        "ru": "борода",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Llevo ___ desde hace años.",
+          "Se dejó crecer ___.",
+          "Tiene ___ muy larga.",
+          "Me afeité ___ ayer."
+        ],
+        "hardSentencesRu": [
+          "Я ношу бороду уже несколько лет.",
+          "Он отрастил бороду.",
+          "У него очень длинная борода.",
+          "Я сбрил бороду вчера."
+        ]
+      },
+      {
+        "spanish": "el bigote",
+        "ru": "усы",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo lleva ___.",
+          "Se dejó crecer ___.",
+          "Tiene ___ y barba.",
+          "No me gusta llevar ___."
+        ],
+        "hardSentencesRu": [
+          "Мой дедушка носит усы.",
+          "Он отрастил усы.",
+          "У него усы и борода.",
+          "Мне не нравится носить усы."
+        ]
+      },
+      {
+        "spanish": "las gafas",
+        "ru": "очки",
+        "type": "sustantivo",
+        "icon": "glasses",
+        "useIcon": true,
+        "hardSentences": [
+          "Llevo ___ desde pequeño.",
+          "Necesito ___ para leer.",
+          "Mis ___ son nuevas.",
+          "Lleva ___ de sol."
+        ],
+        "hardSentencesRu": [
+          "Я ношу очки с детства.",
+          "Мне нужны очки для чтения.",
+          "Мои очки новые.",
+          "Она носит солнечные очки."
+        ]
+      }
+    ],
+    "RELACIONES_DE_PAREJA": [
+      {
+        "spanish": "soltero",
+        "ru": "холостой, незамужняя",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ desde hace un año.",
+          "Mi hermano sigue ___.",
+          "¿Estás casado o ___?",
+          "Prefiero estar ___."
+        ],
+        "hardSentencesRu": [
+          "Я холост уже год.",
+          "Мой брат всё ещё холост.",
+          "Ты женат или холост?",
+          "Я предпочитаю быть холостым."
+        ]
+      },
+      {
+        "spanish": "casado",
+        "ru": "женатый, замужем",
+        "type": "adjetivo",
+        "icon": "ring",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ desde 2015.",
+          "Mi prima está ___.",
+          "¿Estás ___ o soltero?",
+          "Llevan ___ diez años."
+        ],
+        "hardSentencesRu": [
+          "Я женат с 2015 года.",
+          "Моя двоюродная сестра замужем.",
+          "Ты женат или холост?",
+          "Они женаты уже десять лет."
+        ]
+      },
+      {
+        "spanish": "divorciado",
+        "ru": "разведённый",
+        "type": "adjetivo",
+        "icon": "heart-broken",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ desde hace tres años.",
+          "Mis padres están ___.",
+          "Se quedó ___ muy joven.",
+          "Está ___ y tiene dos hijos."
+        ],
+        "hardSentencesRu": [
+          "Я разведён уже три года.",
+          "Мои родители разведены.",
+          "Он развёлся очень молодым.",
+          "Она разведена и у неё двое детей."
+        ]
+      },
+      {
+        "spanish": "separado",
+        "ru": "в разводе (разъехавшиеся)",
+        "type": "adjetivo",
+        "icon": "heart-broken",
+        "useIcon": true,
+        "hardSentences": [
+          "Estamos ___ pero no divorciados.",
+          "Mis padres están ___.",
+          "Llevan ___ un año.",
+          "Está ___ de su marido."
+        ],
+        "hardSentencesRu": [
+          "Мы живём раздельно, но не разведены.",
+          "Мои родители живут раздельно.",
+          "Они в разводе уже год.",
+          "Она живёт отдельно от мужа."
+        ]
+      },
+      {
+        "spanish": "viudo",
+        "ru": "вдовец, вдова",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo está ___.",
+          "Se quedó ___ muy joven.",
+          "Es ___ desde hace cinco años.",
+          "Mi vecina es ___."
+        ],
+        "hardSentencesRu": [
+          "Мой дедушка вдовец.",
+          "Она овдовела очень молодой.",
+          "Он вдовец уже пять лет.",
+          "Моя соседка вдова."
+        ]
+      },
+      {
+        "spanish": "el novio",
+        "ru": "парень, жених",
+        "type": "sustantivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Te presento a mi ___.",
+          "Mi ___ es muy simpático.",
+          "¿Tienes ___?",
+          "Lleva con su ___ dos años."
+        ],
+        "hardSentencesRu": [
+          "Познакомься с моим парнем.",
+          "Мой парень очень милый.",
+          "У тебя есть парень?",
+          "Она встречается со своим парнем два года."
+        ]
+      },
+      {
+        "spanish": "la novia",
+        "ru": "девушка, невеста",
+        "type": "sustantivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Te presento a mi ___.",
+          "Mi ___ es muy guapa.",
+          "¿Tienes ___?",
+          "Vive con su ___."
+        ],
+        "hardSentencesRu": [
+          "Познакомься с моей девушкой.",
+          "Моя девушка очень красивая.",
+          "У тебя есть девушка?",
+          "Он живёт со своей девушкой."
+        ]
+      },
+      {
+        "spanish": "la pareja",
+        "ru": "пара, партнёр",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Vivo con mi ___.",
+          "¿Tienes ___?",
+          "Busco ___ para una relación seria.",
+          "Mi ___ es muy cariñosa."
+        ],
+        "hardSentencesRu": [
+          "Я живу со своим партнёром.",
+          "У тебя есть пара?",
+          "Ищу партнёра для серьёзных отношений.",
+          "Мой партнёр очень ласковый."
+        ]
+      },
+      {
+        "spanish": "el marido",
+        "ru": "муж",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Te presento a mi ___.",
+          "Mi ___ es profesor.",
+          "Su ___ es muy alto.",
+          "Lleva casada con su ___ veinte años."
+        ],
+        "hardSentencesRu": [
+          "Познакомься с моим мужем.",
+          "Мой муж преподаватель.",
+          "Её муж очень высокий.",
+          "Она замужем за своим мужем двадцать лет."
+        ]
+      },
+      {
+        "spanish": "la mujer",
+        "ru": "жена",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Te presento a mi ___.",
+          "Mi ___ es médica.",
+          "Su ___ es muy simpática.",
+          "Vive con su ___ e hijos."
+        ],
+        "hardSentencesRu": [
+          "Познакомься с моей женой.",
+          "Моя жена врач.",
+          "Его жена очень приятная.",
+          "Он живёт с женой и детьми."
+        ]
+      },
+      {
+        "spanish": "salir con",
+        "ru": "встречаться с",
+        "type": "verbo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy ___ alguien.",
+          "¿___ quién sales?",
+          "Empezamos a ___ hace un mes.",
+          "No quiero ___ nadie ahora."
+        ],
+        "hardSentencesRu": [
+          "Я встречаюсь с кем-то.",
+          "С кем ты встречаешься?",
+          "Мы начали встречаться месяц назад.",
+          "Я не хочу ни с кем встречаться сейчас."
+        ]
+      },
+      {
+        "spanish": "conocer a alguien",
+        "ru": "познакомиться с кем-то",
+        "type": "verbo",
+        "icon": "handshake",
+        "useIcon": true,
+        "hardSentences": [
+          "Quiero ___ gente nueva.",
+          "La conocí en una fiesta.",
+          "¿Dónde lo conociste?",
+          "Conocimos a nuestros vecinos ayer."
+        ],
+        "hardSentencesRu": [
+          "Я хочу познакомиться с новыми людьми.",
+          "Я познакомился с ней на вечеринке.",
+          "Где ты с ним познакомился?",
+          "Мы познакомились с соседями вчера."
+        ]
+      }
+    ],
+    "CARACTER": [
+      {
+        "spanish": "simpático",
+        "ru": "приятный, симпатичный",
+        "type": "adjetivo",
+        "icon": "smile",
+        "useIcon": true,
+        "hardSentences": [
+          "Es una persona muy ___.",
+          "Tu amigo es muy ___.",
+          "Me cae bien porque es ___.",
+          "Parece muy ___."
+        ],
+        "hardSentencesRu": [
+          "Это очень приятный человек.",
+          "Твой друг очень приятный.",
+          "Он мне нравится, потому что он приятный.",
+          "Он кажется очень приятным."
+        ]
+      },
+      {
+        "spanish": "antipático",
+        "ru": "неприятный",
+        "type": "adjetivo",
+        "icon": "meh",
+        "useIcon": true,
+        "hardSentences": [
+          "No es ___, solo tímido.",
+          "Me pareció un poco ___.",
+          "Su jefe es muy ___.",
+          "No seas ___."
+        ],
+        "hardSentencesRu": [
+          "Он не неприятный, просто застенчивый.",
+          "Он показался мне немного неприятным.",
+          "Его начальник очень неприятный.",
+          "Не будь неприятным."
+        ]
+      },
+      {
+        "spanish": "alegre",
+        "ru": "весёлый",
+        "type": "adjetivo",
+        "icon": "laugh",
+        "useIcon": true,
+        "hardSentences": [
+          "Es una persona muy ___.",
+          "Siempre está ___.",
+          "Me gusta porque es ___.",
+          "Tiene un carácter muy ___."
+        ],
+        "hardSentencesRu": [
+          "Это очень весёлый человек.",
+          "Он всегда весёлый.",
+          "Мне нравится, что он весёлый.",
+          "У него очень весёлый характер."
+        ]
+      },
+      {
+        "spanish": "optimista",
+        "ru": "оптимистичный",
+        "type": "adjetivo",
+        "icon": "sun",
+        "useIcon": true,
+        "hardSentences": [
+          "Soy una persona ___.",
+          "Es muy ___ sobre el futuro.",
+          "Intento ser ___.",
+          "Su actitud ___ me inspira."
+        ],
+        "hardSentencesRu": [
+          "Я оптимистичный человек.",
+          "Он очень оптимистичен насчёт будущего.",
+          "Я стараюсь быть оптимистом.",
+          "Его оптимистичный настрой меня вдохновляет."
+        ]
+      },
+      {
+        "spanish": "divertido",
+        "ru": "забавный, весёлый",
+        "type": "adjetivo",
+        "icon": "laugh",
+        "useIcon": true,
+        "hardSentences": [
+          "Es muy ___ y nos reímos mucho.",
+          "Mi amigo es muy ___.",
+          "Busco a alguien ___.",
+          "La fiesta fue muy ___."
+        ],
+        "hardSentencesRu": [
+          "Он очень забавный и мы много смеёмся.",
+          "Мой друг очень весёлый.",
+          "Ищу кого-то весёлого.",
+          "Вечеринка была очень весёлой."
+        ]
+      },
+      {
+        "spanish": "inteligente",
+        "ru": "умный",
+        "type": "adjetivo",
+        "icon": "brain",
+        "useIcon": true,
+        "hardSentences": [
+          "Es una mujer muy ___.",
+          "Mi hermana es muy ___.",
+          "Parece muy ___.",
+          "Es ___ y trabajadora."
+        ],
+        "hardSentencesRu": [
+          "Это очень умная женщина.",
+          "Моя сестра очень умная.",
+          "Он кажется очень умным.",
+          "Она умная и трудолюбивая."
+        ]
+      },
+      {
+        "spanish": "trabajador",
+        "ru": "трудолюбивый",
+        "type": "adjetivo",
+        "icon": "briefcase",
+        "useIcon": true,
+        "hardSentences": [
+          "Es muy ___.",
+          "Mi padre es muy ___.",
+          "Busco a alguien ___.",
+          "Es ___ y responsable."
+        ],
+        "hardSentencesRu": [
+          "Он очень трудолюбивый.",
+          "Мой отец очень трудолюбивый.",
+          "Ищу кого-то трудолюбивого.",
+          "Он трудолюбивый и ответственный."
+        ]
+      },
+      {
+        "spanish": "tranquilo",
+        "ru": "спокойный",
+        "type": "adjetivo",
+        "icon": "peace",
+        "useIcon": true,
+        "hardSentences": [
+          "Es una persona muy ___.",
+          "Me gustan los hombres ___.",
+          "Soy bastante ___.",
+          "Tiene un carácter muy ___."
+        ],
+        "hardSentencesRu": [
+          "Это очень спокойный человек.",
+          "Мне нравятся спокойные мужчины.",
+          "Я довольно спокойный.",
+          "У него очень спокойный характер."
+        ]
+      },
+      {
+        "spanish": "extrovertido",
+        "ru": "экстраверт",
+        "type": "adjetivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Soy muy ___.",
+          "Mi hermano es muy ___.",
+          "Es ___ y le gusta hablar.",
+          "Es más ___ que yo."
+        ],
+        "hardSentencesRu": [
+          "Я очень общительный.",
+          "Мой брат очень экстраверт.",
+          "Он общительный и любит разговаривать.",
+          "Он более общительный, чем я."
+        ]
+      },
+      {
+        "spanish": "introvertido",
+        "ru": "интроверт",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Soy bastante ___.",
+          "Es ___ pero muy amable.",
+          "Mi hija es un poco ___.",
+          "No es tímido, es ___."
+        ],
+        "hardSentencesRu": [
+          "Я довольно замкнутый.",
+          "Он интроверт, но очень добрый.",
+          "Моя дочь немного замкнутая.",
+          "Он не застенчивый, он интроверт."
+        ]
+      },
+      {
+        "spanish": "cariñoso",
+        "ru": "ласковый, нежный",
+        "type": "adjetivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Es muy ___ con los niños.",
+          "Busco a alguien ___.",
+          "Mi gato es muy ___.",
+          "Es ___ y atento."
+        ],
+        "hardSentencesRu": [
+          "Он очень ласковый с детьми.",
+          "Ищу кого-то ласкового.",
+          "Мой кот очень ласковый.",
+          "Он нежный и внимательный."
+        ]
+      },
+      {
+        "spanish": "tímido",
+        "ru": "застенчивый",
+        "type": "adjetivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Soy un poco ___.",
+          "Es ___ pero muy amable.",
+          "De pequeño era muy ___.",
+          "No seas ___."
+        ],
+        "hardSentencesRu": [
+          "Я немного застенчивый.",
+          "Он застенчивый, но очень добрый.",
+          "В детстве я был очень застенчивым.",
+          "Не будь застенчивым."
+        ]
+      }
+    ],
+    "DESCRIBIR_PERSONAS": [
+      {
+        "spanish": "parecerse a",
+        "ru": "быть похожим на",
+        "type": "verbo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Me ___ mucho a mi padre.",
+          "Los dos hermanos se ___.",
+          "¿A quién te ___?",
+          "Se ___ en el carácter."
+        ],
+        "hardSentencesRu": [
+          "Я очень похож на отца.",
+          "Два брата похожи друг на друга.",
+          "На кого ты похож?",
+          "Они похожи характером."
+        ]
+      },
+      {
+        "spanish": "parecer",
+        "ru": "казаться, выглядеть",
+        "type": "verbo",
+        "icon": "eye",
+        "useIcon": true,
+        "hardSentences": [
+          "___ muy simpático.",
+          "No ___ su edad.",
+          "¿Qué te ___ la película?",
+          "Me ___ buena idea."
+        ],
+        "hardSentencesRu": [
+          "Он кажется очень приятным.",
+          "Он не выглядит на свой возраст.",
+          "Как тебе фильм?",
+          "Мне кажется, это хорошая идея."
+        ]
+      },
+      {
+        "spanish": "llevar",
+        "ru": "носить (одежду, причёску)",
+        "type": "verbo",
+        "icon": "tshirt",
+        "useIcon": true,
+        "hardSentences": [
+          "___ el pelo largo.",
+          "___ gafas desde pequeño.",
+          "Hoy ___ un vestido azul.",
+          "___ barba y bigote."
+        ],
+        "hardSentencesRu": [
+          "Он носит длинные волосы.",
+          "Я ношу очки с детства.",
+          "Сегодня она в синем платье.",
+          "Он носит бороду и усы."
+        ]
+      },
+      {
+        "spanish": "medir",
+        "ru": "иметь рост (измерять)",
+        "type": "verbo",
+        "icon": "ruler",
+        "useIcon": true,
+        "hardSentences": [
+          "___ 1,80 metros.",
+          "¿Cuánto ___?",
+          "Mi hermano ___ casi dos metros.",
+          "___ lo mismo que mi padre."
+        ],
+        "hardSentencesRu": [
+          "Мой рост 1,80 метра.",
+          "Какой у тебя рост?",
+          "Мой брат почти два метра ростом.",
+          "У меня такой же рост, как у отца."
+        ]
+      },
+      {
+        "spanish": "pesar",
+        "ru": "весить",
+        "type": "verbo",
+        "icon": "weight",
+        "useIcon": true,
+        "hardSentences": [
+          "___ 70 kilos.",
+          "¿Cuánto ___?",
+          "He ___ menos este mes.",
+          "___ lo mismo que antes."
+        ],
+        "hardSentencesRu": [
+          "Я вешу 70 килограммов.",
+          "Сколько ты весишь?",
+          "Я похудел в этом месяце.",
+          "Я вешу столько же, сколько раньше."
+        ]
+      },
+      {
+        "spanish": "llevarse bien",
+        "ru": "хорошо ладить",
+        "type": "verbo",
+        "icon": "handshake",
+        "useIcon": true,
+        "hardSentences": [
+          "Me ___ con mi hermano.",
+          "Nos ___ muy bien.",
+          "¿Te ___ con tu jefe?",
+          "Se ___ como amigos."
+        ],
+        "hardSentencesRu": [
+          "Я хорошо лажу с братом.",
+          "Мы очень хорошо ладим.",
+          "Ты ладишь со своим начальником?",
+          "Они ладят как друзья."
+        ]
+      },
+      {
+        "spanish": "llevarse mal",
+        "ru": "плохо ладить",
+        "type": "verbo",
+        "icon": "times",
+        "useIcon": true,
+        "hardSentences": [
+          "Me ___ con mi vecino.",
+          "Nos ___ fatal.",
+          "Se ___ desde siempre.",
+          "No me ___ con nadie."
+        ],
+        "hardSentencesRu": [
+          "Я плохо лажу с соседом.",
+          "Мы совсем не ладим.",
+          "Они не ладят с давних пор.",
+          "Я ни с кем не ссорюсь."
+        ]
+      },
+      {
+        "spanish": "caer bien",
+        "ru": "нравиться (о человеке)",
+        "type": "verbo",
+        "icon": "thumbs-up",
+        "useIcon": true,
+        "hardSentences": [
+          "Me ___ tu amigo.",
+          "Le ___ a todo el mundo.",
+          "Me ___ desde el primer día.",
+          "Nos ___ muy bien."
+        ],
+        "hardSentencesRu": [
+          "Мне нравится твой друг.",
+          "Он нравится всем.",
+          "Он мне понравился с первого дня.",
+          "Они нам очень нравятся."
+        ]
+      },
+      {
+        "spanish": "caer mal",
+        "ru": "не нравиться (о человеке)",
+        "type": "verbo",
+        "icon": "thumbs-down",
+        "useIcon": true,
+        "hardSentences": [
+          "Me ___ tu vecino.",
+          "Le ___ a mucha gente.",
+          "Me ___ desde el principio.",
+          "No me ___ nadie."
+        ],
+        "hardSentencesRu": [
+          "Мне не нравится твой сосед.",
+          "Он не нравится многим.",
+          "Он мне не понравился с самого начала.",
+          "Мне никто не неприятен."
+        ]
+      },
+      {
+        "spanish": "este",
+        "ru": "этот (рядом)",
+        "type": "demostrativo",
+        "icon": "hand-point-right",
+        "useIcon": true,
+        "hardSentences": [
+          "___ es mi hermano.",
+          "Mira, ___ chico es mi primo.",
+          "___ de aquí es Juan.",
+          "¿Quién es ___?"
+        ],
+        "hardSentencesRu": [
+          "Это мой брат.",
+          "Смотри, этот парень - мой двоюродный брат.",
+          "Вот этот - Хуан.",
+          "Кто это?"
+        ]
+      },
+      {
+        "spanish": "ese",
+        "ru": "тот (недалеко)",
+        "type": "demostrativo",
+        "icon": "hand-point-right",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Quién es ___ chico?",
+          "___ de ahí es mi jefe.",
+          "Mira a ___ hombre.",
+          "___ es el novio de María."
+        ],
+        "hardSentencesRu": [
+          "Кто тот парень?",
+          "Вон тот - мой начальник.",
+          "Посмотри на того мужчину.",
+          "Тот - парень Марии."
+        ]
+      },
+      {
+        "spanish": "aquel",
+        "ru": "тот (далеко)",
+        "type": "demostrativo",
+        "icon": "hand-point-right",
+        "useIcon": true,
+        "hardSentences": [
+          "¿Ves a ___ hombre de allí?",
+          "___ es mi profesor.",
+          "Mira ___ edificio.",
+          "___ chico de allí es mi amigo."
+        ],
+        "hardSentencesRu": [
+          "Видишь того мужчину там?",
+          "Тот - мой преподаватель.",
+          "Посмотри на то здание.",
+          "Тот парень там - мой друг."
+        ]
+      }
+    ]
+  },
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Presente: verbos irregulares (c>zc, e>i)",
+      "hint": "yo: conozco, parezco, nazco | yo: mido, pido, sigo",
+      "rule": {
+        "title": "VERBOS IRREGULARES en presente",
+        "explanation": "Algunos verbos tienen cambios en la raíz en presente de indicativo. Hay dos grupos importantes:",
+        "sections": [
+          {
+            "subtitle": "Verbos con cambio C > ZC (solo en YO)",
+            "points": [
+              "conocer → yo <b>conozco</b>, tú conoces, él conoce...",
+              "parecer → yo <b>parezco</b>, tú pareces, él parece...",
+              "nacer → yo <b>nazco</b>, tú naces, él nace...",
+              "crecer → yo <b>crezco</b>, tú creces, él crece...",
+              "agradecer → yo <b>agradezco</b>, tú agradeces...",
+              "ofrecer → yo <b>ofrezco</b>, tú ofreces..."
+            ]
+          },
+          {
+            "subtitle": "Verbos con cambio E > I (excepto nosotros/vosotros)",
+            "points": [
+              "medir → yo <b>mido</b>, tú <b>mides</b>, él <b>mide</b>, nosotros medimos, ellos <b>miden</b>",
+              "pedir → yo <b>pido</b>, tú <b>pides</b>, él <b>pide</b>, nosotros pedimos, ellos <b>piden</b>",
+              "servir → yo <b>sirvo</b>, tú <b>sirves</b>, él <b>sirve</b>, nosotros servimos, ellos <b>sirven</b>",
+              "repetir → yo <b>repito</b>, tú <b>repites</b>, él <b>repite</b>, nosotros repetimos, ellos <b>repiten</b>",
+              "seguir → yo <b>sigo</b>, tú <b>sigues</b>, él <b>sigue</b>, nosotros seguimos, ellos <b>siguen</b>",
+              "vestir → yo <b>visto</b>, tú <b>vistes</b>, él <b>viste</b>, nosotros vestimos, ellos <b>visten</b>"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "No conozco a tu hermano.", "ru": "Я не знаю твоего брата."},
+          {"es": "¿Cuánto mides?", "ru": "Какой у тебя рост?"},
+          {"es": "Siempre pido lo mismo en este restaurante.", "ru": "Я всегда заказываю одно и то же в этом ресторане."},
+          {"es": "Me parezco mucho a mi madre.", "ru": "Я очень похож на маму."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Yo no ___ (conocer) a nadie en esta fiesta.", "answer": "conozco"},
+        {"sentence": "¿Tú ___ (conocer) a mi hermano?", "answer": "conoces"},
+        {"sentence": "Ella ___ (parecer) muy simpática.", "answer": "parece"},
+        {"sentence": "Yo ___ (parecer) mayor de lo que soy.", "answer": "parezco"},
+        {"sentence": "Mi hijo ___ (nacer) en Madrid.", "answer": "nace"},
+        {"sentence": "Yo ___ (nacer) en 1990.", "answer": "nazco"},
+        {"sentence": "Los niños ___ (crecer) muy rápido.", "answer": "crecen"},
+        {"sentence": "Yo ___ (crecer) en un pueblo pequeño.", "answer": "crezco"},
+        {"sentence": "Te ___ (agradecer) mucho tu ayuda.", "answer": "agradezco"},
+        {"sentence": "Ella siempre ___ (agradecer) los regalos.", "answer": "agradece"},
+        {"sentence": "¿Qué te ___ (ofrecer) yo?", "answer": "ofrezco"},
+        {"sentence": "El hotel ___ (ofrecer) desayuno gratis.", "answer": "ofrece"},
+        {"sentence": "¿Cuánto ___ (medir) tú?", "answer": "mides"},
+        {"sentence": "Yo ___ (medir) 1,80 metros.", "answer": "mido"},
+        {"sentence": "Él ___ (medir) casi dos metros.", "answer": "mide"},
+        {"sentence": "Nosotros ___ (medir) lo mismo.", "answer": "medimos"},
+        {"sentence": "¿Qué ___ (pedir) tú para cenar?", "answer": "pides"},
+        {"sentence": "Yo siempre ___ (pedir) pizza.", "answer": "pido"},
+        {"sentence": "Ellos ___ (pedir) la cuenta.", "answer": "piden"},
+        {"sentence": "El camarero ___ (servir) la comida.", "answer": "sirve"},
+        {"sentence": "Yo ___ (servir) el vino.", "answer": "sirvo"},
+        {"sentence": "¿Para qué ___ (servir) esto?", "answer": "sirve"},
+        {"sentence": "Los alumnos ___ (repetir) las palabras.", "answer": "repiten"},
+        {"sentence": "Yo ___ (repetir) la pregunta.", "answer": "repito"},
+        {"sentence": "¿Puedes ___ (repetir), por favor?", "answer": "repetir"},
+        {"sentence": "Yo ___ (seguir) estudiando español.", "answer": "sigo"},
+        {"sentence": "Él ___ (seguir) trabajando en la misma empresa.", "answer": "sigue"},
+        {"sentence": "¿Tú ___ (seguir) viviendo en Madrid?", "answer": "sigues"},
+        {"sentence": "Yo ___ (vestir) a mi hija por las mañanas.", "answer": "visto"},
+        {"sentence": "Ella ___ (vestir) muy elegante.", "answer": "viste"},
+        {"sentence": "Ellos ___ (vestir) de negro.", "answer": "visten"}
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Describir personas: ser, tener, llevar",
+      "hint": "ser = características permanentes | tener = posesión | llevar = ropa/accesorios",
+      "rule": {
+        "title": "DESCRIBIR PERSONAS",
+        "explanation": "Para describir a una persona usamos diferentes verbos según el tipo de característica:",
+        "sections": [
+          {
+            "subtitle": "SER - características permanentes",
+            "points": [
+              "Físicas: <b>Soy alto, bajo, gordo, delgado, guapo, feo</b>",
+              "De pelo: <b>Es rubio, moreno, pelirrojo, castaño, calvo</b>",
+              "Carácter: <b>Es simpático, alegre, tímido, inteligente</b>"
+            ]
+          },
+          {
+            "subtitle": "TENER - partes del cuerpo",
+            "points": [
+              "<b>Tiene</b> el pelo largo/corto/liso/rizado/ondulado",
+              "<b>Tiene</b> los ojos azules/verdes/marrones/negros",
+              "<b>Tiene</b> barba/bigote/pecas"
+            ]
+          },
+          {
+            "subtitle": "LLEVAR - ropa, accesorios, estilo",
+            "points": [
+              "<b>Lleva</b> gafas/barba/bigote",
+              "<b>Lleva</b> el pelo largo/corto/recogido",
+              "<b>Lleva</b> un vestido/una camiseta/pantalones"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "María es alta y delgada.", "ru": "Мария высокая и худая."},
+          {"es": "Tiene el pelo largo y rizado.", "ru": "У неё длинные и кудрявые волосы."},
+          {"es": "Lleva gafas desde pequeño.", "ru": "Он носит очки с детства."},
+          {"es": "Es rubio y tiene los ojos azules.", "ru": "Он блондин с голубыми глазами."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Mi padre ___ (ser) muy alto.", "answer": "es"},
+        {"sentence": "Ella ___ (ser) rubia y ___ (tener) los ojos verdes.", "answer": "es, tiene"},
+        {"sentence": "Mi hermano ___ (tener) el pelo muy corto.", "answer": "tiene"},
+        {"sentence": "Juan ___ (llevar) barba desde hace años.", "answer": "lleva"},
+        {"sentence": "Yo ___ (ser) moreno y ___ (tener) los ojos marrones.", "answer": "soy, tengo"},
+        {"sentence": "Mi abuela ___ (tener) el pelo blanco.", "answer": "tiene"},
+        {"sentence": "Ella siempre ___ (llevar) gafas de sol.", "answer": "lleva"},
+        {"sentence": "Mi madre ___ (ser) muy guapa.", "answer": "es"},
+        {"sentence": "Él ___ (tener) los ojos muy bonitos.", "answer": "tiene"},
+        {"sentence": "Ana ___ (llevar) el pelo recogido.", "answer": "lleva"},
+        {"sentence": "Nosotros ___ (ser) bastante altos.", "answer": "somos"},
+        {"sentence": "Mis hijos ___ (tener) el pelo rizado como yo.", "answer": "tienen"},
+        {"sentence": "¿Tú ___ (llevar) gafas?", "answer": "llevas"},
+        {"sentence": "Mi abuelo ___ (ser) calvo.", "answer": "es"},
+        {"sentence": "Ella ___ (tener) la piel muy clara.", "answer": "tiene"},
+        {"sentence": "Pedro ___ (llevar) bigote y barba.", "answer": "lleva"},
+        {"sentence": "Los gemelos ___ (ser) idénticos.", "answer": "son"},
+        {"sentence": "Mi prima ___ (tener) pecas en la cara.", "answer": "tiene"},
+        {"sentence": "Yo ___ (llevar) el pelo largo.", "answer": "llevo"},
+        {"sentence": "Él ___ (ser) muy atlético.", "answer": "es"},
+        {"sentence": "Ella ___ (tener) una sonrisa muy bonita.", "answer": "tiene"},
+        {"sentence": "Mi padre ___ (llevar) gafas para leer.", "answer": "lleva"},
+        {"sentence": "¿Cómo ___ (ser) tu novio? - ___ (ser) alto y moreno.", "answer": "es, Es"},
+        {"sentence": "Yo ___ (tener) los ojos de mi madre.", "answer": "tengo"},
+        {"sentence": "Ella siempre ___ (llevar) ropa elegante.", "answer": "lleva"}
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Parecer vs Parecerse",
+      "hint": "parecer = казаться | parecerse a = быть похожим на",
+      "rule": {
+        "title": "PARECER vs PARECERSE",
+        "explanation": "Estos dos verbos son similares pero tienen significados diferentes:",
+        "sections": [
+          {
+            "subtitle": "PARECER - казаться, выглядеть",
+            "points": [
+              "<b>Parece</b> simpático - Он кажется милым",
+              "<b>Parece</b> cansado - Он выглядит уставшим",
+              "<b>Parece</b> que va a llover - Кажется, будет дождь",
+              "¿Qué te <b>parece</b>? - Что ты думаешь?"
+            ]
+          },
+          {
+            "subtitle": "PARECERSE A - быть похожим на",
+            "points": [
+              "Me <b>parezco</b> a mi padre - Я похож на отца",
+              "Se <b>parecen</b> mucho - Они очень похожи",
+              "¿A quién te <b>pareces</b>? - На кого ты похож?",
+              "No se <b>parecen</b> en nada - Они совсем не похожи"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Pareces muy contento hoy.", "ru": "Ты выглядишь очень довольным сегодня."},
+          {"es": "Me parezco mucho a mi madre.", "ru": "Я очень похожа на маму."},
+          {"es": "¿Qué te parece la película?", "ru": "Что ты думаешь о фильме?"},
+          {"es": "Los hermanos se parecen mucho.", "ru": "Братья очень похожи друг на друга."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Tú ___ (parecerse) mucho a tu padre.", "answer": "te pareces"},
+        {"sentence": "Ella ___ (parecer) muy simpática.", "answer": "parece"},
+        {"sentence": "Yo ___ (parecerse) a mi abuelo.", "answer": "me parezco"},
+        {"sentence": "¿___ (parecer) que va a llover?", "answer": "Parece"},
+        {"sentence": "Los gemelos ___ (parecerse) mucho.", "answer": "se parecen"},
+        {"sentence": "Él ___ (parecer) cansado hoy.", "answer": "parece"},
+        {"sentence": "¿A quién ___ (parecerse) tú?", "answer": "te pareces"},
+        {"sentence": "Me ___ (parecer) buena idea.", "answer": "parece"},
+        {"sentence": "Mi hermana y yo no ___ (parecerse) nada.", "answer": "nos parecemos"},
+        {"sentence": "¿Qué te ___ (parecer) mi nuevo piso?", "answer": "parece"},
+        {"sentence": "Dicen que yo ___ (parecerse) a mi madre.", "answer": "me parezco"},
+        {"sentence": "Él ___ (parecer) más joven de lo que es.", "answer": "parece"},
+        {"sentence": "¿Vosotros ___ (parecerse) a vuestros padres?", "answer": "os parecéis"},
+        {"sentence": "___ (parecer) que hace frío fuera.", "answer": "Parece"},
+        {"sentence": "Ana ___ (parecerse) a Julia Roberts.", "answer": "se parece"},
+        {"sentence": "Mis hijos ___ (parecerse) mucho entre sí.", "answer": "se parecen"},
+        {"sentence": "Tu idea me ___ (parecer) excelente.", "answer": "parece"},
+        {"sentence": "No ___ (parecer) su edad.", "answer": "parece"},
+        {"sentence": "¿A quién ___ (parecerse) tu hijo?", "answer": "se parece"},
+        {"sentence": "Me ___ (parecer) que tienes razón.", "answer": "parece"}
+      ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Demostrativos: este, ese, aquel",
+      "hint": "este = aquí (cerca) | ese = ahí (medio) | aquel = allí (lejos)",
+      "rule": {
+        "title": "DEMOSTRATIVOS",
+        "explanation": "Los demostrativos indican la distancia entre el hablante y lo que señala:",
+        "sections": [
+          {
+            "subtitle": "ESTE/ESTA/ESTOS/ESTAS - cerca del hablante (aquí)",
+            "points": [
+              "<b>Este</b> chico (este hombre aquí)",
+              "<b>Esta</b> chica (esta mujer aquí)",
+              "<b>Estos</b> libros (estos libros aquí)",
+              "<b>Estas</b> gafas (estas gafas aquí)"
+            ]
+          },
+          {
+            "subtitle": "ESE/ESA/ESOS/ESAS - distancia media (ahí)",
+            "points": [
+              "<b>Ese</b> chico (ese hombre ahí)",
+              "<b>Esa</b> chica (esa mujer ahí)",
+              "<b>Esos</b> libros (esos libros ahí)",
+              "<b>Esas</b> gafas (esas gafas ahí)"
+            ]
+          },
+          {
+            "subtitle": "AQUEL/AQUELLA/AQUELLOS/AQUELLAS - lejos (allí)",
+            "points": [
+              "<b>Aquel</b> chico (aquel hombre allí)",
+              "<b>Aquella</b> chica (aquella mujer allí)",
+              "<b>Aquellos</b> libros (aquellos libros allí)",
+              "<b>Aquellas</b> gafas (aquellas gafas allí)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Este es mi hermano.", "ru": "Это мой брат (рядом)."},
+          {"es": "¿Quién es ese chico?", "ru": "Кто тот парень (недалеко)?"},
+          {"es": "Aquel edificio es muy alto.", "ru": "То здание (далеко) очень высокое."},
+          {"es": "¿Ves aquellas montañas?", "ru": "Видишь те горы (далеко)?"}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ (este) vestido que llevas es precioso.", "answer": "Este"},
+        {"sentence": "¿Quién es ___ (ese) chico de ahí?", "answer": "ese"},
+        {"sentence": "___ (aquel) edificio de allí es el museo.", "answer": "Aquel"},
+        {"sentence": "Me gustan ___ (este) zapatos.", "answer": "estos"},
+        {"sentence": "¿Ves ___ (aquel) montañas?", "answer": "aquellas"},
+        {"sentence": "___ (ese) señora de ahí es mi profesora.", "answer": "Esa"},
+        {"sentence": "___ (este) es mi amigo Juan.", "answer": "Este"},
+        {"sentence": "¿Quiénes son ___ (aquel) chicos de allí?", "answer": "aquellos"},
+        {"sentence": "Dame ___ (ese) libro que tienes ahí.", "answer": "ese"},
+        {"sentence": "___ (este) camisetas son muy baratas.", "answer": "Estas"},
+        {"sentence": "Mira ___ (aquel) nubes. Va a llover.", "answer": "aquellas"},
+        {"sentence": "___ (ese) ideas me parecen buenas.", "answer": "Esas"},
+        {"sentence": "¿Es ___ (este) tu coche?", "answer": "este"},
+        {"sentence": "___ (aquel) señor mayor es mi abuelo.", "answer": "Aquel"},
+        {"sentence": "¿Quién es ___ (ese) mujer?", "answer": "esa"},
+        {"sentence": "___ (este) niños son mis sobrinos.", "answer": "Estos"},
+        {"sentence": "¿Ves ___ (aquel) casa blanca? Allí vivo yo.", "answer": "aquella"},
+        {"sentence": "¿De quién son ___ (ese) gafas de ahí?", "answer": "esas"},
+        {"sentence": "___ (este) foto es de mi boda.", "answer": "Esta"},
+        {"sentence": "___ (aquel) tiempos eran mejores.", "answer": "Aquellos"}
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Llevar vs Llevarse",
+      "hint": "llevar = носить | llevarse (bien/mal) = ладить",
+      "rule": {
+        "title": "LLEVAR vs LLEVARSE",
+        "explanation": "Estos verbos tienen significados muy diferentes:",
+        "sections": [
+          {
+            "subtitle": "LLEVAR - носить, нести",
+            "points": [
+              "<b>Llevar</b> ropa/accesorios - носить одежду",
+              "<b>Llevar</b> el pelo largo/corto - носить длинные/короткие волосы",
+              "<b>Llevar</b> gafas/barba - носить очки/бороду",
+              "<b>Llevar</b> algo a algún lugar - нести что-то куда-то"
+            ]
+          },
+          {
+            "subtitle": "LLEVARSE (bien/mal) - ладить/не ладить",
+            "points": [
+              "Me <b>llevo bien</b> con mi hermano - Я хорошо лажу с братом",
+              "Se <b>llevan mal</b> - Они плохо ладят",
+              "¿Te <b>llevas bien</b> con tus vecinos? - Ты ладишь с соседями?",
+              "No nos <b>llevamos</b> - Мы не ладим"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Llevo gafas desde pequeño.", "ru": "Я ношу очки с детства."},
+          {"es": "Me llevo muy bien con mi jefe.", "ru": "Я очень хорошо лажу с начальником."},
+          {"es": "Ella lleva el pelo muy largo.", "ru": "У неё очень длинные волосы."},
+          {"es": "Mis hermanos se llevan fatal.", "ru": "Мои братья совсем не ладят."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Juan ___ (llevar) barba.", "answer": "lleva"},
+        {"sentence": "Me ___ (llevarse) muy bien con mi hermana.", "answer": "llevo"},
+        {"sentence": "Ella ___ (llevar) gafas de sol.", "answer": "lleva"},
+        {"sentence": "¿Te ___ (llevarse) bien con tu jefe?", "answer": "llevas"},
+        {"sentence": "Mis padres ___ (llevarse) muy bien.", "answer": "se llevan"},
+        {"sentence": "Él ___ (llevar) el pelo muy corto.", "answer": "lleva"},
+        {"sentence": "No me ___ (llevarse) bien con mi vecino.", "answer": "llevo"},
+        {"sentence": "¿Qué ___ (llevar) tú hoy? - Un vestido azul.", "answer": "llevas"},
+        {"sentence": "Ellos ___ (llevarse) fatal desde siempre.", "answer": "se llevan"},
+        {"sentence": "Mi abuelo ___ (llevar) bigote.", "answer": "lleva"},
+        {"sentence": "¿Os ___ (llevarse) bien vosotros?", "answer": "lleváis"},
+        {"sentence": "Yo siempre ___ (llevar) ropa cómoda.", "answer": "llevo"},
+        {"sentence": "Ana y María no ___ (llevarse) nada bien.", "answer": "se llevan"},
+        {"sentence": "¿___ (llevar) tú gafas?", "answer": "Llevas"},
+        {"sentence": "Nos ___ (llevarse) muy bien en el trabajo.", "answer": "llevamos"},
+        {"sentence": "Él ___ (llevar) una camiseta negra.", "answer": "lleva"},
+        {"sentence": "¿Con quién no te ___ (llevarse) bien?", "answer": "llevas"},
+        {"sentence": "Mi madre ___ (llevar) el pelo rizado.", "answer": "lleva"},
+        {"sentence": "Los hermanos ___ (llevarse) bien.", "answer": "se llevan"},
+        {"sentence": "Yo ___ (llevar) este anillo desde mi boda.", "answer": "llevo"}
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Caer bien/mal e identificar personas",
+      "hint": "caer bien = нравиться | el/la de + rasgo = тот/та с...",
+      "rule": {
+        "title": "CAER BIEN/MAL e IDENTIFICAR PERSONAS",
+        "explanation": "Para expresar simpatía/antipatía y para identificar personas:",
+        "sections": [
+          {
+            "subtitle": "CAER BIEN/MAL - нравиться/не нравиться (о человеке)",
+            "points": [
+              "Me <b>cae bien</b> tu amigo - Мне нравится твой друг",
+              "No me <b>cae bien</b> ese chico - Мне не нравится тот парень",
+              "Le <b>cae mal</b> a todo el mundo - Он никому не нравится",
+              "¿Te <b>cae bien</b>? - Он тебе нравится?"
+            ]
+          },
+          {
+            "subtitle": "EL/LA/LOS/LAS + DE/QUE - идентификация",
+            "points": [
+              "<b>El de</b> la camiseta roja - Тот в красной футболке",
+              "<b>La de</b> los ojos verdes - Та с зелёными глазами",
+              "<b>El que</b> lleva gafas - Тот, который носит очки",
+              "<b>La que</b> está hablando - Та, которая говорит"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Me cae muy bien tu hermana.", "ru": "Мне очень нравится твоя сестра."},
+          {"es": "El de la barba es mi profesor.", "ru": "Тот с бородой — мой преподаватель."},
+          {"es": "La que lleva el vestido rojo es Ana.", "ru": "Та, что в красном платье — Ана."},
+          {"es": "No me caen bien tus amigos.", "ru": "Мне не нравятся твои друзья."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Tu amigo me ___ (caer) muy bien.", "answer": "cae"},
+        {"sentence": "¿Quién es ___ (el) de la camiseta azul?", "answer": "el"},
+        {"sentence": "No me ___ (caer) bien tu jefe.", "answer": "cae"},
+        {"sentence": "___ (el) que lleva gafas es mi hermano.", "answer": "El"},
+        {"sentence": "Tus padres me ___ (caer) muy bien.", "answer": "caen"},
+        {"sentence": "¿Ves a ___ (la) de los ojos verdes? Es mi prima.", "answer": "la"},
+        {"sentence": "Ese chico no le ___ (caer) bien a nadie.", "answer": "cae"},
+        {"sentence": "___ (los) que están en la puerta son mis vecinos.", "answer": "Los"},
+        {"sentence": "Me ___ (caer) mal desde el primer día.", "answer": "cayó"},
+        {"sentence": "¿___ (la) de la derecha es tu novia?", "answer": "La"},
+        {"sentence": "Tu hermano me ___ (caer) muy bien.", "answer": "cae"},
+        {"sentence": "___ (el) del pelo largo es Mario.", "answer": "El"},
+        {"sentence": "Los nuevos vecinos no me ___ (caer) bien.", "answer": "caen"},
+        {"sentence": "¿Quiénes son ___ (las) que hablan con tu madre?", "answer": "las"},
+        {"sentence": "Le ___ (caer) bien a todo el mundo.", "answer": "cae"},
+        {"sentence": "___ (los) de azul son mis compañeros.", "answer": "Los"},
+        {"sentence": "¿Te ___ (caer) bien mi amiga?", "answer": "cae"},
+        {"sentence": "___ (la) que está sentada es mi profesora.", "answer": "La"},
+        {"sentence": "Me ___ (caer) muy bien tus hijos.", "answer": "caen"},
+        {"sentence": "¿Quién es ___ (el) que lleva barba?", "answer": "el"}
+      ]
+    }
+  ],
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "presente",
+        "nombre": "Presente de indicativo",
+        "requiredEjercicio": "ejercicio_1",
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "yo": "hablo",
+              "tu": "hablas",
+              "el": "habla",
+              "nosotros": "hablamos",
+              "vosotros": "habláis",
+              "ellos": "hablan"
+            }
+          },
+          {
+            "infinitivo": "trabajar",
+            "traduccion": "работать",
+            "formas": {
+              "yo": "trabajo",
+              "tu": "trabajas",
+              "el": "trabaja",
+              "nosotros": "trabajamos",
+              "vosotros": "trabajáis",
+              "ellos": "trabajan"
+            }
+          },
+          {
+            "infinitivo": "estudiar",
+            "traduccion": "учиться",
+            "formas": {
+              "yo": "estudio",
+              "tu": "estudias",
+              "el": "estudia",
+              "nosotros": "estudiamos",
+              "vosotros": "estudiáis",
+              "ellos": "estudian"
+            }
+          },
+          {
+            "infinitivo": "bailar",
+            "traduccion": "танцевать",
+            "formas": {
+              "yo": "bailo",
+              "tu": "bailas",
+              "el": "baila",
+              "nosotros": "bailamos",
+              "vosotros": "bailáis",
+              "ellos": "bailan"
+            }
+          },
+          {
+            "infinitivo": "cantar",
+            "traduccion": "петь",
+            "formas": {
+              "yo": "canto",
+              "tu": "cantas",
+              "el": "canta",
+              "nosotros": "cantamos",
+              "vosotros": "cantáis",
+              "ellos": "cantan"
+            }
+          },
+          {
+            "infinitivo": "viajar",
+            "traduccion": "путешествовать",
+            "formas": {
+              "yo": "viajo",
+              "tu": "viajas",
+              "el": "viaja",
+              "nosotros": "viajamos",
+              "vosotros": "viajáis",
+              "ellos": "viajan"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "yo": "como",
+              "tu": "comes",
+              "el": "come",
+              "nosotros": "comemos",
+              "vosotros": "coméis",
+              "ellos": "comen"
+            }
+          },
+          {
+            "infinitivo": "beber",
+            "traduccion": "пить",
+            "formas": {
+              "yo": "bebo",
+              "tu": "bebes",
+              "el": "bebe",
+              "nosotros": "bebemos",
+              "vosotros": "bebéis",
+              "ellos": "beben"
+            }
+          },
+          {
+            "infinitivo": "leer",
+            "traduccion": "читать",
+            "formas": {
+              "yo": "leo",
+              "tu": "lees",
+              "el": "lee",
+              "nosotros": "leemos",
+              "vosotros": "leéis",
+              "ellos": "leen"
+            }
+          },
+          {
+            "infinitivo": "correr",
+            "traduccion": "бегать",
+            "formas": {
+              "yo": "corro",
+              "tu": "corres",
+              "el": "corre",
+              "nosotros": "corremos",
+              "vosotros": "corréis",
+              "ellos": "corren"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "vivo",
+              "tu": "vives",
+              "el": "vive",
+              "nosotros": "vivimos",
+              "vosotros": "vivís",
+              "ellos": "viven"
+            }
+          },
+          {
+            "infinitivo": "escribir",
+            "traduccion": "писать",
+            "formas": {
+              "yo": "escribo",
+              "tu": "escribes",
+              "el": "escribe",
+              "nosotros": "escribimos",
+              "vosotros": "escribís",
+              "ellos": "escriben"
+            }
+          }
+        ],
+        "irregulares": [
+          {
+            "infinitivo": "conocer",
+            "traduccion": "знать, познакомиться",
+            "formas": {
+              "yo": "conozco",
+              "tu": "conoces",
+              "el": "conoce",
+              "nosotros": "conocemos",
+              "vosotros": "conocéis",
+              "ellos": "conocen"
+            }
+          },
+          {
+            "infinitivo": "parecer",
+            "traduccion": "казаться, выглядеть",
+            "formas": {
+              "yo": "parezco",
+              "tu": "pareces",
+              "el": "parece",
+              "nosotros": "parecemos",
+              "vosotros": "parecéis",
+              "ellos": "parecen"
+            }
+          },
+          {
+            "infinitivo": "nacer",
+            "traduccion": "рождаться",
+            "formas": {
+              "yo": "nazco",
+              "tu": "naces",
+              "el": "nace",
+              "nosotros": "nacemos",
+              "vosotros": "nacéis",
+              "ellos": "nacen"
+            }
+          },
+          {
+            "infinitivo": "crecer",
+            "traduccion": "расти",
+            "formas": {
+              "yo": "crezco",
+              "tu": "creces",
+              "el": "crece",
+              "nosotros": "crecemos",
+              "vosotros": "crecéis",
+              "ellos": "crecen"
+            }
+          },
+          {
+            "infinitivo": "agradecer",
+            "traduccion": "благодарить",
+            "formas": {
+              "yo": "agradezco",
+              "tu": "agradeces",
+              "el": "agradece",
+              "nosotros": "agradecemos",
+              "vosotros": "agradecéis",
+              "ellos": "agradecen"
+            }
+          },
+          {
+            "infinitivo": "ofrecer",
+            "traduccion": "предлагать",
+            "formas": {
+              "yo": "ofrezco",
+              "tu": "ofreces",
+              "el": "ofrece",
+              "nosotros": "ofrecemos",
+              "vosotros": "ofrecéis",
+              "ellos": "ofrecen"
+            }
+          },
+          {
+            "infinitivo": "medir",
+            "traduccion": "измерять, иметь рост",
+            "formas": {
+              "yo": "mido",
+              "tu": "mides",
+              "el": "mide",
+              "nosotros": "medimos",
+              "vosotros": "medís",
+              "ellos": "miden"
+            }
+          },
+          {
+            "infinitivo": "pedir",
+            "traduccion": "просить",
+            "formas": {
+              "yo": "pido",
+              "tu": "pides",
+              "el": "pide",
+              "nosotros": "pedimos",
+              "vosotros": "pedís",
+              "ellos": "piden"
+            }
+          },
+          {
+            "infinitivo": "servir",
+            "traduccion": "служить, подавать",
+            "formas": {
+              "yo": "sirvo",
+              "tu": "sirves",
+              "el": "sirve",
+              "nosotros": "servimos",
+              "vosotros": "servís",
+              "ellos": "sirven"
+            }
+          },
+          {
+            "infinitivo": "repetir",
+            "traduccion": "повторять",
+            "formas": {
+              "yo": "repito",
+              "tu": "repites",
+              "el": "repite",
+              "nosotros": "repetimos",
+              "vosotros": "repetís",
+              "ellos": "repiten"
+            }
+          },
+          {
+            "infinitivo": "seguir",
+            "traduccion": "следовать, продолжать",
+            "formas": {
+              "yo": "sigo",
+              "tu": "sigues",
+              "el": "sigue",
+              "nosotros": "seguimos",
+              "vosotros": "seguís",
+              "ellos": "siguen"
+            }
+          },
+          {
+            "infinitivo": "vestir",
+            "traduccion": "одевать (кого-то)",
+            "formas": {
+              "yo": "visto",
+              "tu": "vistes",
+              "el": "viste",
+              "nosotros": "vestimos",
+              "vosotros": "vestís",
+              "ellos": "visten"
+            }
+          }
+        ],
+        "otras": [
+          {
+            "id": "reflexivos",
+            "nombre": "Verbos reflexivos",
+            "verbos": [
+              {
+                "infinitivo": "parecerse",
+                "traduccion": "быть похожим на",
+                "formas": {
+                  "yo": "me parezco",
+                  "tu": "te pareces",
+                  "el": "se parece",
+                  "nosotros": "nos parecemos",
+                  "vosotros": "os parecéis",
+                  "ellos": "se parecen"
+                }
+              },
+              {
+                "infinitivo": "vestirse",
+                "traduccion": "одеваться",
+                "formas": {
+                  "yo": "me visto",
+                  "tu": "te vistes",
+                  "el": "se viste",
+                  "nosotros": "nos vestimos",
+                  "vosotros": "os vestís",
+                  "ellos": "se visten"
+                }
+              },
+              {
+                "infinitivo": "llevarse",
+                "traduccion": "ладить, уносить",
+                "formas": {
+                  "yo": "me llevo",
+                  "tu": "te llevas",
+                  "el": "se lleva",
+                  "nosotros": "nos llevamos",
+                  "vosotros": "os lleváis",
+                  "ellos": "se llevan"
+                }
+              },
+              {
+                "infinitivo": "ponerse",
+                "traduccion": "надевать, становиться",
+                "formas": {
+                  "yo": "me pongo",
+                  "tu": "te pones",
+                  "el": "se pone",
+                  "nosotros": "nos ponemos",
+                  "vosotros": "os ponéis",
+                  "ellos": "se ponen"
+                }
+              },
+              {
+                "infinitivo": "quedarse",
+                "traduccion": "оставаться",
+                "formas": {
+                  "yo": "me quedo",
+                  "tu": "te quedas",
+                  "el": "se queda",
+                  "nosotros": "nos quedamos",
+                  "vosotros": "os quedáis",
+                  "ellos": "se quedan"
+                }
+              },
+              {
+                "infinitivo": "sentirse",
+                "traduccion": "чувствовать себя",
+                "formas": {
+                  "yo": "me siento",
+                  "tu": "te sientes",
+                  "el": "se siente",
+                  "nosotros": "nos sentimos",
+                  "vosotros": "os sentís",
+                  "ellos": "se sienten"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

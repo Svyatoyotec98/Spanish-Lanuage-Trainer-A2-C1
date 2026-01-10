@@ -234,7 +234,10 @@
                 </div>
             </div>
 
-            <button class="btn btn-back" onclick="switchProfile()">Сменить профиль</button>
+            <div class="level-select-buttons">
+                <button class="btn btn-back" onclick="switchProfile()">Сменить профиль</button>
+                <button class="btn btn-qa" onclick="showQADeveloperMode()">🧪 QA</button>
+            </div>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════════
@@ -250,137 +253,20 @@
              ═══════════════════════════════════════════════════════════════ -->
         <div id="mainMenu" class="hidden">
             <div class="main-menu-header">
-                <button class="btn btn-back-level" onclick="showLevelSelect()">← Уровни</button>
                 <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
             </div>
             <h1 id="mainMenuTitle">Spanish Trainer A2</h1>
             <p class="subtitle">Выберите Unidad для практики</p>
 
-            <div style="margin-top: 30px;">
-                <!-- Unidad 1 -->
-                <div class="category-card" id="unidad-1-btn" onclick="showUnidadMenu('unidad_1')">
-                    <div class="category-header">
-                        <span class="category-title">📚 Unidad 1</span>
-                        <span class="category-icon">🔓</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="unidad-1-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="unidad-1-progress-text">0% завершено</p>
-                </div>
-
-                <!-- Unidad 2 -->
-                <div class="category-card locked" id="unidad-2-btn" onclick="showUnidadMenu('unidad_2')">
-                    <div class="category-header">
-                        <span class="category-title">📘 Unidad 2</span>
-                        <span class="category-icon">🔒</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="unidad-2-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="unidad-2-progress-text">Заблокировано - Завершите Unidad 1 (80%)</p>
-                </div>
-
-                <!-- Unidad 3 -->
-                <div class="category-card locked" id="unidad-3-btn" onclick="showUnidadMenu('unidad_3')">
-                    <div class="category-header">
-                        <span class="category-title">📗 Unidad 3</span>
-                        <span class="category-icon">🔒</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="unidad-3-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="unidad-3-progress-text">Заблокировано - Завершите Unidad 2 (80%)</p>
-                </div>
-
-                <!-- Unidad 4 -->
-                <div class="category-card locked" id="unidad-4-btn" onclick="showUnidadMenu('unidad_4')">
-                    <div class="category-header">
-                        <span class="category-title">📕 Unidad 4</span>
-                        <span class="category-icon">🔒</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="unidad-4-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="unidad-4-progress-text">Заблокировано - Завершите Unidad 3 (80%)</p>
-                </div>
-
-                <!-- Unidad 5 -->
-                <div class="category-card locked" id="unidad-5-btn" onclick="showUnidadMenu('unidad_5')">
-                    <div class="category-header">
-                        <span class="category-title">📙 Unidad 5</span>
-                        <span class="category-icon">🔒</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="unidad-5-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="unidad-5-progress-text">Заблокировано - Завершите Unidad 4 (80%)</p>
-                </div>
-
-                <!-- Unidad 6 -->
-                <div class="category-card locked" id="unidad-6-btn" onclick="showUnidadMenu('unidad_6')">
-                    <div class="category-header">
-                        <span class="category-title">📔 Unidad 6</span>
-                        <span class="category-icon">🔒</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="unidad-6-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="unidad-6-progress-text">Заблокировано - Завершите Unidad 5 (80%)</p>
-                </div>
-
-                <!-- Unidad 7 -->
-                <div class="category-card locked" id="unidad-7-btn" onclick="showUnidadMenu('unidad_7')">
-                    <div class="category-header">
-                        <span class="category-title">📓 Unidad 7</span>
-                        <span class="category-icon">🔒</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="unidad-7-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="unidad-7-progress-text">Заблокировано - Завершите Unidad 6 (80%)</p>
-                </div>
-
-                <!-- Unidad 8 -->
-                <div class="category-card locked" id="unidad-8-btn" onclick="showUnidadMenu('unidad_8')">
-                    <div class="category-header">
-                        <span class="category-title">📖 Unidad 8</span>
-                        <span class="category-icon">🔒</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="unidad-8-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="unidad-8-progress-text">Заблокировано - Завершите Unidad 7 (80%)</p>
-                </div>
-
-                <!-- Unidad 9 -->
-                <div class="category-card locked" id="unidad-9-btn" onclick="showUnidadMenu('unidad_9')">
-                    <div class="category-header">
-                        <span class="category-title">📒 Unidad 9</span>
-                        <span class="category-icon">🔒</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="unidad-9-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="unidad-9-progress-text">Заблокировано - Завершите Unidad 8 (80%)</p>
-                </div>
-
-                <!-- Unidad 10 -->
-                <div class="category-card locked" id="unidad-10-btn" onclick="showUnidadMenu('unidad_10')">
-                    <div class="category-header">
-                        <span class="category-title">📑 Unidad 10</span>
-                        <span class="category-icon">🔒</span>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-bar-fill" id="unidad-10-progress-bar" style="width: 0%"></div>
-                    </div>
-                    <p class="progress-text" id="unidad-10-progress-text">Заблокировано - Завершите Unidad 9 (80%)</p>
-                </div>
+            <div id="unidadesContainer" style="margin-top: 30px;">
+                <!-- Units will be rendered dynamically by JavaScript -->
             </div>
 
-            <div style="margin-top: 40px;">
-                <button class="btn btn-secondary" onclick="showVerbMenu()">🔄 Практика спряжения глаголов</button>
-                <button class="btn btn-warning" onclick="showQADeveloperMode()">🧪 Режим разработчика QA</button>
+            <!-- Bottom navigation: arrows + LEVELS button -->
+            <div class="units-pagination">
+                <button class="pagination-arrow pagination-left hidden" id="unitsPrevBtn" onclick="prevUnitsPage()">←</button>
+                <button class="btn btn-levels" onclick="showLevelSelect()">🌍 Уровни</button>
+                <button class="pagination-arrow pagination-right" id="unitsNextBtn" onclick="nextUnitsPage()">→</button>
             </div>
 
             <div class="footer">
@@ -1471,19 +1357,30 @@
              QA DEVELOPER MODE
              ═══════════════════════════════════════════════════════════════ -->
         <div id="qaScreen" class="hidden">
-            <button class="btn btn-grammar" onclick="showGrammarList()">📚 Справочник</button>
             <h1>🧪 Режим разработчика QA</h1>
             <p class="subtitle">Инструменты для тестирования и отладки</p>
 
             <div style="margin: 30px 0;">
+                <h3 style="color: #2c3e50; margin-bottom: 15px;">🌍 Уровни</h3>
+                <button class="btn btn-primary" onclick="unlockAllLevels()">🔓 Разблокировать все уровни</button>
+                <button class="btn btn-secondary" onclick="lockAllLevels()">🔒 Заблокировать уровни (по прогрессу)</button>
+
+                <h3 style="color: #2c3e50; margin: 25px 0 15px 0;">📚 Unidades</h3>
                 <button class="btn btn-primary" onclick="unlockAllUnidades()">🔓 Разблокировать все Unidades</button>
                 <button class="btn btn-warning" onclick="resetProgress()">🔄 Сбросить весь прогресс</button>
                 <button class="btn btn-secondary" onclick="fillProgress()">📊 Заполнить прогресс до 100%</button>
+
+                <h3 style="color: #2c3e50; margin: 25px 0 15px 0;">🎓 Экзамены и тесты</h3>
                 <button class="btn btn-primary" id="devExamToggleBtn" onclick="toggleDevExamUnlock()">🎓 Разблокировать экзамен</button>
                 <button class="btn btn-success" onclick="unlockAllPalabrasTests()">🟢 Разблокировать все тесты Palabras</button>
+
+                <h3 style="color: #2c3e50; margin: 25px 0 15px 0;">🔧 Отладка</h3>
                 <button class="btn btn-success" onclick="runQATestsV3()">✅ Запустить QA тесты</button>
                 <button class="btn btn-warning" onclick="viewLocalStorage()">💾 Посмотреть localStorage</button>
-                <button class="btn btn-back" onclick="showMainMenu()">← Назад в главное меню</button>
+
+                <div style="margin-top: 30px;">
+                    <button class="btn btn-back" onclick="showLevelSelect()">← Назад к уровням</button>
+                </div>
             </div>
 
             <div id="qaOutput" style="margin-top: 20px; padding: 20px; background: #f8f9fa; border-radius: 10px; font-family: monospace; font-size: 0.9em; max-height: 400px; overflow-y: auto;">

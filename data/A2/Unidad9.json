@@ -1,0 +1,2305 @@
+{
+  "id": "unidad_9",
+  "title": "Unidad 9: Antes y ahora",
+  "groups": {
+    "EPOCAS_HISTORICAS": [
+      {
+        "spanish": "el siglo",
+        "ru": "век",
+        "type": "sustantivo",
+        "icon": "calendar",
+        "useIcon": true,
+        "hardSentences": [
+          "En el ___ XX hubo dos guerras mundiales.",
+          "Vivimos en el ___ XXI.",
+          "El ___ pasado fue muy importante para la tecnología.",
+          "A principios del ___ XIX no había electricidad."
+        ],
+        "hardSentencesRu": [
+          "В XX веке было две мировые войны.",
+          "Мы живём в XXI веке.",
+          "Прошлый век был очень важен для технологий.",
+          "В начале XIX века не было электричества."
+        ]
+      },
+      {
+        "spanish": "la década",
+        "ru": "десятилетие",
+        "type": "sustantivo",
+        "icon": "calendar-blank",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ de los 80 fue muy importante para la música.",
+          "En la ___ de los 60 hubo muchos cambios sociales.",
+          "Esta ___ ha sido difícil para todos.",
+          "La moda cambia cada ___."
+        ],
+        "hardSentencesRu": [
+          "80-е годы были очень важны для музыки.",
+          "В 60-е годы произошло много социальных изменений.",
+          "Это десятилетие было трудным для всех.",
+          "Мода меняется каждое десятилетие."
+        ]
+      },
+      {
+        "spanish": "la época",
+        "ru": "эпоха",
+        "type": "sustantivo",
+        "icon": "clock-countdown",
+        "useIcon": true,
+        "hardSentences": [
+          "En aquella ___ no había internet.",
+          "La ___ medieval duró varios siglos.",
+          "Vivimos en una ___ de grandes cambios.",
+          "En la ___ de Franco no había libertad."
+        ],
+        "hardSentencesRu": [
+          "В ту эпоху не было интернета.",
+          "Средневековая эпоха длилась несколько веков.",
+          "Мы живём в эпоху больших перемен.",
+          "В эпоху Франко не было свободы."
+        ]
+      },
+      {
+        "spanish": "el pasado",
+        "ru": "прошлое",
+        "type": "sustantivo",
+        "icon": "rewind",
+        "useIcon": true,
+        "hardSentences": [
+          "En el ___ la vida era muy diferente.",
+          "No podemos cambiar el ___.",
+          "El ___ nos ayuda a entender el presente.",
+          "Hay que aprender del ___."
+        ],
+        "hardSentencesRu": [
+          "В прошлом жизнь была совсем другой.",
+          "Мы не можем изменить прошлое.",
+          "Прошлое помогает нам понять настоящее.",
+          "Нужно учиться на прошлом."
+        ]
+      },
+      {
+        "spanish": "el presente",
+        "ru": "настоящее",
+        "type": "sustantivo",
+        "icon": "play",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay que vivir el ___.",
+          "El ___ es resultado del pasado.",
+          "En el ___ todo es más rápido.",
+          "El ___ es lo único que tenemos."
+        ],
+        "hardSentencesRu": [
+          "Нужно жить настоящим.",
+          "Настоящее — это результат прошлого.",
+          "В настоящем всё быстрее.",
+          "Настоящее — это единственное, что у нас есть."
+        ]
+      },
+      {
+        "spanish": "el futuro",
+        "ru": "будущее",
+        "type": "sustantivo",
+        "icon": "fast-forward",
+        "useIcon": true,
+        "hardSentences": [
+          "Nadie sabe qué pasará en el ___.",
+          "El ___ depende de nuestras decisiones.",
+          "En el ___ habrá coches voladores.",
+          "Tenemos que pensar en el ___."
+        ],
+        "hardSentencesRu": [
+          "Никто не знает, что будет в будущем.",
+          "Будущее зависит от наших решений.",
+          "В будущем будут летающие машины.",
+          "Мы должны думать о будущем."
+        ]
+      },
+      {
+        "spanish": "antiguo",
+        "ru": "древний/старинный (м)",
+        "type": "adjetivo",
+        "icon": "ruins",
+        "useIcon": true,
+        "hardSentences": [
+          "Este edificio es muy ___.",
+          "Me gustan los muebles ___s.",
+          "En el Egipto ___ construyeron las pirámides.",
+          "Es un libro muy ___, del siglo XV."
+        ],
+        "hardSentencesRu": [
+          "Это здание очень старинное.",
+          "Мне нравится старинная мебель.",
+          "В Древнем Египте построили пирамиды.",
+          "Это очень старинная книга, XV века."
+        ]
+      },
+      {
+        "spanish": "moderno",
+        "ru": "современный (м)",
+        "type": "adjetivo",
+        "icon": "buildings",
+        "useIcon": true,
+        "hardSentences": [
+          "Este diseño es muy ___.",
+          "Vivimos en un mundo ___.",
+          "El arte ___ es difícil de entender.",
+          "Prefiero los edificios ___s."
+        ],
+        "hardSentencesRu": [
+          "Этот дизайн очень современный.",
+          "Мы живём в современном мире.",
+          "Современное искусство сложно понять.",
+          "Я предпочитаю современные здания."
+        ]
+      }
+    ],
+    "ETAPAS_DE_LA_VIDA": [
+      {
+        "spanish": "la infancia",
+        "ru": "детство",
+        "type": "sustantivo",
+        "icon": "baby",
+        "useIcon": true,
+        "hardSentences": [
+          "Tuve una ___ muy feliz.",
+          "En mi ___ vivía en un pueblo pequeño.",
+          "La ___ es la mejor época de la vida.",
+          "Recuerdo mi ___ con mucho cariño."
+        ],
+        "hardSentencesRu": [
+          "У меня было очень счастливое детство.",
+          "В детстве я жил в маленькой деревне.",
+          "Детство — лучшая пора жизни.",
+          "Я вспоминаю своё детство с большой любовью."
+        ]
+      },
+      {
+        "spanish": "la adolescencia",
+        "ru": "подростковый возраст",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ es una etapa difícil.",
+          "En mi ___ escuchaba mucho rock.",
+          "Durante la ___ todo parece más intenso.",
+          "La ___ es época de muchos cambios."
+        ],
+        "hardSentencesRu": [
+          "Подростковый возраст — сложный период.",
+          "В подростковом возрасте я много слушал рок.",
+          "В подростковом возрасте всё кажется более интенсивным.",
+          "Подростковый возраст — время многих перемен."
+        ]
+      },
+      {
+        "spanish": "la juventud",
+        "ru": "молодость",
+        "type": "sustantivo",
+        "icon": "person-simple-run",
+        "useIcon": true,
+        "hardSentences": [
+          "En mi ___ viajé por todo el mundo.",
+          "La ___ pasa muy rápido.",
+          "En la ___ tenemos más energía.",
+          "Disfruta de tu ___ mientras puedas."
+        ],
+        "hardSentencesRu": [
+          "В молодости я путешествовал по всему миру.",
+          "Молодость проходит очень быстро.",
+          "В молодости у нас больше энергии.",
+          "Наслаждайся молодостью, пока можешь."
+        ]
+      },
+      {
+        "spanish": "la madurez",
+        "ru": "зрелость",
+        "type": "sustantivo",
+        "icon": "user-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "En la ___ somos más responsables.",
+          "La ___ trae experiencia y sabiduría.",
+          "Alcanzó la ___ profesional a los 40.",
+          "Con la ___ aprendemos a valorar las cosas."
+        ],
+        "hardSentencesRu": [
+          "В зрелости мы более ответственны.",
+          "Зрелость приносит опыт и мудрость.",
+          "Он достиг профессиональной зрелости в 40 лет.",
+          "Со зрелостью мы учимся ценить вещи."
+        ]
+      },
+      {
+        "spanish": "la vejez",
+        "ru": "старость",
+        "type": "sustantivo",
+        "icon": "person-simple-walk",
+        "useIcon": true,
+        "hardSentences": [
+          "En la ___ hay que cuidar la salud.",
+          "La ___ puede ser una etapa muy feliz.",
+          "Llegó a la ___ con buena salud.",
+          "En la ___ tenemos más tiempo libre."
+        ],
+        "hardSentencesRu": [
+          "В старости нужно заботиться о здоровье.",
+          "Старость может быть очень счастливым периодом.",
+          "Он дожил до старости в добром здравии.",
+          "В старости у нас больше свободного времени."
+        ]
+      },
+      {
+        "spanish": "el niño",
+        "ru": "ребёнок",
+        "type": "sustantivo",
+        "icon": "baby",
+        "useIcon": true,
+        "hardSentences": [
+          "De ___ jugaba mucho en la calle.",
+          "Este ___ es muy inteligente.",
+          "Cuando era ___, no había ordenadores.",
+          "El ___ aprende muy rápido."
+        ],
+        "hardSentencesRu": [
+          "В детстве я много играл на улице.",
+          "Этот ребёнок очень умный.",
+          "Когда я был ребёнком, не было компьютеров.",
+          "Ребёнок учится очень быстро."
+        ]
+      },
+      {
+        "spanish": "el joven",
+        "ru": "молодой человек",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Los ___es de hoy tienen más oportunidades.",
+          "Cuando era ___, vivía con mis padres.",
+          "Este ___ tiene mucho talento.",
+          "De ___ trabajaba en un bar."
+        ],
+        "hardSentencesRu": [
+          "У современной молодёжи больше возможностей.",
+          "Когда я был молодым, я жил с родителями.",
+          "Этот молодой человек очень талантлив.",
+          "В молодости я работал в баре."
+        ]
+      },
+      {
+        "spanish": "el adulto",
+        "ru": "взрослый",
+        "type": "sustantivo",
+        "icon": "user-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Esta película es solo para ___s.",
+          "Un ___ debe ser responsable.",
+          "Como ___, tengo que pagar impuestos.",
+          "Los ___s a veces olvidan cómo jugar."
+        ],
+        "hardSentencesRu": [
+          "Этот фильм только для взрослых.",
+          "Взрослый должен быть ответственным.",
+          "Как взрослый, я должен платить налоги.",
+          "Взрослые иногда забывают, как играть."
+        ]
+      },
+      {
+        "spanish": "la persona mayor",
+        "ru": "пожилой человек",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay que respetar a las ___s ___es.",
+          "Mi abuelo es una ___ ___ muy activa.",
+          "Las ___s ___es tienen mucha experiencia.",
+          "Ayudé a una ___ ___ a cruzar la calle."
+        ],
+        "hardSentencesRu": [
+          "Нужно уважать пожилых людей.",
+          "Мой дедушка — очень активный пожилой человек.",
+          "У пожилых людей много опыта.",
+          "Я помог пожилому человеку перейти улицу."
+        ]
+      }
+    ],
+    "INVENTOS_Y_DESCUBRIMIENTOS": [
+      {
+        "spanish": "el invento",
+        "ru": "изобретение",
+        "type": "sustantivo",
+        "icon": "lightbulb",
+        "useIcon": true,
+        "hardSentences": [
+          "La rueda fue un ___ revolucionario.",
+          "Este ___ cambió la historia.",
+          "El teléfono fue un gran ___.",
+          "Cada ___ mejora nuestra vida."
+        ],
+        "hardSentencesRu": [
+          "Колесо было революционным изобретением.",
+          "Это изобретение изменило историю.",
+          "Телефон был великим изобретением.",
+          "Каждое изобретение улучшает нашу жизнь."
+        ]
+      },
+      {
+        "spanish": "el descubrimiento",
+        "ru": "открытие",
+        "type": "sustantivo",
+        "icon": "magnifying-glass",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de la penicilina salvó millones de vidas.",
+          "Fue un ___ científico muy importante.",
+          "El ___ de América cambió el mundo.",
+          "Este ___ revolucionó la medicina."
+        ],
+        "hardSentencesRu": [
+          "Открытие пенициллина спасло миллионы жизней.",
+          "Это было очень важное научное открытие.",
+          "Открытие Америки изменило мир.",
+          "Это открытие произвело революцию в медицине."
+        ]
+      },
+      {
+        "spanish": "la rueda",
+        "ru": "колесо",
+        "type": "sustantivo",
+        "icon": "circle",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ se inventó hace miles de años.",
+          "Sin la ___ no existirían los coches.",
+          "La ___ fue uno de los inventos más importantes.",
+          "Antes de la ___ todo se transportaba a mano."
+        ],
+        "hardSentencesRu": [
+          "Колесо изобрели тысячи лет назад.",
+          "Без колеса не было бы автомобилей.",
+          "Колесо было одним из важнейших изобретений.",
+          "До изобретения колеса всё переносили вручную."
+        ]
+      },
+      {
+        "spanish": "la imprenta",
+        "ru": "книгопечатание/типография",
+        "type": "sustantivo",
+        "icon": "printer",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ permitió difundir el conocimiento.",
+          "Gutenberg inventó la ___ en el siglo XV.",
+          "Antes de la ___, los libros se copiaban a mano.",
+          "La ___ cambió la historia de la humanidad."
+        ],
+        "hardSentencesRu": [
+          "Книгопечатание позволило распространять знания.",
+          "Гутенберг изобрёл книгопечатание в XV веке.",
+          "До изобретения книгопечатания книги копировали вручную.",
+          "Книгопечатание изменило историю человечества."
+        ]
+      },
+      {
+        "spanish": "la electricidad",
+        "ru": "электричество",
+        "type": "sustantivo",
+        "icon": "lightning",
+        "useIcon": true,
+        "hardSentences": [
+          "Sin ___ no podríamos vivir como ahora.",
+          "La ___ llegó a los pueblos hace poco tiempo.",
+          "Antes de la ___ se usaban velas.",
+          "La ___ transformó la vida cotidiana."
+        ],
+        "hardSentencesRu": [
+          "Без электричества мы не смогли бы жить как сейчас.",
+          "Электричество пришло в деревни совсем недавно.",
+          "До появления электричества пользовались свечами.",
+          "Электричество изменило повседневную жизнь."
+        ]
+      },
+      {
+        "spanish": "la vacuna",
+        "ru": "вакцина",
+        "type": "sustantivo",
+        "icon": "syringe",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ contra la viruela salvó millones de vidas.",
+          "Las ___s son muy importantes para la salud.",
+          "Gracias a las ___s, muchas enfermedades han desaparecido.",
+          "Hay que ponerse la ___ cada año."
+        ],
+        "hardSentencesRu": [
+          "Вакцина от оспы спасла миллионы жизней.",
+          "Вакцины очень важны для здоровья.",
+          "Благодаря вакцинам многие болезни исчезли.",
+          "Нужно делать прививку каждый год."
+        ]
+      },
+      {
+        "spanish": "el teléfono",
+        "ru": "телефон",
+        "type": "sustantivo",
+        "icon": "phone",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ cambió la forma de comunicarnos.",
+          "Antes el ___ solo servía para llamar.",
+          "Mi abuela no tenía ___ en casa.",
+          "El ___ móvil ha revolucionado nuestra vida."
+        ],
+        "hardSentencesRu": [
+          "Телефон изменил способ нашего общения.",
+          "Раньше телефон использовали только для звонков.",
+          "У моей бабушки не было телефона дома.",
+          "Мобильный телефон произвёл революцию в нашей жизни."
+        ]
+      },
+      {
+        "spanish": "el ordenador",
+        "ru": "компьютер",
+        "type": "sustantivo",
+        "icon": "desktop",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ ha cambiado nuestra forma de trabajar.",
+          "Antes los ___es eran enormes.",
+          "Sin el ___ no existiría internet.",
+          "Trabajo ocho horas al día con el ___."
+        ],
+        "hardSentencesRu": [
+          "Компьютер изменил наш способ работы.",
+          "Раньше компьютеры были огромными.",
+          "Без компьютера не было бы интернета.",
+          "Я работаю восемь часов в день за компьютером."
+        ]
+      },
+      {
+        "spanish": "internet",
+        "ru": "интернет",
+        "type": "sustantivo",
+        "icon": "globe",
+        "useIcon": true,
+        "hardSentences": [
+          "___ ha conectado a todo el mundo.",
+          "Antes de ___ era difícil buscar información.",
+          "Gracias a ___ podemos trabajar desde casa.",
+          "___ ha cambiado la forma de comprar."
+        ],
+        "hardSentencesRu": [
+          "Интернет связал весь мир.",
+          "До интернета было сложно искать информацию.",
+          "Благодаря интернету мы можем работать из дома.",
+          "Интернет изменил способ покупок."
+        ]
+      }
+    ],
+    "SOCIEDAD_Y_CAMBIOS": [
+      {
+        "spanish": "la democracia",
+        "ru": "демократия",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "En España la ___ llegó en 1978.",
+          "La ___ permite elegir a nuestros representantes.",
+          "Antes de la ___ no había libertad.",
+          "La ___ es un sistema político moderno."
+        ],
+        "hardSentencesRu": [
+          "В Испании демократия наступила в 1978 году.",
+          "Демократия позволяет выбирать наших представителей.",
+          "До демократии не было свободы.",
+          "Демократия — это современная политическая система."
+        ]
+      },
+      {
+        "spanish": "la dictadura",
+        "ru": "диктатура",
+        "type": "sustantivo",
+        "icon": "shield-warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Durante la ___ no había libertad de expresión.",
+          "La ___ de Franco duró casi 40 años.",
+          "En una ___ no se puede votar libremente.",
+          "La ___ terminó con la muerte del dictador."
+        ],
+        "hardSentencesRu": [
+          "Во время диктатуры не было свободы слова.",
+          "Диктатура Франко длилась почти 40 лет.",
+          "При диктатуре нельзя свободно голосовать.",
+          "Диктатура закончилась со смертью диктатора."
+        ]
+      },
+      {
+        "spanish": "la libertad",
+        "ru": "свобода",
+        "type": "sustantivo",
+        "icon": "bird",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ de expresión es un derecho fundamental.",
+          "Antes no había ___ para viajar.",
+          "La ___ es muy importante para las personas.",
+          "Lucharon por la ___ de su país."
+        ],
+        "hardSentencesRu": [
+          "Свобода слова — это основное право.",
+          "Раньше не было свободы для путешествий.",
+          "Свобода очень важна для людей.",
+          "Они боролись за свободу своей страны."
+        ]
+      },
+      {
+        "spanish": "el derecho",
+        "ru": "право",
+        "type": "sustantivo",
+        "icon": "scales",
+        "useIcon": true,
+        "hardSentences": [
+          "Todos tenemos ___ a la educación.",
+          "El ___ al voto es muy importante.",
+          "Antes las mujeres no tenían ___ a votar.",
+          "Es un ___ fundamental de todos los ciudadanos."
+        ],
+        "hardSentencesRu": [
+          "Все мы имеем право на образование.",
+          "Право голоса очень важно.",
+          "Раньше женщины не имели права голосовать.",
+          "Это основное право всех граждан."
+        ]
+      },
+      {
+        "spanish": "la igualdad",
+        "ru": "равенство",
+        "type": "sustantivo",
+        "icon": "equals",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ entre hombres y mujeres es fundamental.",
+          "Antes no había ___ de oportunidades.",
+          "Luchamos por la ___ de todos.",
+          "La ___ salarial todavía no existe."
+        ],
+        "hardSentencesRu": [
+          "Равенство между мужчинами и женщинами — это фундаментально.",
+          "Раньше не было равенства возможностей.",
+          "Мы боремся за равенство для всех.",
+          "Равенство зарплат до сих пор не существует."
+        ]
+      },
+      {
+        "spanish": "el cambio",
+        "ru": "изменение/перемена",
+        "type": "sustantivo",
+        "icon": "arrows-clockwise",
+        "useIcon": true,
+        "hardSentences": [
+          "Ha habido muchos ___s en los últimos años.",
+          "El ___ climático es un problema global.",
+          "Los ___s sociales han sido muy importantes.",
+          "No me gusta el ___, prefiero la rutina."
+        ],
+        "hardSentencesRu": [
+          "За последние годы произошло много изменений.",
+          "Изменение климата — глобальная проблема.",
+          "Социальные изменения были очень важны.",
+          "Мне не нравятся перемены, я предпочитаю рутину."
+        ]
+      },
+      {
+        "spanish": "la ley",
+        "ru": "закон",
+        "type": "sustantivo",
+        "icon": "gavel",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ del divorcio se aprobó en 1981.",
+          "Hay que respetar las ___es.",
+          "Esta ___ protege a los trabajadores.",
+          "Antes la ___ no permitía el divorcio."
+        ],
+        "hardSentencesRu": [
+          "Закон о разводе был принят в 1981 году.",
+          "Нужно соблюдать законы.",
+          "Этот закон защищает работников.",
+          "Раньше закон не разрешал развод."
+        ]
+      },
+      {
+        "spanish": "el progreso",
+        "ru": "прогресс",
+        "type": "sustantivo",
+        "icon": "trend-up",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tecnológico ha sido enorme.",
+          "El ___ no siempre es positivo.",
+          "Gracias al ___ vivimos mejor.",
+          "El ___ social es muy importante."
+        ],
+        "hardSentencesRu": [
+          "Технологический прогресс был огромным.",
+          "Прогресс не всегда положителен.",
+          "Благодаря прогрессу мы живём лучше.",
+          "Социальный прогресс очень важен."
+        ]
+      }
+    ],
+    "MARCADORES_TEMPORALES": [
+      {
+        "spanish": "antes",
+        "ru": "раньше",
+        "type": "adverbio",
+        "icon": "arrow-left",
+        "useIcon": true,
+        "hardSentences": [
+          "___ la vida era más tranquila.",
+          "___ no había teléfonos móviles.",
+          "___ la gente viajaba menos.",
+          "___ de internet, buscábamos información en libros."
+        ],
+        "hardSentencesRu": [
+          "Раньше жизнь была спокойнее.",
+          "Раньше не было мобильных телефонов.",
+          "Раньше люди меньше путешествовали.",
+          "До интернета мы искали информацию в книгах."
+        ]
+      },
+      {
+        "spanish": "ahora",
+        "ru": "сейчас",
+        "type": "adverbio",
+        "icon": "arrow-right",
+        "useIcon": true,
+        "hardSentences": [
+          "___ todo es más rápido.",
+          "___ podemos comunicarnos con todo el mundo.",
+          "___ la tecnología está en todas partes.",
+          "___ mismo voy a llamarte."
+        ],
+        "hardSentencesRu": [
+          "Сейчас всё быстрее.",
+          "Сейчас мы можем общаться со всем миром.",
+          "Сейчас технологии повсюду.",
+          "Сейчас же я тебе позвоню."
+        ]
+      },
+      {
+        "spanish": "actualmente",
+        "ru": "в настоящее время",
+        "type": "adverbio",
+        "icon": "clock",
+        "useIcon": true,
+        "hardSentences": [
+          "___ vivo en Madrid.",
+          "___ trabajo desde casa.",
+          "___ hay más oportunidades que antes.",
+          "___ la esperanza de vida es mayor."
+        ],
+        "hardSentencesRu": [
+          "В настоящее время я живу в Мадриде.",
+          "В настоящее время я работаю из дома.",
+          "В настоящее время возможностей больше, чем раньше.",
+          "В настоящее время продолжительность жизни выше."
+        ]
+      },
+      {
+        "spanish": "entonces",
+        "ru": "тогда",
+        "type": "adverbio",
+        "icon": "clock-afternoon",
+        "useIcon": true,
+        "hardSentences": [
+          "___ no existía la televisión.",
+          "___ la vida era muy diferente.",
+          "En aquella época, ___, todo era más barato.",
+          "___ vivíamos en un pueblo pequeño."
+        ],
+        "hardSentencesRu": [
+          "Тогда не существовало телевидения.",
+          "Тогда жизнь была совсем другой.",
+          "В ту эпоху тогда всё было дешевле.",
+          "Тогда мы жили в маленькой деревне."
+        ]
+      },
+      {
+        "spanish": "todavía",
+        "ru": "всё ещё",
+        "type": "adverbio",
+        "icon": "hourglass",
+        "useIcon": true,
+        "hardSentences": [
+          "___ vivo en la misma casa.",
+          "___ no he terminado el trabajo.",
+          "___ recuerdo mi infancia.",
+          "___ existen problemas de desigualdad."
+        ],
+        "hardSentencesRu": [
+          "Я всё ещё живу в том же доме.",
+          "Я всё ещё не закончил работу.",
+          "Я всё ещё помню своё детство.",
+          "Всё ещё существуют проблемы неравенства."
+        ]
+      },
+      {
+        "spanish": "ya no",
+        "ru": "уже не",
+        "type": "adverbio",
+        "icon": "x",
+        "useIcon": true,
+        "hardSentences": [
+          "___ vivo con mis padres.",
+          "___ uso el teléfono fijo.",
+          "___ existe esa tienda.",
+          "___ tengo tanto tiempo libre."
+        ],
+        "hardSentencesRu": [
+          "Я уже не живу с родителями.",
+          "Я уже не пользуюсь стационарным телефоном.",
+          "Этого магазина уже не существует.",
+          "У меня уже нет столько свободного времени."
+        ]
+      }
+    ],
+    "VERBOS_DE_CAMBIO": [
+      {
+        "spanish": "cambiar",
+        "ru": "меняться/изменять",
+        "type": "verbo",
+        "icon": "arrows-clockwise",
+        "useIcon": true,
+        "hardSentences": [
+          "La tecnología ha hecho ___ nuestras vidas.",
+          "Me gustaría ___ de trabajo.",
+          "Las cosas han ___ado mucho.",
+          "Quiero ___ mi forma de vida."
+        ],
+        "hardSentencesRu": [
+          "Технологии изменили нашу жизнь.",
+          "Я хотел бы сменить работу.",
+          "Многое изменилось.",
+          "Я хочу изменить свой образ жизни."
+        ]
+      },
+      {
+        "spanish": "existir",
+        "ru": "существовать",
+        "type": "verbo",
+        "icon": "check",
+        "useIcon": true,
+        "hardSentences": [
+          "Antes no ___ía internet.",
+          "¿Crees que ___en los extraterrestres?",
+          "Esta tradición ___e desde hace siglos.",
+          "Ya no ___e esa costumbre."
+        ],
+        "hardSentencesRu": [
+          "Раньше не существовало интернета.",
+          "Ты веришь, что существуют инопланетяне?",
+          "Эта традиция существует веками.",
+          "Этого обычая уже не существует."
+        ]
+      },
+      {
+        "spanish": "desaparecer",
+        "ru": "исчезать",
+        "type": "verbo",
+        "icon": "eye-slash",
+        "useIcon": true,
+        "hardSentences": [
+          "Muchas tradiciones han ___ido.",
+          "Algunas especies están ___iendo.",
+          "Los pueblos pequeños están ___iendo.",
+          "La costumbre de escribir cartas ha ___ido."
+        ],
+        "hardSentencesRu": [
+          "Многие традиции исчезли.",
+          "Некоторые виды исчезают.",
+          "Маленькие деревни исчезают.",
+          "Обычай писать письма исчез."
+        ]
+      },
+      {
+        "spanish": "aparecer",
+        "ru": "появляться",
+        "type": "verbo",
+        "icon": "eye",
+        "useIcon": true,
+        "hardSentences": [
+          "Internet ___ió a finales del siglo XX.",
+          "Han ___ido nuevas formas de comunicación.",
+          "El problema ___ió de repente.",
+          "Cada día ___en nuevas aplicaciones."
+        ],
+        "hardSentencesRu": [
+          "Интернет появился в конце XX века.",
+          "Появились новые формы коммуникации.",
+          "Проблема появилась внезапно.",
+          "Каждый день появляются новые приложения."
+        ]
+      },
+      {
+        "spanish": "mejorar",
+        "ru": "улучшать(ся)",
+        "type": "verbo",
+        "icon": "trend-up",
+        "useIcon": true,
+        "hardSentences": [
+          "La medicina ha ___ado mucho.",
+          "Quiero ___ mi español.",
+          "La situación ha ___ado.",
+          "La calidad de vida ha ___ado."
+        ],
+        "hardSentencesRu": [
+          "Медицина значительно улучшилась.",
+          "Я хочу улучшить свой испанский.",
+          "Ситуация улучшилась.",
+          "Качество жизни улучшилось."
+        ]
+      },
+      {
+        "spanish": "empeorar",
+        "ru": "ухудшать(ся)",
+        "type": "verbo",
+        "icon": "trend-down",
+        "useIcon": true,
+        "hardSentences": [
+          "El clima ha ___ado en los últimos años.",
+          "Su salud ha ___ado.",
+          "La situación económica ha ___ado.",
+          "No quiero que las cosas ___en."
+        ],
+        "hardSentencesRu": [
+          "Климат ухудшился за последние годы.",
+          "Его здоровье ухудшилось.",
+          "Экономическая ситуация ухудшилась.",
+          "Я не хочу, чтобы дела ухудшились."
+        ]
+      },
+      {
+        "spanish": "recordar",
+        "ru": "помнить/вспоминать",
+        "type": "verbo",
+        "icon": "brain",
+        "useIcon": true,
+        "hardSentences": [
+          "¿___s cómo era la vida antes?",
+          "No ___o su nombre.",
+          "Siempre ___aré mi infancia.",
+          "___o cuando no había internet."
+        ],
+        "hardSentencesRu": [
+          "Ты помнишь, какой была жизнь раньше?",
+          "Я не помню его имя.",
+          "Я всегда буду помнить своё детство.",
+          "Я помню, когда не было интернета."
+        ]
+      },
+      {
+        "spanish": "comparar",
+        "ru": "сравнивать",
+        "type": "verbo",
+        "icon": "arrows-left-right",
+        "useIcon": true,
+        "hardSentences": [
+          "Es interesante ___ el pasado con el presente.",
+          "No debes ___ tu vida con la de otros.",
+          "Si ___amos, antes todo era más lento.",
+          "Me gusta ___ precios antes de comprar."
+        ],
+        "hardSentencesRu": [
+          "Интересно сравнивать прошлое с настоящим.",
+          "Не стоит сравнивать свою жизнь с чужой.",
+          "Если сравнивать, раньше всё было медленнее.",
+          "Мне нравится сравнивать цены перед покупкой."
+        ]
+      }
+    ],
+    "VIDA_COTIDIANA_PASADO": [
+      {
+        "spanish": "la costumbre",
+        "ru": "обычай/привычка",
+        "type": "sustantivo",
+        "icon": "repeat",
+        "useIcon": true,
+        "hardSentences": [
+          "Antes había la ___ de cenar en familia.",
+          "Es una ___ muy antigua.",
+          "Esa ___ ya no existe.",
+          "Tengo la ___ de leer antes de dormir."
+        ],
+        "hardSentencesRu": [
+          "Раньше был обычай ужинать всей семьёй.",
+          "Это очень древний обычай.",
+          "Этого обычая уже не существует.",
+          "У меня привычка читать перед сном."
+        ]
+      },
+      {
+        "spanish": "la tradición",
+        "ru": "традиция",
+        "type": "sustantivo",
+        "icon": "scroll",
+        "useIcon": true,
+        "hardSentences": [
+          "Esta ___ tiene cientos de años.",
+          "Es una ___ de mi familia.",
+          "Muchas ___es se están perdiendo.",
+          "La ___ de las doce uvas es muy española."
+        ],
+        "hardSentencesRu": [
+          "Этой традиции сотни лет.",
+          "Это традиция моей семьи.",
+          "Многие традиции теряются.",
+          "Традиция двенадцати виноградин очень испанская."
+        ]
+      },
+      {
+        "spanish": "la máquina de escribir",
+        "ru": "печатная машинка",
+        "type": "sustantivo",
+        "icon": "keyboard",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo usaba una ___.",
+          "Antes de los ordenadores, se usaba la ___.",
+          "La ___ fue un invento revolucionario.",
+          "Ya nadie usa ___s."
+        ],
+        "hardSentencesRu": [
+          "Мой дедушка пользовался печатной машинкой.",
+          "До компьютеров пользовались печатной машинкой.",
+          "Печатная машинка была революционным изобретением.",
+          "Уже никто не пользуется печатными машинками."
+        ]
+      },
+      {
+        "spanish": "la carta",
+        "ru": "письмо",
+        "type": "sustantivo",
+        "icon": "envelope",
+        "useIcon": true,
+        "hardSentences": [
+          "Antes la gente escribía ___s.",
+          "Recibí una ___ de mi amigo.",
+          "Ya nadie envía ___s, solo emails.",
+          "Mi abuela guardaba todas sus ___s."
+        ],
+        "hardSentencesRu": [
+          "Раньше люди писали письма.",
+          "Я получил письмо от друга.",
+          "Уже никто не отправляет письма, только имейлы.",
+          "Моя бабушка хранила все свои письма."
+        ]
+      },
+      {
+        "spanish": "el disco",
+        "ru": "пластинка/диск",
+        "type": "sustantivo",
+        "icon": "vinyl-record",
+        "useIcon": true,
+        "hardSentences": [
+          "Antes escuchábamos música en ___s de vinilo.",
+          "Mi padre tiene una colección de ___s.",
+          "Los ___s compactos ya casi no se usan.",
+          "Compré un ___ de mi grupo favorito."
+        ],
+        "hardSentencesRu": [
+          "Раньше мы слушали музыку на виниловых пластинках.",
+          "У моего отца коллекция пластинок.",
+          "Компакт-диски уже почти не используются.",
+          "Я купил диск моей любимой группы."
+        ]
+      },
+      {
+        "spanish": "el cassette",
+        "ru": "кассета",
+        "type": "sustantivo",
+        "icon": "cassette-tape",
+        "useIcon": true,
+        "hardSentences": [
+          "En los 80 escuchábamos música en ___s.",
+          "Todavía tengo ___s de mi juventud.",
+          "El ___ fue sustituido por el CD.",
+          "Grababa canciones de la radio en ___s."
+        ],
+        "hardSentencesRu": [
+          "В 80-е мы слушали музыку на кассетах.",
+          "У меня всё ещё есть кассеты моей молодости.",
+          "Кассету заменил CD.",
+          "Я записывал песни с радио на кассеты."
+        ]
+      }
+    ]
+  },
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Pretérito imperfecto: verbos regulares",
+      "hint": "-aba / -abas / -ía / -ías",
+      "rule": {
+        "title": "Pretérito imperfecto: verbos REGULARES",
+        "explanation": "El pretérito imperfecto se usa para describir acciones habituales, situaciones o estados en el pasado. Los verbos regulares siguen patrones predecibles según su terminación (-AR, -ER, -IR).",
+        "sections": [
+          {
+            "subtitle": "Verbos en -AR (hablar, trabajar, estudiar)",
+            "points": [
+              "yo: <b>-aba</b> → hablaba, trabajaba, estudiaba",
+              "tú: <b>-abas</b> → hablabas, trabajabas, estudiabas",
+              "él/ella: <b>-aba</b> → hablaba, trabajaba, estudiaba",
+              "nosotros: <b>-ábamos</b> → hablábamos, trabajábamos, estudiábamos",
+              "vosotros: <b>-abais</b> → hablabais, trabajabais, estudiabais",
+              "ellos: <b>-aban</b> → hablaban, trabajaban, estudiaban"
+            ]
+          },
+          {
+            "subtitle": "Verbos en -ER/-IR (comer, vivir, tener)",
+            "points": [
+              "yo: <b>-ía</b> → comía, vivía, tenía",
+              "tú: <b>-ías</b> → comías, vivías, tenías",
+              "él/ella: <b>-ía</b> → comía, vivía, tenía",
+              "nosotros: <b>-íamos</b> → comíamos, vivíamos, teníamos",
+              "vosotros: <b>-íais</b> → comíais, vivíais, teníais",
+              "ellos: <b>-ían</b> → comían, vivían, tenían"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Cuando era niño, jugaba en el parque todos los días.", "ru": "Когда я был ребёнком, я играл в парке каждый день."},
+          {"es": "Mis abuelos vivían en un pueblo pequeño.", "ru": "Мои бабушка и дедушка жили в маленькой деревне."},
+          {"es": "Antes la gente no tenía teléfonos móviles.", "ru": "Раньше у людей не было мобильных телефонов."},
+          {"es": "En los años 80 escuchábamos música en cassettes.", "ru": "В 80-е годы мы слушали музыку на кассетах."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Cuando era niño, ___ en el parque todos los días.", "answer": "jugaba"},
+        {"sentence": "Mi abuela ___ muy bien cuando era joven.", "answer": "cocinaba"},
+        {"sentence": "Antes mis padres ___ en una casa pequeña.", "answer": "vivían"},
+        {"sentence": "De pequeño yo ___ mucha leche.", "answer": "bebía"},
+        {"sentence": "En los años 70 la gente ___ más cartas.", "answer": "escribía"},
+        {"sentence": "Cuando ___ 10 años, iba al colegio en bicicleta.", "answer": "tenía"},
+        {"sentence": "Mi abuelo ___ en una fábrica de coches.", "answer": "trabajaba"},
+        {"sentence": "Antes no ___ tantos coches en las ciudades.", "answer": "había"},
+        {"sentence": "De joven mi madre ___ el piano muy bien.", "answer": "tocaba"},
+        {"sentence": "Mis hermanos y yo ___ mucho cuando éramos pequeños.", "answer": "jugábamos"},
+        {"sentence": "En aquella época la gente ___ más tiempo libre.", "answer": "tenía"},
+        {"sentence": "Cuando era estudiante, ___ en la biblioteca todos los días.", "answer": "estudiaba"},
+        {"sentence": "Mi padre siempre ___ el periódico por la mañana.", "answer": "leía"},
+        {"sentence": "Antes las familias ___ juntas todos los domingos.", "answer": "comían"},
+        {"sentence": "De niño yo ___ mucho la televisión.", "answer": "veía"},
+        {"sentence": "Mis abuelos ___ muchos animales en su granja.", "answer": "tenían"},
+        {"sentence": "En los años 60 la gente ___ menos que ahora.", "answer": "viajaba"},
+        {"sentence": "Cuando era joven, mi madre ___ en un banco.", "answer": "trabajaba"},
+        {"sentence": "Antes los niños ___ más en la calle.", "answer": "jugaban"},
+        {"sentence": "Mi abuela ___ historias muy interesantes.", "answer": "contaba"},
+        {"sentence": "De pequeño yo ___ chocolate todos los días.", "answer": "comía"},
+        {"sentence": "En aquella época nosotros ___ cerca de la playa.", "answer": "vivíamos"},
+        {"sentence": "Antes la gente ___ a pie al trabajo.", "answer": "iba"},
+        {"sentence": "Mis padres ___ mucho cuando eran novios.", "answer": "bailaban"},
+        {"sentence": "De niño yo ___ muy temprano.", "answer": "despertaba"},
+        {"sentence": "En los años 50 las mujeres no ___ fuera de casa.", "answer": "trabajaban"},
+        {"sentence": "Cuando era pequeño, ___ miedo de la oscuridad.", "answer": "tenía"},
+        {"sentence": "Mi abuelo ___ el campo todos los días.", "answer": "cultivaba"},
+        {"sentence": "Antes los estudiantes ___ más libros.", "answer": "leían"},
+        {"sentence": "De joven yo ___ muy rápido.", "answer": "corría"},
+        {"sentence": "En aquella época la gente no ___ internet.", "answer": "usaba"},
+        {"sentence": "Mis padres ___ a mis abuelos todos los fines de semana.", "answer": "visitaban"},
+        {"sentence": "Cuando era niño, ___ mucha fruta.", "answer": "comía"},
+        {"sentence": "Antes las tiendas ___ a las dos del mediodía.", "answer": "cerraban"},
+        {"sentence": "Mi madre ___ muy bien el francés.", "answer": "hablaba"},
+        {"sentence": "De pequeño yo ___ a las nueve de la noche.", "answer": "cenaba"},
+        {"sentence": "En los años 80 nosotros ___ música en discos de vinilo.", "answer": "escuchábamos"},
+        {"sentence": "Antes la gente ___ cartas a mano.", "answer": "escribía"},
+        {"sentence": "Mi abuela ___ el pan en casa.", "answer": "hacía"},
+        {"sentence": "Cuando era joven, yo ___ deporte todos los días.", "answer": "hacía"},
+        {"sentence": "De niño mi hermano ___ mucho.", "answer": "lloraba"},
+        {"sentence": "En aquella época los trenes ___ más lentos.", "answer": "eran"},
+        {"sentence": "Mis abuelos ___ un jardín muy bonito.", "answer": "tenían"},
+        {"sentence": "Antes los niños ___ a la escuela a pie.", "answer": "iban"},
+        {"sentence": "De pequeño yo ___ dibujar.", "answer": "sabía"},
+        {"sentence": "En los años 70 la gente ___ menos ropa.", "answer": "compraba"},
+        {"sentence": "Mi padre ___ mucho cuando era joven.", "answer": "fumaba"},
+        {"sentence": "Cuando era estudiante, ___ poco dinero.", "answer": "tenía"},
+        {"sentence": "Antes las personas ___ más tiempo para descansar.", "answer": "tenían"},
+        {"sentence": "Mi madre ___ la casa todos los sábados.", "answer": "limpiaba"},
+        {"sentence": "De niño yo ___ en una cama pequeña.", "answer": "dormía"},
+        {"sentence": "En aquella época nosotros no ___ vacaciones.", "answer": "teníamos"},
+        {"sentence": "Mis padres ___ al cine todos los viernes.", "answer": "iban"},
+        {"sentence": "Antes la gente ___ agua del pozo.", "answer": "bebía"},
+        {"sentence": "De joven mi padre ___ mucho fútbol.", "answer": "jugaba"},
+        {"sentence": "En los años 60 las familias ___ más hijos.", "answer": "tenían"},
+        {"sentence": "Mi abuela ___ muy bien a mi abuelo.", "answer": "conocía"},
+        {"sentence": "Cuando era pequeño, ___ los deberes por la tarde.", "answer": "hacía"},
+        {"sentence": "Antes los jóvenes ___ más a sus padres.", "answer": "respetaban"},
+        {"sentence": "De niño yo ___ el autobús para ir al colegio.", "answer": "cogía"}
+      ],
+      "microTests": [
+        {"sentence": "Cuando era niño, ___ en el parque.", "answer": "jugaba", "hint": "¿Qué hacía de pequeño? (jugar, yo)"},
+        {"sentence": "Mi abuela ___ muy bien.", "answer": "cocinaba", "hint": "¿Cómo preparaba la comida? (cocinar, ella)"},
+        {"sentence": "Antes mis padres ___ en un pueblo.", "answer": "vivían", "hint": "¿Dónde estaban antes? (vivir, ellos)"},
+        {"sentence": "De pequeño yo ___ mucha leche.", "answer": "bebía", "hint": "¿Qué tomaba de niño? (beber, yo)"},
+        {"sentence": "En los años 70 la gente ___ más cartas.", "answer": "escribía", "hint": "¿Cómo se comunicaban? (escribir, ella/gente)"},
+        {"sentence": "Nosotros ___ juntos todos los domingos.", "answer": "comíamos", "hint": "¿Qué hacían los domingos? (comer, nosotros)"},
+        {"sentence": "Mi abuelo ___ en una fábrica.", "answer": "trabajaba", "hint": "¿Qué hacía profesionalmente? (trabajar, él)"},
+        {"sentence": "De joven mi madre ___ el piano.", "answer": "tocaba", "hint": "¿Qué instrumento usaba? (tocar, ella)"},
+        {"sentence": "Antes los niños ___ más en la calle.", "answer": "jugaban", "hint": "¿Dónde pasaban el tiempo? (jugar, ellos)"},
+        {"sentence": "Mi padre ___ el periódico cada mañana.", "answer": "leía", "hint": "¿Qué hacía por las mañanas? (leer, él)"},
+        {"sentence": "Cuando era estudiante, ___ mucho.", "answer": "estudiaba", "hint": "¿Qué hacía en la universidad? (estudiar, yo)"},
+        {"sentence": "En aquella época nosotros ___ cerca del mar.", "answer": "vivíamos", "hint": "¿Dónde residían? (vivir, nosotros)"}
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "Pretérito imperfecto: verbos irregulares",
+      "hint": "era / iba / veía",
+      "rule": {
+        "title": "Pretérito imperfecto: verbos IRREGULARES (SER, IR, VER)",
+        "explanation": "En el pretérito imperfecto solo hay tres verbos irregulares: SER, IR y VER. Es importante memorizarlos porque se usan muy frecuentemente para describir el pasado.",
+        "sections": [
+          {
+            "subtitle": "SER (быть) - completamente irregular",
+            "points": [
+              "yo: <b>era</b> — Yo era muy tímido de niño",
+              "tú: <b>eras</b> — ¿Eras buen estudiante?",
+              "él/ella: <b>era</b> — Mi padre era profesor",
+              "nosotros: <b>éramos</b> — Éramos muy amigos",
+              "vosotros: <b>erais</b> — ¿Erais vecinos?",
+              "ellos: <b>eran</b> — Mis abuelos eran agricultores"
+            ]
+          },
+          {
+            "subtitle": "IR (идти/ходить) - completamente irregular",
+            "points": [
+              "yo: <b>iba</b> — Iba al colegio andando",
+              "tú: <b>ibas</b> — ¿Adónde ibas de vacaciones?",
+              "él/ella: <b>iba</b> — Mi madre iba al mercado todos los días",
+              "nosotros: <b>íbamos</b> — Íbamos a la playa en verano",
+              "vosotros: <b>ibais</b> — ¿Ibais mucho al cine?",
+              "ellos: <b>iban</b> — Mis amigos iban a otra escuela"
+            ]
+          },
+          {
+            "subtitle": "VER (видеть) - mantiene la 'e' de raíz",
+            "points": [
+              "yo: <b>veía</b> — Veía la televisión por la noche",
+              "tú: <b>veías</b> — ¿Qué programas veías?",
+              "él/ella: <b>veía</b> — Mi abuela no veía bien",
+              "nosotros: <b>veíamos</b> — Veíamos películas juntos",
+              "vosotros: <b>veíais</b> — ¿Veíais dibujos animados?",
+              "ellos: <b>veían</b> — Mis padres veían las noticias"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Cuando era pequeño, iba al parque con mi abuelo.", "ru": "Когда я был маленьким, я ходил в парк с дедушкой."},
+          {"es": "Mi abuela era muy cariñosa y siempre nos veía jugar.", "ru": "Моя бабушка была очень ласковой и всегда смотрела, как мы играем."},
+          {"es": "En aquella época no había televisión, pero íbamos al cine.", "ru": "В то время не было телевизора, но мы ходили в кино."},
+          {"es": "La vida era más tranquila y la gente se veía más a menudo.", "ru": "Жизнь была спокойнее, и люди виделись чаще."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Cuando ___ pequeño, jugaba en la calle.", "answer": "era"},
+        {"sentence": "Mi abuelo ___ al mercado todos los días.", "answer": "iba"},
+        {"sentence": "Antes yo ___ mucha televisión.", "answer": "veía"},
+        {"sentence": "Mi madre ___ muy guapa de joven.", "answer": "era"},
+        {"sentence": "Nosotros ___ a la playa cada verano.", "answer": "íbamos"},
+        {"sentence": "¿Qué películas ___ cuando eras niño?", "answer": "veías"},
+        {"sentence": "En los años 60 la vida ___ más sencilla.", "answer": "era"},
+        {"sentence": "Mis padres ___ al cine todos los sábados.", "answer": "iban"},
+        {"sentence": "De pequeño yo no ___ bien sin gafas.", "answer": "veía"},
+        {"sentence": "Mi abuela ___ una mujer muy trabajadora.", "answer": "era"},
+        {"sentence": "¿Adónde ___ de vacaciones cuando eras joven?", "answer": "ibas"},
+        {"sentence": "Antes la gente ___ menos televisión que ahora.", "answer": "veía"},
+        {"sentence": "Mis hermanos y yo ___ muy traviesos.", "answer": "éramos"},
+        {"sentence": "¿___ mucho al parque de pequeño?", "answer": "Ibas"},
+        {"sentence": "Mi padre ___ las noticias todas las noches.", "answer": "veía"},
+        {"sentence": "En aquella época yo ___ muy tímido.", "answer": "era"},
+        {"sentence": "Nosotros ___ a casa de los abuelos los domingos.", "answer": "íbamos"},
+        {"sentence": "¿Qué programas ___ en la televisión?", "answer": "veíais"},
+        {"sentence": "La ciudad ___ muy diferente hace 50 años.", "answer": "era"},
+        {"sentence": "Mis primos ___ a visitarnos en Navidad.", "answer": "iban"},
+        {"sentence": "De niño yo ___ dibujos animados.", "answer": "veía"},
+        {"sentence": "Mi profesor ___ muy estricto.", "answer": "era"},
+        {"sentence": "¿___ al colegio andando o en autobús?", "answer": "Ibas"},
+        {"sentence": "Antes no se ___ tanta publicidad en la tele.", "answer": "veía"},
+        {"sentence": "Mis abuelos ___ agricultores.", "answer": "eran"},
+        {"sentence": "Nosotros ___ de excursión todos los fines de semana.", "answer": "íbamos"},
+        {"sentence": "¿___ bien la pizarra desde tu asiento?", "answer": "Veías"},
+        {"sentence": "Aquel edificio ___ una escuela.", "answer": "era"},
+        {"sentence": "Los niños ___ a jugar al parque después del colegio.", "answer": "iban"},
+        {"sentence": "Mi abuela ___ telenovelas por la tarde.", "answer": "veía"},
+        {"sentence": "¿Cómo ___ tu barrio cuando eras pequeño?", "answer": "era"},
+        {"sentence": "Todos los veranos ___ a la montaña.", "answer": "íbamos"},
+        {"sentence": "Antes la gente se ___ más a menudo.", "answer": "veía"},
+        {"sentence": "Mi padre ___ muy deportista de joven.", "answer": "era"},
+        {"sentence": "¿___ mucho al teatro cuando vivías en Madrid?", "answer": "Ibas"},
+        {"sentence": "Nosotros ___ documentales sobre animales.", "answer": "veíamos"},
+        {"sentence": "La tecnología no ___ tan avanzada como ahora.", "answer": "era"},
+        {"sentence": "Mis tíos ___ a misa todos los domingos.", "answer": "iban"},
+        {"sentence": "¿___ a tus vecinos a menudo?", "answer": "Veías"},
+        {"sentence": "Aquel profesor ___ muy exigente.", "answer": "era"},
+        {"sentence": "De niños ___ a nadar al río.", "answer": "íbamos"},
+        {"sentence": "Mi madre ___ películas románticas.", "answer": "veía"},
+        {"sentence": "¿___ buen estudiante en la escuela?", "answer": "Eras"},
+        {"sentence": "Nosotros ___ a comprar al mercado.", "answer": "íbamos"},
+        {"sentence": "Antes yo no ___ las cosas igual que ahora.", "answer": "veía"},
+        {"sentence": "Mi casa ___ muy pequeña.", "answer": "era"},
+        {"sentence": "Los jóvenes ___ a bailar los fines de semana.", "answer": "iban"},
+        {"sentence": "¿Qué series ___ cuando eras adolescente?", "answer": "veías"},
+        {"sentence": "Aquel barrio ___ muy tranquilo.", "answer": "era"},
+        {"sentence": "¿___ mucho de viaje por trabajo?", "answer": "Ibas"},
+        {"sentence": "Nosotros ___ a mis primos muy poco.", "answer": "veíamos"},
+        {"sentence": "La comida ___ más barata antes.", "answer": "era"},
+        {"sentence": "Mis padres ___ a cenar fuera los viernes.", "answer": "iban"},
+        {"sentence": "De pequeño yo ___ fantasmas en mi habitación.", "answer": "veía"},
+        {"sentence": "¿Cómo ___ la relación con tus hermanos?", "answer": "era"},
+        {"sentence": "Siempre ___ a la misma cafetería.", "answer": "íbamos"},
+        {"sentence": "Mi abuela no ___ la necesidad de tener coche.", "answer": "veía"},
+        {"sentence": "Aquella tienda ___ muy popular.", "answer": "era"},
+        {"sentence": "¿___ al gimnasio cuando vivías allí?", "answer": "Ibas"},
+        {"sentence": "Los vecinos se ___ todos los días.", "answer": "veían"}
+      ],
+      "microTests": [
+        {"sentence": "Cuando ___ pequeño, vivía en un pueblo.", "answer": "era", "hint": "Verbo SER en imperfecto (yo)"},
+        {"sentence": "Mi abuelo ___ al mercado cada día.", "answer": "iba", "hint": "Verbo IR en imperfecto (él)"},
+        {"sentence": "De niño yo ___ mucha televisión.", "answer": "veía", "hint": "Verbo VER en imperfecto (yo)"},
+        {"sentence": "Mi madre ___ muy guapa de joven.", "answer": "era", "hint": "Verbo SER en imperfecto (ella)"},
+        {"sentence": "Nosotros ___ a la playa en verano.", "answer": "íbamos", "hint": "Verbo IR en imperfecto (nosotros)"},
+        {"sentence": "¿Qué películas ___ de pequeño?", "answer": "veías", "hint": "Verbo VER en imperfecto (tú)"},
+        {"sentence": "Mis abuelos ___ agricultores.", "answer": "eran", "hint": "Verbo SER en imperfecto (ellos)"},
+        {"sentence": "Los niños ___ al parque después del colegio.", "answer": "iban", "hint": "Verbo IR en imperfecto (ellos)"},
+        {"sentence": "Mi abuela ___ telenovelas por la tarde.", "answer": "veía", "hint": "Verbo VER en imperfecto (ella)"},
+        {"sentence": "La vida ___ más sencilla antes.", "answer": "era", "hint": "Verbo SER en imperfecto (ella/la vida)"},
+        {"sentence": "¿___ mucho al cine de joven?", "answer": "Ibas", "hint": "Verbo IR en imperfecto (tú)"},
+        {"sentence": "Antes la gente se ___ más a menudo.", "answer": "veía", "hint": "Verbo VER en imperfecto (reflexivo)"}
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Estructuras: había / existía / era + adjetivo",
+      "hint": "había / no había / existía / no existía / era legal / era ilegal / estaba prohibido",
+      "rule": {
+        "title": "Estructuras para describir el PASADO: HABÍA, EXISTÍA, ERA",
+        "explanation": "Para describir cómo era la sociedad, las leyes y las condiciones de vida en el pasado, usamos estructuras específicas con el pretérito imperfecto. Estas construcciones nos permiten hablar de la existencia, legalidad y prohibiciones en épocas anteriores.",
+        "sections": [
+          {
+            "subtitle": "HABÍA / NO HABÍA - existencia de cosas",
+            "points": [
+              "<b>Había</b> + sustantivo: Había muchas tiendas pequeñas — Было много маленьких магазинов",
+              "<b>No había</b> + sustantivo: No había internet — Не было интернета",
+              "Uso impersonal: siempre en singular aunque el sustantivo sea plural"
+            ]
+          },
+          {
+            "subtitle": "EXISTÍA / NO EXISTÍA - existencia formal",
+            "points": [
+              "<b>Existía</b> / <b>Existían</b>: Existía la censura — Существовала цензура",
+              "<b>No existía</b> / <b>No existían</b>: No existían los móviles — Не существовало мобильных",
+              "Concuerda en número con el sustantivo"
+            ]
+          },
+          {
+            "subtitle": "ERA LEGAL / ERA ILEGAL / ESTABA PROHIBIDO",
+            "points": [
+              "<b>Era legal</b>: Antes era legal fumar en los bares — Раньше было законно курить в барах",
+              "<b>Era ilegal</b>: Era ilegal manifestarse — Было незаконно протестовать",
+              "<b>Estaba prohibido</b>: Estaba prohibido divorciarse — Было запрещено разводиться"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Antes no había tantos coches en las ciudades.", "ru": "Раньше в городах не было столько машин."},
+          {"es": "No existía la televisión cuando mis abuelos eran jóvenes.", "ru": "Телевидения не существовало, когда мои бабушка и дедушка были молодыми."},
+          {"es": "Durante la dictadura estaba prohibido formar partidos políticos.", "ru": "Во время диктатуры было запрещено создавать политические партии."},
+          {"es": "Antes era legal trabajar desde los 14 años.", "ru": "Раньше было законно работать с 14 лет."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Antes no ___ internet en las casas.", "answer": "había"},
+        {"sentence": "En aquella época no ___ los teléfonos móviles.", "answer": "existían"},
+        {"sentence": "Durante la dictadura ___ prohibido criticar al gobierno.", "answer": "estaba"},
+        {"sentence": "___ muchas tiendas pequeñas en mi barrio.", "answer": "Había"},
+        {"sentence": "Antes ___ legal fumar en los restaurantes.", "answer": "era"},
+        {"sentence": "No ___ tantos coches como ahora.", "answer": "había"},
+        {"sentence": "La democracia no ___ en muchos países.", "answer": "existía"},
+        {"sentence": "___ ilegal el divorcio en España hasta 1981.", "answer": "Era"},
+        {"sentence": "En los años 50 ___ pocas universidades.", "answer": "había"},
+        {"sentence": "Los derechos de las mujeres no ___ como ahora.", "answer": "existían"},
+        {"sentence": "___ prohibido votar para las mujeres.", "answer": "Estaba"},
+        {"sentence": "Antes ___ más tiempo para descansar.", "answer": "había"},
+        {"sentence": "La igualdad de género no ___ en aquella época.", "answer": "existía"},
+        {"sentence": "___ legal trabajar desde los 12 años.", "answer": "Era"},
+        {"sentence": "No ___ supermercados, solo tiendas pequeñas.", "answer": "había"},
+        {"sentence": "Internet no ___ hace 50 años.", "answer": "existía"},
+        {"sentence": "Manifestarse ___ prohibido durante el franquismo.", "answer": "estaba"},
+        {"sentence": "___ mucha pobreza en aquella época.", "answer": "Había"},
+        {"sentence": "Los partidos políticos no ___ legalmente.", "answer": "existían"},
+        {"sentence": "___ ilegal la homosexualidad en muchos países.", "answer": "Era"},
+        {"sentence": "No ___ electricidad en los pueblos pequeños.", "answer": "había"},
+        {"sentence": "La censura ___ en todos los medios de comunicación.", "answer": "existía"},
+        {"sentence": "___ prohibido reunirse en grupos grandes.", "answer": "Estaba"},
+        {"sentence": "___ menos contaminación que ahora.", "answer": "Había"},
+        {"sentence": "Las vacunas no ___ para muchas enfermedades.", "answer": "existían"},
+        {"sentence": "___ legal la pena de muerte en muchos países.", "answer": "Era"},
+        {"sentence": "No ___ aviones comerciales hace 150 años.", "answer": "había"},
+        {"sentence": "El seguro médico universal no ___ antes.", "answer": "existía"},
+        {"sentence": "___ prohibido salir de noche para los jóvenes.", "answer": "Estaba"},
+        {"sentence": "___ muchos trabajos manuales.", "answer": "Había"},
+        {"sentence": "Los ordenadores personales no ___ en los años 60.", "answer": "existían"},
+        {"sentence": "Casarse por la iglesia ___ obligatorio.", "answer": "era"},
+        {"sentence": "No ___ tanto plástico como ahora.", "answer": "había"},
+        {"sentence": "La tecnología actual no ___ hace 30 años.", "answer": "existía"},
+        {"sentence": "___ prohibido hablar otros idiomas en público.", "answer": "Estaba"},
+        {"sentence": "___ más solidaridad entre vecinos.", "answer": "Había"},
+        {"sentence": "Las redes sociales no ___ hace 20 años.", "answer": "existían"},
+        {"sentence": "___ ilegal abortar en casi todos los países.", "answer": "Era"},
+        {"sentence": "No ___ tantas opciones de entretenimiento.", "answer": "había"},
+        {"sentence": "El comercio online no ___ antes de internet.", "answer": "existía"},
+        {"sentence": "___ prohibido el trabajo infantil ahora, pero antes no.", "answer": "Está"},
+        {"sentence": "___ muchos cines en el centro de la ciudad.", "answer": "Había"},
+        {"sentence": "Los antibióticos no ___ hace 100 años.", "answer": "existían"},
+        {"sentence": "___ legal conducir sin cinturón de seguridad.", "answer": "Era"},
+        {"sentence": "No ___ tantos turistas como ahora.", "answer": "había"},
+        {"sentence": "La educación obligatoria no ___ en muchos países.", "answer": "existía"},
+        {"sentence": "___ prohibido usar el móvil en el coche.", "answer": "Estaba"},
+        {"sentence": "___ menos estrés en la vida cotidiana.", "answer": "Había"},
+        {"sentence": "Los vuelos low-cost no ___ antes.", "answer": "existían"},
+        {"sentence": "___ ilegal consumir alcohol en Estados Unidos en los años 20.", "answer": "Era"},
+        {"sentence": "No ___ tantas normas de seguridad.", "answer": "había"},
+        {"sentence": "Las criptomonedas no ___ hace 15 años.", "answer": "existían"},
+        {"sentence": "___ prohibido fotografiar edificios oficiales.", "answer": "Estaba"},
+        {"sentence": "___ más naturaleza alrededor de las ciudades.", "answer": "Había"},
+        {"sentence": "Los smartphones no ___ en el año 2000.", "answer": "existían"},
+        {"sentence": "___ legal la esclavitud en muchos países.", "answer": "Era"},
+        {"sentence": "No ___ tanta prisa en la vida diaria.", "answer": "había"},
+        {"sentence": "La inteligencia artificial no ___ hace 50 años.", "answer": "existía"},
+        {"sentence": "___ prohibido circular por algunas calles.", "answer": "Estaba"},
+        {"sentence": "___ mucha diferencia entre ricos y pobres.", "answer": "Había"}
+      ],
+      "microTests": [
+        {"sentence": "Antes no ___ internet.", "answer": "había", "hint": "¿Qué NO existía? (haber impersonal)"},
+        {"sentence": "Los móviles no ___ hace 50 años.", "answer": "existían", "hint": "¿Qué tecnología NO estaba? (existir, plural)"},
+        {"sentence": "___ prohibido fumar en los aviones.", "answer": "Estaba", "hint": "¿Qué estaba NO permitido? (estar prohibido)"},
+        {"sentence": "___ muchas tiendas pequeñas.", "answer": "Había", "hint": "¿Qué sí existía? (haber impersonal)"},
+        {"sentence": "Antes ___ legal trabajar desde los 14 años.", "answer": "era", "hint": "¿Era permitido por la ley? (ser legal)"},
+        {"sentence": "La democracia no ___ en muchos países.", "answer": "existía", "hint": "¿Qué sistema NO había? (existir, singular)"},
+        {"sentence": "___ ilegal el divorcio.", "answer": "Era", "hint": "¿Era contra la ley? (ser ilegal)"},
+        {"sentence": "No ___ tantos coches como ahora.", "answer": "había", "hint": "¿Qué NO había tanto? (haber impersonal)"},
+        {"sentence": "Los derechos de las mujeres no ___ como ahora.", "answer": "existían", "hint": "¿Qué NO había para las mujeres? (existir, plural)"},
+        {"sentence": "___ prohibido votar para las mujeres.", "answer": "Estaba", "hint": "¿Qué NO podían hacer las mujeres? (estar prohibido)"},
+        {"sentence": "Internet no ___ hace 50 años.", "answer": "existía", "hint": "¿Qué tecnología NO había? (existir, singular)"},
+        {"sentence": "___ más tiempo libre antes.", "answer": "Había", "hint": "¿Qué sí tenía la gente? (haber impersonal)"}
+      ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "Ya no / Todavía: comparar pasado y presente",
+      "hint": "ya no / todavía",
+      "rule": {
+        "title": "YA NO vs TODAVÍA: comparar pasado y presente",
+        "explanation": "Estas dos expresiones nos permiten comparar situaciones del pasado con el presente. YA NO indica que algo ha dejado de existir o de hacerse. TODAVÍA indica que algo del pasado continúa en el presente.",
+        "sections": [
+          {
+            "subtitle": "YA NO — algo que ha cambiado (уже не)",
+            "points": [
+              "<b>Ya no</b> + verbo: indica que una situación del pasado ha terminado",
+              "Antes vivía en Madrid, pero <b>ya no</b> vivo allí — Раньше я жил в Мадриде, но уже не живу там",
+              "Antes había muchas tiendas, pero <b>ya no</b> existen — Раньше было много магазинов, но их уже нет",
+              "La gente <b>ya no</b> escribe cartas — Люди уже не пишут письма"
+            ]
+          },
+          {
+            "subtitle": "TODAVÍA — algo que continúa (всё ещё)",
+            "points": [
+              "<b>Todavía</b> + verbo: indica que una situación del pasado sigue vigente",
+              "<b>Todavía</b> vivo con mis padres — Я всё ещё живу с родителями",
+              "<b>Todavía</b> existen problemas de desigualdad — Всё ещё существуют проблемы неравенства",
+              "Mi abuela <b>todavía</b> usa máquina de escribir — Моя бабушка всё ещё пользуется печатной машинкой"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Antes fumaba mucho, pero ya no fumo.", "ru": "Раньше я много курил, но уже не курю."},
+          {"es": "Todavía recuerdo mi infancia con cariño.", "ru": "Я всё ещё вспоминаю своё детство с теплотой."},
+          {"es": "La gente ya no viaja tanto en tren como antes.", "ru": "Люди уже не ездят на поезде так часто, как раньше."},
+          {"es": "Todavía hay países donde las mujeres no pueden votar.", "ru": "Всё ещё есть страны, где женщины не могут голосовать."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Antes vivía en Madrid, pero ___ vivo allí.", "answer": "ya no"},
+        {"sentence": "___ recuerdo mi infancia con mucho cariño.", "answer": "Todavía"},
+        {"sentence": "La gente ___ escribe cartas a mano.", "answer": "ya no"},
+        {"sentence": "Mi abuela ___ vive en el mismo pueblo.", "answer": "todavía"},
+        {"sentence": "Antes fumaba, pero ___ fumo.", "answer": "ya no"},
+        {"sentence": "___ existen problemas de desigualdad.", "answer": "Todavía"},
+        {"sentence": "Los jóvenes ___ leen tantos libros como antes.", "answer": "ya no"},
+        {"sentence": "Mi abuelo ___ trabaja en el campo.", "answer": "todavía"},
+        {"sentence": "La gente ___ usa máquinas de escribir.", "answer": "ya no"},
+        {"sentence": "___ hay diferencias entre ricos y pobres.", "answer": "Todavía"},
+        {"sentence": "Antes veía mucha televisión, pero ___ la veo.", "answer": "ya no"},
+        {"sentence": "Mi madre ___ cocina todos los días.", "answer": "todavía"},
+        {"sentence": "Los niños ___ juegan tanto en la calle.", "answer": "ya no"},
+        {"sentence": "___ tengo los juguetes de mi infancia.", "answer": "Todavía"},
+        {"sentence": "La gente ___ escucha música en cassettes.", "answer": "ya no"},
+        {"sentence": "___ quedan algunas tradiciones antiguas.", "answer": "Todavía"},
+        {"sentence": "Antes iba al gimnasio, pero ___ voy.", "answer": "ya no"},
+        {"sentence": "Mi padre ___ lee el periódico cada mañana.", "answer": "todavía"},
+        {"sentence": "Los jóvenes ___ respetan tanto a los mayores.", "answer": "ya no"},
+        {"sentence": "___ hay guerras en muchas partes del mundo.", "answer": "Todavía"},
+        {"sentence": "Antes comía carne, pero ___ la como.", "answer": "ya no"},
+        {"sentence": "Mi hermano ___ vive con mis padres.", "answer": "todavía"},
+        {"sentence": "La gente ___ viaja en barco para cruzar el océano.", "answer": "ya no"},
+        {"sentence": "___ conservamos algunas fotos antiguas.", "answer": "Todavía"},
+        {"sentence": "Antes tenía miedo a la oscuridad, pero ___ lo tengo.", "answer": "ya no"},
+        {"sentence": "___ existen pueblos sin electricidad.", "answer": "Todavía"},
+        {"sentence": "Los estudiantes ___ escriben a mano los exámenes.", "answer": "ya no"},
+        {"sentence": "Mi abuela ___ guarda las cartas de mi abuelo.", "answer": "todavía"},
+        {"sentence": "La gente ___ paga tanto en efectivo como antes.", "answer": "ya no"},
+        {"sentence": "___ hay países donde no hay libertad.", "answer": "Todavía"},
+        {"sentence": "Antes trabajaba en una oficina, pero ___ trabajo allí.", "answer": "ya no"},
+        {"sentence": "___ recuerdo el nombre de mi primera maestra.", "answer": "Todavía"},
+        {"sentence": "Los jóvenes ___ hablan tanto por teléfono fijo.", "answer": "ya no"},
+        {"sentence": "___ existen diferencias salariales entre hombres y mujeres.", "answer": "Todavía"},
+        {"sentence": "Antes bebía mucho café, pero ___ lo bebo.", "answer": "ya no"},
+        {"sentence": "Mi tía ___ vive en la casa donde nació.", "answer": "todavía"},
+        {"sentence": "La gente ___ confía tanto en los políticos.", "answer": "ya no"},
+        {"sentence": "___ hay personas que no tienen acceso a internet.", "answer": "Todavía"},
+        {"sentence": "Antes salía todos los fines de semana, pero ___ salgo.", "answer": "ya no"},
+        {"sentence": "___ conservo mi primer libro de español.", "answer": "Todavía"},
+        {"sentence": "Los niños ___ ven tantos dibujos animados en la tele.", "answer": "ya no"},
+        {"sentence": "___ existen enfermedades sin cura.", "answer": "Todavía"},
+        {"sentence": "Antes llevaba gafas, pero ___ las llevo.", "answer": "ya no"},
+        {"sentence": "Mi vecino ___ tiene el mismo coche de hace 20 años.", "answer": "todavía"},
+        {"sentence": "La gente ___ va tanto al cine como antes.", "answer": "ya no"},
+        {"sentence": "___ hay mucha contaminación en las ciudades.", "answer": "Todavía"},
+        {"sentence": "Antes hacía deporte todos los días, pero ___ lo hago.", "answer": "ya no"},
+        {"sentence": "___ me acuerdo de mis compañeros de la escuela.", "answer": "Todavía"},
+        {"sentence": "Los jóvenes ___ compran tantos periódicos.", "answer": "ya no"},
+        {"sentence": "___ quedan algunos edificios antiguos en el centro.", "answer": "Todavía"},
+        {"sentence": "Antes estudiaba inglés, pero ___ lo estudio.", "answer": "ya no"},
+        {"sentence": "___ tengo contacto con algunos amigos de la infancia.", "answer": "Todavía"},
+        {"sentence": "La gente ___ usa tanto el correo postal.", "answer": "ya no"},
+        {"sentence": "___ hay familias que viven sin agua corriente.", "answer": "Todavía"},
+        {"sentence": "Antes jugaba al fútbol, pero ___ juego.", "answer": "ya no"},
+        {"sentence": "___ funciona el reloj de mi abuelo.", "answer": "Todavía"},
+        {"sentence": "Los jóvenes ___ escuchan música en CD.", "answer": "ya no"},
+        {"sentence": "___ hay países con monarquía.", "answer": "Todavía"},
+        {"sentence": "Antes vivía solo, pero ___ vivo solo.", "answer": "ya no"},
+        {"sentence": "___ recuerdo las canciones de mi infancia.", "answer": "Todavía"}
+      ],
+      "microTests": [
+        {"sentence": "Antes vivía allí, pero ___ vivo.", "answer": "ya no", "hint": "¿Algo que ha terminado? (уже не)"},
+        {"sentence": "___ recuerdo mi infancia.", "answer": "Todavía", "hint": "¿Algo que continúa? (всё ещё)"},
+        {"sentence": "La gente ___ escribe cartas.", "answer": "ya no", "hint": "¿Algo que la gente dejó de hacer?"},
+        {"sentence": "Mi abuela ___ vive en el pueblo.", "answer": "todavía", "hint": "¿Algo que sigue igual?"},
+        {"sentence": "Antes fumaba, pero ___ fumo.", "answer": "ya no", "hint": "¿Un hábito que terminó?"},
+        {"sentence": "___ existen problemas de desigualdad.", "answer": "Todavía", "hint": "¿Algo que sigue existiendo?"},
+        {"sentence": "Los niños ___ juegan en la calle.", "answer": "ya no", "hint": "¿Algo que los niños dejaron de hacer?"},
+        {"sentence": "___ tengo los juguetes de mi infancia.", "answer": "Todavía", "hint": "¿Algo que conservas?"},
+        {"sentence": "La gente ___ escucha cassettes.", "answer": "ya no", "hint": "¿Una tecnología obsoleta?"},
+        {"sentence": "___ hay guerras en el mundo.", "answer": "Todavía", "hint": "¿Algo que desafortunadamente continúa?"},
+        {"sentence": "Antes iba al gimnasio, pero ___ voy.", "answer": "ya no", "hint": "¿Una actividad que dejaste?"},
+        {"sentence": "___ conservamos fotos antiguas.", "answer": "Todavía", "hint": "¿Algo que guardamos del pasado?"}
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "Homófonos: sabía/sabia, hacía/hacia, medía/media",
+      "hint": "sabía / sabia / hacía / hacia / medía / media",
+      "rule": {
+        "title": "Homófonos con y sin TILDE: sabía/sabia, hacía/hacia, medía/media",
+        "explanation": "En español hay palabras que suenan igual pero se escriben diferente y tienen significados distintos. La tilde marca la diferencia entre verbos en pretérito imperfecto y otras palabras.",
+        "sections": [
+          {
+            "subtitle": "SABÍA (verbo) vs SABIA (adjetivo)",
+            "points": [
+              "<b>Sabía</b> (saber, imperfecto): Yo <b>sabía</b> la respuesta — Я знал ответ",
+              "<b>Sabia</b> (adjetivo, femenino de sabio): Mi abuela era muy <b>sabia</b> — Моя бабушка была очень мудрой",
+              "La tilde indica que es el verbo SABER en imperfecto"
+            ]
+          },
+          {
+            "subtitle": "HACÍA (verbo) vs HACIA (preposición)",
+            "points": [
+              "<b>Hacía</b> (hacer, imperfecto): <b>Hacía</b> mucho calor — Было очень жарко",
+              "<b>Hacia</b> (preposición, dirección): Voy <b>hacia</b> el centro — Иду в направлении центра",
+              "La tilde indica que es el verbo HACER en imperfecto"
+            ]
+          },
+          {
+            "subtitle": "MEDÍA (verbo) vs MEDIA (sustantivo/adjetivo)",
+            "points": [
+              "<b>Medía</b> (medir, imperfecto): <b>Medía</b> 1,70 m — Его рост был 1,70 м",
+              "<b>Media</b> (número): Son las ocho y <b>media</b> — Сейчас половина девятого",
+              "<b>Media</b> (promedio): La <b>media</b> de edad — Средний возраст"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Cuando tenía 12 años, ya medía 1,70 m.", "ru": "Когда мне было 12 лет, мой рост уже был 1,70 м."},
+          {"es": "Mi abuela era una mujer muy sabia.", "ru": "Моя бабушка была очень мудрой женщиной."},
+          {"es": "No estuve mucho rato en la playa, hacía demasiado calor.", "ru": "Я недолго пробыл на пляже, было слишком жарко."},
+          {"es": "Toma el metro hacia Plaza de España.", "ru": "Поезжай на метро в направлении Площади Испании."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Cuando tenía 12 años, ya ___ 1,70 m.", "answer": "medía"},
+        {"sentence": "Mi abuela era una mujer muy ___.", "answer": "sabia"},
+        {"sentence": "No fui a la playa porque ___ mucho calor.", "answer": "hacía"},
+        {"sentence": "Toma el autobús ___ el centro.", "answer": "hacia"},
+        {"sentence": "Son las ocho y ___.", "answer": "media"},
+        {"sentence": "Mi hermana pequeña ___ leer a los 4 años.", "answer": "sabía"},
+        {"sentence": "El camino ___ la montaña era muy largo.", "answer": "hacia"},
+        {"sentence": "Aquel profesor era muy ___.", "answer": "sabio"},
+        {"sentence": "De pequeño yo no ___ nadar.", "answer": "sabía"},
+        {"sentence": "___ mucho frío en invierno.", "answer": "Hacía"},
+        {"sentence": "La ___ de los estudiantes aprobó el examen.", "answer": "media"},
+        {"sentence": "¿___ dónde vas?", "answer": "Hacia"},
+        {"sentence": "Mi abuelo ___ muchas cosas sobre la vida.", "answer": "sabía"},
+        {"sentence": "El árbol ___ más de 10 metros.", "answer": "medía"},
+        {"sentence": "___ buen tiempo ayer.", "answer": "Hacía"},
+        {"sentence": "Nos vemos a las tres y ___.", "answer": "media"},
+        {"sentence": "Era una decisión muy ___.", "answer": "sabia"},
+        {"sentence": "___ cinco años que no lo veía.", "answer": "Hacía"},
+        {"sentence": "Caminaban ___ el norte.", "answer": "hacia"},
+        {"sentence": "Yo no ___ que estabas enfermo.", "answer": "sabía"},
+        {"sentence": "La mesa ___ dos metros de largo.", "answer": "medía"},
+        {"sentence": "Su consejo fue muy ___.", "answer": "sabio"},
+        {"sentence": "___ viento y no podíamos salir.", "answer": "Hacía"},
+        {"sentence": "Mira ___ la derecha.", "answer": "hacia"},
+        {"sentence": "La ___ hora de trabajo.", "answer": "media"},
+        {"sentence": "Nadie ___ la verdad.", "answer": "sabía"},
+        {"sentence": "El edificio ___ 50 metros de altura.", "answer": "medía"},
+        {"sentence": "___ mucho tiempo que no nos veíamos.", "answer": "Hacía"},
+        {"sentence": "Iba ___ su casa.", "answer": "hacia"},
+        {"sentence": "Mi abuela era muy ___ y daba buenos consejos.", "answer": "sabia"},
+        {"sentence": "¿___ cocinar cuando eras joven?", "answer": "Sabías"},
+        {"sentence": "La habitación ___ 20 metros cuadrados.", "answer": "medía"},
+        {"sentence": "___ sol todos los días en verano.", "answer": "Hacía"},
+        {"sentence": "El barco navegaba ___ el sur.", "answer": "hacia"},
+        {"sentence": "Llegó a las diez y ___.", "answer": "media"},
+        {"sentence": "No ___ que era tu cumpleaños.", "answer": "sabía"},
+        {"sentence": "De joven mi padre ___ 1,85 m.", "answer": "medía"},
+        {"sentence": "La frase era muy ___.", "answer": "sabia"},
+        {"sentence": "___ muchos años que vivía allí.", "answer": "Hacía"},
+        {"sentence": "Todos miraban ___ la puerta.", "answer": "hacia"},
+        {"sentence": "La temperatura ___ era de 25 grados.", "answer": "media"},
+        {"sentence": "Mi madre ___ todas las respuestas.", "answer": "sabía"},
+        {"sentence": "El río ___ 100 metros de ancho.", "answer": "medía"},
+        {"sentence": "___ mal tiempo y no salimos.", "answer": "Hacía"},
+        {"sentence": "Corre ___ la salida.", "answer": "hacia"},
+        {"sentence": "Faltan dos horas y ___.", "answer": "media"},
+        {"sentence": "¿___ dónde queda la estación?", "answer": "Sabías"},
+        {"sentence": "La ventana ___ un metro de alto.", "answer": "medía"},
+        {"sentence": "Sus palabras fueron muy ___s.", "answer": "sabia"},
+        {"sentence": "___ tanto calor que no podía dormir.", "answer": "Hacía"},
+        {"sentence": "El avión volaba ___ el este.", "answer": "hacia"},
+        {"sentence": "Es la una y ___.", "answer": "media"},
+        {"sentence": "Nadie ___ lo que iba a pasar.", "answer": "sabía"},
+        {"sentence": "La piscina ___ 25 metros de largo.", "answer": "medía"},
+        {"sentence": "Mi tía era una persona muy ___.", "answer": "sabia"},
+        {"sentence": "___ frío y encendimos la calefacción.", "answer": "Hacía"},
+        {"sentence": "El tren iba ___ Barcelona.", "answer": "hacia"},
+        {"sentence": "La ___ de edad de los participantes era 30 años.", "answer": "media"},
+        {"sentence": "Yo ___ que algo malo pasaba.", "answer": "sabía"},
+        {"sentence": "___ años que no comía eso.", "answer": "Hacía"}
+      ],
+      "microTests": [
+        {"sentence": "Cuando tenía 12 años, ya ___ 1,70 m.", "answer": "medía", "hint": "Verbo MEDIR en imperfecto (él/ella)"},
+        {"sentence": "Mi abuela era muy ___.", "answer": "sabia", "hint": "Adjetivo: мудрая (femenino)"},
+        {"sentence": "___ mucho calor en verano.", "answer": "Hacía", "hint": "Verbo HACER impersonal en imperfecto"},
+        {"sentence": "Toma el autobús ___ el centro.", "answer": "hacia", "hint": "Preposición: в направлении"},
+        {"sentence": "Son las ocho y ___.", "answer": "media", "hint": "Sustantivo: половина"},
+        {"sentence": "Mi hermana ___ leer a los 4 años.", "answer": "sabía", "hint": "Verbo SABER en imperfecto (ella)"},
+        {"sentence": "El camino ___ la montaña era largo.", "answer": "hacia", "hint": "Preposición: к, в направлении"},
+        {"sentence": "La ___ de los estudiantes aprobó.", "answer": "media", "hint": "Sustantivo: средняя (часть)"},
+        {"sentence": "Yo no ___ nadar de pequeño.", "answer": "sabía", "hint": "Verbo SABER en imperfecto (yo)"},
+        {"sentence": "___ buen tiempo ayer.", "answer": "Hacía", "hint": "Verbo HACER (tiempo atmosférico)"},
+        {"sentence": "Su consejo fue muy ___.", "answer": "sabio", "hint": "Adjetivo: мудрый (masculino)"},
+        {"sentence": "El árbol ___ más de 10 metros.", "answer": "medía", "hint": "Verbo MEDIR en imperfecto"}
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Marcadores temporales: antes, ahora, actualmente, entonces",
+      "hint": "antes / ahora / actualmente / entonces / en aquella época",
+      "rule": {
+        "title": "Marcadores temporales para comparar PASADO y PRESENTE",
+        "explanation": "Los marcadores temporales nos ayudan a situar las acciones en el tiempo y a comparar diferentes épocas. Algunos indican el pasado, otros el presente, y algunos sirven para establecer contrastes.",
+        "sections": [
+          {
+            "subtitle": "Marcadores de PASADO",
+            "points": [
+              "<b>Antes</b>: <b>Antes</b> la vida era más tranquila — Раньше жизнь была спокойнее",
+              "<b>Entonces</b>: <b>Entonces</b> no había internet — Тогда не было интернета",
+              "<b>En aquella época</b>: <b>En aquella época</b> no existían los móviles — В ту эпоху не существовало мобильных"
+            ]
+          },
+          {
+            "subtitle": "Marcadores de PRESENTE",
+            "points": [
+              "<b>Ahora</b>: <b>Ahora</b> todo es más rápido — Сейчас всё быстрее",
+              "<b>Actualmente</b>: <b>Actualmente</b> trabajo desde casa — В настоящее время я работаю из дома",
+              "<b>Hoy en día</b>: <b>Hoy en día</b> tenemos más información — Сегодня у нас больше информации"
+            ]
+          },
+          {
+            "subtitle": "Expresiones de contraste",
+            "points": [
+              "<b>Antes... ahora</b>: Antes no había coches, ahora hay millones — Раньше не было машин, сейчас их миллионы",
+              "<b>En cambio</b>: Antes viajaban poco; en cambio, ahora viajan mucho — Раньше мало путешествовали; зато сейчас много путешествуют"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Antes la gente escribía cartas, ahora envía mensajes.", "ru": "Раньше люди писали письма, сейчас отправляют сообщения."},
+          {"es": "En aquella época no existía internet.", "ru": "В ту эпоху не существовало интернета."},
+          {"es": "Actualmente vivo en Madrid, pero antes vivía en Barcelona.", "ru": "В настоящее время живу в Мадриде, но раньше жил в Барселоне."},
+          {"es": "Entonces todo era más barato que ahora.", "ru": "Тогда всё было дешевле, чем сейчас."}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ la vida era más tranquila.", "answer": "Antes"},
+        {"sentence": "___ todo es más rápido que en el pasado.", "answer": "Ahora"},
+        {"sentence": "___ trabajo desde casa.", "answer": "Actualmente"},
+        {"sentence": "___ no existía la televisión.", "answer": "Entonces"},
+        {"sentence": "___ no había tantos coches.", "answer": "Antes"},
+        {"sentence": "___ la tecnología está en todas partes.", "answer": "Ahora"},
+        {"sentence": "___ vivo en Madrid.", "answer": "Actualmente"},
+        {"sentence": "___ la gente viajaba menos.", "answer": "Entonces"},
+        {"sentence": "___ la gente escribía cartas a mano.", "answer": "Antes"},
+        {"sentence": "___ podemos comunicarnos con todo el mundo.", "answer": "Ahora"},
+        {"sentence": "___ hay más oportunidades que en el pasado.", "answer": "Actualmente"},
+        {"sentence": "___ no existían los teléfonos móviles.", "answer": "Entonces"},
+        {"sentence": "___ las familias eran más grandes.", "answer": "Antes"},
+        {"sentence": "___ la esperanza de vida es mayor.", "answer": "Ahora"},
+        {"sentence": "___ estudio español en una academia.", "answer": "Actualmente"},
+        {"sentence": "___ todo era más barato.", "answer": "Entonces"},
+        {"sentence": "___ la gente tenía más tiempo libre.", "answer": "Antes"},
+        {"sentence": "___ todo el mundo tiene smartphone.", "answer": "Ahora"},
+        {"sentence": "___ la situación económica es mejor.", "answer": "Actualmente"},
+        {"sentence": "___ no había internet.", "answer": "Entonces"},
+        {"sentence": "___ los niños jugaban más en la calle.", "answer": "Antes"},
+        {"sentence": "___ mismo voy a llamarte.", "answer": "Ahora"},
+        {"sentence": "___ mi hermano trabaja en otra ciudad.", "answer": "Actualmente"},
+        {"sentence": "___ vivíamos en un pueblo pequeño.", "answer": "Entonces"},
+        {"sentence": "___ la gente iba al cine más a menudo.", "answer": "Antes"},
+        {"sentence": "___ hay muchas opciones de entretenimiento.", "answer": "Ahora"},
+        {"sentence": "___ hay más igualdad entre hombres y mujeres.", "answer": "Actualmente"},
+        {"sentence": "___ no existían los ordenadores personales.", "answer": "Entonces"},
+        {"sentence": "___ se viajaba en barco para cruzar el océano.", "answer": "Antes"},
+        {"sentence": "___ todo es más fácil gracias a internet.", "answer": "Ahora"},
+        {"sentence": "___ mi padre ya no trabaja.", "answer": "Actualmente"},
+        {"sentence": "___ todo parecía más sencillo.", "answer": "Entonces"},
+        {"sentence": "___ la educación no era obligatoria.", "answer": "Antes"},
+        {"sentence": "___ la medicina puede curar muchas enfermedades.", "answer": "Ahora"},
+        {"sentence": "___ estudio en la universidad.", "answer": "Actualmente"},
+        {"sentence": "___ no sabíamos lo que pasaba en otros países.", "answer": "Entonces"},
+        {"sentence": "___ las mujeres no podían votar.", "answer": "Antes"},
+        {"sentence": "___ hay leyes que protegen a los trabajadores.", "answer": "Ahora"},
+        {"sentence": "___ vivo solo en un apartamento.", "answer": "Actualmente"},
+        {"sentence": "___ mi abuela era muy joven.", "answer": "Entonces"},
+        {"sentence": "___ la comida se preparaba en casa.", "answer": "Antes"},
+        {"sentence": "___ mucha gente come en restaurantes.", "answer": "Ahora"},
+        {"sentence": "___ hay más diversidad en las ciudades.", "answer": "Actualmente"},
+        {"sentence": "___ todo el mundo se conocía en el pueblo.", "answer": "Entonces"},
+        {"sentence": "___ los libros eran muy caros.", "answer": "Antes"},
+        {"sentence": "___ cualquiera puede publicar un libro.", "answer": "Ahora"},
+        {"sentence": "___ la contaminación es un problema grave.", "answer": "Actualmente"},
+        {"sentence": "___ no había supermercados.", "answer": "Entonces"},
+        {"sentence": "___ la gente no viajaba en avión.", "answer": "Antes"},
+        {"sentence": "___ los vuelos son muy baratos.", "answer": "Ahora"},
+        {"sentence": "___ trabajo en una empresa internacional.", "answer": "Actualmente"},
+        {"sentence": "___ no existía la electricidad en los pueblos.", "answer": "Entonces"},
+        {"sentence": "___ todo se hacía a mano.", "answer": "Antes"},
+        {"sentence": "___ las máquinas hacen el trabajo pesado.", "answer": "Ahora"},
+        {"sentence": "___ hay muchos más coches que hace 50 años.", "answer": "Actualmente"},
+        {"sentence": "___ la vida era muy diferente.", "answer": "Entonces"},
+        {"sentence": "___ la gente leía más periódicos.", "answer": "Antes"},
+        {"sentence": "___ la información está en internet.", "answer": "Ahora"},
+        {"sentence": "___ mi madre ya está jubilada.", "answer": "Actualmente"},
+        {"sentence": "___ no conocíamos otras culturas.", "answer": "Entonces"}
+      ],
+      "microTests": [
+        {"sentence": "___ la vida era más tranquila.", "answer": "Antes", "hint": "Marcador de pasado: раньше"},
+        {"sentence": "___ todo es más rápido.", "answer": "Ahora", "hint": "Marcador de presente: сейчас"},
+        {"sentence": "___ trabajo desde casa.", "answer": "Actualmente", "hint": "Marcador formal de presente: в настоящее время"},
+        {"sentence": "___ no existía la televisión.", "answer": "Entonces", "hint": "Marcador de pasado: тогда"},
+        {"sentence": "___ la gente escribía cartas.", "answer": "Antes", "hint": "¿En el pasado qué hacía la gente?"},
+        {"sentence": "___ podemos comunicarnos con todo el mundo.", "answer": "Ahora", "hint": "¿Qué podemos hacer en el presente?"},
+        {"sentence": "___ hay más oportunidades.", "answer": "Actualmente", "hint": "¿Qué hay en el presente? (formal)"},
+        {"sentence": "___ todo era más barato.", "answer": "Entonces", "hint": "¿En aquel momento del pasado?"},
+        {"sentence": "___ las familias eran más grandes.", "answer": "Antes", "hint": "¿Cómo eran las familias en el pasado?"},
+        {"sentence": "___ la tecnología está en todas partes.", "answer": "Ahora", "hint": "¿Dónde está la tecnología hoy?"},
+        {"sentence": "___ vivo en Madrid.", "answer": "Actualmente", "hint": "¿Dónde vives en el presente?"},
+        {"sentence": "___ no había internet.", "answer": "Entonces", "hint": "¿Qué no había en el pasado?"}
+      ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Imperfecto en contexto: describir el pasado",
+      "hint": "imperfecto de indicativo",
+      "rule": {
+        "title": "El IMPERFECTO para describir el pasado",
+        "explanation": "El pretérito imperfecto se usa para describir situaciones, estados, características y acciones habituales en el pasado. Es esencial para hablar de cómo era la vida en otras épocas, describir personas y lugares del pasado, y expresar costumbres antiguas.",
+        "sections": [
+          {
+            "subtitle": "Describir situaciones y estados",
+            "points": [
+              "Características físicas: Mi abuelo <b>era</b> alto y <b>tenía</b> el pelo blanco",
+              "Estados emocionales: <b>Estaba</b> muy feliz cuando <b>era</b> niño",
+              "Circunstancias: No <b>había</b> electricidad y todo <b>era</b> más difícil"
+            ]
+          },
+          {
+            "subtitle": "Describir acciones habituales",
+            "points": [
+              "Rutinas del pasado: Todos los días <b>iba</b> al colegio andando",
+              "Costumbres: En aquella época la gente <b>escribía</b> cartas",
+              "Repetición: Siempre <b>comíamos</b> juntos los domingos"
+            ]
+          },
+          {
+            "subtitle": "Contextos históricos",
+            "points": [
+              "Épocas pasadas: Los romanos <b>hablaban</b> latín",
+              "Inventos: Antes de la imprenta, los libros se <b>copiaban</b> a mano",
+              "Cambios sociales: Las mujeres no <b>podían</b> votar"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Los antiguos egipcios usaban una escritura llamada 'jeroglífica'.", "ru": "Древние египтяне использовали письменность под названием «иероглифика»."},
+          {"es": "Antes del descubrimiento de América, en Europa no había patatas.", "ru": "До открытия Америки в Европе не было картофеля."},
+          {"es": "En los años 50 la mayoría de los españoles no tenía coche.", "ru": "В 50-е годы у большинства испанцев не было машины."},
+          {"es": "A principios del siglo XX las mujeres no podían votar.", "ru": "В начале XX века женщины не могли голосовать."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Los antiguos egipcios ___ una escritura jeroglífica.", "answer": "usaban"},
+        {"sentence": "Los romanos ___ latín.", "answer": "hablaban"},
+        {"sentence": "Antes de América, en Europa no ___ patatas.", "answer": "había"},
+        {"sentence": "Los incas ___ en grandes ciudades.", "answer": "vivían"},
+        {"sentence": "A principios del siglo XIX el Imperio turco ___ enorme.", "answer": "era"},
+        {"sentence": "Las mujeres no ___ votar en casi ningún país.", "answer": "podían"},
+        {"sentence": "Durante el franquismo los partidos políticos ___ prohibidos.", "answer": "estaban"},
+        {"sentence": "Antes la gente ___ más hijos que ahora.", "answer": "tenía"},
+        {"sentence": "En los años 50 la mayoría no ___ coche.", "answer": "tenía"},
+        {"sentence": "En los años 70 Ibiza ___ una isla tranquila.", "answer": "era"},
+        {"sentence": "Los viajes entre Europa y América ___ semanas.", "answer": "duraban"},
+        {"sentence": "Antes de internet la gente ___ más cartas.", "answer": "escribía"},
+        {"sentence": "Antes del smartphone la gente no ___ tantas fotos.", "answer": "hacía"},
+        {"sentence": "Antes de la electricidad se ___ velas para iluminar.", "answer": "usaban"},
+        {"sentence": "Los griegos antiguos ___ en dioses.", "answer": "creían"},
+        {"sentence": "Antes de los aviones la gente ___ en barco.", "answer": "viajaba"},
+        {"sentence": "En la Edad Media la gente ___ muy poco.", "answer": "vivía"},
+        {"sentence": "Los aztecas ___ pirámides impresionantes.", "answer": "construían"},
+        {"sentence": "Antes de la imprenta los libros se ___ a mano.", "answer": "copiaban"},
+        {"sentence": "En el siglo XVIII no ___ vacunas.", "answer": "había"},
+        {"sentence": "Los vikingos ___ grandes navegantes.", "answer": "eran"},
+        {"sentence": "Antes de los ordenadores todo se ___ a mano.", "answer": "escribía"},
+        {"sentence": "En la antigüedad los esclavos no ___ derechos.", "answer": "tenían"},
+        {"sentence": "Los mayas ___ matemáticas avanzadas.", "answer": "conocían"},
+        {"sentence": "Antes del teléfono la gente ___ telegramas.", "answer": "enviaba"},
+        {"sentence": "En el siglo XIX los niños ___ en las fábricas.", "answer": "trabajaban"},
+        {"sentence": "Antes de los antibióticos muchas enfermedades ___ mortales.", "answer": "eran"},
+        {"sentence": "Los chinos antiguos ___ papel.", "answer": "fabricaban"},
+        {"sentence": "En la Edad Media la gente no ___ leer.", "answer": "sabía"},
+        {"sentence": "Los primeros ordenadores ___ enormes.", "answer": "eran"},
+        {"sentence": "Antes de la televisión la gente ___ a la radio.", "answer": "escuchaba"},
+        {"sentence": "Los caballeros medievales ___ armadura.", "answer": "llevaban"},
+        {"sentence": "En el siglo XV no ___ América en los mapas.", "answer": "existía"},
+        {"sentence": "Los antiguos ___ que la Tierra era plana.", "answer": "pensaban"},
+        {"sentence": "Antes de los supermercados la gente ___ en tiendas pequeñas.", "answer": "compraba"},
+        {"sentence": "Los reyes antiguos ___ mucho poder.", "answer": "tenían"},
+        {"sentence": "Antes del cine la gente ___ al teatro.", "answer": "iba"},
+        {"sentence": "En el pasado los viajes ___ peligrosos.", "answer": "eran"},
+        {"sentence": "Los samurais japoneses ___ espadas.", "answer": "usaban"},
+        {"sentence": "Antes de los coches la gente ___ a caballo.", "answer": "viajaba"},
+        {"sentence": "Los científicos antiguos no ___ microscopios.", "answer": "tenían"},
+        {"sentence": "En el siglo XIX las cartas ___ semanas en llegar.", "answer": "tardaban"},
+        {"sentence": "Los pueblos antiguos ___ dioses del sol.", "answer": "adoraban"},
+        {"sentence": "Antes de la lavadora la gente ___ la ropa a mano.", "answer": "lavaba"},
+        {"sentence": "Los gladiadores romanos ___ en el coliseo.", "answer": "luchaban"},
+        {"sentence": "En el pasado no ___ hospitales modernos.", "answer": "existían"},
+        {"sentence": "Los navegantes antiguos ___ las estrellas para orientarse.", "answer": "usaban"},
+        {"sentence": "Antes del frigorífico la comida se ___ rápidamente.", "answer": "estropeaba"},
+        {"sentence": "Los emperadores romanos ___ palacios enormes.", "answer": "tenían"},
+        {"sentence": "En la prehistoria la gente ___ en cuevas.", "answer": "vivía"},
+        {"sentence": "Los alquimistas ___ convertir metales en oro.", "answer": "querían"},
+        {"sentence": "Antes de los relojes la gente ___ la hora por el sol.", "answer": "sabía"},
+        {"sentence": "Los piratas ___ por los mares buscando tesoros.", "answer": "navegaban"},
+        {"sentence": "En el pasado no ___ tantos países como ahora.", "answer": "había"},
+        {"sentence": "Los faraones egipcios ___ pirámides como tumbas.", "answer": "construían"},
+        {"sentence": "Antes de la fotografía la gente ___ retratos pintados.", "answer": "tenía"},
+        {"sentence": "Los monjes medievales ___ libros a mano.", "answer": "copiaban"},
+        {"sentence": "En tiempos antiguos los mensajes ___ días en llegar.", "answer": "tardaban"},
+        {"sentence": "Los artesanos antiguos ___ todo a mano.", "answer": "fabricaban"},
+        {"sentence": "Antes de las vacunas muchos niños ___ jóvenes.", "answer": "morían"}
+      ],
+      "microTests": [
+        {"sentence": "Los romanos ___ latín.", "answer": "hablaban", "hint": "¿Qué idioma usaban los romanos? (hablar)"},
+        {"sentence": "Antes no ___ patatas en Europa.", "answer": "había", "hint": "¿Qué no existía antes? (haber)"},
+        {"sentence": "Las mujeres no ___ votar.", "answer": "podían", "hint": "¿Qué no les era permitido? (poder)"},
+        {"sentence": "La gente ___ más hijos antes.", "answer": "tenía", "hint": "¿Cuántos hijos tenían? (tener)"},
+        {"sentence": "En los años 70 Ibiza ___ tranquila.", "answer": "era", "hint": "¿Cómo era Ibiza? (ser)"},
+        {"sentence": "Los viajes ___ semanas.", "answer": "duraban", "hint": "¿Cuánto tiempo llevaban? (durar)"},
+        {"sentence": "La gente ___ más cartas.", "answer": "escribía", "hint": "¿Cómo se comunicaban? (escribir)"},
+        {"sentence": "Los griegos ___ en dioses.", "answer": "creían", "hint": "¿En qué creían? (creer)"},
+        {"sentence": "Los libros se ___ a mano.", "answer": "copiaban", "hint": "¿Cómo se hacían los libros? (copiar)"},
+        {"sentence": "Los vikingos ___ grandes navegantes.", "answer": "eran", "hint": "¿Cómo eran los vikingos? (ser)"},
+        {"sentence": "La gente ___ en tiendas pequeñas.", "answer": "compraba", "hint": "¿Dónde compraban? (comprar)"},
+        {"sentence": "Los antiguos ___ que la Tierra era plana.", "answer": "pensaban", "hint": "¿Qué creían los antiguos? (pensar)"}
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Describir personas y recuerdos del pasado",
+      "hint": "imperfecto descriptivo",
+      "rule": {
+        "title": "El IMPERFECTO para describir PERSONAS y RECUERDOS",
+        "explanation": "El pretérito imperfecto es perfecto para describir cómo eran las personas, lugares y cosas en el pasado. También se usa para hablar de recuerdos de la infancia, de la juventud y de épocas pasadas de nuestra vida.",
+        "sections": [
+          {
+            "subtitle": "Describir personas del pasado",
+            "points": [
+              "Aspecto físico: Mi abuelo <b>era</b> alto y <b>tenía</b> bigote",
+              "Carácter: Mi profesora <b>era</b> muy simpática y <b>nos contaba</b> historias",
+              "Profesión/ocupación: Mi padre <b>trabajaba</b> en una fábrica"
+            ]
+          },
+          {
+            "subtitle": "Describir lugares del pasado",
+            "points": [
+              "Mi pueblo <b>era</b> pequeño y <b>tenía</b> una plaza bonita",
+              "La casa de mis abuelos <b>estaba</b> en el campo",
+              "El barrio <b>era</b> tranquilo y todos se <b>conocían</b>"
+            ]
+          },
+          {
+            "subtitle": "Hablar de recuerdos",
+            "points": [
+              "Cuando era niño, <b>jugaba</b> en la calle con mis amigos",
+              "De pequeño <b>tenía</b> un perro que se <b>llamaba</b> Luna",
+              "En mi infancia <b>íbamos</b> a la playa todos los veranos"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Mi primera maestra se llamaba Ana y era muy cariñosa.", "ru": "Мою первую учительницу звали Ана, и она была очень ласковой."},
+          {"es": "De pequeño tenía un oso de peluche que llevaba a todas partes.", "ru": "В детстве у меня был плюшевый мишка, которого я брал с собой повсюду."},
+          {"es": "Mi mejor amigo de la infancia vivía en la casa de al lado.", "ru": "Мой лучший друг детства жил в соседнем доме."},
+          {"es": "El parque donde jugábamos tenía un tobogán muy grande.", "ru": "В парке, где мы играли, была очень большая горка."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Mi primera maestra se ___ Ana.", "answer": "llamaba"},
+        {"sentence": "Mi abuela ___ muy cariñosa.", "answer": "era"},
+        {"sentence": "De pequeño ___ un perro muy grande.", "answer": "tenía"},
+        {"sentence": "Mi padre ___ en una oficina.", "answer": "trabajaba"},
+        {"sentence": "El pueblo donde vivíamos ___ muy pequeño.", "answer": "era"},
+        {"sentence": "Mi mejor amigo de la infancia ___ Pedro.", "answer": "se llamaba"},
+        {"sentence": "La casa de mis abuelos ___ cerca del río.", "answer": "estaba"},
+        {"sentence": "Mi hermano mayor siempre me ___ historias.", "answer": "contaba"},
+        {"sentence": "Cuando era niño, ___ al parque todos los días.", "answer": "iba"},
+        {"sentence": "Mi madre ___ el pelo largo y rubio.", "answer": "tenía"},
+        {"sentence": "El colegio donde ___ era muy antiguo.", "answer": "estudiaba"},
+        {"sentence": "Mi abuelo ___ bigote y gafas.", "answer": "llevaba"},
+        {"sentence": "De pequeña me ___ coleccionar sellos.", "answer": "gustaba"},
+        {"sentence": "Mi vecino ___ muy simpático con todos.", "answer": "era"},
+        {"sentence": "La calle donde vivíamos no ___ mucho tráfico.", "answer": "tenía"},
+        {"sentence": "Mi tía siempre nos ___ dulces.", "answer": "traía"},
+        {"sentence": "El parque donde ___ tenía muchos árboles.", "answer": "jugábamos"},
+        {"sentence": "Mi profesor de matemáticas ___ muy exigente.", "answer": "era"},
+        {"sentence": "De niño ___ a nadar en el río.", "answer": "íbamos"},
+        {"sentence": "Mi abuela ___ muy bien la guitarra.", "answer": "tocaba"},
+        {"sentence": "La tienda de la esquina ___ de todo.", "answer": "vendía"},
+        {"sentence": "Mi padre ___ un coche rojo muy bonito.", "answer": "tenía"},
+        {"sentence": "Cuando ___ pequeño, me gustaba dibujar.", "answer": "era"},
+        {"sentence": "Mi hermana ___ a clases de ballet.", "answer": "iba"},
+        {"sentence": "El jardín de mi casa ___ muchas flores.", "answer": "tenía"},
+        {"sentence": "Mi madre nos ___ cuentos antes de dormir.", "answer": "leía"},
+        {"sentence": "El barrio donde vivíamos ___ muy seguro.", "answer": "era"},
+        {"sentence": "Mi abuelo ___ en una mina de carbón.", "answer": "trabajaba"},
+        {"sentence": "De niño ___ un montón de juguetes.", "answer": "tenía"},
+        {"sentence": "Mi profesora ___ muy paciente con nosotros.", "answer": "era"},
+        {"sentence": "La biblioteca del colegio ___ muchos libros.", "answer": "tenía"},
+        {"sentence": "Mi padre siempre ___ temprano a casa.", "answer": "llegaba"},
+        {"sentence": "Cuando era joven, ___ con ser astronauta.", "answer": "soñaba"},
+        {"sentence": "Mi vecina ___ unas galletas deliciosas.", "answer": "hacía"},
+        {"sentence": "El cine del pueblo ___ películas los sábados.", "answer": "ponía"},
+        {"sentence": "Mi hermano mayor ___ muy bien al fútbol.", "answer": "jugaba"},
+        {"sentence": "La casa donde nací ___ un jardín pequeño.", "answer": "tenía"},
+        {"sentence": "Mi abuela ___ los mejores pasteles del mundo.", "answer": "hacía"},
+        {"sentence": "De pequeño ___ miedo a los truenos.", "answer": "tenía"},
+        {"sentence": "Mi tío ___ historias de cuando era soldado.", "answer": "contaba"},
+        {"sentence": "El río donde ___ estaba muy limpio.", "answer": "nadábamos"},
+        {"sentence": "Mi madre ___ todos los días muy temprano.", "answer": "madrugaba"},
+        {"sentence": "La plaza del pueblo ___ una fuente antigua.", "answer": "tenía"},
+        {"sentence": "Mi padre nos ___ a pescar los domingos.", "answer": "llevaba"},
+        {"sentence": "Cuando era adolescente, ___ mucho rock.", "answer": "escuchaba"},
+        {"sentence": "Mi abuela ___ ojos azules muy bonitos.", "answer": "tenía"},
+        {"sentence": "El mercado del pueblo ___ muy animado.", "answer": "era"},
+        {"sentence": "De niño siempre ___ con mis primos.", "answer": "jugaba"},
+        {"sentence": "Mi hermana ___ el pelo muy largo.", "answer": "tenía"},
+        {"sentence": "La escuela donde ___ era pequeña pero bonita.", "answer": "iba"},
+        {"sentence": "Mi abuelo ___ una barba muy larga.", "answer": "tenía"},
+        {"sentence": "Cuando era joven, ___ muchos amigos.", "answer": "tenía"},
+        {"sentence": "Mi madre ___ muy bien la paella.", "answer": "cocinaba"},
+        {"sentence": "El parque de mi barrio ___ columpios.", "answer": "tenía"},
+        {"sentence": "Mi padre ___ al trabajo en bicicleta.", "answer": "iba"},
+        {"sentence": "De pequeño me ___ mucho los helados.", "answer": "gustaban"},
+        {"sentence": "La casa de mi infancia ___ muy acogedora.", "answer": "era"},
+        {"sentence": "Mi abuela nos ___ chocolate caliente.", "answer": "preparaba"},
+        {"sentence": "El profesor que más me ___ era el de historia.", "answer": "gustaba"},
+        {"sentence": "Cuando era niño, ___ mucho con mis hermanos.", "answer": "peleaba"}
+      ],
+      "microTests": [
+        {"sentence": "Mi primera maestra se ___ Ana.", "answer": "llamaba", "hint": "¿Cómo se llamaba? (llamarse)"},
+        {"sentence": "Mi abuela ___ muy cariñosa.", "answer": "era", "hint": "¿Cómo era su carácter? (ser)"},
+        {"sentence": "De pequeño ___ un perro.", "answer": "tenía", "hint": "¿Qué mascota tenía? (tener)"},
+        {"sentence": "Mi padre ___ en una oficina.", "answer": "trabajaba", "hint": "¿Dónde trabajaba? (trabajar)"},
+        {"sentence": "El pueblo ___ muy pequeño.", "answer": "era", "hint": "¿Cómo era el pueblo? (ser)"},
+        {"sentence": "La casa ___ cerca del río.", "answer": "estaba", "hint": "¿Dónde estaba situada? (estar)"},
+        {"sentence": "Mi hermano me ___ historias.", "answer": "contaba", "hint": "¿Qué hacía tu hermano? (contar)"},
+        {"sentence": "Cuando era niño, ___ al parque.", "answer": "iba", "hint": "¿Adónde iba? (ir)"},
+        {"sentence": "Mi madre ___ el pelo largo.", "answer": "tenía", "hint": "¿Cómo era su pelo? (tener)"},
+        {"sentence": "Mi abuelo ___ bigote.", "answer": "llevaba", "hint": "¿Qué llevaba en la cara? (llevar)"},
+        {"sentence": "El parque ___ muchos árboles.", "answer": "tenía", "hint": "¿Qué había en el parque? (tener)"},
+        {"sentence": "Mi abuela ___ muy bien.", "answer": "cocinaba", "hint": "¿Qué hacía tu abuela? (cocinar)"}
+      ]
+    }
+  ],
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "preterito_imperfecto",
+        "nombre": "Pretérito imperfecto",
+        "requiredEjercicio": "ejercicio_1",
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "yo": "hablaba",
+              "tu": "hablabas",
+              "el": "hablaba",
+              "nosotros": "hablábamos",
+              "vosotros": "hablabais",
+              "ellos": "hablaban"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "vivía",
+              "tu": "vivías",
+              "el": "vivía",
+              "nosotros": "vivíamos",
+              "vosotros": "vivíais",
+              "ellos": "vivían"
+            }
+          },
+          {
+            "infinitivo": "cambiar",
+            "traduccion": "менять(ся)",
+            "formas": {
+              "yo": "cambiaba",
+              "tu": "cambiabas",
+              "el": "cambiaba",
+              "nosotros": "cambiábamos",
+              "vosotros": "cambiabais",
+              "ellos": "cambiaban"
+            }
+          },
+          {
+            "infinitivo": "existir",
+            "traduccion": "существовать",
+            "formas": {
+              "yo": "existía",
+              "tu": "existías",
+              "el": "existía",
+              "nosotros": "existíamos",
+              "vosotros": "existíais",
+              "ellos": "existían"
+            }
+          },
+          {
+            "infinitivo": "trabajar",
+            "traduccion": "работать",
+            "formas": {
+              "yo": "trabajaba",
+              "tu": "trabajabas",
+              "el": "trabajaba",
+              "nosotros": "trabajábamos",
+              "vosotros": "trabajabais",
+              "ellos": "trabajaban"
+            }
+          },
+          {
+            "infinitivo": "estudiar",
+            "traduccion": "учиться",
+            "formas": {
+              "yo": "estudiaba",
+              "tu": "estudiabas",
+              "el": "estudiaba",
+              "nosotros": "estudiábamos",
+              "vosotros": "estudiabais",
+              "ellos": "estudiaban"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "yo": "comía",
+              "tu": "comías",
+              "el": "comía",
+              "nosotros": "comíamos",
+              "vosotros": "comíais",
+              "ellos": "comían"
+            }
+          },
+          {
+            "infinitivo": "tener",
+            "traduccion": "иметь",
+            "formas": {
+              "yo": "tenía",
+              "tu": "tenías",
+              "el": "tenía",
+              "nosotros": "teníamos",
+              "vosotros": "teníais",
+              "ellos": "tenían"
+            }
+          },
+          {
+            "infinitivo": "jugar",
+            "traduccion": "играть",
+            "formas": {
+              "yo": "jugaba",
+              "tu": "jugabas",
+              "el": "jugaba",
+              "nosotros": "jugábamos",
+              "vosotros": "jugabais",
+              "ellos": "jugaban"
+            }
+          },
+          {
+            "infinitivo": "usar",
+            "traduccion": "использовать",
+            "formas": {
+              "yo": "usaba",
+              "tu": "usabas",
+              "el": "usaba",
+              "nosotros": "usábamos",
+              "vosotros": "usabais",
+              "ellos": "usaban"
+            }
+          }
+        ],
+        "irregulares": [
+          {
+            "infinitivo": "ser",
+            "traduccion": "быть",
+            "formas": {
+              "yo": "era",
+              "tu": "eras",
+              "el": "era",
+              "nosotros": "éramos",
+              "vosotros": "erais",
+              "ellos": "eran"
+            }
+          },
+          {
+            "infinitivo": "ir",
+            "traduccion": "идти/ходить",
+            "formas": {
+              "yo": "iba",
+              "tu": "ibas",
+              "el": "iba",
+              "nosotros": "íbamos",
+              "vosotros": "ibais",
+              "ellos": "iban"
+            }
+          },
+          {
+            "infinitivo": "ver",
+            "traduccion": "видеть",
+            "formas": {
+              "yo": "veía",
+              "tu": "veías",
+              "el": "veía",
+              "nosotros": "veíamos",
+              "vosotros": "veíais",
+              "ellos": "veían"
+            }
+          },
+          {
+            "infinitivo": "haber",
+            "traduccion": "иметься/быть (безл.)",
+            "formas": {
+              "yo": "había",
+              "tu": "habías",
+              "el": "había",
+              "nosotros": "habíamos",
+              "vosotros": "habíais",
+              "ellos": "habían"
+            }
+          },
+          {
+            "infinitivo": "poder",
+            "traduccion": "мочь",
+            "formas": {
+              "yo": "podía",
+              "tu": "podías",
+              "el": "podía",
+              "nosotros": "podíamos",
+              "vosotros": "podíais",
+              "ellos": "podían"
+            }
+          },
+          {
+            "infinitivo": "querer",
+            "traduccion": "хотеть",
+            "formas": {
+              "yo": "quería",
+              "tu": "querías",
+              "el": "quería",
+              "nosotros": "queríamos",
+              "vosotros": "queríais",
+              "ellos": "querían"
+            }
+          },
+          {
+            "infinitivo": "saber",
+            "traduccion": "знать",
+            "formas": {
+              "yo": "sabía",
+              "tu": "sabías",
+              "el": "sabía",
+              "nosotros": "sabíamos",
+              "vosotros": "sabíais",
+              "ellos": "sabían"
+            }
+          },
+          {
+            "infinitivo": "hacer",
+            "traduccion": "делать",
+            "formas": {
+              "yo": "hacía",
+              "tu": "hacías",
+              "el": "hacía",
+              "nosotros": "hacíamos",
+              "vosotros": "hacíais",
+              "ellos": "hacían"
+            }
+          },
+          {
+            "infinitivo": "decir",
+            "traduccion": "говорить/сказать",
+            "formas": {
+              "yo": "decía",
+              "tu": "decías",
+              "el": "decía",
+              "nosotros": "decíamos",
+              "vosotros": "decíais",
+              "ellos": "decían"
+            }
+          }
+        ],
+        "otras": [
+          {
+            "id": "reflexivos",
+            "nombre": "Verbos reflexivos",
+            "verbos": [
+              {
+                "infinitivo": "levantarse",
+                "traduccion": "вставать",
+                "formas": {
+                  "yo": "me levantaba",
+                  "tu": "te levantabas",
+                  "el": "se levantaba",
+                  "nosotros": "nos levantábamos",
+                  "vosotros": "os levantabais",
+                  "ellos": "se levantaban"
+                }
+              },
+              {
+                "infinitivo": "acostarse",
+                "traduccion": "ложиться спать",
+                "formas": {
+                  "yo": "me acostaba",
+                  "tu": "te acostabas",
+                  "el": "se acostaba",
+                  "nosotros": "nos acostábamos",
+                  "vosotros": "os acostabais",
+                  "ellos": "se acostaban"
+                }
+              },
+              {
+                "infinitivo": "vestirse",
+                "traduccion": "одеваться",
+                "formas": {
+                  "yo": "me vestía",
+                  "tu": "te vestías",
+                  "el": "se vestía",
+                  "nosotros": "nos vestíamos",
+                  "vosotros": "os vestíais",
+                  "ellos": "se vestían"
+                }
+              },
+              {
+                "infinitivo": "ducharse",
+                "traduccion": "принимать душ",
+                "formas": {
+                  "yo": "me duchaba",
+                  "tu": "te duchabas",
+                  "el": "se duchaba",
+                  "nosotros": "nos duchábamos",
+                  "vosotros": "os duchabais",
+                  "ellos": "se duchaban"
+                }
+              },
+              {
+                "infinitivo": "despertarse",
+                "traduccion": "просыпаться",
+                "formas": {
+                  "yo": "me despertaba",
+                  "tu": "te despertabas",
+                  "el": "se despertaba",
+                  "nosotros": "nos despertábamos",
+                  "vosotros": "os despertabais",
+                  "ellos": "se despertaban"
+                }
+              },
+              {
+                "infinitivo": "divertirse",
+                "traduccion": "развлекаться",
+                "formas": {
+                  "yo": "me divertía",
+                  "tu": "te divertías",
+                  "el": "se divertía",
+                  "nosotros": "nos divertíamos",
+                  "vosotros": "os divertíais",
+                  "ellos": "se divertían"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

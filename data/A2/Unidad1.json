@@ -1,0 +1,3538 @@
+{
+  "id": "unidad_1",
+  "title": "Unidad 1: Dar consejos para aprender un idioma",
+  "groups": {
+    "FAMILIA": [
+      {
+        "spanish": "el abuelo",
+        "ru": "дедушка",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ paterno tiene 85 años.",
+          "El ___ de mi esposa cocina muy bien.",
+          "Visitamos a mi ___ cada domingo.",
+          "El ___ nos contó historias de su juventud."
+        ],
+        "hardSentencesRu": [
+          "Моему дедушке по отцовской линии 85 лет.",
+          "Дедушка моей жены очень хорошо готовит.",
+          "Мы навещаем моего дедушку каждое воскресенье.",
+          "Дедушка рассказал нам истории из своей молодости."
+        ]
+      },
+      {
+        "spanish": "la abuela",
+        "ru": "бабушка",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ materna vive en el campo.",
+          "La ___ prepara las mejores galletas.",
+          "Llamo a mi ___ todos los viernes.",
+          "La ___ nos enseñó a coser."
+        ],
+        "hardSentencesRu": [
+          "Моя бабушка по материнской линии живёт в деревне.",
+          "Бабушка готовит лучшее печенье.",
+          "Я звоню бабушке каждую пятницу.",
+          "Бабушка научила нас шить."
+        ]
+      },
+      {
+        "spanish": "materno",
+        "ru": "по материнской линии (м)",
+        "type": "adjetivo",
+        "icon": "gender-female",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo ___ era español.",
+          "El lado ___ de mi familia es muy grande.",
+          "Mi tío ___ vive en Argentina.",
+          "El apellido ___ es García."
+        ],
+        "hardSentencesRu": [
+          "Мой дедушка по материнской линии был испанцем.",
+          "Материнская сторона моей семьи очень большая.",
+          "Мой дядя по материнской линии живёт в Аргентине.",
+          "Фамилия по материнской линии — Гарсия."
+        ]
+      },
+      {
+        "spanish": "materna",
+        "ru": "по материнской линии (ж)",
+        "type": "adjetivo",
+        "icon": "gender-female",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuela ___ nació en México.",
+          "La familia ___ tiene muchas tradiciones.",
+          "Mi prima ___ estudia medicina.",
+          "La lengua ___ de mi madre es el catalán."
+        ],
+        "hardSentencesRu": [
+          "Моя бабушка по материнской линии родилась в Мексике.",
+          "Семья по материнской линии имеет много традиций.",
+          "Моя кузина по материнской линии изучает медицину.",
+          "Родной язык моей мамы — каталанский."
+        ]
+      },
+      {
+        "spanish": "paterno",
+        "ru": "по отцовской линии (м)",
+        "type": "adjetivo",
+        "icon": "gender-male",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuelo ___ fue militar.",
+          "El apellido ___ es muy común.",
+          "Mi tío ___ trabaja en Barcelona.",
+          "El lado ___ viene de Andalucía."
+        ],
+        "hardSentencesRu": [
+          "Мой дедушка по отцовской линии был военным.",
+          "Фамилия по отцовской линии очень распространённая.",
+          "Мой дядя по отцовской линии работает в Барселоне.",
+          "Отцовская сторона родом из Андалусии."
+        ]
+      },
+      {
+        "spanish": "paterna",
+        "ru": "по отцовской линии (ж)",
+        "type": "adjetivo",
+        "icon": "gender-male",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi abuela ___ era profesora.",
+          "La familia ___ es de origen italiano.",
+          "Mi prima ___ se casó el año pasado.",
+          "La casa ___ está en el pueblo."
+        ],
+        "hardSentencesRu": [
+          "Моя бабушка по отцовской линии была учительницей.",
+          "Семья по отцовской линии итальянского происхождения.",
+          "Моя кузина по отцовской линии вышла замуж в прошлом году.",
+          "Дом по отцовской линии находится в деревне."
+        ]
+      }
+    ],
+    "IDIOMAS_APRENDIZAJE": [
+      {
+        "spanish": "el profesor",
+        "ru": "учитель",
+        "type": "sustantivo",
+        "icon": "chalkboard-teacher",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de español es muy paciente.",
+          "Nuestro ___ explica muy bien la gramática.",
+          "El ___ habla cuatro idiomas.",
+          "Pregunto al ___ cuando no entiendo."
+        ],
+        "hardSentencesRu": [
+          "Учитель испанского очень терпеливый.",
+          "Наш учитель очень хорошо объясняет грамматику.",
+          "Учитель говорит на четырёх языках.",
+          "Я спрашиваю учителя, когда не понимаю."
+        ]
+      },
+      {
+        "spanish": "la profesora",
+        "ru": "учительница",
+        "type": "sustantivo",
+        "icon": "chalkboard-teacher",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ corrige nuestros errores con paciencia.",
+          "Nuestra ___ es de Argentina.",
+          "La ___ nos da mucha tarea.",
+          "La ___ enseña en la universidad."
+        ],
+        "hardSentencesRu": [
+          "Учительница терпеливо исправляет наши ошибки.",
+          "Наша учительница из Аргентины.",
+          "Учительница даёт нам много домашнего задания.",
+          "Учительница преподаёт в университете."
+        ]
+      },
+      {
+        "spanish": "el compañero",
+        "ru": "одноклассник, товарищ",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ de clase es alemán.",
+          "Practico español con mi ___.",
+          "El ___ me ayuda con los ejercicios.",
+          "Un ___ me prestó su libro."
+        ],
+        "hardSentencesRu": [
+          "Мой одноклассник — немец.",
+          "Я практикую испанский со своим товарищем.",
+          "Товарищ помогает мне с упражнениями.",
+          "Одноклассник одолжил мне свою книгу."
+        ]
+      },
+      {
+        "spanish": "la compañera",
+        "ru": "одноклассница, товарищ",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ de trabajo habla tres idiomas.",
+          "La ___ explica muy bien.",
+          "Una ___ me invitó a su casa.",
+          "La ___ estudia mucho."
+        ],
+        "hardSentencesRu": [
+          "Моя коллега говорит на трёх языках.",
+          "Одноклассница очень хорошо объясняет.",
+          "Одноклассница пригласила меня к себе домой.",
+          "Одноклассница много учится."
+        ]
+      },
+      {
+        "spanish": "la lengua materna",
+        "ru": "родной язык",
+        "type": "sustantivo",
+        "icon": "chat-centered-text",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ es el ruso.",
+          "En casa hablamos nuestra ___.",
+          "La ___ de mi padre es el catalán.",
+          "Enseño mi ___ a extranjeros."
+        ],
+        "hardSentencesRu": [
+          "Мой родной язык — русский.",
+          "Дома мы говорим на нашем родном языке.",
+          "Родной язык моего отца — каталанский.",
+          "Я преподаю свой родной язык иностранцам."
+        ]
+      },
+      {
+        "spanish": "el intercambio",
+        "ru": "языковой обмен",
+        "type": "sustantivo",
+        "icon": "arrows-left-right",
+        "useIcon": true,
+        "hardSentences": [
+          "Hago un ___ lingüístico cada semana.",
+          "El ___ me ayuda a practicar.",
+          "Busco un ___ con un nativo.",
+          "El ___ dura una hora."
+        ],
+        "hardSentencesRu": [
+          "Я занимаюсь языковым обменом каждую неделю.",
+          "Языковой обмен помогает мне практиковаться.",
+          "Я ищу языковой обмен с носителем языка.",
+          "Языковой обмен длится один час."
+        ]
+      },
+      {
+        "spanish": "el nivel",
+        "ru": "уровень",
+        "type": "sustantivo",
+        "icon": "steps",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ de español es B1.",
+          "Quiero subir mi ___ este año.",
+          "El ___ avanzado es muy difícil.",
+          "Tengo un ___ intermedio en francés."
+        ],
+        "hardSentencesRu": [
+          "Мой уровень испанского — B1.",
+          "Я хочу повысить свой уровень в этом году.",
+          "Продвинутый уровень очень сложный.",
+          "У меня средний уровень французского."
+        ]
+      },
+      {
+        "spanish": "la fluidez",
+        "ru": "беглость речи",
+        "type": "sustantivo",
+        "icon": "waves",
+        "useIcon": true,
+        "hardSentences": [
+          "Necesito mejorar mi ___ al hablar.",
+          "La ___ viene con la práctica.",
+          "Tiene mucha ___ en inglés.",
+          "Para ganar ___ hay que hablar mucho."
+        ],
+        "hardSentencesRu": [
+          "Мне нужно улучшить беглость речи.",
+          "Беглость приходит с практикой.",
+          "У него хорошая беглость в английском.",
+          "Чтобы обрести беглость, нужно много говорить."
+        ]
+      },
+      {
+        "spanish": "la pronunciación",
+        "ru": "произношение",
+        "type": "sustantivo",
+        "icon": "microphone",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ de la erre es mala.",
+          "Practico la ___ todos los días.",
+          "La ___ española es difícil.",
+          "Quiero mejorar mi ___."
+        ],
+        "hardSentencesRu": [
+          "Моё произношение буквы «р» плохое.",
+          "Я практикую произношение каждый день.",
+          "Испанское произношение сложное.",
+          "Я хочу улучшить своё произношение."
+        ]
+      },
+      {
+        "spanish": "el acento",
+        "ru": "акцент",
+        "type": "sustantivo",
+        "icon": "flag",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo un ___ ruso muy fuerte.",
+          "El ___ argentino es diferente.",
+          "Mi ___ se nota mucho.",
+          "Quiero perder mi ___."
+        ],
+        "hardSentencesRu": [
+          "У меня очень сильный русский акцент.",
+          "Аргентинский акцент отличается.",
+          "Мой акцент очень заметен.",
+          "Я хочу избавиться от своего акцента."
+        ]
+      },
+      {
+        "spanish": "el nativo",
+        "ru": "носитель языка (м)",
+        "type": "sustantivo",
+        "icon": "user-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Practico con un ___ español.",
+          "El ___ habla muy rápido.",
+          "Conozco a un ___ de México.",
+          "Un ___ me corrige los errores."
+        ],
+        "hardSentencesRu": [
+          "Я практикуюсь с носителем испанского.",
+          "Носитель языка говорит очень быстро.",
+          "Я знаком с носителем языка из Мексики.",
+          "Носитель языка исправляет мои ошибки."
+        ]
+      },
+      {
+        "spanish": "la nativa",
+        "ru": "носитель языка (ж)",
+        "type": "sustantivo",
+        "icon": "user-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi amiga ___ me ayuda mucho.",
+          "La ___ enseña expresiones coloquiales.",
+          "Una ___ colombiana trabaja conmigo.",
+          "La ___ habla con mucha naturalidad."
+        ],
+        "hardSentencesRu": [
+          "Моя подруга-носитель языка очень мне помогает.",
+          "Носитель языка учит разговорным выражениям.",
+          "Колумбийская носительница языка работает со мной.",
+          "Носитель языка говорит очень естественно."
+        ]
+      },
+      {
+        "spanish": "la dificultad",
+        "ru": "трудность",
+        "type": "sustantivo",
+        "icon": "warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ con el subjuntivo.",
+          "La ___ principal es la gramática.",
+          "Esta ___ se puede superar.",
+          "La ___ más grande son los verbos."
+        ],
+        "hardSentencesRu": [
+          "У меня трудности с сослагательным наклонением.",
+          "Основная трудность — это грамматика.",
+          "Эту трудность можно преодолеть.",
+          "Самая большая трудность — это глаголы."
+        ]
+      },
+      {
+        "spanish": "el error",
+        "ru": "ошибка",
+        "type": "sustantivo",
+        "icon": "x-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Cometí un ___ en el examen.",
+          "El ___ más común es el artículo.",
+          "Aprendo de cada ___.",
+          "El ___ fue en la conjugación."
+        ],
+        "hardSentencesRu": [
+          "Я совершил ошибку на экзамене.",
+          "Самая распространённая ошибка — артикль.",
+          "Я учусь на каждой ошибке.",
+          "Ошибка была в спряжении."
+        ]
+      },
+      {
+        "spanish": "la corrección",
+        "ru": "исправление",
+        "type": "sustantivo",
+        "icon": "check-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ del profesor me ayuda.",
+          "Necesito ___ constante para mejorar.",
+          "La ___ debe ser inmediata.",
+          "Agradezco cada ___."
+        ],
+        "hardSentencesRu": [
+          "Исправления учителя мне помогают.",
+          "Мне нужно постоянное исправление, чтобы улучшиться.",
+          "Исправление должно быть немедленным.",
+          "Я благодарен за каждое исправление."
+        ]
+      },
+      {
+        "spanish": "la gramática",
+        "ru": "грамматика",
+        "type": "sustantivo",
+        "icon": "book-open-text",
+        "useIcon": true,
+        "hardSentences": [
+          "Estudio ___ todos los días.",
+          "La ___ española tiene muchas reglas.",
+          "Necesito repasar la ___.",
+          "La ___ es importante pero difícil."
+        ],
+        "hardSentencesRu": [
+          "Я изучаю грамматику каждый день.",
+          "Испанская грамматика имеет много правил.",
+          "Мне нужно повторить грамматику.",
+          "Грамматика важна, но сложна."
+        ]
+      },
+      {
+        "spanish": "el vocabulario",
+        "ru": "словарный запас",
+        "type": "sustantivo",
+        "icon": "list",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ todavía es limitado.",
+          "Aprendo ___ nuevo cada día.",
+          "El ___ técnico es muy difícil.",
+          "Necesito ampliar mi ___."
+        ],
+        "hardSentencesRu": [
+          "Мой словарный запас пока ограничен.",
+          "Я учу новую лексику каждый день.",
+          "Технический словарный запас очень сложный.",
+          "Мне нужно расширить свой словарный запас."
+        ]
+      },
+      {
+        "spanish": "el estilo de aprendizaje",
+        "ru": "стиль обучения",
+        "type": "sustantivo",
+        "icon": "brain",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ es visual.",
+          "Cada persona tiene su ___.",
+          "Prefiero un ___ práctico.",
+          "El ___ influye en el progreso."
+        ],
+        "hardSentencesRu": [
+          "Мой стиль обучения — визуальный.",
+          "У каждого человека свой стиль обучения.",
+          "Я предпочитаю практический стиль обучения.",
+          "Стиль обучения влияет на прогресс."
+        ]
+      }
+    ],
+    "EMOCIONES": [
+      {
+        "spanish": "seguro",
+        "ru": "уверенный (м)",
+        "type": "adjetivo",
+        "icon": "shield-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Me siento ___ cuando hablo en español.",
+          "Estoy ___ de mi respuesta.",
+          "No estoy ___ de la pronunciación.",
+          "Él se siente más ___ ahora."
+        ],
+        "hardSentencesRu": [
+          "Я чувствую себя уверенно, когда говорю по-испански.",
+          "Я уверен в своём ответе.",
+          "Я не уверен в произношении.",
+          "Он чувствует себя увереннее теперь."
+        ]
+      },
+      {
+        "spanish": "segura",
+        "ru": "уверенная (ж)",
+        "type": "adjetivo",
+        "icon": "shield-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Ella está ___ de aprobar el examen.",
+          "Me siento ___ cuando practico.",
+          "No estoy ___ de esta traducción.",
+          "Mi hermana se siente muy ___."
+        ],
+        "hardSentencesRu": [
+          "Она уверена, что сдаст экзамен.",
+          "Я чувствую себя уверенной, когда практикуюсь.",
+          "Я не уверена в этом переводе.",
+          "Моя сестра чувствует себя очень уверенной."
+        ]
+      },
+      {
+        "spanish": "inseguro",
+        "ru": "неуверенный (м)",
+        "type": "adjetivo",
+        "icon": "shield-warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Me siento ___ al hablar en público.",
+          "Estoy ___ de mi nivel.",
+          "Él se siente ___ con los verbos.",
+          "Todavía estoy ___."
+        ],
+        "hardSentencesRu": [
+          "Я чувствую себя неуверенно, когда говорю публично.",
+          "Я не уверен в своём уровне.",
+          "Он чувствует себя неуверенно с глаголами.",
+          "Я всё ещё неуверен."
+        ]
+      },
+      {
+        "spanish": "insegura",
+        "ru": "неуверенная (ж)",
+        "type": "adjetivo",
+        "icon": "shield-warning",
+        "useIcon": true,
+        "hardSentences": [
+          "Ella se siente ___ cuando habla.",
+          "Estoy ___ de mi pronunciación.",
+          "Mi amiga está ___ de su español.",
+          "Me siento ___ en los exámenes."
+        ],
+        "hardSentencesRu": [
+          "Она чувствует себя неуверенной, когда говорит.",
+          "Я не уверена в своём произношении.",
+          "Моя подруга не уверена в своём испанском.",
+          "Я чувствую себя неуверенной на экзаменах."
+        ]
+      },
+      {
+        "spanish": "la frustración",
+        "ru": "фрустрация",
+        "type": "sustantivo",
+        "icon": "x-square",
+        "useIcon": true,
+        "hardSentences": [
+          "Siento ___ cuando no entiendo.",
+          "La ___ es parte del aprendizaje.",
+          "Superar la ___ es importante.",
+          "La ___ me impide progresar."
+        ],
+        "hardSentencesRu": [
+          "Я чувствую фрустрацию, когда не понимаю.",
+          "Фрустрация — это часть обучения.",
+          "Преодолеть фрустрацию важно.",
+          "Фрустрация мешает мне прогрессировать."
+        ]
+      },
+      {
+        "spanish": "ridículo",
+        "ru": "смешной, нелепый (м)",
+        "type": "adjetivo",
+        "icon": "smiley-x-eyes",
+        "useIcon": true,
+        "hardSentences": [
+          "Me siento ___ cuando cometo errores.",
+          "No es ___ aprender un idioma.",
+          "Me pareció ___ mi acento.",
+          "No debes sentirte ___."
+        ],
+        "hardSentencesRu": [
+          "Я чувствую себя нелепо, когда делаю ошибки.",
+          "Изучать язык — не нелепо.",
+          "Мне показался нелепым мой акцент.",
+          "Ты не должен чувствовать себя нелепо."
+        ]
+      },
+      {
+        "spanish": "ridícula",
+        "ru": "смешная, нелепая (ж)",
+        "type": "adjetivo",
+        "icon": "smiley-x-eyes",
+        "useIcon": true,
+        "hardSentences": [
+          "Me sentí ___ en la presentación.",
+          "La situación no es ___.",
+          "Ella se sintió ___ al principio.",
+          "No debes sentirte ___."
+        ],
+        "hardSentencesRu": [
+          "Я чувствовала себя нелепо на презентации.",
+          "Ситуация не нелепая.",
+          "Она чувствовала себя нелепо вначале.",
+          "Ты не должна чувствовать себя нелепо."
+        ]
+      },
+      {
+        "spanish": "la vergüenza",
+        "ru": "стыд",
+        "type": "sustantivo",
+        "icon": "smiley-nervous",
+        "useIcon": true,
+        "hardSentences": [
+          "No tengo ___ de mis errores.",
+          "La ___ no ayuda a aprender.",
+          "Siento ___ al hablar mal.",
+          "Supera la ___ y practica."
+        ],
+        "hardSentencesRu": [
+          "Мне не стыдно за свои ошибки.",
+          "Стыд не помогает учиться.",
+          "Мне стыдно, когда я плохо говорю.",
+          "Преодолей стыд и практикуйся."
+        ]
+      },
+      {
+        "spanish": "el miedo",
+        "ru": "страх",
+        "type": "sustantivo",
+        "icon": "warning-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo ___ de hablar en público.",
+          "El ___ me paraliza.",
+          "Superar el ___ es difícil.",
+          "El ___ al error es común."
+        ],
+        "hardSentencesRu": [
+          "Я боюсь говорить публично.",
+          "Страх меня парализует.",
+          "Преодолеть страх сложно.",
+          "Страх ошибки — это обычное дело."
+        ]
+      }
+    ],
+    "VIAJES": [
+      {
+        "spanish": "viajar",
+        "ru": "путешествовать",
+        "type": "verbo",
+        "icon": "airplane",
+        "useIcon": true,
+        "hardSentences": [
+          "Me encanta ___ por el mundo.",
+          "Quiero ___ a España este verano.",
+          "Necesito ___ más para practicar.",
+          "Voy a ___ a América Latina."
+        ],
+        "hardSentencesRu": [
+          "Я обожаю путешествовать по миру.",
+          "Я хочу поехать в Испанию этим летом.",
+          "Мне нужно больше путешествовать, чтобы практиковаться.",
+          "Я собираюсь поехать в Латинскую Америку."
+        ]
+      },
+      {
+        "spanish": "el país extranjero",
+        "ru": "зарубежная страна",
+        "type": "sustantivo",
+        "icon": "globe",
+        "useIcon": true,
+        "hardSentences": [
+          "Vivo en un ___.",
+          "Quiero conocer un ___.",
+          "Trabajar en un ___ es difícil.",
+          "Adaptarse a un ___ lleva tiempo."
+        ],
+        "hardSentencesRu": [
+          "Я живу в зарубежной стране.",
+          "Я хочу посетить зарубежную страну.",
+          "Работать в зарубежной стране сложно.",
+          "Адаптация к зарубежной стране требует времени."
+        ]
+      },
+      {
+        "spanish": "la cultura",
+        "ru": "культура",
+        "type": "sustantivo",
+        "icon": "palette",
+        "useIcon": true,
+        "hardSentences": [
+          "Me interesa la ___ española.",
+          "La ___ latina es muy rica.",
+          "Aprender la ___ es importante.",
+          "Respeto todas las ___."
+        ],
+        "hardSentencesRu": [
+          "Меня интересует испанская культура.",
+          "Латинская культура очень богатая.",
+          "Изучать культуру важно.",
+          "Я уважаю все культуры."
+        ]
+      },
+      {
+        "spanish": "descubrir",
+        "ru": "открывать, обнаруживать",
+        "type": "verbo",
+        "icon": "magnifying-glass-plus",
+        "useIcon": true,
+        "hardSentences": [
+          "Quiero ___ nuevas ciudades.",
+          "Me gusta ___ lugares diferentes.",
+          "Voy a ___ la gastronomía local.",
+          "Es interesante ___ otras culturas."
+        ],
+        "hardSentencesRu": [
+          "Я хочу открывать новые города.",
+          "Мне нравится открывать разные места.",
+          "Я собираюсь открыть для себя местную гастрономию.",
+          "Интересно открывать другие культуры."
+        ]
+      },
+      {
+        "spanish": "pasear",
+        "ru": "гулять, прогуливаться",
+        "type": "verbo",
+        "icon": "person-simple-walk",
+        "useIcon": true,
+        "hardSentences": [
+          "Me gusta ___ por el parque.",
+          "Vamos a ___ por el centro.",
+          "Quiero ___ por la playa.",
+          "Suelo ___ después de cenar."
+        ],
+        "hardSentencesRu": [
+          "Мне нравится гулять по парку.",
+          "Давай прогуляемся по центру.",
+          "Я хочу прогуляться по пляжу.",
+          "Я обычно гуляю после ужина."
+        ]
+      },
+      {
+        "spanish": "la beca",
+        "ru": "стипендия, грант",
+        "type": "sustantivo",
+        "icon": "graduation-cap",
+        "useIcon": true,
+        "hardSentences": [
+          "Solicité una ___ para estudiar.",
+          "La ___ cubre todos los gastos.",
+          "Conseguí una ___ Erasmus.",
+          "La ___ me permite viajar."
+        ],
+        "hardSentencesRu": [
+          "Я подал заявку на стипендию для учёбы.",
+          "Стипендия покрывает все расходы.",
+          "Я получил стипендию Erasmus.",
+          "Стипендия позволяет мне путешествовать."
+        ]
+      }
+    ]
+  },
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Preposiciones: con, en, entre",
+      "hint": "con / en / entre",
+      "rule": {
+        "title": "Предлоги CON, EN, ENTRE",
+        "explanation": "Эти три предлога часто путают, но у каждого своя чёткая функция. CON указывает на сопровождение (с кем делаешь действие) или инструмент (чем/с помощью чего). EN обозначает место (где находишься или происходит действие) или время (когда). ENTRE используется для обозначения положения между двумя или более объектами, а также для отношений между людьми.",
+        "sections": [
+          {
+            "subtitle": "CON — сопровождение, инструмент",
+            "points": [
+              "С кем делаешь действие: Vivo <b>con</b> mi familia — Живу с семьёй",
+              "Чем/каким инструментом: Escribo <b>con</b> bolígrafo — Пишу ручкой",
+              "Характеристика: Un café <b>con</b> leche — Кофе с молоком"
+            ]
+          },
+          {
+            "subtitle": "EN — место, время",
+            "points": [
+              "Где (место): Estudio <b>en</b> la universidad — Учусь в университете",
+              "Где (внутри): El libro está <b>en</b> la mesa — Книга на столе",
+              "Когда (время): <b>En</b> verano viajo mucho — Летом много путешествую"
+            ]
+          },
+          {
+            "subtitle": "ENTRE — между",
+            "points": [
+              "Между объектами: <b>Entre</b> la mesa y la silla — Между столом и стулом",
+              "Между людьми: <b>Entre</b> nosotros no hay secretos — Между нами нет секретов",
+              "Временной промежуток: <b>Entre</b> las 9 y las 11 — Между 9 и 11 часами"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Trabajo con mi hermano en una oficina.", "ru": "Я работаю с братом в офисе."},
+          {"es": "Vivo en Madrid con mi familia.", "ru": "Я живу в Мадриде с семьёй."},
+          {"es": "La diferencia entre español y portugués no es grande.", "ru": "Разница между испанским и португальским небольшая."},
+          {"es": "Entre tú y yo, esto es un secreto.", "ru": "Между нами, это секрет."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Estudio español ___ una academia de idiomas.", "answer": "en"},
+        {"sentence": "Me gusta practicar ___ mis compañeros de clase.", "answer": "con"},
+        {"sentence": "Vivo ___ Madrid desde hace dos años.", "answer": "en"},
+        {"sentence": "Trabajo ___ un equipo internacional.", "answer": "con"},
+        {"sentence": "La relación ___ nosotros es muy buena.", "answer": "entre"},
+        {"sentence": "Siempre viajo ___ mi familia.", "answer": "con"},
+        {"sentence": "Hay mucha confianza ___ los estudiantes.", "answer": "entre"},
+        {"sentence": "El libro está ___ la mesa.", "answer": "en"},
+        {"sentence": "Hablo ___ mi profesor todos los días.", "answer": "con"},
+        {"sentence": "La diferencia ___ español y portugués no es grande.", "answer": "entre"},
+        {"sentence": "Voy al cine ___ mis amigos.", "answer": "con"},
+        {"sentence": "___ tú y yo no hay secretos.", "answer": "Entre"},
+        {"sentence": "Estamos ___ una situación difícil.", "answer": "en"},
+        {"sentence": "Comparto piso ___ dos compañeros.", "answer": "con"},
+        {"sentence": "El examen es ___ las 9 y las 11.", "answer": "entre"},
+        {"sentence": "Escribo mis notas ___ bolígrafo.", "answer": "con"},
+        {"sentence": "Desayuno ___ mi familia cada mañana.", "answer": "con"},
+        {"sentence": "Corto la carne ___ cuchillo.", "answer": "con"},
+        {"sentence": "Hablo por teléfono ___ mis padres.", "answer": "con"},
+        {"sentence": "Tomo el té ___ azúcar.", "answer": "con"},
+        {"sentence": "Veo películas ___ subtítulos.", "answer": "con"},
+        {"sentence": "Salgo a pasear ___ mi perro.", "answer": "con"},
+        {"sentence": "Estudio ___ música de fondo.", "answer": "con"},
+        {"sentence": "Cocino ___ aceite de oliva.", "answer": "con"},
+        {"sentence": "Juego al fútbol ___ mis vecinos.", "answer": "con"},
+        {"sentence": "Leo libros ___ diccionario.", "answer": "con"},
+        {"sentence": "Celebro mi cumpleaños ___ amigos.", "answer": "con"},
+        {"sentence": "Ceno ___ mis abuelos los domingos.", "answer": "con"},
+        {"sentence": "Trabajo ___ ordenador todo el día.", "answer": "con"},
+        {"sentence": "Limpio la casa ___ productos naturales.", "answer": "con"},
+        {"sentence": "Los niños juegan ___ el parque.", "answer": "en"},
+        {"sentence": "Mis llaves están ___ el bolsillo.", "answer": "en"},
+        {"sentence": "Estudiamos ___ la biblioteca.", "answer": "en"},
+        {"sentence": "___ invierno hace mucho frío.", "answer": "En"},
+        {"sentence": "La reunión es ___ la sala grande.", "answer": "en"},
+        {"sentence": "Guardo mis fotos ___ el móvil.", "answer": "en"},
+        {"sentence": "El gato duerme ___ el sofá.", "answer": "en"},
+        {"sentence": "___ agosto voy de vacaciones.", "answer": "En"},
+        {"sentence": "Trabajo ___ una empresa multinacional.", "answer": "en"},
+        {"sentence": "Mis abuelos viven ___ un pueblo pequeño.", "answer": "en"},
+        {"sentence": "El dinero está ___ la cartera.", "answer": "en"},
+        {"sentence": "___ verano nadamos en el mar.", "answer": "En"},
+        {"sentence": "Hay muchos estudiantes ___ esta clase.", "answer": "en"},
+        {"sentence": "Los documentos están ___ la carpeta.", "answer": "en"},
+        {"sentence": "Cenamos ___ un restaurante italiano.", "answer": "en"},
+        {"sentence": "El banco está ___ la farmacia y el supermercado.", "answer": "entre"},
+        {"sentence": "Hay un buen ambiente ___ los compañeros.", "answer": "entre"},
+        {"sentence": "La cita es ___ las 2 y las 4.", "answer": "entre"},
+        {"sentence": "___ semana trabajo mucho.", "answer": "Entre"},
+        {"sentence": "Hay competencia ___ las empresas.", "answer": "entre"},
+        {"sentence": "El colegio está ___ dos calles principales.", "answer": "entre"},
+        {"sentence": "Dividimos el trabajo ___ todos.", "answer": "entre"},
+        {"sentence": "La tienda abre ___ las 9 y las 21 horas.", "answer": "entre"},
+        {"sentence": "Hay buena comunicación ___ nosotros.", "answer": "entre"},
+        {"sentence": "El jardín está ___ las dos casas.", "answer": "entre"},
+        {"sentence": "___ mis hermanos y yo no hay peleas.", "answer": "Entre"},
+        {"sentence": "El precio varía ___ 10 y 20 euros.", "answer": "entre"},
+        {"sentence": "Hay diferencias ___ las dos versiones.", "answer": "entre"},
+        {"sentence": "El museo está ___ la plaza y el río.", "answer": "entre"},
+        {"sentence": "Repartimos la comida ___ los invitados.", "answer": "entre"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Preparo la cena ___ mi madre.",
+          "answer": "con",
+          "hint": "С кем ты готовишь ужин?"
+        },
+        {
+          "sentence": "Desayuno ___ mis hijos cada mañana.",
+          "answer": "con",
+          "hint": "С кем ты завтракаешь?"
+        },
+        {
+          "sentence": "Abro la puerta ___ la llave.",
+          "answer": "con",
+          "hint": "Чем открываешь? (инструмент)"
+        },
+        {
+          "sentence": "Corto el pan ___ un cuchillo.",
+          "answer": "con",
+          "hint": "Чем режешь? (инструмент)"
+        },
+        {
+          "sentence": "Tomo el café ___ leche.",
+          "answer": "con",
+          "hint": "С чем ты пьёшь кофе?"
+        },
+        {
+          "sentence": "Los documentos están ___ el cajón.",
+          "answer": "en",
+          "hint": "Где находятся документы?"
+        },
+        {
+          "sentence": "Mi abuelo vive ___ un pueblo pequeño.",
+          "answer": "en",
+          "hint": "Где живёт дедушка?"
+        },
+        {
+          "sentence": "Las llaves están ___ mi bolso.",
+          "answer": "en",
+          "hint": "Где находятся ключи?"
+        },
+        {
+          "sentence": "El gato duerme ___ el sofá.",
+          "answer": "en",
+          "hint": "Где спит кот?"
+        },
+        {
+          "sentence": "___ primavera florecen los árboles.",
+          "answer": "En",
+          "hint": "Когда цветут деревья? (время)"
+        },
+        {
+          "sentence": "Hay un jardín ___ las dos casas.",
+          "answer": "entre",
+          "hint": "Где расположен сад?"
+        },
+        {
+          "sentence": "El parque está ___ el colegio y la biblioteca.",
+          "answer": "entre",
+          "hint": "Где находится парк?"
+        },
+        {
+          "sentence": "La farmacia está ___ el banco y el supermercado.",
+          "answer": "entre",
+          "hint": "Где находится аптека?"
+        },
+        {
+          "sentence": "La cita es ___ las 3 y las 5 de la tarde.",
+          "answer": "entre",
+          "hint": "Когда встреча? (временной промежуток)"
+        },
+        {
+          "sentence": "Hay buena comunicación ___ los vecinos.",
+          "answer": "entre",
+          "hint": "Между кем хорошая коммуникация?"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "porque vs para",
+      "hint": "porque / para",
+      "rule": {
+        "title": "PORQUE vs PARA: причина и цель",
+        "explanation": "Эти два слова часто путают, но они отвечают на разные вопросы. PORQUE (потому что) объясняет причину — почему что-то произошло или происходит. PARA (для, чтобы) указывает на цель — для чего или зачем что-то делается. Простой способ запомнить: PORQUE смотрит назад (что вызвало действие), PARA смотрит вперёд (к чему стремится действие).",
+        "sections": [
+          {
+            "subtitle": "PORQUE — причина (¿Por qué? — Почему?)",
+            "points": [
+              "Объясняет причину действия или состояния",
+              "Отвечает на вопрос «Почему?»",
+              "После PORQUE идёт готовый факт (глагол в индикативе)"
+            ]
+          },
+          {
+            "subtitle": "PARA — цель (¿Para qué? — Зачем? Для чего?)",
+            "points": [
+              "Указывает на цель или назначение",
+              "Отвечает на вопрос «Зачем? Для чего? Для кого?»",
+              "После PARA часто идёт инфинитив или существительное"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Estudio español <b>porque</b> me gusta.", "ru": "Я учу испанский, <b>потому что</b> мне нравится. (причина)"},
+          {"es": "Estudio español <b>para</b> viajar.", "ru": "Я учу испанский, <b>чтобы</b> путешествовать. (цель)"},
+          {"es": "No salgo <b>porque</b> llueve.", "ru": "Я не выхожу, <b>потому что</b> идёт дождь."},
+          {"es": "Este regalo es <b>para</b> ti.", "ru": "Этот подарок <b>для</b> тебя."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Estudio español ___ me gusta la cultura latinoamericana.", "answer": "porque"},
+        {"sentence": "Necesito el coche ___ ir al trabajo.", "answer": "para"},
+        {"sentence": "No puedo salir ___ tengo mucho trabajo.", "answer": "porque"},
+        {"sentence": "Este libro es ___ ti.", "answer": "para"},
+        {"sentence": "Aprendo idiomas ___ viajar por el mundo.", "answer": "para"},
+        {"sentence": "Llego tarde ___ hay mucho tráfico.", "answer": "porque"},
+        {"sentence": "Como frutas ___ estar sano.", "answer": "para"},
+        {"sentence": "No duermo bien ___ estoy preocupado.", "answer": "porque"},
+        {"sentence": "Ahorro dinero ___ comprar una casa.", "answer": "para"},
+        {"sentence": "Estudio mucho ___ quiero aprobar el examen.", "answer": "porque"},
+        {"sentence": "Uso esta aplicación ___ practicar gramática.", "answer": "para"},
+        {"sentence": "No voy a la fiesta ___ estoy enfermo.", "answer": "porque"},
+        {"sentence": "Necesitas pasaporte ___ viajar a España.", "answer": "para"},
+        {"sentence": "Me levanto temprano ___ tengo clase a las 8.", "answer": "porque"},
+        {"sentence": "Hago ejercicio ___ mantenerme en forma.", "answer": "para"},
+        {"sentence": "Llamo a mi madre ___ la echo de menos.", "answer": "porque"},
+        {"sentence": "No compro ese coche ___ es muy caro.", "answer": "porque"},
+        {"sentence": "Estoy cansado ___ trabajo mucho.", "answer": "porque"},
+        {"sentence": "Me gusta Madrid ___ es una ciudad muy animada.", "answer": "porque"},
+        {"sentence": "No como chocolate ___ tengo alergia.", "answer": "porque"},
+        {"sentence": "Estoy contento ___ aprobé el examen.", "answer": "porque"},
+        {"sentence": "No entiendo la película ___ está en alemán.", "answer": "porque"},
+        {"sentence": "Me duele la cabeza ___ no dormí bien.", "answer": "porque"},
+        {"sentence": "Voy al médico ___ me siento mal.", "answer": "porque"},
+        {"sentence": "Leo este libro ___ me lo recomendó un amigo.", "answer": "porque"},
+        {"sentence": "No fumo ___ es malo para la salud.", "answer": "porque"},
+        {"sentence": "Estoy nervioso ___ tengo una entrevista.", "answer": "porque"},
+        {"sentence": "Me levanto temprano ___ vivo lejos del trabajo.", "answer": "porque"},
+        {"sentence": "No bebo alcohol ___ tengo que conducir.", "answer": "porque"},
+        {"sentence": "Estudio por la noche ___ durante el día trabajo.", "answer": "porque"},
+        {"sentence": "No uso el ascensor ___ tengo claustrofobia.", "answer": "porque"},
+        {"sentence": "Llevo gafas de sol ___ hace mucho sol.", "answer": "porque"},
+        {"sentence": "No voy a la playa ___ no sé nadar.", "answer": "porque"},
+        {"sentence": "Me gusta este restaurante ___ la comida es excelente.", "answer": "porque"},
+        {"sentence": "No como dulces ___ estoy a dieta.", "answer": "porque"},
+        {"sentence": "Prefiero el tren ___ es más cómodo.", "answer": "porque"},
+        {"sentence": "Estoy triste ___ mi amigo se mudó.", "answer": "porque"},
+        {"sentence": "Tomo vitaminas ___ estar más sano.", "answer": "para"},
+        {"sentence": "Voy al supermercado ___ comprar comida.", "answer": "para"},
+        {"sentence": "Necesito un ordenador ___ trabajar desde casa.", "answer": "para"},
+        {"sentence": "Esta medicina es ___ el dolor de cabeza.", "answer": "para"},
+        {"sentence": "Leo mucho ___ aprender vocabulario nuevo.", "answer": "para"},
+        {"sentence": "Hago yoga ___ relajarme.", "answer": "para"},
+        {"sentence": "Voy a la universidad ___ estudiar derecho.", "answer": "para"},
+        {"sentence": "Compré un diccionario ___ mis estudios.", "answer": "para"},
+        {"sentence": "Me preparo bien ___ conseguir el trabajo.", "answer": "para"},
+        {"sentence": "Uso internet ___ buscar información.", "answer": "para"},
+        {"sentence": "Llevo paraguas ___ no mojarme.", "answer": "para"},
+        {"sentence": "Esta crema es ___ las manos.", "answer": "para"},
+        {"sentence": "Reservé mesa ___ cenar con mis padres.", "answer": "para"},
+        {"sentence": "Escribo un diario ___ practicar español.", "answer": "para"},
+        {"sentence": "Voy al banco ___ abrir una cuenta.", "answer": "para"},
+        {"sentence": "Necesito tijeras ___ cortar el papel.", "answer": "para"},
+        {"sentence": "Hago deporte ___ perder peso.", "answer": "para"},
+        {"sentence": "Este sofá es grande ___ mi salón.", "answer": "para"},
+        {"sentence": "Compré un regalo ___ el cumpleaños de María.", "answer": "para"},
+        {"sentence": "Voy al gimnasio ___ ponerme en forma.", "answer": "para"},
+        {"sentence": "Necesito tiempo ___ pensar.", "answer": "para"},
+        {"sentence": "Preparo la cena ___ mi familia.", "answer": "para"}
+      ],
+      "microTests": [
+        {
+          "sentence": "No voy al gimnasio ___ me duele la espalda.",
+          "answer": "porque",
+          "hint": "Почему ты не идёшь в зал? (причина)"
+        },
+        {
+          "sentence": "Bebo agua ___ tengo sed.",
+          "answer": "porque",
+          "hint": "Почему пьёшь воду? (причина)"
+        },
+        {
+          "sentence": "No salgo hoy ___ está lloviendo.",
+          "answer": "porque",
+          "hint": "Почему не выходишь? (причина)"
+        },
+        {
+          "sentence": "Llevo abrigo ___ hace frío.",
+          "answer": "porque",
+          "hint": "Почему в пальто? (причина)"
+        },
+        {
+          "sentence": "No como carne ___ soy vegetariano.",
+          "answer": "porque",
+          "hint": "Почему не ешь мясо? (причина)"
+        },
+        {
+          "sentence": "Compré flores ___ mi novia.",
+          "answer": "para",
+          "hint": "Для кого ты купил цветы? (цель/адресат)"
+        },
+        {
+          "sentence": "Estudio medicina ___ ser doctor.",
+          "answer": "para",
+          "hint": "Для чего учишься? (цель)"
+        },
+        {
+          "sentence": "Necesito gafas ___ leer.",
+          "answer": "para",
+          "hint": "Для чего нужны очки? (цель)"
+        },
+        {
+          "sentence": "Este regalo es ___ mi abuela.",
+          "answer": "para",
+          "hint": "Для кого подарок? (адресат)"
+        },
+        {
+          "sentence": "Trabajo mucho ___ comprarme un coche.",
+          "answer": "para",
+          "hint": "Для чего работаешь? (цель)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "Presente de indicativo",
+      "hint": "Conjuga el verbo en presente",
+      "rule": {
+        "title": "Presente de indicativo: спряжение глаголов",
+        "explanation": "В испанском языке глаголы делятся на три группы по окончанию инфинитива: -AR (hablar), -ER (comer), -IR (vivir). Для образования настоящего времени нужно отбросить окончание инфинитива и добавить личные окончания. Также есть неправильные глаголы, которые нужно запомнить отдельно.",
+        "sections": [
+          {
+            "subtitle": "Правильные глаголы -AR (hablar — говорить)",
+            "points": [
+              "yo habl<b>o</b>",
+              "tú habl<b>as</b>",
+              "él/ella/usted habl<b>a</b>",
+              "nosotros habl<b>amos</b>",
+              "vosotros habl<b>áis</b>",
+              "ellos/ustedes habl<b>an</b>"
+            ]
+          },
+          {
+            "subtitle": "Правильные глаголы -ER (comer — есть)",
+            "points": [
+              "yo com<b>o</b>",
+              "tú com<b>es</b>",
+              "él/ella/usted com<b>e</b>",
+              "nosotros com<b>emos</b>",
+              "vosotros com<b>éis</b>",
+              "ellos/ustedes com<b>en</b>"
+            ]
+          },
+          {
+            "subtitle": "Правильные глаголы -IR (vivir — жить)",
+            "points": [
+              "yo viv<b>o</b>",
+              "tú viv<b>es</b>",
+              "él/ella/usted viv<b>e</b>",
+              "nosotros viv<b>imos</b>",
+              "vosotros viv<b>ís</b>",
+              "ellos/ustedes viv<b>en</b>"
+            ]
+          },
+          {
+            "subtitle": "Неправильные глаголы (запомнить!)",
+            "points": [
+              "<b>ser</b>: soy, eres, es, somos, sois, son",
+              "<b>ir</b>: voy, vas, va, vamos, vais, van",
+              "<b>tener</b>: tengo, tienes, tiene, tenemos, tenéis, tienen",
+              "<b>hacer</b>: hago, haces, hace, hacemos, hacéis, hacen",
+              "<b>poder</b>: puedo, puedes, puede, podemos, podéis, pueden",
+              "<b>querer</b>: quiero, quieres, quiere, queremos, queréis, quieren",
+              "<b>decir</b>: digo, dices, dice, decimos, decís, dicen",
+              "<b>venir</b>: vengo, vienes, viene, venimos, venís, vienen",
+              "<b>saber</b>: sé, sabes, sabe, sabemos, sabéis, saben",
+              "<b>conocer</b>: conozco, conoces, conoce, conocemos, conocéis, conocen"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Yo <b>hablo</b> español.", "ru": "Я говорю по-испански."},
+          {"es": "Ella <b>vive</b> en Madrid.", "ru": "Она живёт в Мадриде."},
+          {"es": "Nosotros <b>comemos</b> a las dos.", "ru": "Мы едим в два часа."},
+          {"es": "Yo <b>tengo</b> dos hermanos.", "ru": "У меня двое братьев/сестёр."},
+          {"es": "Él <b>va</b> al trabajo en metro.", "ru": "Он ездит на работу на метро."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Yo (hablar) ___ español muy bien.", "answer": "hablo"},
+        {"sentence": "Ella (vivir) ___ en Barcelona.", "answer": "vive"},
+        {"sentence": "Nosotros (comer) ___ en un restaurante.", "answer": "comemos"},
+        {"sentence": "Tú (estudiar) ___ medicina.", "answer": "estudias"},
+        {"sentence": "Ellos (trabajar) ___ en una oficina.", "answer": "trabajan"},
+        {"sentence": "Yo (tener) ___ dos hermanos.", "answer": "tengo"},
+        {"sentence": "Él (ser) ___ profesor de inglés.", "answer": "es"},
+        {"sentence": "Nosotros (ir) ___ al cine los viernes.", "answer": "vamos"},
+        {"sentence": "Tú (poder) ___ venir mañana?", "answer": "puedes"},
+        {"sentence": "Ella (querer) ___ aprender francés.", "answer": "quiere"},
+        {"sentence": "Yo (hacer) ___ deporte todos los días.", "answer": "hago"},
+        {"sentence": "Ellos (saber) ___ la respuesta.", "answer": "saben"},
+        {"sentence": "Nosotros (conocer) ___ bien la ciudad.", "answer": "conocemos"},
+        {"sentence": "Tú (venir) ___ a la fiesta?", "answer": "vienes"},
+        {"sentence": "Él (decir) ___ siempre la verdad.", "answer": "dice"},
+        {"sentence": "Yo (bailar) ___ salsa los fines de semana.", "answer": "bailo"},
+        {"sentence": "Tú (cocinar) ___ muy bien.", "answer": "cocinas"},
+        {"sentence": "María (comprar) ___ frutas en el mercado.", "answer": "compra"},
+        {"sentence": "Nosotros (escuchar) ___ música clásica.", "answer": "escuchamos"},
+        {"sentence": "Ellos (viajar) ___ mucho por trabajo.", "answer": "viajan"},
+        {"sentence": "Yo (necesitar) ___ más tiempo.", "answer": "necesito"},
+        {"sentence": "Tú (preparar) ___ la cena.", "answer": "preparas"},
+        {"sentence": "Ella (llamar) ___ a su madre cada día.", "answer": "llama"},
+        {"sentence": "Yo (beber) ___ agua todos los días.", "answer": "bebo"},
+        {"sentence": "Tú (leer) ___ el periódico por la mañana.", "answer": "lees"},
+        {"sentence": "Él (correr) ___ en el parque.", "answer": "corre"},
+        {"sentence": "Nosotros (comprender) ___ bien la lección.", "answer": "comprendemos"},
+        {"sentence": "Ellos (vender) ___ coches usados.", "answer": "venden"},
+        {"sentence": "Yo (aprender) ___ español rápido.", "answer": "aprendo"},
+        {"sentence": "Tú (creer) ___ en los fantasmas?", "answer": "crees"},
+        {"sentence": "Yo (escribir) ___ cartas a mi abuela.", "answer": "escribo"},
+        {"sentence": "Tú (abrir) ___ la ventana?", "answer": "abres"},
+        {"sentence": "Ella (recibir) ___ muchos regalos.", "answer": "recibe"},
+        {"sentence": "Nosotros (subir) ___ las escaleras.", "answer": "subimos"},
+        {"sentence": "Ellos (decidir) ___ siempre juntos.", "answer": "deciden"},
+        {"sentence": "Yo (ser) ___ estudiante de español.", "answer": "soy"},
+        {"sentence": "Tú (ser) ___ muy amable.", "answer": "eres"},
+        {"sentence": "María (ser) ___ doctora.", "answer": "es"},
+        {"sentence": "Nosotros (ser) ___ de España.", "answer": "somos"},
+        {"sentence": "Ellos (ser) ___ mis mejores amigos.", "answer": "son"},
+        {"sentence": "Yo (ir) ___ a la universidad en metro.", "answer": "voy"},
+        {"sentence": "Tú (ir) ___ al gimnasio?", "answer": "vas"},
+        {"sentence": "Él (ir) ___ de vacaciones a México.", "answer": "va"},
+        {"sentence": "Ellos (ir) ___ a la playa cada verano.", "answer": "van"},
+        {"sentence": "Tú (tener) ___ tiempo para un café?", "answer": "tienes"},
+        {"sentence": "María (tener) ___ un coche nuevo.", "answer": "tiene"},
+        {"sentence": "Nosotros (tener) ___ mucha hambre.", "answer": "tenemos"},
+        {"sentence": "Ellos (tener) ___ tres hijos.", "answer": "tienen"},
+        {"sentence": "Tú (hacer) ___ la cama cada mañana?", "answer": "haces"},
+        {"sentence": "Ella (hacer) ___ yoga por las mañanas.", "answer": "hace"},
+        {"sentence": "Nosotros (hacer) ___ ejercicio juntos.", "answer": "hacemos"},
+        {"sentence": "Ellos (hacer) ___ una fiesta este sábado.", "answer": "hacen"},
+        {"sentence": "Yo (poder) ___ ayudarte mañana.", "answer": "puedo"},
+        {"sentence": "Él (poder) ___ hablar cuatro idiomas.", "answer": "puede"},
+        {"sentence": "Nosotros (poder) ___ salir más tarde.", "answer": "podemos"},
+        {"sentence": "Ellos (poder) ___ venir a la reunión.", "answer": "pueden"},
+        {"sentence": "Yo (querer) ___ un café con leche.", "answer": "quiero"},
+        {"sentence": "Tú (querer) ___ ir al cine?", "answer": "quieres"},
+        {"sentence": "Nosotros (querer) ___ viajar a Japón.", "answer": "queremos"},
+        {"sentence": "Ellos (querer) ___ aprender a cocinar.", "answer": "quieren"}
+      ],
+      "microTests": [
+        {
+          "sentence": "María (cantar) ___ muy bien.",
+          "answer": "canta",
+          "hint": "Глагол -AR, 3-е лицо ед.ч."
+        },
+        {
+          "sentence": "Mi hermano (estudiar) ___ medicina.",
+          "answer": "estudia",
+          "hint": "Глагол -AR, 3-е лицо ед.ч."
+        },
+        {
+          "sentence": "El profesor (explicar) ___ la gramática.",
+          "answer": "explica",
+          "hint": "Глагол -AR, 3-е лицо ед.ч."
+        },
+        {
+          "sentence": "Ana (trabajar) ___ en un hospital.",
+          "answer": "trabaja",
+          "hint": "Глагол -AR, 3-е лицо ед.ч."
+        },
+        {
+          "sentence": "Mi padre (hablar) ___ tres idiomas.",
+          "answer": "habla",
+          "hint": "Глагол -AR, 3-е лицо ед.ч."
+        },
+        {
+          "sentence": "Los niños (beber) ___ mucha agua.",
+          "answer": "beben",
+          "hint": "Глагол -ER, 3-е лицо мн.ч."
+        },
+        {
+          "sentence": "Mis padres (comer) ___ en un restaurante.",
+          "answer": "comen",
+          "hint": "Глагол -ER, 3-е лицо мн.ч."
+        },
+        {
+          "sentence": "Los estudiantes (leer) ___ muchos libros.",
+          "answer": "leen",
+          "hint": "Глагол -ER, 3-е лицо мн.ч."
+        },
+        {
+          "sentence": "Ellos no (comprender) ___ esta regla.",
+          "answer": "comprenden",
+          "hint": "Глагол -ER, 3-е лицо мн.ч."
+        },
+        {
+          "sentence": "Los gatos (correr) ___ muy rápido.",
+          "answer": "corren",
+          "hint": "Глагол -ER, 3-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (escribir) ___ cartas a los abuelos.",
+          "answer": "escribimos",
+          "hint": "Глагол -IR, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (vivir) ___ en el centro de la ciudad.",
+          "answer": "vivimos",
+          "hint": "Глагол -IR, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (abrir) ___ las ventanas por la mañana.",
+          "answer": "abrimos",
+          "hint": "Глагол -IR, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (subir) ___ las escaleras cada día.",
+          "answer": "subimos",
+          "hint": "Глагол -IR, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (decidir) ___ juntos.",
+          "answer": "decidimos",
+          "hint": "Глагол -IR, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Yo no (poder) ___ dormir por la noche.",
+          "answer": "puedo",
+          "hint": "Неправильный глагол poder, 1-е лицо ед.ч."
+        },
+        {
+          "sentence": "Yo (tener) ___ mucho trabajo hoy.",
+          "answer": "tengo",
+          "hint": "Неправильный глагол tener, 1-е лицо ед.ч."
+        },
+        {
+          "sentence": "Yo (hacer) ___ la cama cada mañana.",
+          "answer": "hago",
+          "hint": "Неправильный глагол hacer, 1-е лицо ед.ч."
+        },
+        {
+          "sentence": "Yo (saber) ___ hablar español.",
+          "answer": "sé",
+          "hint": "Неправильный глагол saber, 1-е лицо ед.ч."
+        },
+        {
+          "sentence": "Yo (conocer) ___ bien esta ciudad.",
+          "answer": "conozco",
+          "hint": "Неправильный глагол conocer, 1-е лицо ед.ч."
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_4",
+      "title": "desde / desde hace",
+      "hint": "desde / desde hace",
+      "rule": {
+        "title": "DESDE vs DESDE HACE: точка во времени и период",
+        "explanation": "Оба выражения переводятся как «с/уже», но используются по-разному. DESDE указывает на конкретную точку во времени (дату, событие, момент), с которой началось действие. DESDE HACE указывает на длительность периода, сколько времени продолжается действие. Ключевое отличие: после DESDE идёт момент, после DESDE HACE — период времени.",
+        "sections": [
+          {
+            "subtitle": "DESDE — точка во времени (с какого момента?)",
+            "points": [
+              "После DESDE идёт: год, месяц, дата, событие",
+              "<b>desde</b> 2015 — с 2015 года",
+              "<b>desde</b> enero — с января",
+              "<b>desde</b> la universidad — со времён университета",
+              "<b>desde</b> niño — с детства"
+            ]
+          },
+          {
+            "subtitle": "DESDE HACE — период времени (как долго?)",
+            "points": [
+              "После DESDE HACE идёт: количество времени",
+              "<b>desde hace</b> tres años — уже три года",
+              "<b>desde hace</b> dos meses — уже два месяца",
+              "<b>desde hace</b> mucho tiempo — уже давно"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Vivo en Madrid <b>desde</b> 2018.", "ru": "Я живу в Мадриде с 2018 года."},
+          {"es": "Vivo en Madrid <b>desde hace</b> cinco años.", "ru": "Я живу в Мадриде уже пять лет."},
+          {"es": "Estudio español <b>desde</b> septiembre.", "ru": "Я учу испанский с сентября."},
+          {"es": "Estudio español <b>desde hace</b> seis meses.", "ru": "Я учу испанский уже шесть месяцев."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Vivo en España ___ 2015.", "answer": "desde"},
+        {"sentence": "Estudio español ___ tres años.", "answer": "desde hace"},
+        {"sentence": "Trabajo aquí ___ el mes pasado.", "answer": "desde"},
+        {"sentence": "No lo veo ___ mucho tiempo.", "answer": "desde hace"},
+        {"sentence": "Conozco a María ___ la universidad.", "answer": "desde"},
+        {"sentence": "Tengo este coche ___ cinco años.", "answer": "desde hace"},
+        {"sentence": "Vivo solo ___ enero.", "answer": "desde"},
+        {"sentence": "Practico yoga ___ dos meses.", "answer": "desde hace"},
+        {"sentence": "No fumo ___ el año pasado.", "answer": "desde"},
+        {"sentence": "Estamos casados ___ diez años.", "answer": "desde hace"},
+        {"sentence": "Toco la guitarra ___ niño.", "answer": "desde"},
+        {"sentence": "Espero aquí ___ media hora.", "answer": "desde hace"},
+        {"sentence": "No como carne ___ 2020.", "answer": "desde"},
+        {"sentence": "Aprendo alemán ___ seis meses.", "answer": "desde hace"},
+        {"sentence": "Conozco este lugar ___ siempre.", "answer": "desde"},
+        {"sentence": "Trabajo en este hospital ___ 2010.", "answer": "desde"},
+        {"sentence": "Vivo con mi novio ___ el verano pasado.", "answer": "desde"},
+        {"sentence": "No hablo con mi hermano ___ Navidad.", "answer": "desde"},
+        {"sentence": "Estudio medicina ___ el primer curso.", "answer": "desde"},
+        {"sentence": "Conduzco ___ los 18 años.", "answer": "desde"},
+        {"sentence": "No veo a mis abuelos ___ agosto.", "answer": "desde"},
+        {"sentence": "Trabajo de noche ___ mi promoción.", "answer": "desde"},
+        {"sentence": "Conozco a mi mejor amigo ___ el colegio.", "answer": "desde"},
+        {"sentence": "No como gluten ___ mi diagnóstico.", "answer": "desde"},
+        {"sentence": "Hago deporte ___ joven.", "answer": "desde"},
+        {"sentence": "Vivo en el campo ___ 2019.", "answer": "desde"},
+        {"sentence": "No uso redes sociales ___ el año pasado.", "answer": "desde"},
+        {"sentence": "Estudio piano ___ los 7 años.", "answer": "desde"},
+        {"sentence": "Trabajo desde casa ___ la pandemia.", "answer": "desde"},
+        {"sentence": "No bebo café ___ mi embarazo.", "answer": "desde"},
+        {"sentence": "Veo esta serie ___ el primer episodio.", "answer": "desde"},
+        {"sentence": "Tengo este trabajo ___ abril.", "answer": "desde"},
+        {"sentence": "No fumo ___ mi boda.", "answer": "desde"},
+        {"sentence": "Leo en español ___ mi primer viaje a España.", "answer": "desde"},
+        {"sentence": "Vivo solo ___ el divorcio.", "answer": "desde"},
+        {"sentence": "Practico natación ___ pequeña.", "answer": "desde"},
+        {"sentence": "Estudio en esta academia ___ octubre.", "answer": "desde"},
+        {"sentence": "Estudio japonés ___ dos años.", "answer": "desde hace"},
+        {"sentence": "Vivo en esta ciudad ___ una década.", "answer": "desde hace"},
+        {"sentence": "No duermo bien ___ varias semanas.", "answer": "desde hace"},
+        {"sentence": "Trabajo en marketing ___ ocho años.", "answer": "desde hace"},
+        {"sentence": "Conozco a mi vecino ___ poco tiempo.", "answer": "desde hace"},
+        {"sentence": "No veo la tele ___ meses.", "answer": "desde hace"},
+        {"sentence": "Hago yoga ___ un año y medio.", "answer": "desde hace"},
+        {"sentence": "Estudio italiano ___ tres meses.", "answer": "desde hace"},
+        {"sentence": "No como azúcar ___ dos semanas.", "answer": "desde hace"},
+        {"sentence": "Trabajo de profesor ___ veinte años.", "answer": "desde hace"},
+        {"sentence": "Vivo con mis padres ___ un mes.", "answer": "desde hace"},
+        {"sentence": "No hablo con Ana ___ días.", "answer": "desde hace"},
+        {"sentence": "Practico meditación ___ seis meses.", "answer": "desde hace"},
+        {"sentence": "Estudio chino ___ cuatro años.", "answer": "desde hace"},
+        {"sentence": "No salgo de noche ___ mucho tiempo.", "answer": "desde hace"},
+        {"sentence": "Conduzco este coche ___ tres años.", "answer": "desde hace"},
+        {"sentence": "Vivo en el extranjero ___ una temporada.", "answer": "desde hace"},
+        {"sentence": "No como pescado ___ años.", "answer": "desde hace"},
+        {"sentence": "Trabajo por cuenta propia ___ cinco años.", "answer": "desde hace"},
+        {"sentence": "Estudio portugués ___ unas semanas.", "answer": "desde hace"},
+        {"sentence": "No uso el coche ___ un mes.", "answer": "desde hace"},
+        {"sentence": "Tengo este móvil ___ dos años.", "answer": "desde hace"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Trabajo en esta empresa ___ marzo.",
+          "answer": "desde",
+          "hint": "С какого месяца? (точка во времени)"
+        },
+        {
+          "sentence": "Estudio en esta universidad ___ septiembre.",
+          "answer": "desde",
+          "hint": "С какого месяца? (точка во времени)"
+        },
+        {
+          "sentence": "No bebo alcohol ___ mi cumpleaños.",
+          "answer": "desde",
+          "hint": "С какого события? (момент)"
+        },
+        {
+          "sentence": "Hablo inglés ___ pequeño.",
+          "answer": "desde",
+          "hint": "С какого возраста? (момент)"
+        },
+        {
+          "sentence": "Leo este autor ___ mi juventud.",
+          "answer": "desde",
+          "hint": "С какого периода? (момент)"
+        },
+        {
+          "sentence": "Estudio francés ___ cuatro años.",
+          "answer": "desde hace",
+          "hint": "Как долго? (период времени)"
+        },
+        {
+          "sentence": "Vivo en este apartamento ___ un año.",
+          "answer": "desde hace",
+          "hint": "Как долго? (период)"
+        },
+        {
+          "sentence": "Trabajo como profesor ___ quince años.",
+          "answer": "desde hace",
+          "hint": "Как долго? (период)"
+        },
+        {
+          "sentence": "No como dulces ___ una semana.",
+          "answer": "desde hace",
+          "hint": "Как долго? (период)"
+        },
+        {
+          "sentence": "Conocemos a los vecinos ___ poco tiempo.",
+          "answer": "desde hace",
+          "hint": "Как долго? (период)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_5",
+      "title": "ser vs estar / sentirse",
+      "hint": "ser / estar / sentirse",
+      "rule": {
+        "title": "SER vs ESTAR vs SENTIRSE",
+        "explanation": "В испанском два глагола «быть» — SER и ESTAR, плюс возвратный глагол SENTIRSE (чувствовать себя). SER описывает постоянные, неизменные характеристики. ESTAR описывает временные состояния, местоположение и результат действия. SENTIRSE используется для выражения эмоций и физического самочувствия.",
+        "sections": [
+          {
+            "subtitle": "SER — постоянные характеристики",
+            "points": [
+              "Происхождение: Soy <b>de</b> Rusia — Я из России",
+              "Профессия: Es médico — Он врач",
+              "Характер: María es simpática — Мария симпатичная",
+              "Материал: La mesa es <b>de</b> madera — Стол из дерева",
+              "Время/дата: Hoy es lunes — Сегодня понедельник"
+            ]
+          },
+          {
+            "subtitle": "ESTAR — временные состояния и место",
+            "points": [
+              "Местоположение: Madrid está en España — Мадрид находится в Испании",
+              "Временное состояние: Estoy cansado — Я устал (сейчас)",
+              "Результат действия: La puerta está cerrada — Дверь закрыта",
+              "Настроение: Está triste hoy — Он грустный сегодня"
+            ]
+          },
+          {
+            "subtitle": "SENTIRSE — чувствовать себя",
+            "points": [
+              "Эмоции: Me siento feliz — Я чувствую себя счастливым",
+              "Самочувствие: ¿Cómo te sientes? — Как ты себя чувствуешь?",
+              "Спряжение: me siento, te sientes, se siente, nos sentimos..."
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "María <b>es</b> alta y simpática.", "ru": "Мария высокая и симпатичная. (постоянно)"},
+          {"es": "María <b>está</b> cansada hoy.", "ru": "Мария устала сегодня. (временно)"},
+          {"es": "El café <b>está</b> frío.", "ru": "Кофе холодный. (стал холодным)"},
+          {"es": "<b>Me siento</b> muy bien hoy.", "ru": "Я чувствую себя очень хорошо сегодня."}
+        ]
+      },
+      "questions": [
+        {"sentence": "María ___ muy simpática.", "answer": "es"},
+        {"sentence": "Hoy yo ___ muy cansado.", "answer": "estoy"},
+        {"sentence": "Él ___ de Argentina.", "answer": "es"},
+        {"sentence": "La puerta ___ cerrada.", "answer": "está"},
+        {"sentence": "Yo me ___ feliz hoy.", "answer": "siento"},
+        {"sentence": "Esta casa ___ muy grande.", "answer": "es"},
+        {"sentence": "El café ___ frío.", "answer": "está"},
+        {"sentence": "Nosotros ___ estudiantes.", "answer": "somos"},
+        {"sentence": "¿Cómo te ___ hoy?", "answer": "sientes"},
+        {"sentence": "El restaurante ___ cerca de aquí.", "answer": "está"},
+        {"sentence": "Ella ___ médica.", "answer": "es"},
+        {"sentence": "Me ___ un poco nervioso.", "answer": "siento"},
+        {"sentence": "La comida ___ deliciosa.", "answer": "está"},
+        {"sentence": "Ellos ___ muy contentos.", "answer": "están"},
+        {"sentence": "Mi habitación ___ ordenada hoy.", "answer": "está"},
+        {"sentence": "Nosotros ___ de España.", "answer": "somos"},
+        {"sentence": "Esta mesa ___ de madera.", "answer": "es"},
+        {"sentence": "Hoy ___ viernes.", "answer": "es"},
+        {"sentence": "Mi hermano ___ abogado.", "answer": "es"},
+        {"sentence": "Ellos ___ muy inteligentes.", "answer": "son"},
+        {"sentence": "La película ___ interesante.", "answer": "es"},
+        {"sentence": "___ las tres de la tarde.", "answer": "Son"},
+        {"sentence": "Este libro ___ mío.", "answer": "es"},
+        {"sentence": "Mis padres ___ muy generosos.", "answer": "son"},
+        {"sentence": "El reloj ___ de oro.", "answer": "es"},
+        {"sentence": "Yo ___ vegetariano.", "answer": "soy"},
+        {"sentence": "María ___ muy trabajadora.", "answer": "es"},
+        {"sentence": "La conferencia ___ a las diez.", "answer": "es"},
+        {"sentence": "Este coche ___ alemán.", "answer": "es"},
+        {"sentence": "Tú ___ mi mejor amigo.", "answer": "eres"},
+        {"sentence": "La oficina ___ en el centro.", "answer": "está"},
+        {"sentence": "Las ventanas ___ abiertas.", "answer": "están"},
+        {"sentence": "Mi madre ___ enferma hoy.", "answer": "está"},
+        {"sentence": "Los niños ___ muy contentos.", "answer": "están"},
+        {"sentence": "El banco ___ cerrado.", "answer": "está"},
+        {"sentence": "Tu hermana ___ muy guapa hoy.", "answer": "está"},
+        {"sentence": "La leche ___ caliente.", "answer": "está"},
+        {"sentence": "Mis llaves ___ en la mesa.", "answer": "están"},
+        {"sentence": "El tren ___ retrasado.", "answer": "está"},
+        {"sentence": "La casa ___ muy limpia.", "answer": "está"},
+        {"sentence": "El museo ___ lejos de aquí.", "answer": "está"},
+        {"sentence": "El cielo ___ nublado.", "answer": "está"},
+        {"sentence": "La comida ___ lista.", "answer": "está"},
+        {"sentence": "La tienda ___ abierta.", "answer": "está"},
+        {"sentence": "Mis abuelos ___ de vacaciones.", "answer": "están"},
+        {"sentence": "Hoy me ___ muy bien.", "answer": "siento"},
+        {"sentence": "¿Cómo se ___ tu madre?", "answer": "siente"},
+        {"sentence": "Nos ___ muy relajados.", "answer": "sentimos"},
+        {"sentence": "Ella se ___ un poco triste.", "answer": "siente"},
+        {"sentence": "Me ___ muy cómodo aquí.", "answer": "siento"},
+        {"sentence": "¿Te ___ mejor hoy?", "answer": "sientes"},
+        {"sentence": "Se ___ muy orgullosos de su hijo.", "answer": "sienten"},
+        {"sentence": "Me ___ agotado después del trabajo.", "answer": "siento"},
+        {"sentence": "Nos ___ muy afortunados.", "answer": "sentimos"},
+        {"sentence": "Me ___ un poco perdido.", "answer": "siento"},
+        {"sentence": "¿Cómo te ___ después del viaje?", "answer": "sientes"},
+        {"sentence": "Ella se ___ muy segura de sí misma.", "answer": "siente"},
+        {"sentence": "Me ___ muy motivado.", "answer": "siento"},
+        {"sentence": "Nos ___ muy agradecidos.", "answer": "sentimos"},
+        {"sentence": "Me ___ algo mareado.", "answer": "siento"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Mi padre ___ ingeniero.",
+          "answer": "es",
+          "hint": "Профессия — постоянная характеристика"
+        },
+        {
+          "sentence": "María ___ de Argentina.",
+          "answer": "es",
+          "hint": "Происхождение — постоянная характеристика"
+        },
+        {
+          "sentence": "El edificio ___ muy antiguo.",
+          "answer": "es",
+          "hint": "Характеристика объекта — постоянно"
+        },
+        {
+          "sentence": "Mi hermana ___ profesora de español.",
+          "answer": "es",
+          "hint": "Профессия — постоянная характеристика"
+        },
+        {
+          "sentence": "El agua ___ importante para la vida.",
+          "answer": "es",
+          "hint": "Общая истина — постоянно"
+        },
+        {
+          "sentence": "El supermercado ___ al lado de mi casa.",
+          "answer": "está",
+          "hint": "Местоположение — где находится?"
+        },
+        {
+          "sentence": "La sopa ___ fría.",
+          "answer": "está",
+          "hint": "Временное состояние — стала холодной"
+        },
+        {
+          "sentence": "El coche ___ aparcado en la calle.",
+          "answer": "está",
+          "hint": "Временное состояние — результат действия"
+        },
+        {
+          "sentence": "El museo ___ cerrado los lunes.",
+          "answer": "está",
+          "hint": "Состояние — закрыт (не постоянно)"
+        },
+        {
+          "sentence": "Hoy yo ___ muy cansado después del trabajo.",
+          "answer": "estoy",
+          "hint": "Временное состояние — сейчас устал"
+        },
+        {
+          "sentence": "Hoy me ___ muy mal, tengo fiebre.",
+          "answer": "siento",
+          "hint": "Физическое самочувствие"
+        },
+        {
+          "sentence": "Me ___ nervioso antes de los exámenes.",
+          "answer": "siento",
+          "hint": "Эмоциональное состояние"
+        },
+        {
+          "sentence": "¿Cómo te ___ después de la operación?",
+          "answer": "sientes",
+          "hint": "Как ты себя чувствуешь?"
+        },
+        {
+          "sentence": "Me ___ feliz cuando estoy con mi familia.",
+          "answer": "siento",
+          "hint": "Эмоциональное состояние"
+        },
+        {
+          "sentence": "Nos ___ muy bien en este hotel.",
+          "answer": "sentimos",
+          "hint": "Как мы себя чувствуем?"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_6",
+      "title": "Recomendaciones: tienes que / lo mejor es / va muy bien",
+      "hint": "tienes que / lo mejor es / va muy bien",
+      "rule": {
+        "title": "Конструкции для рекомендаций и советов",
+        "explanation": "В испанском есть несколько способов давать советы и рекомендации. TIENES QUE выражает необходимость или обязанность (ты должен). LO MEJOR ES предлагает лучший вариант действия (лучше всего). VA MUY BIEN указывает, что что-то хорошо помогает или подходит для определённой цели.",
+        "sections": [
+          {
+            "subtitle": "TIENES QUE + инфинитив — необходимость",
+            "points": [
+              "Выражает долженствование: «ты должен», «тебе нужно»",
+              "<b>Tienes que</b> estudiar más — Тебе нужно больше учиться",
+              "<b>Tienes que</b> hablar con nativos — Ты должен говорить с носителями"
+            ]
+          },
+          {
+            "subtitle": "LO MEJOR ES + инфинитив — лучший совет",
+            "points": [
+              "Предлагает оптимальное решение: «лучше всего»",
+              "<b>Lo mejor es</b> practicar cada día — Лучше всего практиковаться каждый день",
+              "<b>Lo mejor es</b> no preocuparse — Лучше всего не беспокоиться"
+            ]
+          },
+          {
+            "subtitle": "VA MUY BIEN — хорошо помогает",
+            "points": [
+              "Указывает, что что-то эффективно для чего-то",
+              "Структура: [что-то] <b>va muy bien</b> para [цель]",
+              "El té <b>va muy bien</b> para relajarse — Чай хорошо помогает расслабиться",
+              "Caminar <b>va muy bien</b> para la salud — Прогулки очень полезны для здоровья"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "<b>Tienes que</b> dormir 8 horas.", "ru": "Тебе нужно спать 8 часов."},
+          {"es": "<b>Lo mejor es</b> empezar poco a poco.", "ru": "Лучше всего начинать постепенно."},
+          {"es": "El yoga <b>va muy bien</b> para el estrés.", "ru": "Йога очень помогает от стресса."},
+          {"es": "Para aprender, <b>tienes que</b> practicar.", "ru": "Чтобы учиться, тебе нужно практиковаться."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Para aprender español, ___ practicar todos los días.", "answer": "tienes que"},
+        {"sentence": "Para relajarte, ___ hacer yoga.", "answer": "va muy bien"},
+        {"sentence": "Si quieres aprobar, ___ estudiar más.", "answer": "lo mejor es"},
+        {"sentence": "___ hablar con nativos para mejorar.", "answer": "Tienes que"},
+        {"sentence": "Para el dolor de cabeza, ___ tomar agua.", "answer": "va muy bien"},
+        {"sentence": "___ leer libros en español.", "answer": "Lo mejor es"},
+        {"sentence": "Para estar sano, ___ comer frutas.", "answer": "tienes que"},
+        {"sentence": "Para dormir bien, ___ no usar el móvil.", "answer": "lo mejor es"},
+        {"sentence": "El té ___ para el estrés.", "answer": "va muy bien"},
+        {"sentence": "___ hacer ejercicio regularmente.", "answer": "Tienes que"},
+        {"sentence": "Para viajar, ___ ahorrar dinero.", "answer": "lo mejor es"},
+        {"sentence": "Caminar ___ para la salud.", "answer": "va muy bien"},
+        {"sentence": "___ escuchar podcasts en español.", "answer": "Tienes que"},
+        {"sentence": "___ practicar la pronunciación.", "answer": "Lo mejor es"},
+        {"sentence": "La meditación ___ para concentrarse.", "answer": "va muy bien"},
+        {"sentence": "Para conducir, ___ tener carnet.", "answer": "tienes que"},
+        {"sentence": "___ terminar el proyecto hoy.", "answer": "Tienes que"},
+        {"sentence": "Para entrar, ___ mostrar el billete.", "answer": "tienes que"},
+        {"sentence": "___ llamar a tus padres más a menudo.", "answer": "Tienes que"},
+        {"sentence": "Para trabajar aquí, ___ hablar inglés.", "answer": "tienes que"},
+        {"sentence": "___ madrugar si quieres llegar a tiempo.", "answer": "Tienes que"},
+        {"sentence": "Para mejorar, ___ ser constante.", "answer": "tienes que"},
+        {"sentence": "___ pedir cita con antelación.", "answer": "Tienes que"},
+        {"sentence": "Para entender, ___ escuchar con atención.", "answer": "tienes que"},
+        {"sentence": "___ respetar las normas.", "answer": "Tienes que"},
+        {"sentence": "Para cocinar bien, ___ seguir la receta.", "answer": "tienes que"},
+        {"sentence": "___ pagar antes de salir.", "answer": "Tienes que"},
+        {"sentence": "Para ganar, ___ entrenar mucho.", "answer": "tienes que"},
+        {"sentence": "___ prepararte para el examen.", "answer": "Tienes que"},
+        {"sentence": "Para adelgazar, ___ comer menos.", "answer": "tienes que"},
+        {"sentence": "Para encontrar trabajo, ___ actualizar el currículum.", "answer": "lo mejor es"},
+        {"sentence": "___ esperar un poco antes de decidir.", "answer": "Lo mejor es"},
+        {"sentence": "Si no entiendes, ___ preguntar.", "answer": "lo mejor es"},
+        {"sentence": "___ reservar con antelación.", "answer": "Lo mejor es"},
+        {"sentence": "Para evitar problemas, ___ ser puntual.", "answer": "lo mejor es"},
+        {"sentence": "___ pensar antes de hablar.", "answer": "Lo mejor es"},
+        {"sentence": "Para aprobar, ___ tomar apuntes.", "answer": "lo mejor es"},
+        {"sentence": "___ ir al médico si te sientes mal.", "answer": "Lo mejor es"},
+        {"sentence": "Para ahorrar tiempo, ___ planificar.", "answer": "lo mejor es"},
+        {"sentence": "___ descansar si estás cansado.", "answer": "Lo mejor es"},
+        {"sentence": "Para recordar, ___ escribir las cosas.", "answer": "lo mejor es"},
+        {"sentence": "___ no decidir cuando estás enfadado.", "answer": "Lo mejor es"},
+        {"sentence": "Si llueve, ___ llevar paraguas.", "answer": "lo mejor es"},
+        {"sentence": "___ ser honesto con tus amigos.", "answer": "Lo mejor es"},
+        {"sentence": "Para relajarte, ___ escuchar música.", "answer": "lo mejor es"},
+        {"sentence": "El ejercicio ___ para el corazón.", "answer": "va muy bien"},
+        {"sentence": "Nadar ___ para la espalda.", "answer": "va muy bien"},
+        {"sentence": "Dormir bien ___ para la memoria.", "answer": "va muy bien"},
+        {"sentence": "El chocolate ___ para el ánimo.", "answer": "va muy bien"},
+        {"sentence": "La manzanilla ___ para los nervios.", "answer": "va muy bien"},
+        {"sentence": "Correr ___ para perder peso.", "answer": "va muy bien"},
+        {"sentence": "La música clásica ___ para concentrarse.", "answer": "va muy bien"},
+        {"sentence": "Escribir ___ para organizar las ideas.", "answer": "va muy bien"},
+        {"sentence": "El limón ___ para el resfriado.", "answer": "va muy bien"},
+        {"sentence": "Leer ___ para ampliar el vocabulario.", "answer": "va muy bien"},
+        {"sentence": "El deporte ___ para el estrés.", "answer": "va muy bien"},
+        {"sentence": "La leche caliente ___ para dormir.", "answer": "va muy bien"},
+        {"sentence": "El ajo ___ para la salud.", "answer": "va muy bien"},
+        {"sentence": "Ver películas ___ para aprender idiomas.", "answer": "va muy bien"},
+        {"sentence": "La siesta ___ para recuperar energía.", "answer": "va muy bien"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Para aprobar el examen, ___ estudiar mucho.",
+          "answer": "tienes que",
+          "hint": "Обязанность, необходимость (ты должен)"
+        },
+        {
+          "sentence": "___ beber mucha agua cada día.",
+          "answer": "Tienes que",
+          "hint": "Обязанность, необходимость (ты должен)"
+        },
+        {
+          "sentence": "Para aprender, ___ practicar todos los días.",
+          "answer": "tienes que",
+          "hint": "Обязанность, необходимость (ты должен)"
+        },
+        {
+          "sentence": "___ levantarte temprano mañana.",
+          "answer": "Tienes que",
+          "hint": "Обязанность, необходимость (ты должен)"
+        },
+        {
+          "sentence": "Para viajar al extranjero, ___ tener pasaporte.",
+          "answer": "tienes que",
+          "hint": "Обязанность, необходимость (ты должен)"
+        },
+        {
+          "sentence": "Si estás enfermo, ___ quedarte en casa.",
+          "answer": "lo mejor es",
+          "hint": "Лучший совет (лучше всего)"
+        },
+        {
+          "sentence": "___ empezar poco a poco.",
+          "answer": "Lo mejor es",
+          "hint": "Лучший совет (лучше всего)"
+        },
+        {
+          "sentence": "Para ahorrar dinero, ___ cocinar en casa.",
+          "answer": "lo mejor es",
+          "hint": "Лучший совет (лучше всего)"
+        },
+        {
+          "sentence": "___ no usar el móvil antes de dormir.",
+          "answer": "Lo mejor es",
+          "hint": "Лучший совет (лучше всего)"
+        },
+        {
+          "sentence": "Para aprender vocabulario, ___ leer mucho.",
+          "answer": "lo mejor es",
+          "hint": "Лучший совет (лучше всего)"
+        },
+        {
+          "sentence": "Dormir bien ___ para la memoria.",
+          "answer": "va muy bien",
+          "hint": "Что хорошо помогает для чего-то"
+        },
+        {
+          "sentence": "El té ___ para relajarse.",
+          "answer": "va muy bien",
+          "hint": "Что хорошо помогает для чего-то"
+        },
+        {
+          "sentence": "Nadar ___ para los músculos.",
+          "answer": "va muy bien",
+          "hint": "Что хорошо помогает для чего-то"
+        },
+        {
+          "sentence": "El yoga ___ para el estrés.",
+          "answer": "va muy bien",
+          "hint": "Что хорошо помогает для чего-то"
+        },
+        {
+          "sentence": "Escuchar música ___ para estudiar.",
+          "answer": "va muy bien",
+          "hint": "Что хорошо помогает для чего-то"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_7",
+      "title": "Presente: verbos reflexivos e irregulares",
+      "hint": "Conjuga el verbo en presente",
+      "rule": {
+        "title": "Возвратные и неправильные глаголы в настоящем времени",
+        "explanation": "Возвратные глаголы (verbos reflexivos) обозначают действие, направленное на самого себя, и используются с возвратными местоимениями (me, te, se, nos, os, se). Неправильные глаголы имеют изменения в корне (e→ie, o→ue, e→i) или особые формы в первом лице.",
+        "sections": [
+          {
+            "subtitle": "Возвратные глаголы — структура",
+            "points": [
+              "Местоимение ставится ПЕРЕД глаголом",
+              "<b>me</b> levanto — я встаю",
+              "<b>te</b> duchas — ты принимаешь душ",
+              "<b>se</b> viste — он/она одевается",
+              "<b>nos</b> acostamos — мы ложимся спать"
+            ]
+          },
+          {
+            "subtitle": "Чередование в корне: e → ie",
+            "points": [
+              "<b>pensar</b>: pienso, piensas, piensa, pensamos, pensáis, piensan",
+              "<b>empezar</b>: empiezo, empiezas, empieza...",
+              "<b>despertarse</b>: me despierto, te despiertas..."
+            ]
+          },
+          {
+            "subtitle": "Чередование в корне: o → ue",
+            "points": [
+              "<b>poder</b>: puedo, puedes, puede, podemos, podéis, pueden",
+              "<b>acostarse</b>: me acuesto, te acuestas, se acuesta..."
+            ]
+          },
+          {
+            "subtitle": "Чередование в корне: e → i",
+            "points": [
+              "<b>vestirse</b>: me visto, te vistes, se viste, nos vestimos..."
+            ]
+          },
+          {
+            "subtitle": "Неправильные в 1-м лице (yo)",
+            "points": [
+              "<b>salir</b>: salgo, sales, sale...",
+              "<b>conocer</b>: conozco, conoces, conoce...",
+              "<b>hacer</b>: hago, haces, hace..."
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "<b>Me levanto</b> a las 7 de la mañana.", "ru": "Я встаю в 7 утра."},
+          {"es": "<b>Me ducho</b> y <b>me visto</b> rápido.", "ru": "Я быстро принимаю душ и одеваюсь."},
+          {"es": "<b>Empiezo</b> a trabajar a las 9.", "ru": "Я начинаю работать в 9."},
+          {"es": "<b>Salgo</b> de casa a las 8.", "ru": "Я выхожу из дома в 8."}
+        ]
+      },
+      "questions": [
+        {"sentence": "(Vivir/yo) ___ en Madrid desde hace 15 años.", "answer": "Vivo"},
+        {"sentence": "(Conocer/yo) ___ a mucha gente aquí.", "answer": "Conozco"},
+        {"sentence": "No (pensar/yo) ___ volver a Francia.", "answer": "pienso"},
+        {"sentence": "(Levantarse/yo) ___ a las 8 h cada día.", "answer": "Me levanto"},
+        {"sentence": "(Ducharse/yo) ___ antes de salir.", "answer": "Me ducho"},
+        {"sentence": "(Vestirse/yo) ___ rápidamente.", "answer": "Me visto"},
+        {"sentence": "Sobre las 9 h (salir/yo) ___ de casa.", "answer": "salgo"},
+        {"sentence": "(Tener/yo) ___ la clínica muy cerca.", "answer": "Tengo"},
+        {"sentence": "(Poder/yo) ___ desayunar tranquilamente.", "answer": "Puedo"},
+        {"sentence": "(Empezar/yo) ___ a trabajar a las 9:30 h.", "answer": "Empiezo"},
+        {"sentence": "A mediodía (cerrar/yo) ___ de 14 h a 16:30 h.", "answer": "cierro"},
+        {"sentence": "Por la tarde (trabajar/yo) ___ hasta las 20 h.", "answer": "trabajo"},
+        {"sentence": "Desde pequeña (sentir/yo) ___ un cariño especial por los animales.", "answer": "siento"},
+        {"sentence": "¿A qué hora (acostarse/tú) ___ normalmente?", "answer": "te acuestas"},
+        {"sentence": "Mi hermano (despertarse) ___ muy temprano.", "answer": "se despierta"},
+        {"sentence": "(Peinarse/yo) ___ antes de salir.", "answer": "Me peino"},
+        {"sentence": "(Lavarse/yo) ___ las manos antes de comer.", "answer": "Me lavo"},
+        {"sentence": "(Afeitarse/él) ___ todas las mañanas.", "answer": "Se afeita"},
+        {"sentence": "(Maquillarse/ella) ___ antes de la fiesta.", "answer": "Se maquilla"},
+        {"sentence": "(Prepararse/nosotros) ___ para el examen.", "answer": "Nos preparamos"},
+        {"sentence": "(Despertarse/tú) ___ muy temprano.", "answer": "Te despiertas"},
+        {"sentence": "(Acostarse/ellos) ___ a las once.", "answer": "Se acuestan"},
+        {"sentence": "(Dormirse/yo) ___ rápido.", "answer": "Me duermo"},
+        {"sentence": "(Bañarse/nosotros) ___ en el mar.", "answer": "Nos bañamos"},
+        {"sentence": "(Relajarse/yo) ___ los fines de semana.", "answer": "Me relajo"},
+        {"sentence": "(Entender/yo) ___ español muy bien.", "answer": "Entiendo"},
+        {"sentence": "(Preferir/tú) ___ café o té?", "answer": "Prefieres"},
+        {"sentence": "(Querer/ella) ___ ir al cine.", "answer": "Quiere"},
+        {"sentence": "(Perder/yo) ___ las llaves siempre.", "answer": "Pierdo"},
+        {"sentence": "(Comenzar/nosotros) ___ a las nueve.", "answer": "Comenzamos"},
+        {"sentence": "(Pensar/ellos) ___ que es difícil.", "answer": "Piensan"},
+        {"sentence": "(Cerrar/la tienda) ___ a las ocho.", "answer": "cierra"},
+        {"sentence": "(Sentir/yo) ___ mucho calor.", "answer": "Siento"},
+        {"sentence": "(Volver/yo) ___ a casa tarde.", "answer": "Vuelvo"},
+        {"sentence": "(Dormir/él) ___ ocho horas.", "answer": "Duerme"},
+        {"sentence": "(Recordar/tú) ___ su nombre?", "answer": "Recuerdas"},
+        {"sentence": "(Encontrar/yo) ___ el libro aquí.", "answer": "Encuentro"},
+        {"sentence": "(Contar/ella) ___ historias.", "answer": "Cuenta"},
+        {"sentence": "(Moverse/nosotros) ___ mucho.", "answer": "Nos movemos"},
+        {"sentence": "(Poder/ellos) ___ venir mañana.", "answer": "Pueden"},
+        {"sentence": "(Costar/esto) ___ mucho dinero.", "answer": "Cuesta"},
+        {"sentence": "(Almorzar/yo) ___ a las dos.", "answer": "Almuerzo"},
+        {"sentence": "(Pedir/yo) ___ ayuda.", "answer": "Pido"},
+        {"sentence": "(Servir/el restaurante) ___ paella.", "answer": "sirve"},
+        {"sentence": "(Repetir/tú) ___ la pregunta?", "answer": "Repites"},
+        {"sentence": "(Seguir/yo) ___ estudiando.", "answer": "Sigo"},
+        {"sentence": "(Medir/yo) ___ 1,80 metros.", "answer": "Mido"},
+        {"sentence": "(Competir/ellos) ___ en la carrera.", "answer": "Compiten"},
+        {"sentence": "(Hacer/yo) ___ la cama cada día.", "answer": "Hago"},
+        {"sentence": "(Poner/yo) ___ la mesa.", "answer": "Pongo"},
+        {"sentence": "(Traer/yo) ___ los libros.", "answer": "Traigo"},
+        {"sentence": "(Salir/yo) ___ de casa a las ocho.", "answer": "Salgo"},
+        {"sentence": "(Conocer/yo) ___ a tu hermano.", "answer": "Conozco"},
+        {"sentence": "(Decir/yo) ___ la verdad.", "answer": "Digo"},
+        {"sentence": "(Venir/yo) ___ a verte.", "answer": "Vengo"},
+        {"sentence": "(Saber/yo) ___ la respuesta.", "answer": "Sé"},
+        {"sentence": "(Dar/yo) ___ clases de español.", "answer": "Doy"},
+        {"sentence": "(Oír/yo) ___ música.", "answer": "Oigo"},
+        {"sentence": "(Conducir/yo) ___ todos los días.", "answer": "Conduzco"},
+        {"sentence": "(Traducir/yo) ___ documentos.", "answer": "Traduzco"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Cada mañana (ducharse/yo) ___ con agua fría.",
+          "answer": "me ducho",
+          "hint": "Возвратный глагол, 1-е лицо"
+        },
+        {
+          "sentence": "(Levantarse/yo) ___ a las 7 de la mañana.",
+          "answer": "Me levanto",
+          "hint": "Возвратный глагол, 1-е лицо"
+        },
+        {
+          "sentence": "(Vestirse/yo) ___ rápidamente antes de salir.",
+          "answer": "Me visto",
+          "hint": "Возвратный глагол, 1-е лицо"
+        },
+        {
+          "sentence": "(Acostarse/yo) ___ tarde los fines de semana.",
+          "answer": "Me acuesto",
+          "hint": "Возвратный глагол, 1-е лицо"
+        },
+        {
+          "sentence": "(Sentirse/yo) ___ mejor después de dormir.",
+          "answer": "Me siento",
+          "hint": "Возвратный глагол, 1-е лицо"
+        },
+        {
+          "sentence": "El partido (empezar) ___ a las 8.",
+          "answer": "empieza",
+          "hint": "Чередование e → ie, 3-е лицо"
+        },
+        {
+          "sentence": "La película (empezar) ___ en cinco minutos.",
+          "answer": "empieza",
+          "hint": "Чередование e → ie, 3-е лицо"
+        },
+        {
+          "sentence": "¿A qué hora (cerrar) ___ la tienda?",
+          "answer": "cierra",
+          "hint": "Чередование e → ie, 3-е лицо"
+        },
+        {
+          "sentence": "Mi hermano (pensar) ___ que es fácil.",
+          "answer": "piensa",
+          "hint": "Чередование e → ie, 3-е лицо"
+        },
+        {
+          "sentence": "El concierto (comenzar) ___ a las 9.",
+          "answer": "comienza",
+          "hint": "Чередование e → ie, 3-е лицо"
+        },
+        {
+          "sentence": "Nosotros no (poder) ___ venir mañana.",
+          "answer": "podemos",
+          "hint": "Чередование o → ue, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (volver) ___ a casa a las 6.",
+          "answer": "volvemos",
+          "hint": "Чередование o → ue, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (dormir) ___ ocho horas cada noche.",
+          "answer": "dormimos",
+          "hint": "Чередование o → ue, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (encontrar) ___ buenos restaurantes aquí.",
+          "answer": "encontramos",
+          "hint": "Чередование o → ue, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Nosotros (recordar) ___ ese día perfectamente.",
+          "answer": "recordamos",
+          "hint": "Чередование o → ue, 1-е лицо мн.ч."
+        },
+        {
+          "sentence": "Yo siempre (salir) ___ tarde del trabajo.",
+          "answer": "salgo",
+          "hint": "Неправильный в 1-м лице (yo)"
+        },
+        {
+          "sentence": "Yo (poner) ___ la mesa antes de cenar.",
+          "answer": "pongo",
+          "hint": "Неправильный в 1-м лице (yo)"
+        },
+        {
+          "sentence": "Yo (traer) ___ el café para todos.",
+          "answer": "traigo",
+          "hint": "Неправильный в 1-м лице (yo)"
+        },
+        {
+          "sentence": "Yo no (oír) ___ bien la música.",
+          "answer": "oigo",
+          "hint": "Неправильный в 1-м лице (yo)"
+        },
+        {
+          "sentence": "Yo (decir) ___ siempre la verdad.",
+          "answer": "digo",
+          "hint": "Неправильный в 1-м лице (yo)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_8",
+      "title": "Concordancia: me cuesta/cuestan, va/van",
+      "hint": "cuesta / cuestan / va / van",
+      "rule": {
+        "title": "Согласование: CUESTA/CUESTAN и VA/VAN",
+        "explanation": "Глаголы COSTAR (быть трудным) и IR (в значении «подходить, помогать») согласуются с подлежащим, а не с дополнением. Если то, что трудно или помогает — в единственном числе, используем CUESTA/VA. Если во множественном — CUESTAN/VAN. Обратите внимание: инфинитив всегда считается единственным числом!",
+        "sections": [
+          {
+            "subtitle": "ME CUESTA / ME CUESTAN — мне трудно",
+            "points": [
+              "<b>Me cuesta</b> + инфинитив или ед.ч.: Me cuesta <b>hablar</b> — Мне трудно говорить",
+              "<b>Me cuesta</b> + сущ. ед.ч.: Me cuesta <b>la gramática</b> — Мне трудна грамматика",
+              "<b>Me cuestan</b> + сущ. мн.ч.: Me cuestan <b>los verbos</b> — Мне трудны глаголы"
+            ]
+          },
+          {
+            "subtitle": "VA / VAN BIEN — помогает, подходит",
+            "points": [
+              "<b>Va bien</b> + инфинитив: <b>Va bien</b> leer libros — Хорошо помогает читать книги",
+              "<b>Va bien</b> + сущ. ед.ч.: El té <b>va bien</b> — Чай помогает",
+              "<b>Van bien</b> + сущ. мн.ч.: Las películas <b>van bien</b> — Фильмы помогают"
+            ]
+          },
+          {
+            "subtitle": "Ключевое правило",
+            "points": [
+              "Смотри на ТО, ЧТО трудно / помогает — это подлежащее",
+              "Инфинитив = единственное число → cuesta, va",
+              "Существительное мн.ч. = cuestan, van"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Me <b>cuesta</b> pronunciar la erre.", "ru": "Мне трудно произносить «р». (инфинитив = ед.ч.)"},
+          {"es": "Me <b>cuestan</b> los verbos irregulares.", "ru": "Мне трудны неправильные глаголы. (мн.ч.)"},
+          {"es": "Para aprender <b>va</b> bien escuchar música.", "ru": "Для учёбы хорошо помогает слушать музыку. (инфинитив)"},
+          {"es": "Las series <b>van</b> muy bien para practicar.", "ru": "Сериалы очень помогают для практики. (мн.ч.)"}
+        ]
+      },
+      "questions": [
+        {"sentence": "Me ___ aprender los verbos.", "answer": "cuesta"},
+        {"sentence": "Para aprender vocabulario ___ muy bien leer.", "answer": "va"},
+        {"sentence": "Me ___ algunos sonidos del español.", "answer": "cuestan"},
+        {"sentence": "A Peer y a mí nos ___ mucho entender a la gente.", "answer": "cuesta"},
+        {"sentence": "Para recordar una palabra ___ bien escribirla.", "answer": "va"},
+        {"sentence": "A casi todos nos ___ hablar rápido.", "answer": "cuesta"},
+        {"sentence": "Para estudiar ___ bien tener una gramática.", "answer": "va"},
+        {"sentence": "A Linnéa también le ___ las palabras muy largas.", "answer": "cuestan"},
+        {"sentence": "Me ___ la pronunciación de la erre.", "answer": "cuesta"},
+        {"sentence": "Para practicar ___ muy bien ver películas.", "answer": "va"},
+        {"sentence": "Nos ___ los verbos irregulares.", "answer": "cuestan"},
+        {"sentence": "Para mejorar ___ bien hablar con nativos.", "answer": "va"},
+        {"sentence": "Le ___ mucho recordar el vocabulario.", "answer": "cuesta"},
+        {"sentence": "Para la gramática ___ muy bien hacer ejercicios.", "answer": "va"},
+        {"sentence": "Me ___ las conjugaciones del subjuntivo.", "answer": "cuestan"},
+        {"sentence": "Me ___ madrugar los lunes.", "answer": "cuesta"},
+        {"sentence": "Nos ___ entender el acento andaluz.", "answer": "cuesta"},
+        {"sentence": "Le ___ escribir sin errores.", "answer": "cuesta"},
+        {"sentence": "Me ___ la ortografía.", "answer": "cuesta"},
+        {"sentence": "Les ___ concentrarse en clase.", "answer": "cuesta"},
+        {"sentence": "Te ___ memorizar fechas?", "answer": "cuesta"},
+        {"sentence": "Me ___ el subjuntivo.", "answer": "cuesta"},
+        {"sentence": "A María le ___ levantarse temprano.", "answer": "cuesta"},
+        {"sentence": "Nos ___ encontrar tiempo para estudiar.", "answer": "cuesta"},
+        {"sentence": "Me ___ la física.", "answer": "cuesta"},
+        {"sentence": "Te ___ adaptarte a nuevas situaciones?", "answer": "cuesta"},
+        {"sentence": "Le ___ expresar sus emociones.", "answer": "cuesta"},
+        {"sentence": "Me ___ las matemáticas.", "answer": "cuestan"},
+        {"sentence": "Nos ___ los exámenes orales.", "answer": "cuestan"},
+        {"sentence": "Te ___ las preposiciones?", "answer": "cuestan"},
+        {"sentence": "Me ___ los tiempos verbales.", "answer": "cuestan"},
+        {"sentence": "Les ___ los ejercicios de gramática.", "answer": "cuestan"},
+        {"sentence": "Me ___ las palabras técnicas.", "answer": "cuestan"},
+        {"sentence": "Nos ___ los acentos regionales.", "answer": "cuestan"},
+        {"sentence": "Te ___ los phrasal verbs?", "answer": "cuestan"},
+        {"sentence": "Me ___ los modismos españoles.", "answer": "cuestan"},
+        {"sentence": "Le ___ las presentaciones en público.", "answer": "cuestan"},
+        {"sentence": "Me ___ los condicionales.", "answer": "cuestan"},
+        {"sentence": "Para aprender ___ bien repetir.", "answer": "va"},
+        {"sentence": "Para relajarse ___ bien meditar.", "answer": "va"},
+        {"sentence": "Para la salud ___ bien caminar.", "answer": "va"},
+        {"sentence": "El yoga ___ bien para el estrés.", "answer": "va"},
+        {"sentence": "Para memorizar ___ bien escribir.", "answer": "va"},
+        {"sentence": "La música ___ bien para estudiar.", "answer": "va"},
+        {"sentence": "Para practicar ___ bien escuchar podcasts.", "answer": "va"},
+        {"sentence": "El ejercicio ___ bien para dormir mejor.", "answer": "va"},
+        {"sentence": "Para aprender idiomas ___ bien viajar.", "answer": "va"},
+        {"sentence": "La lectura ___ bien para el vocabulario.", "answer": "va"},
+        {"sentence": "Para concentrarse ___ bien el silencio.", "answer": "va"},
+        {"sentence": "Las películas ___ bien para el oído.", "answer": "van"},
+        {"sentence": "Los podcasts ___ bien para el listening.", "answer": "van"},
+        {"sentence": "Las repeticiones ___ bien para memorizar.", "answer": "van"},
+        {"sentence": "Los ejercicios escritos ___ bien para la gramática.", "answer": "van"},
+        {"sentence": "Las tarjetas de vocabulario ___ bien.", "answer": "van"},
+        {"sentence": "Los viajes ___ bien para practicar.", "answer": "van"},
+        {"sentence": "Las series en español ___ bien para aprender.", "answer": "van"},
+        {"sentence": "Los intercambios de idiomas ___ bien.", "answer": "van"},
+        {"sentence": "Las clases particulares ___ bien para progresar.", "answer": "van"},
+        {"sentence": "Los audiolibros ___ bien para el listening.", "answer": "van"},
+        {"sentence": "Las aplicaciones de idiomas ___ bien para repasar.", "answer": "van"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Me ___ mucho pronunciar la erre.",
+          "answer": "cuesta",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Me ___ entender a la gente nativa.",
+          "answer": "cuesta",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Me ___ hablar rápido.",
+          "answer": "cuesta",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Me ___ la gramática española.",
+          "answer": "cuesta",
+          "hint": "Gramática — единственное число"
+        },
+        {
+          "sentence": "Me ___ recordar el vocabulario.",
+          "answer": "cuesta",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Me ___ los verbos irregulares.",
+          "answer": "cuestan",
+          "hint": "Verbos — множественное число"
+        },
+        {
+          "sentence": "Me ___ las expresiones idiomáticas.",
+          "answer": "cuestan",
+          "hint": "Expresiones — множественное число"
+        },
+        {
+          "sentence": "Me ___ los números en español.",
+          "answer": "cuestan",
+          "hint": "Números — множественное число"
+        },
+        {
+          "sentence": "Me ___ las palabras muy largas.",
+          "answer": "cuestan",
+          "hint": "Palabras — множественное число"
+        },
+        {
+          "sentence": "Me ___ los tiempos verbales.",
+          "answer": "cuestan",
+          "hint": "Tiempos — множественное число"
+        },
+        {
+          "sentence": "Las películas ___ muy bien para aprender.",
+          "answer": "van",
+          "hint": "Películas — множественное число"
+        },
+        {
+          "sentence": "Las series españolas ___ muy bien para practicar.",
+          "answer": "van",
+          "hint": "Series — множественное число"
+        },
+        {
+          "sentence": "Los podcasts ___ muy bien para el oído.",
+          "answer": "van",
+          "hint": "Podcasts — множественное число"
+        },
+        {
+          "sentence": "Los ejercicios escritos ___ muy bien para la gramática.",
+          "answer": "van",
+          "hint": "Ejercicios — множественное число"
+        },
+        {
+          "sentence": "Las conversaciones con nativos ___ muy bien.",
+          "answer": "van",
+          "hint": "Conversaciones — множественное число"
+        },
+        {
+          "sentence": "Leer libros ___ muy bien para el vocabulario.",
+          "answer": "va",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Escuchar música ___ muy bien para practicar.",
+          "answer": "va",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Ver películas ___ muy bien para aprender.",
+          "answer": "va",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Tener una gramática ___ muy bien.",
+          "answer": "va",
+          "hint": "Инфинитив = единственное число"
+        },
+        {
+          "sentence": "Hablar con nativos ___ muy bien para la fluidez.",
+          "answer": "va",
+          "hint": "Инфинитив = единственное число"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_9",
+      "title": "Concordancia: me da / me dan",
+      "hint": "da / dan",
+      "rule": {
+        "title": "Согласование: ME DA / ME DAN",
+        "explanation": "Конструкция ME DA/DAN используется для выражения эмоций: miedo (страх), vergüenza (стыд), alegría (радость), pena (жалость), tristeza (грусть). Глагол DAR согласуется с тем, ЧТО вызывает эмоцию (подлежащее), а не с тем, КТО её испытывает. Если причина эмоции в единственном числе или инфинитив — DA. Если во множественном — DAN.",
+        "sections": [
+          {
+            "subtitle": "ME DA — единственное число / инфинитив",
+            "points": [
+              "Me <b>da</b> miedo + инфинитив: Me da miedo <b>hablar</b> — Мне страшно говорить",
+              "Me <b>da</b> vergüenza + сущ. ед.ч.: Me da vergüenza <b>el error</b> — Мне стыдно за ошибку",
+              "Me <b>da</b> alegría + инфинитив: Me da alegría <b>verte</b> — Мне радостно тебя видеть"
+            ]
+          },
+          {
+            "subtitle": "ME DAN — множественное число",
+            "points": [
+              "Me <b>dan</b> miedo + сущ. мн.ч.: Me dan miedo <b>los exámenes</b> — Меня пугают экзамены",
+              "Me <b>dan</b> vergüenza + сущ. мн.ч.: Me dan vergüenza <b>mis errores</b> — Мне стыдно за мои ошибки",
+              "Me <b>dan</b> alegría + сущ. мн.ч.: Me dan alegría <b>las buenas noticias</b> — Меня радуют хорошие новости"
+            ]
+          },
+          {
+            "subtitle": "Ключевое правило",
+            "points": [
+              "Смотри на ТО, ЧТО вызывает эмоцию — это подлежащее",
+              "Инфинитив или ед.ч. → da",
+              "Множественное число → dan"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Me <b>da</b> miedo hablar en público.", "ru": "Мне страшно говорить публично. (инфинитив)"},
+          {"es": "Me <b>dan</b> miedo los exámenes orales.", "ru": "Меня пугают устные экзамены. (мн.ч.)"},
+          {"es": "No me <b>da</b> vergüenza cometer errores.", "ru": "Мне не стыдно совершать ошибки. (инфинитив)"},
+          {"es": "Me <b>dan</b> alegría tus progresos.", "ru": "Меня радуют твои успехи. (мн.ч.)"}
+        ]
+      },
+      "questions": [
+        {"sentence": "No me ___ vergüenza salir a la pizarra.", "answer": "da"},
+        {"sentence": "Me ___ miedo los exámenes.", "answer": "dan"},
+        {"sentence": "Me ___ miedo hablar con un nativo.", "answer": "da"},
+        {"sentence": "Te ___ vergüenza estas situaciones.", "answer": "dan"},
+        {"sentence": "Le ___ miedo hablar en inglés por teléfono.", "answer": "da"},
+        {"sentence": "Nos ___ miedo ir a vivir a un país extranjero.", "answer": "da"},
+        {"sentence": "Me ___ mucha alegría aprender idiomas.", "answer": "da"},
+        {"sentence": "Le ___ miedo los errores en público.", "answer": "dan"},
+        {"sentence": "Te ___ vergüenza hacer preguntas al profesor.", "answer": "da"},
+        {"sentence": "Nos ___ alegría los progresos en español.", "answer": "dan"},
+        {"sentence": "Me ___ pena no poder practicar más.", "answer": "da"},
+        {"sentence": "Le ___ vergüenza las exposiciones orales.", "answer": "dan"},
+        {"sentence": "Te ___ miedo el examen oral.", "answer": "da"},
+        {"sentence": "Nos ___ miedo los trabajos en grupo.", "answer": "dan"},
+        {"sentence": "Me ___ tristeza no tener tiempo para estudiar.", "answer": "da"},
+        {"sentence": "Me ___ miedo conducir de noche.", "answer": "da"},
+        {"sentence": "Le ___ vergüenza pedir ayuda.", "answer": "da"},
+        {"sentence": "Nos ___ alegría verte tan bien.", "answer": "da"},
+        {"sentence": "Te ___ pena despedirte.", "answer": "da"},
+        {"sentence": "Me ___ rabia llegar tarde.", "answer": "da"},
+        {"sentence": "Le ___ miedo volar en avión.", "answer": "da"},
+        {"sentence": "Nos ___ tristeza esta noticia.", "answer": "da"},
+        {"sentence": "Te ___ vergüenza bailar?", "answer": "da"},
+        {"sentence": "Me ___ alegría saber que estás mejor.", "answer": "da"},
+        {"sentence": "Le ___ pena el final de la película.", "answer": "da"},
+        {"sentence": "Me ___ miedo la oscuridad.", "answer": "da"},
+        {"sentence": "Te ___ rabia este problema?", "answer": "da"},
+        {"sentence": "Le ___ vergüenza su comportamiento.", "answer": "da"},
+        {"sentence": "Nos ___ miedo equivocarnos.", "answer": "da"},
+        {"sentence": "Me ___ pena verlo tan triste.", "answer": "da"},
+        {"sentence": "Te ___ miedo el futuro?", "answer": "da"},
+        {"sentence": "Le ___ alegría recibir cartas.", "answer": "da"},
+        {"sentence": "Me ___ vergüenza mi acento.", "answer": "da"},
+        {"sentence": "Nos ___ rabia esta situación.", "answer": "da"},
+        {"sentence": "Te ___ tristeza esta canción?", "answer": "da"},
+        {"sentence": "Me ___ miedo perderme.", "answer": "da"},
+        {"sentence": "Le ___ pena decir adiós.", "answer": "da"},
+        {"sentence": "Me ___ miedo las serpientes.", "answer": "dan"},
+        {"sentence": "Le ___ vergüenza sus notas.", "answer": "dan"},
+        {"sentence": "Nos ___ alegría tus visitas.", "answer": "dan"},
+        {"sentence": "Te ___ pena estas historias?", "answer": "dan"},
+        {"sentence": "Me ___ rabia estos problemas.", "answer": "dan"},
+        {"sentence": "Le ___ miedo las alturas.", "answer": "dan"},
+        {"sentence": "Nos ___ tristeza estas noticias.", "answer": "dan"},
+        {"sentence": "Te ___ vergüenza tus errores?", "answer": "dan"},
+        {"sentence": "Me ___ alegría las fiestas.", "answer": "dan"},
+        {"sentence": "Le ___ pena los finales tristes.", "answer": "dan"},
+        {"sentence": "Me ___ miedo los truenos.", "answer": "dan"},
+        {"sentence": "Te ___ rabia estas situaciones?", "answer": "dan"},
+        {"sentence": "Le ___ vergüenza los cumplidos.", "answer": "dan"},
+        {"sentence": "Nos ___ miedo las tormentas.", "answer": "dan"},
+        {"sentence": "Me ___ pena los animales abandonados.", "answer": "dan"},
+        {"sentence": "Te ___ miedo los payasos?", "answer": "dan"},
+        {"sentence": "Le ___ alegría las sorpresas.", "answer": "dan"},
+        {"sentence": "Me ___ vergüenza los comentarios.", "answer": "dan"},
+        {"sentence": "Nos ___ rabia las injusticias.", "answer": "dan"},
+        {"sentence": "Te ___ tristeza las despedidas?", "answer": "dan"},
+        {"sentence": "Me ___ miedo los fantasmas.", "answer": "dan"},
+        {"sentence": "Le ___ pena las películas tristes.", "answer": "dan"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Me ___ vergüenza cantar en público.",
+          "answer": "da",
+          "hint": "Инфинитив = единственное число → da"
+        },
+        {
+          "sentence": "Me ___ miedo hablar en inglés por teléfono.",
+          "answer": "da",
+          "hint": "Инфинитив = единственное число → da"
+        },
+        {
+          "sentence": "Me ___ alegría aprender idiomas.",
+          "answer": "da",
+          "hint": "Инфинитив = единственное число → da"
+        },
+        {
+          "sentence": "Me ___ pena no verte más.",
+          "answer": "da",
+          "hint": "Инфинитив = единственное число → da"
+        },
+        {
+          "sentence": "Me ___ miedo el examen oral.",
+          "answer": "da",
+          "hint": "Examen — единственное число → da"
+        },
+        {
+          "sentence": "Me ___ miedo las arañas.",
+          "answer": "dan",
+          "hint": "Arañas — множественное число → dan"
+        },
+        {
+          "sentence": "Me ___ miedo los perros grandes.",
+          "answer": "dan",
+          "hint": "Perros — множественное число → dan"
+        },
+        {
+          "sentence": "Me ___ vergüenza mis errores.",
+          "answer": "dan",
+          "hint": "Errores — множественное число → dan"
+        },
+        {
+          "sentence": "Me ___ alegría los progresos en español.",
+          "answer": "dan",
+          "hint": "Progresos — множественное число → dan"
+        },
+        {
+          "sentence": "Me ___ miedo las presentaciones orales.",
+          "answer": "dan",
+          "hint": "Presentaciones — множественное число → dan"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_10",
+      "title": "Expresar dificultad y miedo",
+      "hint": "me cuesta / me da miedo / me siento",
+      "rule": {
+        "title": "Выражение трудности, страха и эмоций",
+        "explanation": "В испанском есть три основные конструкции для выражения трудностей и эмоций при изучении языка. ME CUESTA используется для того, что трудно делать. ME DA + эмоция (miedo, vergüenza, alegría) выражает, что что-то вызывает определённую эмоцию. ME SIENTO + прилагательное описывает, как ты себя чувствуешь.",
+        "sections": [
+          {
+            "subtitle": "ME CUESTA + инфинитив — мне трудно",
+            "points": [
+              "Используется для выражения трудности",
+              "<b>Me cuesta</b> hablar rápido — Мне трудно говорить быстро",
+              "<b>Me cuesta</b> entender — Мне трудно понимать",
+              "<b>Me cuesta</b> pronunciar — Мне трудно произносить"
+            ]
+          },
+          {
+            "subtitle": "ME DA + эмоция — мне страшно/стыдно/радостно",
+            "points": [
+              "<b>Me da miedo</b> + инфинитив/сущ.: Me da miedo hablar — Мне страшно говорить",
+              "<b>Me da vergüenza</b>: Me da vergüenza el error — Мне стыдно за ошибку",
+              "<b>Me da alegría</b>: Me da alegría aprobar — Мне радостно сдать"
+            ]
+          },
+          {
+            "subtitle": "ME SIENTO + прилагательное — я чувствую себя",
+            "points": [
+              "Описывает эмоциональное или физическое состояние",
+              "<b>Me siento</b> seguro/a — Я чувствую себя уверенно",
+              "<b>Me siento</b> frustrado/a — Я чувствую себя расстроенным",
+              "<b>Me siento</b> ridículo/a — Я чувствую себя нелепо",
+              "<b>Me siento</b> bien/mal — Я чувствую себя хорошо/плохо"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "<b>Me cuesta</b> mucho la gramática.", "ru": "Мне очень трудна грамматика."},
+          {"es": "<b>Me da miedo</b> hablar en público.", "ru": "Мне страшно говорить публично."},
+          {"es": "<b>Me siento</b> inseguro cuando escribo.", "ru": "Я чувствую себя неуверенно, когда пишу."},
+          {"es": "<b>Me da vergüenza</b> mi acento.", "ru": "Мне стыдно за свой акцент."},
+          {"es": "<b>Me siento</b> muy bien cuando practico.", "ru": "Я чувствую себя очень хорошо, когда практикуюсь."}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ mucho entender a gente nativa cuando habla.", "answer": "Me cuesta"},
+        {"sentence": "___ mucho miedo el examen del lunes.", "answer": "Me da"},
+        {"sentence": "___ muy frustrada porque tengo mucho acento.", "answer": "Me siento"},
+        {"sentence": "___ entender los documentos oficiales.", "answer": "Me cuesta"},
+        {"sentence": "___ ridículo cuando pronuncio la erre.", "answer": "Me siento"},
+        {"sentence": "___ mucho miedo hablar en público.", "answer": "Me da"},
+        {"sentence": "___ muy bien cuando hablo con nativos.", "answer": "Me siento"},
+        {"sentence": "___ recordar todas las conjugaciones.", "answer": "Me cuesta"},
+        {"sentence": "___ inseguro cuando tengo que escribir.", "answer": "Me siento"},
+        {"sentence": "___ vergüenza cometer errores.", "answer": "Me da"},
+        {"sentence": "___ fatal cuando no entiendo nada.", "answer": "Me siento"},
+        {"sentence": "___ mucho la gramática avanzada.", "answer": "Me cuesta"},
+        {"sentence": "___ alegría cuando apruebo un examen.", "answer": "Me da"},
+        {"sentence": "___ seguro cuando practico en casa.", "answer": "Me siento"},
+        {"sentence": "___ mucho pronunciar correctamente.", "answer": "Me cuesta"},
+        {"sentence": "___ encontrar las palabras adecuadas.", "answer": "Me cuesta"},
+        {"sentence": "___ seguir conversaciones rápidas.", "answer": "Me cuesta"},
+        {"sentence": "___ distinguir los acentos.", "answer": "Me cuesta"},
+        {"sentence": "___ aprender vocabulario nuevo.", "answer": "Me cuesta"},
+        {"sentence": "___ usar el subjuntivo correctamente.", "answer": "Me cuesta"},
+        {"sentence": "___ hablar sin pensar mucho.", "answer": "Me cuesta"},
+        {"sentence": "___ expresarme con naturalidad.", "answer": "Me cuesta"},
+        {"sentence": "___ leer textos largos.", "answer": "Me cuesta"},
+        {"sentence": "___ mantener una conversación fluida.", "answer": "Me cuesta"},
+        {"sentence": "___ recordar las palabras nuevas.", "answer": "Me cuesta"},
+        {"sentence": "___ entender películas sin subtítulos.", "answer": "Me cuesta"},
+        {"sentence": "___ hacer los deberes de gramática.", "answer": "Me cuesta"},
+        {"sentence": "___ escribir correos formales.", "answer": "Me cuesta"},
+        {"sentence": "___ concentrarme en las lecturas.", "answer": "Me cuesta"},
+        {"sentence": "___ diferenciar entre ser y estar.", "answer": "Me cuesta"},
+        {"sentence": "___ miedo equivocarme.", "answer": "Me da"},
+        {"sentence": "___ vergüenza hablar delante de gente.", "answer": "Me da"},
+        {"sentence": "___ alegría aprender palabras nuevas.", "answer": "Me da"},
+        {"sentence": "___ pena no practicar más.", "answer": "Me da"},
+        {"sentence": "___ miedo las entrevistas en español.", "answer": "Me da"},
+        {"sentence": "___ vergüenza mi pronunciación.", "answer": "Me da"},
+        {"sentence": "___ alegría entender una película.", "answer": "Me da"},
+        {"sentence": "___ rabia no encontrar las palabras.", "answer": "Me da"},
+        {"sentence": "___ miedo no aprobar el examen.", "answer": "Me da"},
+        {"sentence": "___ vergüenza preguntar al profesor.", "answer": "Me da"},
+        {"sentence": "___ tristeza no poder comunicarme bien.", "answer": "Me da"},
+        {"sentence": "___ alegría cuando entiendo todo.", "answer": "Me da"},
+        {"sentence": "___ miedo hacer el ridículo.", "answer": "Me da"},
+        {"sentence": "___ pena dejar de estudiar.", "answer": "Me da"},
+        {"sentence": "___ vergüenza leer en voz alta.", "answer": "Me da"},
+        {"sentence": "___ muy motivado cuando estudio.", "answer": "Me siento"},
+        {"sentence": "___ nervioso antes del examen.", "answer": "Me siento"},
+        {"sentence": "___ satisfecho con mi progreso.", "answer": "Me siento"},
+        {"sentence": "___ perdido cuando no entiendo.", "answer": "Me siento"},
+        {"sentence": "___ orgulloso cuando hablo bien.", "answer": "Me siento"},
+        {"sentence": "___ agotado después de clase.", "answer": "Me siento"},
+        {"sentence": "___ feliz cuando practico.", "answer": "Me siento"},
+        {"sentence": "___ frustrado con los errores.", "answer": "Me siento"},
+        {"sentence": "___ cómodo hablando en español.", "answer": "Me siento"},
+        {"sentence": "___ ansioso antes de hablar.", "answer": "Me siento"},
+        {"sentence": "___ relajado cuando escribo.", "answer": "Me siento"},
+        {"sentence": "___ bloqueado en las conversaciones.", "answer": "Me siento"},
+        {"sentence": "___ contento con mi nivel.", "answer": "Me siento"},
+        {"sentence": "___ preparado para el examen.", "answer": "Me siento"},
+        {"sentence": "___ incómodo con el acento andaluz.", "answer": "Me siento"}
+      ],
+      "microTests": [
+        {
+          "sentence": "___ hablar por teléfono en español.",
+          "answer": "Me cuesta",
+          "hint": "Выражение трудности"
+        },
+        {
+          "sentence": "___ mucho entender a gente nativa.",
+          "answer": "Me cuesta",
+          "hint": "Выражение трудности"
+        },
+        {
+          "sentence": "___ pronunciar la erre española.",
+          "answer": "Me cuesta",
+          "hint": "Выражение трудности"
+        },
+        {
+          "sentence": "___ escribir sin errores.",
+          "answer": "Me cuesta",
+          "hint": "Выражение трудности"
+        },
+        {
+          "sentence": "___ mucho el subjuntivo.",
+          "answer": "Me cuesta",
+          "hint": "Выражение трудности"
+        },
+        {
+          "sentence": "___ miedo el examen final.",
+          "answer": "Me da",
+          "hint": "Что вызывает страх"
+        },
+        {
+          "sentence": "___ miedo hablar en público.",
+          "answer": "Me da",
+          "hint": "Что вызывает страх"
+        },
+        {
+          "sentence": "___ vergüenza pedir ayuda.",
+          "answer": "Me da",
+          "hint": "Что вызывает стыд"
+        },
+        {
+          "sentence": "___ alegría hablar con amigos españoles.",
+          "answer": "Me da",
+          "hint": "Что вызывает радость"
+        },
+        {
+          "sentence": "___ pena no poder practicar más.",
+          "answer": "Me da",
+          "hint": "Что вызывает жалость"
+        },
+        {
+          "sentence": "___ nervioso antes de presentaciones.",
+          "answer": "Me siento",
+          "hint": "Как я себя чувствую"
+        },
+        {
+          "sentence": "___ inseguro al hablar rápido.",
+          "answer": "Me siento",
+          "hint": "Как я себя чувствую"
+        },
+        {
+          "sentence": "___ muy bien cuando practico con nativos.",
+          "answer": "Me siento",
+          "hint": "Как я себя чувствую"
+        },
+        {
+          "sentence": "___ frustrado cuando no entiendo nada.",
+          "answer": "Me siento",
+          "hint": "Как я себя чувствую"
+        },
+        {
+          "sentence": "___ ridículo cuando pronuncio mal.",
+          "answer": "Me siento",
+          "hint": "Как я себя чувствую"
+        }
+      ]
+    }
+  ],
+
+  "verbos": {
+    "tiempos": [
+      {
+        "id": "presente",
+        "nombre": "Presente de indicativo",
+        "unlockBy": "ejercicio_3",
+
+        "regulares": [
+          {
+            "infinitivo": "hablar",
+            "traduccion": "говорить",
+            "formas": {
+              "yo": "hablo",
+              "tu": "hablas",
+              "el": "habla",
+              "nosotros": "hablamos",
+              "vosotros": "habláis",
+              "ellos": "hablan"
+            }
+          },
+          {
+            "infinitivo": "estudiar",
+            "traduccion": "учиться",
+            "formas": {
+              "yo": "estudio",
+              "tu": "estudias",
+              "el": "estudia",
+              "nosotros": "estudiamos",
+              "vosotros": "estudiáis",
+              "ellos": "estudian"
+            }
+          },
+          {
+            "infinitivo": "trabajar",
+            "traduccion": "работать",
+            "formas": {
+              "yo": "trabajo",
+              "tu": "trabajas",
+              "el": "trabaja",
+              "nosotros": "trabajamos",
+              "vosotros": "trabajáis",
+              "ellos": "trabajan"
+            }
+          },
+          {
+            "infinitivo": "bailar",
+            "traduccion": "танцевать",
+            "formas": {
+              "yo": "bailo",
+              "tu": "bailas",
+              "el": "baila",
+              "nosotros": "bailamos",
+              "vosotros": "bailáis",
+              "ellos": "bailan"
+            }
+          },
+          {
+            "infinitivo": "cocinar",
+            "traduccion": "готовить",
+            "formas": {
+              "yo": "cocino",
+              "tu": "cocinas",
+              "el": "cocina",
+              "nosotros": "cocinamos",
+              "vosotros": "cocináis",
+              "ellos": "cocinan"
+            }
+          },
+          {
+            "infinitivo": "comprar",
+            "traduccion": "покупать",
+            "formas": {
+              "yo": "compro",
+              "tu": "compras",
+              "el": "compra",
+              "nosotros": "compramos",
+              "vosotros": "compráis",
+              "ellos": "compran"
+            }
+          },
+          {
+            "infinitivo": "escuchar",
+            "traduccion": "слушать",
+            "formas": {
+              "yo": "escucho",
+              "tu": "escuchas",
+              "el": "escucha",
+              "nosotros": "escuchamos",
+              "vosotros": "escucháis",
+              "ellos": "escuchan"
+            }
+          },
+          {
+            "infinitivo": "viajar",
+            "traduccion": "путешествовать",
+            "formas": {
+              "yo": "viajo",
+              "tu": "viajas",
+              "el": "viaja",
+              "nosotros": "viajamos",
+              "vosotros": "viajáis",
+              "ellos": "viajan"
+            }
+          },
+          {
+            "infinitivo": "necesitar",
+            "traduccion": "нуждаться",
+            "formas": {
+              "yo": "necesito",
+              "tu": "necesitas",
+              "el": "necesita",
+              "nosotros": "necesitamos",
+              "vosotros": "necesitáis",
+              "ellos": "necesitan"
+            }
+          },
+          {
+            "infinitivo": "preparar",
+            "traduccion": "готовить, подготавливать",
+            "formas": {
+              "yo": "preparo",
+              "tu": "preparas",
+              "el": "prepara",
+              "nosotros": "preparamos",
+              "vosotros": "preparáis",
+              "ellos": "preparan"
+            }
+          },
+          {
+            "infinitivo": "llamar",
+            "traduccion": "звонить, называть",
+            "formas": {
+              "yo": "llamo",
+              "tu": "llamas",
+              "el": "llama",
+              "nosotros": "llamamos",
+              "vosotros": "llamáis",
+              "ellos": "llaman"
+            }
+          },
+          {
+            "infinitivo": "comer",
+            "traduccion": "есть",
+            "formas": {
+              "yo": "como",
+              "tu": "comes",
+              "el": "come",
+              "nosotros": "comemos",
+              "vosotros": "coméis",
+              "ellos": "comen"
+            }
+          },
+          {
+            "infinitivo": "beber",
+            "traduccion": "пить",
+            "formas": {
+              "yo": "bebo",
+              "tu": "bebes",
+              "el": "bebe",
+              "nosotros": "bebemos",
+              "vosotros": "bebéis",
+              "ellos": "beben"
+            }
+          },
+          {
+            "infinitivo": "leer",
+            "traduccion": "читать",
+            "formas": {
+              "yo": "leo",
+              "tu": "lees",
+              "el": "lee",
+              "nosotros": "leemos",
+              "vosotros": "leéis",
+              "ellos": "leen"
+            }
+          },
+          {
+            "infinitivo": "correr",
+            "traduccion": "бегать",
+            "formas": {
+              "yo": "corro",
+              "tu": "corres",
+              "el": "corre",
+              "nosotros": "corremos",
+              "vosotros": "corréis",
+              "ellos": "corren"
+            }
+          },
+          {
+            "infinitivo": "comprender",
+            "traduccion": "понимать",
+            "formas": {
+              "yo": "comprendo",
+              "tu": "comprendes",
+              "el": "comprende",
+              "nosotros": "comprendemos",
+              "vosotros": "comprendéis",
+              "ellos": "comprenden"
+            }
+          },
+          {
+            "infinitivo": "vender",
+            "traduccion": "продавать",
+            "formas": {
+              "yo": "vendo",
+              "tu": "vendes",
+              "el": "vende",
+              "nosotros": "vendemos",
+              "vosotros": "vendéis",
+              "ellos": "venden"
+            }
+          },
+          {
+            "infinitivo": "aprender",
+            "traduccion": "учить, изучать",
+            "formas": {
+              "yo": "aprendo",
+              "tu": "aprendes",
+              "el": "aprende",
+              "nosotros": "aprendemos",
+              "vosotros": "aprendéis",
+              "ellos": "aprenden"
+            }
+          },
+          {
+            "infinitivo": "creer",
+            "traduccion": "верить",
+            "formas": {
+              "yo": "creo",
+              "tu": "crees",
+              "el": "cree",
+              "nosotros": "creemos",
+              "vosotros": "creéis",
+              "ellos": "creen"
+            }
+          },
+          {
+            "infinitivo": "vivir",
+            "traduccion": "жить",
+            "formas": {
+              "yo": "vivo",
+              "tu": "vives",
+              "el": "vive",
+              "nosotros": "vivimos",
+              "vosotros": "vivís",
+              "ellos": "viven"
+            }
+          },
+          {
+            "infinitivo": "escribir",
+            "traduccion": "писать",
+            "formas": {
+              "yo": "escribo",
+              "tu": "escribes",
+              "el": "escribe",
+              "nosotros": "escribimos",
+              "vosotros": "escribís",
+              "ellos": "escriben"
+            }
+          },
+          {
+            "infinitivo": "abrir",
+            "traduccion": "открывать",
+            "formas": {
+              "yo": "abro",
+              "tu": "abres",
+              "el": "abre",
+              "nosotros": "abrimos",
+              "vosotros": "abrís",
+              "ellos": "abren"
+            }
+          },
+          {
+            "infinitivo": "recibir",
+            "traduccion": "получать",
+            "formas": {
+              "yo": "recibo",
+              "tu": "recibes",
+              "el": "recibe",
+              "nosotros": "recibimos",
+              "vosotros": "recibís",
+              "ellos": "reciben"
+            }
+          },
+          {
+            "infinitivo": "subir",
+            "traduccion": "подниматься",
+            "formas": {
+              "yo": "subo",
+              "tu": "subes",
+              "el": "sube",
+              "nosotros": "subimos",
+              "vosotros": "subís",
+              "ellos": "suben"
+            }
+          },
+          {
+            "infinitivo": "decidir",
+            "traduccion": "решать",
+            "formas": {
+              "yo": "decido",
+              "tu": "decides",
+              "el": "decide",
+              "nosotros": "decidimos",
+              "vosotros": "decidís",
+              "ellos": "deciden"
+            }
+          }
+        ],
+
+        "irregulares": [
+          {
+            "infinitivo": "ser",
+            "traduccion": "быть (характеристика)",
+            "formas": {
+              "yo": "soy",
+              "tu": "eres",
+              "el": "es",
+              "nosotros": "somos",
+              "vosotros": "sois",
+              "ellos": "son"
+            }
+          },
+          {
+            "infinitivo": "ir",
+            "traduccion": "идти, ехать",
+            "formas": {
+              "yo": "voy",
+              "tu": "vas",
+              "el": "va",
+              "nosotros": "vamos",
+              "vosotros": "vais",
+              "ellos": "van"
+            }
+          },
+          {
+            "infinitivo": "tener",
+            "traduccion": "иметь",
+            "formas": {
+              "yo": "tengo",
+              "tu": "tienes",
+              "el": "tiene",
+              "nosotros": "tenemos",
+              "vosotros": "tenéis",
+              "ellos": "tienen"
+            }
+          },
+          {
+            "infinitivo": "hacer",
+            "traduccion": "делать",
+            "formas": {
+              "yo": "hago",
+              "tu": "haces",
+              "el": "hace",
+              "nosotros": "hacemos",
+              "vosotros": "hacéis",
+              "ellos": "hacen"
+            }
+          },
+          {
+            "infinitivo": "poder",
+            "traduccion": "мочь",
+            "formas": {
+              "yo": "puedo",
+              "tu": "puedes",
+              "el": "puede",
+              "nosotros": "podemos",
+              "vosotros": "podéis",
+              "ellos": "pueden"
+            }
+          },
+          {
+            "infinitivo": "querer",
+            "traduccion": "хотеть",
+            "formas": {
+              "yo": "quiero",
+              "tu": "quieres",
+              "el": "quiere",
+              "nosotros": "queremos",
+              "vosotros": "queréis",
+              "ellos": "quieren"
+            }
+          },
+          {
+            "infinitivo": "saber",
+            "traduccion": "знать",
+            "formas": {
+              "yo": "sé",
+              "tu": "sabes",
+              "el": "sabe",
+              "nosotros": "sabemos",
+              "vosotros": "sabéis",
+              "ellos": "saben"
+            }
+          },
+          {
+            "infinitivo": "conocer",
+            "traduccion": "знать (быть знакомым)",
+            "formas": {
+              "yo": "conozco",
+              "tu": "conoces",
+              "el": "conoce",
+              "nosotros": "conocemos",
+              "vosotros": "conocéis",
+              "ellos": "conocen"
+            }
+          },
+          {
+            "infinitivo": "venir",
+            "traduccion": "приходить",
+            "formas": {
+              "yo": "vengo",
+              "tu": "vienes",
+              "el": "viene",
+              "nosotros": "venimos",
+              "vosotros": "venís",
+              "ellos": "vienen"
+            }
+          },
+          {
+            "infinitivo": "decir",
+            "traduccion": "говорить, сказать",
+            "formas": {
+              "yo": "digo",
+              "tu": "dices",
+              "el": "dice",
+              "nosotros": "decimos",
+              "vosotros": "decís",
+              "ellos": "dicen"
+            }
+          },
+          {
+            "infinitivo": "pensar",
+            "traduccion": "думать",
+            "formas": {
+              "yo": "pienso",
+              "tu": "piensas",
+              "el": "piensa",
+              "nosotros": "pensamos",
+              "vosotros": "pensáis",
+              "ellos": "piensan"
+            }
+          },
+          {
+            "infinitivo": "empezar",
+            "traduccion": "начинать",
+            "formas": {
+              "yo": "empiezo",
+              "tu": "empiezas",
+              "el": "empieza",
+              "nosotros": "empezamos",
+              "vosotros": "empezáis",
+              "ellos": "empiezan"
+            }
+          },
+          {
+            "infinitivo": "cerrar",
+            "traduccion": "закрывать",
+            "formas": {
+              "yo": "cierro",
+              "tu": "cierras",
+              "el": "cierra",
+              "nosotros": "cerramos",
+              "vosotros": "cerráis",
+              "ellos": "cierran"
+            }
+          },
+          {
+            "infinitivo": "sentir",
+            "traduccion": "чувствовать",
+            "formas": {
+              "yo": "siento",
+              "tu": "sientes",
+              "el": "siente",
+              "nosotros": "sentimos",
+              "vosotros": "sentís",
+              "ellos": "sienten"
+            }
+          },
+          {
+            "infinitivo": "entender",
+            "traduccion": "понимать",
+            "formas": {
+              "yo": "entiendo",
+              "tu": "entiendes",
+              "el": "entiende",
+              "nosotros": "entendemos",
+              "vosotros": "entendéis",
+              "ellos": "entienden"
+            }
+          },
+          {
+            "infinitivo": "preferir",
+            "traduccion": "предпочитать",
+            "formas": {
+              "yo": "prefiero",
+              "tu": "prefieres",
+              "el": "prefiere",
+              "nosotros": "preferimos",
+              "vosotros": "preferís",
+              "ellos": "prefieren"
+            }
+          },
+          {
+            "infinitivo": "perder",
+            "traduccion": "терять",
+            "formas": {
+              "yo": "pierdo",
+              "tu": "pierdes",
+              "el": "pierde",
+              "nosotros": "perdemos",
+              "vosotros": "perdéis",
+              "ellos": "pierden"
+            }
+          },
+          {
+            "infinitivo": "comenzar",
+            "traduccion": "начинать",
+            "formas": {
+              "yo": "comienzo",
+              "tu": "comienzas",
+              "el": "comienza",
+              "nosotros": "comenzamos",
+              "vosotros": "comenzáis",
+              "ellos": "comienzan"
+            }
+          },
+          {
+            "infinitivo": "volver",
+            "traduccion": "возвращаться",
+            "formas": {
+              "yo": "vuelvo",
+              "tu": "vuelves",
+              "el": "vuelve",
+              "nosotros": "volvemos",
+              "vosotros": "volvéis",
+              "ellos": "vuelven"
+            }
+          },
+          {
+            "infinitivo": "dormir",
+            "traduccion": "спать",
+            "formas": {
+              "yo": "duermo",
+              "tu": "duermes",
+              "el": "duerme",
+              "nosotros": "dormimos",
+              "vosotros": "dormís",
+              "ellos": "duermen"
+            }
+          },
+          {
+            "infinitivo": "recordar",
+            "traduccion": "помнить",
+            "formas": {
+              "yo": "recuerdo",
+              "tu": "recuerdas",
+              "el": "recuerda",
+              "nosotros": "recordamos",
+              "vosotros": "recordáis",
+              "ellos": "recuerdan"
+            }
+          },
+          {
+            "infinitivo": "encontrar",
+            "traduccion": "находить",
+            "formas": {
+              "yo": "encuentro",
+              "tu": "encuentras",
+              "el": "encuentra",
+              "nosotros": "encontramos",
+              "vosotros": "encontráis",
+              "ellos": "encuentran"
+            }
+          },
+          {
+            "infinitivo": "contar",
+            "traduccion": "считать, рассказывать",
+            "formas": {
+              "yo": "cuento",
+              "tu": "cuentas",
+              "el": "cuenta",
+              "nosotros": "contamos",
+              "vosotros": "contáis",
+              "ellos": "cuentan"
+            }
+          },
+          {
+            "infinitivo": "costar",
+            "traduccion": "стоить",
+            "formas": {
+              "yo": "cuesto",
+              "tu": "cuestas",
+              "el": "cuesta",
+              "nosotros": "costamos",
+              "vosotros": "costáis",
+              "ellos": "cuestan"
+            }
+          },
+          {
+            "infinitivo": "almorzar",
+            "traduccion": "обедать",
+            "formas": {
+              "yo": "almuerzo",
+              "tu": "almuerzas",
+              "el": "almuerza",
+              "nosotros": "almorzamos",
+              "vosotros": "almorzáis",
+              "ellos": "almuerzan"
+            }
+          },
+          {
+            "infinitivo": "pedir",
+            "traduccion": "просить",
+            "formas": {
+              "yo": "pido",
+              "tu": "pides",
+              "el": "pide",
+              "nosotros": "pedimos",
+              "vosotros": "pedís",
+              "ellos": "piden"
+            }
+          },
+          {
+            "infinitivo": "servir",
+            "traduccion": "служить, подавать",
+            "formas": {
+              "yo": "sirvo",
+              "tu": "sirves",
+              "el": "sirve",
+              "nosotros": "servimos",
+              "vosotros": "servís",
+              "ellos": "sirven"
+            }
+          },
+          {
+            "infinitivo": "repetir",
+            "traduccion": "повторять",
+            "formas": {
+              "yo": "repito",
+              "tu": "repites",
+              "el": "repite",
+              "nosotros": "repetimos",
+              "vosotros": "repetís",
+              "ellos": "repiten"
+            }
+          },
+          {
+            "infinitivo": "seguir",
+            "traduccion": "следовать, продолжать",
+            "formas": {
+              "yo": "sigo",
+              "tu": "sigues",
+              "el": "sigue",
+              "nosotros": "seguimos",
+              "vosotros": "seguís",
+              "ellos": "siguen"
+            }
+          },
+          {
+            "infinitivo": "medir",
+            "traduccion": "измерять",
+            "formas": {
+              "yo": "mido",
+              "tu": "mides",
+              "el": "mide",
+              "nosotros": "medimos",
+              "vosotros": "medís",
+              "ellos": "miden"
+            }
+          },
+          {
+            "infinitivo": "competir",
+            "traduccion": "соревноваться",
+            "formas": {
+              "yo": "compito",
+              "tu": "compites",
+              "el": "compite",
+              "nosotros": "competimos",
+              "vosotros": "competís",
+              "ellos": "compiten"
+            }
+          },
+          {
+            "infinitivo": "salir",
+            "traduccion": "выходить",
+            "formas": {
+              "yo": "salgo",
+              "tu": "sales",
+              "el": "sale",
+              "nosotros": "salimos",
+              "vosotros": "salís",
+              "ellos": "salen"
+            }
+          },
+          {
+            "infinitivo": "poner",
+            "traduccion": "ставить, класть",
+            "formas": {
+              "yo": "pongo",
+              "tu": "pones",
+              "el": "pone",
+              "nosotros": "ponemos",
+              "vosotros": "ponéis",
+              "ellos": "ponen"
+            }
+          },
+          {
+            "infinitivo": "traer",
+            "traduccion": "приносить",
+            "formas": {
+              "yo": "traigo",
+              "tu": "traes",
+              "el": "trae",
+              "nosotros": "traemos",
+              "vosotros": "traéis",
+              "ellos": "traen"
+            }
+          },
+          {
+            "infinitivo": "dar",
+            "traduccion": "давать",
+            "formas": {
+              "yo": "doy",
+              "tu": "das",
+              "el": "da",
+              "nosotros": "damos",
+              "vosotros": "dais",
+              "ellos": "dan"
+            }
+          },
+          {
+            "infinitivo": "oír",
+            "traduccion": "слышать",
+            "formas": {
+              "yo": "oigo",
+              "tu": "oyes",
+              "el": "oye",
+              "nosotros": "oímos",
+              "vosotros": "oís",
+              "ellos": "oyen"
+            }
+          },
+          {
+            "infinitivo": "conducir",
+            "traduccion": "водить",
+            "formas": {
+              "yo": "conduzco",
+              "tu": "conduces",
+              "el": "conduce",
+              "nosotros": "conducimos",
+              "vosotros": "conducís",
+              "ellos": "conducen"
+            }
+          },
+          {
+            "infinitivo": "traducir",
+            "traduccion": "переводить",
+            "formas": {
+              "yo": "traduzco",
+              "tu": "traduces",
+              "el": "traduce",
+              "nosotros": "traducimos",
+              "vosotros": "traducís",
+              "ellos": "traducen"
+            }
+          }
+        ],
+
+        "otras": [
+          {
+            "id": "reflexivos",
+            "nombre": "Verbos reflexivos",
+            "verbos": [
+              {
+                "infinitivo": "levantarse",
+                "traduccion": "вставать",
+                "formas": {
+                  "yo": "me levanto",
+                  "tu": "te levantas",
+                  "el": "se levanta",
+                  "nosotros": "nos levantamos",
+                  "vosotros": "os levantáis",
+                  "ellos": "se levantan"
+                }
+              },
+              {
+                "infinitivo": "ducharse",
+                "traduccion": "принимать душ",
+                "formas": {
+                  "yo": "me ducho",
+                  "tu": "te duchas",
+                  "el": "se ducha",
+                  "nosotros": "nos duchamos",
+                  "vosotros": "os ducháis",
+                  "ellos": "se duchan"
+                }
+              },
+              {
+                "infinitivo": "vestirse",
+                "traduccion": "одеваться",
+                "formas": {
+                  "yo": "me visto",
+                  "tu": "te vistes",
+                  "el": "se viste",
+                  "nosotros": "nos vestimos",
+                  "vosotros": "os vestís",
+                  "ellos": "se visten"
+                }
+              },
+              {
+                "infinitivo": "acostarse",
+                "traduccion": "ложиться спать",
+                "formas": {
+                  "yo": "me acuesto",
+                  "tu": "te acuestas",
+                  "el": "se acuesta",
+                  "nosotros": "nos acostamos",
+                  "vosotros": "os acostáis",
+                  "ellos": "se acuestan"
+                }
+              },
+              {
+                "infinitivo": "despertarse",
+                "traduccion": "просыпаться",
+                "formas": {
+                  "yo": "me despierto",
+                  "tu": "te despiertas",
+                  "el": "se despierta",
+                  "nosotros": "nos despertamos",
+                  "vosotros": "os despertáis",
+                  "ellos": "se despiertan"
+                }
+              },
+              {
+                "infinitivo": "peinarse",
+                "traduccion": "причёсываться",
+                "formas": {
+                  "yo": "me peino",
+                  "tu": "te peinas",
+                  "el": "se peina",
+                  "nosotros": "nos peinamos",
+                  "vosotros": "os peináis",
+                  "ellos": "se peinan"
+                }
+              },
+              {
+                "infinitivo": "lavarse",
+                "traduccion": "мыться, умываться",
+                "formas": {
+                  "yo": "me lavo",
+                  "tu": "te lavas",
+                  "el": "se lava",
+                  "nosotros": "nos lavamos",
+                  "vosotros": "os laváis",
+                  "ellos": "se lavan"
+                }
+              },
+              {
+                "infinitivo": "afeitarse",
+                "traduccion": "бриться",
+                "formas": {
+                  "yo": "me afeito",
+                  "tu": "te afeitas",
+                  "el": "se afeita",
+                  "nosotros": "nos afeitamos",
+                  "vosotros": "os afeitáis",
+                  "ellos": "se afeitan"
+                }
+              },
+              {
+                "infinitivo": "maquillarse",
+                "traduccion": "краситься",
+                "formas": {
+                  "yo": "me maquillo",
+                  "tu": "te maquillas",
+                  "el": "se maquilla",
+                  "nosotros": "nos maquillamos",
+                  "vosotros": "os maquilláis",
+                  "ellos": "se maquillan"
+                }
+              },
+              {
+                "infinitivo": "prepararse",
+                "traduccion": "готовиться",
+                "formas": {
+                  "yo": "me preparo",
+                  "tu": "te preparas",
+                  "el": "se prepara",
+                  "nosotros": "nos preparamos",
+                  "vosotros": "os preparáis",
+                  "ellos": "se preparan"
+                }
+              },
+              {
+                "infinitivo": "dormirse",
+                "traduccion": "засыпать",
+                "formas": {
+                  "yo": "me duermo",
+                  "tu": "te duermes",
+                  "el": "se duerme",
+                  "nosotros": "nos dormimos",
+                  "vosotros": "os dormís",
+                  "ellos": "se duermen"
+                }
+              },
+              {
+                "infinitivo": "bañarse",
+                "traduccion": "купаться",
+                "formas": {
+                  "yo": "me baño",
+                  "tu": "te bañas",
+                  "el": "se baña",
+                  "nosotros": "nos bañamos",
+                  "vosotros": "os bañáis",
+                  "ellos": "se bañan"
+                }
+              },
+              {
+                "infinitivo": "relajarse",
+                "traduccion": "расслабляться",
+                "formas": {
+                  "yo": "me relajo",
+                  "tu": "te relajas",
+                  "el": "se relaja",
+                  "nosotros": "nos relajamos",
+                  "vosotros": "os relajáis",
+                  "ellos": "se relajan"
+                }
+              },
+              {
+                "infinitivo": "sentirse",
+                "traduccion": "чувствовать себя",
+                "formas": {
+                  "yo": "me siento",
+                  "tu": "te sientes",
+                  "el": "se siente",
+                  "nosotros": "nos sentimos",
+                  "vosotros": "os sentís",
+                  "ellos": "se sienten"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

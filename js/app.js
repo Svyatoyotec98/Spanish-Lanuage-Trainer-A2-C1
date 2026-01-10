@@ -18,7 +18,7 @@
                 name: 'A2 - Nivel Elemental',
                 unidades: UNIDADES,
                 available: true,
-                dataFolder: 'data'
+                dataFolder: 'data/A2'
             },
             'B1': {
                 name: 'B1 - Nivel Intermedio',
@@ -158,7 +158,15 @@
                 // Динамическая генерация unlocks (все кроме первой unidad заблокированы)
                 unlocks: Object.fromEntries(
                     UNIDADES.slice(1).map(u => [u, false])
-                )
+                ),
+                // Разблокировка уровней (A2 всегда разблокирован, остальные - по прогрессу)
+                levelUnlocks: {
+                    'A2': true,
+                    'B1': false,
+                    'B2.1': false,
+                    'B2.2': false,
+                    'C1': false
+                }
             };
 
             state.profiles[profileId] = newProfile;
@@ -176,6 +184,16 @@
                 profile.unlocks = Object.fromEntries(
                     UNIDADES.slice(1).map(u => [u, false])
                 );
+            }
+            // Добавляем levelUnlocks для существующих профилей
+            if (!profile.levelUnlocks) {
+                profile.levelUnlocks = {
+                    'A2': true,
+                    'B1': false,
+                    'B2.1': false,
+                    'B2.2': false,
+                    'C1': false
+                };
             }
 
             // Проверка и создание структуры для всех 10 unidades
@@ -690,8 +708,106 @@ function showProfileSelect() {
                 titleEl.textContent = `Spanish Trainer ${currentLevel}`;
             }
 
-            updateUnidadUI();
+            renderUnitsPage();
 			saveNavigationState('mainMenu');
+        }
+
+        // ═══════════════════════════════════════════════════════════════
+        // UNITS PAGINATION (4 units per page)
+        // ═══════════════════════════════════════════════════════════════
+
+        const UNITS_PER_PAGE = 4;
+        let currentUnitsPage = 0;
+
+        function renderUnitsPage() {
+            const container = document.getElementById('unidadesContainer');
+            if (!container) return;
+
+            const profile = getActiveProfile();
+            if (!profile) return;
+
+            ensureProgressSkeleton(profile);
+
+            const totalPages = Math.ceil(UNIDADES.length / UNITS_PER_PAGE);
+            const startIndex = currentUnitsPage * UNITS_PER_PAGE;
+            const endIndex = Math.min(startIndex + UNITS_PER_PAGE, UNIDADES.length);
+            const pageUnidades = UNIDADES.slice(startIndex, endIndex);
+
+            // Book emoji icons for different units
+            const unitIcons = ['📚', '📘', '📗', '📕', '📙', '📔', '📓', '📖', '📒', '📑'];
+
+            let html = '';
+            pageUnidades.forEach((unidad, pageIndex) => {
+                const globalIndex = startIndex + pageIndex;
+                const unidadNumber = unidad.split('_')[1];
+                const progress = calculateUnidadProgress(unidad);
+                const isFirstUnit = globalIndex === 0;
+                const isUnlocked = isFirstUnit || profile.unlocks[unidad];
+                const prevUnidadNumber = globalIndex > 0 ? UNIDADES[globalIndex - 1].split('_')[1] : null;
+
+                // Get unit theme from loaded data
+                const unidadData = vocabularyData[unidad];
+                const theme = unidadData && unidadData.title ? unidadData.title.replace(/^Unidad \d+:?\s*/, '') : '';
+
+                const lockedClass = isUnlocked ? '' : 'locked';
+                const lockIcon = isUnlocked ? '🔓' : '🔒';
+                const progressText = isUnlocked
+                    ? `${progress}%`
+                    : `Заблокировано - Завершите Unidad ${prevUnidadNumber} (80%)`;
+
+                html += `
+                    <div class="category-card ${lockedClass}" id="unidad-${unidadNumber}-btn" onclick="showUnidadMenu('${unidad}')">
+                        <div class="category-header">
+                            <span class="category-title">${unitIcons[globalIndex] || '📚'} Unidad ${unidadNumber}${theme ? ' - ' + theme : ''}</span>
+                            <span class="category-icon">${lockIcon}</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="unidad-${unidadNumber}-progress-bar" style="width: ${isUnlocked ? progress : 0}%"></div>
+                        </div>
+                        <p class="progress-text" id="unidad-${unidadNumber}-progress-text">${progressText}</p>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+            updateUnitsPagination();
+        }
+
+        function updateUnitsPagination() {
+            const totalPages = Math.ceil(UNIDADES.length / UNITS_PER_PAGE);
+            const prevBtn = document.getElementById('unitsPrevBtn');
+            const nextBtn = document.getElementById('unitsNextBtn');
+
+            if (prevBtn) {
+                if (currentUnitsPage === 0) {
+                    prevBtn.classList.add('hidden');
+                } else {
+                    prevBtn.classList.remove('hidden');
+                }
+            }
+
+            if (nextBtn) {
+                if (currentUnitsPage >= totalPages - 1) {
+                    nextBtn.classList.add('hidden');
+                } else {
+                    nextBtn.classList.remove('hidden');
+                }
+            }
+        }
+
+        function nextUnitsPage() {
+            const totalPages = Math.ceil(UNIDADES.length / UNITS_PER_PAGE);
+            if (currentUnitsPage < totalPages - 1) {
+                currentUnitsPage++;
+                renderUnitsPage();
+            }
+        }
+
+        function prevUnitsPage() {
+            if (currentUnitsPage > 0) {
+                currentUnitsPage--;
+                renderUnitsPage();
+            }
         }
 
         // ═══════════════════════════════════════════════════════════════
@@ -709,20 +825,55 @@ function showProfileSelect() {
             const profile = getActiveProfile();
             if (!profile) return;
 
-            // Update A2 progress (calculated from all unidades)
-            const a2Progress = calculateOverallLevelProgress('A2');
-            const a2ProgressBar = document.getElementById('level-A2-progress');
-            const a2ProgressText = document.getElementById('level-A2-progress-text');
+            ensureProgressSkeleton(profile);
 
-            if (a2ProgressBar) {
-                a2ProgressBar.style.width = a2Progress + '%';
-            }
-            if (a2ProgressText) {
-                a2ProgressText.textContent = a2Progress + '% завершено';
-            }
+            // Check and update level unlocks based on progress
+            checkAndUpdateLevelUnlocks();
 
-            // Future: Update other levels when they become available
-            // For now, B1, B2.1, B2.2, C1 show "Скоро будет доступно"
+            const levelOrder = ['A2', 'B1', 'B2.1', 'B2.2', 'C1'];
+
+            levelOrder.forEach((level, index) => {
+                const levelConfig = LEVELS[level];
+                const isAvailable = levelConfig && levelConfig.available;
+                const isUnlocked = profile.levelUnlocks[level];
+                const progress = calculateOverallLevelProgress(level);
+
+                // Get DOM elements
+                const levelCssClass = level.replace('.', '-').toLowerCase();
+                const card = document.querySelector(`.level-card.level-${levelCssClass}`);
+                const progressBar = document.getElementById(`level-${level}-progress`);
+                const progressText = document.getElementById(`level-${level}-progress-text`);
+                const statusEl = document.getElementById(`level-${level}-status`);
+
+                if (!card) return;
+
+                // Update progress bar
+                if (progressBar) {
+                    progressBar.style.width = progress + '%';
+                }
+
+                // Update status and text based on availability and unlock status
+                if (!isAvailable) {
+                    // Level content not yet created
+                    card.classList.add('level-coming-soon');
+                    card.classList.remove('level-locked');
+                    if (statusEl) statusEl.textContent = 'Скоро';
+                    if (progressText) progressText.textContent = 'Скоро будет доступно';
+                } else if (!isUnlocked) {
+                    // Level is locked (need 80% of previous)
+                    card.classList.add('level-locked');
+                    card.classList.remove('level-coming-soon');
+                    const prevLevel = index > 0 ? levelOrder[index - 1] : null;
+                    const prevProgress = prevLevel ? calculateOverallLevelProgress(prevLevel) : 0;
+                    if (statusEl) statusEl.textContent = '🔒';
+                    if (progressText) progressText.textContent = `Заблокировано (${prevLevel}: ${prevProgress}%/80%)`;
+                } else {
+                    // Level is unlocked and available
+                    card.classList.remove('level-coming-soon', 'level-locked');
+                    if (statusEl) statusEl.textContent = '🔓';
+                    if (progressText) progressText.textContent = progress + '% завершено';
+                }
+            });
         }
 
         function calculateOverallLevelProgress(level) {
@@ -757,6 +908,19 @@ function showProfileSelect() {
                 return;
             }
 
+            // Check if level is unlocked
+            const profile = getActiveProfile();
+            if (profile) {
+                ensureProgressSkeleton(profile);
+                if (!profile.levelUnlocks[level]) {
+                    const levelOrder = ['A2', 'B1', 'B2.1', 'B2.2', 'C1'];
+                    const levelIndex = levelOrder.indexOf(level);
+                    const prevLevel = levelIndex > 0 ? levelOrder[levelIndex - 1] : null;
+                    alert(`Уровень ${level} заблокирован!\nЗавершите уровень ${prevLevel} на 80% для разблокировки.`);
+                    return;
+                }
+            }
+
             currentLevel = level;
 
             // Save selected level to navigation state
@@ -767,45 +931,96 @@ function showProfileSelect() {
             showMainMenu();
         }
 
-        function updateUnidadUI() {
+        // ═══════════════════════════════════════════════════════════════
+        // LEVEL UNLOCK FUNCTIONS
+        // ═══════════════════════════════════════════════════════════════
+
+        const LEVEL_ORDER = ['A2', 'B1', 'B2.1', 'B2.2', 'C1'];
+
+        // Разблокировать все уровни (QA функция)
+        function unlockAllLevels() {
+            const profile = getActiveProfile();
+            if (!profile) return;
+
+            ensureProgressSkeleton(profile);
+            LEVEL_ORDER.forEach(level => {
+                profile.levelUnlocks[level] = true;
+            });
+
+            saveActiveProfile(profile);
+            updateLevelSelectUI();
+
+            const output = document.getElementById('qaOutput');
+            if (output) {
+                output.innerHTML = '✅ Все уровни разблокированы!<br>' +
+                    LEVEL_ORDER.map(l => `${l}: 🔓`).join('<br>');
+            }
+        }
+
+        // Заблокировать уровни по прогрессу (QA функция)
+        function lockAllLevels() {
             const profile = getActiveProfile();
             if (!profile) return;
 
             ensureProgressSkeleton(profile);
 
-            // Динамическое обновление UI для всех unidades
-            UNIDADES.forEach((unidad, index) => {
-                const unidadNumber = unidad.split('_')[1]; // Извлекаем номер: 'unidad_1' → '1'
-                const btn = document.getElementById(`unidad-${unidadNumber}-btn`);
-                const progressBar = document.getElementById(`unidad-${unidadNumber}-progress-bar`);
-                const progressText = document.getElementById(`unidad-${unidadNumber}-progress-text`);
+            // A2 всегда разблокирован
+            profile.levelUnlocks['A2'] = true;
 
-                // Проверяем, что элементы существуют в HTML (некоторые могут ещё не быть добавлены)
-                if (!btn || !progressBar || !progressText) return;
+            // Остальные уровни блокируем и проверяем по прогрессу
+            for (let i = 1; i < LEVEL_ORDER.length; i++) {
+                const currentLevelName = LEVEL_ORDER[i];
+                const prevLevelName = LEVEL_ORDER[i - 1];
+                const prevProgress = calculateOverallLevelProgress(prevLevelName);
 
-                const progress = calculateUnidadProgress(unidad);
+                profile.levelUnlocks[currentLevelName] = prevProgress >= 80;
+            }
 
-                if (index === 0) {
-                    // Первая unidad всегда разблокирована
-                    progressBar.style.width = progress + '%';
-                    progressText.textContent = progress + '%';
-                } else {
-                    // Остальные unidades могут быть заблокированы
-                    const isUnlocked = profile.unlocks[unidad];
-                    const prevUnidadNumber = UNIDADES[index - 1].split('_')[1];
+            saveActiveProfile(profile);
+            updateLevelSelectUI();
 
-                    if (isUnlocked) {
-                        btn.classList.remove('locked');
-                        btn.querySelector('.category-icon').textContent = '🔓';
-                        progressBar.style.width = progress + '%';
-                        progressText.textContent = progress + '%';
-                    } else {
-                        btn.classList.add('locked');
-                        btn.querySelector('.category-icon').textContent = '🔒';
-                        progressText.textContent = `Заблокировано - Завершите Unidad ${prevUnidadNumber} (80%)`;
-                    }
+            const output = document.getElementById('qaOutput');
+            if (output) {
+                output.innerHTML = '🔒 Уровни заблокированы по прогрессу:<br>' +
+                    LEVEL_ORDER.map(l => {
+                        const unlocked = profile.levelUnlocks[l];
+                        const progress = calculateOverallLevelProgress(l);
+                        return `${l}: ${unlocked ? '🔓' : '🔒'} (${progress}%)`;
+                    }).join('<br>');
+            }
+        }
+
+        // Проверить и обновить разблокировку уровней на основе прогресса
+        function checkAndUpdateLevelUnlocks() {
+            const profile = getActiveProfile();
+            if (!profile) return;
+
+            ensureProgressSkeleton(profile);
+            let updated = false;
+
+            for (let i = 1; i < LEVEL_ORDER.length; i++) {
+                const currentLevelName = LEVEL_ORDER[i];
+                const prevLevelName = LEVEL_ORDER[i - 1];
+                const prevProgress = calculateOverallLevelProgress(prevLevelName);
+
+                // Разблокируем только если ещё не разблокирован и прогресс >= 80%
+                if (!profile.levelUnlocks[currentLevelName] && prevProgress >= 80) {
+                    profile.levelUnlocks[currentLevelName] = true;
+                    updated = true;
+                    console.log(`🔓 Уровень ${currentLevelName} разблокирован! (${prevLevelName}: ${prevProgress}%)`);
                 }
-            });
+            }
+
+            if (updated) {
+                saveActiveProfile(profile);
+            }
+
+            return updated;
+        }
+
+        function updateUnidadUI() {
+            // Now delegates to renderUnitsPage() for dynamic pagination
+            renderUnitsPage();
         }
 
         // ═══════════════════════════════════════════════════════════════
@@ -3207,7 +3422,8 @@ async function getNavigationState() {
         }
 	async function loadUnidadFromJson(filename) {
   try {
-    const res = await fetch(`data/${filename}`, { cache: "no-store" });
+    const folder = LEVELS[currentLevel].dataFolder;
+    const res = await fetch(`${folder}/${filename}`, { cache: "no-store" });
     if (!res.ok) {
       throw new Error(`HTTP ${res.status}`);
     }
@@ -7751,7 +7967,8 @@ let interactiveMode = {
 // Load Grammar JSON
 async function loadGrammarData() {
     try {
-        const response = await fetch('data/Grammar_Part1.json');
+        const folder = LEVELS[currentLevel].dataFolder;
+        const response = await fetch(`${folder}/Grammar_Part1.json`);
         const data = await response.json();
         grammarData = data.rules || [];
         console.log(`%c📚 GRAMMAR DATA LOADED`, 'background: #4CAF50; color: white; padding: 5px; font-weight: bold;');

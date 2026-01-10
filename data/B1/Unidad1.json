@@ -1,0 +1,1174 @@
+{
+  "id": "unidad_1",
+  "title": "Unidad 1: Prohibido prohibir",
+  "groups": {
+    "COSTUMBRES_SOCIALES": [
+      {
+        "spanish": "la costumbre",
+        "ru": "обычай, привычка",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Es una ___ muy antigua en mi país.",
+          "La ___ de dar propina varía según el país.",
+          "Tengo la ___ de levantarme temprano.",
+          "Esta ___ se ha perdido con el tiempo."
+        ],
+        "hardSentencesRu": [
+          "Это очень древний обычай в моей стране.",
+          "Обычай давать чаевые варьируется в зависимости от страны.",
+          "У меня привычка рано вставать.",
+          "Этот обычай утратился со временем."
+        ]
+      },
+      {
+        "spanish": "el hábito",
+        "ru": "привычка",
+        "type": "sustantivo",
+        "icon": "repeat",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo el ___ de leer antes de dormir.",
+          "Es un ___ muy saludable hacer ejercicio.",
+          "Quiero cambiar este mal ___.",
+          "El ___ de madrugar me ayuda mucho."
+        ],
+        "hardSentencesRu": [
+          "У меня привычка читать перед сном.",
+          "Заниматься спортом — очень полезная привычка.",
+          "Я хочу изменить эту плохую привычку.",
+          "Привычка рано вставать мне очень помогает."
+        ]
+      },
+      {
+        "spanish": "el comportamiento",
+        "ru": "поведение",
+        "type": "sustantivo",
+        "icon": "user-focus",
+        "useIcon": true,
+        "hardSentences": [
+          "Su ___ fue muy educado durante la cena.",
+          "No entiendo el ___ de algunas personas.",
+          "El ___ en público es importante.",
+          "Hay que cuidar el ___ en el trabajo."
+        ],
+        "hardSentencesRu": [
+          "Его поведение было очень вежливым во время ужина.",
+          "Я не понимаю поведение некоторых людей.",
+          "Поведение на публике важно.",
+          "Нужно следить за поведением на работе."
+        ]
+      },
+      {
+        "spanish": "la invitación",
+        "ru": "приглашение",
+        "type": "sustantivo",
+        "icon": "envelope",
+        "useIcon": true,
+        "hardSentences": [
+          "Recibí una ___ para la boda de mi primo.",
+          "Es de mala educación rechazar una ___.",
+          "Envié la ___ por correo electrónico.",
+          "Acepto tu ___ con mucho gusto."
+        ],
+        "hardSentencesRu": [
+          "Я получил приглашение на свадьбу моего кузена.",
+          "Отклонять приглашение — невежливо.",
+          "Я отправил приглашение по электронной почте.",
+          "С удовольствием принимаю твоё приглашение."
+        ]
+      },
+      {
+        "spanish": "el regalo",
+        "ru": "подарок",
+        "type": "sustantivo",
+        "icon": "gift",
+        "useIcon": true,
+        "hardSentences": [
+          "Es costumbre llevar un ___ cuando te invitan a cenar.",
+          "Me hicieron un ___ muy bonito.",
+          "¿Qué ___ le compro a mi madre?",
+          "El mejor ___ es pasar tiempo juntos."
+        ],
+        "hardSentencesRu": [
+          "Принято приносить подарок, когда тебя приглашают на ужин.",
+          "Мне сделали очень красивый подарок.",
+          "Какой подарок купить маме?",
+          "Лучший подарок — проводить время вместе."
+        ]
+      },
+      {
+        "spanish": "el elogio",
+        "ru": "похвала, комплимент",
+        "type": "sustantivo",
+        "icon": "star",
+        "useIcon": true,
+        "hardSentences": [
+          "Recibió muchos ___ por su trabajo.",
+          "Es habitual hacer un ___ sobre la comida.",
+          "Me da vergüenza recibir un ___.",
+          "El ___ fue muy sincero."
+        ],
+        "hardSentencesRu": [
+          "Он получил много похвал за свою работу.",
+          "Принято хвалить еду.",
+          "Мне неловко получать похвалу.",
+          "Похвала была очень искренней."
+        ]
+      },
+      {
+        "spanish": "el cumplido",
+        "ru": "комплимент",
+        "type": "sustantivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Me hizo un ___ sobre mi vestido.",
+          "Los españoles suelen hacer ___ a la comida.",
+          "No sé cómo responder a un ___.",
+          "Es de buena educación hacer algún ___."
+        ],
+        "hardSentencesRu": [
+          "Он сделал мне комплимент по поводу моего платья.",
+          "Испанцы обычно делают комплименты еде.",
+          "Я не знаю, как отвечать на комплимент.",
+          "Делать комплименты — хороший тон."
+        ]
+      },
+      {
+        "spanish": "la propina",
+        "ru": "чаевые",
+        "type": "sustantivo",
+        "icon": "money",
+        "useIcon": true,
+        "hardSentences": [
+          "En España lo normal es dejar un 10% de ___.",
+          "¿Cuánta ___ dejo en el restaurante?",
+          "En algunos países no se deja ___.",
+          "La ___ depende del servicio."
+        ],
+        "hardSentencesRu": [
+          "В Испании принято оставлять 10% чаевых.",
+          "Сколько чаевых оставить в ресторане?",
+          "В некоторых странах чаевые не оставляют.",
+          "Чаевые зависят от обслуживания."
+        ]
+      },
+      {
+        "spanish": "el anfitrión",
+        "ru": "хозяин (дома, мероприятия)",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ nos recibió con mucha amabilidad.",
+          "Es costumbre agradecer al ___ por la cena.",
+          "El ___ de la fiesta es mi vecino.",
+          "Un buen ___ siempre ofrece algo de beber."
+        ],
+        "hardSentencesRu": [
+          "Хозяин принял нас очень любезно.",
+          "Принято благодарить хозяина за ужин.",
+          "Хозяин вечеринки — мой сосед.",
+          "Хороший хозяин всегда предлагает что-нибудь выпить."
+        ]
+      },
+      {
+        "spanish": "la anfitriona",
+        "ru": "хозяйка (дома, мероприятия)",
+        "type": "sustantivo",
+        "icon": "user",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ preparó una cena deliciosa.",
+          "Hay que elogiar a la ___ por la comida.",
+          "La ___ nos presentó a todos los invitados.",
+          "Agradecí a la ___ su hospitalidad."
+        ],
+        "hardSentencesRu": [
+          "Хозяйка приготовила вкусный ужин.",
+          "Нужно похвалить хозяйку за еду.",
+          "Хозяйка представила нас всем гостям.",
+          "Я поблагодарил хозяйку за гостеприимство."
+        ]
+      },
+      {
+        "spanish": "el invitado",
+        "ru": "гость (м)",
+        "type": "sustantivo",
+        "icon": "user-plus",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ llegó puntualmente a la cena.",
+          "Un buen ___ siempre lleva algo.",
+          "El ___ de honor es el presidente.",
+          "Cada ___ trajo una botella de vino."
+        ],
+        "hardSentencesRu": [
+          "Гость пришёл на ужин вовремя.",
+          "Хороший гость всегда что-нибудь приносит.",
+          "Почётный гость — президент.",
+          "Каждый гость принёс бутылку вина."
+        ]
+      },
+      {
+        "spanish": "la invitada",
+        "ru": "гостья (ж)",
+        "type": "sustantivo",
+        "icon": "user-plus",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ elogió mucho la decoración.",
+          "Una ___ trajo flores para la anfitriona.",
+          "La ___ de honor es la directora.",
+          "Cada ___ recibió un pequeño regalo."
+        ],
+        "hardSentencesRu": [
+          "Гостья очень хвалила украшение.",
+          "Одна гостья принесла цветы для хозяйки.",
+          "Почётная гостья — директор.",
+          "Каждая гостья получила небольшой подарок."
+        ]
+      },
+      {
+        "spanish": "invitar",
+        "ru": "приглашать",
+        "type": "verbo",
+        "icon": "envelope-open",
+        "useIcon": true,
+        "hardSentences": [
+          "Quiero ___ a mis amigos a cenar.",
+          "Me gustaría ___ a toda la familia.",
+          "¿Puedo ___ a mi compañero de trabajo?",
+          "Es habitual ___ a los vecinos a las fiestas."
+        ],
+        "hardSentencesRu": [
+          "Я хочу пригласить друзей на ужин.",
+          "Я хотел бы пригласить всю семью.",
+          "Можно пригласить моего коллегу?",
+          "Принято приглашать соседей на праздники."
+        ]
+      },
+      {
+        "spanish": "aceptar",
+        "ru": "принимать, соглашаться",
+        "type": "verbo",
+        "icon": "check",
+        "useIcon": true,
+        "hardSentences": [
+          "Es de buena educación ___ la invitación.",
+          "Voy a ___ su oferta con mucho gusto.",
+          "No puedo ___ el regalo, es demasiado.",
+          "Debes ___ las costumbres del país."
+        ],
+        "hardSentencesRu": [
+          "Принять приглашение — хороший тон.",
+          "Я с удовольствием приму ваше предложение.",
+          "Я не могу принять подарок, это слишком.",
+          "Ты должен принять обычаи страны."
+        ]
+      },
+      {
+        "spanish": "rechazar",
+        "ru": "отклонять, отказываться",
+        "type": "verbo",
+        "icon": "x",
+        "useIcon": true,
+        "hardSentences": [
+          "No quiero ___ su invitación.",
+          "Es de mala educación ___ un regalo.",
+          "Tuve que ___ la oferta por falta de tiempo.",
+          "No debes ___ la comida que te ofrecen."
+        ],
+        "hardSentencesRu": [
+          "Я не хочу отклонять его приглашение.",
+          "Отказываться от подарка — невежливо.",
+          "Мне пришлось отклонить предложение из-за нехватки времени.",
+          "Не следует отказываться от еды, которую тебе предлагают."
+        ]
+      },
+      {
+        "spanish": "agradecer",
+        "ru": "благодарить",
+        "type": "verbo",
+        "icon": "hand-heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Quiero ___ tu hospitalidad.",
+          "Es importante ___ cuando te hacen un favor.",
+          "Voy a ___ a la anfitriona por la cena.",
+          "Hay que ___ siempre los regalos."
+        ],
+        "hardSentencesRu": [
+          "Я хочу поблагодарить за твоё гостеприимство.",
+          "Важно благодарить, когда тебе делают одолжение.",
+          "Я поблагодарю хозяйку за ужин.",
+          "Нужно всегда благодарить за подарки."
+        ]
+      },
+      {
+        "spanish": "habitual",
+        "ru": "обычный, привычный (м/ж)",
+        "type": "adjetivo",
+        "icon": "clock",
+        "useIcon": true,
+        "hardSentences": [
+          "Es ___ llegar tarde a las fiestas.",
+          "Lo más ___ es cenar después de las 21h.",
+          "No es ___ tutear al jefe en España.",
+          "Es ___ dar dos besos al saludar."
+        ],
+        "hardSentencesRu": [
+          "Обычно на вечеринки приходят с опозданием.",
+          "Обычно ужинают после 21:00.",
+          "В Испании не принято обращаться к начальнику на «ты».",
+          "Обычно при приветствии целуют в обе щеки."
+        ]
+      },
+      {
+        "spanish": "frecuente",
+        "ru": "частый (м/ж)",
+        "type": "adjetivo",
+        "icon": "arrows-clockwise",
+        "useIcon": true,
+        "hardSentences": [
+          "Es muy ___ comer tapas en España.",
+          "No es ___ dejar propina en los taxis.",
+          "Es ___ que la gente llegue tarde.",
+          "Es bastante ___ tutear a los desconocidos."
+        ],
+        "hardSentencesRu": [
+          "В Испании очень часто едят тапас.",
+          "Оставлять чаевые в такси не принято.",
+          "Часто бывает, что люди опаздывают.",
+          "Довольно часто обращаются на «ты» к незнакомым."
+        ]
+      }
+    ],
+    "AMBITO_LABORAL": [
+      {
+        "spanish": "el personal",
+        "ru": "персонал",
+        "type": "sustantivo",
+        "icon": "users-three",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ de la empresa trabaja mucho.",
+          "Todo el ___ tiene derecho a vacaciones.",
+          "El ___ recibe su salario a fin de mes.",
+          "Necesitamos contratar más ___."
+        ],
+        "hardSentencesRu": [
+          "Персонал компании много работает.",
+          "Весь персонал имеет право на отпуск.",
+          "Персонал получает зарплату в конце месяца.",
+          "Нам нужно нанять больше персонала."
+        ]
+      },
+      {
+        "spanish": "la plantilla",
+        "ru": "штат сотрудников",
+        "type": "sustantivo",
+        "icon": "users-four",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ de la empresa tiene 50 personas.",
+          "Toda la ___ tiene derecho a vacaciones.",
+          "Quieren reducir la ___ el próximo año.",
+          "La ___ está muy motivada."
+        ],
+        "hardSentencesRu": [
+          "Штат компании — 50 человек.",
+          "Весь штат имеет право на отпуск.",
+          "Они хотят сократить штат в следующем году.",
+          "Штат очень мотивирован."
+        ]
+      },
+      {
+        "spanish": "el trabajador",
+        "ru": "работник",
+        "type": "sustantivo",
+        "icon": "user-gear",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ tiene derecho a un descanso.",
+          "Cada ___ recibe 14 pagas al año.",
+          "El ___ puede pedir días de permiso.",
+          "Un ___ a tiempo completo trabaja 40 horas."
+        ],
+        "hardSentencesRu": [
+          "Работник имеет право на отдых.",
+          "Каждый работник получает 14 зарплат в год.",
+          "Работник может попросить отгулы.",
+          "Работник на полную ставку работает 40 часов."
+        ]
+      },
+      {
+        "spanish": "la trabajadora",
+        "ru": "работница",
+        "type": "sustantivo",
+        "icon": "user-gear",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ tiene derecho a la baja por maternidad.",
+          "Cada ___ puede solicitar vacaciones.",
+          "La ___ recibe su salario mensualmente.",
+          "Una ___ a media jornada trabaja 20 horas."
+        ],
+        "hardSentencesRu": [
+          "Работница имеет право на декретный отпуск.",
+          "Каждая работница может запросить отпуск.",
+          "Работница получает зарплату ежемесячно.",
+          "Работница на полставки работает 20 часов."
+        ]
+      },
+      {
+        "spanish": "el empleado",
+        "ru": "служащий",
+        "type": "sustantivo",
+        "icon": "identification-badge",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ llega puntual todos los días.",
+          "Cada ___ tiene su horario de trabajo.",
+          "El ___ del mes recibe un premio.",
+          "Un ___ nuevo necesita formación."
+        ],
+        "hardSentencesRu": [
+          "Служащий приходит вовремя каждый день.",
+          "У каждого служащего свой график работы.",
+          "Лучший служащий месяца получает премию.",
+          "Новому служащему нужно обучение."
+        ]
+      },
+      {
+        "spanish": "la empleada",
+        "ru": "служащая",
+        "type": "sustantivo",
+        "icon": "identification-badge",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ trabaja en el departamento de ventas.",
+          "Cada ___ tiene derecho a formación.",
+          "La ___ más antigua conoce bien la empresa.",
+          "Una ___ nueva empezó ayer."
+        ],
+        "hardSentencesRu": [
+          "Служащая работает в отделе продаж.",
+          "Каждая служащая имеет право на обучение.",
+          "Самая опытная служащая хорошо знает компанию.",
+          "Вчера начала работать новая служащая."
+        ]
+      },
+      {
+        "spanish": "el jefe",
+        "ru": "начальник",
+        "type": "sustantivo",
+        "icon": "crown",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ es muy exigente.",
+          "El ___ decidió dar el día libre.",
+          "Tengo que hablar con mi ___ sobre las vacaciones.",
+          "El ___ de departamento organiza las reuniones."
+        ],
+        "hardSentencesRu": [
+          "Мой начальник очень требовательный.",
+          "Начальник решил дать выходной.",
+          "Мне нужно поговорить с начальником об отпуске.",
+          "Начальник отдела организует собрания."
+        ]
+      },
+      {
+        "spanish": "la jefa",
+        "ru": "начальница",
+        "type": "sustantivo",
+        "icon": "crown",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ siempre llega antes que nadie.",
+          "La ___ aprobó mi solicitud de vacaciones.",
+          "Nuestra ___ es muy comprensiva.",
+          "La ___ de recursos humanos me entrevistó."
+        ],
+        "hardSentencesRu": [
+          "Моя начальница всегда приходит раньше всех.",
+          "Начальница одобрила мой запрос на отпуск.",
+          "Наша начальница очень понимающая.",
+          "Начальница отдела кадров провела со мной собеседование."
+        ]
+      },
+      {
+        "spanish": "el salario",
+        "ru": "зарплата",
+        "type": "sustantivo",
+        "icon": "money",
+        "useIcon": true,
+        "hardSentences": [
+          "Cobro mi ___ el día 30 de cada mes.",
+          "El ___ mínimo ha subido este año.",
+          "Mi ___ se divide en 14 pagas.",
+          "No es habitual hablar del ___ en público."
+        ],
+        "hardSentencesRu": [
+          "Я получаю зарплату 30-го числа каждого месяца.",
+          "Минимальная зарплата выросла в этом году.",
+          "Моя зарплата делится на 14 выплат.",
+          "Не принято говорить о зарплате публично."
+        ]
+      },
+      {
+        "spanish": "el sueldo",
+        "ru": "оклад, зарплата",
+        "type": "sustantivo",
+        "icon": "wallet",
+        "useIcon": true,
+        "hardSentences": [
+          "Mi ___ no es muy alto, pero me gusta mi trabajo.",
+          "El ___ depende de la experiencia.",
+          "Quiero negociar un ___ mejor.",
+          "El ___ base no incluye las comisiones."
+        ],
+        "hardSentencesRu": [
+          "Мой оклад невысокий, но мне нравится моя работа.",
+          "Оклад зависит от опыта.",
+          "Я хочу договориться о лучшей зарплате.",
+          "Базовый оклад не включает комиссионные."
+        ]
+      },
+      {
+        "spanish": "la jornada",
+        "ru": "рабочий день",
+        "type": "sustantivo",
+        "icon": "clock",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ completa es de 40 horas semanales.",
+          "Prefiero trabajar a media ___.",
+          "Mi ___ empieza a las 9 de la mañana.",
+          "La ___ laboral en España suele ser larga."
+        ],
+        "hardSentencesRu": [
+          "Полный рабочий день — 40 часов в неделю.",
+          "Я предпочитаю работать на полставки.",
+          "Мой рабочий день начинается в 9 утра.",
+          "Рабочий день в Испании обычно длинный."
+        ]
+      },
+      {
+        "spanish": "el permiso",
+        "ru": "разрешение, отгул",
+        "type": "sustantivo",
+        "icon": "calendar-check",
+        "useIcon": true,
+        "hardSentences": [
+          "Necesito pedir ___ para ir al médico.",
+          "Tengo tres días de ___ por matrimonio.",
+          "El ___ de paternidad dura 16 semanas.",
+          "¿Puedo tener ___ para salir antes?"
+        ],
+        "hardSentencesRu": [
+          "Мне нужно попросить отгул, чтобы сходить к врачу.",
+          "У меня три дня отгула по случаю свадьбы.",
+          "Отпуск по отцовству длится 16 недель.",
+          "Можно мне уйти пораньше?"
+        ]
+      },
+      {
+        "spanish": "las vacaciones",
+        "ru": "отпуск",
+        "type": "sustantivo",
+        "icon": "sun",
+        "useIcon": true,
+        "hardSentences": [
+          "Tengo cuatro semanas de ___ al año.",
+          "¿Cuándo son tus ___ de verano?",
+          "Necesito ___ para descansar.",
+          "Las ___ son obligatorias por ley."
+        ],
+        "hardSentencesRu": [
+          "У меня четыре недели отпуска в год.",
+          "Когда у тебя летний отпуск?",
+          "Мне нужен отпуск, чтобы отдохнуть.",
+          "Отпуск обязателен по закону."
+        ]
+      },
+      {
+        "spanish": "la baja",
+        "ru": "больничный, отпуск (по болезни/декретный)",
+        "type": "sustantivo",
+        "icon": "first-aid",
+        "useIcon": true,
+        "hardSentences": [
+          "Estoy de ___ por enfermedad.",
+          "La ___ por maternidad dura 16 semanas.",
+          "Necesito coger la ___ por un accidente.",
+          "La ___ por paternidad es igual que la de maternidad."
+        ],
+        "hardSentencesRu": [
+          "Я на больничном.",
+          "Декретный отпуск длится 16 недель.",
+          "Мне нужно взять больничный из-за несчастного случая.",
+          "Отпуск по отцовству равен декретному."
+        ]
+      },
+      {
+        "spanish": "cobrar",
+        "ru": "получать (зарплату)",
+        "type": "verbo",
+        "icon": "currency-circle-dollar",
+        "useIcon": true,
+        "hardSentences": [
+          "Voy a ___ el salario mañana.",
+          "¿Cuánto sueles ___ al mes?",
+          "Prefiero ___ en 14 pagas.",
+          "En este trabajo puedes ___ más con experiencia."
+        ],
+        "hardSentencesRu": [
+          "Я получу зарплату завтра.",
+          "Сколько ты обычно получаешь в месяц?",
+          "Я предпочитаю получать зарплату в 14 выплат.",
+          "На этой работе можно получать больше с опытом."
+        ]
+      },
+      {
+        "spanish": "contratar",
+        "ru": "нанимать",
+        "type": "verbo",
+        "icon": "handshake",
+        "useIcon": true,
+        "hardSentences": [
+          "La empresa quiere ___ a más personal.",
+          "Van a ___ a tres personas nuevas.",
+          "Es difícil ___ buenos trabajadores.",
+          "Necesitan ___ a alguien con experiencia."
+        ],
+        "hardSentencesRu": [
+          "Компания хочет нанять больше персонала.",
+          "Они собираются нанять трёх новых сотрудников.",
+          "Сложно нанять хороших работников.",
+          "Им нужно нанять кого-то с опытом."
+        ]
+      }
+    ],
+    "PROHIBICIONES_Y_NORMAS": [
+      {
+        "spanish": "la prohibición",
+        "ru": "запрет",
+        "type": "sustantivo",
+        "icon": "prohibit",
+        "useIcon": true,
+        "hardSentences": [
+          "Hay una ___ de fumar en lugares públicos.",
+          "La ___ de aparcar es muy estricta.",
+          "No entiendo esta ___.",
+          "La ___ de usar el móvil es nueva."
+        ],
+        "hardSentencesRu": [
+          "Существует запрет на курение в общественных местах.",
+          "Запрет на парковку очень строгий.",
+          "Я не понимаю этот запрет.",
+          "Запрет на использование телефона — новый."
+        ]
+      },
+      {
+        "spanish": "la norma",
+        "ru": "правило, норма",
+        "type": "sustantivo",
+        "icon": "list-checks",
+        "useIcon": true,
+        "hardSentences": [
+          "Es una ___ básica de convivencia.",
+          "Hay que respetar las ___ del colegio.",
+          "La ___ dice que no se puede fumar aquí.",
+          "Esta ___ es obligatoria para todos."
+        ],
+        "hardSentencesRu": [
+          "Это базовое правило совместного проживания.",
+          "Нужно соблюдать правила школы.",
+          "Правило гласит, что здесь нельзя курить.",
+          "Это правило обязательно для всех."
+        ]
+      },
+      {
+        "spanish": "la señal",
+        "ru": "знак, сигнал",
+        "type": "sustantivo",
+        "icon": "warning",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ indica que está prohibido aparcar.",
+          "¿Qué significa esta ___?",
+          "Hay una ___ de prohibido el paso.",
+          "La ___ de tráfico es muy clara."
+        ],
+        "hardSentencesRu": [
+          "Знак указывает, что парковка запрещена.",
+          "Что означает этот знак?",
+          "Здесь есть знак «Проход запрещён».",
+          "Дорожный знак очень понятный."
+        ]
+      },
+      {
+        "spanish": "la obligación",
+        "ru": "обязанность",
+        "type": "sustantivo",
+        "icon": "check-square",
+        "useIcon": true,
+        "hardSentences": [
+          "Es una ___ llevar casco en moto.",
+          "Tengo la ___ de terminar este proyecto.",
+          "La ___ de pagar impuestos es de todos.",
+          "No es una ___ , es una recomendación."
+        ],
+        "hardSentencesRu": [
+          "Носить шлем на мотоцикле — обязанность.",
+          "У меня обязанность закончить этот проект.",
+          "Обязанность платить налоги — у всех.",
+          "Это не обязанность, а рекомендация."
+        ]
+      },
+      {
+        "spanish": "prohibido",
+        "ru": "запрещено (м)",
+        "type": "adjetivo",
+        "icon": "prohibit",
+        "useIcon": true,
+        "hardSentences": [
+          "Está ___ fumar en el restaurante.",
+          "Está ___ el uso de móviles en clase.",
+          "Está ___ aparcar en esta zona.",
+          "Está ___ bañarse en esta playa."
+        ],
+        "hardSentencesRu": [
+          "В ресторане курить запрещено.",
+          "Использование мобильных в классе запрещено.",
+          "Парковка в этой зоне запрещена.",
+          "Купаться на этом пляже запрещено."
+        ]
+      },
+      {
+        "spanish": "permitido",
+        "ru": "разрешено (м)",
+        "type": "adjetivo",
+        "icon": "check-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Está ___ entrar con mascotas.",
+          "No está ___ comer en la biblioteca.",
+          "¿Está ___ hacer fotos aquí?",
+          "Está ___ aparcar los domingos."
+        ],
+        "hardSentencesRu": [
+          "Вход с домашними животными разрешён.",
+          "В библиотеке есть не разрешено.",
+          "Здесь разрешено фотографировать?",
+          "По воскресеньям парковка разрешена."
+        ]
+      },
+      {
+        "spanish": "obligatorio",
+        "ru": "обязательный (м)",
+        "type": "adjetivo",
+        "icon": "warning-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Es ___ llevar uniforme en el colegio.",
+          "El uso del cinturón es ___.",
+          "No es ___ dejar propina.",
+          "Es ___ respetar las normas."
+        ],
+        "hardSentencesRu": [
+          "В школе обязательно носить форму.",
+          "Использование ремня безопасности обязательно.",
+          "Оставлять чаевые не обязательно.",
+          "Соблюдать правила обязательно."
+        ]
+      },
+      {
+        "spanish": "prohibir",
+        "ru": "запрещать",
+        "type": "verbo",
+        "icon": "hand-palm",
+        "useIcon": true,
+        "hardSentences": [
+          "Van a ___ fumar en las terrazas.",
+          "No pueden ___ el uso del móvil.",
+          "Quieren ___ la venta de alcohol.",
+          "Es difícil ___ algo a los adolescentes."
+        ],
+        "hardSentencesRu": [
+          "Собираются запретить курение на террасах.",
+          "Они не могут запретить использование мобильного.",
+          "Хотят запретить продажу алкоголя.",
+          "Сложно запретить что-то подросткам."
+        ]
+      },
+      {
+        "spanish": "permitir",
+        "ru": "разрешать, позволять",
+        "type": "verbo",
+        "icon": "thumbs-up",
+        "useIcon": true,
+        "hardSentences": [
+          "No me van a ___ entrar sin entrada.",
+          "¿Puedes ___ que llegue tarde?",
+          "La ley no permite ___ esto.",
+          "Mis padres no me permiten ___ salir de noche."
+        ],
+        "hardSentencesRu": [
+          "Мне не разрешат войти без билета.",
+          "Ты можешь позволить мне опоздать?",
+          "Закон не позволяет это.",
+          "Родители не разрешают мне выходить ночью."
+        ]
+      },
+      {
+        "spanish": "obligar",
+        "ru": "обязывать, заставлять",
+        "type": "verbo",
+        "icon": "arrow-right",
+        "useIcon": true,
+        "hardSentences": [
+          "No me pueden ___ a trabajar los domingos.",
+          "La ley nos obliga a ___ pagar impuestos.",
+          "No quiero ___ a nadie a venir.",
+          "El colegio nos obligaba a ___ llevar uniforme."
+        ],
+        "hardSentencesRu": [
+          "Они не могут заставить меня работать по воскресеньям.",
+          "Закон обязывает нас платить налоги.",
+          "Я не хочу заставлять никого приходить.",
+          "Школа обязывала нас носить форму."
+        ]
+      },
+      {
+        "spanish": "dejar",
+        "ru": "позволять, разрешать",
+        "type": "verbo",
+        "icon": "door-open",
+        "useIcon": true,
+        "hardSentences": [
+          "Mis padres no me dejan ___ salir tarde.",
+          "¿Me dejas ___ usar tu ordenador?",
+          "El profesor nos deja ___ usar el diccionario.",
+          "No nos dejan ___ comer en clase."
+        ],
+        "hardSentencesRu": [
+          "Родители не разрешают мне поздно выходить.",
+          "Ты позволишь мне использовать твой компьютер?",
+          "Учитель разрешает нам пользоваться словарём.",
+          "Нам не разрешают есть в классе."
+        ]
+      },
+      {
+        "spanish": "acampar",
+        "ru": "разбивать лагерь, кемпинговать",
+        "type": "verbo",
+        "icon": "tent",
+        "useIcon": true,
+        "hardSentences": [
+          "Está prohibido ___ en esta playa.",
+          "Me encanta ___ en la montaña.",
+          "No se puede ___ sin permiso.",
+          "Queremos ___ cerca del lago."
+        ],
+        "hardSentencesRu": [
+          "На этом пляже запрещено разбивать лагерь.",
+          "Мне нравится отдыхать с палаткой в горах.",
+          "Нельзя разбивать лагерь без разрешения.",
+          "Мы хотим разбить лагерь возле озера."
+        ]
+      },
+      {
+        "spanish": "fumar",
+        "ru": "курить",
+        "type": "verbo",
+        "icon": "cigarette",
+        "useIcon": true,
+        "hardSentences": [
+          "Está prohibido ___ en lugares públicos.",
+          "No se puede ___ en el restaurante.",
+          "Quiero dejar de ___.",
+          "No me gusta ___ cerca de niños."
+        ],
+        "hardSentencesRu": [
+          "В общественных местах курить запрещено.",
+          "В ресторане курить нельзя.",
+          "Я хочу бросить курить.",
+          "Мне не нравится курить рядом с детьми."
+        ]
+      }
+    ],
+    "SALUDOS_Y_CORTESIA": [
+      {
+        "spanish": "el saludo",
+        "ru": "приветствие",
+        "type": "sustantivo",
+        "icon": "hand-waving",
+        "useIcon": true,
+        "hardSentences": [
+          "El ___ en España suele ser con dos besos.",
+          "Un ___ formal es dar la mano.",
+          "El ___ es diferente en cada cultura.",
+          "Olvidé el ___ y fue muy incómodo."
+        ],
+        "hardSentencesRu": [
+          "В Испании обычно здороваются двумя поцелуями.",
+          "Формальное приветствие — рукопожатие.",
+          "Приветствие отличается в каждой культуре.",
+          "Я забыл поздороваться, и это было очень неловко."
+        ]
+      },
+      {
+        "spanish": "la despedida",
+        "ru": "прощание",
+        "type": "sustantivo",
+        "icon": "hand-waving",
+        "useIcon": true,
+        "hardSentences": [
+          "La ___ fue muy emotiva.",
+          "En la ___ nos dimos un abrazo.",
+          "La ___ en Argentina es con un beso.",
+          "No me gustan las ___ largas."
+        ],
+        "hardSentencesRu": [
+          "Прощание было очень эмоциональным.",
+          "При прощании мы обнялись.",
+          "В Аргентине при прощании целуются.",
+          "Мне не нравятся долгие прощания."
+        ]
+      },
+      {
+        "spanish": "el beso",
+        "ru": "поцелуй",
+        "type": "sustantivo",
+        "icon": "heart",
+        "useIcon": true,
+        "hardSentences": [
+          "En España se dan dos ___ al saludar.",
+          "En Argentina es solo un ___.",
+          "El ___ es en la mejilla, no en los labios.",
+          "No me gusta dar ___ a desconocidos."
+        ],
+        "hardSentencesRu": [
+          "В Испании при приветствии целуют в обе щеки.",
+          "В Аргентине — только один поцелуй.",
+          "Поцелуй в щёку, а не в губы.",
+          "Мне не нравится целовать незнакомых."
+        ]
+      },
+      {
+        "spanish": "el abrazo",
+        "ru": "объятие",
+        "type": "sustantivo",
+        "icon": "users",
+        "useIcon": true,
+        "hardSentences": [
+          "Me dio un ___ muy fuerte.",
+          "Un ___ es más cálido que un apretón de manos.",
+          "El ___ es típico entre amigos.",
+          "Necesito un ___ después de este día."
+        ],
+        "hardSentencesRu": [
+          "Он крепко меня обнял.",
+          "Объятие теплее, чем рукопожатие.",
+          "Объятие типично между друзьями.",
+          "Мне нужны объятия после такого дня."
+        ]
+      },
+      {
+        "spanish": "la mano",
+        "ru": "рука",
+        "type": "sustantivo",
+        "icon": "hand",
+        "useIcon": true,
+        "hardSentences": [
+          "Le di la ___ al conocerle.",
+          "Dar la ___ es más formal que dar un beso.",
+          "Estrechar la ___ es habitual en negocios.",
+          "Levanta la ___ si tienes una pregunta."
+        ],
+        "hardSentencesRu": [
+          "Я пожал ему руку при знакомстве.",
+          "Рукопожатие более формально, чем поцелуй.",
+          "Пожимать руку принято в деловой среде.",
+          "Подними руку, если есть вопрос."
+        ]
+      },
+      {
+        "spanish": "la mejilla",
+        "ru": "щека",
+        "type": "sustantivo",
+        "icon": "smiley",
+        "useIcon": true,
+        "hardSentences": [
+          "Le di un beso en la ___.",
+          "Acercó su ___ para saludarme.",
+          "El beso es en la ___, no en los labios.",
+          "Tiene las ___ muy rojas del frío."
+        ],
+        "hardSentencesRu": [
+          "Я поцеловал его в щёку.",
+          "Он приблизил щёку, чтобы поздороваться.",
+          "Поцелуй в щёку, а не в губы.",
+          "У него щёки очень красные от холода."
+        ]
+      },
+      {
+        "spanish": "saludar",
+        "ru": "здороваться, приветствовать",
+        "type": "verbo",
+        "icon": "hand-waving",
+        "useIcon": true,
+        "hardSentences": [
+          "Es de buena educación ___ al entrar.",
+          "En España es normal ___ con dos besos.",
+          "No sé cómo ___ a mi jefe.",
+          "Hay que ___ a todos los presentes."
+        ],
+        "hardSentencesRu": [
+          "Здороваться при входе — хороший тон.",
+          "В Испании принято здороваться двумя поцелуями.",
+          "Я не знаю, как здороваться с начальником.",
+          "Нужно поздороваться со всеми присутствующими."
+        ]
+      },
+      {
+        "spanish": "despedirse",
+        "ru": "прощаться",
+        "type": "verbo",
+        "icon": "sign-out",
+        "useIcon": true,
+        "hardSentences": [
+          "Es importante ___ antes de irse.",
+          "Me cuesta ___ de mi familia.",
+          "Hay que ___ con un beso.",
+          "No quiero ___ todavía."
+        ],
+        "hardSentencesRu": [
+          "Важно попрощаться перед уходом.",
+          "Мне тяжело прощаться с семьёй.",
+          "Нужно попрощаться поцелуем.",
+          "Я ещё не хочу прощаться."
+        ]
+      },
+      {
+        "spanish": "tutear",
+        "ru": "обращаться на «ты»",
+        "type": "verbo",
+        "icon": "chat",
+        "useIcon": true,
+        "hardSentences": [
+          "En España es normal ___ a los desconocidos.",
+          "No sé si puedo ___ a mi profesor.",
+          "Prefiero ___ porque es más cercano.",
+          "¿Puedo ___ o prefiere que le trate de usted?"
+        ],
+        "hardSentencesRu": [
+          "В Испании принято обращаться к незнакомым на «ты».",
+          "Я не знаю, могу ли я обращаться к преподавателю на «ты».",
+          "Я предпочитаю «ты», так ближе.",
+          "Можно на «ты» или вы предпочитаете «вы»?"
+        ]
+      },
+      {
+        "spanish": "educado",
+        "ru": "вежливый, воспитанный (м)",
+        "type": "adjetivo",
+        "icon": "star",
+        "useIcon": true,
+        "hardSentences": [
+          "Es muy ___ y siempre saluda.",
+          "Un niño ___ da las gracias.",
+          "Fue muy ___ durante toda la cena.",
+          "Es importante ser ___ con los mayores."
+        ],
+        "hardSentencesRu": [
+          "Он очень вежливый и всегда здоровается.",
+          "Воспитанный ребёнок благодарит.",
+          "Он был очень вежлив во время всего ужина.",
+          "Важно быть вежливым со старшими."
+        ]
+      },
+      {
+        "spanish": "maleducado",
+        "ru": "невежливый, невоспитанный (м)",
+        "type": "adjetivo",
+        "icon": "x-circle",
+        "useIcon": true,
+        "hardSentences": [
+          "Es muy ___ no saludar al entrar.",
+          "Me pareció ___ que no diera las gracias.",
+          "No seas ___ con tus abuelos.",
+          "Es ___ hablar con la boca llena."
+        ],
+        "hardSentencesRu": [
+          "Очень невежливо не здороваться при входе.",
+          "Мне показалось невоспитанным, что он не поблагодарил.",
+          "Не будь невежливым с бабушкой и дедушкой.",
+          "Говорить с полным ртом — невоспитанно."
+        ]
+      },
+      {
+        "spanish": "cortés",
+        "ru": "вежливый, учтивый (м/ж)",
+        "type": "adjetivo",
+        "icon": "hand-heart",
+        "useIcon": true,
+        "hardSentences": [
+          "Es muy ___ y siempre cede el asiento.",
+          "Fue ___ al ayudarme con las maletas.",
+          "Un camarero ___ mejora la experiencia.",
+          "Es ___ esperar a que todos tengan comida."
+        ],
+        "hardSentencesRu": [
+          "Он очень учтивый и всегда уступает место.",
+          "Он был вежлив, помогая мне с чемоданами.",
+          "Учтивый официант улучшает впечатление.",
+          "Вежливо подождать, пока у всех будет еда."
+        ]
+      },
+      {
+        "spanish": "formal",
+        "ru": "формальный (м/ж)",
+        "type": "adjetivo",
+        "icon": "briefcase",
+        "useIcon": true,
+        "hardSentences": [
+          "El trato es más ___ en los negocios.",
+          "Prefiero un saludo menos ___.",
+          "La carta era demasiado ___.",
+          "En Alemania el trato suele ser más ___."
+        ],
+        "hardSentencesRu": [
+          "В деловой среде обращение более формальное.",
+          "Я предпочитаю менее формальное приветствие.",
+          "Письмо было слишком формальным.",
+          "В Германии обращение обычно более формальное."
+        ]
+      },
+      {
+        "spanish": "informal",
+        "ru": "неформальный (м/ж)",
+        "type": "adjetivo",
+        "icon": "t-shirt",
+        "useIcon": true,
+        "hardSentences": [
+          "El ambiente era muy ___.",
+          "Prefiero un trato más ___.",
+          "La reunión fue bastante ___.",
+          "En España el trato suele ser más ___."
+        ],
+        "hardSentencesRu": [
+          "Атмосфера была очень неформальной.",
+          "Я предпочитаю более неформальное обращение.",
+          "Встреча была довольно неформальной.",
+          "В Испании обращение обычно более неформальное."
+        ]
+      }
+    ]
+  },
+  "ejercicios": []
+}

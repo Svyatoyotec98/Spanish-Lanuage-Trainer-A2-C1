@@ -1844,21 +1844,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     margin-top: 30px;
     padding: 20px 0;
 }
 
 .pagination-arrow {
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    flex-shrink: 0;
     border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, 0.4);
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: #2c3e50;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -1884,7 +1886,8 @@
     -webkit-backdrop-filter: blur(10px);
     border: 2px solid rgba(102, 126, 234, 0.5);
     color: #2c3e50;
-    padding: 12px 30px;
+    padding: 10px 24px;
+    flex-shrink: 0;
     border-radius: 25px;
     font-size: 1.1em;
     font-weight: 700;

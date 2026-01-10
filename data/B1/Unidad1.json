@@ -1170,5 +1170,557 @@
       }
     ]
   },
-  "ejercicios": []
+  "ejercicios": [
+    {
+      "id": "ejercicio_1",
+      "title": "Concordancia: está prohibido/a/os/as",
+      "hint": "prohibido / prohibida / prohibidos / prohibidas",
+      "rule": {
+        "title": "Concordancia de PROHIBIDO/PROHIBIDA/PROHIBIDOS/PROHIBIDAS",
+        "explanation": "Cuando usamos 'estar + prohibido', el adjetivo debe concordar en género y número con el sustantivo que le sigue. Si el sustantivo es masculino singular, usamos 'prohibido'; si es femenino singular, 'prohibida'; masculino plural, 'prohibidos'; femenino plural, 'prohibidas'.",
+        "sections": [
+          {
+            "subtitle": "Masculino singular: PROHIBIDO",
+            "points": [
+              "Está <b>prohibido</b> el paso — Проход запрещён",
+              "Está <b>prohibido</b> el uso de móviles — Использование телефонов запрещено",
+              "Está <b>prohibido</b> el acceso — Доступ запрещён"
+            ]
+          },
+          {
+            "subtitle": "Femenino singular: PROHIBIDA",
+            "points": [
+              "Está <b>prohibida</b> la entrada — Вход запрещён",
+              "Está <b>prohibida</b> la venta de alcohol — Продажа алкоголя запрещена",
+              "Está <b>prohibida</b> la pesca — Рыбалка запрещена"
+            ]
+          },
+          {
+            "subtitle": "Masculino plural: PROHIBIDOS",
+            "points": [
+              "Están <b>prohibidos</b> los teléfonos móviles — Мобильные телефоны запрещены",
+              "Están <b>prohibidos</b> los objetos metálicos — Металлические предметы запрещены",
+              "Están <b>prohibidos</b> los animales — Животные запрещены"
+            ]
+          },
+          {
+            "subtitle": "Femenino plural: PROHIBIDAS",
+            "points": [
+              "Están <b>prohibidas</b> las visitas — Посещения запрещены",
+              "Están <b>prohibidas</b> las fotos — Фотографии запрещены",
+              "Están <b>prohibidas</b> las bebidas alcohólicas — Алкогольные напитки запрещены"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Está prohibido el acceso a menores de 18 años.", "ru": "Вход лицам младше 18 лет запрещён."},
+          {"es": "Está prohibida la entrada con comida.", "ru": "Вход с едой запрещён."},
+          {"es": "Están prohibidos los móviles en clase.", "ru": "Мобильные телефоны в классе запрещены."},
+          {"es": "Están prohibidas las mascotas en el hotel.", "ru": "Домашние животные в отеле запрещены."}
+        ]
+      },
+      "questions": [
+        {"sentence": "Está ___ el paso a personas no autorizadas.", "answer": "prohibido"},
+        {"sentence": "Está ___ la entrada a menores de edad.", "answer": "prohibida"},
+        {"sentence": "Están ___ los teléfonos móviles en el examen.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las visitas después de las 20h.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el uso de cámaras en el museo.", "answer": "prohibido"},
+        {"sentence": "Está ___ la venta de tabaco a menores.", "answer": "prohibida"},
+        {"sentence": "Están ___ los objetos punzantes en el avión.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las bebidas alcohólicas en el estadio.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el acceso sin autorización.", "answer": "prohibido"},
+        {"sentence": "Está ___ la pesca en este río.", "answer": "prohibida"},
+        {"sentence": "Están ___ los perros en la playa.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las fotografías con flash.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el baño en esta zona.", "answer": "prohibido"},
+        {"sentence": "Está ___ la caza en el parque nacional.", "answer": "prohibida"},
+        {"sentence": "Están ___ los vehículos de motor en el centro.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las llamadas de teléfono durante la clase.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el consumo de alcohol en la calle.", "answer": "prohibido"},
+        {"sentence": "Está ___ la publicidad de tabaco.", "answer": "prohibida"},
+        {"sentence": "Están ___ los cigarrillos electrónicos en el hospital.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las hogueras en el bosque.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el estacionamiento en doble fila.", "answer": "prohibido"},
+        {"sentence": "Está ___ la circulación de bicicletas aquí.", "answer": "prohibida"},
+        {"sentence": "Están ___ los drones en el aeropuerto.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las armas de fuego.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el ruido después de las 22h.", "answer": "prohibido"},
+        {"sentence": "Está ___ la grabación de video.", "answer": "prohibida"},
+        {"sentence": "Están ___ los fuegos artificiales.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las pintadas en las paredes.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el tráfico de vehículos pesados.", "answer": "prohibido"},
+        {"sentence": "Está ___ la acampada en esta playa.", "answer": "prohibida"},
+        {"sentence": "Están ___ los patinetes eléctricos en la acera.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las fiestas ruidosas.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el transporte de animales vivos.", "answer": "prohibido"},
+        {"sentence": "Está ___ la distribución de propaganda.", "answer": "prohibida"},
+        {"sentence": "Están ___ los auriculares durante el examen.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las sustancias peligrosas.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el comercio ambulante.", "answer": "prohibido"},
+        {"sentence": "Está ___ la entrada de comida.", "answer": "prohibida"},
+        {"sentence": "Están ___ los juegos de azar en este local.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las reuniones de más de 10 personas.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el vertido de residuos.", "answer": "prohibido"},
+        {"sentence": "Está ___ la tala de árboles.", "answer": "prohibida"},
+        {"sentence": "Están ___ los altavoces en la playa.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las barbacoas en el parque.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el soborno a funcionarios.", "answer": "prohibido"},
+        {"sentence": "Está ___ la discriminación por género.", "answer": "prohibida"},
+        {"sentence": "Están ___ los envases de vidrio en el concierto.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las motos en el paseo marítimo.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el aparcamiento nocturno.", "answer": "prohibido"},
+        {"sentence": "Está ___ la entrada con mascotas.", "answer": "prohibida"},
+        {"sentence": "Están ___ los líquidos de más de 100ml.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las copias sin autorización.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el paso de peatones por aquí.", "answer": "prohibido"},
+        {"sentence": "Está ___ la navegación en esta zona.", "answer": "prohibida"},
+        {"sentence": "Están ___ los aparatos electrónicos en despegue.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las modificaciones del contrato.", "answer": "prohibidas"},
+        {"sentence": "Está ___ el acceso al público general.", "answer": "prohibido"},
+        {"sentence": "Está ___ la venta ambulante.", "answer": "prohibida"},
+        {"sentence": "Están ___ los carteles publicitarios.", "answer": "prohibidos"},
+        {"sentence": "Están ___ las actividades comerciales aquí.", "answer": "prohibidas"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Está ___ el paso sin permiso.",
+          "answer": "prohibido",
+          "hint": "El paso (м.р. ед.ч.)"
+        },
+        {
+          "sentence": "Está ___ la entrada a menores.",
+          "answer": "prohibida",
+          "hint": "La entrada (ж.р. ед.ч.)"
+        },
+        {
+          "sentence": "Están ___ los móviles en clase.",
+          "answer": "prohibidos",
+          "hint": "Los móviles (м.р. мн.ч.)"
+        },
+        {
+          "sentence": "Están ___ las visitas nocturnas.",
+          "answer": "prohibidas",
+          "hint": "Las visitas (ж.р. мн.ч.)"
+        },
+        {
+          "sentence": "Está ___ el uso de flash.",
+          "answer": "prohibido",
+          "hint": "El uso (м.р. ед.ч.)"
+        },
+        {
+          "sentence": "Está ___ la venta de alcohol.",
+          "answer": "prohibida",
+          "hint": "La venta (ж.р. ед.ч.)"
+        },
+        {
+          "sentence": "Están ___ los perros en la playa.",
+          "answer": "prohibidos",
+          "hint": "Los perros (м.р. мн.ч.)"
+        },
+        {
+          "sentence": "Están ___ las fotos con flash.",
+          "answer": "prohibidas",
+          "hint": "Las fotos (ж.р. мн.ч.)"
+        },
+        {
+          "sentence": "Está ___ el acceso sin tarjeta.",
+          "answer": "prohibido",
+          "hint": "El acceso (м.р. ед.ч.)"
+        },
+        {
+          "sentence": "Está ___ la pesca aquí.",
+          "answer": "prohibida",
+          "hint": "La pesca (ж.р. ед.ч.)"
+        },
+        {
+          "sentence": "Están ___ los vehículos grandes.",
+          "answer": "prohibidos",
+          "hint": "Los vehículos (м.р. мн.ч.)"
+        },
+        {
+          "sentence": "Están ___ las bebidas alcohólicas.",
+          "answer": "prohibidas",
+          "hint": "Las bebidas (ж.р. мн.ч.)"
+        },
+        {
+          "sentence": "Está ___ el baño en esta zona.",
+          "answer": "prohibido",
+          "hint": "El baño (м.р. ед.ч.)"
+        },
+        {
+          "sentence": "Está ___ la caza en el parque.",
+          "answer": "prohibida",
+          "hint": "La caza (ж.р. ед.ч.)"
+        },
+        {
+          "sentence": "Están ___ los drones aquí.",
+          "answer": "prohibidos",
+          "hint": "Los drones (м.р. мн.ч.)"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_2",
+      "title": "SE impersonal: singular o plural",
+      "hint": "se + verbo singular / se + verbo plural",
+      "rule": {
+        "title": "SE impersonal: concordancia con el sustantivo",
+        "explanation": "En las construcciones impersonales con SE, el verbo debe concordar en número con el sustantivo que le sigue. Si el sustantivo es singular, el verbo va en singular; si el sustantivo es plural, el verbo va en plural.",
+        "sections": [
+          {
+            "subtitle": "Verbo en SINGULAR (sustantivo singular)",
+            "points": [
+              "Se <b>habla</b> español — Говорят по-испански (один язык)",
+              "Se <b>vende</b> piso — Продаётся квартира",
+              "Se <b>necesita</b> camarero — Требуется официант",
+              "Se <b>alquila</b> habitación — Сдаётся комната"
+            ]
+          },
+          {
+            "subtitle": "Verbo en PLURAL (sustantivo plural)",
+            "points": [
+              "Se <b>hablan</b> cuatro idiomas — Говорят на четырёх языках",
+              "Se <b>venden</b> pisos — Продаются квартиры",
+              "Se <b>necesitan</b> camareros — Требуются официанты",
+              "Se <b>alquilan</b> habitaciones — Сдаются комнаты"
+            ]
+          },
+          {
+            "subtitle": "Casos especiales",
+            "points": [
+              "Con infinitivo, siempre singular: Se <b>puede</b> fumar — Можно курить",
+              "Con adverbio de cantidad + sustantivo: Se <b>come</b> mucho pan — Едят много хлеба",
+              "Impersonal puro (sin objeto): Aquí se <b>vive</b> bien — Здесь хорошо живётся"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "En España se hablan cuatro idiomas oficiales.", "ru": "В Испании говорят на четырёх официальных языках."},
+          {"es": "Se vende coche en buen estado.", "ru": "Продаётся машина в хорошем состоянии."},
+          {"es": "En este restaurante se sirven tapas.", "ru": "В этом ресторане подают тапас."},
+          {"es": "Aquí se trabaja mucho.", "ru": "Здесь много работают."}
+        ]
+      },
+      "questions": [
+        {"sentence": "En España se ___ cuatro idiomas oficiales.", "answer": "hablan"},
+        {"sentence": "Se ___ coche en buen estado.", "answer": "vende"},
+        {"sentence": "En este país se ___ euros.", "answer": "usan"},
+        {"sentence": "Se ___ camarero con experiencia.", "answer": "necesita"},
+        {"sentence": "Se ___ habitaciones para estudiantes.", "answer": "alquilan"},
+        {"sentence": "En Argentina se ___ español.", "answer": "habla"},
+        {"sentence": "Se ___ dos coches de segunda mano.", "answer": "venden"},
+        {"sentence": "Aquí se ___ muy bien.", "answer": "vive"},
+        {"sentence": "Se ___ empleados para el verano.", "answer": "buscan"},
+        {"sentence": "En este restaurante se ___ comida casera.", "answer": "sirve"},
+        {"sentence": "Se ___ productos ecológicos.", "answer": "venden"},
+        {"sentence": "En Suiza se ___ tres idiomas.", "answer": "hablan"},
+        {"sentence": "Se ___ piso céntrico.", "answer": "alquila"},
+        {"sentence": "En la universidad se ___ muchas asignaturas.", "answer": "estudian"},
+        {"sentence": "Se ___ local para negocio.", "answer": "busca"},
+        {"sentence": "En este país se ___ con tarjeta de crédito.", "answer": "paga"},
+        {"sentence": "Se ___ libros de segunda mano.", "answer": "compran"},
+        {"sentence": "En Italia se ___ pasta todos los días.", "answer": "come"},
+        {"sentence": "Se ___ profesores nativos.", "answer": "necesitan"},
+        {"sentence": "En Brasil se ___ portugués.", "answer": "habla"},
+        {"sentence": "Se ___ entradas para el concierto.", "answer": "venden"},
+        {"sentence": "En este gimnasio se ___ yoga.", "answer": "practica"},
+        {"sentence": "Se ___ pisos con terraza.", "answer": "alquilan"},
+        {"sentence": "En Japón se ___ con palillos.", "answer": "come"},
+        {"sentence": "Se ___ dependiente para tienda.", "answer": "busca"},
+        {"sentence": "En este bar se ___ tapas gratis.", "answer": "sirven"},
+        {"sentence": "Se ___ muebles antiguos.", "answer": "venden"},
+        {"sentence": "En Canadá se ___ inglés y francés.", "answer": "hablan"},
+        {"sentence": "Se ___ apartamento amueblado.", "answer": "alquila"},
+        {"sentence": "En esta empresa se ___ bien.", "answer": "trabaja"},
+        {"sentence": "Se ___ cocineros profesionales.", "answer": "necesitan"},
+        {"sentence": "En España se ___ mucho aceite de oliva.", "answer": "usa"},
+        {"sentence": "Se ___ bicicletas de montaña.", "answer": "alquilan"},
+        {"sentence": "En China se ___ mandarín.", "answer": "habla"},
+        {"sentence": "Se ___ ofertas especiales.", "answer": "ofrecen"},
+        {"sentence": "En México se ___ tortillas de maíz.", "answer": "comen"},
+        {"sentence": "Se ___ recepcionista bilingüe.", "answer": "busca"},
+        {"sentence": "En el norte se ___ mucho pescado.", "answer": "come"},
+        {"sentence": "Se ___ cursos de español.", "answer": "ofrecen"},
+        {"sentence": "En este país se ___ mucho té.", "answer": "bebe"},
+        {"sentence": "Se ___ técnicos informáticos.", "answer": "necesitan"},
+        {"sentence": "En Alemania se ___ cerveza en todas partes.", "answer": "bebe"},
+        {"sentence": "Se ___ servicios de traducción.", "answer": "ofrecen"},
+        {"sentence": "En esta región se ___ vino de calidad.", "answer": "produce"},
+        {"sentence": "Se ___ guías turísticos.", "answer": "buscan"},
+        {"sentence": "En Francia se ___ mucho queso.", "answer": "come"},
+        {"sentence": "Se ___ productos importados.", "answer": "venden"},
+        {"sentence": "En Rusia se ___ ruso.", "answer": "habla"},
+        {"sentence": "Se ___ programadores senior.", "answer": "necesitan"},
+        {"sentence": "En este país se ___ por la derecha.", "answer": "conduce"},
+        {"sentence": "Se ___ clases particulares.", "answer": "dan"},
+        {"sentence": "En Grecia se ___ aceitunas.", "answer": "producen"},
+        {"sentence": "Se ___ secretaria administrativa.", "answer": "busca"},
+        {"sentence": "En Holanda se ___ muchas bicicletas.", "answer": "usan"},
+        {"sentence": "Se ___ descuentos para estudiantes.", "answer": "hacen"},
+        {"sentence": "En Colombia se ___ café excelente.", "answer": "produce"},
+        {"sentence": "Se ___ voluntarios para el evento.", "answer": "buscan"},
+        {"sentence": "En Escocia se ___ whisky famoso.", "answer": "produce"},
+        {"sentence": "Se ___ reservas por teléfono.", "answer": "aceptan"},
+        {"sentence": "En Portugal se ___ bacalao de mil formas.", "answer": "cocina"}
+      ],
+      "microTests": [
+        {
+          "sentence": "Se ___ español en Argentina.",
+          "answer": "habla",
+          "hint": "Один язык = глагол в единственном числе"
+        },
+        {
+          "sentence": "Se ___ cuatro idiomas en Suiza.",
+          "answer": "hablan",
+          "hint": "Четыре языка = глагол во множественном числе"
+        },
+        {
+          "sentence": "Se ___ coche de segunda mano.",
+          "answer": "vende",
+          "hint": "Одна машина = глагол в единственном числе"
+        },
+        {
+          "sentence": "Se ___ pisos céntricos.",
+          "answer": "venden",
+          "hint": "Несколько квартир = глагол во множественном числе"
+        },
+        {
+          "sentence": "Se ___ camarero con experiencia.",
+          "answer": "necesita",
+          "hint": "Один официант = глагол в единственном числе"
+        },
+        {
+          "sentence": "Se ___ profesores nativos.",
+          "answer": "necesitan",
+          "hint": "Несколько преподавателей = глагол во множественном числе"
+        },
+        {
+          "sentence": "Se ___ habitación amueblada.",
+          "answer": "alquila",
+          "hint": "Одна комната = глагол в единственном числе"
+        },
+        {
+          "sentence": "Se ___ bicicletas por horas.",
+          "answer": "alquilan",
+          "hint": "Несколько велосипедов = глагол во множественном числе"
+        },
+        {
+          "sentence": "En España se ___ con euros.",
+          "answer": "paga",
+          "hint": "Безличное «платят» = глагол в единственном числе"
+        },
+        {
+          "sentence": "Se ___ tapas en este bar.",
+          "answer": "sirven",
+          "hint": "Тапас (мн.ч.) = глагол во множественном числе"
+        },
+        {
+          "sentence": "Aquí se ___ muy bien.",
+          "answer": "vive",
+          "hint": "Безличное «живётся» = глагол в единственном числе"
+        },
+        {
+          "sentence": "Se ___ ofertas especiales.",
+          "answer": "ofrecen",
+          "hint": "Несколько предложений = глагол во множественном числе"
+        },
+        {
+          "sentence": "Se ___ café colombiano.",
+          "answer": "produce",
+          "hint": "Один продукт = глагол в единственном числе"
+        },
+        {
+          "sentence": "Se ___ reservas online.",
+          "answer": "aceptan",
+          "hint": "Несколько бронирований = глагол во множественном числе"
+        },
+        {
+          "sentence": "En este país se ___ bien.",
+          "answer": "trabaja",
+          "hint": "Безличное «работается» = глагол в единственном числе"
+        }
+      ]
+    },
+    {
+      "id": "ejercicio_3",
+      "title": "SER o ESTAR en expresiones impersonales",
+      "hint": "es / está",
+      "rule": {
+        "title": "SER vs ESTAR en construcciones impersonales",
+        "explanation": "En español, las expresiones impersonales usan SER o ESTAR según el tipo de construcción. SER se usa con adjetivos que expresan valoración o característica general. ESTAR se usa con participios (prohibido, permitido) porque indican un estado resultante.",
+        "sections": [
+          {
+            "subtitle": "ES + adjetivo/sustantivo (valoración, característica)",
+            "points": [
+              "<b>Es</b> obligatorio llevar casco — Обязательно носить шлем",
+              "<b>Es</b> normal llegar tarde — Нормально опаздывать",
+              "<b>Es</b> habitual dar propina — Принято давать чаевые",
+              "<b>Es</b> de mala educación no saludar — Невежливо не здороваться"
+            ]
+          },
+          {
+            "subtitle": "ESTÁ + participio (estado resultante)",
+            "points": [
+              "<b>Está</b> prohibido fumar — Курить запрещено",
+              "<b>Está</b> permitido aparcar — Парковаться разрешено",
+              "<b>Está</b> mal visto llegar tarde — Опаздывать не принято (плохо воспринимается)"
+            ]
+          },
+          {
+            "subtitle": "Casos especiales",
+            "points": [
+              "<b>Es</b> aconsejable = рекомендуется (valoración)",
+              "<b>Es</b> importante = важно (valoración)",
+              "<b>Está</b> bien/mal visto = принято/не принято (estado social)"
+            ]
+          }
+        ],
+        "examples": [
+          {"es": "Es obligatorio fichar cada mañana.", "ru": "Обязательно отмечаться каждое утро."},
+          {"es": "Está prohibida la entrada a menores.", "ru": "Вход несовершеннолетним запрещён."},
+          {"es": "Es de mala educación hablar con la boca llena.", "ru": "Невежливо говорить с полным ртом."},
+          {"es": "Está mal visto no dejar propina.", "ru": "Не оставлять чаевые — плохой тон."}
+        ]
+      },
+      "questions": [
+        {"sentence": "___ obligatorio llevar uniforme en el trabajo.", "answer": "Es"},
+        {"sentence": "___ prohibido fumar en lugares públicos.", "answer": "Está"},
+        {"sentence": "___ normal llegar tarde a las fiestas.", "answer": "Es"},
+        {"sentence": "___ permitido aparcar los domingos.", "answer": "Está"},
+        {"sentence": "___ de mala educación no dar las gracias.", "answer": "Es"},
+        {"sentence": "___ prohibida la entrada con comida.", "answer": "Está"},
+        {"sentence": "___ habitual tutear a los desconocidos.", "answer": "Es"},
+        {"sentence": "___ permitida la grabación de video.", "answer": "Está"},
+        {"sentence": "___ aconsejable llegar puntual.", "answer": "Es"},
+        {"sentence": "___ prohibido el uso de móviles.", "answer": "Está"},
+        {"sentence": "___ importante respetar las normas.", "answer": "Es"},
+        {"sentence": "___ mal visto llegar tarde al trabajo.", "answer": "Está"},
+        {"sentence": "___ frecuente dar dos besos al saludar.", "answer": "Es"},
+        {"sentence": "___ prohibida la venta de alcohol a menores.", "answer": "Está"},
+        {"sentence": "___ bastante común compartir piso.", "answer": "Es"},
+        {"sentence": "___ permitido el acceso con mascotas.", "answer": "Está"},
+        {"sentence": "___ de buena educación ceder el asiento.", "answer": "Es"},
+        {"sentence": "___ prohibidos los teléfonos en el examen.", "answer": "Están"},
+        {"sentence": "___ típico cenar tarde en España.", "answer": "Es"},
+        {"sentence": "___ bien visto ser puntual.", "answer": "Está"},
+        {"sentence": "___ necesario presentar el DNI.", "answer": "Es"},
+        {"sentence": "___ prohibida la pesca en este río.", "answer": "Está"},
+        {"sentence": "___ poco habitual tutear al jefe.", "answer": "Es"},
+        {"sentence": "___ permitidas las visitas de 10 a 20h.", "answer": "Están"},
+        {"sentence": "___ recomendable reservar con antelación.", "answer": "Es"},
+        {"sentence": "___ prohibido el baño en esta playa.", "answer": "Está"},
+        {"sentence": "___ costumbre llevar un regalo.", "answer": "Es"},
+        {"sentence": "___ mal visto hablar de dinero.", "answer": "Está"},
+        {"sentence": "___ conveniente confirmar la reserva.", "answer": "Es"},
+        {"sentence": "___ prohibidas las fotos con flash.", "answer": "Están"},
+        {"sentence": "___ normal trabajar 40 horas semanales.", "answer": "Es"},
+        {"sentence": "___ permitido el pago en efectivo.", "answer": "Está"},
+        {"sentence": "___ fácil encontrar trabajo aquí.", "answer": "Es"},
+        {"sentence": "___ prohibidos los objetos metálicos.", "answer": "Están"},
+        {"sentence": "___ difícil aprender un idioma nuevo.", "answer": "Es"},
+        {"sentence": "___ bien visto dejar propina.", "answer": "Está"},
+        {"sentence": "___ posible pagar con tarjeta.", "answer": "Es"},
+        {"sentence": "___ prohibida la entrada a perros.", "answer": "Está"},
+        {"sentence": "___ lógico pedir permiso antes.", "answer": "Es"},
+        {"sentence": "___ permitida la entrada gratuita.", "answer": "Está"},
+        {"sentence": "___ evidente que hay un problema.", "answer": "Es"},
+        {"sentence": "___ prohibido el acceso sin autorización.", "answer": "Está"},
+        {"sentence": "___ común regalar flores.", "answer": "Es"},
+        {"sentence": "___ mal visto no despedirse.", "answer": "Está"},
+        {"sentence": "___ mejor llegar pronto.", "answer": "Es"},
+        {"sentence": "___ prohibida la acampada libre.", "answer": "Está"},
+        {"sentence": "___ raro no saludar al entrar.", "answer": "Es"},
+        {"sentence": "___ permitido usar el diccionario.", "answer": "Está"},
+        {"sentence": "___ cierto que trabaja mucho.", "answer": "Es"},
+        {"sentence": "___ prohibidos los auriculares.", "answer": "Están"},
+        {"sentence": "___ verdad que las costumbres cambian.", "answer": "Es"},
+        {"sentence": "___ bien visto agradecer los regalos.", "answer": "Está"},
+        {"sentence": "___ absurdo prohibir todo.", "answer": "Es"},
+        {"sentence": "___ permitida la entrada con carné.", "answer": "Está"},
+        {"sentence": "___ útil conocer las normas.", "answer": "Es"},
+        {"sentence": "___ prohibida la venta ambulante.", "answer": "Está"},
+        {"sentence": "___ interesante aprender de otras culturas.", "answer": "Es"},
+        {"sentence": "___ mal visto interrumpir.", "answer": "Está"},
+        {"sentence": "___ fundamental respetar a los demás.", "answer": "Es"},
+        {"sentence": "___ permitidos los pagos online.", "answer": "Están"}
+      ],
+      "microTests": [
+        {
+          "sentence": "___ obligatorio llevar casco.",
+          "answer": "Es",
+          "hint": "Obligatorio = valoración → SER"
+        },
+        {
+          "sentence": "___ prohibido fumar aquí.",
+          "answer": "Está",
+          "hint": "Prohibido = participio → ESTAR"
+        },
+        {
+          "sentence": "___ normal cenar tarde en España.",
+          "answer": "Es",
+          "hint": "Normal = valoración → SER"
+        },
+        {
+          "sentence": "___ permitido aparcar aquí.",
+          "answer": "Está",
+          "hint": "Permitido = participio → ESTAR"
+        },
+        {
+          "sentence": "___ de mala educación no saludar.",
+          "answer": "Es",
+          "hint": "De mala educación = valoración → SER"
+        },
+        {
+          "sentence": "___ prohibida la entrada.",
+          "answer": "Está",
+          "hint": "Prohibida = participio → ESTAR"
+        },
+        {
+          "sentence": "___ habitual dar propina.",
+          "answer": "Es",
+          "hint": "Habitual = valoración → SER"
+        },
+        {
+          "sentence": "___ mal visto llegar tarde.",
+          "answer": "Está",
+          "hint": "Mal visto = estado social → ESTAR"
+        },
+        {
+          "sentence": "___ importante ser puntual.",
+          "answer": "Es",
+          "hint": "Importante = valoración → SER"
+        },
+        {
+          "sentence": "___ permitidas las visitas.",
+          "answer": "Están",
+          "hint": "Permitidas = participio → ESTAR"
+        },
+        {
+          "sentence": "___ aconsejable reservar.",
+          "answer": "Es",
+          "hint": "Aconsejable = valoración → SER"
+        },
+        {
+          "sentence": "___ prohibidos los móviles.",
+          "answer": "Están",
+          "hint": "Prohibidos = participio → ESTAR"
+        },
+        {
+          "sentence": "___ frecuente dar dos besos.",
+          "answer": "Es",
+          "hint": "Frecuente = valoración → SER"
+        },
+        {
+          "sentence": "___ bien visto dejar propina.",
+          "answer": "Está",
+          "hint": "Bien visto = estado social → ESTAR"
+        },
+        {
+          "sentence": "___ necesario tener permiso.",
+          "answer": "Es",
+          "hint": "Necesario = valoración → SER"
+        }
+      ]
+    }
+  ]
 }

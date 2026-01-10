@@ -128,6 +128,14 @@
             return state.profiles[state.activeProfileId] || null;
         }
 
+        function saveActiveProfile(profile) {
+            const state = loadAppState();
+            if (state.activeProfileId && state.profiles[state.activeProfileId]) {
+                state.profiles[state.activeProfileId] = profile;
+                saveAppState(state);
+            }
+        }
+
         function setActiveProfile(profileId) {
             const state = loadAppState();
             state.activeProfileId = profileId;
@@ -894,7 +902,7 @@ function showProfileSelect() {
             return Math.round(totalProgress / unidades.length);
         }
 
-        function selectLevel(level) {
+        async function selectLevel(level) {
             const levelConfig = LEVELS[level];
 
             if (!levelConfig) {
@@ -921,7 +929,21 @@ function showProfileSelect() {
                 }
             }
 
-            currentLevel = level;
+            // Only reload data if level actually changed
+            if (currentLevel !== level) {
+                currentLevel = level;
+
+                // Clear old vocabulary data and reload for new level
+                Object.keys(vocabularyData).forEach(key => delete vocabularyData[key]);
+                console.log(`🔄 Переключение на уровень ${level}, загрузка данных...`);
+
+                for (let i = 1; i <= 10; i++) {
+                    await loadUnidadFromJson(`Unidad${i}.json`);
+                }
+
+                // Update main menu themes after loading new data
+                updateMainMenuThemes();
+            }
 
             // Save selected level to navigation state
             const navState = JSON.parse(localStorage.getItem('navigation_state') || '{}');

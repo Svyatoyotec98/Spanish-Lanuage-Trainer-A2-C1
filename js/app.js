@@ -18,7 +18,7 @@
                 name: 'A2 - Nivel Elemental',
                 unidades: UNIDADES,
                 available: true,
-                dataFolder: 'data'
+                dataFolder: 'data/A2'
             },
             'B1': {
                 name: 'B1 - Nivel Intermedio',
@@ -3422,7 +3422,8 @@ async function getNavigationState() {
         }
 	async function loadUnidadFromJson(filename) {
   try {
-    const res = await fetch(`data/${filename}`, { cache: "no-store" });
+    const folder = LEVELS[currentLevel].dataFolder;
+    const res = await fetch(`${folder}/${filename}`, { cache: "no-store" });
     if (!res.ok) {
       throw new Error(`HTTP ${res.status}`);
     }
@@ -7966,7 +7967,8 @@ let interactiveMode = {
 // Load Grammar JSON
 async function loadGrammarData() {
     try {
-        const response = await fetch('data/Grammar_Part1.json');
+        const folder = LEVELS[currentLevel].dataFolder;
+        const response = await fetch(`${folder}/Grammar_Part1.json`);
         const data = await response.json();
         grammarData = data.rules || [];
         console.log(`%c📚 GRAMMAR DATA LOADED`, 'background: #4CAF50; color: white; padding: 5px; font-weight: bold;');

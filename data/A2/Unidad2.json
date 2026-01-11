@@ -1060,11 +1060,11 @@
       "title": "Pretérito indefinido: verbos regulares",
       "hint": "-é / -aste / -ó / -amos / -asteis / -aron (para -ar) | -í / -iste / -ió / -imos / -isteis / -ieron (para -er/-ir)",
       "rule": {
-        "title": "Pretérito indefinido: VERBOS REGULARES",
-        "explanation": "El pretérito indefinido se usa para hablar de acciones completadas en el pasado. Los verbos regulares siguen patrones predecibles según su terminación (-ar, -er, -ir).",
+        "title": "Pretérito indefinido: ПРАВИЛЬНЫЕ ГЛАГОЛЫ",
+        "explanation": "Pretérito indefinido используется для описания завершённых действий в прошлом. Правильные глаголы следуют предсказуемым моделям в зависимости от окончания (-ar, -er, -ir).",
         "sections": [
           {
-            "subtitle": "Verbos en -AR (hablar, trabajar, estudiar)",
+            "subtitle": "Глаголы на -AR (hablar, trabajar, estudiar)",
             "points": [
               "yo: <b>-é</b> → hablé, trabajé, estudié",
               "tú: <b>-aste</b> → hablaste, trabajaste, estudiaste",
@@ -1075,7 +1075,7 @@
             ]
           },
           {
-            "subtitle": "Verbos en -ER/-IR (comer, vivir, escribir)",
+            "subtitle": "Глаголы на -ER/-IR (comer, vivir, escribir)",
             "points": [
               "yo: <b>-í</b> → comí, viví, escribí",
               "tú: <b>-iste</b> → comiste, viviste, escribiste",
@@ -1178,11 +1178,11 @@
       "title": "Pretérito indefinido: verbos irregulares",
       "hint": "tuve / hice / estuve / pude / puse / supe / quise / vine / dije",
       "rule": {
-        "title": "Pretérito indefinido: VERBOS IRREGULARES",
-        "explanation": "Muchos verbos importantes en español tienen formas irregulares en pretérito indefinido. La raíz cambia pero las terminaciones son las mismas: -e, -iste, -o, -imos, -isteis, -ieron.",
+        "title": "Pretérito indefinido: НЕПРАВИЛЬНЫЕ ГЛАГОЛЫ",
+        "explanation": "Многие важные глаголы в испанском языке имеют неправильные формы в pretérito indefinido. Корень меняется, но окончания остаются одинаковыми: -e, -iste, -o, -imos, -isteis, -ieron.",
         "sections": [
           {
-            "subtitle": "Verbos con raíz irregular (terminaciones: -e, -iste, -o, -imos, -isteis, -ieron)",
+            "subtitle": "Глаголы с неправильным корнем (окончания: -e, -iste, -o, -imos, -isteis, -ieron)",
             "points": [
               "<b>tener</b> → tuv-: tuve, tuviste, tuvo, tuvimos, tuvisteis, tuvieron",
               "<b>estar</b> → estuv-: estuve, estuviste, estuvo, estuvimos, estuvisteis, estuvieron",
@@ -1196,7 +1196,7 @@
             ]
           },
           {
-            "subtitle": "Verbos derivados",
+            "subtitle": "Производные глаголы",
             "points": [
               "<b>obtener</b> (como tener) → obtuve, obtuviste, obtuvo...",
               "<b>componer</b> (como poner) → compuse, compusiste, compuso...",
@@ -1296,11 +1296,11 @@
       "title": "Ser vs Ir en pretérito indefinido",
       "hint": "fui / fuiste / fue / fuimos / fuisteis / fueron",
       "rule": {
-        "title": "SER e IR en pretérito indefinido",
-        "explanation": "Los verbos SER e IR tienen exactamente las mismas formas en pretérito indefinido. El contexto de la frase indica cuál de los dos verbos se está usando.",
+        "title": "SER и IR в pretérito indefinido",
+        "explanation": "Глаголы SER и IR имеют абсолютно одинаковые формы в pretérito indefinido. Контекст предложения указывает, какой из двух глаголов используется.",
         "sections": [
           {
-            "subtitle": "Formas (iguales para SER e IR)",
+            "subtitle": "Формы (одинаковые для SER и IR)",
             "points": [
               "yo: <b>fui</b>",
               "tú: <b>fuiste</b>",
@@ -1408,11 +1408,11 @@
       "title": "Marcadores temporales del pasado",
       "hint": "ayer / anteayer / la semana pasada / el mes pasado / el año pasado / hace + tiempo / en + año",
       "rule": {
-        "title": "MARCADORES TEMPORALES del pasado",
-        "explanation": "Los marcadores temporales nos ayudan a situar las acciones en el pasado. Con el pretérito indefinido usamos expresiones que indican un momento concreto y terminado.",
+        "title": "ВРЕМЕННЫЕ МАРКЕРЫ прошедшего времени",
+        "explanation": "Временные маркеры помогают нам расположить действия в прошлом. С pretérito indefinido мы используем выражения, указывающие на конкретный и завершённый момент.",
         "sections": [
           {
-            "subtitle": "Marcadores con 'pasado/a'",
+            "subtitle": "Маркеры с 'pasado/a' (прошлый)",
             "points": [
               "<b>ayer</b> — вчера",
               "<b>anteayer</b> — позавчера",
@@ -1517,11 +1517,11 @@
       "title": "Expresiones de duración: desde, hasta, durante, de...a",
       "hint": "desde / hasta / durante / de / a",
       "rule": {
-        "title": "Expresiones de DURACIÓN",
-        "explanation": "Para hablar de la duración de acciones o períodos en el pasado, usamos diferentes preposiciones según queramos indicar el inicio, el final, o la extensión del tiempo.",
+        "title": "Выражения ДЛИТЕЛЬНОСТИ",
+        "explanation": "Для обозначения продолжительности действий или периодов в прошлом мы используем разные предлоги в зависимости от того, хотим ли указать начало, конец или протяжённость времени.",
         "sections": [
           {
-            "subtitle": "DESDE — punto de inicio (desde cuándo)",
+            "subtitle": "DESDE — начальная точка (с какого момента)",
             "points": [
               "Indica el <b>comienzo</b> de una acción o período",
               "Vivo en Madrid <b>desde</b> 2015 — Живу в Мадриде с 2015 года",
@@ -1640,11 +1640,11 @@
       "title": "Empezar vs Empezar a + infinitivo",
       "hint": "empezó / empezó a",
       "rule": {
-        "title": "EMPEZAR vs EMPEZAR A + infinitivo",
-        "explanation": "El verbo EMPEZAR puede usarse solo o seguido de A + infinitivo. La diferencia está en lo que sigue al verbo.",
+        "title": "EMPEZAR vs EMPEZAR A + инфинитив",
+        "explanation": "Глагол EMPEZAR может использоваться самостоятельно или с A + инфинитив. Разница заключается в том, что следует за глаголом.",
         "sections": [
           {
-            "subtitle": "EMPEZAR + sustantivo/complemento",
+            "subtitle": "EMPEZAR + сущ./дополнение",
             "points": [
               "Cuando sigue un <b>sustantivo</b>, usamos solo EMPEZAR",
               "Empezó <b>la carrera</b> en 2006 — Начал учёбу в 2006",
@@ -1749,11 +1749,11 @@
       "title": "Relacionar acontecimientos del pasado",
       "hint": "después / más tarde / al mes siguiente / al año siguiente",
       "rule": {
-        "title": "RELACIONAR acontecimientos del pasado",
-        "explanation": "Para conectar eventos en una secuencia temporal usamos expresiones que indican qué pasó después de otra cosa.",
+        "title": "СВЯЗЫВАНИЕ событий в прошлом",
+        "explanation": "Для соединения событий во временной последовательности мы используем выражения, указывающие на то, что произошло после другого события.",
         "sections": [
           {
-            "subtitle": "DESPUÉS / MÁS TARDE + cantidad de tiempo",
+            "subtitle": "DESPUÉS / MÁS TARDE + период времени",
             "points": [
               "Se casaron en 2016 y tres años <b>más tarde</b> se divorciaron",
               "Nos conocimos en 2015 y seis meses <b>después</b> nos fuimos a vivir juntos",
@@ -1855,8 +1855,8 @@
       "title": "Verbos de logros y éxitos",
       "hint": "ganar / recibir / obtener / convertirse en",
       "rule": {
-        "title": "Verbos de LOGROS y éxitos",
-        "explanation": "Para hablar de logros y éxitos en la vida de una persona, usamos verbos específicos que se combinan con diferentes complementos.",
+        "title": "Глаголы ДОСТИЖЕНИЙ и успехов",
+        "explanation": "Для описания достижений и успехов в жизни человека мы используем специфические глаголы, которые сочетаются с разными дополнениями.",
         "sections": [
           {
             "subtitle": "GANAR — выигрывать",

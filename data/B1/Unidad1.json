@@ -1176,11 +1176,11 @@
       "title": "Concordancia: está prohibido/a/os/as",
       "hint": "prohibido / prohibida / prohibidos / prohibidas",
       "rule": {
-        "title": "Concordancia de PROHIBIDO/PROHIBIDA/PROHIBIDOS/PROHIBIDAS",
-        "explanation": "Cuando usamos 'estar + prohibido', el adjetivo debe concordar en género y número con el sustantivo que le sigue. Si el sustantivo es masculino singular, usamos 'prohibido'; si es femenino singular, 'prohibida'; masculino plural, 'prohibidos'; femenino plural, 'prohibidas'.",
+        "title": "Согласование PROHIBIDO/PROHIBIDA/PROHIBIDOS/PROHIBIDAS",
+        "explanation": "При использовании конструкции 'estar + prohibido' прилагательное должно согласовываться в роде и числе с существительным. Мужской род единственного числа — prohibido, женский — prohibida, мужской множественного — prohibidos, женский множественного — prohibidas.",
         "sections": [
           {
-            "subtitle": "Masculino singular: PROHIBIDO",
+            "subtitle": "Мужской род, ед. число: PROHIBIDO",
             "points": [
               "Está <b>prohibido</b> el paso — Проход запрещён",
               "Está <b>prohibido</b> el uso de móviles — Использование телефонов запрещено",
@@ -1188,7 +1188,7 @@
             ]
           },
           {
-            "subtitle": "Femenino singular: PROHIBIDA",
+            "subtitle": "Женский род, ед. число: PROHIBIDA",
             "points": [
               "Está <b>prohibida</b> la entrada — Вход запрещён",
               "Está <b>prohibida</b> la venta de alcohol — Продажа алкоголя запрещена",
@@ -1196,7 +1196,7 @@
             ]
           },
           {
-            "subtitle": "Masculino plural: PROHIBIDOS",
+            "subtitle": "Мужской род, мн. число: PROHIBIDOS",
             "points": [
               "Están <b>prohibidos</b> los teléfonos móviles — Мобильные телефоны запрещены",
               "Están <b>prohibidos</b> los objetos metálicos — Металлические предметы запрещены",
@@ -1204,7 +1204,7 @@
             ]
           },
           {
-            "subtitle": "Femenino plural: PROHIBIDAS",
+            "subtitle": "Женский род, мн. число: PROHIBIDAS",
             "points": [
               "Están <b>prohibidas</b> las visitas — Посещения запрещены",
               "Están <b>prohibidas</b> las fotos — Фотографии запрещены",
@@ -1364,11 +1364,11 @@
       "title": "SE impersonal: singular o plural",
       "hint": "se + verbo singular / se + verbo plural",
       "rule": {
-        "title": "SE impersonal: concordancia con el sustantivo",
-        "explanation": "En las construcciones impersonales con SE, el verbo debe concordar en número con el sustantivo que le sigue. Si el sustantivo es singular, el verbo va en singular; si el sustantivo es plural, el verbo va en plural.",
+        "title": "Безличное SE: согласование с существительным",
+        "explanation": "В безличных конструкциях с SE глагол должен согласовываться в числе с существительным, которое следует за ним. Если существительное в единственном числе — глагол в единственном; если во множественном — глагол во множественном.",
         "sections": [
           {
-            "subtitle": "Verbo en SINGULAR (sustantivo singular)",
+            "subtitle": "Глагол в ЕДИНСТВЕННОМ числе (сущ. в ед. ч.)",
             "points": [
               "Se <b>habla</b> español — Говорят по-испански (один язык)",
               "Se <b>vende</b> piso — Продаётся квартира",
@@ -1377,7 +1377,7 @@
             ]
           },
           {
-            "subtitle": "Verbo en PLURAL (sustantivo plural)",
+            "subtitle": "Глагол во МНОЖЕСТВЕННОМ числе (сущ. во мн. ч.)",
             "points": [
               "Se <b>hablan</b> cuatro idiomas — Говорят на четырёх языках",
               "Se <b>venden</b> pisos — Продаются квартиры",
@@ -1386,11 +1386,11 @@
             ]
           },
           {
-            "subtitle": "Casos especiales",
+            "subtitle": "Особые случаи",
             "points": [
-              "Con infinitivo, siempre singular: Se <b>puede</b> fumar — Можно курить",
-              "Con adverbio de cantidad + sustantivo: Se <b>come</b> mucho pan — Едят много хлеба",
-              "Impersonal puro (sin objeto): Aquí se <b>vive</b> bien — Здесь хорошо живётся"
+              "С инфинитивом — всегда ед. число: Se <b>puede</b> fumar — Можно курить",
+              "С наречием количества + сущ.: Se <b>come</b> mucho pan — Едят много хлеба",
+              "Чисто безличное (без объекта): Aquí se <b>vive</b> bien — Здесь хорошо живётся"
             ]
           }
         ],
@@ -1546,11 +1546,11 @@
       "title": "SER o ESTAR en expresiones impersonales",
       "hint": "es / está",
       "rule": {
-        "title": "SER vs ESTAR en construcciones impersonales",
-        "explanation": "En español, las expresiones impersonales usan SER o ESTAR según el tipo de construcción. SER se usa con adjetivos que expresan valoración o característica general. ESTAR se usa con participios (prohibido, permitido) porque indican un estado resultante.",
+        "title": "SER vs ESTAR в безличных конструкциях",
+        "explanation": "В испанском языке безличные выражения используют SER или ESTAR в зависимости от типа конструкции. SER используется с прилагательными, выражающими оценку или общую характеристику. ESTAR используется с причастиями (prohibido, permitido), так как они указывают на результативное состояние.",
         "sections": [
           {
-            "subtitle": "ES + adjetivo/sustantivo (valoración, característica)",
+            "subtitle": "ES + прилагательное/сущ. (оценка, характеристика)",
             "points": [
               "<b>Es</b> obligatorio llevar casco — Обязательно носить шлем",
               "<b>Es</b> normal llegar tarde — Нормально опаздывать",
@@ -1559,7 +1559,7 @@
             ]
           },
           {
-            "subtitle": "ESTÁ + participio (estado resultante)",
+            "subtitle": "ESTÁ + причастие (результативное состояние)",
             "points": [
               "<b>Está</b> prohibido fumar — Курить запрещено",
               "<b>Está</b> permitido aparcar — Парковаться разрешено",
@@ -1567,11 +1567,11 @@
             ]
           },
           {
-            "subtitle": "Casos especiales",
+            "subtitle": "Особые случаи",
             "points": [
-              "<b>Es</b> aconsejable = рекомендуется (valoración)",
-              "<b>Es</b> importante = важно (valoración)",
-              "<b>Está</b> bien/mal visto = принято/не принято (estado social)"
+              "<b>Es</b> aconsejable = рекомендуется (оценка)",
+              "<b>Es</b> importante = важно (оценка)",
+              "<b>Está</b> bien/mal visto = принято/не принято (социальное состояние)"
             ]
           }
         ],
@@ -1727,8 +1727,8 @@
       "title": "Cuantificadores: concordancia",
       "hint": "poco / poca / pocos / pocas / todo / toda / todos / todas / mucho / mucha / muchos / muchas",
       "rule": {
-        "title": "Cuantificadores: concordancia en género y número",
-        "explanation": "Los cuantificadores como poco, todo, mucho, ninguno, alguno deben concordar en género y número con el sustantivo al que acompañan. Si el sustantivo es masculino singular, usamos la forma masculina singular del cuantificador; si es femenino plural, usamos la forma femenina plural, etc.",
+        "title": "Кванторы: согласование в роде и числе",
+        "explanation": "Кванторы (poco, todo, mucho, ninguno, alguno) должны согласовываться в роде и числе с существительным, к которому относятся. Если существительное мужского рода единственного числа — используем мужскую форму квантора в ед. числе; если женского рода множественного числа — женскую форму во мн. числе и т.д.",
         "sections": [
           {
             "subtitle": "POCO/A/OS/AS — мало, немногие",
@@ -1919,11 +1919,11 @@
       "title": "Sustantivación: verbo → sustantivo",
       "hint": "uso / venta / entrada / acceso / paso / visita / pago / consumo",
       "rule": {
-        "title": "Sustantivación de verbos: transformar verbo en sustantivo",
-        "explanation": "En español, muchas prohibiciones y normas pueden expresarse de dos formas: con verbo en infinitivo o con el sustantivo correspondiente. Es importante conocer la transformación verbo → sustantivo para variar el estilo y comprender diferentes formas de expresión.",
+        "title": "Субстантивация: глагол → существительное",
+        "explanation": "В испанском языке многие запреты и правила можно выразить двумя способами: с глаголом в инфинитиве или с соответствующим существительным. Важно знать преобразование глагол → существительное для разнообразия стиля и понимания разных форм выражения.",
         "sections": [
           {
-            "subtitle": "Verbos en -AR → sustantivos",
+            "subtitle": "Глаголы на -AR → существительные",
             "points": [
               "<b>usar</b> → el <b>uso</b> (использование)",
               "<b>entrar</b> → la <b>entrada</b> (вход)",
@@ -1932,7 +1932,7 @@
             ]
           },
           {
-            "subtitle": "Verbos en -ER/-IR → sustantivos",
+            "subtitle": "Глаголы на -ER/-IR → существительные",
             "points": [
               "<b>vender</b> → la <b>venta</b> (продажа)",
               "<b>acceder</b> → el <b>acceso</b> (доступ)",
@@ -1941,7 +1941,7 @@
             ]
           },
           {
-            "subtitle": "Otros verbos comunes",
+            "subtitle": "Другие частые глаголы",
             "points": [
               "<b>visitar</b> → la <b>visita</b> (посещение)",
               "<b>pagar</b> → el <b>pago</b> (оплата)",
@@ -2102,11 +2102,11 @@
       "title": "Se prohíbe/n vs Está/n prohibido/a/os/as",
       "hint": "se prohíbe / se prohíben / está prohibido / está prohibida / están prohibidos / están prohibidas",
       "rule": {
-        "title": "SE PROHÍBE vs ESTÁ PROHIBIDO: dos formas de expresar prohibición",
-        "explanation": "En español hay dos construcciones principales para expresar prohibición. Con 'SE PROHÍBE' el verbo concuerda con el sustantivo. Con 'ESTÁ PROHIBIDO' el participio concuerda con el sustantivo. Ambas construcciones significan lo mismo pero tienen reglas de concordancia diferentes.",
+        "title": "SE PROHÍBE vs ESTÁ PROHIBIDO: два способа выражения запрета",
+        "explanation": "В испанском есть две основные конструкции для выражения запрета. С 'SE PROHÍBE' глагол согласуется с существительным. С 'ESTÁ PROHIBIDO' причастие согласуется с существительным. Обе конструкции означают одно и то же, но имеют разные правила согласования.",
         "sections": [
           {
-            "subtitle": "SE PROHÍBE/N + sustantivo/infinitivo",
+            "subtitle": "SE PROHÍBE/N + сущ./инфинитив",
             "points": [
               "Se <b>prohíbe</b> fumar — Курить запрещено (+ инфинитив → ед.ч.)",
               "Se <b>prohíbe</b> la entrada — Вход запрещён (+ сущ. ед.ч.)",
@@ -2115,7 +2115,7 @@
             ]
           },
           {
-            "subtitle": "ESTÁ/N PROHIBIDO/A/OS/AS + sustantivo",
+            "subtitle": "ESTÁ/N PROHIBIDO/A/OS/AS + сущ.",
             "points": [
               "<b>Está prohibido</b> fumar — Курить запрещено (+ инфинитив → м.р. ед.ч.)",
               "<b>Está prohibida</b> la entrada — Вход запрещён (ж.р. ед.ч.)",
@@ -2124,11 +2124,11 @@
             ]
           },
           {
-            "subtitle": "Regla de concordancia",
+            "subtitle": "Правило согласования",
             "points": [
-              "SE PROHÍBE/N: el verbo concuerda en número con el sustantivo",
-              "ESTÁ/N PROHIBIDO/A/OS/AS: participio concuerda en género Y número",
-              "Con infinitivo: siempre singular (se prohíbe / está prohibido)"
+              "SE PROHÍBE/N: глагол согласуется в числе с существительным",
+              "ESTÁ/N PROHIBIDO/A/OS/AS: причастие согласуется в роде И числе",
+              "С инфинитивом: всегда ед. число (se prohíbe / está prohibido)"
             ]
           }
         ],
@@ -2284,34 +2284,34 @@
       "title": "El verbo DEJAR: diferentes significados",
       "hint": "dejar (permitir) / dejar (abandonar) / dejar (prestar)",
       "rule": {
-        "title": "El verbo DEJAR: три основных значения",
-        "explanation": "El verbo DEJAR es muy polisémico en español. Tiene tres significados principales que debes distinguir por el contexto: permitir (разрешать), abandonar/terminar (оставлять, бросать) y prestar (одалживать).",
+        "title": "Глагол DEJAR: три основных значения",
+        "explanation": "Глагол DEJAR в испанском языке очень многозначен. У него есть три основных значения, которые нужно различать по контексту: permitir (разрешать), abandonar/terminar (оставлять, бросать) и prestar (одалживать).",
         "sections": [
           {
-            "subtitle": "DEJAR = permitir (разрешать)",
+            "subtitle": "DEJAR = разрешать (permitir)",
             "points": [
               "Mis padres no me <b>dejan</b> salir tarde — Родители не разрешают мне выходить поздно",
               "¿Me <b>dejas</b> usar tu ordenador? — Разрешишь мне воспользоваться твоим компьютером?",
               "El profesor nos <b>deja</b> usar el diccionario — Учитель разрешает нам пользоваться словарём",
-              "Construcción: dejar + infinitivo / dejar + que + subjuntivo"
+              "Конструкция: dejar + инфинитив / dejar + que + subjuntivo"
             ]
           },
           {
-            "subtitle": "DEJAR = abandonar, terminar (оставлять, бросать)",
+            "subtitle": "DEJAR = оставлять, бросать (abandonar, terminar)",
             "points": [
               "<b>Dejé</b> el trabajo el mes pasado — Я уволился с работы в прошлом месяце",
               "Quiero <b>dejar</b> de fumar — Я хочу бросить курить",
               "Mi compañero <b>dejó</b> la empresa — Мой коллега ушёл из компании",
-              "Construcción: dejar + sustantivo / dejar de + infinitivo"
+              "Конструкция: dejar + сущ. / dejar de + инфинитив"
             ]
           },
           {
-            "subtitle": "DEJAR = prestar (одалживать, оставлять)",
+            "subtitle": "DEJAR = одалживать, оставлять (prestar)",
             "points": [
               "¿Me <b>dejas</b> tu bolígrafo? — Одолжишь мне ручку?",
               "<b>Dejé</b> las llaves en la mesa — Я оставил ключи на столе",
               "Te <b>dejo</b> mi coche para el fin de semana — Одолжу тебе машину на выходные",
-              "Construcción: dejar + objeto (+ a alguien)"
+              "Конструкция: dejar + объект (+ кому-либо)"
             ]
           }
         ],
@@ -2467,11 +2467,11 @@
       "title": "Expresiones: lo que más/menos + verbo",
       "hint": "lo que más / lo que menos / lo mejor / lo peor",
       "rule": {
-        "title": "Expresiones con LO QUE MÁS/MENOS: что больше/меньше всего",
-        "explanation": "En español usamos construcciones con 'lo que más' y 'lo que menos' para expresar preferencias, gustos y opiniones sobre lo que nos agrada o desagrada más. También usamos 'lo mejor' y 'lo peor' para valoraciones.",
+        "title": "Выражения с LO QUE MÁS/MENOS: что больше/меньше всего",
+        "explanation": "В испанском языке используются конструкции с 'lo que más' и 'lo que menos' для выражения предпочтений, вкусов и мнений о том, что нам нравится или не нравится больше/меньше всего. Также используются 'lo mejor' и 'lo peor' для оценок.",
         "sections": [
           {
-            "subtitle": "LO QUE MÁS + verbo — что больше всего",
+            "subtitle": "LO QUE MÁS + глагол — что больше всего",
             "points": [
               "<b>Lo que más</b> me gusta de mi trabajo son las vacaciones — Что мне больше всего нравится в работе — это отпуск",
               "<b>Lo que más</b> me molesta es el ruido — Что меня больше всего раздражает — это шум",
@@ -2479,7 +2479,7 @@
             ]
           },
           {
-            "subtitle": "LO QUE MENOS + verbo — что меньше всего",
+            "subtitle": "LO QUE MENOS + глагол — что меньше всего",
             "points": [
               "<b>Lo que menos</b> me gusta es madrugar — Что мне меньше всего нравится — это рано вставать",
               "<b>Lo que menos</b> me importa es el dinero — Меньше всего меня волнуют деньги",

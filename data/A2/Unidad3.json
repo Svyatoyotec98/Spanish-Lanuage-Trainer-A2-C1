@@ -1081,11 +1081,11 @@
       "title": "Presente: verbos irregulares (c>zc, e>i)",
       "hint": "yo: conozco, parezco, nazco | yo: mido, pido, sigo",
       "rule": {
-        "title": "VERBOS IRREGULARES en presente",
-        "explanation": "Algunos verbos tienen cambios en la raíz en presente de indicativo. Hay dos grupos importantes:",
+        "title": "НЕПРАВИЛЬНЫЕ ГЛАГОЛЫ в настоящем времени",
+        "explanation": "Некоторые глаголы имеют изменения в корне в настоящем времени изъявительного наклонения. Есть две важные группы:",
         "sections": [
           {
-            "subtitle": "Verbos con cambio C > ZC (solo en YO)",
+            "subtitle": "Глаголы с изменением C > ZC (только в форме YO)",
             "points": [
               "conocer → yo <b>conozco</b>, tú conoces, él conoce...",
               "parecer → yo <b>parezco</b>, tú pareces, él parece...",
@@ -1096,7 +1096,7 @@
             ]
           },
           {
-            "subtitle": "Verbos con cambio E > I (excepto nosotros/vosotros)",
+            "subtitle": "Глаголы с изменением E > I (кроме nosotros/vosotros)",
             "points": [
               "medir → yo <b>mido</b>, tú <b>mides</b>, él <b>mide</b>, nosotros medimos, ellos <b>miden</b>",
               "pedir → yo <b>pido</b>, tú <b>pides</b>, él <b>pide</b>, nosotros pedimos, ellos <b>piden</b>",
@@ -1153,11 +1153,11 @@
       "title": "Describir personas: ser, tener, llevar",
       "hint": "ser = características permanentes | tener = posesión | llevar = ropa/accesorios",
       "rule": {
-        "title": "DESCRIBIR PERSONAS",
-        "explanation": "Para describir a una persona usamos diferentes verbos según el tipo de característica:",
+        "title": "ОПИСАНИЕ ЛЮДЕЙ",
+        "explanation": "Для описания человека мы используем разные глаголы в зависимости от типа характеристики:",
         "sections": [
           {
-            "subtitle": "SER - características permanentes",
+            "subtitle": "SER - постоянные характеристики",
             "points": [
               "Físicas: <b>Soy alto, bajo, gordo, delgado, guapo, feo</b>",
               "De pelo: <b>Es rubio, moreno, pelirrojo, castaño, calvo</b>",
@@ -1165,7 +1165,7 @@
             ]
           },
           {
-            "subtitle": "TENER - partes del cuerpo",
+            "subtitle": "TENER - части тела",
             "points": [
               "<b>Tiene</b> el pelo largo/corto/liso/rizado/ondulado",
               "<b>Tiene</b> los ojos azules/verdes/marrones/negros",
@@ -1173,7 +1173,7 @@
             ]
           },
           {
-            "subtitle": "LLEVAR - ropa, accesorios, estilo",
+            "subtitle": "LLEVAR - одежда, аксессуары, стиль",
             "points": [
               "<b>Lleva</b> gafas/barba/bigote",
               "<b>Lleva</b> el pelo largo/corto/recogido",
@@ -1221,8 +1221,8 @@
       "title": "Parecer vs Parecerse",
       "hint": "parecer = казаться | parecerse a = быть похожим на",
       "rule": {
-        "title": "PARECER vs PARECERSE",
-        "explanation": "Estos dos verbos son similares pero tienen significados diferentes:",
+        "title": "PARECER vs PARECERSE: различия",
+        "explanation": "Эти два глагола похожи, но имеют разные значения:",
         "sections": [
           {
             "subtitle": "PARECER - казаться, выглядеть",
@@ -1278,11 +1278,11 @@
       "title": "Demostrativos: este, ese, aquel",
       "hint": "este = aquí (cerca) | ese = ahí (medio) | aquel = allí (lejos)",
       "rule": {
-        "title": "DEMOSTRATIVOS",
-        "explanation": "Los demostrativos indican la distancia entre el hablante y lo que señala:",
+        "title": "УКАЗАТЕЛЬНЫЕ МЕСТОИМЕНИЯ",
+        "explanation": "Указательные местоимения указывают на расстояние между говорящим и объектом:",
         "sections": [
           {
-            "subtitle": "ESTE/ESTA/ESTOS/ESTAS - cerca del hablante (aquí)",
+            "subtitle": "ESTE/ESTA/ESTOS/ESTAS - рядом с говорящим (aquí)",
             "points": [
               "<b>Este</b> chico (este hombre aquí)",
               "<b>Esta</b> chica (esta mujer aquí)",
@@ -1291,7 +1291,7 @@
             ]
           },
           {
-            "subtitle": "ESE/ESA/ESOS/ESAS - distancia media (ahí)",
+            "subtitle": "ESE/ESA/ESOS/ESAS - на среднем расстоянии (ahí)",
             "points": [
               "<b>Ese</b> chico (ese hombre ahí)",
               "<b>Esa</b> chica (esa mujer ahí)",
@@ -1300,7 +1300,7 @@
             ]
           },
           {
-            "subtitle": "AQUEL/AQUELLA/AQUELLOS/AQUELLAS - lejos (allí)",
+            "subtitle": "AQUEL/AQUELLA/AQUELLOS/AQUELLAS - далеко (allí)",
             "points": [
               "<b>Aquel</b> chico (aquel hombre allí)",
               "<b>Aquella</b> chica (aquella mujer allí)",
@@ -1344,8 +1344,8 @@
       "title": "Llevar vs Llevarse",
       "hint": "llevar = носить | llevarse (bien/mal) = ладить",
       "rule": {
-        "title": "LLEVAR vs LLEVARSE",
-        "explanation": "Estos verbos tienen significados muy diferentes:",
+        "title": "LLEVAR vs LLEVARSE: различия",
+        "explanation": "Эти глаголы имеют очень разные значения:",
         "sections": [
           {
             "subtitle": "LLEVAR - носить, нести",
@@ -1401,8 +1401,8 @@
       "title": "Caer bien/mal e identificar personas",
       "hint": "caer bien = нравиться | el/la de + rasgo = тот/та с...",
       "rule": {
-        "title": "CAER BIEN/MAL e IDENTIFICAR PERSONAS",
-        "explanation": "Para expresar simpatía/antipatía y para identificar personas:",
+        "title": "CAER BIEN/MAL и идентификация людей",
+        "explanation": "Для выражения симпатии/антипатии и идентификации людей:",
         "sections": [
           {
             "subtitle": "CAER BIEN/MAL - нравиться/не нравиться (о человеке)",

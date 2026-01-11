@@ -1937,11 +1937,11 @@
       "title": "Valoraciones: positivas y negativas",
       "hint": "genial / buenísimo / increíble / un rollo / fatal / un horror",
       "rule": {
-        "title": "Valoraciones: expresiones positivas y negativas",
-        "explanation": "En español usamos diferentes expresiones para valorar experiencias, lugares y cosas. Algunas expresiones son claramente positivas, otras negativas, y algunas pueden ser neutrales dependiendo del contexto.",
+        "title": "Оценки: положительные и отрицательные выражения",
+        "explanation": "В испанском языке используются разные выражения для оценки опыта, мест и вещей. Некоторые выражения явно положительные, другие отрицательные, а некоторые могут быть нейтральными в зависимости от контекста.",
         "sections": [
           {
-            "subtitle": "Valoraciones positivas",
+            "subtitle": "Положительные оценки",
             "points": [
               "<b>genial</b> — отлично, гениально",
               "<b>buenísimo/a</b> — отличный, превосходный",
@@ -1952,7 +1952,7 @@
             ]
           },
           {
-            "subtitle": "Valoraciones negativas",
+            "subtitle": "Отрицательные оценки",
             "points": [
               "<b>fatal</b> — ужасно, очень плохо",
               "<b>un rollo</b> — тоска, скучища",
@@ -1963,7 +1963,7 @@
             ]
           },
           {
-            "subtitle": "Construcciones típicas",
+            "subtitle": "Типичные конструкции",
             "points": [
               "Lo pasé <b>genial</b> — Я отлично провёл время",
               "Me pareció <b>buenísimo</b> — Мне показалось отличным",

@@ -1049,11 +1049,11 @@
       "title": "Pretérito imperfecto: verbos regulares",
       "hint": "-aba / -abas / -ía / -ías",
       "rule": {
-        "title": "Pretérito imperfecto: verbos REGULARES",
-        "explanation": "El pretérito imperfecto se usa para describir acciones habituales, situaciones o estados en el pasado. Los verbos regulares siguen patrones predecibles según su terminación (-AR, -ER, -IR).",
+        "title": "Pretérito imperfecto: ПРАВИЛЬНЫЕ ГЛАГОЛЫ",
+        "explanation": "Pretérito imperfecto используется для описания привычных действий, ситуаций или состояний в прошлом. Правильные глаголы следуют предсказуемым моделям в зависимости от окончания (-AR, -ER, -IR).",
         "sections": [
           {
-            "subtitle": "Verbos en -AR (hablar, trabajar, estudiar)",
+            "subtitle": "Глаголы на -AR (hablar, trabajar, estudiar)",
             "points": [
               "yo: <b>-aba</b> → hablaba, trabajaba, estudiaba",
               "tú: <b>-abas</b> → hablabas, trabajabas, estudiabas",
@@ -1064,7 +1064,7 @@
             ]
           },
           {
-            "subtitle": "Verbos en -ER/-IR (comer, vivir, tener)",
+            "subtitle": "Глаголы на -ER/-IR (comer, vivir, tener)",
             "points": [
               "yo: <b>-ía</b> → comía, vivía, tenía",
               "tú: <b>-ías</b> → comías, vivías, tenías",
@@ -1164,11 +1164,11 @@
       "title": "Pretérito imperfecto: verbos irregulares",
       "hint": "era / iba / veía",
       "rule": {
-        "title": "Pretérito imperfecto: verbos IRREGULARES (SER, IR, VER)",
-        "explanation": "En el pretérito imperfecto solo hay tres verbos irregulares: SER, IR y VER. Es importante memorizarlos porque se usan muy frecuentemente para describir el pasado.",
+        "title": "Pretérito imperfecto: НЕПРАВИЛЬНЫЕ ГЛАГОЛЫ (SER, IR, VER)",
+        "explanation": "В pretérito imperfecto только три неправильных глагола: SER, IR и VER. Важно их запомнить, так как они очень часто используются для описания прошлого.",
         "sections": [
           {
-            "subtitle": "SER (быть) - completamente irregular",
+            "subtitle": "SER (быть) - полностью неправильный",
             "points": [
               "yo: <b>era</b> — Yo era muy tímido de niño",
               "tú: <b>eras</b> — ¿Eras buen estudiante?",
@@ -1179,7 +1179,7 @@
             ]
           },
           {
-            "subtitle": "IR (идти/ходить) - completamente irregular",
+            "subtitle": "IR (идти/ходить) - полностью неправильный",
             "points": [
               "yo: <b>iba</b> — Iba al colegio andando",
               "tú: <b>ibas</b> — ¿Adónde ibas de vacaciones?",
@@ -1190,7 +1190,7 @@
             ]
           },
           {
-            "subtitle": "VER (видеть) - mantiene la 'e' de raíz",
+            "subtitle": "VER (видеть) - сохраняет 'e' в корне",
             "points": [
               "yo: <b>veía</b> — Veía la televisión por la noche",
               "tú: <b>veías</b> — ¿Qué programas veías?",
@@ -1290,11 +1290,11 @@
       "title": "Estructuras: había / existía / era + adjetivo",
       "hint": "había / no había / existía / no existía / era legal / era ilegal / estaba prohibido",
       "rule": {
-        "title": "Estructuras para describir el PASADO: HABÍA, EXISTÍA, ERA",
-        "explanation": "Para describir cómo era la sociedad, las leyes y las condiciones de vida en el pasado, usamos estructuras específicas con el pretérito imperfecto. Estas construcciones nos permiten hablar de la existencia, legalidad y prohibiciones en épocas anteriores.",
+        "title": "Структуры для описания ПРОШЛОГО: HABÍA, EXISTÍA, ERA",
+        "explanation": "Для описания общества, законов и условий жизни в прошлом мы используем специфические структуры с pretérito imperfecto. Эти конструкции позволяют нам говорить о существовании, законности и запретах в прошлые эпохи.",
         "sections": [
           {
-            "subtitle": "HABÍA / NO HABÍA - existencia de cosas",
+            "subtitle": "HABÍA / NO HABÍA - существование вещей",
             "points": [
               "<b>Había</b> + sustantivo: Había muchas tiendas pequeñas — Было много маленьких магазинов",
               "<b>No había</b> + sustantivo: No había internet — Не было интернета",
@@ -1302,7 +1302,7 @@
             ]
           },
           {
-            "subtitle": "EXISTÍA / NO EXISTÍA - existencia formal",
+            "subtitle": "EXISTÍA / NO EXISTÍA - формальное существование",
             "points": [
               "<b>Existía</b> / <b>Existían</b>: Existía la censura — Существовала цензура",
               "<b>No existía</b> / <b>No existían</b>: No existían los móviles — Не существовало мобильных",
@@ -1310,7 +1310,7 @@
             ]
           },
           {
-            "subtitle": "ERA LEGAL / ERA ILEGAL / ESTABA PROHIBIDO",
+            "subtitle": "ERA LEGAL / ERA ILEGAL / ESTABA PROHIBIDO - законность",
             "points": [
               "<b>Era legal</b>: Antes era legal fumar en los bares — Раньше было законно курить в барах",
               "<b>Era ilegal</b>: Era ilegal manifestarse — Было незаконно протестовать",
@@ -1407,11 +1407,11 @@
       "title": "Ya no / Todavía: comparar pasado y presente",
       "hint": "ya no / todavía",
       "rule": {
-        "title": "YA NO vs TODAVÍA: comparar pasado y presente",
-        "explanation": "Estas dos expresiones nos permiten comparar situaciones del pasado con el presente. YA NO indica que algo ha dejado de existir o de hacerse. TODAVÍA indica que algo del pasado continúa en el presente.",
+        "title": "YA NO vs TODAVÍA: сравнение прошлого и настоящего",
+        "explanation": "Эти два выражения позволяют нам сравнивать ситуации прошлого с настоящим. YA NO указывает на то, что что-то прекратило существовать или делаться. TODAVÍA указывает на то, что что-то из прошлого продолжается в настоящем.",
         "sections": [
           {
-            "subtitle": "YA NO — algo que ha cambiado (уже не)",
+            "subtitle": "YA NO — то, что изменилось (уже не)",
             "points": [
               "<b>Ya no</b> + verbo: indica que una situación del pasado ha terminado",
               "Antes vivía en Madrid, pero <b>ya no</b> vivo allí — Раньше я жил в Мадриде, но уже не живу там",
@@ -1420,7 +1420,7 @@
             ]
           },
           {
-            "subtitle": "TODAVÍA — algo que continúa (всё ещё)",
+            "subtitle": "TODAVÍA — то, что продолжается (всё ещё)",
             "points": [
               "<b>Todavía</b> + verbo: indica que una situación del pasado sigue vigente",
               "<b>Todavía</b> vivo con mis padres — Я всё ещё живу с родителями",
@@ -1518,11 +1518,11 @@
       "title": "Homófonos: sabía/sabia, hacía/hacia, medía/media",
       "hint": "sabía / sabia / hacía / hacia / medía / media",
       "rule": {
-        "title": "Homófonos con y sin TILDE: sabía/sabia, hacía/hacia, medía/media",
-        "explanation": "En español hay palabras que suenan igual pero se escriben diferente y tienen significados distintos. La tilde marca la diferencia entre verbos en pretérito imperfecto y otras palabras.",
+        "title": "Омофоны с ТИЛЬДОЙ и без: sabía/sabia, hacía/hacia, medía/media",
+        "explanation": "В испанском есть слова, которые звучат одинаково, но пишутся по-разному и имеют разные значения. Тильда отмечает разницу между глаголами в pretérito imperfecto и другими словами.",
         "sections": [
           {
-            "subtitle": "SABÍA (verbo) vs SABIA (adjetivo)",
+            "subtitle": "SABÍA (глагол) vs SABIA (прилагательное)",
             "points": [
               "<b>Sabía</b> (saber, imperfecto): Yo <b>sabía</b> la respuesta — Я знал ответ",
               "<b>Sabia</b> (adjetivo, femenino de sabio): Mi abuela era muy <b>sabia</b> — Моя бабушка была очень мудрой",
@@ -1530,7 +1530,7 @@
             ]
           },
           {
-            "subtitle": "HACÍA (verbo) vs HACIA (preposición)",
+            "subtitle": "HACÍA (глагол) vs HACIA (предлог)",
             "points": [
               "<b>Hacía</b> (hacer, imperfecto): <b>Hacía</b> mucho calor — Было очень жарко",
               "<b>Hacia</b> (preposición, dirección): Voy <b>hacia</b> el centro — Иду в направлении центра",
@@ -1538,7 +1538,7 @@
             ]
           },
           {
-            "subtitle": "MEDÍA (verbo) vs MEDIA (sustantivo/adjetivo)",
+            "subtitle": "MEDÍA (глагол) vs MEDIA (сущ./прил.)",
             "points": [
               "<b>Medía</b> (medir, imperfecto): <b>Medía</b> 1,70 m — Его рост был 1,70 м",
               "<b>Media</b> (número): Son las ocho y <b>media</b> — Сейчас половина девятого",
@@ -1635,11 +1635,11 @@
       "title": "Marcadores temporales: antes, ahora, actualmente, entonces",
       "hint": "antes / ahora / actualmente / entonces / en aquella época",
       "rule": {
-        "title": "Marcadores temporales para comparar PASADO y PRESENTE",
-        "explanation": "Los marcadores temporales nos ayudan a situar las acciones en el tiempo y a comparar diferentes épocas. Algunos indican el pasado, otros el presente, y algunos sirven para establecer contrastes.",
+        "title": "Временные маркеры для сравнения ПРОШЛОГО и НАСТОЯЩЕГО",
+        "explanation": "Временные маркеры помогают нам расположить действия во времени и сравнить разные эпохи. Некоторые указывают на прошлое, другие на настоящее, а некоторые служат для установления контрастов.",
         "sections": [
           {
-            "subtitle": "Marcadores de PASADO",
+            "subtitle": "Маркеры ПРОШЛОГО",
             "points": [
               "<b>Antes</b>: <b>Antes</b> la vida era más tranquila — Раньше жизнь была спокойнее",
               "<b>Entonces</b>: <b>Entonces</b> no había internet — Тогда не было интернета",
@@ -1647,7 +1647,7 @@
             ]
           },
           {
-            "subtitle": "Marcadores de PRESENTE",
+            "subtitle": "Маркеры НАСТОЯЩЕГО",
             "points": [
               "<b>Ahora</b>: <b>Ahora</b> todo es más rápido — Сейчас всё быстрее",
               "<b>Actualmente</b>: <b>Actualmente</b> trabajo desde casa — В настоящее время я работаю из дома",
@@ -1655,7 +1655,7 @@
             ]
           },
           {
-            "subtitle": "Expresiones de contraste",
+            "subtitle": "Выражения контраста",
             "points": [
               "<b>Antes... ahora</b>: Antes no había coches, ahora hay millones — Раньше не было машин, сейчас их миллионы",
               "<b>En cambio</b>: Antes viajaban poco; en cambio, ahora viajan mucho — Раньше мало путешествовали; зато сейчас много путешествуют"
@@ -1751,11 +1751,11 @@
       "title": "Imperfecto en contexto: describir el pasado",
       "hint": "imperfecto de indicativo",
       "rule": {
-        "title": "El IMPERFECTO para describir el pasado",
-        "explanation": "El pretérito imperfecto se usa para describir situaciones, estados, características y acciones habituales en el pasado. Es esencial para hablar de cómo era la vida en otras épocas, describir personas y lugares del pasado, y expresar costumbres antiguas.",
+        "title": "IMPERFECTO для описания прошлого",
+        "explanation": "Pretérito imperfecto используется для описания ситуаций, состояний, характеристик и привычных действий в прошлом. Он необходим для рассказа о том, какой была жизнь в другие эпохи, описания людей и мест прошлого, выражения старых обычаев.",
         "sections": [
           {
-            "subtitle": "Describir situaciones y estados",
+            "subtitle": "Описание ситуаций и состояний",
             "points": [
               "Características físicas: Mi abuelo <b>era</b> alto y <b>tenía</b> el pelo blanco",
               "Estados emocionales: <b>Estaba</b> muy feliz cuando <b>era</b> niño",
@@ -1763,7 +1763,7 @@
             ]
           },
           {
-            "subtitle": "Describir acciones habituales",
+            "subtitle": "Описание привычных действий",
             "points": [
               "Rutinas del pasado: Todos los días <b>iba</b> al colegio andando",
               "Costumbres: En aquella época la gente <b>escribía</b> cartas",
@@ -1771,7 +1771,7 @@
             ]
           },
           {
-            "subtitle": "Contextos históricos",
+            "subtitle": "Исторические контексты",
             "points": [
               "Épocas pasadas: Los romanos <b>hablaban</b> latín",
               "Inventos: Antes de la imprenta, los libros se <b>copiaban</b> a mano",
@@ -1868,11 +1868,11 @@
       "title": "Describir personas y recuerdos del pasado",
       "hint": "imperfecto descriptivo",
       "rule": {
-        "title": "El IMPERFECTO para describir PERSONAS y RECUERDOS",
-        "explanation": "El pretérito imperfecto es perfecto para describir cómo eran las personas, lugares y cosas en el pasado. También se usa para hablar de recuerdos de la infancia, de la juventud y de épocas pasadas de nuestra vida.",
+        "title": "IMPERFECTO для описания ЛЮДЕЙ и ВОСПОМИНАНИЙ",
+        "explanation": "Pretérito imperfecto идеально подходит для описания того, какими были люди, места и вещи в прошлом. Он также используется для рассказа о воспоминаниях детства, юности и прошлых эпох нашей жизни.",
         "sections": [
           {
-            "subtitle": "Describir personas del pasado",
+            "subtitle": "Описание людей прошлого",
             "points": [
               "Aspecto físico: Mi abuelo <b>era</b> alto y <b>tenía</b> bigote",
               "Carácter: Mi profesora <b>era</b> muy simpática y <b>nos contaba</b> historias",
@@ -1880,7 +1880,7 @@
             ]
           },
           {
-            "subtitle": "Describir lugares del pasado",
+            "subtitle": "Описание мест прошлого",
             "points": [
               "Mi pueblo <b>era</b> pequeño y <b>tenía</b> una plaza bonita",
               "La casa de mis abuelos <b>estaba</b> en el campo",
@@ -1888,7 +1888,7 @@
             ]
           },
           {
-            "subtitle": "Hablar de recuerdos",
+            "subtitle": "Рассказ о воспоминаниях",
             "points": [
               "Cuando era niño, <b>jugaba</b> en la calle con mis amigos",
               "De pequeño <b>tenía</b> un perro que se <b>llamaba</b> Luna",

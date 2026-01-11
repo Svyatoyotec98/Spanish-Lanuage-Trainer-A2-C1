@@ -1469,11 +1469,11 @@
       "title": "Verbos de las comidas del día",
       "hint": "desayuno / como / meriendo / ceno",
       "rule": {
-        "title": "Verbos de las COMIDAS DEL DÍA",
-        "explanation": "En español hay verbos específicos para cada comida del día. Estos verbos describen la acción de comer en diferentes momentos: por la mañana, al mediodía, por la tarde y por la noche.",
+        "title": "Глаголы ПРИЁМОВ ПИЩИ",
+        "explanation": "В испанском языке есть специфические глаголы для каждого приёма пищи. Эти глаголы описывают действие приёма пищи в разное время: утром, в обед, после обеда и вечером.",
         "sections": [
           {
-            "subtitle": "DESAYUNAR — завтракать (por la mañana)",
+            "subtitle": "DESAYUNAR — завтракать (утром)",
             "points": [
               "Por la mañana: <b>Desayuno</b> a las ocho — Я завтракаю в восемь",
               "Antes de trabajar: <b>Desayuno</b> café con tostadas — Я завтракаю кофе с тостами",
@@ -1594,11 +1594,11 @@
       "title": "Impersonal con SE para recetas",
       "hint": "se corta / se fríe / se mezcla / se echa / se bate",
       "rule": {
-        "title": "SE IMPERSONAL para recetas",
-        "explanation": "En español, las recetas usan la construcción impersonal con SE para dar instrucciones generales. Esta forma no especifica quién hace la acción, es como decir 'uno hace' o usar la voz pasiva.",
+        "title": "Безличное SE для рецептов",
+        "explanation": "В испанском языке рецепты используют безличную конструкцию с SE для общих инструкций. Эта форма не указывает, кто выполняет действие, как если бы мы сказали 'делают' или использовали пассивный залог.",
         "sections": [
           {
-            "subtitle": "Estructura: SE + verbo en 3ª persona",
+            "subtitle": "Структура: SE + глагол в 3-м лице",
             "points": [
               "Singular si el objeto es singular: <b>Se corta</b> la cebolla — Режут лук",
               "Plural si el objeto es plural: <b>Se cortan</b> las patatas — Режут картофель",
@@ -1606,7 +1606,7 @@
             ]
           },
           {
-            "subtitle": "Verbos comunes en recetas",
+            "subtitle": "Распространённые глаголы в рецептах",
             "points": [
               "<b>Se corta(n)</b> — режут: Se cortan las verduras",
               "<b>Se fríe(n)</b> — жарят: Se fríen las patatas",
@@ -1616,7 +1616,7 @@
             ]
           },
           {
-            "subtitle": "Otros verbos de cocina con SE",
+            "subtitle": "Другие кулинарные глаголы с SE",
             "points": [
               "<b>Se pela(n)</b> — чистят: Se pelan las patatas",
               "<b>Se cuece(n)</b> — варят: Se cuece la pasta",
@@ -1714,11 +1714,11 @@
       "title": "Pronombres de objeto directo",
       "hint": "lo / la / los / las",
       "rule": {
-        "title": "Pronombres de OBJETO DIRECTO: lo, la, los, las",
-        "explanation": "Los pronombres de objeto directo reemplazan al sustantivo que recibe la acción del verbo directamente. Concuerdan en género y número con el sustantivo que sustituyen.",
+        "title": "Местоимения ПРЯМОГО ДОПОЛНЕНИЯ: lo, la, los, las",
+        "explanation": "Местоимения прямого дополнения заменяют существительное, которое непосредственно принимает действие глагола. Они согласуются в роде и числе с заменяемым существительным.",
         "sections": [
           {
-            "subtitle": "Formas según género y número",
+            "subtitle": "Формы по роду и числу",
             "points": [
               "<b>LO</b> — masculino singular: el café → <b>lo</b> preparo",
               "<b>LA</b> — femenino singular: la sopa → <b>la</b> preparo",
@@ -1727,7 +1727,7 @@
             ]
           },
           {
-            "subtitle": "Posición del pronombre",
+            "subtitle": "Позиция местоимения",
             "points": [
               "ANTES del verbo conjugado: <b>Lo</b> compro en el supermercado",
               "DESPUÉS del infinitivo (unido): Voy a comprar<b>lo</b>",
@@ -1834,8 +1834,8 @@
       "title": "Cuantificadores: mucho, poco, bastante, demasiado",
       "hint": "mucho / poco / bastante / demasiado",
       "rule": {
-        "title": "Cuantificadores: MUCHO, POCO, BASTANTE, DEMASIADO",
-        "explanation": "Los cuantificadores expresan cantidad. Algunos concuerdan en género y número con el sustantivo (mucho, poco, demasiado), mientras que otros son invariables (bastante en singular, pero bastantes en plural).",
+        "title": "Квантификаторы: MUCHO, POCO, BASTANTE, DEMASIADO",
+        "explanation": "Квантификаторы выражают количество. Некоторые согласуются в роде и числе с существительным (mucho, poco, demasiado), в то время как другие неизменяемы (bastante в ед. числе, но bastantes во мн. числе).",
         "sections": [
           {
             "subtitle": "MUCHO/A/OS/AS — много",
@@ -1959,8 +1959,8 @@
       "title": "Indefinidos: algo, nada, alguien, nadie",
       "hint": "algo / nada / alguien / nadie",
       "rule": {
-        "title": "Pronombres indefinidos: ALGO, NADA, ALGUIEN, NADIE",
-        "explanation": "Estos pronombres se usan para referirse a cosas o personas de manera indefinida. ALGO y NADA se refieren a cosas, mientras que ALGUIEN y NADIE se refieren a personas.",
+        "title": "Неопределённые местоимения: ALGO, NADA, ALGUIEN, NADIE",
+        "explanation": "Эти местоимения используются для неопределённого указания на вещи или людей. ALGO и NADA относятся к вещам, тогда как ALGUIEN и NADIE — к людям.",
         "sections": [
           {
             "subtitle": "ALGO — что-то, что-нибудь",
@@ -2084,11 +2084,11 @@
       "title": "Verbos tipo gustar: me gusta, me encanta, me apetece",
       "hint": "gusta / gustan / encanta / encantan / apetece / apetecen",
       "rule": {
-        "title": "Verbos tipo GUSTAR: construcción especial",
-        "explanation": "Los verbos como gustar, encantar, apetecer tienen una construcción especial: el sujeto gramatical es lo que gusta y la persona va en dativo (me, te, le, nos, os, les). El verbo concuerda con lo que gusta, no con la persona.",
+        "title": "Глаголы типа GUSTAR: особая конструкция",
+        "explanation": "Глаголы типа gustar, encantar, apetecer имеют особую конструкцию: грамматическим подлежащим является то, что нравится, а человек стоит в дательном падеже (me, te, le, nos, os, les). Глагол согласуется с тем, что нравится, а не с человеком.",
         "sections": [
           {
-            "subtitle": "Construcción básica",
+            "subtitle": "Базовая конструкция",
             "points": [
               "ME + verbo + sujeto: <b>Me gusta</b> el café — Мне нравится кофе",
               "Singular si es uno o infinitivo: Me <b>gusta</b> cocinar",
@@ -2209,11 +2209,11 @@
       "title": "Imperativo positivo para instrucciones",
       "hint": "corta / corte / cortad / corten | añade / añada / añadid / añadan",
       "rule": {
-        "title": "Imperativo positivo: instrucciones de cocina",
-        "explanation": "El imperativo se usa para dar órdenes, instrucciones o consejos. En recetas de cocina, se usa principalmente las formas de tú (informal), usted (formal), vosotros y ustedes.",
+        "title": "Повелительное наклонение: кулинарные инструкции",
+        "explanation": "Повелительное наклонение используется для приказов, инструкций или советов. В кулинарных рецептах в основном используются формы tú (неформально), usted (формально), vosotros и ustedes.",
         "sections": [
           {
-            "subtitle": "Imperativo de TÚ (informal)",
+            "subtitle": "Повелительное наклонение для TÚ (неформальное)",
             "points": [
               "Verbos -AR: corta, añade → <b>Corta</b> la cebolla — Порежь лук",
               "Verbos -ER: come, bebe → <b>Come</b> despacio — Ешь медленно",
@@ -2221,7 +2221,7 @@
             ]
           },
           {
-            "subtitle": "Imperativo de USTED (formal)",
+            "subtitle": "Повелительное наклонение для USTED (формальное)",
             "points": [
               "Verbos -AR: corte, añada → <b>Corte</b> la cebolla — Порежьте лук",
               "Verbos -ER: coma, beba → <b>Coma</b> despacio — Ешьте медленно",
@@ -2229,7 +2229,7 @@
             ]
           },
           {
-            "subtitle": "Imperativo de VOSOTROS",
+            "subtitle": "Повелительное наклонение для VOSOTROS",
             "points": [
               "Verbos -AR: cortad, añadid → <b>Cortad</b> las verduras — Порежьте овощи",
               "Verbos -ER: comed, bebed → <b>Comed</b> todo — Съешьте всё",
@@ -2237,7 +2237,7 @@
             ]
           },
           {
-            "subtitle": "Imperativo de USTEDES (formal plural)",
+            "subtitle": "Повелительное наклонение для USTEDES (формальное мн.ч.)",
             "points": [
               "Verbos -AR: corten, añadan → <b>Corten</b> la cebolla — Порежьте лук",
               "Verbos -ER: coman, beban → <b>Coman</b> despacio — Ешьте медленно",
@@ -2334,11 +2334,11 @@
       "title": "Comparativos: más/menos... que, tan... como",
       "hint": "más / menos / tan / tanto / tanta / tantos / tantas / como / que",
       "rule": {
-        "title": "Comparativos: MÁS/MENOS... QUE, TAN... COMO",
-        "explanation": "Los comparativos se usan para comparar personas, cosas o acciones. En español hay comparativos de superioridad (más... que), inferioridad (menos... que) e igualdad (tan... como, tanto... como).",
+        "title": "Сравнительные конструкции: MÁS/MENOS... QUE, TAN... COMO",
+        "explanation": "Сравнительные конструкции используются для сравнения людей, вещей или действий. В испанском есть сравнения превосходства (más... que), неполноценности (menos... que) и равенства (tan... como, tanto... como).",
         "sections": [
           {
-            "subtitle": "MÁS... QUE — более... чем (superioridad)",
+            "subtitle": "MÁS... QUE — более... чем (превосходство)",
             "points": [
               "Con adjetivos: La paella es <b>más</b> famosa <b>que</b> la tortilla",
               "Con sustantivos: Tiene <b>más</b> sal <b>que</b> pimienta",
@@ -2346,7 +2346,7 @@
             ]
           },
           {
-            "subtitle": "MENOS... QUE — менее... чем (inferioridad)",
+            "subtitle": "MENOS... QUE — менее... чем (неполноценность)",
             "points": [
               "Con adjetivos: Este plato es <b>menos</b> picante <b>que</b> aquel",
               "Con sustantivos: Hay <b>menos</b> azúcar <b>que</b> antes",
@@ -2354,7 +2354,7 @@
             ]
           },
           {
-            "subtitle": "TAN... COMO — такой же... как (igualdad con adjetivos)",
+            "subtitle": "TAN... COMO — такой же... как (равенство с прилагательными)",
             "points": [
               "Con adjetivos: Esta sopa está <b>tan</b> buena <b>como</b> la de mi abuela",
               "El invariable: <b>tan</b> + adjetivo + <b>como</b>",
@@ -2362,7 +2362,7 @@
             ]
           },
           {
-            "subtitle": "TANTO/A/OS/AS... COMO — столько же... как (igualdad con sustantivos)",
+            "subtitle": "TANTO/A/OS/AS... COMO — столько же... как (равенство с существительными)",
             "points": [
               "Concuerda con sustantivo: <b>Tanto</b> arroz <b>como</b> pasta",
               "<b>Tanta</b> fruta <b>como</b> verdura — Столько же фруктов, как и овощей",
